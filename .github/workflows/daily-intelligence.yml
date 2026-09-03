@@ -41,13 +41,27 @@ jobs:
         run: python -m agingwire_intel
       - name: Commit generated intelligence
         run: |
+          set -e
+          rm -rf /tmp/agingwire-generated
+          mkdir -p /tmp/agingwire-generated/docs/data /tmp/agingwire-generated/outputs
+          cp docs/index.html /tmp/agingwire-generated/docs/index.html
+          cp -a docs/data/. /tmp/agingwire-generated/docs/data/
+          cp -a outputs/. /tmp/agingwire-generated/outputs/
+
           git config user.name "agingwire-intelligence-bot"
           git config user.email "actions@users.noreply.github.com"
+          git fetch origin main
+          git reset --hard origin/main
+
+          mkdir -p docs/data outputs
+          cp /tmp/agingwire-generated/docs/index.html docs/index.html
+          cp -a /tmp/agingwire-generated/docs/data/. docs/data/
+          cp -a /tmp/agingwire-generated/outputs/. outputs/
+
           git add outputs docs/index.html docs/data
           if git diff --cached --quiet; then
             echo "No generated changes"
           else
             git commit -m "Update daily research intelligence"
-            git pull --rebase origin main
             git push origin main
           fi
