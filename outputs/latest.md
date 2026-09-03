@@ -1,30 +1,55 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T18:49:08.151942+00:00
+Generated: 2026-09-03T19:01:01.274675+00:00
 
-Evidence candidates: **149** (1 new since the last run)  
+Evidence candidates: **150** (1 new since the last run)  
 Media coverage items: **1036** from **65** working publisher feeds
 
 ## New since the last run
 
-### 1. Falls Prevention Awareness Month Is Here
+### 1. American Community Survey 2023 state aging and housing profile (52 states)
 
-**Score:** 47/100  
-**Source:** acl-news (web_release)  
+**Score:** 85/100  
+**Source:** american-community-survey (government_api)  
 **Published:** undated  
-**Topics:** falls  
+**Topics:** housing, financial_security, migration_retirement, rural_aging  
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://acl.gov/news-and-events/announcements/falls-prevention-awareness-month-here
+**Source URL:** https://data.census.gov/table?q=DP05&y=2023
+
+State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
 
 **Potential angles**
+- Localize the finding by state, metro or county and identify geographic outliers.
+- Consumer angle: explain what the evidence changes for older adults and families.
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Build an original ranking, map or trend analysis from the underlying public data.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
 ## Highest-priority story opportunities
 
-### 1. CMS refreshed dataset: Medical Equipment Suppliers
+### 1. American Community Survey 2023 state aging and housing profile (52 states)
 
-**Score:** 79/100  
+**Score:** 85/100  
+**Source:** american-community-survey (government_api)  
+**Published:** undated  
+**Topics:** housing, financial_security, migration_retirement, rural_aging  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://data.census.gov/table?q=DP05&y=2023
+
+State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
+
+**Potential angles**
+- Localize the finding by state, metro or county and identify geographic outliers.
+- Consumer angle: explain what the evidence changes for older adults and families.
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 2. CMS refreshed dataset: Medical Equipment Suppliers
+
+**Score:** 75/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-30  
 **Topics:** medicare_medicaid  
@@ -40,9 +65,9 @@ A list of Suppliers that indicates the supplies carried at that location and the
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 2. CMS refreshed dataset: Medicare Claims Quality Measures
+### 3. CMS refreshed dataset: Medicare Claims Quality Measures
 
-**Score:** 78/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, medicare_medicaid  
@@ -58,9 +83,9 @@ Quality measures that are based on Medicare claims data. Each row contains a spe
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 3. CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data
+### 4. CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data
 
-**Score:** 78/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, medicare_medicaid  
@@ -76,9 +101,9 @@ Skilled Nursing Facilities (SNFs) provide Medicare Part A SNF services to benefi
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 4. CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data
+### 5. CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data
 
-**Score:** 76/100  
+**Score:** 73/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-07  
 **Topics:** medicare_medicaid, palliative_hospice  
@@ -94,9 +119,9 @@ This data set contains the national average (mean) scores of Medicare-certified 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 5. CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data
+### 6. CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data
 
-**Score:** 76/100  
+**Score:** 73/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-07  
 **Topics:** medicare_medicaid, palliative_hospice  
@@ -112,9 +137,9 @@ This data set contains state average (mean) scores of Medicare-certified hospice
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 6. CMS refreshed dataset: National Downloadable File
+### 7. CMS refreshed dataset: National Downloadable File
 
-**Score:** 76/100  
+**Score:** 73/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-07-31  
 **Topics:** medicare_medicaid  
@@ -130,9 +155,9 @@ The Doctors and Clinicians national downloadable file is organized such that eac
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 7. CMS refreshed dataset: Nursing Home Data Collection Intervals
+### 8. CMS refreshed dataset: Nursing Home Data Collection Intervals
 
-**Score:** 75/100  
+**Score:** 72/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, workforce  
@@ -147,9 +172,9 @@ This table lists the data collection periods for the quality measures displayed 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 8. CMS refreshed dataset: Utilization Data
+### 9. CMS refreshed dataset: Utilization Data
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-11  
 **Topics:** long_term_care  
@@ -164,9 +189,9 @@ The Doctors and Clinicians utilization data file reports volume information for 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 9. CMS refreshed dataset: Patient-Reported Outcomes - Hospital
+### 10. CMS refreshed dataset: Patient-Reported Outcomes - Hospital
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-05  
 **Topics:** long_term_care  
@@ -181,9 +206,9 @@ Patient-reported outcomes are reports from patients about aspects of care that m
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 10. CMS refreshed dataset: Fire Safety Deficiencies
+### 11. CMS refreshed dataset: Fire Safety Deficiencies
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -198,9 +223,9 @@ A list of nursing home fire safety citations in the last three years, including 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 11. CMS refreshed dataset: Health Deficiencies
+### 12. CMS refreshed dataset: Health Deficiencies
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -215,9 +240,9 @@ A list of nursing home health citations in the last three years, including the n
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 12. CMS refreshed dataset: MDS Quality Measures
+### 13. CMS refreshed dataset: MDS Quality Measures
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -232,9 +257,9 @@ Quality measures that are based on the resident assessments that make up the nur
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 13. CMS refreshed dataset: Ownership
+### 14. CMS refreshed dataset: Ownership
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -249,9 +274,9 @@ A list of ownership information for currently active nursing homes.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 14. CMS refreshed dataset: Penalties
+### 15. CMS refreshed dataset: Penalties
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -266,9 +291,9 @@ A list of the fines and payment denials received by nursing homes in the last th
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 15. CMS refreshed dataset: Provider Information
+### 16. CMS refreshed dataset: Provider Information
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -283,9 +308,9 @@ General information on currently active nursing homes, including number of certi
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 16. CMS refreshed dataset: Survey Summary
+### 17. CMS refreshed dataset: Survey Summary
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -300,9 +325,9 @@ Nursing home summary information for nursing home health, fire safety, infection
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 17. CMS refreshed dataset: Citation Code Look-up
+### 18. CMS refreshed dataset: Citation Code Look-up
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -317,9 +342,9 @@ This is a look-up table for nursing home inspection citations, providing a text 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 18. CMS refreshed dataset: Inspection Dates
+### 19. CMS refreshed dataset: Inspection Dates
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -334,9 +359,9 @@ A list of nursing home inspection dates in the past three years, including healt
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 19. CMS refreshed dataset: Facility Affiliation Data
+### 20. CMS refreshed dataset: Facility Affiliation Data
 
-**Score:** 74/100  
+**Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-07-31  
 **Topics:** long_term_care  
@@ -351,9 +376,9 @@ This is the facility affiliations data publicly reported in the Provider Data Ca
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 20. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
+### 21. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
 
-**Score:** 67/100  
+**Score:** 64/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-09-01  
 **Topics:** housing  
@@ -368,9 +393,9 @@ HUD is required to publish FMRs not less than annually, adjusted to be effective
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 21. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
+### 22. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
-**Score:** 67/100  
+**Score:** 64/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-08-21  
 **Topics:** housing  
@@ -385,9 +410,9 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 22. BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)
+### 23. BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)
 
-**Score:** 67/100  
+**Score:** 64/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** workforce, caregiving, aging_in_place  
@@ -400,9 +425,9 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 23. BLS: Continuing care retirement communities and assisted living employment, July 2026 — 1,028.20 thousands of jobs (+1.5% year over year)
+### 24. BLS: Continuing care retirement communities and assisted living employment, July 2026 — 1,028.20 thousands of jobs (+1.5% year over year)
 
-**Score:** 67/100  
+**Score:** 64/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** workforce, assisted_living, housing  
@@ -415,9 +440,9 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 24. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
+### 25. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
 
-**Score:** 66/100  
+**Score:** 62/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** financial_security, medicare_medicaid  
@@ -430,27 +455,12 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 25. BLS: Home health care services average hourly earnings, June 2026 — 27.91 dollars per hour (+1.2% year over year)
-
-**Score:** 66/100  
-**Source:** bls-api (government_api)  
-**Published:** 2026-06-01  
-**Topics:** workforce, caregiving  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://data.bls.gov/timeseries/CES6562160003
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
 ## Research trends and continuity
 
-**Volume:** 149 evidence candidates, 1 first surfaced in this run.
+**Volume:** 150 evidence candidates, 1 first surfaced in this run.
 **Baseline:** no previous run in the archive, so nothing to compare against yet.
-**Heaviest topics this run:** medicare medicaid (28), long term care (18), housing (12), workforce (11), financial security (9), palliative hospice (8).
-**Coverage posture:** 75 confirmed gaps, 65 on beats no monitored publisher covers.
+**Heaviest topics this run:** medicare medicaid (28), long term care (18), housing (13), workforce (11), financial security (10), palliative hospice (8).
+**Coverage posture:** 76 confirmed gaps, 65 on beats no monitored publisher covers.
 
 ## Bigger picture: feature pitch
 
@@ -472,10 +482,16 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 **Also converging this run:**
 - long term care — 4 sources, 18 items, 16 with a confirmed gap
-- housing — 5 sources, 12 items, 12 with a confirmed gap
-- workforce — 3 sources, 11 items, 9 with a confirmed gap
+- housing — 6 sources, 13 items, 13 with a confirmed gap
+- financial security — 5 sources, 10 items, 6 with a confirmed gap
 
 ## Story ideas
+
+**American Community Survey 2023 state aging and housing profile (52 states)**
+- Hook: California: 5,994,486 residents aged 65+
+- Localize: Breaks down to US states — rank the outliers.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://data.census.gov/table?q=DP05&y=2023
 
 **CMS refreshed dataset: Medical Equipment Suppliers**
 - Hook: A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.
@@ -536,16 +552,11 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Competitive: Monitored trades cover this beat and have not written it.
 - Source: https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/
 
-**Workforce Data Center**
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.phinational.org/policy-research/workforce-data-center/
-
 ## Pipeline health
 
-Evidence sources: **13 ok**, **0 empty**, **2 error**  
+Evidence sources: **14 ok**, **0 empty**, **1 error**  
 Publisher feeds: **65 working** of **132 in the registry** (9 error, 58 no feed found)
 
 ### Evidence-source errors
 
-- **census-acs** — CENSUS_API_KEY is not set. api.census.gov rejects keyless requests by redirecting to an HTML page. Request a free key at https://api.census.gov/data/key_signup.html and add it as a repository secret.
 - **nia-news** — 405 Client Error: Not Allowed for url: https://www.nia.nih.gov/news/rss.xml
