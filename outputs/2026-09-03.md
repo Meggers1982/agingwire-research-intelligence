@@ -1,8 +1,8 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T15:22:10.717331+00:00
+Generated: 2026-09-03T15:25:22.661045+00:00
 
-Evidence candidates: **79**  
+Evidence candidates: **85**  
 Media coverage items: **481**
 
 ## Highest-priority story opportunities
