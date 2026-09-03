@@ -53,7 +53,20 @@ def clean_summary(raw: str) -> str:
     return _WS.sub(" ", text).strip()
 
 
-def collect_evidence_feed(feed_url: str, source_id: str, source_type: str = "rss", limit: int = 50) -> list[EvidenceItem]:
+def collect_evidence_feed(
+    feed_url: str,
+    source_id: str,
+    source_type: str = "rss",
+    limit: int = 50,
+    require_topic: bool = False,
+) -> list[EvidenceItem]:
+    """Collect a feed as evidence.
+
+    require_topic keeps broad-scope publishers usable: RAND covers defense and
+    education alongside aging, so only its on-beat output should enter the
+    ranking. Aging-only organizations should leave it off, or a relevant item
+    the taxonomy happens not to tag gets dropped.
+    """
     feed = _parse(feed_url)
     items: list[EvidenceItem] = []
     for entry in feed.entries[:limit]:
@@ -64,6 +77,8 @@ def collect_evidence_feed(feed_url: str, source_id: str, source_type: str = "rss
         summary = entry.get("summary", "") or entry.get("description", "")
         clean = clean_summary(summary)
         topics = tag_text(f"{title} {clean}")
+        if require_topic and not topics:
+            continue
         items.append(EvidenceItem(
             source_id=source_id,
             title=title,

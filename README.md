@@ -35,7 +35,8 @@ The pipeline remembers what it has already reported. `state/seen.json` records w
 2. **Government data layer** — BLS care-workforce and cost series, CMS provider dataset refreshes, Census ACS state profiles.
 3. **Nonprofit/think-tank layer** — KFF, National Alliance for Caregiving, PHI, CRR, EBRI.
 4. **Industry intelligence** — NIC and senior-living/LTSS market sources.
-5. **Media intelligence** — separate B2B and B2C registries for coverage-gap analysis, pitching and syndication.
+5. **Advocacy and policy research** — RAND (topic-filtered), Justice in Aging, Alliance for Aging Research.
+6. **Media intelligence** — separate B2B and B2C registries for coverage-gap analysis, pitching and syndication.
 
 ### Blocking that no user agent can fix
 
@@ -48,6 +49,14 @@ user agent, which is enough for hosts that filter on the string alone.
 ### Sources reached by API rather than scraping
 
 `www.bls.gov` and `www.ssa.gov` return 403 to automated requests regardless of user agent, and `www.cms.gov/newsroom` is JavaScript-rendered with no feed. Those signals come through `api.bls.gov`, the Federal Register API and the CMS provider-data metastore instead. Sources with no machine-readable route at all are listed under `unresolved` in `config/monitors.yml` rather than left as permanently empty monitors.
+
+## A source cannot cover itself
+
+NIA and NIC are both evidence monitors and entries in the publisher registry — an
+agency is a first-party source and a newsroom at once. Coverage counting skips
+publisher items from the same host as the evidence, or those agencies' own
+announcements matched their own feeds and reported themselves as already covered,
+suppressing the gap signal on exactly the first-party sources that matter most.
 
 ## Core editorial rule
 

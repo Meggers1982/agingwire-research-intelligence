@@ -2,45 +2,47 @@
   "id": "2026-09-03",
   "title": "AgingWire Research Intelligence — 2026-09-03",
   "run_date": "2026-09-03",
-  "generated_at": "2026-09-03T19:04:16.080063+00:00",
-  "evidence_count": 150,
-  "new_evidence_count": 0,
+  "generated_at": "2026-09-03T19:14:17.204298+00:00",
+  "evidence_count": 189,
+  "new_evidence_count": 20,
   "coverage_count": 1036,
   "monitored_publisher_count": 65,
   "registry_publisher_count": 132,
-  "gap_count": 76,
+  "gap_count": 89,
   "top_topics": [
     "medicare_medicaid",
     "long_term_care",
-    "housing",
     "workforce",
-    "financial_security",
+    "housing",
+    "dementia",
     "palliative_hospice",
-    "caregiving",
-    "assisted_living"
+    "financial_security",
+    "caregiving"
   ],
   "topic_counts": {
-    "medicare_medicaid": 28,
-    "long_term_care": 18,
-    "housing": 13,
-    "workforce": 11,
-    "financial_security": 10,
-    "palliative_hospice": 8,
-    "caregiving": 6,
+    "medicare_medicaid": 31,
+    "long_term_care": 19,
+    "workforce": 12,
+    "housing": 12,
+    "dementia": 11,
+    "palliative_hospice": 10,
+    "financial_security": 9,
+    "caregiving": 7,
+    "depression_mental_health": 5,
     "assisted_living": 3,
     "elder_abuse": 3,
-    "depression_mental_health": 3,
-    "migration_retirement": 1,
-    "rural_aging": 1,
+    "age_tech": 2,
+    "cognitive_decline": 2,
+    "osteoporosis_bone_health": 2,
     "aging_in_place": 1,
     "senior_living_quality": 1,
-    "age_tech": 1,
     "fraud_scams": 1,
     "loneliness_social_connection": 1,
     "transportation": 1,
-    "falls": 1,
-    "nutrition": 1,
     "incontinence": 1,
+    "nutrition": 1,
+    "falls": 1,
+    "sarcopenia_frailty": 1,
     "ageism_work": 1
   },
   "source_counts": {
@@ -48,64 +50,96 @@
     "cms-provider-data": 25,
     "cfpb-newsroom": 21,
     "kff-feed": 20,
+    "nia-news": 20,
     "federal-register": 11,
+    "alliance-aging-research": 10,
     "kff-issue-briefs": 8,
     "bls-api": 7,
+    "justice-in-aging": 6,
     "center-retirement-research": 6,
     "nic": 6,
     "acl-news": 5,
+    "rand-research": 4,
     "ebri": 4,
     "phi-workforce": 4,
-    "national-alliance-caregiving": 2,
-    "american-community-survey": 1
+    "national-alliance-caregiving": 2
   },
   "items": [
     {
-      "title": "American Community Survey 2023 state aging and housing profile (52 states)",
-      "url": "https://data.census.gov/table?q=DP05&y=2023",
-      "source_id": "american-community-survey",
-      "source_type": "government_api",
-      "published_at": null,
+      "title": "Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care",
+      "url": "https://www.rand.org/pubs/external_publications/EP71470.html",
+      "source_id": "rand-research",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:15:00+00:00",
       "topics": [
-        "housing",
-        "financial_security",
-        "migration_retirement",
-        "rural_aging"
+        "age_tech",
+        "caregiving",
+        "palliative_hospice"
       ],
-      "geographies": [
-        "US states"
-      ],
-      "localizable": true,
+      "geographies": [],
+      "localizable": false,
       "score": 78,
       "score_components": {
         "priority": 5,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 5,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
         "coverage_gap": 5,
-        "localization": 5,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 5
+        "localization": 1,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
       },
-      "summary": "State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.",
-      "key_findings": [
-        "California: 5,994,486 residents aged 65+",
-        "Florida: 4,630,733 residents aged 65+",
-        "Texas: 3,905,545 residents aged 65+"
-      ],
+      "summary": "This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.",
+      "key_findings": [],
       "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
         "Consumer angle: explain what the evidence changes for older adults and families.",
         "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 2
+      "is_new": true,
+      "runs_seen": 1
+    },
+    {
+      "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+      "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+      "source_id": "justice-in-aging",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T18:16:11+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 76,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "summary": "Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
+      "key_findings": [],
+      "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": true,
+      "runs_seen": 1
     },
     {
       "title": "CMS refreshed dataset: Medical Equipment Suppliers",
@@ -146,7 +180,81 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
+    },
+    {
+      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer",
+      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
+      "source_id": "justice-in-aging",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-20T17:01:38+00:00",
+      "topics": [
+        "long_term_care",
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 75,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
+      },
+      "summary": "Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .",
+      "key_findings": [],
+      "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": true,
+      "runs_seen": 1
+    },
+    {
+      "title": "Breaking Glass, Missing Hands",
+      "url": "https://www.rand.org/pubs/research_reports/RRA3665-2.html",
+      "source_id": "rand-research",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:00:00+00:00",
+      "topics": [
+        "workforce"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 74,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "summary": "U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.",
+      "key_findings": [],
+      "story_angles": [
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": true,
+      "runs_seen": 1
     },
     {
       "title": "CMS refreshed dataset: Medicare Claims Quality Measures",
@@ -188,7 +296,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data",
@@ -230,7 +338,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data",
@@ -272,7 +380,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data",
@@ -314,7 +422,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: National Downloadable File",
@@ -355,7 +463,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Nursing Home Data Collection Intervals",
@@ -396,7 +504,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Utilization Data",
@@ -436,7 +544,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Patient-Reported Outcomes - Hospital",
@@ -476,7 +584,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Fire Safety Deficiencies",
@@ -516,7 +624,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Health Deficiencies",
@@ -556,7 +664,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: MDS Quality Measures",
@@ -596,7 +704,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Ownership",
@@ -636,7 +744,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Penalties",
@@ -676,7 +784,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Provider Information",
@@ -716,7 +824,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Survey Summary",
@@ -756,7 +864,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Citation Code Look-up",
@@ -796,7 +904,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Inspection Dates",
@@ -836,7 +944,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Facility Affiliation Data",
@@ -876,7 +984,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
@@ -915,7 +1023,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates",
@@ -954,7 +1062,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)",
@@ -998,7 +1106,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "BLS: Continuing care retirement communities and assisted living employment, July 2026 — 1,028.20 thousands of jobs (+1.5% year over year)",
@@ -1042,7 +1150,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)",
@@ -1085,7 +1193,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "BLS: Home health care services average hourly earnings, June 2026 — 27.91 dollars per hour (+1.2% year over year)",
@@ -1128,7 +1236,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults",
@@ -1166,7 +1274,42 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
+    },
+    {
+      "title": "Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations",
+      "url": "https://www.rand.org/pubs/external_publications/EP71368.html",
+      "source_id": "rand-research",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:15:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 61,
+      "score_components": {
+        "priority": 2,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "summary": "We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.",
+      "key_findings": [],
+      "story_angles": [
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": true,
+      "runs_seen": 1
     },
     {
       "title": "BLS: Nursing care facilities employment, July 2026 — 1,592.90 thousands of jobs (+2.6% year over year)",
@@ -1209,7 +1352,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "BLS: Employment level, 65 years and over, July 2026 — 11,538 thousands of people (+1.4% year over year)",
@@ -1252,7 +1395,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "BLS: Assisted living and CCRC average hourly earnings, June 2026 — 25.47 dollars per hour (+3.2% year over year)",
@@ -1294,7 +1437,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants",
@@ -1333,7 +1476,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Medicare Program; Regulatory Alignment for Predictable and Immediate Device (RAPID) Coverage Pathway",
@@ -1372,7 +1515,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations",
@@ -1411,7 +1554,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice - General Information",
@@ -1450,7 +1593,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice - Zip Data",
@@ -1489,7 +1632,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice - Provider Data",
@@ -1528,7 +1671,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice care - Provider CAHPS Hospice Survey Data",
@@ -1567,7 +1710,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice - State Data",
@@ -1606,7 +1749,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "CMS refreshed dataset: Hospice - National Data",
@@ -1645,7 +1788,41 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
+    },
+    {
+      "title": "Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation",
+      "url": "https://www.rand.org/pubs/external_publications/EP71382.html",
+      "source_id": "rand-research",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:15:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 56,
+      "score_components": {
+        "priority": 2,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 3,
+        "localization": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "summary": "The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.",
+      "key_findings": [],
+      "story_angles": [
+        "First appearance in this pipeline — no prior run surfaced it."
+      ],
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 0,
+      "coverage_state": "light",
+      "is_new": true,
+      "runs_seen": 1
     },
     {
       "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
@@ -1682,7 +1859,7 @@
       "b2c_coverage_count": 2,
       "coverage_state": "light",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Medicaid Coverage for Women",
@@ -1718,7 +1895,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Medicaid/CHIP Monthly Enrollment Tracker",
@@ -1754,7 +1931,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid",
@@ -1790,7 +1967,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "5 Questions and Answers About Medicaid and Provider Taxes",
@@ -1826,7 +2003,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits",
@@ -1862,7 +2039,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Medicare Program; Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals (IPPS) and the Long-Term Care Hospital Prospective Payment System and Policy Changes and Fiscal Year (FY) 2027 Rates; Requirements for Quality Programs; Other Policy Changes; and Adoption of Updated Versions of Certain Health Information Technology Standards",
@@ -1901,7 +2078,44 @@
       "b2c_coverage_count": 1,
       "coverage_state": "light",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
+    },
+    {
+      "title": "Review of Medicare data reveals potential new statistics on dementia diagnosis",
+      "url": "https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis",
+      "source_id": "nia-news",
+      "source_type": "institutional_rss",
+      "published_at": "2025-03-13T00:00:00+00:00",
+      "topics": [
+        "dementia",
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 55,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 1,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 3
+      },
+      "summary": "A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.",
+      "key_findings": [],
+      "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": false,
+      "runs_seen": 6
     },
     {
       "title": "Here’s How Much Americans Rely on Social Security – at All Income Levels",
@@ -1936,7 +2150,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk",
@@ -1972,7 +2186,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act",
@@ -2008,7 +2222,42 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
+    },
+    {
+      "title": "Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms",
+      "url": "https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/",
+      "source_id": "alliance-aging-research",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-10T14:27:00+00:00",
+      "topics": [
+        "dementia"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 54,
+      "score_components": {
+        "priority": 2,
+        "novelty": 5,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "summary": "The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "story_angles": [
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": true,
+      "runs_seen": 1
     },
     {
       "title": "NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options",
@@ -2045,7 +2294,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "Status of State Medicaid Expansion Decisions",
@@ -2080,7 +2329,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "light",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "FTC and States Act Against Hims & Hers for Deceptive and Unlawful Privacy Practices",
@@ -2115,7 +2364,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     },
     {
       "title": "New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement",
@@ -2151,258 +2400,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 9
-    },
-    {
-      "title": "New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security",
-      "url": "https://www.ebri.org/media/press-releases/content/new-national-initiative-examines-how-caregiving-is-reshaping-the-workplace--employee-benefits-and-long-term-financial-security",
-      "source_id": "ebri",
-      "source_type": "web_release",
-      "published_at": "2026-06-02T00:00:00+00:00",
-      "topics": [
-        "caregiving",
-        "financial_security"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 51,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "summary": "EBRI Press Release June 2, 2026 2 pages Summary Full Content",
-      "key_findings": [],
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 9
-    },
-    {
-      "title": "Long-Term Care in Israel and the U.S.: Different Systems, Shared Challenges",
-      "url": "https://crr.bc.edu/long-term-care-in-israel-and-the-u-s-different-systems-shared-challenges/",
-      "source_id": "center-retirement-research",
-      "source_type": "web_release",
-      "published_at": "2026-09-03T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 49,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 5,
-        "source_quality": 2,
-        "coverage_gap": 3,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "summary": null,
-      "key_findings": [],
-      "story_angles": [
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy."
-      ],
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 1,
-      "coverage_state": "light",
-      "is_new": false,
-      "runs_seen": 9
-    },
-    {
-      "title": "Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026",
-      "url": "https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/",
-      "source_id": "kff-issue-briefs",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 47,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "summary": "Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on the Medicare Advantage quality bonus program in 2026, as 68% of Medicare Advantage enrollees are in a plan that qualifies for higher payments under the program.",
-      "key_findings": [],
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 9
-    },
-    {
-      "title": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance",
-      "url": "https://www.nic.org/blog/another-strong-quarter-for-senior-housing-seven-straight-quarters-of-outperformance/",
-      "source_id": "nic",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "housing"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 47,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "summary": "22 Senior Housing Properties Added to the NCREIF Property Index in 2Q Senior housing investment performance in the second quarter of 2026 maintained the prior quarter’s momentum, posting a total return of 3.9% and bringing year-to-date returns to 8.0%. Overall, senior housing during the quarter outperformed the broader…",
-      "key_findings": [],
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 9
-    },
-    {
-      "title": "FTC Data Show People Reported Losing $3.5 Billion to Imposter Scams in 2025",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-data-show-people-reported-losing-3-point-5-billion-imposter-scams-2025",
-      "source_id": "ftc-consumer-protection",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-15T12:00:00+00:00",
-      "topics": [
-        "elder_abuse",
-        "fraud_scams"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 46,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 4,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "summary": "New data from the Federal Trade Commission reveal that people reported losing a staggering $3.5 billion to imposter scams in 2025, with reported losses increasing nearly three times since 2020. FTC data also show that people reported imposter scams more than any other fraud category in 2025—nearly one in three fraud reports were about imposter scams. These scams lured consumers through text, phone, email, social media, search engine results and other means. Some of the costliest impersonation scams start with a fake security alert, often from a bank. People are convinced to move money to “protect” it, with their losses often limited only by their available funds. Last year, people reported losing nearly $1 billion to business impersonators with the highest reported losses to bank impersonators—and about $920 million to government impersonators, up from $866 million and $789 million respe",
-      "key_findings": [],
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "unmonitored",
-      "is_new": false,
-      "runs_seen": 9
-    },
-    {
-      "title": "2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs",
-      "url": "https://www.ebri.org/media/press-releases/content/2026-retirement-confidence-survey-finds-americans-less-confident-about-retirement-as-worries-grow-over-social-security--medicare-and-rising-costs",
-      "source_id": "ebri",
-      "source_type": "web_release",
-      "published_at": "2026-04-21T00:00:00+00:00",
-      "topics": [
-        "financial_security",
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 46,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 2,
-        "coverage_gap": 3,
-        "localization": 1,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "summary": "EBRI Press Release April 21, 2026 2 pages Summary Full Content",
-      "key_findings": [],
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
-      "coverage_state": "light",
-      "is_new": false,
-      "runs_seen": 9
-    },
-    {
-      "title": "June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.",
-      "url": "https://acl.gov/news-and-events/acl-blog/june-1-5-medicare-fraud-prevention-week-heres-how-americans-can-help",
-      "source_id": "acl-news",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 45,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "summary": null,
-      "key_findings": [],
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 9
+      "runs_seen": 10
     }
   ],
   "source_status": [
@@ -2427,8 +2425,8 @@
     {
       "source": "census-acs",
       "method": "census_acs",
-      "status": "ok",
-      "items": 1
+      "status": "error",
+      "error": "CENSUS_API_KEY is not set. api.census.gov rejects keyless requests by redirecting to an HTML page. Request a free key at https://api.census.gov/data/key_signup.html and add it as a repository secret."
     },
     {
       "source": "acl-news",
@@ -2439,8 +2437,8 @@
     {
       "source": "nia-news",
       "method": "rss",
-      "status": "error",
-      "error": "405 Client Error: Not Allowed for url: https://www.nia.nih.gov/news/rss.xml"
+      "status": "ok",
+      "items": 20
     },
     {
       "source": "cfpb-newsroom",
@@ -2495,6 +2493,24 @@
       "method": "web",
       "status": "ok",
       "items": 6
+    },
+    {
+      "source": "rand-research",
+      "method": "rss",
+      "status": "ok",
+      "items": 4
+    },
+    {
+      "source": "justice-in-aging",
+      "method": "rss",
+      "status": "ok",
+      "items": 6
+    },
+    {
+      "source": "alliance-aging-research",
+      "method": "rss",
+      "status": "ok",
+      "items": 10
     }
   ],
   "media_status_summary": {
@@ -2505,7 +2521,7 @@
     "errors": [
       {
         "publisher": "HomeCare Magazine",
-        "error": "403 Client Error: Forbidden for url: https://www.homecaremag.com/combo/feed"
+        "error": "404 Client Error: Not Found for url: https://www.homecaremag.com/features/feed"
       },
       {
         "publisher": "Multi-Housing News - Senior Housing",
@@ -2546,9 +2562,9 @@
       "topic": "medicare_medicaid",
       "label": "medicare medicaid",
       "priority": "P0",
-      "cluster_score": 292,
-      "item_count": 28,
-      "source_count": 8,
+      "cluster_score": 340,
+      "item_count": 31,
+      "source_count": 10,
       "sources": [
         "acl-news",
         "bls-api",
@@ -2556,32 +2572,35 @@
         "cms-provider-data",
         "ebri",
         "federal-register",
+        "justice-in-aging",
         "kff-feed",
-        "kff-issue-briefs"
+        "kff-issue-briefs",
+        "nia-news"
       ],
-      "gap_count": 25,
+      "gap_count": 28,
       "covered_count": 3,
-      "new_count": 0,
+      "new_count": 2,
       "structured_count": 10,
       "localizable_count": 6,
-      "newest_age_days": 4
+      "newest_age_days": 3
     },
     {
       "topic": "long_term_care",
       "label": "long term care",
       "priority": "P0",
-      "cluster_score": 233,
-      "item_count": 18,
-      "source_count": 4,
+      "cluster_score": 254,
+      "item_count": 19,
+      "source_count": 5,
       "sources": [
         "bls-api",
         "center-retirement-research",
         "cms-provider-data",
-        "federal-register"
+        "federal-register",
+        "justice-in-aging"
       ],
-      "gap_count": 16,
+      "gap_count": 17,
       "covered_count": 2,
-      "new_count": 0,
+      "new_count": 1,
       "structured_count": 17,
       "localizable_count": 15,
       "newest_age_days": 0
@@ -2590,156 +2609,191 @@
       "topic": "housing",
       "label": "housing",
       "priority": "P0",
-      "cluster_score": 183,
-      "item_count": 13,
-      "source_count": 6,
+      "cluster_score": 160,
+      "item_count": 12,
+      "source_count": 5,
       "sources": [
-        "american-community-survey",
         "bls-api",
         "ebri",
         "federal-register",
         "ftc-consumer-protection",
         "nic"
       ],
-      "gap_count": 13,
+      "gap_count": 12,
       "covered_count": 0,
       "new_count": 0,
-      "structured_count": 5,
-      "localizable_count": 1,
+      "structured_count": 4,
+      "localizable_count": 0,
       "newest_age_days": 2
-    },
-    {
-      "topic": "financial_security",
-      "label": "financial security",
-      "priority": "P0",
-      "cluster_score": 113,
-      "item_count": 10,
-      "source_count": 5,
-      "sources": [
-        "american-community-survey",
-        "bls-api",
-        "center-retirement-research",
-        "ebri",
-        "federal-register"
-      ],
-      "gap_count": 6,
-      "covered_count": 4,
-      "new_count": 0,
-      "structured_count": 5,
-      "localizable_count": 1,
-      "newest_age_days": 1
     },
     {
       "topic": "workforce",
       "label": "workforce",
       "priority": "P0",
-      "cluster_score": 111,
-      "item_count": 11,
-      "source_count": 3,
+      "cluster_score": 142,
+      "item_count": 12,
+      "source_count": 4,
       "sources": [
         "bls-api",
         "cms-provider-data",
-        "phi-workforce"
+        "phi-workforce",
+        "rand-research"
       ],
-      "gap_count": 9,
+      "gap_count": 10,
       "covered_count": 2,
-      "new_count": 0,
+      "new_count": 1,
       "structured_count": 7,
       "localizable_count": 1,
-      "newest_age_days": 33
+      "newest_age_days": 3
+    },
+    {
+      "topic": "palliative_hospice",
+      "label": "palliative hospice",
+      "priority": "clinical",
+      "cluster_score": 139,
+      "item_count": 10,
+      "source_count": 3,
+      "sources": [
+        "cms-provider-data",
+        "nia-news",
+        "rand-research"
+      ],
+      "gap_count": 9,
+      "covered_count": 1,
+      "new_count": 1,
+      "structured_count": 8,
+      "localizable_count": 8,
+      "newest_age_days": 3
     },
     {
       "topic": "caregiving",
       "label": "caregiving",
       "priority": "P0",
-      "cluster_score": 86,
-      "item_count": 6,
-      "source_count": 4,
+      "cluster_score": 117,
+      "item_count": 7,
+      "source_count": 5,
       "sources": [
         "bls-api",
         "ebri",
         "national-alliance-caregiving",
-        "phi-workforce"
+        "phi-workforce",
+        "rand-research"
       ],
-      "gap_count": 5,
+      "gap_count": 6,
       "covered_count": 1,
-      "new_count": 0,
+      "new_count": 1,
       "structured_count": 2,
       "localizable_count": 0,
-      "newest_age_days": 64
+      "newest_age_days": 3
     },
     {
-      "topic": "assisted_living",
-      "label": "assisted living",
+      "topic": "financial_security",
+      "label": "financial security",
       "priority": "P0",
-      "cluster_score": 54,
-      "item_count": 3,
-      "source_count": 2,
+      "cluster_score": 90,
+      "item_count": 9,
+      "source_count": 4,
       "sources": [
         "bls-api",
-        "nic"
+        "center-retirement-research",
+        "ebri",
+        "federal-register"
       ],
-      "gap_count": 3,
-      "covered_count": 0,
+      "gap_count": 5,
+      "covered_count": 4,
       "new_count": 0,
-      "structured_count": 2,
+      "structured_count": 4,
       "localizable_count": 0,
-      "newest_age_days": 29
+      "newest_age_days": 1
+    },
+    {
+      "topic": "dementia",
+      "label": "dementia",
+      "priority": "clinical",
+      "cluster_score": 73,
+      "item_count": 11,
+      "source_count": 2,
+      "sources": [
+        "alliance-aging-research",
+        "nia-news"
+      ],
+      "gap_count": 9,
+      "covered_count": 2,
+      "new_count": 1,
+      "structured_count": 0,
+      "localizable_count": 0,
+      "newest_age_days": 85
     },
     {
       "topic": "depression_mental_health",
       "label": "depression mental health",
       "priority": "clinical",
-      "cluster_score": 52,
-      "item_count": 3,
+      "cluster_score": 72,
+      "item_count": 5,
+      "source_count": 3,
+      "sources": [
+        "ftc-consumer-protection",
+        "kff-feed",
+        "rand-research"
+      ],
+      "gap_count": 4,
+      "covered_count": 1,
+      "new_count": 2,
+      "structured_count": 0,
+      "localizable_count": 0,
+      "newest_age_days": 3
+    },
+    {
+      "topic": "age_tech",
+      "label": "age tech",
+      "priority": "P0",
+      "cluster_score": 55,
+      "item_count": 2,
       "source_count": 2,
       "sources": [
         "ftc-consumer-protection",
-        "kff-feed"
+        "rand-research"
       ],
-      "gap_count": 3,
+      "gap_count": 2,
       "covered_count": 0,
-      "new_count": 0,
+      "new_count": 1,
       "structured_count": 0,
       "localizable_count": 0,
-      "newest_age_days": 7
-    },
-    {
-      "topic": "elder_abuse",
-      "label": "elder abuse",
-      "priority": "P1",
-      "cluster_score": 24,
-      "item_count": 3,
-      "source_count": 2,
-      "sources": [
-        "acl-news",
-        "ftc-consumer-protection"
-      ],
-      "gap_count": 0,
-      "covered_count": 0,
-      "new_count": 0,
-      "structured_count": 0,
-      "localizable_count": 0,
-      "newest_age_days": 80
+      "newest_age_days": 3
     }
   ],
   "story_ideas": [
     {
-      "title": "American Community Survey 2023 state aging and housing profile (52 states)",
-      "url": "https://data.census.gov/table?q=DP05&y=2023",
-      "source_id": "american-community-survey",
-      "published_at": null,
+      "title": "Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care",
+      "url": "https://www.rand.org/pubs/external_publications/EP71470.html",
+      "source_id": "rand-research",
+      "published_at": "2026-08-31T08:15:00+00:00",
       "score": 78,
       "topics": [
-        "housing",
-        "financial_security",
-        "migration_retirement",
-        "rural_aging"
+        "age_tech",
+        "caregiving",
+        "palliative_hospice"
       ],
       "coverage_state": "gap",
-      "is_new": false,
-      "hook": "California: 5,994,486 residents aged 65+",
-      "localize": "Breaks down to US states — rank the outliers.",
+      "is_new": true,
+      "hook": "This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences ",
+      "localize": null,
+      "chart": null,
+      "competitive": "Monitored trades cover this beat and have not written it."
+    },
+    {
+      "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+      "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+      "source_id": "justice-in-aging",
+      "published_at": "2026-08-31T18:16:11+00:00",
+      "score": 76,
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "coverage_state": "gap",
+      "is_new": true,
+      "hook": "Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare",
+      "localize": null,
       "chart": null,
       "competitive": "Monitored trades cover this beat and have not written it."
     },
@@ -2810,6 +2864,23 @@
       "competitive": "Monitored trades cover this beat and have not written it."
     },
     {
+      "title": "Review of Medicare data reveals potential new statistics on dementia diagnosis",
+      "url": "https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis",
+      "source_id": "nia-news",
+      "published_at": "2025-03-13T00:00:00+00:00",
+      "score": 55,
+      "topics": [
+        "dementia",
+        "medicare_medicaid"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "hook": "A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.",
+      "localize": null,
+      "chart": null,
+      "competitive": "Monitored trades cover this beat and have not written it."
+    },
+    {
       "title": "Here’s How Much Americans Rely on Social Security – at All Income Levels",
       "url": "https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/",
       "source_id": "center-retirement-research",
@@ -2839,6 +2910,22 @@
       "hook": "RentGrow, a provider of consumer reports for tenant screening, will be required to pay $2.25 million to settle Federal Trade Commission allegations that the company violated the Fair Credit Reporting Act (FCRA), includin",
       "localize": null,
       "chart": "The figures in the finding are the spine of a simple graphic.",
+      "competitive": "Monitored trades cover this beat and have not written it."
+    },
+    {
+      "title": "Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms",
+      "url": "https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/",
+      "source_id": "alliance-aging-research",
+      "published_at": "2026-06-10T14:27:00+00:00",
+      "score": 54,
+      "topics": [
+        "dementia"
+      ],
+      "coverage_state": "gap",
+      "is_new": true,
+      "hook": "The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .",
+      "localize": null,
+      "chart": null,
       "competitive": "Monitored trades cover this beat and have not written it."
     },
     {
@@ -2873,60 +2960,12 @@
       "localize": null,
       "chart": "The figures in the finding are the spine of a simple graphic.",
       "competitive": "Monitored trades cover this beat and have not written it."
-    },
-    {
-      "title": "Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026",
-      "url": "https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/",
-      "source_id": "kff-issue-briefs",
-      "published_at": null,
-      "score": 47,
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": "Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on the Medicare Advantage quality bonus program in 2026, as 68% of Medicare Advantage enrollees are in a plan that qualifies for higher paymen",
-      "localize": null,
-      "chart": "The figures in the finding are the spine of a simple graphic.",
-      "competitive": "Monitored trades cover this beat and have not written it."
-    },
-    {
-      "title": "June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.",
-      "url": "https://acl.gov/news-and-events/acl-blog/june-1-5-medicare-fraud-prevention-week-heres-how-americans-can-help",
-      "source_id": "acl-news",
-      "published_at": null,
-      "score": 45,
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": null,
-      "localize": null,
-      "chart": "The figures in the finding are the spine of a simple graphic.",
-      "competitive": "Monitored trades cover this beat and have not written it."
-    },
-    {
-      "title": "The Story Comes First. The Word “Caregiver” Often Comes Later.",
-      "url": "https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/",
-      "source_id": "national-alliance-caregiving",
-      "published_at": null,
-      "score": 45,
-      "topics": [
-        "caregiving"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": null,
-      "localize": null,
-      "chart": null,
-      "competitive": "Monitored trades cover this beat and have not written it."
     }
   ],
-  "trends_raw": "**Volume:** 150 evidence candidates this run, none of them first surfaced here.\n\n**Baseline:** no previous run sits in the archive, so today establishes the comparison point rather than moving off one.\n\n**Where the weight is:** medicare and medicaid (28 items), long-term care (18), housing (13), workforce (11), financial security (10) and palliative and hospice (8). Medicare and Medicaid also draws the widest source base at eight, which is what separates a busy topic from a genuine convergence.\n\n**Shape of the run:** this is a government-data run, not a news run. CMS provider data refreshes, BLS series and Federal Register notices dominate the top of the file, with 10 items sitting on structured public data. That favors reporting built on datasets and rulemaking documents over reaction pieces, and it means the differentiator is analysis rather than access.\n\n**Freshness varies sharply by beat.** Long-term care carries an item dated today, financial security is one day old, housing two days, and Medicare and Medicaid four. Workforce runs 33 days behind, assisted living 29 and caregiving 64, so those three need either a new hook or an explicit framing as a trend piece rather than a development.\n\n**Coverage posture:** 76 items are confirmed gaps, meaning publishers who do cover the beat matched none of them. A further 65 sit on beats where we monitor no publisher at all, so our competitive position there is simply unknown and should not be pitched as an open field. We are watching 65 publishers out of 132 in the registry, which is the constraint behind that unknown.\n\n**What to do with it:** the confirmed gaps concentrate in exactly the places where structured data and localization overlap, namely CMS facility files, HUD notices and the ACS state profiles. That combination supports one national feature plus repeatable state and metro versions, which is the most efficient use of a run with no new evidence in it.",
-  "feature_pitch_raw": "**The convergence:** Medicare and Medicaid is the only topic this run that eight unrelated sources hit at once. ACL news, the BLS API, the Center for Retirement Research, CMS provider data, EBRI, the Federal Register, the KFF feed and KFF issue briefs together produced 28 items, and 25 of them match nothing from the 65 publishers we monitor. The newest landed four days ago, so the file is current rather than a retrospective.\n\n**Evidence on the table:**\n- **CMS provider data** refreshed the Medical Equipment Suppliers dataset on 2026-08-30, which lists supplies carried by location and each supplier's Medicare participation status, at state and county resolution.\n- **BLS** put the medical care Consumer Price Index at 593.78 (1982-84=100) for July 2026, up 1.7 percent year over year.\n- **The Federal Register** carried two Medicare notices in mid-August: the Alternative Payment Model incentive payment advisory telling qualifying clinicians that CMS lacks current billing information to disburse their payments (2026-08-13), and the Regulatory Alignment for Predictable and Immediate Device coverage pathway for accelerated national coverage of new technologies (2026-08-11).\n- **KFF** published \"Medicaid Coverage for Women\" on 2026-08-26.\n- **The Center for Retirement Research** posted an analysis on 2026-08-26 arguing that shifting Medicare funding to the states would weaken the program and put Americans at risk.\n- **EBRI** reported that some Medicare households may need nearly $500,000 for health care in retirement (2026-03-11).\n\n**The spine of the feature:** who absorbs Medicare cost and coverage risk as it moves between the federal government, states, providers and households. The EBRI figure sets the household exposure, the Center for Retirement Research piece sets the federal-to-state question, KFF's brief sets the Medicaid coverage side, the two Federal Register notices show CMS adjusting who gets paid and how fast new technology gets covered, and the medical care CPI at 593.78 gives the price backdrop. The refreshed supplier file turns all of it into something a reader can check against their own county.\n\n**Why now:** eight sources converged without coordination, the freshest item is four days old, and 25 of 28 items are confirmed gaps against publishers who do cover this beat.\n\n**Localization:** 6 of the 28 items break below the national level, so one reporting pass supports state, metro and facility-level versions.\n\n**Visuals:** 10 items in this run sit on structured public data, including the CMS supplier and quality files and the BLS series, so a ranking, map or trend line can be built directly instead of sourced.\n\n**Also converging:** long-term care (4 sources, 18 items, 16 gaps, newest today), housing (6 sources, 13 items, 13 gaps, newest 2 days old) and financial security (5 sources, 10 items, 6 gaps, newest 1 day old).",
-  "pitch_ideas_raw": "- **The nursing home accountability file, rebuilt from scratch.** *Hook:* CMS refreshed its entire nursing home suite on 2026-08-01, including Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Provider Information, Survey Summary, Inspection Dates, MDS Quality Measures and the Citation Code Look-up, alongside Medicare Claims Quality Measures and the Skilled Nursing Facility Quality Reporting Program file. *Angle:* three years of citations, fines and payment denials joined to ownership records and the Five-Star inputs, which supports a state-by-state ranking and a facility lookup for consumers. The Nursing Home Data Collection Intervals file matters here because it tells readers which measurement windows the staffing and short-stay scores actually cover, a caveat most coverage skips. *Competitive situation:* every one of these datasets is a confirmed gap, and the long-term care cluster shows 16 gaps across 18 items with its newest item dated today.\n- **Where 65+ Americans live, and what they can afford.** *Hook:* the American Community Survey 2023 state aging and housing profile is the highest-scoring item in the run at 78, covering 52 states with 65+, 65-74, 75-84 and 85+ counts plus median household income and housing tenure. *Angle:* California's 5,994,486 residents aged 65 and older and Florida's 4,630,733 anchor a supply-and-demand piece when paired with HUD's FY 2027 Fair Market Rents notice, published 2026-09-01, which sets voucher and single-room-occupancy payment standards effective October 1 and lays out how housing agencies request reevaluations. *Competitive situation:* confirmed gap, and the housing cluster is 13 items with zero covered.\n- **Two HUD actions that change older renters' footing.** *Hook:* HUD's supplemental proposed rule of 2026-08-10 continues its effort to remove the disparate-impact regulations under the Fair Housing Act and leave that liability to the courts, and it also amends HUD's Title VI regulations. *Angle:* read together with the FY 2027 Fair Market Rents methodology and the National Housing Act debenture interest rate notice of 2026-08-21 setting the Section 221(g)(4) rate at 4 percent for the six-month period beginning January 1, 2026, this is a single explainer on the federal rules shaping affordability and fair housing claims for older tenants. *Competitive situation:* both are confirmed gaps.\n- **Direct care wages are losing to medical prices.** *Hook:* home health care services average hourly earnings reached $27.91 in June 2026, up 1.2 percent year over year, while the medical care CPI rose 1.7 percent. Assisted living and continuing care retirement community earnings hit $25.47, up 3.2 percent. *Angle:* employment is expanding faster than pay in home health, which added jobs to reach 1,886.10 thousand in July 2026, up 4.8 percent, against 1,592.90 thousand in nursing care facilities, up 2.6 percent, and 1,028.20 thousand in continuing care and assisted living, up 1.5 percent. A trade version asks what a 4.8 percent headcount gain on 1.2 percent wage growth implies for turnover; a consumer version explains why home care hours are easier to find than a good aide. *Competitive situation:* each BLS series is a confirmed gap, and PHI is the third source in an 11-item workforce cluster.\n- **The hospice quality package nobody has unpacked.** *Hook:* CMS refreshed eight hospice files between 2026-08-07 and 2026-08-19, including national, state and provider-level CAHPS Hospice Survey results, provider quality-of-care measures, general information with ownership data, and the ZIP code service-area file. *Angle:* the ZIP file plus the state and national CAHPS averages allows a piece that shows readers which hospices actually serve their address and how those providers score against their state mean. *Competitive situation:* all eight are confirmed gaps in an 8-item palliative and hospice cluster.\n- **A payment notice with real money attached.** *Hook:* the Alternative Payment Model incentive payment advisory of 2026-08-13 tells qualifying APM participants that CMS does not have the billing information it needs to send their incentive payments. *Angle:* a short, high-utility service item for clinician-facing readers explaining how to update billing information, paired with the RAPID coverage pathway notice with comment period of 2026-08-11 for practices tracking how fast new devices reach national Medicare coverage. *Competitive situation:* both confirmed gaps.\n- **Two Social Security rulings worth a plain-language read.** *Hook:* Social Security Ruling 26-2p, noticed 2026-09-01, consolidates policy on documenting and evaluating disability in young adults and rescinds SSR 11-2p, while the 2026-08-31 notice rescinds Acquiescence Ruling 90-2(2) on treating a rental subsidy as in-kind income for Supplemental Security Income calculations. *Angle:* the rental subsidy rescission is the one to lead with for older SSI recipients and the family caregivers who help them file. *Competitive situation:* SSR 26-2p is a confirmed gap; the rescission notice shows only light coverage, so speed and clarity are the differentiators in a financial security cluster with 6 gaps across 10 items.",
-  "synthesis_mode": "llm",
-  "synthesis_model": "claude-opus-5",
+  "trends_raw": "**Volume:** 189 evidence candidates, 20 first surfaced in this run.\n**Baseline:** no previous run in the archive, so nothing to compare against yet.\n**Heaviest topics this run:** medicare medicaid (31), long term care (19), workforce (12), housing (12), dementia (11), palliative hospice (10).\n**Coverage posture:** 89 confirmed gaps, 87 on beats no monitored publisher covers.",
+  "feature_pitch_raw": "**The convergence:** Medicare Medicaid — 10 independent sources this run, no monitored B2B or B2C publisher has matched most of it\n\n**Evidence on the table:**\n- **justice-in-aging** — Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule (2026-08-31)\n- **cms-provider-data** — CMS refreshed dataset: Medical Equipment Suppliers (2026-08-30)\n- **bls-api** — BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year) (2026-07-01) — July 2026: 593.78 index 1982-84=100\n- **federal-register** — Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants (2026-08-13)\n- **kff-feed** — Medicaid Coverage for Women (2026-08-26)\n- **nia-news** — Review of Medicare data reveals potential new statistics on dementia diagnosis (2025-03-13)\n\n**Why now:** the most recent item landed 3 days ago; 10 unrelated sources converged without coordination; 28 of 31 items show a confirmed coverage gap.\n\n**Localization:** 6 of 31 items break below the national level, so the same reporting supports state, metro or facility-level versions.\n\n**Visuals:** 10 items sit on structured public data — a ranking, map or trend line can be built directly rather than sourced.\n\n**Also converging this run:**\n- long term care — 5 sources, 19 items, 17 with a confirmed gap\n- housing — 5 sources, 12 items, 12 with a confirmed gap\n- workforce — 4 sources, 12 items, 10 with a confirmed gap",
+  "pitch_ideas_raw": "**Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care**\n- Hook: This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences \n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.rand.org/pubs/external_publications/EP71470.html\n\n**Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule**\n- Hook: Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/\n\n**CMS refreshed dataset: Medical Equipment Suppliers**\n- Hook: A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.\n- Localize: Breaks down to US states, US counties — rank the outliers.\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://data.cms.gov/provider-data/dataset/ct36-nrcq\n\n**Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027**\n- Hook: HUD is required to publish FMRs not less than annually, adjusted to be effective on October 1 of each year. This notice describes the methods used to calculate the FY 2027 FMRs and lists the procedures for public housing\n- Chart: The underlying file supports an original ranking or trend line.\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room\n\n**BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)**\n- Hook: July 2026: 1,886.10 thousands of jobs\n- Chart: The underlying file supports an original ranking or trend line.\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://data.bls.gov/timeseries/CES6562160001\n\n**Medicaid Coverage for Women**\n- Hook: This data note presents key data points describing the current state of the Medicaid program as it affects women.\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/\n\n**Review of Medicare data reveals potential new statistics on dementia diagnosis**\n- Hook: A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis\n\n**Here’s How Much Americans Rely on Social Security – at All Income Levels**\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/\n\n**RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act**\n- Hook: RentGrow, a provider of consumer reports for tenant screening, will be required to pay $2.25 million to settle Federal Trade Commission allegations that the company violated the Fair Credit Reporting Act (FCRA), includin\n- Chart: The figures in the finding are the spine of a simple graphic.\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act\n\n**Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms**\n- Hook: The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/\n\n**NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options**\n- Hook: The National Investment Center for Seniors Housing & Care (NIC) establishes a multi-year collaboration with the MIT AgeLab to rethink what adults want in housing and care as they age ANNAPOLIS, Md. (August 5, 2026) —The \n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.nic.org/news-press/nic-and-mit-agelab-launch-landmark-study-to-reimagine-senior-living-options/\n\n**New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement**\n- Hook: EBRI Press Release March 11, 2026 2 pages Summary Full Content\n- Chart: The figures in the finding are the spine of a simple graphic.\n- Competitive: Monitored trades cover this beat and have not written it.\n- Source: https://www.ebri.org/media/press-releases/content/new-ebri-report-finds-some-medicare-households-may-need-nearly--500-000-for-health-care-in-retirement",
+  "synthesis_mode": "deterministic",
+  "synthesis_model": null,
   "synthesis_note": null
 }

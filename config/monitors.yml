@@ -81,6 +81,25 @@ evidence:
     url: https://www.nic.org/insider/
     priority: P0
 
+  # --- Advocacy and policy research --------------------------------------------
+  # Absorbed from org-news-digest after verifying yield. require_topic is set on
+  # RAND only: it publishes defense and education research alongside aging, so
+  # 20 items become the 4 that are on-beat. The two aging-only organizations
+  # keep everything, since a relevant item the taxonomy misses should not vanish.
+  - id: rand-research
+    method: rss
+    url: https://www.rand.org/pubs/new.xml
+    require_topic: true
+    priority: P1
+  - id: justice-in-aging
+    method: rss
+    url: https://justiceinaging.org/feed/
+    priority: P1
+  - id: alliance-aging-research
+    method: rss
+    url: https://www.agingresearch.org/feed/
+    priority: P1
+
 media:
   b2b_registry: config/media/b2b_publications.csv
   b2c_registry: config/media/b2c_publications.csv
@@ -89,6 +108,48 @@ media:
 # stays visible without a permanently empty monitor polluting the health report.
 # Revisit periodically; each needs a rendered-page fetch or a manual entry path.
 unresolved:
+  # --- Evaluated from org-news-digest on 2026-09-03 and rejected ---------------
+  # Kept here with the measured reason so they are not re-added on the assumption
+  # that a source another repo lists as "active" is actually producing.
+  - id: prnewswire-org-searches
+    url: https://www.prnewswire.com/rss/news-releases-list.rss?q=<org>
+    note: >-
+      The ?q= parameter is ignored. Searches for "alzheimer's association",
+      "national council on aging" and "american health care association" all
+      returned byte-identical generic wire output (shareholder alerts, investor
+      notices, dividends) with 1 of 20 items aging-tagged. Not a per-org feed.
+  - id: commonwealth-fund
+    url: https://www.commonwealthfund.org/rss.xml
+    note: >-
+      The discoverable feed is their international health system profiles --
+      items titled "Indonesia", "Pakistan", "Taiwan". The taxonomy tags all ten
+      on body text, which is a false positive, not aging evidence.
+  - id: leadingage-news
+    url: https://leadingage.org/feed/
+    note: >-
+      Stale: latest entries are from 2021 ("Thanksgiving 2021", "The Bright
+      Spots of 2021") and none tags to the taxonomy. The /news/feed/ variant
+      returns a valid but empty channel.
+  - id: va-press-releases
+    url: https://news.va.gov/category/news-releases/feed/
+    note: Valid RSS, correct content type, but an empty channel -- no items at all.
+  - id: nlm-pubmed-news
+    url: https://www.nlm.nih.gov/rss/auto/PubMedNews.rss
+    note: >-
+      Library service announcements ("RSS Feed Has a New URL"), not research.
+      Zero of 14 items tagged.
+  - id: argentum
+    url: https://www.argentum.org/feed/
+    note: >-
+      Mostly vendor product PR and executive appointments. It is trade coverage,
+      not evidence, so it belongs in the B2B media registry instead.
+  - id: asha-living
+    url: https://www.ashaliving.org/feed/
+    note: >-
+      Genuinely on-beat policy advocacy, but already monitored as a B2B
+      publisher. Adding it as evidence too would double-count it and corrupt the
+      coverage-gap comparison.
+
   - id: aarp-public-policy-institute
     url: https://www.aarp.org/pri/
     note: >-

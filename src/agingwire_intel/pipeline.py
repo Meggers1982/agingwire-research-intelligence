@@ -5,6 +5,7 @@ import re
 from dataclasses import asdict
 from datetime import UTC, datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 
@@ -44,10 +45,25 @@ def _same_story(evidence, coverage_item) -> bool:
     return jaccard >= 0.18 or (len(shared) >= 3 and len(shared) / min(len(left), len(right)) >= 0.35)
 
 
+def _host(url: str) -> str:
+    return urlparse(url or "").netloc.lower().removeprefix("www.")
+
+
 def _coverage_counts(item, coverage) -> tuple[int, int]:
+    """Distinct monitored publishers whose headline matches this evidence.
+
+    A source cannot cover itself. NIA and NIC are both evidence monitors and
+    entries in the publisher registry, so without this an agency announcement
+    matched its own newsroom feed and reported itself as covered -- suppressing
+    the gap signal on exactly the first-party sources the pipeline exists to
+    surface.
+    """
+    item_host = _host(item.url)
     publishers_b2b: set[str] = set()
     publishers_b2c: set[str] = set()
     for c in coverage:
+        if item_host and _host(c.url) == item_host:
+            continue
         if not _same_story(item, c):
             continue
         if c.audience_type == "b2b":
@@ -112,7 +128,10 @@ def _load_collector_items(monitor: dict, output_dir: str) -> list:
     method = monitor.get("method")
     sid = monitor.get("id")
     if method == "rss":
-        return collect_evidence_feed(monitor["url"], sid, "institutional_rss")
+        return collect_evidence_feed(
+            monitor["url"], sid, "institutional_rss",
+            require_topic=bool(monitor.get("require_topic", False)),
+        )
     if method == "web":
         return collect_link_page(monitor["url"], sid)
     if method == "census_acs":
