@@ -90,7 +90,7 @@ tests/
 ## Run locally
 
 ```bash
-pip install -r requirements.txt -e .
+pip install -r requirements.txt -e ".[dev]"
 python -m pytest -q
 python -m agingwire_intel
 ```

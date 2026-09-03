@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      - run: pip install -r requirements.txt -e . pytest ruff
+      - run: pip install -r requirements.txt -e ".[dev]"
       - name: Lint
         run: ruff check src tests
       - name: Test
