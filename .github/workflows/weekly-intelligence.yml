@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: agingwire-weekly-intelligence
+  cancel-in-progress: true
+
 jobs:
   weekly:
     runs-on: ubuntu-latest
@@ -29,5 +33,6 @@ jobs:
             echo "No weekly changes"
           else
             git commit -m "Update weekly research intelligence"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
