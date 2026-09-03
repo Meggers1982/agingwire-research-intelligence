@@ -1,8 +1,8 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T15:19:40.100232+00:00
+Generated: 2026-09-03T15:22:10.717331+00:00
 
-Evidence candidates: **90**  
+Evidence candidates: **79**  
 Media coverage items: **481**
 
 ## Highest-priority story opportunities
@@ -35,20 +35,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 3. Harry S. Margolis
-
-**Score:** 31  
-**Source:** center-retirement-research (web_release)  
-**Topics:** long_term_care  
-**B2B monitored coverage:** 0  
-**B2C monitored coverage:** 0  
-**Source URL:** https://crr.bc.edu/person/harry-s-margolis/
-
-**Potential angles**
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
-
-### 4. Here’s How Much Americans Rely on Social Security – at All Income Levels
+### 3. Here’s How Much Americans Rely on Social Security – at All Income Levels
 
 **Score:** 31  
 **Source:** center-retirement-research (web_release)  
@@ -61,7 +48,7 @@ Media coverage items: **481**
 - Consumer angle: explain what the evidence changes for older adults and families.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 5. Senior Living Research Digest — Osteoporosis — September 2026
+### 4. Senior Living Research Digest — Osteoporosis — September 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -74,7 +61,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 6. Senior Living Research Digest — Palliative Care — September 2026
+### 5. Senior Living Research Digest — Palliative Care — September 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -87,7 +74,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 7. Senior Living Research Digest — Sleep — September 2026
+### 6. Senior Living Research Digest — Sleep — September 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -100,7 +87,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 8. Senior Living Research Digest — Depression — August 2026 (Part 2)
+### 7. Senior Living Research Digest — Depression — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -113,7 +100,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 9. Senior Living Research Digest — Cardiovascular Disease — August 2026 (Part 2)
+### 8. Senior Living Research Digest — Cardiovascular Disease — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -126,7 +113,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 10. Senior Living Research Digest — Falls — August 2026
+### 9. Senior Living Research Digest — Falls — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -139,7 +126,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 11. Senior Living Research Digest — Dementia — August 2026 (Part 2)
+### 10. Senior Living Research Digest — Dementia — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -152,7 +139,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 12. Senior Living Research Digest — Polypharmacy — August 2026 (Part 2)
+### 11. Senior Living Research Digest — Polypharmacy — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -165,7 +152,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 13. Senior Living Research Digest — Vision Loss — August 2026 (Part 2)
+### 12. Senior Living Research Digest — Vision Loss — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -178,7 +165,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 14. Senior Living Research Digest — Hearing Loss — August 2026 (Part 2)
+### 13. Senior Living Research Digest — Hearing Loss — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -191,7 +178,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 15. Senior Living Research Digest — Vision Loss — August 2026
+### 14. Senior Living Research Digest — Vision Loss — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -204,7 +191,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 16. Senior Living Research Digest — Sleep — August 2026
+### 15. Senior Living Research Digest — Sleep — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -217,7 +204,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 17. Senior Living Research Digest — Sarcopenia — August 2026 (Part 2)
+### 16. Senior Living Research Digest — Sarcopenia — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -230,7 +217,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 18. Senior Living Research Digest — Polypharmacy — August 2026
+### 17. Senior Living Research Digest — Polypharmacy — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -243,7 +230,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 19. Senior Living Research Digest — Nutrition — August 2026
+### 18. Senior Living Research Digest — Nutrition — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -256,7 +243,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 20. Senior Living Research Digest — Hearing Loss — August 2026
+### 19. Senior Living Research Digest — Hearing Loss — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -269,7 +256,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 21. Senior Living Research Digest — Fall Prevention — August 2026
+### 20. Senior Living Research Digest — Fall Prevention — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -282,7 +269,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 22. Senior Living Research Digest — Dementia — August 2026
+### 21. Senior Living Research Digest — Dementia — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -295,7 +282,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 23. Senior Living Research Digest — Osteoporosis — August 2026
+### 22. Senior Living Research Digest — Osteoporosis — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -308,7 +295,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 24. Senior Living Research Digest — Palliative Care — August 2026 (Part 2)
+### 23. Senior Living Research Digest — Palliative Care — August 2026 (Part 2)
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -321,7 +308,7 @@ Media coverage items: **481**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
 
-### 25. Senior Living Research Digest — Sarcopenia — August 2026
+### 24. Senior Living Research Digest — Sarcopenia — August 2026
 
 **Score:** 30  
 **Source:** senior-research-digest (academic_digest)  
@@ -329,6 +316,19 @@ Media coverage items: **481**
 **B2B monitored coverage:** 0  
 **B2C monitored coverage:** 0  
 **Source URL:** https://docs-one-beryl.vercel.app/?run=senior-living-research-digest-sarcopenia-august-2026
+
+**Potential angles**
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.
+
+### 25. Senior Living Research Digest — Palliative Care — August 2026
+
+**Score:** 30  
+**Source:** senior-research-digest (academic_digest)  
+**Topics:** assisted_living, palliative_hospice  
+**B2B monitored coverage:** 0  
+**B2C monitored coverage:** 0  
+**Source URL:** https://docs-one-beryl.vercel.app/?run=senior-living-research-digest-palliative-care-august-2026
 
 **Potential angles**
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
