@@ -4,15 +4,38 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agingwire-research-intelligence"
-version = "0.1.0"
+version = "0.2.0"
 description = "Companion evidence and media intelligence system for AgingWire."
 requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32",
+    "feedparser>=6.0",
+    "python-dateutil>=2.9",
+    "PyYAML>=6.0",
+    "beautifulsoup4>=4.12",
+]
+
+[project.scripts]
+agingwire-intel = "agingwire_intel.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+agingwire_intel = ["templates/*.html"]
+
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "tests"]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4"]
+ignore = ["E501"]
 
 [tool.vercel]
 output_directory = "docs"

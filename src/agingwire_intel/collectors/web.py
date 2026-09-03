@@ -1,18 +1,15 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
-from urllib.parse import urljoin, urlparse, urldefrag
 import re
-import requests
+from datetime import UTC, datetime
+from urllib.parse import urldefrag, urljoin, urlparse
+
 from bs4 import BeautifulSoup
 
+from agingwire_intel.http import get
 from agingwire_intel.models import EvidenceItem
 from agingwire_intel.topics import tag_text
 
-DEFAULT_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/152 Safari/537.36 AgingWireResearchIntelligence/0.1",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-}
 BOILERPLATE = re.compile(r"^(skip to|read more|learn more|see all|view all|more releases|return to|back to|home$|menu$|subscribe$|sign up$)", re.I)
 _MONTHS = {m.lower(): i for i, m in enumerate(["January","February","March","April","May","June","July","August","September","October","November","December"], 1)}
 
@@ -21,13 +18,13 @@ def _extract_date(text: str) -> str | None:
     match = re.search(r"\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b", text, re.I)
     if match:
         try:
-            return datetime(int(match.group(3)), _MONTHS[match.group(1).lower()], int(match.group(2)), tzinfo=timezone.utc).isoformat()
+            return datetime(int(match.group(3)), _MONTHS[match.group(1).lower()], int(match.group(2)), tzinfo=UTC).isoformat()
         except ValueError:
             return None
     match = re.search(r"\b(20\d{2})-(\d{2})-(\d{2})\b", text)
     if match:
         try:
-            return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=timezone.utc).isoformat()
+            return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=UTC).isoformat()
         except ValueError:
             return None
     return None
@@ -39,8 +36,7 @@ def collect_link_page(url: str, source_id: str, source_type: str = "web_release"
     Navigation, profile/taxonomy pages, and boilerplate links are removed. Only candidates
     matching the aging taxonomy are emitted, keeping institutional menus out of the digest.
     """
-    r = requests.get(url, headers=DEFAULT_HEADERS, timeout=30)
-    r.raise_for_status()
+    r = get(url, timeout=30)
     soup = BeautifulSoup(r.text, "html.parser")
     for bad in soup.select("nav, header, footer, script, style, form"):
         bad.decompose()
@@ -74,7 +70,7 @@ def collect_link_page(url: str, source_id: str, source_type: str = "web_release"
             source_type=source_type,
             published_at=_extract_date(context),
             topics=topics,
-            raw_metadata={"listing_page": url, "context": context[:2000]},
+            raw_metadata={"listing_page": url, "context": context[:400]},
         ))
         if len(out) >= limit:
             break

@@ -1,13 +1,31 @@
 # Collectors
 
-Planned adapters:
-- `pubmed_bridge.py`
-- `census.py`
-- `cms.py`
-- `bls.py`
-- `rss.py`
-- `report_monitor.py`
-- `crossref.py`
-- `investor_relations.py`
+Every collector normalizes into `EvidenceItem` or `CoverageItem` and goes through
+`agingwire_intel.http`, so the user-agent, retry and 403-fallback behavior is
+shared rather than reimplemented per source.
 
-Collectors emit normalized EvidenceItem or CoverageItem records. Implement P0 structured sources first.
+## Implemented
+
+| Module | Method key | Source |
+| --- | --- | --- |
+| `senior_digest.py` | `senior_digest` | Upstream senior-research-digest; emits the individual studies inside each run, not the run titles |
+| `federal_register.py` | `federal_register` | Federal Register API — SSA, CMS, ACL, HUD, CFPB, FTC rules and substantive notices |
+| `bls.py` | `bls_api` | BLS Public Data API v2 — care-workforce employment, earnings, CPI medical care, 65+ employment |
+| `cms_datasets.py` | `cms_datasets` | CMS Provider Data Catalog metastore — dataset refreshes for nursing home, home health and hospice files |
+| `census.py` | `census_acs` | ACS 5-year Data Profile — state aging, income and housing tenure |
+| `rss.py` | `rss` | Institutional feeds (evidence) and publisher feeds (coverage) |
+| `web.py` | `web` | Best-effort listing-page monitor for first-party sites with no feed |
+
+## Why some obvious sources are not here
+
+`www.bls.gov` and `www.ssa.gov` return 403 to automated requests regardless of
+user agent, and `www.cms.gov/newsroom` is JavaScript-rendered with no feed. Those
+signals are reached through APIs instead. See the `unresolved` block in
+`config/monitors.yml` for what still has no machine-readable route.
+
+## Adding one
+
+1. Write a function returning `list[EvidenceItem]`.
+2. Add a branch to `_load_collector_items` in `pipeline.py`.
+3. Add the method key to `known` in the config-validation step of `.github/workflows/ci.yml`.
+4. Register the monitor in `config/monitors.yml`.

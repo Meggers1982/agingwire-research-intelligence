@@ -1,22 +1,17 @@
 from __future__ import annotations
 
-from datetime import timezone
+from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
+
 import feedparser
-import requests
 
-from agingwire_intel.models import EvidenceItem, CoverageItem
+from agingwire_intel.http import FEED_ACCEPT, get
+from agingwire_intel.models import CoverageItem, EvidenceItem
 from agingwire_intel.topics import tag_text
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; AgingWireResearchIntelligence/0.1; +https://github.com/Meggers1982/agingwire-research-intelligence)",
-    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
-}
 
 
 def _parse(feed_url: str):
-    response = requests.get(feed_url, headers=HEADERS, timeout=30)
-    response.raise_for_status()
+    response = get(feed_url, accept=FEED_ACCEPT, timeout=30)
     return feedparser.parse(response.content)
 
 
@@ -26,7 +21,15 @@ def _date(entry) -> str | None:
         if not value:
             continue
         try:
-            return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
+            return parsedate_to_datetime(value).astimezone(UTC).isoformat()
+        except Exception:
+            pass
+        try:
+            # Atom feeds use ISO-8601, which parsedate_to_datetime cannot read.
+            parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=UTC)
+            return parsed.astimezone(UTC).isoformat()
         except Exception:
             pass
     return None

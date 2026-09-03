@@ -1,48 +1,101 @@
 from __future__ import annotations
 
-from datetime import datetime
 from pathlib import Path
 
 
+def _health_section(payload: dict) -> list[str]:
+    source_status = payload.get("source_status", [])
+    media_status = payload.get("media_status", [])
+    errors = [x for x in source_status if x.get("status") == "error"]
+    empties = [x for x in source_status if x.get("status") == "empty"]
+    media_errors = [x for x in media_status if x.get("status") == "error"]
+    no_feed = [x for x in media_status if x.get("status") == "no_feed"]
+
+    lines = [
+        "## Pipeline health",
+        "",
+        f"Evidence sources: **{len(source_status) - len(errors) - len(empties)} ok**, "
+        f"**{len(empties)} empty**, **{len(errors)} error**  ",
+        f"Publisher feeds: **{payload.get('monitored_publisher_count', 0)} working** of "
+        f"**{payload.get('registry_publisher_count', 0)} in the registry** "
+        f"({len(media_errors)} error, {len(no_feed)} no feed found)",
+        "",
+    ]
+    if errors:
+        lines += ["### Evidence-source errors", ""]
+        lines += [f"- **{x.get('source')}** — {x.get('error')}" for x in errors]
+        lines += [""]
+    if empties:
+        lines += [
+            "### Evidence sources that ran but returned nothing",
+            "",
+            "A source here is not necessarily quiet — it is usually a selector or endpoint that has stopped matching.",
+            "",
+        ]
+        lines += [f"- **{x.get('source')}** ({x.get('method')})" for x in empties]
+        lines += [""]
+    return lines
+
+
 def render_digest(payload: dict, limit: int = 25) -> str:
-    generated = payload.get("generated_at", "")
     lines = [
         "# AgingWire research intelligence digest",
         "",
-        f"Generated: {generated}",
+        f"Generated: {payload.get('generated_at', '')}",
         "",
-        f"Evidence candidates: **{payload.get('evidence_count', 0)}**  ",
-        f"Media coverage items: **{payload.get('coverage_count', 0)}**",
-        "",
-        "## Highest-priority story opportunities",
+        f"Evidence candidates: **{payload.get('evidence_count', 0)}** "
+        f"({payload.get('new_evidence_count', 0)} new since the last run)  ",
+        f"Media coverage items: **{payload.get('coverage_count', 0)}** from "
+        f"**{payload.get('monitored_publisher_count', 0)}** working publisher feeds",
         "",
     ]
-    for i, item in enumerate(payload.get("evidence", [])[:limit], 1):
-        score = item.get("score", 0)
-        topics = ", ".join(item.get("topics") or []) or "unclassified"
-        lines += [
-            f"### {i}. {item.get('title', 'Untitled')}",
-            "",
-            f"**Score:** {score}  ",
-            f"**Source:** {item.get('source_id')} ({item.get('source_type')})  ",
-            f"**Topics:** {topics}  ",
-            f"**B2B monitored coverage:** {item.get('b2b_coverage_count', 0)}  ",
-            f"**B2C monitored coverage:** {item.get('b2c_coverage_count', 0)}  ",
-            f"**Source URL:** {item.get('url')}",
-            "",
-        ]
-        angles = item.get("story_angles") or []
-        if angles:
-            lines.append("**Potential angles**")
-            lines.extend([f"- {a}" for a in angles])
-            lines.append("")
 
-    errors = [x for x in payload.get("source_status", []) if x.get("status") == "error"]
-    media_errors = [x for x in payload.get("media_status", []) if x.get("status") == "error"]
-    lines += ["## Pipeline health", "", f"Evidence-source errors: **{len(errors)}**  ", f"Media-feed errors: **{len(media_errors)}**", ""]
-    if errors:
-        lines += ["### Evidence-source errors", ""] + [f"- **{x.get('source')}** — {x.get('error')}" for x in errors] + [""]
+    evidence = payload.get("evidence", [])
+    new_items = [x for x in evidence if (x.get("raw_metadata") or {}).get("is_new")]
+    if new_items:
+        lines += ["## New since the last run", ""]
+        for i, item in enumerate(new_items[:limit], 1):
+            lines += _render_item(i, item)
+
+    lines += ["## Highest-priority story opportunities", ""]
+    for i, item in enumerate(evidence[:limit], 1):
+        lines += _render_item(i, item)
+
+    lines += _health_section(payload)
     return "\n".join(lines)
+
+
+def _render_item(index: int, item: dict) -> list[str]:
+    meta = item.get("raw_metadata") or {}
+    coverage_state = meta.get("coverage_state", "unknown")
+    coverage_label = {
+        "gap": "confirmed gap (beat is monitored, no match found)",
+        "light": "lightly covered",
+        "saturated": "well covered",
+        "unmonitored": "unknown — no monitored publisher covers this beat",
+    }.get(coverage_state, coverage_state)
+    topics = ", ".join(item.get("topics") or []) or "unclassified"
+    published = (item.get("published_at") or "")[:10] or "undated"
+
+    lines = [
+        f"### {index}. {item.get('title', 'Untitled')}",
+        "",
+        f"**Score:** {item.get('score', 0)}/100  ",
+        f"**Source:** {item.get('source_id')} ({item.get('source_type')})  ",
+        f"**Published:** {published}  ",
+        f"**Topics:** {topics}  ",
+        f"**Coverage:** {coverage_label} — B2B {item.get('b2b_coverage_count', 0)}, B2C {item.get('b2c_coverage_count', 0)}  ",
+        f"**Source URL:** {item.get('url')}",
+        "",
+    ]
+    if item.get("summary"):
+        lines += [str(item["summary"])[:600], ""]
+    angles = item.get("story_angles") or []
+    if angles:
+        lines.append("**Potential angles**")
+        lines.extend([f"- {a}" for a in angles])
+        lines.append("")
+    return lines
 
 
 def write_digest(payload: dict, output_dir: str = "outputs") -> Path:

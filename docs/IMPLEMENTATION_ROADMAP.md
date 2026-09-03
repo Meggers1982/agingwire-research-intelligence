@@ -1,5 +1,10 @@
 # Implementation roadmap
 
+Status as of 2026-09-03: phases 0-3, 5 and 7 are implemented, phase 6 partially
+(angles and scoring generate, clustering does not). Phase 1 is API-based rather
+than scraped because BLS and SSA block automated requests. Phase 4 (Crossref/TOC)
+has not started.
+
 ## Phase 0 — foundation
 Keep the existing PubMed digest unchanged. Establish registries, taxonomy and normalized models. Import B2B/B2C databases.
 

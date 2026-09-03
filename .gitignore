@@ -4,3 +4,14 @@ __pycache__/
 .env
 data/cache/
 .DS_Store
+*.zip
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Per-run debugging artifact, not history: 385KB of publisher articles that
+# nothing reads back. Regenerated on every run.
+outputs/coverage-latest.json
+outputs/data/

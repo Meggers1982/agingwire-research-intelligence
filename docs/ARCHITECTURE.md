@@ -5,19 +5,21 @@
 
 ## Pipeline
 ```text
-collectors -> normalization -> dedupe -> enrichment -> evidence grading
-          -> topic classification -> localization analysis -> story scoring
-          -> media-fit scoring -> digest/dashboard/export
+collectors -> normalization -> dedupe (source + normalized title)
+          -> topic classification -> run-state lookup (novelty)
+          -> coverage matching -> monitored-beat check -> weighted 0-100 scoring
+          -> story angles -> digest/dashboard/export
 ```
 
+State lives in `state/seen.json` and `state/feed_discovery.json`, both committed so
+they persist between GitHub Actions runs.
+
 ## Collectors
-- PubMed bridge
-- structured APIs (Census, CMS, BLS)
-- data release monitors
-- RSS
-- report/research release monitors
-- Crossref / journal TOCs
-- investor relations / public filings
+Implemented: senior-research-digest bridge (individual studies), Federal Register,
+BLS Public Data API, CMS provider-data metastore, Census ACS, institutional RSS and
+listing-page monitors. All share `http.py` for user agent, retry and 403-fallback
+behavior. Backlog: Crossref / journal TOCs, investor relations and public filings.
+See `src/agingwire_intel/collectors/README.md`.
 
 ## Separation
 `EvidenceItem` and `CoverageItem` are separate models. Media coverage can lead to evidence, but cannot inherit a high evidence grade by reputation alone.

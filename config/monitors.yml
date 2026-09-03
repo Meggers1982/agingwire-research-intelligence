@@ -1,62 +1,69 @@
 # Runtime monitors. Evidence monitors point to first-party sources whenever possible.
-# method: rss | web | census_acs | senior_digest
+# method: rss | web | census_acs | senior_digest | bls_api | federal_register | cms_datasets
+#
+# Endpoint notes (verified 2026-09-03):
+#   - www.bls.gov and www.ssa.gov return 403 to automated requests even with a
+#     browser user agent, so both are reached through APIs instead of RSS.
+#   - www.cms.gov/newsroom is JavaScript-rendered and publishes no feed; the
+#     provider-data metastore carries the underlying dataset refreshes.
+#   - www.nia.nih.gov/news/all returns 405 to scrapers but publishes RSS.
 
 evidence:
   - id: senior-research-digest
     method: senior_digest
     url: https://raw.githubusercontent.com/Meggers1982/senior-research-digest/main/docs/data/index.json
+    runs: 8
+    per_run: 20
+    priority: P0
+
+  # --- Government / regulatory -------------------------------------------------
+  - id: federal-register
+    method: federal_register
+    days: 30
+    agencies:
+      - social-security-administration
+      - centers-for-medicare-medicaid-services
+      - community-living-administration
+      - housing-and-urban-development-department
+      - consumer-financial-protection-bureau
+      - federal-trade-commission
+    priority: P0
+  - id: bls-api
+    method: bls_api
+    priority: P0
+  - id: cms-provider-data
+    method: cms_datasets
+    days: 45
+    priority: P0
+  - id: census-acs
+    method: census_acs
+    year: 2023
     priority: P0
   - id: acl-news
     method: web
     url: https://acl.gov/news
     priority: P0
   - id: nia-news
-    method: web
-    url: https://www.nia.nih.gov/news/all
-    priority: P0
-  - id: cms-newsroom
-    method: web
-    url: https://www.cms.gov/newsroom
-    priority: P0
-  - id: bls-employment-projections
     method: rss
-    url: https://www.bls.gov/feed/ecopro.rss
+    url: https://www.nia.nih.gov/news/rss.xml
     priority: P0
-  - id: bls-consumer-expenditures
+  - id: cfpb-newsroom
     method: rss
-    url: https://www.bls.gov/feed/cesan.rss
-    priority: P0
-  - id: bls-employee-benefits
-    method: rss
-    url: https://www.bls.gov/feed/ebs2.rss
-    priority: P0
-  - id: bls-occupational-requirements
-    method: rss
-    url: https://www.bls.gov/feed/ors.rss
-    priority: P0
-  - id: ssa-press
-    method: web
-    url: https://www.ssa.gov/news/en/press/releases/
+    url: https://www.consumerfinance.gov/about-us/newsroom/feed/
     priority: P0
   - id: ftc-consumer-protection
     method: rss
     url: https://www.ftc.gov/feeds/press-release-consumer-protection.xml
     priority: P0
-  - id: cfpb-newsroom
-    method: web
-    url: https://www.consumerfinance.gov/about-us/newsroom/
+
+  # --- Nonprofit / think tank --------------------------------------------------
+  - id: kff-feed
+    method: rss
+    url: https://www.kff.org/feed/
     priority: P0
   - id: kff-issue-briefs
     method: web
     url: https://www.kff.org/content-type/issue-brief/
-    priority: P0
-  - id: kff-public-opinion
-    method: web
-    url: https://www.kff.org/topic/public-opinion/
-    priority: P0
-  - id: aarp-public-policy-institute
-    method: web
-    url: https://www.aarp.org/pri/
     priority: P0
   - id: national-alliance-caregiving
     method: web
@@ -74,15 +81,34 @@ evidence:
     method: web
     url: https://www.ebri.org/media
     priority: P0
+
+  # --- Industry ----------------------------------------------------------------
   - id: nic
     method: web
     url: https://www.nic.org/insider/
-    priority: P0
-  - id: census-acs
-    method: census_acs
-    year: 2024
     priority: P0
 
 media:
   b2b_registry: config/media/b2b_publications.csv
   b2c_registry: config/media/b2c_publications.csv
+
+# Sources with no machine-readable route as of 2026-09-03. Kept here so the gap
+# stays visible without a permanently empty monitor polluting the health report.
+# Revisit periodically; each needs a rendered-page fetch or a manual entry path.
+unresolved:
+  - id: aarp-public-policy-institute
+    url: https://www.aarp.org/pri/
+    note: >-
+      The PRI listing is JavaScript-rendered behind a membership shell and
+      publishes no feed. www.aarp.org/feed/ returns the homepage with HTTP 200,
+      not RSS. Needs a headless fetch or a manual report-entry path.
+  - id: ssa-press-releases
+    url: https://www.ssa.gov/news/press/releases/
+    note: >-
+      www.ssa.gov returns 403 to automated requests regardless of user agent.
+      SSA regulatory activity is covered through the federal-register monitor.
+  - id: cms-newsroom
+    url: https://www.cms.gov/newsroom
+    note: >-
+      JavaScript-rendered with no feed. CMS activity is covered through the
+      cms-provider-data and federal-register monitors.

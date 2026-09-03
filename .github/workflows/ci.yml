@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'requirements.txt'
+      - 'pyproject.toml'
+      - '.github/workflows/ci.yml'
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt -e . pytest ruff
+      - name: Lint
+        run: ruff check src tests
+      - name: Test
+        run: python -m pytest -q
+      - name: Validate configuration
+        run: |
+          python - <<'PY'
+          import yaml
+          config = yaml.safe_load(open("config/monitors.yml"))
+          known = {"rss", "web", "census_acs", "senior_digest", "bls_api", "federal_register", "cms_datasets"}
+          ids = set()
+          for monitor in config["evidence"]:
+              assert monitor["id"] not in ids, f"duplicate monitor id: {monitor['id']}"
+              ids.add(monitor["id"])
+              assert monitor["method"] in known, f"unknown method: {monitor['method']}"
+              if monitor["method"] in {"rss", "web", "senior_digest"}:
+                  assert monitor.get("url", "").startswith("http"), f"{monitor['id']} needs a url"
+          yaml.safe_load(open("config/topic_taxonomy.yml"))
+          print(f"{len(config['evidence'])} monitors validated")
+          PY
