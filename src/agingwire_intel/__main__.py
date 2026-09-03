@@ -23,6 +23,11 @@ def main() -> int:
         help="Skip the optional LLM synthesis even when ANTHROPIC_API_KEY is set.",
     )
     parser.add_argument(
+        "--no-enrich",
+        action="store_true",
+        help="Skip the SerpAPI demand and open-web coverage lookups.",
+    )
+    parser.add_argument(
         "--fail-on-source-errors",
         type=int,
         default=None,
@@ -32,7 +37,8 @@ def main() -> int:
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-    payload = run(args.config, args.output_dir, docs_dir=args.docs_dir, state_path=args.state)
+    payload = run(args.config, args.output_dir, docs_dir=args.docs_dir, state_path=args.state,
+                  enrich=not args.no_enrich)
 
     current_id = runs.run_id(payload.get("generated_at", ""))
     previous = runs.load_previous_payload(args.output_dir, current_id)
@@ -56,6 +62,16 @@ def main() -> int:
         print(f"  error  {entry['source']}: {entry.get('error', '')[:160]}")
     for entry in empties:
         print(f"  empty  {entry['source']} ({entry.get('method')})")
+    web = payload.get("web_coverage_status") or {}
+    print(
+        f"SerpAPI: {payload.get('serpapi_calls', 0)} calls · "
+        f"demand {payload.get('demand_source')} "
+        f"({len(payload.get('demand_topics') or {})} topics) · "
+        f"web coverage checked {web.get('checked', 0)}"
+        + (f" · skipped: {web['skipped_reason']}" if web.get("skipped_reason") else "")
+    )
+    for failure in payload.get("serpapi_failures") or []:
+        print(f"  serpapi  {failure['reason']} x{failure['count']}")
     print(f"Synthesis: {synthesis.get('synthesis_mode')}" + (
         f" ({synthesis['synthesis_note']})" if synthesis.get("synthesis_note") else ""
     ))

@@ -33,6 +33,9 @@ jobs:
       # Optional: when present the editorial sections are written by Claude
       # instead of being derived from the run data. Absent is a supported mode.
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Optional: Google Trends demand scoring and Google News coverage checks.
+      # Absent, the run scores demand neutral and skips the news lookups.
+      SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

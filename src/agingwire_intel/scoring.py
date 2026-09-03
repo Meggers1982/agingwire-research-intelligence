@@ -30,6 +30,7 @@ WEIGHTS = {
     "source_quality": 2,
     "coverage_gap": 2,
     "localization": 2,
+    "demand": 2,
     "consumer_utility": 1,
     "b2b_relevance": 1,
     "visualization": 1,
@@ -177,8 +178,13 @@ def score_evidence(
     *,
     monitored: bool = True,
     history: dict | None = None,
+    demand: int = 3,
 ) -> tuple[int, dict[str, int], str]:
-    """Return (0-100 score, components, coverage confidence label)."""
+    """Return (0-100 score, components, coverage confidence label).
+
+    `demand` is search interest for the item's topics, defaulting to neutral so
+    the ranking is unchanged when no Trends snapshot is available.
+    """
     topics = set(item.topics or [])
     gap, coverage_state = _coverage_gap(b2b_coverage, b2c_coverage, monitored)
     components = {
@@ -188,6 +194,7 @@ def score_evidence(
         "source_quality": _source_quality(item),
         "coverage_gap": gap,
         "localization": 5 if sub_national(item.geographies) else 3 if item.localizable else 1,
+        "demand": demand,
         "consumer_utility": _scaled_overlap(topics, CONSUMER_TOPICS),
         "b2b_relevance": _scaled_overlap(topics, B2B_TOPICS),
         "visualization": _visualization(item),

@@ -9,6 +9,8 @@ from urllib.parse import urlparse
 
 import yaml
 
+from agingwire_intel import demand as demand_mod
+from agingwire_intel import serpapi, web_coverage
 from agingwire_intel.collectors.bls import collect_bls_series
 from agingwire_intel.collectors.census import acs_evidence_item
 from agingwire_intel.collectors.cms_datasets import collect_cms_datasets
@@ -150,6 +152,9 @@ def run(
     output_dir: str = "outputs",
     docs_dir: str = "docs",
     state_path: str = "state/seen.json",
+    demand_path: str = "state/demand.json",
+    enrich: bool = True,
+    top_n_web_coverage: int = web_coverage.DEFAULT_TOP_N,
 ) -> dict:
     config = yaml.safe_load(Path(config_path).read_text(encoding="utf-8"))
     evidence = []
@@ -193,6 +198,13 @@ def run(
             unique[key] = item
     evidence = list(unique.values())
 
+    # Search interest is a property of the topic, not the item, so it is
+    # fetched once per run (and cached for a week) rather than per candidate.
+    budget = serpapi.Budget() if enrich else None
+    demand_snapshot, demand_source = (
+        demand_mod.get_demand(demand_path, budget=budget) if enrich else ({}, "disabled")
+    )
+
     ledger = SeenLedger(state_path)
     now = datetime.now(UTC)
     new_count = 0
@@ -205,7 +217,8 @@ def run(
         item.b2c_coverage_count = b2c_n
         monitored = bool(set(item.topics or []) & watched_topics)
         item.score, item.score_components, coverage_state = score_evidence(
-            item, b2b_n, b2c_n, monitored=monitored, history=history
+            item, b2b_n, b2c_n, monitored=monitored, history=history,
+            demand=demand_mod.demand_score(item.topics, demand_snapshot),
         )
         item.story_angles = _angles(item, coverage_state, history["is_new"])
         item.raw_metadata = {
@@ -219,6 +232,12 @@ def run(
     evidence.sort(key=lambda x: (x.score or 0, x.published_at or ""), reverse=True)
     ledger.save()
 
+    # Runs after the sort: only the top of the ranking is worth a news lookup.
+    web_status = (
+        web_coverage.annotate(evidence, top_n=top_n_web_coverage, budget=budget)
+        if enrich else {"checked": 0, "skipped_reason": "enrichment disabled"}
+    )
+
     payload = {
         "generated_at": now.isoformat(),
         "evidence_count": len(evidence),
@@ -227,6 +246,11 @@ def run(
         "monitored_publisher_count": working_feeds,
         "registry_publisher_count": len(media_status),
         "monitored_topics": sorted(watched_topics),
+        "demand_source": demand_source,
+        "demand_topics": demand_snapshot,
+        "web_coverage_status": web_status,
+        "serpapi_calls": budget.used if budget else 0,
+        "serpapi_failures": serpapi.failure_summary(),
         "topic_coverage_counts": dict(sorted(coverage_by_topic.items())),
         "source_status": source_status,
         "media_status": media_status,

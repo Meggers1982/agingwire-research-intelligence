@@ -165,6 +165,37 @@ The pitch, story ideas and trends are **derived from the run's own data** by `sy
 
 When `ANTHROPIC_API_KEY` is present **and the `llm` extra is installed** (`pip install -e ".[llm]"`), `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version and the run's facts as its only input. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch — including *why* it stayed deterministic, so a key set without the SDK installed does not look identical to no key at all. Pass `--no-llm` to force the deterministic path.
 
+## Search demand and open-web coverage (SerpAPI)
+
+Two enrichments, both optional and both off without `SERPAPI_API_KEY`.
+
+**Demand — Google Trends.** `demand.py` measures 12-month search interest for
+every taxonomy topic and feeds a `demand` component into the score. Interest
+moves over weeks, so the snapshot is cached in `state/demand.json` for seven
+days rather than refetched daily; terms are batched five per call, `partial_data`
+points are dropped, and a term below a noise floor is ignored rather than
+reported as a spike. Unknown demand scores neutral, so a missing snapshot never
+reshapes the ranking.
+
+**Open-web coverage — Google News.** `web_coverage.py` asks whether the top-scoring
+items have been reported anywhere, and records `unreported`, `lightly_reported`
+or `widely_reported` on each. This is a **different question** from the registry
+coverage gap:
+
+| Signal | Question |
+| --- | --- |
+| `coverage_state` (registry) | Did the trades I monitor write this? → pitchability |
+| `web_coverage` (Google News) | Has anyone reported this at all? → originality |
+
+They are kept as separate fields on purpose. It runs on the top 15 items only —
+checking all ~190 candidates would cost roughly 5,700 searches a month to answer
+a question that only matters at the top of the ranking. A source's own release
+is not counted as coverage of itself.
+
+One key serves this repo, `senior-research-digest` and `trending-content`, so a
+per-run `Budget` caps the calls; exceeding it degrades the run instead of
+draining the shared quota. Pass `--no-enrich` to skip both lookups.
+
 ## What gets committed
 
 `outputs/latest.json` is the full record. The dated snapshot beside it is trimmed

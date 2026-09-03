@@ -107,6 +107,10 @@
   .badge.gap { background: var(--accent-soft); color: var(--accent); }
   .badge.unmonitored { background: transparent; color: var(--warn); }
   .badge.saturated { background: transparent; color: var(--muted); }
+  .badge.unreported { background: var(--new-soft); color: var(--new); }
+  .badge.reported { background: transparent; color: var(--muted); }
+  .demand-up { color: var(--new); font-weight: 600; }
+  .demand-down { color: var(--muted); }
   .export-btn {
     background: var(--panel); border: 1px solid var(--border); color: var(--text);
     border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 0.85rem; white-space: nowrap;
@@ -306,6 +310,7 @@ function renderIdea(idea, rank) {
         <span>score ${idea.score ?? 0}</span>
         ${idea.is_new ? '<span class="badge new">New</span>' : ""}
         ${coverageBadge(idea)}
+        ${webCoverageBadge(idea)}
       </div>
       <dl class="idea-lines">
         ${lines.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}
@@ -320,6 +325,16 @@ function storyIdeasHtml(run) {
     return renderBlock(run.pitch_ideas_raw);
   }
   return run.story_ideas.map((idea, i) => renderIdea(idea, i + 1)).join("");
+}
+
+function webCoverageBadge(item) {
+  const web = item.web_coverage;
+  if (!web) return "";
+  // Distinct from the registry gap: that asks whether the monitored trades
+  // wrote it, this asks whether anyone did.
+  if (web.state === "unreported") return '<span class="badge unreported">Unreported on the open web</span>';
+  const label = web.outlet_count === 1 ? "1 outlet" : `${web.outlet_count} outlets`;
+  return `<span class="badge reported" title="${esc((web.outlets || []).join(", "))}">Reported · ${label}</span>`;
 }
 
 function coverageBadge(item) {
@@ -459,6 +474,7 @@ function renderItem(item) {
           <div class="tags">
             ${item.is_new ? '<span class="badge new">New</span>' : ""}
             ${coverageBadge(item)}
+            ${webCoverageBadge(item)}
             ${(item.topics || []).map(t => `<span class="tag">${esc(label(t))}</span>`).join("")}
           </div>
           ${item.summary ? `<div class="summary">${esc(item.summary.slice(0, 320))}${item.summary.length > 320 ? "…" : ""}</div>` : ""}
@@ -519,6 +535,11 @@ async function renderMain() {
     (!errors.length && !empties.length) ? '<div class="health-ok">All evidence sources returned items.</div>' : "",
     `<div style="margin-top:8px; color: var(--muted); font-size: 0.82rem;">
       Publisher feeds: ${media.ok || 0} working, ${media.error || 0} error, ${media.no_feed || 0} with no feed found.</div>`,
+    `<div style="margin-top:6px; color: var(--muted); font-size: 0.82rem;">
+      SerpAPI: ${run.serpapi_calls || 0} calls · demand ${esc(run.demand_source || "—")}
+      (${Object.keys(run.demand_topics || {}).length} topics) · web coverage checked
+      ${(run.web_coverage_status || {}).checked || 0}${(run.web_coverage_status || {}).skipped_reason
+        ? " · skipped: " + esc(run.web_coverage_status.skipped_reason) : ""}</div>`,
   ].join("");
 
   const modeNote = run.synthesis_mode === "llm"

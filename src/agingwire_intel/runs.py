@@ -53,6 +53,7 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
             "coverage_state": meta.get("coverage_state"),
             "is_new": bool(meta.get("is_new")),
             "runs_seen": meta.get("runs_seen"),
+            "web_coverage": meta.get("web_coverage"),
         }
 
     return {
@@ -72,6 +73,10 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
         "items": [slim(i) for i in evidence[:items]],
         "source_status": payload.get("source_status", []),
         "media_status_summary": _media_summary(payload.get("media_status", [])),
+        "demand_source": payload.get("demand_source"),
+        "demand_topics": payload.get("demand_topics") or {},
+        "web_coverage_status": payload.get("web_coverage_status") or {},
+        "serpapi_calls": payload.get("serpapi_calls", 0),
         "clusters": synthesis.get("clusters", []),
         "story_ideas": synthesis.get("story_ideas", []),
         "trends_raw": synthesis.get("trends_raw", ""),
