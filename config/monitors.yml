@@ -1,0 +1,72 @@
+# Runtime monitors. Evidence monitors point to first-party sources whenever possible.
+# method: rss | web | census_acs | senior_digest
+
+evidence:
+  - id: senior-research-digest
+    method: senior_digest
+    url: https://raw.githubusercontent.com/Meggers1982/senior-research-digest/main/docs/data/index.json
+    priority: P0
+  - id: acl-news
+    method: web
+    url: https://acl.gov/news
+    priority: P0
+  - id: nia-news
+    method: web
+    url: https://www.nia.nih.gov/news/all
+    priority: P0
+  - id: cms-newsroom
+    method: web
+    url: https://www.cms.gov/newsroom
+    priority: P0
+  - id: bls-news
+    method: web
+    url: https://www.bls.gov/bls/newsrels.htm
+    priority: P0
+  - id: ssa-press
+    method: web
+    url: https://www.ssa.gov/news/press/releases/
+    priority: P0
+  - id: ftc-consumer-protection
+    method: rss
+    url: https://www.ftc.gov/feeds/press-release-consumer-protection.xml
+    priority: P0
+  - id: cfpb-newsroom
+    method: web
+    url: https://www.consumerfinance.gov/about-us/newsroom/
+    priority: P0
+  - id: kff
+    method: web
+    url: https://www.kff.org/latest-content/
+    priority: P0
+  - id: aarp-public-policy-institute
+    method: web
+    url: https://www.aarp.org/pri/
+    priority: P0
+  - id: national-alliance-caregiving
+    method: web
+    url: https://www.caregiving.org/research/
+    priority: P0
+  - id: phi-workforce
+    method: web
+    url: https://www.phinational.org/resource-center/
+    priority: P0
+  - id: center-retirement-research
+    method: web
+    url: https://crr.bc.edu/publications/
+    priority: P0
+  - id: ebri
+    method: web
+    url: https://www.ebri.org/publications/research-publications
+    priority: P0
+  - id: nic
+    method: web
+    url: https://www.nic.org/insider/
+    priority: P0
+  - id: census-acs
+    method: census_acs
+    year: 2024
+    priority: P0
+
+media:
+  b2b_registry: config/media/b2b_publications.csv
+  b2c_registry: config/media/b2c_publications.csv
