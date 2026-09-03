@@ -4,7 +4,6 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 import json
-import re
 import yaml
 
 from agingwire_intel.collectors.census import acs_evidence_item
@@ -13,10 +12,6 @@ from agingwire_intel.collectors.senior_digest import collect_senior_digest
 from agingwire_intel.collectors.web import collect_link_page
 from agingwire_intel.media import collect_registry
 from agingwire_intel.scoring import score_evidence
-
-
-def _slug(value: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")[:120]
 
 
 def _coverage_counts(item, coverage) -> tuple[int, int]:
@@ -77,7 +72,6 @@ def run(config_path: str = "config/monitors.yml", output_dir: str = "outputs") -
     b2c, b2c_status = collect_registry(media_cfg.get("b2c_registry", "config/media/b2c_publications.csv"), "b2c")
     coverage = b2b + b2c
 
-    # URL-level dedupe; first-party collector order wins.
     unique = {}
     for item in evidence:
         unique.setdefault(item.url, item)
@@ -101,9 +95,13 @@ def run(config_path: str = "config/monitors.yml", output_dir: str = "outputs") -
         "evidence": [asdict(x) for x in evidence],
         "coverage": [asdict(x) for x in coverage],
     }
+    text = json.dumps(payload, indent=2, ensure_ascii=False)
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
     date = now.strftime("%Y-%m-%d")
-    (out / "latest.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    (out / f"{date}.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    (out / "latest.json").write_text(text, encoding="utf-8")
+    (out / f"{date}.json").write_text(text, encoding="utf-8")
+    docs_data = Path("docs/data")
+    docs_data.mkdir(parents=True, exist_ok=True)
+    (docs_data / "latest.json").write_text(text, encoding="utf-8")
     return payload
