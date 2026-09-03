@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T20:10:40.136104+00:00",
+  "generated_at": "2026-09-03T20:15:33.183226+00:00",
   "evidence_count": 170,
   "new_evidence_count": 0,
   "coverage_count": 1036,
@@ -27,14 +27,153 @@
     "transportation",
     "workforce"
   ],
-  "demand_source": "unavailable (SERPAPI_API_KEY is not set)",
-  "demand_topics": {},
-  "web_coverage_status": {
-    "checked": 0,
-    "skipped_reason": "SERPAPI_API_KEY is not set"
+  "demand_source": "fetched",
+  "demand_topics": {
+    "assisted_living": {
+      "recent_mean": 92.1,
+      "prior_mean": 89.0,
+      "change_pct": 3.5,
+      "peak": 100.0,
+      "term": "assisted living"
+    },
+    "cardiovascular_disease": {
+      "recent_mean": 12.2,
+      "prior_mean": 20.1,
+      "change_pct": -39.1,
+      "peak": 28.0,
+      "term": "cardiovascular disease"
+    },
+    "caregiving": {
+      "recent_mean": 5.4,
+      "prior_mean": 6.6,
+      "change_pct": -18.9,
+      "peak": 8.0,
+      "term": "caregiving"
+    },
+    "chronic_pain": {
+      "recent_mean": 15.5,
+      "prior_mean": 23.4,
+      "change_pct": -33.7,
+      "peak": 30.0,
+      "term": "chronic pain"
+    },
+    "cognitive_decline": {
+      "recent_mean": 4.6,
+      "prior_mean": 4.5,
+      "change_pct": 2.8,
+      "peak": 12.0,
+      "term": "cognitive decline"
+    },
+    "dementia": {
+      "recent_mean": 82.0,
+      "prior_mean": 90.4,
+      "change_pct": -9.3,
+      "peak": 100.0,
+      "term": "dementia"
+    },
+    "depression_mental_health": {
+      "recent_mean": 19.1,
+      "prior_mean": 26.0,
+      "change_pct": -26.4,
+      "peak": 34.0,
+      "term": "depression"
+    },
+    "falls": {
+      "recent_mean": 89.9,
+      "prior_mean": 91.4,
+      "change_pct": -1.6,
+      "peak": 100.0,
+      "term": "falls"
+    },
+    "hearing_loss": {
+      "recent_mean": 56.0,
+      "prior_mean": 83.8,
+      "change_pct": -33.1,
+      "peak": 100.0,
+      "term": "hearing loss"
+    },
+    "housing": {
+      "recent_mean": 36.4,
+      "prior_mean": 37.9,
+      "change_pct": -4.0,
+      "peak": 43.0,
+      "term": "senior housing"
+    },
+    "incontinence": {
+      "recent_mean": 15.1,
+      "prior_mean": 22.1,
+      "change_pct": -31.6,
+      "peak": 26.0,
+      "term": "urinary incontinence"
+    },
+    "loneliness_social_connection": {
+      "recent_mean": 28.0,
+      "prior_mean": 57.2,
+      "change_pct": -51.1,
+      "peak": 80.0,
+      "term": "loneliness"
+    },
+    "medicare_medicaid": {
+      "recent_mean": 46.4,
+      "prior_mean": 44.2,
+      "change_pct": 4.8,
+      "peak": 65.0,
+      "term": "Medicare"
+    },
+    "nutrition": {
+      "recent_mean": 53.4,
+      "prior_mean": 86.6,
+      "change_pct": -38.4,
+      "peak": 100.0,
+      "term": "nutrition"
+    },
+    "oral_health": {
+      "recent_mean": 19.9,
+      "prior_mean": 46.6,
+      "change_pct": -57.4,
+      "peak": 60.0,
+      "term": "oral health"
+    },
+    "osteoporosis_bone_health": {
+      "recent_mean": 59.8,
+      "prior_mean": 75.1,
+      "change_pct": -20.5,
+      "peak": 100.0,
+      "term": "osteoporosis"
+    },
+    "palliative_hospice": {
+      "recent_mean": 35.2,
+      "prior_mean": 42.0,
+      "change_pct": -16.1,
+      "peak": 47.0,
+      "term": "palliative care"
+    },
+    "sleep": {
+      "recent_mean": 71.0,
+      "prior_mean": 87.5,
+      "change_pct": -18.9,
+      "peak": 100.0,
+      "term": "sleep"
+    },
+    "vision_loss": {
+      "recent_mean": 36.4,
+      "prior_mean": 81.6,
+      "change_pct": -55.4,
+      "peak": 100.0,
+      "term": "vision loss"
+    }
   },
-  "serpapi_calls": 0,
-  "serpapi_failures": [],
+  "web_coverage_status": {
+    "checked": 13,
+    "top_n": 15
+  },
+  "serpapi_calls": 23,
+  "serpapi_failures": [
+    {
+      "reason": "google_news: Google News hasn't returned any results for this query.",
+      "count": 2
+    }
+  ],
   "topic_coverage_counts": {
     "age_tech": 7,
     "ageism_work": 1,
@@ -49,7 +188,7 @@
     "falls": 9,
     "financial_security": 11,
     "fraud_scams": 2,
-    "housing": 54,
+    "housing": 55,
     "incontinence": 1,
     "loneliness_social_connection": 4,
     "long_term_care": 46,
@@ -1162,8 +1301,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Medical Equipment Suppliers",
+          "outlet_count": 18,
+          "outlets": [
+            "American Hospital Association",
+            "Fortune Business Insights",
+            "Precedence Research",
+            "Telehealth.org",
+            "TradingView",
+            "MarketsandMarkets",
+            "citybiz",
+            "Newswire.com",
+            "barchart.com",
+            "Insurance Business"
+          ],
+          "articles": [
+            {
+              "title": "CMS moratorium on durable medical equipment supplier enrollment expires",
+              "outlet": "American Hospital Association",
+              "link": "https://www.aha.org/news/headline/2026-08-28-cms-moratorium-durable-medical-equipment-supplier-enrollment-expires",
+              "date": "08/28/2026, 07:39 PM, +0000 UTC"
+            },
+            {
+              "title": "Medical Supplies Market Size, Share, Industry Report, 2034",
+              "outlet": "Fortune Business Insights",
+              "link": "https://www.fortunebusinessinsights.com/medical-supplies-market-115906",
+              "date": "08/10/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Medical Supplies Market Size to Hit USD 223.22 Bn by 2035",
+              "outlet": "Precedence Research",
+              "link": "https://www.precedenceresearch.com/medical-supplies-market",
+              "date": "08/05/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "CMS urges providers to review glucose monitor billing after $278.5M in improper Medicare",
+              "outlet": "Telehealth.org",
+              "link": "https://telehealth.org/news/cms-urges-providers-to-review-glucose-monitor-billing-after-278-5m-in-improper-medicare/",
+              "date": "08/31/2026, 08:00 AM, +0000 UTC"
+            },
+            {
+              "title": "UFP Technologies Targets 12%-18% Growth as Medical Device M&A Pipeline Builds",
+              "outlet": "TradingView",
+              "link": "https://es.tradingview.com/news/marketbeat:30a2e48f6094b:0-ufp-technologies-targets-12-18-growth-as-medical-device-m-a-pipeline-builds/",
+              "date": "08/28/2026, 10:01 PM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1220,8 +1408,54 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Medicare Claims Quality Measures",
+          "outlet_count": 7,
+          "outlets": [
+            "Bipartisan Policy Center",
+            "MobiHealthNews",
+            "McKnight's Long-Term Care News",
+            "American Medical Association | AMA",
+            "Business Wire",
+            "Newsweek Rankings",
+            "Mirage News"
+          ],
+          "articles": [
+            {
+              "title": "BPC’s Comment on the CMS 2027 Hospital Outpatient Prospective Payment System (OPPS) Proposed Rule",
+              "outlet": "Bipartisan Policy Center",
+              "link": "https://bipartisanpolicy.org/testimony-letter/bpcs-comment-on-the-cms-2027-hospital-outpatient-prospective-payment-system-opps-proposed-rule/",
+              "date": "08/31/2026, 07:34 PM, +0000 UTC"
+            },
+            {
+              "title": "Komodo Health, NCQA partner to accelerate healthcare quality measurement",
+              "outlet": "MobiHealthNews",
+              "link": "https://www.mobihealthnews.com/news/komodo-health-ncqa-partner-accelerate-healthcare-quality-measurement",
+              "date": "08/28/2026, 12:00 PM, +0000 UTC"
+            },
+            {
+              "title": "What advance care planning’s return to nursing home quality measure forecast means",
+              "outlet": "McKnight's Long-Term Care News",
+              "link": "https://www.mcknights.com/news/advance-care-plannings-return-to-nursing-home-quality-measure-forecast/",
+              "date": "08/25/2026, 06:49 AM, +0000 UTC"
+            },
+            {
+              "title": "4 huge Medicare pay reforms are part of new bipartisan House bill",
+              "outlet": "American Medical Association | AMA",
+              "link": "https://www.ama-assn.org/practice-management/medicare-medicaid/4-huge-medicare-pay-reforms-are-part-new-bipartisan-house",
+              "date": "08/11/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "ECLAT Health Solutions to Showcase Unified Risk and Quality Review at RISE West 2026",
+              "outlet": "Business Wire",
+              "link": "https://www.businesswire.com/news/home/20260831867653/en/ECLAT-Health-Solutions-to-Showcase-Unified-Risk-and-Quality-Review-at-RISE-West-2026",
+              "date": "08/31/2026, 03:01 PM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1278,8 +1512,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Skilled Nursing Facility Quality Reporting Provider Data",
+          "outlet_count": 10,
+          "outlets": [
+            "Centers for Disease Control and Prevention | CDC (.gov)",
+            "Skilled Nursing News",
+            "McKnight's Long-Term Care News",
+            "AHCA/NCAL",
+            "McKnight's Senior Living",
+            "Ventura County Star",
+            "World Health Organization (WHO)",
+            "money.com",
+            "TradingView",
+            "Fierce Healthcare"
+          ],
+          "articles": [
+            {
+              "title": "National Healthcare Safety Network COVID-19 Data Dashboard",
+              "outlet": "Centers for Disease Control and Prevention | CDC (.gov)",
+              "link": "https://www.cdc.gov/nhsn/ltc/ltc-report-overview.html",
+              "date": "08/27/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Staffing Hours, Overtime and Agency Use Shape Nursing Home Quality",
+              "outlet": "Skilled Nursing News",
+              "link": "https://skillednursingnews.com/2026/08/staffing-hours-overtime-and-agency-use-shape-nursing-home-quality/",
+              "date": "08/31/2026, 10:11 PM, +0000 UTC"
+            },
+            {
+              "title": "Ventilator use, poor nursing home care quality linked to C. auris fungus transmission, study finds",
+              "outlet": "McKnight's Long-Term Care News",
+              "link": "https://www.mcknights.com/news/ventilator-use-poor-nursing-home-care-quality-linked-to-c-auris-fungus-transmission-study-finds/",
+              "date": "08/27/2026, 09:01 PM, +0000 UTC"
+            },
+            {
+              "title": "Hospice Exclusion Correction Announced for the Long-Stay Antipsychotic Measure",
+              "outlet": "AHCA/NCAL",
+              "link": "https://www.ahcancal.org/News-and-Communications/Blog/Pages/Hospice-Exclusion-Correction-Announced-for-the-Long-Stay-Antipsychotic-Measure-.aspx",
+              "date": "09/01/2026, 06:42 PM, +0000 UTC"
+            },
+            {
+              "title": "How senior living data are shaping national efforts to address dementia care",
+              "outlet": "McKnight's Senior Living",
+              "link": "https://www.mcknightsseniorliving.com/news/data-cooperative-national-efforts-to-address-dementia-care-acha-ncal/",
+              "date": "08/31/2026, 09:22 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1336,8 +1619,31 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Hospice care National CAHPS Hospice Survey Data",
+          "outlet_count": 2,
+          "outlets": [
+            "Aspirus Health",
+            "ehospice"
+          ],
+          "articles": [
+            {
+              "title": "LeRoyer Hospice in Antigo Earns 2025 SHPBest™ “Superior Performer” National Award for Outstanding Caregiver Experience",
+              "outlet": "Aspirus Health",
+              "link": "https://www.aspirus.org/press-room/leroyer-hospice-in-antigo-earns-2025-shpbest-super-5180",
+              "date": "09/02/2026, 11:31 AM, +0000 UTC"
+            },
+            {
+              "title": "Comparing Hospices: the US and Canada",
+              "outlet": "ehospice",
+              "link": "https://ehospice.com/canada_english_posts/comparing-hospices-the-us-and-canada/",
+              "date": "08/24/2026, 08:09 PM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
       }
     },
     {
@@ -1394,7 +1700,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -1451,8 +1757,54 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "National Downloadable File",
+          "outlet_count": 7,
+          "outlets": [
+            "Truist Newsroom",
+            "National Centers for Coastal Ocean Science (.gov)",
+            "National Trust for Historic Preservation",
+            "National Park Service (.gov)",
+            "Hartford Courant",
+            "Deployant :",
+            "mediamatters.org"
+          ],
+          "articles": [
+            {
+              "title": "Tory Sherman joins Truist Wealth as Wealth Brokerage national director",
+              "outlet": "Truist Newsroom",
+              "link": "https://media.truist.com/2026-09-03-Tory-Sherman-joins-Truist-Wealth-as-Wealth-Brokerage-national-director",
+              "date": "09/03/2026, 04:57 PM, +0000 UTC"
+            },
+            {
+              "title": "A Legacy of Coastal Health: Celebrating 40 Years of NOAA’s National Mussel Watch Program",
+              "outlet": "National Centers for Coastal Ocean Science (.gov)",
+              "link": "https://coastalscience.noaa.gov/news/a-legacy-of-coastal-health-celebrating-40-years-of-noaas-national-mussel-watch-program/",
+              "date": "08/31/2026, 12:24 PM, +0000 UTC"
+            },
+            {
+              "title": "White House Ballroom Proposal",
+              "outlet": "National Trust for Historic Preservation",
+              "link": "https://savingplaces.org/white-house",
+              "date": "08/31/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Photo (U.S. National Park Service)",
+              "outlet": "National Park Service (.gov)",
+              "link": "https://www.nps.gov/media/photo/view.htm?id=1D50A157-5466-4A91-83A6-E9A95EF613C4",
+              "date": "08/22/2026, 12:48 AM, +0000 UTC"
+            },
+            {
+              "title": "Lawsuit seeks to ban Trump Media from charging for early access to president’s posts on US policy",
+              "outlet": "Hartford Courant",
+              "link": "https://www.courant.com/2026/08/12/trump-media-lawsuit/",
+              "date": "08/12/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1508,7 +1860,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -1564,8 +1916,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Utilization Data",
+          "outlet_count": 16,
+          "outlets": [
+            "Williams Mullen",
+            "Centers for Disease Control and Prevention | CDC (.gov)",
+            "Yahoo Finance",
+            "Lockton",
+            "jetro.go.jp",
+            "Insurance Business",
+            "IAPP",
+            "inc.com",
+            "Aviation Week",
+            "healthsystemtracker.org"
+          ],
+          "articles": [
+            {
+              "title": "OFCCP Issues Final Rule Removing Disability Tracking and Utilization Goals",
+              "outlet": "Williams Mullen",
+              "link": "https://www.williamsmullen.com/insights/news/legal-news/ofccp-issues-final-rule-removing-disability-tracking-and-utilization-goals",
+              "date": "08/26/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Mental Health-Related Emergency Department Visits",
+              "outlet": "Centers for Disease Control and Prevention | CDC (.gov)",
+              "link": "https://www.cdc.gov/mental-health/about-data/emergency-department-visits.html",
+              "date": "08/26/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "onsemi Boosts Utilization as AI Data Center Revenue Set to More Than Double",
+              "outlet": "Yahoo Finance",
+              "link": "https://finance.yahoo.com/technology/ai/articles/onsemi-boosts-utilization-ai-data-040156881.html",
+              "date": "08/15/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Texas employers are paying more for healthcare, even as utilization stabilizes",
+              "outlet": "Lockton",
+              "link": "https://global.lockton.com/us/en/news-insights/texas-employers-are-paying-more-for-healthcare-even-as-utilization-stabilizes",
+              "date": "09/01/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "JETRO Selects Five Japanese Healthcare Startups for U.S. Clinical Evidence Development Program",
+              "outlet": "jetro.go.jp",
+              "link": "https://www.jetro.go.jp/usa/topics/jetro_selects_five_startups_for_j-starx_us_evidence_program.html",
+              "date": "08/10/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1620,8 +2021,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Patient Reported Outcomes Hospital",
+          "outlet_count": 18,
+          "outlets": [
+            "Newsweek",
+            "Hospital Pharmacy Europe",
+            "hospitalhealthcare.com",
+            "Centers for Disease Control and Prevention | CDC (.gov)",
+            "Nature",
+            "CT Mirror",
+            "Florida Hospital News and Healthcare Report",
+            "Renal and Urology News",
+            "Pharmacy Times",
+            "Health Usnews"
+          ],
+          "articles": [
+            {
+              "title": "Patient-Reported Outcome Measurements (PROMs) Implementation 2027 Survey",
+              "outlet": "Newsweek",
+              "link": "https://www.newsweek.com/patient-reported-outcome-measurements-proms-implementation-2027-survey-11203954",
+              "date": "08/07/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Digital patient-reported measures remain underused in hospital pharmacy, Spanish study finds",
+              "outlet": "Hospital Pharmacy Europe",
+              "link": "https://hospitalpharmacyeurope.com/pharmacy-practice/health-technology/digital-patient-reported-measures-proms-prems-remain-underused-in-hospital-pharmacy-spanish-study-finds/",
+              "date": "08/28/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Single-item measure could strengthen patient-reported side effect monitoring in rheumatology trials",
+              "outlet": "hospitalhealthcare.com",
+              "link": "https://hospitalhealthcare.com/specialisms/rheumatology/single-item-measure-could-strengthen-patient-reported-side-effect-monitoring-in-rheumatology-trials/",
+              "date": "08/27/2026, 10:36 AM, +0000 UTC"
+            },
+            {
+              "title": "Hospital Sepsis Management and Practices: Findings from the 2025 NHSN Annual Survey",
+              "outlet": "Centers for Disease Control and Prevention | CDC (.gov)",
+              "link": "https://www.cdc.gov/sepsis/hcp/core-elements/reports-2025.html",
+              "date": "08/17/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Inter-hospital ICU-to-ICU transfer of critically ill COVID-19 patients is not associated with increased mortality: a systematic review with exploratory meta-analysis",
+              "outlet": "Nature",
+              "link": "https://www.nature.com/articles/s41598-026-62965-7",
+              "date": "08/08/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1676,8 +2126,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Fire Safety Deficiencies",
+          "outlet_count": 13,
+          "outlets": [
+            "The Express Tribune",
+            "safety4sea",
+            "The News Pakistan",
+            "The Isle of Thanet News",
+            "Fire Safety Matters",
+            "Medical Dialogues",
+            "AD HOC NEWS",
+            "Brighter Kashmir",
+            "Devdiscourse",
+            "The Times of India"
+          ],
+          "articles": [
+            {
+              "title": "Three buildings sealed over fire hazard",
+              "outlet": "The Express Tribune",
+              "link": "https://tribune.com.pk/story/2626640/three-buildings-sealed-over-fire-hazard",
+              "date": "08/31/2026, 01:42 AM, +0000 UTC"
+            },
+            {
+              "title": "RiSK4SEA PSI Outlook | August 2026: Diverging PSC enforcement recovery leaves bulkers under continued pressure",
+              "outlet": "safety4sea",
+              "link": "https://safety4sea.com/cm-risk4sea-psi-outlook-august-2026/",
+              "date": "08/05/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "3 major Blue Area buildings sealed over fire safety violation",
+              "outlet": "The News Pakistan",
+              "link": "https://www.thenews.pk/print/1434824-3-major-blue-area-buildings-sealed-over-fire-safety-violation",
+              "date": "08/30/2026, 07:00 PM, +0000 UTC"
+            },
+            {
+              "title": "Fire service deficiency notice served and further action considered over structural failures at Margate’s Arlington House",
+              "outlet": "The Isle of Thanet News",
+              "link": "https://theisleofthanetnews.com/2026/08/11/fire-service-deficiency-notice-served-and-further-action-considered-over-structural-failures-at-margates-arlington-house/",
+              "date": "08/11/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "‘Responsible Person’ at Brighton HMO prosecuted by East Sussex FRS",
+              "outlet": "Fire Safety Matters",
+              "link": "https://www.fsmatters.com/Responsible-Person-at-Brighton-HMO-prosecuted",
+              "date": "08/17/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1732,8 +2231,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Health Deficiencies",
+          "outlet_count": 19,
+          "outlets": [
+            "DVM360",
+            "Virginia Mercury",
+            "Cedars-Sinai",
+            "LebTown",
+            "sciencedaily.com",
+            "Ventura County Star",
+            "CBS News",
+            "Runner's World",
+            "The Register-Guard",
+            "NutraIngredients.com"
+          ],
+          "articles": [
+            {
+              "title": "Revival Animal Health recalls feline milk replacers after testing finds nutrient deficiencies",
+              "outlet": "DVM360",
+              "link": "https://www.dvm360.com/view/revival-animal-health-recalls-feline-milk-replacers-after-testing-finds-nutrient-deficiencies",
+              "date": "08/31/2026, 08:51 PM, +0000 UTC"
+            },
+            {
+              "title": "Va. health dept. improves nursing home inspection backlog, reforms sanction criteria for facilities",
+              "outlet": "Virginia Mercury",
+              "link": "https://virginiamercury.com/2026/08/21/va-health-dept-improves-nursing-home-inspection-backlog-reforms-sanction-criteria-for-facilities/",
+              "date": "08/21/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Realizing the Promise of Health Equity",
+              "outlet": "Cedars-Sinai",
+              "link": "https://www.cedars-sinai.org/stories-and-insights/advancing-our-mission/realizing-the-promise-of-health-equity",
+              "date": "08/24/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Cornwall Manor’s Health Center receives deficiency-free inspection from PA DOH",
+              "outlet": "LebTown",
+              "link": "https://lebtown.com/2026/08/25/cornwall-manors-health-center-receives-deficiency-free-inspection-from-pa-doh/",
+              "date": "08/25/2026, 09:15 AM, +0000 UTC"
+            },
+            {
+              "title": "This common vitamin deficiency becomes far more dangerous when paired with belly fat",
+              "outlet": "sciencedaily.com",
+              "link": "https://www.sciencedaily.com/releases/2026/08/260813045554.htm",
+              "date": "08/13/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1788,8 +2336,38 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "MDS Quality Measures",
+          "outlet_count": 3,
+          "outlets": [
+            "Skilled Nursing News",
+            "Nature",
+            "Cureus"
+          ],
+          "articles": [
+            {
+              "title": "Mission Health, Monarch, Gurwin Execs Weigh In on Hiring Drivers in the Nursing Home Sector",
+              "outlet": "Skilled Nursing News",
+              "link": "https://skillednursingnews.com/2026/08/mission-health-monarch-gurwin-execs-weigh-in-on-hiring-drivers-in-the-nursing-home-sector/",
+              "date": "08/28/2026, 10:00 PM, +0000 UTC"
+            },
+            {
+              "title": "Associations between diet quality, epigenetic aging and epigenome in two population-based cohorts",
+              "outlet": "Nature",
+              "link": "https://www.nature.com/articles/s41467-026-77064-4",
+              "date": "08/29/2026, 03:07 PM, +0000 UTC"
+            },
+            {
+              "title": "Monitoring Real-World Function With an Oura Ring Following Bilateral Subthalamic Nucleus Deep Brain Stimulation for Parkinson’s Disease",
+              "outlet": "Cureus",
+              "link": "https://www.cureus.com/articles/525436-monitoring-real-world-function-with-an-oura-ring-following-bilateral-subthalamic-nucleus-deep-brain-stimulation-for-parkinsons-disease",
+              "date": "08/29/2026, 06:59 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1844,8 +2422,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Ownership",
+          "outlet_count": 19,
+          "outlets": [
+            "Politico",
+            "WSJ",
+            "thehill.com",
+            "MLB.com",
+            "Fortune",
+            "cbssports.com",
+            "ESPN",
+            "NBC News",
+            "TribLIVE.com",
+            "multifamilydive.com"
+          ],
+          "articles": [
+            {
+              "title": "FCC plows ahead with scrapping TV ownership cap",
+              "outlet": "Politico",
+              "link": "https://www.politico.com/news/2026/08/06/fcc-plows-ahead-with-scrapping-tv-ownership-cap-01027287",
+              "date": "08/06/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "FCC Votes to Repeal National TV Ownership Limit",
+              "outlet": "WSJ",
+              "link": "https://www.wsj.com/business/media/fcc-votes-to-repeal-national-tv-ownership-limit-750c28dc",
+              "date": "08/07/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "FCC votes to eliminate broadcast ownership rule",
+              "outlet": "thehill.com",
+              "link": "https://thehill.com/media/6014469-fcc-national-broadcast-ownership-cap-elimination/",
+              "date": "08/06/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Everything you need to know about Angels' sale",
+              "outlet": "MLB.com",
+              "link": "https://www.mlb.com/news/angels-team-sale-ownership-change-faq",
+              "date": "09/03/2026, 01:59 AM, +0000 UTC"
+            },
+            {
+              "title": "Uber exec calls car ownership ‘the most inefficient asset’ and predicts the end of driver's licenses",
+              "outlet": "Fortune",
+              "link": "https://fortune.com/2026/08/31/uber-president-coo-andrew-macdonald-future-with-autonomous-vehicles-no-car-ownership-or-drivers-licenses-career-success/",
+              "date": "08/31/2026, 03:38 PM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1900,8 +2527,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Penalties",
+          "outlet_count": 20,
+          "outlets": [
+            "NBA.com",
+            "Maryland Matters",
+            "racerxonline.com",
+            "reuters.com",
+            "The Colorado Sun",
+            "Colorado Politics",
+            "Modern Healthcare",
+            "epi.org",
+            "Washington State Standard",
+            "KCRA"
+          ],
+          "articles": [
+            {
+              "title": "NBA announces penalties and findings arising from investigation of LA Clippers and Kawhi Leonard",
+              "outlet": "NBA.com",
+              "link": "https://www.nba.com/news/nba-investigation-findings-la-clippers",
+              "date": "09/02/2026, 08:51 PM, +0000 UTC"
+            },
+            {
+              "title": "Maryland Transportation Authority failed to collect $818.1 million in tolls, penalties",
+              "outlet": "Maryland Matters",
+              "link": "https://marylandmatters.org/2026/09/01/maryland-transportation-authority-failed-to-collect-818-1-million-in-tolls-penalties/",
+              "date": "09/02/2026, 01:03 AM, +0000 UTC"
+            },
+            {
+              "title": "2026 Unadilla National Penalties: Deegan, DiFrancesco, Davies, More Penalized Rider License Points",
+              "outlet": "racerxonline.com",
+              "link": "https://racerxonline.com/2026/08/17/2026-unadilla-national-penalties-deegan-difrancesco-davies-more-penalized-rider-license-points",
+              "date": "08/17/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "UK steps up pressure on Russian sanctions evasion network, doubles penalties for breaches",
+              "outlet": "reuters.com",
+              "link": "https://www.reuters.com/business/finance/uk-steps-up-pressure-russian-sanctions-evasion-network-doubles-penalties-2026-08-31/",
+              "date": "09/01/2026, 01:38 PM, +0000 UTC"
+            },
+            {
+              "title": "A new Colorado law tougher on people who feed bears took effect this week. Here's what it does.",
+              "outlet": "The Colorado Sun",
+              "link": "https://coloradosun.com/2026/08/14/feeding-bears-illegal-colorado-penalties/",
+              "date": "08/14/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -1956,8 +2632,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
+        "runs_seen": 17,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Provider Information",
+          "outlet_count": 17,
+          "outlets": [
+            "Annenberg Public Policy Center",
+            "Centers for Disease Control and Prevention | CDC (.gov)",
+            "New York State Department of Health (.gov)",
+            "Salem Reporter",
+            "dotmed.com",
+            "The National Law Review",
+            "HealthExec",
+            "Inquirer.com",
+            "The Daily Pennsylvanian",
+            "PR Newswire"
+          ],
+          "articles": [
+            {
+              "title": "Public Confidence in One’s Own Healthcare Provider Remains High",
+              "outlet": "Annenberg Public Policy Center",
+              "link": "https://www.annenbergpublicpolicycenter.org/public-confidence-in-ones-own-healthcare-provider-remains-high/",
+              "date": "08/31/2026, 12:15 PM, +0000 UTC"
+            },
+            {
+              "title": "Clinical Overview of Clade I and Clade II Monkeypox",
+              "outlet": "Centers for Disease Control and Prevention | CDC (.gov)",
+              "link": "https://www.cdc.gov/monkeypox/hcp/clinical-overview/index.html",
+              "date": "08/19/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Medical Aid in Dying",
+              "outlet": "New York State Department of Health (.gov)",
+              "link": "https://www.health.ny.gov/health_care/medical_aid_in_dying/",
+              "date": "08/05/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Salem updates resource list on camping notices",
+              "outlet": "Salem Reporter",
+              "link": "https://www.salemreporter.com/2026/08/10/salem-updates-resource-list-on-camping-notices/",
+              "date": "08/10/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Why provider data accuracy is the $17 billion opportunity healthcare leaders are missing",
+              "outlet": "dotmed.com",
+              "link": "https://www.dotmed.com/news/story/66561",
+              "date": "08/14/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -2012,7 +2737,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -2068,7 +2793,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -2124,7 +2849,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -2180,7 +2905,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -2248,7 +2973,7 @@
         "data_file": "outputs/data/acs-2023-state-profile.json",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:01:01.274675+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
@@ -2299,53 +3024,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "rand-research",
-      "title": "Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care",
-      "url": "https://www.rand.org/pubs/external_publications/EP71470.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T08:15:00+00:00",
-      "topics": [
-        "age_tech",
-        "caregiving",
-        "palliative_hospice"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 63,
-      "score_components": {
-        "priority": 5,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -2396,142 +3075,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "bls-api",
-      "title": "BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562160001",
-      "source_type": "government_api",
-      "published_at": "2026-07-01T00:00:00+00:00",
-      "topics": [
-        "workforce",
-        "caregiving",
-        "aging_in_place"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "BLS Public Data API v2, series CES6562160001; latest observation and year-over-year change",
-      "evidence_grade": "A",
-      "summary": null,
-      "key_findings": [
-        "July 2026: 1,886.10 thousands of jobs",
-        "Year-over-year change: +4.8%"
-      ],
-      "localizable": false,
-      "score": 63,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 4,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "series_id": "CES6562160001",
-        "units": "thousands of jobs",
-        "latest_value": 1886.1,
-        "yoy_change_pct": 4.8,
-        "observations": [
-          {
-            "year": "2026",
-            "period": "M07",
-            "periodName": "July",
-            "value": "1886.1"
-          },
-          {
-            "year": "2026",
-            "period": "M06",
-            "periodName": "June",
-            "value": "1881.5"
-          },
-          {
-            "year": "2026",
-            "period": "M05",
-            "periodName": "May",
-            "value": "1878.0"
-          },
-          {
-            "year": "2026",
-            "period": "M04",
-            "periodName": "April",
-            "value": "1868.0"
-          },
-          {
-            "year": "2026",
-            "period": "M03",
-            "periodName": "March",
-            "value": "1858.5"
-          },
-          {
-            "year": "2026",
-            "period": "M02",
-            "periodName": "February",
-            "value": "1848.7"
-          },
-          {
-            "year": "2026",
-            "period": "M01",
-            "periodName": "January",
-            "value": "1847.0"
-          },
-          {
-            "year": "2025",
-            "period": "M12",
-            "periodName": "December",
-            "value": "1830.3"
-          },
-          {
-            "year": "2025",
-            "period": "M11",
-            "periodName": "November",
-            "value": "1829.1"
-          },
-          {
-            "year": "2025",
-            "period": "M10",
-            "periodName": "October",
-            "value": "1823.5"
-          },
-          {
-            "year": "2025",
-            "period": "M09",
-            "periodName": "September",
-            "value": "1813.5"
-          },
-          {
-            "year": "2025",
-            "period": "M08",
-            "periodName": "August",
-            "value": "1806.3"
-          },
-          {
-            "year": "2025",
-            "period": "M07",
-            "periodName": "July",
-            "value": "1799.2"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -2666,51 +3210,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "justice-in-aging",
-      "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
-      "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T18:16:11+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 62,
-      "score_components": {
-        "priority": 5,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -2844,141 +3344,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "bls-api",
-      "title": "BLS: Home health care services average hourly earnings, June 2026 — 27.91 dollars per hour (+1.2% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562160003",
-      "source_type": "government_api",
-      "published_at": "2026-06-01T00:00:00+00:00",
-      "topics": [
-        "workforce",
-        "caregiving"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "BLS Public Data API v2, series CES6562160003; latest observation and year-over-year change",
-      "evidence_grade": "A",
-      "summary": null,
-      "key_findings": [
-        "June 2026: 27.91 dollars per hour",
-        "Year-over-year change: +1.2%"
-      ],
-      "localizable": false,
-      "score": 62,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "series_id": "CES6562160003",
-        "units": "dollars per hour",
-        "latest_value": 27.91,
-        "yoy_change_pct": 1.2,
-        "observations": [
-          {
-            "year": "2026",
-            "period": "M06",
-            "periodName": "June",
-            "value": "27.91"
-          },
-          {
-            "year": "2026",
-            "period": "M05",
-            "periodName": "May",
-            "value": "27.85"
-          },
-          {
-            "year": "2026",
-            "period": "M04",
-            "periodName": "April",
-            "value": "27.86"
-          },
-          {
-            "year": "2026",
-            "period": "M03",
-            "periodName": "March",
-            "value": "27.94"
-          },
-          {
-            "year": "2026",
-            "period": "M02",
-            "periodName": "February",
-            "value": "27.66"
-          },
-          {
-            "year": "2026",
-            "period": "M01",
-            "periodName": "January",
-            "value": "27.61"
-          },
-          {
-            "year": "2025",
-            "period": "M12",
-            "periodName": "December",
-            "value": "27.68"
-          },
-          {
-            "year": "2025",
-            "period": "M11",
-            "periodName": "November",
-            "value": "27.49"
-          },
-          {
-            "year": "2025",
-            "period": "M10",
-            "periodName": "October",
-            "value": "27.63"
-          },
-          {
-            "year": "2025",
-            "period": "M09",
-            "periodName": "September",
-            "value": "27.56"
-          },
-          {
-            "year": "2025",
-            "period": "M08",
-            "periodName": "August",
-            "value": "27.48"
-          },
-          {
-            "year": "2025",
-            "period": "M07",
-            "periodName": "July",
-            "value": "27.48"
-          },
-          {
-            "year": "2025",
-            "period": "M06",
-            "periodName": "June",
-            "value": "27.58"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -3028,52 +3394,142 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "justice-in-aging",
-      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer",
-      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-20T17:01:38+00:00",
+      "source_id": "bls-api",
+      "title": "BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562160001",
+      "source_type": "government_api",
+      "published_at": "2026-07-01T00:00:00+00:00",
       "topics": [
-        "long_term_care",
-        "medicare_medicaid"
+        "workforce",
+        "caregiving",
+        "aging_in_place"
       ],
-      "geographies": [],
+      "geographies": [
+        "United States"
+      ],
       "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .",
-      "key_findings": [],
+      "methodology": "BLS Public Data API v2, series CES6562160001; latest observation and year-over-year change",
+      "evidence_grade": "A",
+      "summary": null,
+      "key_findings": [
+        "July 2026: 1,886.10 thousands of jobs",
+        "Year-over-year change: +4.8%"
+      ],
       "localizable": false,
       "score": 61,
       "score_components": {
         "priority": 5,
-        "novelty": 1,
-        "timeliness": 4,
-        "source_quality": 3,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 5,
         "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
+        "demand": 2,
+        "consumer_utility": 4,
         "b2b_relevance": 4,
-        "visualization": 1
+        "visualization": 5
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
         "Consumer angle: explain what the evidence changes for older adults and families.",
         "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
+        "series_id": "CES6562160001",
+        "units": "thousands of jobs",
+        "latest_value": 1886.1,
+        "yoy_change_pct": 4.8,
+        "observations": [
+          {
+            "year": "2026",
+            "period": "M07",
+            "periodName": "July",
+            "value": "1886.1"
+          },
+          {
+            "year": "2026",
+            "period": "M06",
+            "periodName": "June",
+            "value": "1881.5"
+          },
+          {
+            "year": "2026",
+            "period": "M05",
+            "periodName": "May",
+            "value": "1878.0"
+          },
+          {
+            "year": "2026",
+            "period": "M04",
+            "periodName": "April",
+            "value": "1868.0"
+          },
+          {
+            "year": "2026",
+            "period": "M03",
+            "periodName": "March",
+            "value": "1858.5"
+          },
+          {
+            "year": "2026",
+            "period": "M02",
+            "periodName": "February",
+            "value": "1848.7"
+          },
+          {
+            "year": "2026",
+            "period": "M01",
+            "periodName": "January",
+            "value": "1847.0"
+          },
+          {
+            "year": "2025",
+            "period": "M12",
+            "periodName": "December",
+            "value": "1830.3"
+          },
+          {
+            "year": "2025",
+            "period": "M11",
+            "periodName": "November",
+            "value": "1829.1"
+          },
+          {
+            "year": "2025",
+            "period": "M10",
+            "periodName": "October",
+            "value": "1823.5"
+          },
+          {
+            "year": "2025",
+            "period": "M09",
+            "periodName": "September",
+            "value": "1813.5"
+          },
+          {
+            "year": "2025",
+            "period": "M08",
+            "periodName": "August",
+            "value": "1806.3"
+          },
+          {
+            "year": "2025",
+            "period": "M07",
+            "periodName": "July",
+            "value": "1799.2"
+          }
+        ],
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -3207,7 +3663,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -3341,50 +3797,141 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "rand-research",
-      "title": "Breaking Glass, Missing Hands",
-      "url": "https://www.rand.org/pubs/research_reports/RRA3665-2.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T08:00:00+00:00",
+      "source_id": "bls-api",
+      "title": "BLS: Home health care services average hourly earnings, June 2026 — 27.91 dollars per hour (+1.2% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562160003",
+      "source_type": "government_api",
+      "published_at": "2026-06-01T00:00:00+00:00",
       "topics": [
-        "workforce"
+        "workforce",
+        "caregiving"
       ],
-      "geographies": [],
+      "geographies": [
+        "United States"
+      ],
       "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.",
-      "key_findings": [],
+      "methodology": "BLS Public Data API v2, series CES6562160003; latest observation and year-over-year change",
+      "evidence_grade": "A",
+      "summary": null,
+      "key_findings": [
+        "June 2026: 27.91 dollars per hour",
+        "Year-over-year change: +1.2%"
+      ],
       "localizable": false,
       "score": 60,
       "score_components": {
         "priority": 5,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 5,
         "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 1
+        "demand": 2,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 5
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
         "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "series_id": "CES6562160003",
+        "units": "dollars per hour",
+        "latest_value": 27.91,
+        "yoy_change_pct": 1.2,
+        "observations": [
+          {
+            "year": "2026",
+            "period": "M06",
+            "periodName": "June",
+            "value": "27.91"
+          },
+          {
+            "year": "2026",
+            "period": "M05",
+            "periodName": "May",
+            "value": "27.85"
+          },
+          {
+            "year": "2026",
+            "period": "M04",
+            "periodName": "April",
+            "value": "27.86"
+          },
+          {
+            "year": "2026",
+            "period": "M03",
+            "periodName": "March",
+            "value": "27.94"
+          },
+          {
+            "year": "2026",
+            "period": "M02",
+            "periodName": "February",
+            "value": "27.66"
+          },
+          {
+            "year": "2026",
+            "period": "M01",
+            "periodName": "January",
+            "value": "27.61"
+          },
+          {
+            "year": "2025",
+            "period": "M12",
+            "periodName": "December",
+            "value": "27.68"
+          },
+          {
+            "year": "2025",
+            "period": "M11",
+            "periodName": "November",
+            "value": "27.49"
+          },
+          {
+            "year": "2025",
+            "period": "M10",
+            "periodName": "October",
+            "value": "27.63"
+          },
+          {
+            "year": "2025",
+            "period": "M09",
+            "periodName": "September",
+            "value": "27.56"
+          },
+          {
+            "year": "2025",
+            "period": "M08",
+            "periodName": "August",
+            "value": "27.48"
+          },
+          {
+            "year": "2025",
+            "period": "M07",
+            "periodName": "July",
+            "value": "27.48"
+          },
+          {
+            "year": "2025",
+            "period": "M06",
+            "periodName": "June",
+            "value": "27.58"
+          }
+        ],
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -3517,7 +4064,51 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+      "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T18:16:11+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 59,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -3569,7 +4160,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -3621,7 +4212,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -3672,337 +4263,141 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice - General Information",
-      "url": "https://data.cms.gov/provider-data/dataset/yc9t-dgbk",
-      "source_type": "government_api",
-      "published_at": "2026-08-19T00:00:00+00:00",
+      "source_id": "rand-research",
+      "title": "Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care",
+      "url": "https://www.rand.org/pubs/external_publications/EP71470.html",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:15:00+00:00",
       "topics": [
+        "age_tech",
+        "caregiving",
         "palliative_hospice"
       ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "This dataset shows characteristics of hospice providers such as address, phone number, ownership data and more.",
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.",
       "key_findings": [],
-      "localizable": true,
+      "localizable": false,
       "score": 58,
       "score_components": {
-        "priority": 2,
+        "priority": 5,
         "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
+        "timeliness": 5,
+        "source_quality": 3,
         "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "dataset_id": "yc9t-dgbk",
-        "modified": "2026-08-19",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
+        "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
     {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice - Zip Data",
-      "url": "https://data.cms.gov/provider-data/dataset/95rg-2usp",
-      "source_type": "government_api",
-      "published_at": "2026-08-18T00:00:00+00:00",
+      "source_id": "justice-in-aging",
+      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer",
+      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-20T17:01:38+00:00",
       "topics": [
-        "palliative_hospice"
+        "long_term_care",
+        "medicare_medicaid"
       ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of zip codes where hospice provides services.",
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .",
       "key_findings": [],
-      "localizable": true,
+      "localizable": false,
       "score": 58,
       "score_components": {
-        "priority": 2,
+        "priority": 5,
         "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
+        "timeliness": 4,
+        "source_quality": 3,
         "coverage_gap": 5,
-        "localization": 5,
+        "localization": 1,
         "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "dataset_id": "95rg-2usp",
-        "modified": "2026-08-18",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
+        "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
     {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice - Provider Data",
-      "url": "https://data.cms.gov/provider-data/dataset/252m-zfp9",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
+      "source_id": "rand-research",
+      "title": "Breaking Glass, Missing Hands",
+      "url": "https://www.rand.org/pubs/research_reports/RRA3665-2.html",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:00:00+00:00",
       "topics": [
-        "palliative_hospice"
+        "workforce"
       ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of hospice providers with data on the quality of patient care measures.",
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.",
       "key_findings": [],
-      "localizable": true,
-      "score": 58,
+      "localizable": false,
+      "score": 57,
       "score_components": {
-        "priority": 2,
+        "priority": 5,
         "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
+        "timeliness": 5,
+        "source_quality": 3,
         "coverage_gap": 5,
-        "localization": 5,
+        "localization": 1,
         "demand": 3,
         "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
+        "b2b_relevance": 3,
+        "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "dataset_id": "252m-zfp9",
-        "modified": "2026-08-07",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
+        "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice care - Provider CAHPS Hospice Survey Data",
-      "url": "https://data.cms.gov/provider-data/dataset/gxki-hrr8",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "This data set contains a list of hospice providers with data on their scores on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 58,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "gxki-hrr8",
-        "modified": "2026-08-07",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice - State Data",
-      "url": "https://data.cms.gov/provider-data/dataset/eda0-92f0",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "State data on the quality of patient care measures.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 58,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "eda0-92f0",
-        "modified": "2026-08-07",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice - National Data",
-      "url": "https://data.cms.gov/provider-data/dataset/3xeb-u9wp",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "National data on the quality of patient care measures.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 58,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "3xeb-u9wp",
-        "modified": "2026-08-07",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -4051,7 +4446,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4095,7 +4490,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4139,7 +4534,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4183,7 +4578,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4227,7 +4622,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4271,7 +4666,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4315,7 +4710,337 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice - General Information",
+      "url": "https://data.cms.gov/provider-data/dataset/yc9t-dgbk",
+      "source_type": "government_api",
+      "published_at": "2026-08-19T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "This dataset shows characteristics of hospice providers such as address, phone number, ownership data and more.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 56,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "yc9t-dgbk",
+        "modified": "2026-08-19",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice - Zip Data",
+      "url": "https://data.cms.gov/provider-data/dataset/95rg-2usp",
+      "source_type": "government_api",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of zip codes where hospice provides services.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 56,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "95rg-2usp",
+        "modified": "2026-08-18",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice - Provider Data",
+      "url": "https://data.cms.gov/provider-data/dataset/252m-zfp9",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of hospice providers with data on the quality of patient care measures.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 56,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "252m-zfp9",
+        "modified": "2026-08-07",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice care - Provider CAHPS Hospice Survey Data",
+      "url": "https://data.cms.gov/provider-data/dataset/gxki-hrr8",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "This data set contains a list of hospice providers with data on their scores on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 56,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "gxki-hrr8",
+        "modified": "2026-08-07",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice - State Data",
+      "url": "https://data.cms.gov/provider-data/dataset/eda0-92f0",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "State data on the quality of patient care measures.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 56,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "eda0-92f0",
+        "modified": "2026-08-07",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice - National Data",
+      "url": "https://data.cms.gov/provider-data/dataset/3xeb-u9wp",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "National data on the quality of patient care measures.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 56,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "3xeb-u9wp",
+        "modified": "2026-08-07",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4367,7 +5092,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4410,7 +5135,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4454,7 +5179,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4498,7 +5223,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4543,7 +5268,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4586,7 +5311,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4630,52 +5355,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ebri",
-      "title": "New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security",
-      "url": "https://www.ebri.org/media/press-releases/content/new-national-initiative-examines-how-caregiving-is-reshaping-the-workplace--employee-benefits-and-long-term-financial-security",
-      "source_type": "web_release",
-      "published_at": "2026-06-02T00:00:00+00:00",
-      "topics": [
-        "caregiving",
-        "financial_security"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "EBRI Press Release June 2, 2026 2 pages Summary Full Content",
-      "key_findings": [],
-      "localizable": false,
-      "score": 52,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.ebri.org/media",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4717,49 +5397,52 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "rand-research",
-      "title": "Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations",
-      "url": "https://www.rand.org/pubs/external_publications/EP71368.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T08:15:00+00:00",
+      "source_id": "ebri",
+      "title": "New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security",
+      "url": "https://www.ebri.org/media/press-releases/content/new-national-initiative-examines-how-caregiving-is-reshaping-the-workplace--employee-benefits-and-long-term-financial-security",
+      "source_type": "web_release",
+      "published_at": "2026-06-02T00:00:00+00:00",
       "topics": [
-        "depression_mental_health"
+        "caregiving",
+        "financial_security"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.",
+      "summary": "EBRI Press Release June 2, 2026 2 pages Summary Full Content",
       "key_findings": [],
       "localizable": false,
-      "score": 48,
+      "score": 49,
       "score_components": {
-        "priority": 2,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 2,
         "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
+        "demand": 2,
+        "consumer_utility": 4,
+        "b2b_relevance": 3,
         "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4803,7 +5486,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4847,7 +5530,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4891,7 +5574,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4935,7 +5618,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4979,7 +5662,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5023,7 +5706,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5067,7 +5750,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5111,7 +5794,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5155,7 +5838,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5199,7 +5882,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5243,7 +5926,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5287,95 +5970,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "national-alliance-caregiving",
-      "title": "The Story Comes First. The Word “Caregiver” Often Comes Later.",
-      "url": "https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "caregiving"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 46,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.caregiving.org/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "national-alliance-caregiving",
-      "title": "Statement of the National Alliance for Caregiving on the Department of Justice Office of Legal Counsel Opinion on the ADA Integration Mandate",
-      "url": "https://www.caregiving.org/statement-of-the-national-alliance-for-caregiving-on-the-department-of-justice-office-of-legal-counsel-opinion-on-the-ada-integration-mandate/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "caregiving"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 46,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.caregiving.org/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5419,7 +6014,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5463,7 +6058,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5507,7 +6102,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5551,7 +6146,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5595,91 +6190,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "acl-news",
-      "title": "Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness",
-      "url": "https://acl.gov/news-and-events/announcements/commit-connect-webinar-transportation-strategies-strengthen-social",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "loneliness_social_connection",
-        "transportation"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 45,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://acl.gov/news",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "rand-research",
-      "title": "Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation",
-      "url": "https://www.rand.org/pubs/external_publications/EP71382.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T08:15:00+00:00",
-      "topics": [
-        "depression_mental_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 44,
-      "score_components": {
-        "priority": 2,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 0,
-      "story_angles": [],
-      "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5721,7 +6232,95 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "national-alliance-caregiving",
+      "title": "The Story Comes First. The Word “Caregiver” Often Comes Later.",
+      "url": "https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "caregiving"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 44,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.caregiving.org/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "national-alliance-caregiving",
+      "title": "Statement of the National Alliance for Caregiving on the Department of Justice Office of Legal Counsel Opinion on the ADA Integration Mandate",
+      "url": "https://www.caregiving.org/statement-of-the-national-alliance-for-caregiving-on-the-department-of-justice-office-of-legal-counsel-opinion-on-the-ada-integration-mandate/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "caregiving"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 44,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.caregiving.org/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5764,7 +6363,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5807,16 +6406,16 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "kff-feed",
-      "title": "Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor",
-      "url": "https://www.kff.org/health-information-trust/different-state-regulatory-approaches-reflect-open-questions-about-ai-mental-health-tools/",
+      "source_id": "rand-research",
+      "title": "Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations",
+      "url": "https://www.rand.org/pubs/external_publications/EP71368.html",
       "source_type": "institutional_rss",
-      "published_at": "2026-08-27T12:00:00+00:00",
+      "published_at": "2026-08-31T08:15:00+00:00",
       "topics": [
         "depression_mental_health"
       ],
@@ -5824,18 +6423,18 @@
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "States are taking different regulatory approaches to AI mental health tools in response to concerns about chatbots providing inaccurate or potentially dangerous advice. Laws and pending legislation in some states restrict AI from providing or advertising itself as therapy, while others focus on data protections, disclosures, and patient consent requirements.",
+      "summary": "We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.",
       "key_findings": [],
       "localizable": false,
-      "score": 43,
+      "score": 41,
       "score_components": {
         "priority": 2,
         "novelty": 0,
-        "timeliness": 4,
+        "timeliness": 5,
         "source_quality": 3,
         "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
+        "demand": 1,
         "consumer_utility": 1,
         "b2b_relevance": 1,
         "visualization": 1
@@ -5846,10 +6445,54 @@
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
+        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "acl-news",
+      "title": "Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness",
+      "url": "https://acl.gov/news-and-events/announcements/commit-connect-webinar-transportation-strategies-strengthen-social",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "loneliness_social_connection",
+        "transportation"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 41,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 1,
+        "consumer_utility": 4,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5870,7 +6513,7 @@
       "summary": "Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St",
       "key_findings": [],
       "localizable": false,
-      "score": 43,
+      "score": 41,
       "score_components": {
         "priority": 5,
         "novelty": 0,
@@ -5878,7 +6521,7 @@
         "source_quality": 2,
         "coverage_gap": 3,
         "localization": 1,
-        "demand": 3,
+        "demand": 2,
         "consumer_utility": 3,
         "b2b_relevance": 4,
         "visualization": 1
@@ -5893,49 +6536,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms",
-      "url": "https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-10T14:27:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 2,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5977,101 +6578,16 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes",
+      "source_id": "kff-feed",
+      "title": "Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor",
+      "url": "https://www.kff.org/health-information-trust/different-state-regulatory-approaches-reflect-open-questions-about-ai-mental-health-tools/",
       "source_type": "institutional_rss",
-      "published_at": "2026-06-17T12:00:00+00:00",
-      "topics": [
-        "nutrition"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and treat ADHD symptoms to PDF editing tools, according to a complaint filed by the FTC . The defendants deceptively market subscriptions to consumers and bill consumers without their permission, resulting in consumers worldwide being defrauded. “The Trump-Vance FTC is engaged in robust enforcement to address deception and illegal subscription offerings,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This case illustrates the benefits and importance of the Bureau’s reinvigorated anti-fraud program.” According to the FTC’s complaint, Genesis Tech operates as a common enterprise through a network of entities it controls, including a series of affiliates incorporated in Cyprus and operating in Ukraine. The Cyprus companies market to U.S. consumers and access U.S. payment processing through counterparts incorporated in Delaware. Genesis Tech and its subsidiar",
-      "key_findings": [],
-      "localizable": false,
-      "score": 39,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-17T12:00:00+00:00",
-      "topics": [
-        "depression_mental_health",
-        "incontinence"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex traits. In their complaint , the FTC and its state partners allege that these recommendations misled parents and children about the medical consensus and medical necessity, as well as the safety and effectiveness, of such services, in violation of the FTC Act. “Today, the FTC filed a lawsuit against WPATH alleging that the organization made false and unsubstantiated claims regarding the necessity, effectiveness and safety of puberty blockers, hormones and sex-change surgeries,” said Chairman Andrew N. Ferguson. “Children, but especially their parents, must have complete and truthful information when making decisions to purchase medical services. For decades, the FTC has taken action against entities that make deceptive and unsubstantiated health-related claims. The complaint filed today reflects that same long-standing mandate: when an entity makes a claim about a medical treatment, the cl",
-      "key_findings": [],
-      "localizable": false,
-      "score": 39,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-contempt-motion-against-amare-global-three-individuals-over-unsubstantiated-health-claims",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-12T12:00:00+00:00",
+      "published_at": "2026-08-27T12:00:00+00:00",
       "topics": [
         "depression_mental_health"
       ],
@@ -6079,18 +6595,18 @@
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "The Federal Trade Commission has asked a federal court to hold in contempt dietary supplement provider Amare Global Holdings, its former Chief Science Officer Shawn Talbott and two others over allegations they violated an FTC order that banned Talbott and those who work with him from making false, deceptive or unsubstantiated health claims. Earlier this month, the FTC sued multilevel marketer Amare Global , Talbott, the company’s founding brand partner Patrick Hintze and current CEO and majority shareholder David Chung for misrepresenting to parents and other consumers that dietary supplements marketed for children and adults could treat, cure or mitigate health conditions such as depression, anxiety and ADHD, and for misleading its seller recruits, known as brand partners, about their potential earnings. The contempt motion filed by the FTC alleges that Amare Global, Talbott, Hintze and former Amare CEO Hiep Tran also acted in concert to systematically violate the terms of a 2005 order that Talbott entered into with the FTC in the Window Rock case . The 2005 order prohibits Talbott and “all persons or entities in active concert or participation with him” from making representations about the health benefits, performance or efficacy of covered products without possessing and relying upon competent and reliable scientific evidence that substantiates the representation, and from misrepresenting the results of scientific studies. “Amare, Hintze and Tran knew of Talbott’s prior o",
+      "summary": "States are taking different regulatory approaches to AI mental health tools in response to concerns about chatbots providing inaccurate or potentially dangerous advice. Laws and pending legislation in some states restrict AI from providing or advertising itself as therapy, while others focus on data protections, disclosures, and patient consent requirements.",
       "key_findings": [],
       "localizable": false,
       "score": 39,
       "score_components": {
         "priority": 2,
         "novelty": 0,
-        "timeliness": 2,
+        "timeliness": 4,
         "source_quality": 3,
         "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
+        "demand": 1,
         "consumer_utility": 1,
         "b2b_relevance": 1,
         "visualization": 1
@@ -6101,36 +6617,78 @@
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "justice-in-aging",
-      "title": "Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy",
-      "url": "https://justiceinaging.org/statement-on-department-of-justices-proposed-resolution-of-texas-v-kennedy/",
+      "source_id": "rand-research",
+      "title": "Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation",
+      "url": "https://www.rand.org/pubs/external_publications/EP71382.html",
       "source_type": "institutional_rss",
-      "published_at": "2026-09-02T19:23:57+00:00",
-      "topics": [],
+      "published_at": "2026-08-31T08:15:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department of Health and Human Services (HHS), along with Texas, Florida and Alaska filed a proposed resolution of Texas v. Kennedy. These states challenged the HHS 2024 regulations implementing Section 504 of the Rehabilitation Act, which prohibits discrimination on the basis of [&#8230;] The post Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy appeared first on Justice in Aging .",
+      "summary": "The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.",
       "key_findings": [],
       "localizable": false,
-      "score": 36,
+      "score": 37,
       "score_components": {
-        "priority": 0,
-        "novelty": 1,
+        "priority": 2,
+        "novelty": 0,
         "timeliness": 5,
         "source_quality": 3,
-        "coverage_gap": 2,
+        "coverage_gap": 3,
         "localization": 1,
-        "demand": 3,
+        "demand": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 0,
+      "story_angles": [],
+      "raw_metadata": {
+        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms",
+      "url": "https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-10T14:27:00+00:00",
+      "topics": [
+        "dementia"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 37,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 2,
         "consumer_utility": 1,
         "b2b_relevance": 1,
         "visualization": 1
@@ -6138,13 +6696,13 @@
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "unmonitored",
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -6186,7 +6744,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6233,7 +6791,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6280,33 +6838,35 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "justice-in-aging",
-      "title": "Public Charge Final Rule: What Advocates Need to Know",
-      "url": "https://justiceinaging.org/public-charge-final-rule-what-advocates-need-to-know/",
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes",
       "source_type": "institutional_rss",
-      "published_at": "2026-08-26T16:20:47+00:00",
-      "topics": [],
+      "published_at": "2026-06-17T12:00:00+00:00",
+      "topics": [
+        "nutrition"
+      ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "This resource explains the public charge rule, its impact on older immigrants and families, and what advocates can do to help protect access to essential benefits. The post Public Charge Final Rule: What Advocates Need to Know appeared first on Justice in Aging .",
+      "summary": "At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and treat ADHD symptoms to PDF editing tools, according to a complaint filed by the FTC . The defendants deceptively market subscriptions to consumers and bill consumers without their permission, resulting in consumers worldwide being defrauded. “The Trump-Vance FTC is engaged in robust enforcement to address deception and illegal subscription offerings,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This case illustrates the benefits and importance of the Bureau’s reinvigorated anti-fraud program.” According to the FTC’s complaint, Genesis Tech operates as a common enterprise through a network of entities it controls, including a series of affiliates incorporated in Cyprus and operating in Ukraine. The Cyprus companies market to U.S. consumers and access U.S. payment processing through counterparts incorporated in Delaware. Genesis Tech and its subsidiar",
       "key_findings": [],
       "localizable": false,
-      "score": 34,
+      "score": 35,
       "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 4,
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 2,
         "source_quality": 3,
-        "coverage_gap": 2,
+        "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
+        "demand": 1,
         "consumer_utility": 1,
         "b2b_relevance": 1,
         "visualization": 1
@@ -6314,39 +6874,42 @@
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "justice-in-aging",
-      "title": "From DC: New Public Charge Guidance, Immigration Enforcement Protections, and More",
-      "url": "https://justiceinaging.org/from-dc-08212026/",
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children",
       "source_type": "institutional_rss",
-      "published_at": "2026-08-21T17:15:04+00:00",
-      "topics": [],
+      "published_at": "2026-06-17T12:00:00+00:00",
+      "topics": [
+        "depression_mental_health",
+        "incontinence"
+      ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "In this week's edition: New Public Charge Guidance, Immigration Enforcement Protections, and More. The post From DC: New Public Charge Guidance, Immigration Enforcement Protections, and More appeared first on Justice in Aging .",
+      "summary": "The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex traits. In their complaint , the FTC and its state partners allege that these recommendations misled parents and children about the medical consensus and medical necessity, as well as the safety and effectiveness, of such services, in violation of the FTC Act. “Today, the FTC filed a lawsuit against WPATH alleging that the organization made false and unsubstantiated claims regarding the necessity, effectiveness and safety of puberty blockers, hormones and sex-change surgeries,” said Chairman Andrew N. Ferguson. “Children, but especially their parents, must have complete and truthful information when making decisions to purchase medical services. For decades, the FTC has taken action against entities that make deceptive and unsubstantiated health-related claims. The complaint filed today reflects that same long-standing mandate: when an entity makes a claim about a medical treatment, the cl",
       "key_findings": [],
       "localizable": false,
-      "score": 34,
+      "score": 35,
       "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 4,
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 2,
         "source_quality": 3,
-        "coverage_gap": 2,
+        "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
+        "demand": 1,
         "consumer_utility": 1,
         "b2b_relevance": 1,
         "visualization": 1
@@ -6354,39 +6917,41 @@
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "alliance-aging-research",
-      "title": "Now Hiring: Director of Public Policy and Government Relations",
-      "url": "https://www.agingresearch.org/blog/now-hiring-public-policy-manager/",
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-contempt-motion-against-amare-global-three-individuals-over-unsubstantiated-health-claims",
       "source_type": "institutional_rss",
-      "published_at": "2026-08-21T14:00:52+00:00",
-      "topics": [],
+      "published_at": "2026-06-12T12:00:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "The post Now Hiring: Director of Public Policy and Government Relations appeared first on Alliance for Aging Research .",
+      "summary": "The Federal Trade Commission has asked a federal court to hold in contempt dietary supplement provider Amare Global Holdings, its former Chief Science Officer Shawn Talbott and two others over allegations they violated an FTC order that banned Talbott and those who work with him from making false, deceptive or unsubstantiated health claims. Earlier this month, the FTC sued multilevel marketer Amare Global , Talbott, the company’s founding brand partner Patrick Hintze and current CEO and majority shareholder David Chung for misrepresenting to parents and other consumers that dietary supplements marketed for children and adults could treat, cure or mitigate health conditions such as depression, anxiety and ADHD, and for misleading its seller recruits, known as brand partners, about their potential earnings. The contempt motion filed by the FTC alleges that Amare Global, Talbott, Hintze and former Amare CEO Hiep Tran also acted in concert to systematically violate the terms of a 2005 order that Talbott entered into with the FTC in the Window Rock case . The 2005 order prohibits Talbott and “all persons or entities in active concert or participation with him” from making representations about the health benefits, performance or efficacy of covered products without possessing and relying upon competent and reliable scientific evidence that substantiates the representation, and from misrepresenting the results of scientific studies. “Amare, Hintze and Tran knew of Talbott’s prior o",
       "key_findings": [],
       "localizable": false,
-      "score": 34,
+      "score": 35,
       "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 4,
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 2,
         "source_quality": 3,
-        "coverage_gap": 2,
+        "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
+        "demand": 1,
         "consumer_utility": 1,
         "b2b_relevance": 1,
         "visualization": 1
@@ -6394,53 +6959,13 @@
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Celebrating World Senior Citizens Day – Today and Every Day",
-      "url": "https://www.agingresearch.org/blog/celebrating-world-senior-citizens-day-today-and-every-day/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-20T20:42:04+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Celebrating World Senior Citizens Day – Today and Every Day appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 34,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6480,7 +7005,47 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy",
+      "url": "https://justiceinaging.org/statement-on-department-of-justices-proposed-resolution-of-texas-v-kennedy/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-02T19:23:57+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department of Health and Human Services (HHS), along with Texas, Florida and Alaska filed a proposed resolution of Texas v. Kennedy. These states challenged the HHS 2024 regulations implementing Section 504 of the Rehabilitation Act, which prohibits discrimination on the basis of [&#8230;] The post Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 33,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -6520,7 +7085,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6560,7 +7125,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6600,7 +7165,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6640,7 +7205,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6687,7 +7252,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6729,167 +7294,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T18:49:08.151942+00:00",
-        "runs_seen": 10,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "justice-in-aging",
-      "title": "Justice in Aging’s Comment on Senate Finance Committee’s RFI on Lowering Drug Prices",
-      "url": "https://justiceinaging.org/justice-in-agings-comment-on-senate-finance-committees-rfi-on-lowering-drug-prices/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-18T14:29:59+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Justice in Aging responds to the Senate Finance Committee’s request for information on lowering drug prices, highlighting the need to make medications more affordable for older adults. The post Justice in Aging’s Comment on Senate Finance Committee’s RFI on Lowering Drug Prices appeared first on Justice in Aging .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 32,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Meet Lauren Belsky, Development Coordinator for the Alliance",
-      "url": "https://www.agingresearch.org/blog/meet-lauren-belsky-development-coordinator-for-the-alliance/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-12T13:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 32,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Navigating Air Travel — Tips for Older Adventurers",
-      "url": "https://www.agingresearch.org/blog/navigating-air-travel-tips-for-older-adventurers/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-27T15:50:17+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Navigating Air Travel — Tips for Older Adventurers appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 32,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Balancing Boredom on World Brain Day",
-      "url": "https://www.agingresearch.org/blog/balancing-boredom-on-world-brain-day/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-21T21:40:04+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 32,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -6931,7 +7336,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -6973,7 +7378,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7013,7 +7418,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7053,7 +7458,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7093,7 +7498,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7133,7 +7538,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7173,7 +7578,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7213,7 +7618,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7253,7 +7658,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7293,7 +7698,47 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "Public Charge Final Rule: What Advocates Need to Know",
+      "url": "https://justiceinaging.org/public-charge-final-rule-what-advocates-need-to-know/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-26T16:20:47+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This resource explains the public charge rule, its impact on older immigrants and families, and what advocates can do to help protect access to essential benefits. The post Public Charge Final Rule: What Advocates Need to Know appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 31,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -7333,7 +7778,47 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "From DC: New Public Charge Guidance, Immigration Enforcement Protections, and More",
+      "url": "https://justiceinaging.org/from-dc-08212026/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-21T17:15:04+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "In this week's edition: New Public Charge Guidance, Immigration Enforcement Protections, and More. The post From DC: New Public Charge Guidance, Immigration Enforcement Protections, and More appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 31,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -7373,7 +7858,47 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Now Hiring: Director of Public Policy and Government Relations",
+      "url": "https://www.agingresearch.org/blog/now-hiring-public-policy-manager/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-21T14:00:52+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Now Hiring: Director of Public Policy and Government Relations appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 31,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -7413,7 +7938,47 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Celebrating World Senior Citizens Day – Today and Every Day",
+      "url": "https://www.agingresearch.org/blog/celebrating-world-senior-citizens-day-today-and-every-day/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-20T20:42:04+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Celebrating World Senior Citizens Day – Today and Every Day appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 31,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -7453,7 +8018,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7493,7 +8058,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7533,7 +8098,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7573,7 +8138,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7613,7 +8178,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7653,7 +8218,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7693,7 +8258,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7733,7 +8298,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7773,167 +8338,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat",
-      "url": "https://www.agingresearch.org/blog/dont-sweat-it-a-cool-guide-for-older-adults-to-beat-the-summer-heat/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-09T18:22:17+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’",
-      "url": "https://www.agingresearch.org/blog/do-what-you-love-to-end-alz-offers-yearlong-spin-on-the-longest-day/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-17T12:40:20+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’ appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Why Preventative Care is a ‘Manly’ Long-Term Health Investment",
-      "url": "https://www.agingresearch.org/blog/why-preventative-care-is-a-manly-long-term-health-investment/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-15T21:31:16+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "2025 Impact Report Highlights its Mission and Vision in Action",
-      "url": "https://www.agingresearch.org/blog/2025-impact-report-highlights-its-mission-and-vision-in-action/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-09T16:47:53+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post 2025 Impact Report Highlights its Mission and Vision in Action appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 7,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7975,7 +8380,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8015,7 +8420,47 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "Justice in Aging’s Comment on Senate Finance Committee’s RFI on Lowering Drug Prices",
+      "url": "https://justiceinaging.org/justice-in-agings-comment-on-senate-finance-committees-rfi-on-lowering-drug-prices/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-18T14:29:59+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Justice in Aging responds to the Senate Finance Committee’s request for information on lowering drug prices, highlighting the need to make medications more affordable for older adults. The post Justice in Aging’s Comment on Senate Finance Committee’s RFI on Lowering Drug Prices appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 28,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -8055,7 +8500,47 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Meet Lauren Belsky, Development Coordinator for the Alliance",
+      "url": "https://www.agingresearch.org/blog/meet-lauren-belsky-development-coordinator-for-the-alliance/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-12T13:00:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 28,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -8095,7 +8580,47 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Navigating Air Travel — Tips for Older Adventurers",
+      "url": "https://www.agingresearch.org/blog/navigating-air-travel-tips-for-older-adventurers/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-07-27T15:50:17+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Navigating Air Travel — Tips for Older Adventurers appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 28,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -8135,7 +8660,47 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Balancing Boredom on World Brain Day",
+      "url": "https://www.agingresearch.org/blog/balancing-boredom-on-world-brain-day/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-07-21T21:40:04+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 28,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -8175,7 +8740,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8215,7 +8780,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8255,7 +8820,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8295,7 +8860,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8335,7 +8900,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8375,7 +8940,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8415,7 +8980,47 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat",
+      "url": "https://www.agingresearch.org/blog/dont-sweat-it-a-cool-guide-for-older-adults-to-beat-the-summer-heat/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-07-09T18:22:17+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 26,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -8455,7 +9060,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8495,7 +9100,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8535,7 +9140,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8575,7 +9180,127 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’",
+      "url": "https://www.agingresearch.org/blog/do-what-you-love-to-end-alz-offers-yearlong-spin-on-the-longest-day/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-17T12:40:20+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’ appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 26,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Why Preventative Care is a ‘Manly’ Long-Term Health Investment",
+      "url": "https://www.agingresearch.org/blog/why-preventative-care-is-a-manly-long-term-health-investment/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-15T21:31:16+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 26,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "2025 Impact Report Highlights its Mission and Vision in Action",
+      "url": "https://www.agingresearch.org/blog/2025-impact-report-highlights-its-mission-and-vision-in-action/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-09T16:47:53+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post 2025 Impact Report Highlights its Mission and Vision in Action appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 26,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -8615,7 +9340,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8655,7 +9380,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8695,7 +9420,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8735,7 +9460,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8775,7 +9500,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8815,7 +9540,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8855,7 +9580,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8895,7 +9620,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8935,7 +9660,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -8975,7 +9700,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9015,7 +9740,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9055,7 +9780,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9095,7 +9820,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9135,7 +9860,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9175,7 +9900,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9215,7 +9940,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9255,7 +9980,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -9295,7 +10020,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     }

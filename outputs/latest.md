@@ -1,6 +1,6 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T20:10:40.136104+00:00
+Generated: 2026-09-03T20:15:33.183226+00:00
 
 Evidence candidates: **170** (0 new since the last run)  
 Media coverage items: **1036** from **65** working publisher feeds
@@ -371,23 +371,7 @@ HUD is required to publish FMRs not less than annually, adjusted to be effective
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 22. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
-
-**Score:** 63/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** age_tech, caregiving, palliative_hospice  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71470.html
-
-This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 23. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
+### 22. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
 **Score:** 63/100  
 **Source:** federal-register (regulatory_filing)  
@@ -404,22 +388,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 24. BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)
-
-**Score:** 63/100  
-**Source:** bls-api (government_api)  
-**Published:** 2026-07-01  
-**Topics:** workforce, caregiving, aging_in_place  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://data.bls.gov/timeseries/CES6562160001
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 25. BLS: Continuing care retirement communities and assisted living employment, July 2026 — 1,028.20 thousands of jobs (+1.5% year over year)
+### 23. BLS: Continuing care retirement communities and assisted living employment, July 2026 — 1,028.20 thousands of jobs (+1.5% year over year)
 
 **Score:** 63/100  
 **Source:** bls-api (government_api)  
@@ -434,59 +403,67 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
+### 24. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
+
+**Score:** 62/100  
+**Source:** bls-api (government_api)  
+**Published:** 2026-07-01  
+**Topics:** financial_security, medicare_medicaid  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://data.bls.gov/timeseries/CUUR0000SAM
+
+**Potential angles**
+- Consumer angle: explain what the evidence changes for older adults and families.
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 25. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
+
+**Score:** 61/100  
+**Source:** federal-register (regulatory_filing)  
+**Published:** 2026-09-01  
+**Topics:** financial_security  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.federalregister.gov/documents/2026/09/01/2026-17814/social-security-ruling-ssr-26-2p-titles-ii-and-xvi-documenting-and-evaluating-disability-in-young
+
+We are providing notice of SSR 26-2p. This SSR explains our policies and consolidates information from our regulations on documenting and evaluating disability in young adults. This ruling rescinds and replaces SSR 11-2p.
+
+**Potential angles**
+- Consumer angle: explain what the evidence changes for older adults and families.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
 ## Research trends and continuity
 
-**Volume:** 170 evidence candidates across eight topics, none first surfaced in this run. Sixty-five monitored publishers, 132 in the registry.
-
-**Baseline:** the archive holds no previous run, so this is the reference point rather than a comparison. Future runs measure against these numbers.
-
-**Where the weight sits:** Medicare and Medicaid at 30 items, long-term care at 19, housing at 13, workforce at 12, financial security at 10, palliative and hospice at nine, caregiving at seven, depression and mental health at five. The top two topics account for nearly a third of the run.
-
-**Coverage posture:** 83 confirmed gaps and 78 items on beats where no monitored publisher is watching. Housing and palliative hospice are shut out entirely, at 13 of 13 and nine of nine gaps with zero covered items. Financial security is the exception, with four of ten items matched, which suggests monitored competitors are staffing retirement and Social Security more heavily than facility oversight or end-of-life care.
-
-**Shape of the run:** government data dominates. The CMS provider data catalog alone supplies the bulk of the top-scoring items, all refreshed between July 31 and August 30, and the Federal Register contributes housing, Medicare and Social Security notices across the same window. That composition favors data journalism and document reporting over interview-led pieces this cycle. The freshness is real but shallow: newest items in long-term care are same-day, and Medicare and Medicaid, workforce, palliative hospice, caregiving and mental health all peak at three days.
-
-**Localizability:** the CMS refreshes and BLS series carry state and county geography, and the American Community Survey profile covers 52 state-level units. That is the structural argument for building series rather than one-offs from this run.
+- **Volume and novelty:** 170 evidence candidates, none first surfaced in this run. Everything on the table has been visible for at least a cycle, which shifts the advantage from speed to synthesis. The oldest useful material here is still weeks, not months, old.
+- **Baseline:** there is no previous run in the archive, so no comparison is possible yet. Treat this run as the reference point for the next one and watch specifically whether the CMS refresh cadence and the BLS monthly series reappear on the same rhythm.
+- **Weight of the run:** medicare_medicaid (30 items), long_term_care (19), housing (13), workforce (12), financial_security (10), palliative_hospice (9), caregiving (7) and depression_mental_health (5). Medicare and Medicaid plus long-term care account for 49 of the items, and both draw on CMS provider data, BLS, the Federal Register and Justice in Aging, so the sourcing overlaps enough to report the two as one continuous story.
+- **Coverage posture:** 83 confirmed gaps, and 78 items sit on beats where we monitor no publisher at all. Housing and palliative hospice show zero monitored coverage across 22 combined items. Financial security is the exception, with 4 of 10 items matched, which suggests monitored publishers are working Social Security and retirement finance while leaving provider data and regulatory filings untouched. We currently monitor 65 publishers against a registry of 132.
+- **Shape of the beat:** this is a government-data run, not a news-cycle run. The highest-scoring items are CMS dataset refreshes and BLS time series rather than reports or announcements, and 10 items sit on structured public data that can be charted directly. The competitive edge this cycle belongs to whoever downloads and joins files rather than whoever reacts fastest.
+- **Freshness by cluster:** long-term care produced an item today, financial security yesterday, housing two days ago, and Medicare and Medicaid, workforce, caregiving and mental health three days ago. Every major cluster is live inside a 72-hour window.
+- **Classifier note:** the workforce cluster includes a RAND report on U.S. space defense industrial base workforce shortfalls, which is off-beat and should be dropped before the 12-item count is used in any published framing.
+- **Regulatory tempo:** the Federal Register supplied items across Medicare payment, Medicare device coverage, HUD fair market rents, HUD disparate impact, FHA debenture rates and two Social Security rulings, with three of them dated 2026-08-31 or later. Rulemaking, not research, is driving the calendar right now, and several of these carry comment periods rather than settled outcomes.
 
 ## Bigger picture: feature pitch
 
-**The convergence:** Nine independent sources landed on Medicare and Medicaid this run, producing 30 items of which 28 show a confirmed coverage gap among monitored publishers. Nothing coordinated this. CMS data refreshes, a Federal Register notice, an advocacy comment template, BLS price data and two research organizations arrived on the same beat inside a few weeks, and the most recent piece is three days old.
-
-**Evidence on the table:**
-- **CMS provider data** refreshed the Medical Equipment Suppliers dataset on August 30, listing supplies carried by location alongside each supplier's Medicare participation status, broken out to state and county level.
-- **Justice in Aging** published template comments and instructions on August 31 addressing Medicare eligibility for immigrants under the Physician Fee Schedule proposed rule.
-- **BLS** reported the medical care Consumer Price Index at 593.78 (1982-84=100) for July 2026, up 1.7 percent year over year.
-- **Federal Register** carried a CMS advisory on August 13 alerting Qualifying Alternative Payment Model participants that the agency lacks the billing information needed to disburse their incentive payments, and on August 11 a notice with comment period on the Regulatory Alignment for Predictable and Immediate Device (RAPID) coverage pathway for expedited national coverage of new technologies.
-- **KFF** published "Medicaid Coverage for Women" on August 26.
-- **Center for Retirement Research** posted an August 26 analysis arguing that a suggestion for states to fund Medicare would weaken the program and put Americans at risk.
-
-**Why this holds together:** the through-line is who pays and who qualifies. Eligibility rules, payment mechanics, coverage pathways and medical price inflation are the same story told from four different vantage points, and no monitored publisher has stitched them together.
-
-**Localization:** six of the 30 Medicare and Medicaid items break below the national level, and the CMS refreshes carry state and county geography, so a single reporting pass supports state, metro and facility-level versions.
-
-**Visuals:** ten items sit on structured public data, which means a ranking, map or trend line can be built directly from the source rather than requested from anyone.
-
-**Also converging:** long-term care (five sources, 19 items, 17 gaps, newest item today), housing (six sources, 13 items, 13 gaps) and workforce (four sources, 12 items, 10 gaps).
+- **The convergence:** Medicare and Medicaid is the strongest cross-source story in this run: nine independent sources produced 30 items, 28 of them with a confirmed coverage gap against 65 monitored publishers, and the newest landed three days ago. Nothing in this stack was coordinated, which is exactly why it holds together as a single piece on what beneficiaries and providers face heading into fall.
+- **Evidence on the table:** CMS refreshed its Medical Equipment Suppliers dataset on 2026-08-30, which carries supplier-level Medicare participation status down to state and county; BLS put the medical care Consumer Price Index at 593.78 (1982-84=100) for July 2026, up 1.7% year over year; Justice in Aging published template comments on 2026-08-31 addressing changes to Medicare eligibility for immigrants in the Physician Fee Schedule proposed rule; the Federal Register carried a CMS advisory on 2026-08-13 telling Qualifying Alternative Payment Model participants that the agency lacks the current billing information needed to disburse their incentive payments; KFF released both a Medicaid Coverage for Women data note and its Medicaid/CHIP Monthly Enrollment Tracker update on 2026-08-26; and the Center for Retirement Research argued on 2026-08-26 that shifting Medicare funding to states would weaken the program and put Americans at risk.
+- **The spine of the piece:** three different pressures on the same program in the same three-week window. Eligibility rules are in play through the Physician Fee Schedule proposed rule. The financing structure itself is in play through the state-funding proposal. And the operational plumbing is visibly leaking, with CMS publicly asking clinicians for billing information it needs to pay them under alternative payment models. Medical care prices rising 1.7% year over year is the cost floor under all of it.
+- **Why now:** the freshest item is three days old, the Federal Register comment windows are live rather than retrospective, and 28 of 30 items have not been matched by any monitored publisher.
+- **Localization:** 6 of the 30 items break below the national level, so the same reporting supports state, metro or facility-level versions without new sourcing.
+- **Visuals:** 10 items in this cluster sit on structured public data. A supplier-participation map, a medical care CPI trend line and a state Medicaid enrollment ranking can all be built directly from the source files.
+- **Also converging:** long-term care (5 sources, 19 items, 17 gaps, newest item today), housing (6 sources, 13 items, all 13 gaps and zero monitored coverage) and workforce (4 sources, 12 items, 10 gaps).
 
 ## Story ideas
 
-**The nursing home accountability file nobody has opened.** CMS refreshed its full nursing home oversight suite on August 1: Health Deficiencies, Fire Safety Deficiencies, Penalties, Survey Summary, Inspection Dates, Ownership, Provider Information, MDS Quality Measures and the Citation Code Look-up table. Each carries three years of citations at one row per citation, with scope, severity, correction date and the fines and payment denials imposed. Every one of these is a confirmed gap. The angle is a fresh national accounting of which operators are accumulating citations and penalties, joined to the Ownership file so chains can be named rather than individual buildings. State and county geography is built in, which makes this the backbone of a localized series rather than a single article.
-
-**Hospice quality, from the national average down to the ZIP code.** Four hospice datasets refreshed inside two weeks: National CAHPS Hospice Survey Data and State CAHPS Hospice Survey Data on August 7, Hospice - Provider Data the same day, Hospice - General Information on August 19 and Hospice - Zip Data on August 18. Together they give mean survey scores at national and state level, provider-level quality of patient care measures, ownership and address detail, and the ZIP codes each provider serves. Nine palliative and hospice items this run, nine confirmed gaps, no monitored publisher on any of them. Consumer angle: how a family can tell whether the hospice serving their ZIP code performs above or below its state average. Trade angle: state score spreads against provider ownership.
-
-**Wages are rising slower than headcount across every senior care setting.** BLS puts home health care services employment at 1,886,100 jobs in July 2026, up 4.8 percent year over year, while average hourly earnings in the same industry reached $27.91 in June 2026, up only 1.2 percent. Assisted living and continuing care retirement community employment stood at 1,028,200 jobs, up 1.5 percent, with average hourly earnings of $25.47, up 3.2 percent. Nursing care facilities employment was 1,592,900 jobs, up 2.6 percent. Set against a medical care CPI of 593.78 in July 2026, up 1.7 percent, this is a wage-versus-price story with four clean series behind it. Ten of the 12 workforce items are confirmed gaps.
-
-**Medicare eligibility for immigrants, and the comment window.** Justice in Aging published template comments on August 31 on proposed Physician Fee Schedule changes affecting Medicare eligibility for immigrants and access to care. A confirmed gap. The story explains what the proposed rule would change and how comments are submitted, which serves both an advocacy readership and older immigrants and their families directly.
-
-**Who is supposed to pay for Medicare.** The Center for Retirement Research argued on August 26 that shifting Medicare funding to states would weaken the program and put Americans at risk. Pair it with the CMS advisory of August 13 showing Qualifying APM participants going unpaid for want of current billing information, and the RAPID coverage pathway notice of August 11 that would accelerate national coverage for new devices. Three separate documents about the plumbing of Medicare payment, all confirmed gaps.
-
-**Fair market rents and the fair housing standard, in the same month.** HUD's Fiscal Year 2027 Fair Market Rents notice published September 1, describing calculation methods and the reevaluation procedures public housing agencies must follow under the Housing Opportunity Through Modernization Act of 2016. On August 10, a supplemental notice of proposed rulemaking continuing HUD's effort to remove its disparate-impact regulations under the Fair Housing Act and leave that liability to the courts. On August 21, revised debenture interest rates for FHA-insured mortgages under the National Housing Act. All 13 housing items this run are confirmed gaps, none covered. Anchor the package in American Community Survey 2023 five-year estimates, which put 5,994,486 California residents and 4,630,733 Florida residents at age 65 and over, with median household income and housing tenure available for all 52 state-level geographies.
-
-**Telehealth and the palliative care conversation.** A RAND paper dated August 31 qualitatively examines how patients and family caregivers experience telehealth versus in-person outpatient palliative care visits, including mode preferences and perceived differences in communication quality after the pandemic. Confirmed gap. This is the rare item on the list with the patient's own voice in it, which makes it the consumer-facing entry point to an otherwise data-heavy hospice package.
-
-**Medicaid home and community-based services, explained.** Justice in Aging's August 20 primer covers how Medicaid HCBS help older adults with disabilities live independently and the policy gaps limiting access. Confirmed gap. Best used as an evergreen explainer that the nursing home and hospice data stories can point back to.
-
-**A note on scope discipline:** the RAND report on space defense industrial base workforce shortfalls surfaced under the workforce topic but concerns Space Force STEM pipelines and technician training. It is not an aging story and should be dropped from the queue.
+- **The nursing home accountability file, rebuilt from scratch.** CMS refreshed 10 interlocking nursing home datasets on 2026-08-01, all of them state- and county-localizable and all showing a confirmed gap: Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Provider Information, Survey Summary, MDS Quality Measures, Inspection Dates, Citation Code Look-up and Nursing Home Data Collection Intervals, joined by Facility Affiliation Data (2026-07-31), Medicare Claims Quality Measures (2026-08-01) and the Skilled Nursing Facility Quality Reporting Program file (2026-08-01). Hook: the fines-and-citations record for the last three years is now current, and no monitored publisher has touched the refresh. Angle: join Penalties and Health Deficiencies to Ownership and Facility Affiliation Data and report which ownership groups concentrate scope-and-severity citations and payment denials, then localize to a single state. Competitive situation: 17 of 19 long-term care items are unmatched and the newest is zero days old, so this is a build-it-first opportunity rather than a reaction piece.
+- **Hospice quality, national and state, with nobody in the room.** CMS published National CAHPS Hospice Survey Data and State CAHPS Hospice Survey Data on 2026-08-07, both localizable, both gaps. Hook: mean scores for Medicare-certified hospice providers, side by side, state against national. Angle: pair the state file with the national averages to show where family-reported hospice experience diverges most, and read it against the RAND paper published 2026-08-31 on patient and family caregiver perspectives on communication quality in tele-palliative care, which explores preferences by mode of care and perceived differences in communication quality post-pandemic. Competitive situation: the palliative and hospice cluster is nine items with nine gaps and zero monitored coverage, the cleanest open field in the run.
+- **Direct care wages are growing slower than medical prices.** BLS reported home health care services average hourly earnings of $27.91 in June 2026, up 1.2% year over year, while assisted living and continuing care retirement community earnings reached $25.47, up 3.2%. Medical care CPI rose 1.7% over the same period. Hook: home health wage growth came in below the medical care price increase. Angle: set the pay figures against headcount, where home health care services employment hit 1,886,100 jobs in July 2026 (+4.8%), nursing care facilities 1,592,900 (+2.6%) and continuing care retirement communities and assisted living 1,028,200 (+1.5%). The sector is adding home health workers fastest and paying them the smallest raise. Competitive situation: 10 of 12 workforce items are unmatched, and all five BLS series here are gaps, so the comparison is available to whoever runs the arithmetic first.
+- **HUD's fall housing decisions, stacked.** Three Federal Register items land together: Fair Market Rents for the Housing Choice Voucher Program and other programs for fiscal year 2027, published 2026-09-01 and effective October 1, including the procedures for public housing agencies to request FMR reevaluations under the Housing Opportunity Through Modernization Act of 2016; the supplemental notice of proposed rulemaking on HUD's implementation of the Fair Housing Act's disparate impact standard, published 2026-08-10, continuing the effort begun in January 2026 to remove the disparate-impact regulations and leave interpretation to the courts; and debenture interest rates under the National Housing Act, published 2026-08-21, with the Section 221(g)(4) rate at 4 percent for the six-month period beginning January 1, 2026. Hook: voucher payment standards, fair housing enforcement theory and FHA insurance economics all reset within three weeks. Angle: layer the FY 2027 FMRs onto the American Community Survey 2023 state aging and housing profile, which covers 52 states with 65-plus, 65-74, 75-84 and 85-plus counts, median household income and housing tenure, and show where older renter households face the widest gap between income and the new payment standard. California has 5,994,486 residents aged 65 and older and Florida 4,630,733, which makes both natural first localizations. Competitive situation: all 13 housing items are confirmed gaps with zero monitored coverage.
+- **Two Social Security rulings that change how income gets counted.** The Social Security Administration gave notice of SSR 26-2p on 2026-09-01, consolidating policy on documenting and evaluating disability in young adults and rescinding and replacing SSR 11-2p, and on 2026-08-31 announced the rescission of Acquiescence Ruling 90-2(2), which governed evaluation of a rental subsidy as in-kind income for Supplemental Security Income benefit calculation purposes under Ruppert v. Bowen. Hook: the rental subsidy rescission goes straight to the benefit math for SSI recipients living in subsidized or shared housing. Angle: a consumer explainer on what the in-kind income change means for households where an older adult and an adult child share housing costs. Competitive situation: the SSR 26-2p notice is a confirmed gap; the AR 90-2(2) rescission is only lightly covered, and financial security is the one cluster where monitored publishers are actually present, with 4 of 10 items matched.
+- **Medicaid home and community-based services, from primer to policy fight.** Justice in Aging published a Medicaid HCBS primer for older adults on 2026-08-20, explaining how these services support independent living and where policy gaps limit access, and followed on 2026-08-31 with template comments on Medicare eligibility changes for immigrants in the Physician Fee Schedule proposed rule. Hook: an advocacy organization is simultaneously teaching the HCBS system and mobilizing comments against an eligibility narrowing. Angle: a trade piece for providers on what the proposed rule would mean for their patient mix, using the KFF Medicaid/CHIP Monthly Enrollment Tracker and the Medicaid Coverage for Women data note, both updated 2026-08-26, to size who is currently enrolled. Competitive situation: all four items are confirmed gaps.
+- **The device fast lane and the payments that never arrived.** CMS published a notice with comment period on 2026-08-11 describing the Regulatory Alignment for Predictable and Immediate Device coverage pathway, which leverages existing processes to grant expedited national Medicare coverage to eligible new technologies, and on 2026-08-13 an advisory telling Qualifying APM participants how to update the billing information CMS needs to disburse their incentive payments. Hook: the agency is accelerating coverage decisions on one track while unable to pay clinicians on another. Angle: pair both with the refreshed Medical Equipment Suppliers dataset from 2026-08-30 to report how quickly new covered devices actually reach suppliers in a given state. Competitive situation: all three are confirmed gaps.
 
 ## Pipeline health
 
