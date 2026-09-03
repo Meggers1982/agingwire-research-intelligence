@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T19:53:11.055460+00:00",
-  "evidence_count": 189,
+  "generated_at": "2026-09-03T19:54:51.364143+00:00",
+  "evidence_count": 160,
   "new_evidence_count": 0,
-  "coverage_count": 1036,
-  "monitored_publisher_count": 65,
+  "coverage_count": 1026,
+  "monitored_publisher_count": 64,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -27,11 +27,11 @@
     "transportation",
     "workforce"
   ],
-  "demand_source": "disabled",
+  "demand_source": "unavailable (SERPAPI_API_KEY is not set)",
   "demand_topics": {},
   "web_coverage_status": {
     "checked": 0,
-    "skipped_reason": "enrichment disabled"
+    "skipped_reason": "SERPAPI_API_KEY is not set"
   },
   "serpapi_calls": 0,
   "serpapi_failures": [],
@@ -39,7 +39,7 @@
     "age_tech": 7,
     "ageism_work": 1,
     "aging_in_place": 14,
-    "assisted_living": 64,
+    "assisted_living": 65,
     "cardiovascular_disease": 5,
     "caregiving": 7,
     "chronic_pain": 1,
@@ -87,8 +87,8 @@
     {
       "source": "census-acs",
       "method": "census_acs",
-      "status": "error",
-      "error": "CENSUS_API_KEY is not set. api.census.gov rejects keyless requests by redirecting to an HTML page. Request a free key at https://api.census.gov/data/key_signup.html and add it as a repository secret."
+      "status": "ok",
+      "items": 1
     },
     {
       "source": "acl-news",
@@ -99,8 +99,8 @@
     {
       "source": "nia-news",
       "method": "rss",
-      "status": "ok",
-      "items": 20
+      "status": "error",
+      "error": "405 Client Error: Not Allowed for url: https://www.nia.nih.gov/news/rss.xml"
     },
     {
       "source": "cfpb-newsroom",
@@ -171,8 +171,8 @@
     {
       "source": "alliance-aging-research",
       "method": "rss",
-      "status": "ok",
-      "items": 10
+      "status": "error",
+      "error": "415 Client Error: Unsupported Media Type for url: https://www.agingresearch.org/feed/"
     }
   ],
   "media_status": [
@@ -269,7 +269,7 @@
       "audience": "b2b",
       "status": "error",
       "feed": "http://homecaremag.com/combo/feed",
-      "error": "404 Client Error: Not Found for url: https://www.homecaremag.com/features/feed"
+      "error": "403 Client Error: Forbidden for url: https://www.homecaremag.com/combo/feed"
     },
     {
       "publisher": "Next Avenue",
@@ -828,10 +828,9 @@
     {
       "publisher": "Ageist",
       "audience": "b2c",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.ageist.com/feed/",
-      "discovered": true,
-      "items": 10
+      "error": "415 Client Error: Unsupported Media Type for url: https://www.ageist.com/feed/"
     },
     {
       "publisher": "AgingCare",
@@ -1162,7 +1161,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1220,7 +1219,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1278,7 +1277,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1336,7 +1335,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1394,7 +1393,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1451,7 +1450,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1508,7 +1507,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1564,7 +1563,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1620,7 +1619,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1676,7 +1675,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1732,7 +1731,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1788,7 +1787,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1844,7 +1843,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1900,7 +1899,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -1956,7 +1955,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2012,7 +2011,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2068,7 +2067,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2124,7 +2123,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2180,7 +2179,75 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "american-community-survey",
+      "title": "American Community Survey 2023 state aging and housing profile (52 states)",
+      "url": "https://data.census.gov/table?q=DP05&y=2023",
+      "source_type": "government_api",
+      "published_at": null,
+      "topics": [
+        "housing",
+        "financial_security",
+        "migration_retirement",
+        "rural_aging"
+      ],
+      "geographies": [
+        "US states"
+      ],
+      "population": "All US residents, with 65+ age bands",
+      "methodology": "ACS 5-year Data Profile API; selected aging, income and housing-tenure measures",
+      "evidence_grade": "A",
+      "summary": "State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.",
+      "key_findings": [
+        "California: 5,994,486 residents aged 65+",
+        "Florida: 4,630,733 residents aged 65+",
+        "Texas: 3,905,545 residents aged 65+",
+        "New York: 3,461,186 residents aged 65+",
+        "Pennsylvania: 2,476,241 residents aged 65+"
+      ],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 0,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 4,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Consumer angle: explain what the evidence changes for older adults and families.",
+        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "year": 2023,
+        "variables": {
+          "DP05_0024E": "population_65_plus",
+          "DP05_0015E": "population_65_74",
+          "DP05_0016E": "population_75_84",
+          "DP05_0017E": "population_85_plus",
+          "DP03_0062E": "median_household_income",
+          "DP04_0046E": "owner_occupied_housing_units",
+          "DP04_0047E": "renter_occupied_housing_units"
+        },
+        "state_count": 52,
+        "data_file": "outputs/data/acs-2023-state-profile.json",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T19:01:01.274675+00:00",
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -2231,7 +2298,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2277,7 +2344,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -2328,7 +2395,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2463,7 +2530,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2598,7 +2665,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2642,7 +2709,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -2776,7 +2843,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2910,7 +2977,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2960,7 +3027,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3005,7 +3072,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -3139,7 +3206,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3273,7 +3340,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3316,7 +3383,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -3449,7 +3516,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3501,7 +3568,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3553,7 +3620,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3604,7 +3671,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3659,7 +3726,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3714,7 +3781,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3769,7 +3836,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3824,7 +3891,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3879,7 +3946,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3934,7 +4001,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3983,7 +4050,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4027,7 +4094,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4071,7 +4138,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4115,7 +4182,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4159,7 +4226,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4203,7 +4270,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4255,7 +4322,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4298,7 +4365,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4342,7 +4409,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4386,7 +4453,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4431,7 +4498,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4474,7 +4541,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4517,7 +4584,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4561,52 +4628,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Review of Medicare data reveals potential new statistics on dementia diagnosis",
-      "url": "https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-13T00:00:00+00:00",
-      "topics": [
-        "dementia",
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 53,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4651,7 +4673,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4693,7 +4715,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4735,7 +4757,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -4779,7 +4801,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4823,7 +4845,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4867,7 +4889,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4911,7 +4933,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4955,7 +4977,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -4999,7 +5021,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5043,7 +5065,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5087,7 +5109,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5131,7 +5153,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5175,7 +5197,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5219,7 +5241,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5263,7 +5285,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5307,7 +5329,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5351,7 +5373,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5395,7 +5417,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5439,7 +5461,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5483,7 +5505,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5527,7 +5549,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5571,7 +5593,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5615,7 +5637,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5655,7 +5677,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -5697,7 +5719,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5740,7 +5762,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5783,7 +5805,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5825,7 +5847,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5869,49 +5891,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms",
-      "url": "https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-10T14:27:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 2,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5953,7 +5933,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5996,7 +5976,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6038,7 +6018,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6080,218 +6060,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIH releases Alzheimer’s Disease and Related Dementias Research Progress Report and FY27 Professional Judgment Budget",
-      "url": "https://www.nia.nih.gov/news/nih-releases-alzheimers-disease-and-related-dementias-research-progress-report-and-fy27",
-      "source_type": "institutional_rss",
-      "published_at": "2025-09-08T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "NIH released the FY 2027 Professional Judgment Budget for Alzheimer’s Disease and Related Dementias and the NIH Scientific Progress Report.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 37,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Connect with NIA at AAIC 2025",
-      "url": "https://www.nia.nih.gov/news/connect-nia-aaic-2025",
-      "source_type": "institutional_rss",
-      "published_at": "2025-07-23T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Join NIA at the Alzheimer's Association International Conference (AAIC) in Toronto from July 27-31.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 37,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "A gene guiding brain cell growth may regulate Alzheimer’s plaque size and toxicity",
-      "url": "https://www.nia.nih.gov/news/gene-guiding-brain-cell-growth-may-regulate-alzheimers-plaque-size-and-toxicity",
-      "source_type": "institutional_rss",
-      "published_at": "2025-04-10T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Plexin-B1 shapes glial networks around beta-amyloid plaques. An NIA-funded study has found that targeting it may improve plaque clearance and reduce brain inflammation.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 37,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "New drug candidate targeting synaptic resilience well tolerated in Alzheimer’s patients",
-      "url": "https://www.nia.nih.gov/news/new-drug-candidate-targeting-synaptic-resilience-well-tolerated-alzheimers-patients",
-      "source_type": "institutional_rss",
-      "published_at": "2025-04-03T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "A new drug targeting synaptic resilience shows potential in treating Alzheimer’s disease in an NIA-funded study, with early trials indicating safety and possible brain damage reduction. Further research is needed on the drug’s long-term effects.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 37,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "South Africa cash transfer program slowed cognitive decline for midlife and older adults",
-      "url": "https://www.nia.nih.gov/news/south-africa-cash-transfer-program-slowed-cognitive-decline-midlife-and-older-adults",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-27T00:00:00+00:00",
-      "topics": [
-        "cognitive_decline",
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "A modest cash-transfer intervention slowed memory decline and lowered dementia risk among midlife and older adults in rural South Africa.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 37,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6331,7 +6100,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -6373,7 +6142,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6420,7 +6189,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6467,92 +6236,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Bright brain spots from small blood vessels could help predict Alzheimer’s risk",
-      "url": "https://www.nia.nih.gov/news/bright-brain-spots-small-blood-vessels-could-help-predict-alzheimers-risk",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-20T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Bright spots in the brain called white matter hyperintensities contribute to Alzheimer’s risk. Reducing their accumulation might help slow or prevent the disease.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 35,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Difficulty managing bills may signal early dementia",
-      "url": "https://www.nia.nih.gov/news/difficulty-managing-bills-may-signal-early-dementia",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-18T00:00:00+00:00",
-      "topics": [
-        "cognitive_decline",
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Missed mortgage and credit card payments may signal early cognitive decline years before a dementia diagnosis, according to an NIA-funded study.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 35,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6592,7 +6276,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -6632,87 +6316,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Now Hiring: Director of Public Policy and Government Relations",
-      "url": "https://www.agingresearch.org/blog/now-hiring-public-policy-manager/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-21T14:00:52+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Now Hiring: Director of Public Policy and Government Relations appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 34,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Celebrating World Senior Citizens Day – Today and Every Day",
-      "url": "https://www.agingresearch.org/blog/celebrating-world-senior-citizens-day-today-and-every-day/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-20T20:42:04+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Celebrating World Senior Citizens Day – Today and Every Day appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 34,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -6752,7 +6356,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6792,7 +6396,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6832,7 +6436,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6872,7 +6476,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6912,7 +6516,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6959,87 +6563,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIA statement on the U.S. Cost of Dementia Model report",
-      "url": "https://www.nia.nih.gov/news/nia-statement-u-s-cost-dementia-model-report",
-      "source_type": "institutional_rss",
-      "published_at": "2025-04-25T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Read an announcement about an NIA-funded project that reports the economic burden of Alzheimer's disease and related dementia in the United States.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 33,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 1,
-      "story_angles": [],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Advance care planning intervention improved end-of-life documentation but increased potentially burdensome care",
-      "url": "https://www.nia.nih.gov/news/advance-care-planning-intervention-improved-end-life-documentation-increased-potentially",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-20T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "An advance care planning intervention increased both the documentation of end-of-life preferences and potentially burdensome care.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 33,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7081,7 +6605,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T18:49:08.151942+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -7121,127 +6645,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Meet Lauren Belsky, Development Coordinator for the Alliance",
-      "url": "https://www.agingresearch.org/blog/meet-lauren-belsky-development-coordinator-for-the-alliance/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-12T13:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 32,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Navigating Air Travel — Tips for Older Adventurers",
-      "url": "https://www.agingresearch.org/blog/navigating-air-travel-tips-for-older-adventurers/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-27T15:50:17+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Navigating Air Travel — Tips for Older Adventurers appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 32,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Balancing Boredom on World Brain Day",
-      "url": "https://www.agingresearch.org/blog/balancing-boredom-on-world-brain-day/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-21T21:40:04+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 32,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -7283,7 +6687,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7325,7 +6729,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7365,7 +6769,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7405,7 +6809,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7445,7 +6849,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7485,7 +6889,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7525,7 +6929,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7565,7 +6969,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7605,7 +7009,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7645,7 +7049,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7685,7 +7089,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7725,7 +7129,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7765,7 +7169,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7805,7 +7209,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7845,7 +7249,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7885,7 +7289,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7925,7 +7329,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7965,7 +7369,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8005,7 +7409,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8045,7 +7449,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8085,7 +7489,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8125,251 +7529,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIA-funded small business spotlight: Bone Health Technologies shakes up the market to prevent bone density loss",
-      "url": "https://www.nia.nih.gov/news/nia-funded-small-business-spotlight-bone-health-technologies-shakes-market-prevent-bone",
-      "source_type": "institutional_rss",
-      "published_at": "2025-05-28T00:00:00+00:00",
-      "topics": [
-        "osteoporosis_bone_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Read how Bone Health Technologies, an NIA-funded small business, shakes up the market to prevent bone density loss.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 31,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Biological clock based on blood measurements predicts mouse lifespan and frailty",
-      "url": "https://www.nia.nih.gov/news/biological-clock-based-blood-measurements-predicts-mouse-lifespan-and-frailty",
-      "source_type": "institutional_rss",
-      "published_at": "2025-05-01T00:00:00+00:00",
-      "topics": [
-        "sarcopenia_frailty"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "NIA investigators have created a biological clock for mice based on blood measurements. Learn how the clock can help predict differences in aging and how the findings could translate to clinical practice.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 31,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat",
-      "url": "https://www.agingresearch.org/blog/dont-sweat-it-a-cool-guide-for-older-adults-to-beat-the-summer-heat/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-09T18:22:17+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’",
-      "url": "https://www.agingresearch.org/blog/do-what-you-love-to-end-alz-offers-yearlong-spin-on-the-longest-day/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-17T12:40:20+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’ appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Why Preventative Care is a ‘Manly’ Long-Term Health Investment",
-      "url": "https://www.agingresearch.org/blog/why-preventative-care-is-a-manly-long-term-health-investment/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-15T21:31:16+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "2025 Impact Report Highlights its Mission and Vision in Action",
-      "url": "https://www.agingresearch.org/blog/2025-impact-report-highlights-its-mission-and-vision-in-action/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-09T16:47:53+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post 2025 Impact Report Highlights its Mission and Vision in Action appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 29,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 5,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8411,7 +7571,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8451,7 +7611,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8491,7 +7651,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8531,7 +7691,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8571,7 +7731,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8611,7 +7771,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8651,7 +7811,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8691,7 +7851,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8731,7 +7891,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8771,7 +7931,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8811,7 +7971,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8851,89 +8011,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Risk and future burden of dementia in the United States",
-      "url": "https://www.nia.nih.gov/news/risk-and-future-burden-dementia-united-states",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-11T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "NIA study reveals that nearly 42% of Americans over 55 may develop dementia, with new cases possibly doubling by 2060. Learn about the rising risk and future impact.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 28,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 1,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 2,
-      "story_angles": [],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "saturated",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Senolytic therapy shows subtle impact on age-related bone health in women",
-      "url": "https://www.nia.nih.gov/news/senolytic-therapy-shows-subtle-impact-age-related-bone-health-women",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-27T00:00:00+00:00",
-      "topics": [
-        "osteoporosis_bone_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "An NIA-funded clinical trial investigating whether senolytics could improve bone health in older women had just subtle results.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 28,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -8973,7 +8051,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9013,7 +8091,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9053,7 +8131,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9093,7 +8171,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9133,7 +8211,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9173,7 +8251,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9213,7 +8291,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9253,47 +8331,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Butler-Williams Scholars Program 2026",
-      "url": "https://www.nia.nih.gov/news/butler-williams-scholars-program-2026",
-      "source_type": "institutional_rss",
-      "published_at": "2026-02-27T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Learn about the unique opportunities the Butler-Williams Scholars Program provides for junior faculty, researchers who are new to the field of aging, and postdoctoral fellows.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 24,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9333,7 +8371,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9373,7 +8411,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9413,7 +8451,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9453,7 +8491,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9493,7 +8531,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9533,87 +8571,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Research training spotlight: NIA funding enables researcher-mentor to “pay it forward”",
-      "url": "https://www.nia.nih.gov/news/research-training-spotlight-nia-funding-enables-researcher-mentor-pay-it-forward",
-      "source_type": "institutional_rss",
-      "published_at": "2025-06-02T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Read about how renowned researcher María J. Marquine, Ph.D.'s helps clinicians understand cognitive differences in aging across populations.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 24,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIA Experimental Aging Research Training Course",
-      "url": "https://www.nia.nih.gov/news/nia-experimental-aging-research-training-course-2025",
-      "source_type": "institutional_rss",
-      "published_at": "2025-05-23T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Apply by July 11, 2025, for the Annual Summer Training Course in Experimental Aging Research on Sep. 8-12, 2025, which will provide exposure to research programs in the experimental biology of aging.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 24,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9653,7 +8611,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9693,7 +8651,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9733,7 +8691,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9773,7 +8731,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9813,7 +8771,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9853,7 +8811,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -9893,127 +8851,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Timeframe of 8-hour restricted eating irrelevant to weight loss",
-      "url": "https://www.nia.nih.gov/news/timeframe-8-hour-restricted-eating-irrelevant-weight-loss",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-06T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "European adults with obesity who limited eating to any of three 8-hour window timeframes each day lost weight and improved cardiometabolic health.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 22,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "A mother’s X chromosome affects learning and memory in later life",
-      "url": "https://www.nia.nih.gov/news/mothers-x-chromosome-affects-learning-and-memory-later-life",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-04T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "A mother’s X chromosomes may turn off key genes, accelerate brain cell aging process, and impair learning and memory later in life.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 22,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Scientists develop improved mouse model for studying systemic aging-related health decline",
-      "url": "https://www.nia.nih.gov/news/scientists-develop-improved-mouse-model-studying-systemic-aging-related-health-decline",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-25T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "NIA scientists developed an improved mouse model to study aging-related health decline, revealing how inflammation drives organ damage.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 22,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 8,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -10053,7 +8891,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     }
