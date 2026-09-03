@@ -6,36 +6,39 @@
 <meta name="robots" content="noindex, nofollow" />
 <title>AgingWire Research Intelligence — Dashboard</title>
 <style>
+  /* Palette matched to senior-research-digest so the two dashboards read as one
+     family. The shared tokens are its exact values; --new, --new-soft and
+     --strong are additions this dashboard needs, tuned to the same warm base. */
   :root {
     /* Measured from the live header on load/resize; the literal is the desktop fallback. */
     --header-h: 91px;
-    --bg: #f6f6f4;
+    --bg: #f7f5f2;
     --panel: #ffffff;
-    --border: #e0dfd9;
-    --text: #22252b;
-    --muted: #6b7280;
-    --accent: #2f5d7c;
-    --accent-soft: #e5eef4;
+    --border: #e4ddd3;
+    --text: #2b2622;
+    --muted: #6f6759;
+    --accent: #7a5c3e;
+    --accent-soft: #efe6d9;
     --good: #2f7a4f;
     --warn: #a5710f;
     --bad: #b23b3b;
-    --new: #1f6f4a;
-    --new-soft: #dcefe4;
-    --strong: #101318;
+    --new: #2f7a4f;
+    --new-soft: #e3ecdd;
+    --strong: #1a1613;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #16181c; --panel: #1e2126; --border: #31353c; --text: #e8eaed;
-      --muted: #9aa2ad; --accent: #8fc0e0; --accent-soft: #22303a;
+      --bg: #1c1a17; --panel: #262320; --border: #3a352e; --text: #efe9e0;
+      --muted: #a89d8c; --accent: #d9b98a; --accent-soft: #332c22;
       --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
-      --new: #7fd3a6; --new-soft: #1d3329; --strong: #ffffff;
+      --new: #6fcf94; --new-soft: #24301f; --strong: #ffffff;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #16181c; --panel: #1e2126; --border: #31353c; --text: #e8eaed;
-    --muted: #9aa2ad; --accent: #8fc0e0; --accent-soft: #22303a;
+    --bg: #1c1a17; --panel: #262320; --border: #3a352e; --text: #efe9e0;
+    --muted: #a89d8c; --accent: #d9b98a; --accent-soft: #332c22;
     --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
-    --new: #7fd3a6; --new-soft: #1d3329; --strong: #ffffff;
+    --new: #6fcf94; --new-soft: #24301f; --strong: #ffffff;
   }
   * { box-sizing: border-box; }
   body {
