@@ -4,6 +4,7 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 import json
+import re
 import yaml
 
 from agingwire_intel.collectors.census import acs_evidence_item
@@ -13,17 +14,38 @@ from agingwire_intel.collectors.web import collect_link_page
 from agingwire_intel.media import collect_registry
 from agingwire_intel.scoring import score_evidence
 
+STOP = {"the","a","an","and","or","of","to","in","for","on","with","by","from","at","as","is","are","was","were","be","this","that","new","how","what","why","older","adults","senior","seniors","aging","ageing"}
+
+
+def _tokens(text: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9]+", text.lower()) if len(w) > 2 and w not in STOP}
+
+
+def _same_story(evidence, coverage_item) -> bool:
+    topics = set(evidence.topics or []).intersection(coverage_item.topics or [])
+    if not topics:
+        return False
+    left, right = _tokens(evidence.title), _tokens(coverage_item.title)
+    if not left or not right:
+        return False
+    shared = left & right
+    union = left | right
+    jaccard = len(shared) / len(union)
+    # Require title-level evidence too; topic overlap alone massively overstates coverage.
+    return jaccard >= 0.18 or (len(shared) >= 3 and len(shared) / min(len(left), len(right)) >= 0.35)
+
 
 def _coverage_counts(item, coverage) -> tuple[int, int]:
-    topics = set(item.topics or [])
-    if not topics:
-        return 0, 0
-    b2b = b2c = 0
+    publishers_b2b: set[str] = set()
+    publishers_b2c: set[str] = set()
     for c in coverage:
-        if topics.intersection(c.topics or []):
-            if c.audience_type == "b2b": b2b += 1
-            elif c.audience_type == "b2c": b2c += 1
-    return b2b, b2c
+        if not _same_story(item, c):
+            continue
+        if c.audience_type == "b2b":
+            publishers_b2b.add(c.publisher)
+        elif c.audience_type == "b2c":
+            publishers_b2c.add(c.publisher)
+    return len(publishers_b2b), len(publishers_b2c)
 
 
 def _angles(item) -> list[str]:
@@ -31,14 +53,14 @@ def _angles(item) -> list[str]:
     topics = set(item.topics or [])
     if item.localizable or item.geographies:
         angles.append("Localize the finding by state, metro or county and identify geographic outliers.")
-    if topics & {"caregiving", "housing", "aging_in_place", "financial_security", "fraud_financial_exploitation", "loneliness_social_connection"}:
+    if topics & {"caregiving", "housing", "aging_in_place", "financial_security", "fraud_scams", "loneliness_social_connection", "medicare_medicaid", "transportation", "food_security"}:
         angles.append("Consumer angle: explain what the evidence changes for older adults and families.")
-    if topics & {"assisted_living", "ltss", "workforce", "age_tech", "housing", "caregiving"}:
+    if topics & {"assisted_living", "long_term_care", "workforce", "age_tech", "housing", "caregiving", "senior_living_quality", "medicare_medicaid"}:
         angles.append("B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.")
     if item.source_type == "government_api":
         angles.append("Build an original ranking, map or trend analysis from the underlying public data.")
     if item.b2b_coverage_count + item.b2c_coverage_count == 0:
-        angles.append("Coverage gap: relevant monitored publishers have not surfaced this topic in the current feed window.")
+        angles.append("Coverage gap: no close title-level match appeared in the current monitored B2B/B2C feed window.")
     return angles
 
 
@@ -57,9 +79,7 @@ def run(config_path: str = "config/monitors.yml", output_dir: str = "outputs") -
             elif method == "senior_digest":
                 items = collect_senior_digest(monitor["url"])
             elif method == "census_acs":
-                item = acs_evidence_item(int(monitor.get("year", 2024)))
-                item.localizable = True
-                items = [item]
+                items = [acs_evidence_item(int(monitor.get("year", 2024)))]
             else:
                 items = []
             evidence.extend(items)
