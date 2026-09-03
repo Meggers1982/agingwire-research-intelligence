@@ -1,15 +1,15 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T16:25:28.311536+00:00
+Generated: 2026-09-03T16:27:28.339371+00:00
 
 Evidence candidates: **286** (0 new since the last run)  
-Media coverage items: **1007** from **61** working publisher feeds
+Media coverage items: **1027** from **64** working publisher feeds
 
 ## Highest-priority story opportunities
 
 ### 1. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
 
-**Score:** 87/100  
+**Score:** 80/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-09-01  
 **Topics:** housing  
@@ -27,7 +27,7 @@ HUD is required to publish FMRs not less than annually, adjusted to be effective
 
 ### 2. CMS refreshed dataset: Medical Equipment Suppliers
 
-**Score:** 86/100  
+**Score:** 79/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-30  
 **Topics:** medicare_medicaid  
@@ -45,7 +45,7 @@ A list of Suppliers that indicates the supplies carried at that location and the
 
 ### 3. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
 
-**Score:** 85/100  
+**Score:** 78/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-09-01  
 **Topics:** financial_security  
@@ -62,7 +62,7 @@ We are providing notice of SSR 26-2p. This SSR explains our policies and consoli
 
 ### 4. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
-**Score:** 85/100  
+**Score:** 78/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-08-21  
 **Topics:** housing  
@@ -80,7 +80,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 5. CMS refreshed dataset: Medicare Claims Quality Measures
 
-**Score:** 85/100  
+**Score:** 78/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, medicare_medicaid  
@@ -98,7 +98,7 @@ Quality measures that are based on Medicare claims data. Each row contains a spe
 
 ### 6. CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data
 
-**Score:** 85/100  
+**Score:** 78/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, medicare_medicaid  
@@ -116,7 +116,7 @@ Skilled Nursing Facilities (SNFs) provide Medicare Part A SNF services to benefi
 
 ### 7. CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-07  
 **Topics:** medicare_medicaid, palliative_hospice  
@@ -134,7 +134,7 @@ This data set contains the national average (mean) scores of Medicare-certified 
 
 ### 8. CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-07  
 **Topics:** medicare_medicaid, palliative_hospice  
@@ -152,7 +152,7 @@ This data set contains state average (mean) scores of Medicare-certified hospice
 
 ### 9. CMS refreshed dataset: National Downloadable File
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-07-31  
 **Topics:** medicare_medicaid  
@@ -170,7 +170,7 @@ The Doctors and Clinicians national downloadable file is organized such that eac
 
 ### 10. BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** workforce, caregiving, aging_in_place  
@@ -186,7 +186,7 @@ The Doctors and Clinicians national downloadable file is organized such that eac
 
 ### 11. BLS: Continuing care retirement communities and assisted living employment, July 2026 — 1,028.20 thousands of jobs (+1.5% year over year)
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** workforce, assisted_living, housing  
@@ -202,7 +202,7 @@ The Doctors and Clinicians national downloadable file is organized such that eac
 
 ### 12. Medicaid Program; Prohibition on Federal Medicaid and Children's Health Insurance Program Funding for Sex-Rejecting Procedures Furnished to Children
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-08-13  
 **Topics:** medicare_medicaid  
@@ -220,7 +220,7 @@ This final rule requires that a State Medicaid plan must provide that the Medica
 
 ### 13. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-08-13  
 **Topics:** medicare_medicaid  
@@ -238,7 +238,7 @@ This advisory is to alert certain clinicians who are Qualifying Alternative Paym
 
 ### 14. Medicare Program; Regulatory Alignment for Predictable and Immediate Device (RAPID) Coverage Pathway
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-08-11  
 **Topics:** medicare_medicaid  
@@ -256,7 +256,7 @@ This notice with comment period provides information to the public on the proces
 
 ### 15. HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-08-10  
 **Topics:** housing  
@@ -274,7 +274,7 @@ HUD published a notice of proposed rulemaking in January of 2026 that proposed t
 
 ### 16. CMS refreshed dataset: Nursing Home Data Collection Intervals
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, workforce  
@@ -291,7 +291,7 @@ This table lists the data collection periods for the quality measures displayed 
 
 ### 17. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** financial_security, medicare_medicaid  
@@ -307,7 +307,7 @@ This table lists the data collection periods for the quality measures displayed 
 
 ### 18. BLS: Home health care services average hourly earnings, June 2026 — 27.91 dollars per hour (+1.2% year over year)
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-06-01  
 **Topics:** workforce, caregiving  
@@ -323,7 +323,7 @@ This table lists the data collection periods for the quality measures displayed 
 
 ### 19. CMS refreshed dataset: Utilization Data
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-11  
 **Topics:** long_term_care  
@@ -340,7 +340,7 @@ The Doctors and Clinicians utilization data file reports volume information for 
 
 ### 20. CMS refreshed dataset: Patient-Reported Outcomes - Hospital
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-05  
 **Topics:** long_term_care  
@@ -357,7 +357,7 @@ Patient-reported outcomes are reports from patients about aspects of care that m
 
 ### 21. CMS refreshed dataset: Fire Safety Deficiencies
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -374,7 +374,7 @@ A list of nursing home fire safety citations in the last three years, including 
 
 ### 22. CMS refreshed dataset: Health Deficiencies
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -391,7 +391,7 @@ A list of nursing home health citations in the last three years, including the n
 
 ### 23. CMS refreshed dataset: MDS Quality Measures
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -408,7 +408,7 @@ Quality measures that are based on the resident assessments that make up the nur
 
 ### 24. CMS refreshed dataset: Ownership
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -425,7 +425,7 @@ A list of ownership information for currently active nursing homes.
 
 ### 25. CMS refreshed dataset: Penalties
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -443,7 +443,7 @@ A list of the fines and payment denials received by nursing homes in the last th
 ## Pipeline health
 
 Evidence sources: **14 ok**, **0 empty**, **2 error**  
-Publisher feeds: **61 working** of **132 in the registry** (13 error, 58 no feed found)
+Publisher feeds: **64 working** of **132 in the registry** (10 error, 58 no feed found)
 
 ### Evidence-source errors
 
