@@ -18,13 +18,25 @@ evidence:
     method: web
     url: https://www.cms.gov/newsroom
     priority: P0
-  - id: bls-news
-    method: web
-    url: https://www.bls.gov/bls/newsrels.htm
+  - id: bls-employment-projections
+    method: rss
+    url: https://www.bls.gov/feed/ecopro.rss
+    priority: P0
+  - id: bls-consumer-expenditures
+    method: rss
+    url: https://www.bls.gov/feed/cesan.rss
+    priority: P0
+  - id: bls-employee-benefits
+    method: rss
+    url: https://www.bls.gov/feed/ebs2.rss
+    priority: P0
+  - id: bls-occupational-requirements
+    method: rss
+    url: https://www.bls.gov/feed/ors.rss
     priority: P0
   - id: ssa-press
     method: web
-    url: https://www.ssa.gov/news/press/releases/
+    url: https://www.ssa.gov/news/en/press/releases/
     priority: P0
   - id: ftc-consumer-protection
     method: rss
@@ -34,9 +46,13 @@ evidence:
     method: web
     url: https://www.consumerfinance.gov/about-us/newsroom/
     priority: P0
-  - id: kff
+  - id: kff-issue-briefs
     method: web
-    url: https://www.kff.org/latest-content/
+    url: https://www.kff.org/content-type/issue-brief/
+    priority: P0
+  - id: kff-public-opinion
+    method: web
+    url: https://www.kff.org/topic/public-opinion/
     priority: P0
   - id: aarp-public-policy-institute
     method: web
@@ -48,7 +64,7 @@ evidence:
     priority: P0
   - id: phi-workforce
     method: web
-    url: https://www.phinational.org/resource-center/
+    url: https://www.phinational.org/policy-research/
     priority: P0
   - id: center-retirement-research
     method: web
