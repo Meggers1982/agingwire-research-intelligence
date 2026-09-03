@@ -13,8 +13,10 @@ BROWSER_UA = (
 )
 # Preferred: say who we are and where to complain. Measured 2026-09-03, ftc.gov
 # returns 200 for BROWSER_UA and 403 the moment this suffix is appended, so a
-# 403 falls back to the bare browser string rather than losing the source.
-# These are public feeds the publishers intend to be read.
+# 403 or 405 falls back to the bare browser string rather than losing the source.
+# These are public feeds the publishers intend to be read. Note that some hosts
+# (nia.nih.gov, seen from GitHub Actions) block by IP range, which no user agent
+# can fix -- those surface as source errors in the health report.
 USER_AGENT = (
     f"{BROWSER_UA} AgingWireResearchIntelligence/0.2 "
     "(+https://github.com/Meggers1982/agingwire-research-intelligence)"
@@ -24,6 +26,9 @@ FEED_ACCEPT = "application/rss+xml, application/atom+xml, application/xml, text/
 JSON_ACCEPT = "application/json, */*;q=0.8"
 
 RETRY_STATUS = {429, 500, 502, 503, 504}
+# WAF signatures rather than honest answers: a GET on a public RSS feed does not
+# legitimately return 405. Both are retried once with the bare browser UA.
+UA_FALLBACK_STATUS = {403, 405}
 
 
 def headers(accept: str = HTML_ACCEPT, user_agent: str = USER_AGENT) -> dict[str, str]:
@@ -52,7 +57,7 @@ def get(
             if response.status_code in RETRY_STATUS and attempt < retries:
                 time.sleep(backoff * (attempt + 1))
                 continue
-            if response.status_code == 403 and ua_fallback:
+            if response.status_code in UA_FALLBACK_STATUS and ua_fallback:
                 retry = requests.get(
                     url, headers=headers(accept, BROWSER_UA), params=params, timeout=timeout
                 )

@@ -37,6 +37,14 @@ The pipeline remembers what it has already reported. `state/seen.json` records w
 5. **Industry intelligence** — NIC and senior-living/LTSS market sources.
 6. **Media intelligence** — separate B2B and B2C registries for coverage-gap analysis, pitching and syndication.
 
+### Blocking that no user agent can fix
+
+Some hosts block by IP range, and GitHub Actions runners sit in ranges they
+refuse — `nia.nih.gov` serves its RSS feed locally but returns 405 to the
+workflow. These surface as source errors in the health report rather than being
+papered over. A 403 or 405 is retried once without the bot identifier in the
+user agent, which is enough for hosts that filter on the string alone.
+
 ### Sources reached by API rather than scraping
 
 `www.bls.gov` and `www.ssa.gov` return 403 to automated requests regardless of user agent, and `www.cms.gov/newsroom` is JavaScript-rendered with no feed. Those signals come through `api.bls.gov`, the Federal Register API and the CMS provider-data metastore instead. Sources with no machine-readable route at all are listed under `unresolved` in `config/monitors.yml` rather than left as permanently empty monitors.
