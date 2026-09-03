@@ -129,6 +129,23 @@
     text-transform: uppercase; color: var(--muted);
     padding-bottom: 9px; border-bottom: 1px solid var(--border);
   }
+  /* The heading is the control. A real <button> keeps Enter/Space and focus
+     order for free; the h3 stays for document outline and screen readers. */
+  .section-toggle {
+    display: flex; align-items: center; gap: 9px; width: 100%;
+    background: none; border: 0; padding: 0; margin: 0; cursor: pointer;
+    font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit;
+    text-align: left;
+  }
+  .section-toggle:hover { color: var(--accent); }
+  .section-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+  .section-caret {
+    font-size: 0.7rem; line-height: 1; transition: transform 0.18s ease; flex: none;
+  }
+  .section-block.collapsed .section-caret { transform: rotate(-90deg); }
+  .section-block.collapsed h3 { margin-bottom: 0; padding-bottom: 0; border-bottom-color: transparent; }
+  .section-block.collapsed .section-body { display: none; }
+  .section-count { margin-left: auto; font-weight: 600; letter-spacing: 0.04em; opacity: 0.8; }
   .section-block p { margin: 0 0 10px; }
   .section-block ul { margin: 0 0 12px; padding-left: 20px; }
   .section-block li { margin-bottom: 5px; }
@@ -371,6 +388,61 @@ function applyFilters() {
   }
 }
 
+const COLLAPSE_KEY = "aw-collapsed";
+
+function collapsedSet() {
+  try {
+    const raw = localStorage.getItem(COLLAPSE_KEY);
+    return new Set(raw ? JSON.parse(raw) : []);
+  } catch (e) {
+    return new Set();
+  }
+}
+
+function persistCollapsed(set) {
+  try {
+    localStorage.setItem(COLLAPSE_KEY, JSON.stringify([...set]));
+  } catch (e) {
+    /* private browsing denies storage; collapsing still works for this view */
+  }
+}
+
+function sectionBlock(id, title, body, opts = {}) {
+  if (!body) return "";
+  const collapsed = collapsedSet().has(id);
+  const count = opts.count != null ? `<span class="section-count">${esc(opts.count)}</span>` : "";
+  return `
+    <section class="section-block${opts.extraClass ? " " + opts.extraClass : ""}${collapsed ? " collapsed" : ""}" id="${id}">
+      <h3><button type="button" class="section-toggle" aria-expanded="${!collapsed}" aria-controls="${id}-body">
+        <span class="section-caret" aria-hidden="true">&#9662;</span>${esc(title)}${count}
+      </button></h3>
+      <div class="section-body" id="${id}-body">${body}</div>
+    </section>`;
+}
+
+function wireSectionToggles(root) {
+  root.querySelectorAll(".section-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const block = btn.closest(".section-block");
+      const nowCollapsed = block.classList.toggle("collapsed");
+      btn.setAttribute("aria-expanded", String(!nowCollapsed));
+      const set = collapsedSet();
+      nowCollapsed ? set.add(block.id) : set.delete(block.id);
+      persistCollapsed(set);
+    });
+  });
+}
+
+function expandSection(block) {
+  if (!block || !block.classList.contains("collapsed")) return;
+  block.classList.remove("collapsed");
+  const btn = block.querySelector(".section-toggle");
+  if (btn) btn.setAttribute("aria-expanded", "true");
+  const set = collapsedSet();
+  set.delete(block.id);
+  persistCollapsed(set);
+}
+
 function renderItem(item) {
   const findings = (item.key_findings || []).filter(Boolean);
   return `
@@ -473,24 +545,24 @@ async function renderMain() {
       <div class="jump-links">${jump}</div>
     </div>
 
-    ${run.feature_pitch_raw ? `<div class="section-block feature" id="feature-pitch">
-      <h3>Bigger Picture — Feature Pitch</h3>${renderBlock(run.feature_pitch_raw)}${modeNote}</div>` : ""}
+    ${sectionBlock("feature-pitch", "Bigger Picture — Feature Pitch",
+      run.feature_pitch_raw ? renderBlock(run.feature_pitch_raw) + modeNote : "",
+      { extraClass: "feature" })}
 
-    ${(run.pitch_ideas_raw || (run.story_ideas || []).length) ? `<div class="section-block" id="story-ideas">
-      <h3>Story Ideas</h3>${storyIdeasHtml(run)}</div>` : ""}
+    ${sectionBlock("story-ideas", "Story Ideas",
+      (run.pitch_ideas_raw || (run.story_ideas || []).length) ? storyIdeasHtml(run) : "",
+      { count: (run.story_ideas || []).length || "" })}
 
-    ${run.trends_raw ? `<div class="section-block" id="trends">
-      <h3>Research Trends &amp; Continuity</h3>${renderBlock(run.trends_raw)}</div>` : ""}
+    ${sectionBlock("trends", "Research Trends & Continuity",
+      run.trends_raw ? renderBlock(run.trends_raw) : "")}
 
-    ${clusterRows ? `<div class="section-block" id="clusters">
-      <h3>Topic Clusters</h3>
+    ${sectionBlock("clusters", "Topic Clusters", clusterRows ? `
       <div class="table-scroll"><table>
         <thead><tr><th>Topic</th><th>Sources</th><th>Items</th><th>Gaps</th><th>Newest (days)</th></tr></thead>
         <tbody>${clusterRows}</tbody>
-      </table></div></div>` : ""}
+      </table></div>` : "", { count: (run.clusters || []).length || "" })}
 
-    <div class="section-block" id="opportunities">
-      <h3>Story Opportunities</h3>
+    ${sectionBlock("opportunities", "Story Opportunities", `
       <div class="filter-row">
         <label class="sr-only" for="item-filter">Filter items</label>
         <select id="item-filter">
@@ -503,9 +575,9 @@ async function renderMain() {
         <span style="color: var(--muted); font-size: 0.8rem;">${items.length} shown</span>
       </div>
       ${items.map(renderItem).join("") || '<div class="empty-state">No items match this filter.</div>'}
-    </div>
+    `, { count: items.length })}
 
-    <div class="section-block" id="health"><h3>Pipeline Health</h3>${healthHtml}</div>
+    ${sectionBlock("health", "Pipeline Health", healthHtml)}
   `;
 
   document.getElementById("export-docx-btn").addEventListener("click", () => exportRunToDocx(run));
@@ -514,10 +586,12 @@ async function renderMain() {
     state.itemFilter = e.target.value;
     renderMain();
   });
+  wireSectionToggles(main);
   main.querySelectorAll(".jump-link").forEach(a => a.addEventListener("click", e => {
     e.preventDefault();
     const target = document.getElementById(a.getAttribute("href").slice(1));
     if (!target) return;
+    expandSection(target.closest(".section-block") || target);
     const offset = (document.querySelector("header")?.getBoundingClientRect().height || 0) + 12;
     window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: "smooth" });
   }));

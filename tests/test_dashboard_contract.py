@@ -57,9 +57,29 @@ class ContractTests(unittest.TestCase):
     def test_export_and_jump_targets_are_wired(self):
         for anchor in ("feature-pitch", "story-ideas", "trends", "clusters",
                        "opportunities", "health"):
-            self.assertIn(f'id="{anchor}"', TEMPLATE.read_text(encoding="utf-8"), anchor)
+            self.assertIn(f'sectionBlock("{anchor}"', self.js, anchor)
+            self.assertIn(f'href="#{anchor}"', self.js, anchor)
         self.assertIn("export-docx-btn", self.js)
         self.assertIn("export-csv-btn", self.js)
+
+    def test_every_section_is_collapsible(self):
+        """Sections are built by one helper; a hand-rolled block would skip
+        the toggle, the persistence and the jump-link expand."""
+        self.assertNotIn('<div class="section-block', self.js)
+        self.assertIn("wireSectionToggles(main)", self.js)
+
+    def test_collapsed_state_is_persisted(self):
+        self.assertIn("COLLAPSE_KEY", self.js)
+        self.assertIn("localStorage.setItem(COLLAPSE_KEY", self.js)
+
+    def test_jump_links_expand_a_collapsed_target(self):
+        """Jumping to a collapsed section must open it or the link looks broken."""
+        self.assertIn("expandSection(target.closest", self.js)
+
+    def test_toggle_is_a_real_button_with_aria(self):
+        self.assertIn('type="button" class="section-toggle"', self.js)
+        self.assertIn('aria-expanded=', self.js)
+        self.assertIn('aria-controls=', self.js)
 
     def test_docx_library_is_lazy_loaded_from_vendor(self):
         self.assertIn('el.src = "vendor/docx-8.5.0.umd.js"', self.js)

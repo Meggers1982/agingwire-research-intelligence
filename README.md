@@ -157,7 +157,7 @@ python -m http.server 8000 -d docs
 - **Story opportunities** — the scored items, filterable by new / confirmed gap / localizable / topic.
 - **Pipeline health** — errors, empty sources and feed coverage.
 
-Jump links, a light/dark toggle, `.docx` export and `.csv` export are on every run. The palette matches `senior-research-digest` so the two dashboards read as one family.
+Every section collapses from its heading, and the collapsed set is remembered in `localStorage` — a jump link to a collapsed section opens it rather than scrolling to a closed header. Jump links, a light/dark toggle, `.docx` export and `.csv` export are on every run. The palette matches `senior-research-digest` so the two dashboards read as one family.
 
 ### Editorial layer: how it is written
 
