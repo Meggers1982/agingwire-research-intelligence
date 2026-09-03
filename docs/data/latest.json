@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T19:54:51.364143+00:00",
-  "evidence_count": 160,
+  "generated_at": "2026-09-03T19:56:46.873362+00:00",
+  "evidence_count": 170,
   "new_evidence_count": 0,
-  "coverage_count": 1026,
-  "monitored_publisher_count": 64,
+  "coverage_count": 1036,
+  "monitored_publisher_count": 65,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -49,7 +49,7 @@
     "falls": 9,
     "financial_security": 11,
     "fraud_scams": 2,
-    "housing": 55,
+    "housing": 54,
     "incontinence": 1,
     "loneliness_social_connection": 4,
     "long_term_care": 46,
@@ -63,7 +63,7 @@
     "senior_living_quality": 5,
     "sleep": 5,
     "transportation": 4,
-    "workforce": 15
+    "workforce": 14
   },
   "source_status": [
     {
@@ -171,8 +171,8 @@
     {
       "source": "alliance-aging-research",
       "method": "rss",
-      "status": "error",
-      "error": "415 Client Error: Unsupported Media Type for url: https://www.agingresearch.org/feed/"
+      "status": "ok",
+      "items": 10
     }
   ],
   "media_status": [
@@ -828,9 +828,10 @@
     {
       "publisher": "Ageist",
       "audience": "b2c",
-      "status": "error",
+      "status": "ok",
       "feed": "https://www.ageist.com/feed/",
-      "error": "415 Client Error: Unsupported Media Type for url: https://www.ageist.com/feed/"
+      "discovered": true,
+      "items": 10
     },
     {
       "publisher": "AgingCare",
@@ -5896,6 +5897,48 @@
       }
     },
     {
+      "source_id": "alliance-aging-research",
+      "title": "Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms",
+      "url": "https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-10T14:27:00+00:00",
+      "topics": [
+        "dementia"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 42,
+      "score_components": {
+        "priority": 2,
+        "novelty": 1,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
       "source_id": "phi-workforce",
       "title": "Workforce Interventions",
       "url": "https://www.phinational.org/issue/workforce-interventions/",
@@ -6321,6 +6364,86 @@
       }
     },
     {
+      "source_id": "alliance-aging-research",
+      "title": "Now Hiring: Director of Public Policy and Government Relations",
+      "url": "https://www.agingresearch.org/blog/now-hiring-public-policy-manager/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-21T14:00:52+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Now Hiring: Director of Public Policy and Government Relations appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 34,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Celebrating World Senior Citizens Day – Today and Every Day",
+      "url": "https://www.agingresearch.org/blog/celebrating-world-senior-citizens-day-today-and-every-day/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-20T20:42:04+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Celebrating World Senior Citizens Day – Today and Every Day appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 34,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
       "source_id": "ftc-consumer-protection",
       "title": "FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing",
       "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-extends-public-comment-proposed-policy-statement-regarding-personalized-pricing",
@@ -6643,6 +6766,126 @@
       ],
       "raw_metadata": {
         "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Meet Lauren Belsky, Development Coordinator for the Alliance",
+      "url": "https://www.agingresearch.org/blog/meet-lauren-belsky-development-coordinator-for-the-alliance/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-12T13:00:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 32,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Navigating Air Travel — Tips for Older Adventurers",
+      "url": "https://www.agingresearch.org/blog/navigating-air-travel-tips-for-older-adventurers/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-07-27T15:50:17+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Navigating Air Travel — Tips for Older Adventurers appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 32,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Balancing Boredom on World Brain Day",
+      "url": "https://www.agingresearch.org/blog/balancing-boredom-on-world-brain-day/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-07-21T21:40:04+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 32,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
         "runs_seen": 6,
@@ -7530,6 +7773,166 @@
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 15,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat",
+      "url": "https://www.agingresearch.org/blog/dont-sweat-it-a-cool-guide-for-older-adults-to-beat-the-summer-heat/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-07-09T18:22:17+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 29,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’",
+      "url": "https://www.agingresearch.org/blog/do-what-you-love-to-end-alz-offers-yearlong-spin-on-the-longest-day/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-17T12:40:20+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’ appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 29,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Why Preventative Care is a ‘Manly’ Long-Term Health Investment",
+      "url": "https://www.agingresearch.org/blog/why-preventative-care-is-a-manly-long-term-health-investment/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-15T21:31:16+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 29,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "2025 Impact Report Highlights its Mission and Vision in Action",
+      "url": "https://www.agingresearch.org/blog/2025-impact-report-highlights-its-mission-and-vision-in-action/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-09T16:47:53+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post 2025 Impact Report Highlights its Mission and Vision in Action appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 29,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 6,
         "is_new": false
       }
     },
