@@ -137,3 +137,33 @@ class FetchTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RecencyBiasTests(unittest.TestCase):
+    """The first live run had 8 of 8 topics falling — a Google artifact, not signal."""
+
+    @staticmethod
+    def series(values):
+        return [{"values": [{"extracted_value": v}]} for v in values]
+
+    def test_depressed_final_point_is_dropped(self):
+        flat = [40] * 20
+        with_dip = demand._trend_from_timeline(self.series(flat + [5]), 0)
+        without = demand._trend_from_timeline(self.series(flat), 0)
+        self.assertEqual(with_dip["recent_mean"], without["recent_mean"])
+
+    def test_year_over_year_is_reported_on_a_full_year(self):
+        t = demand._trend_from_timeline(self.series([50] * 36 + [40] * 8 + [45] * 8 + [20]), 0)
+        self.assertEqual(t["year_ago_mean"], 50.0)
+        self.assertEqual(t["yoy_pct"], -10.0)
+
+    def test_short_series_has_no_year_over_year(self):
+        self.assertNotIn("yoy_pct", demand._trend_from_timeline(self.series([30] * 20), 0))
+
+    def test_score_prefers_year_over_year(self):
+        """A seasonal dip must not read as declining interest."""
+        seasonal = {"caregiving": {"change_pct": -40.0, "yoy_pct": 30.0}}
+        self.assertEqual(demand.demand_score(["caregiving"], seasonal), 5)
+
+    def test_score_falls_back_to_the_short_window(self):
+        self.assertEqual(demand.demand_score(["x"], {"x": {"change_pct": 30.0}}), 5)

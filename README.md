@@ -187,7 +187,15 @@ coverage gap:
 | `coverage_state` (registry) | Did the trades I monitor write this? → pitchability |
 | `web_coverage` (Google News) | Has anyone reported this at all? → originality |
 
-They are kept as separate fields on purpose. It runs on the top 15 items only —
+They are kept as separate fields on purpose. Google ranks by topical relevance, so a query about a CMS supplier dataset came
+back with "Medical Supplies Market Size to Hit USD 223.22 Bn" and reported 12 of
+13 items as widely covered on the first live run. Results are therefore filtered
+through the same headline-similarity test the registry matching uses — the
+repo's existing lesson that topic overlap alone massively overstates coverage,
+which the news layer had to learn separately. `matching.py` is now the single
+implementation for both.
+
+It runs on the top 15 items only —
 checking all ~190 candidates would cost roughly 5,700 searches a month to answer
 a question that only matters at the top of the ranking. A source's own release
 is not counted as coverage of itself.

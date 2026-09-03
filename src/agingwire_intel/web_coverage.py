@@ -5,6 +5,7 @@ import re
 from urllib.parse import urlparse
 
 from agingwire_intel import serpapi
+from agingwire_intel.matching import title_similar
 
 log = logging.getLogger(__name__)
 
@@ -54,15 +55,23 @@ def check_item(item: dict, budget: serpapi.Budget | None = None,
         return None
 
     source_domain = _domain(item.get("url", ""))
+    item_title = item.get("title", "")
     outlets, samples = [], []
+    considered = 0
     for article in (data.get("news_results") or [])[:20]:
         title = (article.get("title") or "").strip()
         link = (article.get("link") or "").strip()
         if not title or not link:
             continue
+        considered += 1
         outlet = ((article.get("source") or {}).get("name") or _domain(link)).strip()
         # The agency's own release is not somebody else covering it.
         if source_domain and _domain(link) == source_domain:
+            continue
+        # Google ranks by topical relevance, so a query about a CMS supplier
+        # dataset returns "Medical Supplies Market Size to Hit USD 223.22 Bn".
+        # Requiring headline overlap is the same guard registry matching uses.
+        if not title_similar(item_title, title):
             continue
         if outlet and outlet not in outlets:
             outlets.append(outlet)
@@ -70,6 +79,7 @@ def check_item(item: dict, budget: serpapi.Budget | None = None,
                             "date": article.get("date")})
     return {
         "query": query,
+        "returned": considered,
         "outlet_count": len(outlets),
         "outlets": outlets[:10],
         "articles": samples[:5],

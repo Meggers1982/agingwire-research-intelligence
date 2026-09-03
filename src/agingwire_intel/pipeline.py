@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import re
 from dataclasses import asdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -18,33 +17,18 @@ from agingwire_intel.collectors.federal_register import collect_federal_register
 from agingwire_intel.collectors.rss import collect_evidence_feed
 from agingwire_intel.collectors.web import collect_link_page
 from agingwire_intel.dedupe import stable_item_id
+from agingwire_intel.matching import title_similar
 from agingwire_intel.media import collect_registry, monitored_topics, topic_coverage_counts
 from agingwire_intel.scoring import is_localizable, score_evidence
 from agingwire_intel.state import SeenLedger
-
-STOP = {
-    "the", "a", "an", "and", "or", "of", "to", "in", "for", "on", "with", "by", "from", "at",
-    "as", "is", "are", "was", "were", "be", "this", "that", "new", "how", "what", "why",
-    "older", "adults", "senior", "seniors", "aging", "ageing",
-}
-
-
-def _tokens(text: str) -> set[str]:
-    return {w for w in re.findall(r"[a-z0-9]+", text.lower()) if len(w) > 2 and w not in STOP}
 
 
 def _same_story(evidence, coverage_item) -> bool:
     topics = set(evidence.topics or []).intersection(coverage_item.topics or [])
     if not topics:
         return False
-    left, right = _tokens(evidence.title), _tokens(coverage_item.title)
-    if not left or not right:
-        return False
-    shared = left & right
-    union = left | right
-    jaccard = len(shared) / len(union)
     # Require title-level evidence too; topic overlap alone massively overstates coverage.
-    return jaccard >= 0.18 or (len(shared) >= 3 and len(shared) / min(len(left), len(right)) >= 0.35)
+    return title_similar(evidence.title, coverage_item.title)
 
 
 def _host(url: str) -> str:

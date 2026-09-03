@@ -76,17 +76,21 @@ class CheckItemTests(unittest.TestCase):
     def test_no_articles_is_unreported(self):
         self.assertEqual(self._result([])["state"], "unreported")
 
+    # Headlines must be about the same story, not merely present — the
+    # relevance gate rejects unrelated text.
+    HEADLINE = "Nursing home staffing shortages persist across the sector"
+
     def test_two_outlets_is_lightly_reported(self):
         r = self._result([
-            {"title": "a", "link": "https://x.com/1", "source": {"name": "X"}},
-            {"title": "b", "link": "https://y.com/1", "source": {"name": "Y"}},
+            {"title": self.HEADLINE, "link": "https://x.com/1", "source": {"name": "X"}},
+            {"title": self.HEADLINE, "link": "https://y.com/1", "source": {"name": "Y"}},
         ])
         self.assertEqual(r["state"], "lightly_reported")
         self.assertEqual(r["outlet_count"], 2)
 
     def test_many_outlets_is_widely_reported(self):
         r = self._result([
-            {"title": f"a{i}", "link": f"https://x{i}.com/1", "source": {"name": f"X{i}"}}
+            {"title": self.HEADLINE, "link": f"https://x{i}.com/1", "source": {"name": f"X{i}"}}
             for i in range(4)
         ])
         self.assertEqual(r["state"], "widely_reported")
@@ -94,15 +98,16 @@ class CheckItemTests(unittest.TestCase):
     def test_the_sources_own_release_is_not_coverage(self):
         """An agency republishing itself is not somebody else reporting it."""
         r = self._result([
-            {"title": "same", "link": "https://www.cms.gov/news/item", "source": {"name": "CMS"}},
+            {"title": self.ITEM["title"], "link": "https://www.cms.gov/news/item",
+             "source": {"name": "CMS"}},
         ])
         self.assertEqual(r["outlet_count"], 0)
         self.assertEqual(r["state"], "unreported")
 
     def test_duplicate_outlets_count_once(self):
         r = self._result([
-            {"title": "a", "link": "https://x.com/1", "source": {"name": "X"}},
-            {"title": "b", "link": "https://x.com/2", "source": {"name": "X"}},
+            {"title": self.HEADLINE, "link": "https://x.com/1", "source": {"name": "X"}},
+            {"title": self.HEADLINE, "link": "https://x.com/2", "source": {"name": "X"}},
         ])
         self.assertEqual(r["outlet_count"], 1)
 
@@ -140,3 +145,43 @@ class AnnotateTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RelevanceGateTests(unittest.TestCase):
+    """The first live run called 12 of 13 items widely_reported.
+
+    Google ranks by topical relevance, so a query about a CMS supplier dataset
+    returned market-research and M&A headlines. Coverage requires the headline
+    to be about the same story, the same guard registry matching uses.
+    """
+
+    ITEM = {"title": "CMS refreshed dataset: Medical Equipment Suppliers",
+            "url": "https://data.cms.gov/provider-data/dataset/abc"}
+
+    def _run(self, headlines):
+        articles = [{"title": h, "link": f"https://outlet{i}.com/a",
+                     "source": {"name": f"Outlet {i}"}} for i, h in enumerate(headlines)]
+        with mock.patch.object(web_coverage.serpapi, "search",
+                               return_value={"news_results": articles}):
+            return web_coverage.check_item(self.ITEM)
+
+    def test_topically_related_headlines_are_not_coverage(self):
+        result = self._run([
+            "Medical Supplies Market Size, Share, Industry Report, 2034",
+            "Medical Supplies Market Size to Hit USD 223.22 Bn by 2035",
+            "UFP Technologies Targets 12%-18% Growth as Medical Device M&A Pipeline Builds",
+        ])
+        self.assertEqual(result["outlet_count"], 0)
+        self.assertEqual(result["state"], "unreported")
+
+    def test_a_headline_about_the_same_story_counts(self):
+        result = self._run([
+            "CMS refreshes Medical Equipment Suppliers dataset with new participation data",
+        ])
+        self.assertEqual(result["outlet_count"], 1)
+
+    def test_returned_count_records_what_google_offered(self):
+        """Keeping the raw count makes an over-tight filter visible."""
+        result = self._run(["Totally unrelated story", "Another unrelated story"])
+        self.assertEqual(result["returned"], 2)
+        self.assertEqual(result["outlet_count"], 0)

@@ -19,6 +19,12 @@ DATE_WINDOW = "today 12-m"
 BATCH_SIZE = 5  # SerpAPI compares at most five terms per TIMESERIES call
 RECENT_POINTS = 8
 MIN_SIGNAL = 3.0  # below this the index is noise, not interest
+# Google revises its most recent points upward for days after publishing and does
+# not always flag them partial_data. Measured on the first live run in
+# senior-research-digest, comparing a fresh tail against a settled prior period
+# made all eight measured topics read as falling. Dropping the last point removes
+# most of that bias; the year-over-year figure removes the rest.
+TRAILING_DROP = 1
 
 
 def _topic_terms(taxonomy: dict) -> dict[str, str]:
@@ -46,6 +52,8 @@ def _trend_from_timeline(timeline: list[dict], index: int) -> dict | None:
         extracted = series[index].get("extracted_value")
         if isinstance(extracted, (int, float)):
             values.append(float(extracted))
+    if TRAILING_DROP and len(values) > RECENT_POINTS * 2 + TRAILING_DROP:
+        values = values[:-TRAILING_DROP]
     if len(values) < RECENT_POINTS * 2:
         return None
 
@@ -56,14 +64,23 @@ def _trend_from_timeline(timeline: list[dict], index: int) -> dict | None:
     if recent_mean < MIN_SIGNAL and prior_mean < MIN_SIGNAL:
         return None
 
-    # Guard the zero denominator: a term going 0 -> 2 is not an infinite rise.
-    change = ((recent_mean - prior_mean) / prior_mean * 100) if prior_mean >= 1 else 0.0
-    return {
+    def pct(now: float, then: float) -> float:
+        # Guard the zero denominator: a term going 0 -> 2 is not an infinite rise.
+        return round((now - then) / then * 100, 1) if then >= 1 else 0.0
+
+    out = {
         "recent_mean": round(recent_mean, 1),
         "prior_mean": round(prior_mean, 1),
-        "change_pct": round(change, 1),
+        "change_pct": pct(recent_mean, prior_mean),
         "peak": round(max(values), 1),
     }
+    # Same weeks a year earlier. An 8-week-over-8-week comparison cannot tell a
+    # seasonal dip from a real decline, so this is what the score should trust.
+    if len(values) >= 52:
+        year_ago_mean = sum(values[:RECENT_POINTS]) / RECENT_POINTS
+        out["year_ago_mean"] = round(year_ago_mean, 1)
+        out["yoy_pct"] = pct(recent_mean, year_ago_mean)
+    return out
 
 
 def fetch_demand(taxonomy: dict | None = None, budget: serpapi.Budget | None = None) -> dict:
@@ -143,10 +160,18 @@ def get_demand(path: str | Path = CACHE_PATH, budget: serpapi.Budget | None = No
     return {}, "fetch returned nothing"
 
 
+def _reading(entry: dict) -> float:
+    """Year-over-year where available, else the short-window change.
+
+    Preferring YoY keeps a seasonal dip from scoring as declining interest.
+    """
+    return entry.get("yoy_pct", entry.get("change_pct", 0.0))
+
+
 def demand_score(item_topics, snapshot: dict) -> int:
     """0-5 demand component. 3 (neutral) when unknown, so a missing snapshot
     never reshapes the ranking."""
-    changes = [snapshot[t]["change_pct"] for t in (item_topics or []) if t in snapshot]
+    changes = [_reading(snapshot[t]) for t in (item_topics or []) if t in snapshot]
     if not changes:
         return 3
     best = max(changes)
