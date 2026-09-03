@@ -1,43 +1,49 @@
 topics:
   caregiving:
     priority: P0
-    terms: ["caregiving", "caregiver", "family caregiver", "informal care", "unpaid care", "carer", "caregiver burden"]
+    terms: ["caregiving", "caregiver", "family caregiver", "informal care", "unpaid care", "carer", "caregiver burden", "care partner"]
   assisted_living:
     priority: P0
     terms: ["assisted living", "residential care", "residential aged care", "senior living", "residential facilities"]
   aging_in_place:
     priority: P0
-    terms: ["aging in place", "ageing in place", "independent living", "home modification", "age-friendly housing", "community dwelling"]
+    terms: ["aging in place", "ageing in place", "independent living", "home modification", "age-friendly housing", "community dwelling", "community-dwelling"]
   loneliness_social_connection:
     priority: P0
     terms: ["loneliness", "social isolation", "social connectedness", "social participation", "social engagement"]
   long_term_care:
     priority: P0
-    terms: ["long-term care", "long term care", "LTSS", "long-term services and supports", "HCBS", "home and community-based services"]
+    terms: ["long-term care", "long term care", "LTSS", "long-term services and supports", "HCBS", "home and community-based services", "nursing home", "skilled nursing"]
   workforce:
     priority: P0
-    terms: ["direct care workforce", "nursing home staffing", "care workforce", "CNA", "home care worker", "staff turnover"]
+    terms: ["direct care workforce", "nursing home staffing", "care workforce", "CNA", "home care worker", "staff turnover", "direct care worker", "staffing ratio"]
   housing:
     priority: P0
-    terms: ["senior housing", "older adult housing", "housing affordability", "downsizing", "multigenerational housing", "age-friendly housing"]
+    terms: ["senior housing", "older adult housing", "housing affordability", "downsizing", "multigenerational housing", "age-friendly housing", "CCRC", "life plan community"]
   age_tech:
     priority: P0
-    terms: ["gerontechnology", "age tech", "digital health", "assistive technology", "smart home", "remote monitoring", "wearable"]
+    terms: ["gerontechnology", "age tech", "agetech", "digital health", "assistive technology", "smart home", "remote monitoring", "wearable", "telehealth", "digital divide"]
   financial_security:
     priority: P0
-    terms: ["retirement security", "retirement savings", "financial insecurity", "Social Security", "older adult poverty", "elder financial exploitation"]
+    terms: ["retirement security", "retirement savings", "financial insecurity", "Social Security", "older adult poverty", "elder financial exploitation", "retirement income"]
   fraud_scams:
     priority: P0
     terms: ["older adult fraud", "elder fraud", "scam", "financial exploitation", "investment scam", "romance scam", "impersonation fraud"]
+  medicare_medicaid:
+    priority: P0
+    terms: ["Medicare", "Medicaid", "dual eligible", "dual-eligible", "Medicare Advantage", "Medigap", "PACE program"]
+  senior_living_quality:
+    priority: P0
+    terms: ["resident satisfaction", "resident quality of life", "senior living quality", "assisted living quality", "nursing home quality", "resident experience"]
   rural_aging:
     priority: P1
-    terms: ["rural aging", "rural older adults", "rural elderly", "rural long-term care"]
+    terms: ["rural aging", "rural older adults", "rural elderly", "rural long-term care", "rural seniors"]
   transportation:
     priority: P1
     terms: ["older drivers", "driving retirement", "paratransit", "transportation access", "mobility services", "walkability"]
   climate_resilience:
     priority: P1
-    terms: ["older adults heat", "aging climate", "older adults disaster", "evacuation older adults", "power outage older adults"]
+    terms: ["older adults heat", "aging climate", "older adults disaster", "evacuation older adults", "power outage older adults", "extreme heat older adults"]
   food_security:
     priority: P1
     terms: ["food insecurity older adults", "senior hunger", "Meals on Wheels", "SNAP older adults", "nutrition access"]
@@ -50,3 +56,57 @@ topics:
   migration_retirement:
     priority: P1
     terms: ["retirement migration", "older adult migration", "places to retire", "senior migration", "retiree migration"]
+  dementia:
+    priority: clinical
+    terms: ["dementia", "Alzheimer", "Alzheimer's", "ADRD", "Lewy body dementia", "frontotemporal dementia"]
+  cognitive_decline:
+    priority: clinical
+    terms: ["cognitive decline", "mild cognitive impairment", "MCI", "cognitive impairment"]
+  falls:
+    priority: clinical
+    terms: ["falls", "fall prevention", "fall risk", "fall injury"]
+  cardiovascular_disease:
+    priority: clinical
+    terms: ["cardiovascular disease", "heart disease", "heart failure", "stroke", "hypertension"]
+  depression_mental_health:
+    priority: clinical
+    terms: ["depression", "anxiety", "mental health", "suicide", "psychological distress"]
+  nutrition:
+    priority: clinical
+    terms: ["nutrition", "malnutrition", "diet", "protein intake", "Mediterranean diet"]
+  sleep:
+    priority: clinical
+    terms: ["sleep", "insomnia", "sleep apnea", "sleep quality"]
+  palliative_hospice:
+    priority: clinical
+    terms: ["palliative care", "hospice", "end of life", "advance care planning", "advance directive"]
+  osteoporosis_bone_health:
+    priority: clinical
+    terms: ["osteoporosis", "bone density", "fracture", "bone health"]
+  sarcopenia_frailty:
+    priority: clinical
+    terms: ["sarcopenia", "frailty", "muscle loss", "frail older adults"]
+  hearing_loss:
+    priority: clinical
+    terms: ["hearing loss", "hearing impairment", "hearing aid"]
+  vision_loss:
+    priority: clinical
+    terms: ["vision loss", "visual impairment", "macular degeneration", "glaucoma", "cataract"]
+  polypharmacy:
+    priority: clinical
+    terms: ["polypharmacy", "deprescribing", "potentially inappropriate medication", "medication burden"]
+  elder_abuse:
+    priority: P1
+    terms: ["elder abuse", "elder mistreatment", "older adult abuse", "elder neglect"]
+  chronic_pain:
+    priority: P1
+    terms: ["chronic pain", "persistent pain", "pain management older adults"]
+  incontinence:
+    priority: P2
+    terms: ["urinary incontinence", "fecal incontinence", "bladder control"]
+  oral_health:
+    priority: P1
+    terms: ["oral health", "dental care older adults", "tooth loss", "edentulism", "geriatric dentistry"]
+  medication_adherence:
+    priority: P1
+    terms: ["medication adherence", "medication compliance", "prescription adherence"]
