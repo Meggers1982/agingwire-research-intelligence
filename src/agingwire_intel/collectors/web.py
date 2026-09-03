@@ -36,9 +36,8 @@ def _extract_date(text: str) -> str | None:
 def collect_link_page(url: str, source_id: str, source_type: str = "web_release", limit: int = 50) -> list[EvidenceItem]:
     """Best-effort monitor for first-party news/report listing pages.
 
-    Navigation/boilerplate links are removed and only aging-relevant candidates that match
-    the configured taxonomy are emitted. This keeps broad institutional pages from flooding
-    the digest with menus and unrelated material.
+    Navigation, profile/taxonomy pages, and boilerplate links are removed. Only candidates
+    matching the aging taxonomy are emitted, keeping institutional menus out of the digest.
     """
     r = requests.get(url, headers=DEFAULT_HEADERS, timeout=30)
     r.raise_for_status()
@@ -46,20 +45,21 @@ def collect_link_page(url: str, source_id: str, source_type: str = "web_release"
     for bad in soup.select("nav, header, footer, script, style, form"):
         bad.decompose()
     host = urlparse(url).netloc.lower().removeprefix("www.")
+    listing_path = urlparse(url).path.rstrip("/")
     seen: set[str] = set()
     out: list[EvidenceItem] = []
     for a in soup.find_all("a", href=True):
         title = " ".join(a.stripped_strings).strip()
-        href, fragment = urldefrag(urljoin(url, a["href"]))
+        href, _ = urldefrag(urljoin(url, a["href"]))
         if not title or len(title) < 15 or href in seen or BOILERPLATE.search(title):
             continue
         parsed = urlparse(href)
         target_host = parsed.netloc.lower().removeprefix("www.")
         if parsed.scheme not in {"http", "https"} or target_host != host:
             continue
-        if not parsed.path or parsed.path == urlparse(url).path:
+        if not parsed.path or parsed.path.rstrip("/") == listing_path:
             continue
-        if re.search(r"/(contact|about|privacy|accessibility|search|login|signup|donate|events?)(/|$)", parsed.path, re.I):
+        if re.search(r"/(contact|about|privacy|accessibility|search|login|signup|donate|events?|person|people|author|authors|tag|category|topics?)(/|$)", parsed.path, re.I):
             continue
         seen.add(href)
         container = a.find_parent(["article", "li", "section", "div"]) or a.parent
