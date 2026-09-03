@@ -35,6 +35,27 @@ ROUTINE = re.compile(
 NOTICE_PREFIX = re.compile(r"^\s*\d+-day\s+", re.I)
 SUBSTANTIVE_TYPES = {"Rule", "Proposed Rule"}
 
+# The taxonomy tags "Medicaid" as an aging topic, but Medicaid also covers
+# children -- a CHIP rule on pediatric care matched and ranked as top aging
+# evidence. Requiring an explicit aging word instead threw away real leads
+# (HUD Fair Market Rents drives senior housing affordability and names no age),
+# so the gate excludes documents that are *only* about children.
+# Stems, not whole words: a trailing \b would stop "older adult" matching
+# "older adults" and "caregiv" matching "caregivers".
+AGING_SIGNAL = re.compile(
+    r"\b(older adult|older american|senior|elder|aging|ageing|geriatric|"
+    r"medicare|nursing home|nursing facilit|long[- ]term care|long[- ]term services|"
+    r"home health|home and community[- ]based|hospice|assisted living|"
+    r"retirement|social security|pension|caregiv|dementia|alzheimer|"
+    r"age 6[05]|65 (?:years )?(?:and|or) older|aged 6[05])",
+    re.I,
+)
+PEDIATRIC_ONLY = re.compile(
+    r"\b(child|pediatric|paediatric|infant|adolescen|school[- ]age|"
+    r"chip\b|head start|foster (?:care|youth)|juvenile)",
+    re.I,
+)
+
 
 def collect_federal_register(
     agencies: list[str] | None = None,
@@ -65,9 +86,12 @@ def collect_federal_register(
         if not title or not url or ROUTINE.search(NOTICE_PREFIX.sub("", title)):
             continue
         abstract = (result.get("abstract") or "").strip()
-        topics = tag_text(f"{title} {abstract}")
+        blob = f"{title} {abstract}"
+        topics = tag_text(blob)
         doc_type = result.get("type") or ""
         if not topics and doc_type not in SUBSTANTIVE_TYPES:
+            continue
+        if PEDIATRIC_ONLY.search(blob) and not AGING_SIGNAL.search(blob):
             continue
         agency_names = [a.get("name") for a in (result.get("agencies") or []) if a.get("name")]
         published = result.get("publication_date")

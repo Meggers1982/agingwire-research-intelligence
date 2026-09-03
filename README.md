@@ -1,8 +1,8 @@
 # AgingWire Research Intelligence
 
-A companion repository to [`Meggers1982/senior-research-digest`](https://github.com/Meggers1982/senior-research-digest).
+Evidence and media intelligence for AgingWire: housing, caregiving, economics, workforce, senior housing, public policy, technology, fraud, retirement, government data and the lived experience of aging.
 
-**This does not replace or modify the existing repo.** The PubMed project remains the clinical/academic aging-research engine. This project consumes that digest as one upstream signal and broadens the evidence universe to housing, caregiving, economics, workforce, senior housing, public policy, technology, fraud, retirement, government data and the lived experience of aging.
+This repository is **independent of** [`Meggers1982/senior-research-digest`](https://github.com/Meggers1982/senior-research-digest), which remains the clinical/academic PubMed engine. The two do not share data — clinical study volume swamped the nonclinical evidence this project exists to find.
 
 ## Mission
 
@@ -12,15 +12,16 @@ A companion repository to [`Meggers1982/senior-research-digest`](https://github.
 
 The daily GitHub Actions workflow runs at 12:15 UTC and whenever relevant code/config changes land on `main`. It:
 
-1. Collects evidence from the senior-research-digest (individual studies, not run titles), the Federal Register, BLS and CMS APIs, the Census ACS, institutional RSS and first-party listing pages.
+1. Collects evidence from the Federal Register, BLS and CMS APIs, the Census ACS, institutional RSS feeds and first-party listing pages.
 2. Applies synonym-aware topic tagging across clinical and nonclinical aging topics.
 3. Monitors the separate B2B and B2C publication registries, using configured feeds plus cached automatic feed discovery.
 4. Compares evidence topics with monitored publisher coverage, distinguishing a real gap from an unwatched beat.
 5. Scores each candidate 0-100 across nine weighted components, including novelty against previous runs.
 6. Generates B2B/B2C/localization story-angle prompts.
-7. Writes `outputs/latest.json`, a dated snapshot, `outputs/latest.md`, and the dashboard payload.
-8. Rebuilds the filterable static dashboard in `docs/`.
-9. Runs the test suite and commits generated intelligence and run state back to the repo.
+7. Clusters the run's evidence by topic and builds the editorial layer: a feature pitch, per-item story ideas, and trends versus the previous run.
+8. Writes `outputs/latest.json`, a dated snapshot, `outputs/latest.md`, and a run record in the dashboard's run database.
+9. Rebuilds the browsable static dashboard in `docs/`.
+10. Runs the test suite and commits generated intelligence and run state back to the repo.
 
 A second workflow produces `outputs/weekly-latest.md` every Sunday. A third (`ci.yml`) lints, tests and validates the config on every pull request.
 
@@ -30,12 +31,11 @@ The pipeline remembers what it has already reported. `state/seen.json` records w
 
 ## Source streams
 
-1. **Existing PubMed digest** — individual studies from each upstream run, with PubMed URLs, journals and findings.
-2. **Regulatory layer** — Federal Register rules and substantive notices from SSA, CMS, ACL, HUD, CFPB and FTC.
-3. **Government data layer** — BLS care-workforce and cost series, CMS provider dataset refreshes, Census ACS state profiles.
-4. **Nonprofit/think-tank layer** — KFF, National Alliance for Caregiving, PHI, CRR, EBRI.
-5. **Industry intelligence** — NIC and senior-living/LTSS market sources.
-6. **Media intelligence** — separate B2B and B2C registries for coverage-gap analysis, pitching and syndication.
+1. **Regulatory layer** — Federal Register rules and substantive notices from SSA, CMS, ACL, HUD, CFPB and FTC.
+2. **Government data layer** — BLS care-workforce and cost series, CMS provider dataset refreshes, Census ACS state profiles.
+3. **Nonprofit/think-tank layer** — KFF, National Alliance for Caregiving, PHI, CRR, EBRI.
+4. **Industry intelligence** — NIC and senior-living/LTSS market sources.
+5. **Media intelligence** — separate B2B and B2C registries for coverage-gap analysis, pitching and syndication.
 
 ### Blocking that no user agent can fix
 
@@ -77,7 +77,10 @@ config/
   media/                     B2B and B2C publisher registries
 docs/
   index.html                 generated dashboard
-  data/latest.json           generated dashboard payload
+  data/index.json            run index the dashboard loads first
+  data/runs/YYYY-MM-DD.json  one record per run
+  data/latest.json           latest full payload
+  vendor/                    docx export library, lazy-loaded
 outputs/
   latest.json                latest machine-readable intelligence
   latest.md                  latest ranked digest
@@ -90,6 +93,9 @@ state/
 src/agingwire_intel/
   collectors/                one module per source family
   http.py                    shared user agent, retries and 403 fallback
+  synthesis.py               clustering, feature pitch, story ideas, trends
+  llm.py                     optional Claude rewrite of the editorial sections
+  runs.py                    run database writer (index + per-run records)
   templates/dashboard.html   dashboard markup
   ...
 tests/
@@ -129,6 +135,26 @@ python -m http.server 8000 -d docs
 | --- | --- | --- |
 | `CENSUS_API_KEY` | Yes, for the ACS monitor | The census source errors with an explicit message. Free key: <https://api.census.gov/data/key_signup.html> |
 | `BLS_API_KEY` | Optional | The BLS collector falls back to the unregistered rate limit |
+| `ANTHROPIC_API_KEY` | Optional | The editorial sections stay deterministic instead of being written by Claude |
+
+## The dashboard
+
+`docs/index.html` is a browsable archive rather than a single snapshot. The sidebar lists every run ever generated, searchable and filterable by topic; selecting one loads its record from `docs/data/runs/<date>.json`. Each run page carries:
+
+- **Feature pitch** — the strongest cross-source convergence in that run, with the specific evidence named.
+- **Story ideas** — per-item hooks, localization and chart angles, and the competitive situation.
+- **Trends** — what changed against the previous run: rising and quieter topics, sources that went silent or resumed.
+- **Topic clusters** — the ranked convergences behind the pitch.
+- **Story opportunities** — the scored items, filterable by new / confirmed gap / localizable / topic.
+- **Pipeline health** — errors, empty sources and feed coverage.
+
+Jump links, a light/dark toggle, `.docx` export and `.csv` export are on every run.
+
+### Editorial layer: how it is written
+
+The pitch, story ideas and trends are **derived from the run's own data** by `synthesis.py` — clustering, coverage state, dates and real figures. No model is required and nothing is invented.
+
+When `ANTHROPIC_API_KEY` is present, `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version and the run's facts as its only input. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch. Pass `--no-llm` to force the deterministic path.
 
 ## What gets committed
 

@@ -30,6 +30,9 @@ jobs:
     env:
       CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
       BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+      # Optional: when present the editorial sections are written by Claude
+      # instead of being derived from the run data. Absent is a supported mode.
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -48,6 +51,8 @@ jobs:
           staging=$(mktemp -d)
           mkdir -p "$staging"/docs/data "$staging"/outputs "$staging"/state
           cp docs/index.html "$staging"/docs/index.html
+          # docs/data carries the run database (index.json + runs/), which is
+          # the dashboard's history -- it must survive the reset below.
           cp -a docs/data/. "$staging"/docs/data/
           cp -a outputs/. "$staging"/outputs/
           [ -d state ] && cp -a state/. "$staging"/state/ || true
@@ -63,7 +68,7 @@ jobs:
           cp -a "$staging"/outputs/. outputs/
           cp -a "$staging"/state/. state/ || true
 
-          git add outputs docs/index.html docs/data state
+          git add outputs docs/index.html docs/data docs/vendor state
           if git diff --cached --quiet; then
             echo "No generated changes"
           else

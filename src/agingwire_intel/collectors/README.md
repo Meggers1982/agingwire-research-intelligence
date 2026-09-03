@@ -8,13 +8,17 @@ shared rather than reimplemented per source.
 
 | Module | Method key | Source |
 | --- | --- | --- |
-| `senior_digest.py` | `senior_digest` | Upstream senior-research-digest; emits the individual studies inside each run, not the run titles |
 | `federal_register.py` | `federal_register` | Federal Register API — SSA, CMS, ACL, HUD, CFPB, FTC rules and substantive notices |
 | `bls.py` | `bls_api` | BLS Public Data API v2 — care-workforce employment, earnings, CPI medical care, 65+ employment |
 | `cms_datasets.py` | `cms_datasets` | CMS Provider Data Catalog metastore — dataset refreshes for nursing home, home health and hospice files |
 | `census.py` | `census_acs` | ACS 5-year Data Profile — state aging, income and housing tenure |
 | `rss.py` | `rss` | Institutional feeds (evidence) and publisher feeds (coverage) |
 | `web.py` | `web` | Best-effort listing-page monitor for first-party sites with no feed |
+
+AgingWire does not consume the senior-research-digest. That repo covers the
+clinical/academic PubMed beat; this one covers housing, caregiving, economics,
+workforce, policy and industry. Mixing them buried the nonclinical evidence
+under clinical studies.
 
 ## Why some obvious sources are not here
 

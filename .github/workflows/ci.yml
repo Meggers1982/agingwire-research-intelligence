@@ -38,14 +38,16 @@ jobs:
           python - <<'PY'
           import yaml
           config = yaml.safe_load(open("config/monitors.yml"))
-          known = {"rss", "web", "census_acs", "senior_digest", "bls_api", "federal_register", "cms_datasets"}
+          known = {"rss", "web", "census_acs", "bls_api", "federal_register", "cms_datasets"}
           ids = set()
           for monitor in config["evidence"]:
               assert monitor["id"] not in ids, f"duplicate monitor id: {monitor['id']}"
               ids.add(monitor["id"])
               assert monitor["method"] in known, f"unknown method: {monitor['method']}"
-              if monitor["method"] in {"rss", "web", "senior_digest"}:
+              if monitor["method"] in {"rss", "web"}:
                   assert monitor.get("url", "").startswith("http"), f"{monitor['id']} needs a url"
+          assert not any(m["method"] == "senior_digest" for m in config["evidence"]), \
+              "the senior-research-digest feed is deliberately out of scope"
           yaml.safe_load(open("config/topic_taxonomy.yml"))
           print(f"{len(config['evidence'])} monitors validated")
           PY

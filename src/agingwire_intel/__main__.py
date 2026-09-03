@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import argparse
+import logging
 import sys
 
+from agingwire_intel import llm, runs
 from agingwire_intel.dashboard import build_dashboard
 from agingwire_intel.digest import write_digest
 from agingwire_intel.pipeline import run
+from agingwire_intel.synthesis import synthesize
 
 
 def main() -> int:
@@ -15,6 +18,11 @@ def main() -> int:
     parser.add_argument("--docs-dir", default="docs")
     parser.add_argument("--state", default="state/seen.json")
     parser.add_argument(
+        "--no-llm",
+        action="store_true",
+        help="Skip the optional LLM synthesis even when ANTHROPIC_API_KEY is set.",
+    )
+    parser.add_argument(
         "--fail-on-source-errors",
         type=int,
         default=None,
@@ -22,9 +30,18 @@ def main() -> int:
         help="Exit non-zero when more than N evidence sources error out.",
     )
     args = parser.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
     payload = run(args.config, args.output_dir, docs_dir=args.docs_dir, state_path=args.state)
-    digest = write_digest(payload, args.output_dir)
+
+    current_id = runs.run_id(payload.get("generated_at", ""))
+    previous = runs.load_previous_payload(args.output_dir, current_id)
+    synthesis = synthesize(payload, previous)
+    if not args.no_llm:
+        synthesis = llm.upgrade_synthesis(payload, synthesis, previous)
+
+    run_path = runs.write_run(payload, synthesis, docs_dir=args.docs_dir)
+    digest = write_digest(payload, args.output_dir, synthesis)
     dashboard = build_dashboard(f"{args.docs_dir}/index.html")
 
     errors = [x for x in payload["source_status"] if x["status"] == "error"]
@@ -39,6 +56,10 @@ def main() -> int:
         print(f"  error  {entry['source']}: {entry.get('error', '')[:160]}")
     for entry in empties:
         print(f"  empty  {entry['source']} ({entry.get('method')})")
+    print(f"Synthesis: {synthesis.get('synthesis_mode')}" + (
+        f" ({synthesis['synthesis_note']})" if synthesis.get("synthesis_note") else ""
+    ))
+    print(f"Run: {run_path}")
     print(f"Digest: {digest}")
     print(f"Dashboard: {dashboard}")
 

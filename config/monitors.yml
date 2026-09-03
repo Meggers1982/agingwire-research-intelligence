@@ -1,5 +1,5 @@
 # Runtime monitors. Evidence monitors point to first-party sources whenever possible.
-# method: rss | web | census_acs | senior_digest | bls_api | federal_register | cms_datasets
+# method: rss | web | census_acs | bls_api | federal_register | cms_datasets
 #
 # Endpoint notes (verified 2026-09-03):
 #   - www.bls.gov and www.ssa.gov return 403 to automated requests even with a
@@ -9,13 +9,6 @@
 #   - www.nia.nih.gov/news/all returns 405 to scrapers but publishes RSS.
 
 evidence:
-  - id: senior-research-digest
-    method: senior_digest
-    url: https://raw.githubusercontent.com/Meggers1982/senior-research-digest/main/docs/data/index.json
-    runs: 8
-    per_run: 20
-    priority: P0
-
   # --- Government / regulatory -------------------------------------------------
   - id: federal-register
     method: federal_register

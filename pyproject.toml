@@ -16,6 +16,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# Only needed for the optional LLM rewrite of the editorial sections; the
+# pipeline runs without it.
+llm = ["anthropic>=1.0"]
 dev = [
     "pytest>=8.0",
     "ruff>=0.6",

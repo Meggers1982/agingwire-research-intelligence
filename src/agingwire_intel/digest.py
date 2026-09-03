@@ -37,7 +37,22 @@ def _health_section(payload: dict) -> list[str]:
     return lines
 
 
-def render_digest(payload: dict, limit: int = 25) -> str:
+def _synthesis_sections(synthesis: dict | None) -> list[str]:
+    if not synthesis:
+        return []
+    lines: list[str] = []
+    for heading, key in (
+        ("Research trends and continuity", "trends_raw"),
+        ("Bigger picture: feature pitch", "feature_pitch_raw"),
+        ("Story ideas", "pitch_ideas_raw"),
+    ):
+        body = (synthesis.get(key) or "").strip()
+        if body:
+            lines += [f"## {heading}", "", body, ""]
+    return lines
+
+
+def render_digest(payload: dict, limit: int = 25, synthesis: dict | None = None) -> str:
     lines = [
         "# AgingWire research intelligence digest",
         "",
@@ -61,6 +76,7 @@ def render_digest(payload: dict, limit: int = 25) -> str:
     for i, item in enumerate(evidence[:limit], 1):
         lines += _render_item(i, item)
 
+    lines += _synthesis_sections(synthesis)
     lines += _health_section(payload)
     return "\n".join(lines)
 
@@ -98,10 +114,10 @@ def _render_item(index: int, item: dict) -> list[str]:
     return lines
 
 
-def write_digest(payload: dict, output_dir: str = "outputs") -> Path:
+def write_digest(payload: dict, output_dir: str = "outputs", synthesis: dict | None = None) -> Path:
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
-    text = render_digest(payload)
+    text = render_digest(payload, synthesis=synthesis)
     latest = out / "latest.md"
     latest.write_text(text, encoding="utf-8")
     date = str(payload.get("generated_at", ""))[:10]

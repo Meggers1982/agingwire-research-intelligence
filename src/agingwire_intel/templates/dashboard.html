@@ -1,128 +1,652 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AgingWire Research Intelligence</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>AgingWire Research Intelligence — Dashboard</title>
 <style>
-  :root { font-family: Inter, system-ui, sans-serif; color: #151515; background: #f5f4ef; }
-  body { margin: 0; }
-  .wrap { max-width: 1180px; margin: auto; padding: 24px; }
-  .hero { display: flex; gap: 16px; align-items: end; justify-content: space-between; flex-wrap: wrap; }
-  .card { background: #fff; border: 1px solid #ddd; border-radius: 12px; padding: 18px; margin: 12px 0; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
-  .metric { font-size: 1.8rem; font-weight: 700; }
-  .meta { color: #666; font-size: .9rem; }
-  .score { font-size: 1.25rem; font-weight: 800; }
-  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-  .tag { background: #eee; border-radius: 999px; padding: 4px 8px; font-size: .78rem; }
-  .flag { border-radius: 999px; padding: 4px 8px; font-size: .78rem; font-weight: 600; }
-  .flag-new { background: #dcefdc; color: #14521c; }
-  .flag-gap { background: #e2ecf7; color: #154b7d; }
-  .flag-unmonitored { background: #f2ecdc; color: #6b4e12; }
-  a { color: #154b7d; }
-  input, select { padding: 10px; border: 1px solid #bbb; border-radius: 8px; background: #fff; }
-  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }
-  .item h3 { margin-bottom: 6px; }
-  .angles { margin-top: 8px; }
-  .health-error { color: #8a1c1c; }
-  .health-empty { color: #6b4e12; }
-  .summary { margin-top: 8px; color: #333; }
+  :root {
+    /* Measured from the live header on load/resize; the literal is the desktop fallback. */
+    --header-h: 91px;
+    --bg: #f6f6f4;
+    --panel: #ffffff;
+    --border: #e0dfd9;
+    --text: #22252b;
+    --muted: #6b7280;
+    --accent: #2f5d7c;
+    --accent-soft: #e5eef4;
+    --good: #2f7a4f;
+    --warn: #a5710f;
+    --bad: #b23b3b;
+    --new: #1f6f4a;
+    --new-soft: #dcefe4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16181c; --panel: #1e2126; --border: #31353c; --text: #e8eaed;
+      --muted: #9aa2ad; --accent: #8fc0e0; --accent-soft: #22303a;
+      --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
+      --new: #7fd3a6; --new-soft: #1d3329;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181c; --panel: #1e2126; --border: #31353c; --text: #e8eaed;
+    --muted: #9aa2ad; --accent: #8fc0e0; --accent-soft: #22303a;
+    --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
+    --new: #7fd3a6; --new-soft: #1d3329;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.45;
+  }
+  header {
+    padding: 18px 24px 14px; border-bottom: 1px solid var(--border);
+    background: var(--panel); position: sticky; top: 0; z-index: 10;
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+  }
+  header h1 { margin: 0 0 4px; font-size: 1.25rem; }
+  header h1 a { color: inherit; text-decoration: none; }
+  header h1 a:hover { text-decoration: underline; }
+  header p { margin: 0; color: var(--muted); font-size: 0.85rem; }
+  .theme-toggle {
+    background: var(--panel); border: 1px solid var(--border); color: var(--muted);
+    border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 0.8rem; white-space: nowrap;
+  }
+  .theme-toggle:hover { border-color: var(--accent); color: var(--text); }
+  .layout { display: grid; grid-template-columns: 320px 1fr; align-items: start; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+  .sidebar {
+    border-right: 1px solid var(--border); padding: 16px;
+    max-height: calc(100vh - var(--header-h)); overflow-y: auto;
+    position: sticky; top: var(--header-h);
+  }
+  @media (max-width: 900px) {
+    .sidebar { position: static; max-height: none; border-right: none; border-bottom: 1px solid var(--border); }
+    .sidebar .run-list { max-height: 42vh; overflow-y: auto; }
+  }
+  .controls { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+  input[type="search"], select {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--border);
+    border-radius: 8px; background: var(--panel); color: var(--text); font-size: 0.9rem;
+  }
+  .run-list { display: flex; flex-direction: column; gap: 8px; }
+  .run-card {
+    border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px;
+    cursor: pointer; background: var(--panel); transition: border-color 0.15s;
+  }
+  .run-card:hover { border-color: var(--accent); }
+  .run-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .run-card.active { border-color: var(--accent); background: var(--accent-soft); }
+  .run-card .rc-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 3px; }
+  .run-card .rc-meta { font-size: 0.75rem; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  main { padding: 20px 24px 80px; min-width: 0; }
+  .run-header { border-bottom: 1px solid var(--border); padding-bottom: 14px; margin-bottom: 18px; }
+  .run-header-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  .run-header h2 { margin: 0 0 8px; font-size: 1.4rem; }
+  .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 14px 0; }
+  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+  .stat .n { font-size: 1.5rem; font-weight: 700; line-height: 1.1; }
+  .stat .l { font-size: 0.75rem; color: var(--muted); }
+  .badge {
+    display: inline-block; font-size: 0.7rem; padding: 1px 7px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent); border: 1px solid var(--border);
+  }
+  .badge.new { background: var(--new-soft); color: var(--new); }
+  .badge.gap { background: var(--accent-soft); color: var(--accent); }
+  .badge.unmonitored { background: transparent; color: var(--warn); }
+  .badge.saturated { background: transparent; color: var(--muted); }
+  .export-btn {
+    background: var(--panel); border: 1px solid var(--border); color: var(--text);
+    border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 0.85rem; white-space: nowrap;
+  }
+  .export-btn:hover { border-color: var(--accent); }
+  .export-btn:disabled { opacity: 0.6; cursor: default; }
+  .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .jump-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .jump-link {
+    font-size: 0.8rem; padding: 5px 11px; border: 1px solid var(--border);
+    border-radius: 999px; color: var(--accent); text-decoration: none; background: var(--panel);
+  }
+  .jump-link:hover { border-color: var(--accent); }
+  .section-block {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 18px; margin: 18px 0; scroll-margin-top: calc(var(--header-h) + 12px);
+  }
+  .section-block h3 { margin: 0 0 10px; font-size: 1.05rem; }
+  .section-block p { margin: 0 0 8px; }
+  .section-block ul { margin: 0 0 10px; padding-left: 20px; }
+  .section-block li { margin-bottom: 4px; }
+  .item {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 10px;
+  }
+  .item-top { display: flex; gap: 12px; align-items: baseline; }
+  .item .score { font-size: 1.15rem; font-weight: 800; color: var(--accent); min-width: 2.4rem; }
+  .item h4 { margin: 0 0 4px; font-size: 0.98rem; line-height: 1.35; }
+  .item h4 a { color: inherit; text-decoration: none; }
+  .item h4 a:hover { text-decoration: underline; color: var(--accent); }
+  .item-meta { font-size: 0.78rem; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+  .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 6px; }
+  .tag { background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 2px 8px; font-size: 0.72rem; }
+  .item .summary { font-size: 0.88rem; color: var(--text); margin: 6px 0; }
+  .item .angles { margin-top: 8px; font-size: 0.85rem; }
+  .item .angles ul { margin: 4px 0 0; padding-left: 18px; }
+  .empty-state { color: var(--muted); padding: 40px 0; text-align: center; }
+  .health-error { color: var(--bad); font-size: 0.85rem; margin-bottom: 4px; }
+  .health-empty { color: var(--warn); font-size: 0.85rem; margin-bottom: 4px; }
+  .health-ok { color: var(--good); font-size: 0.85rem; }
+  .table-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.82rem; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; }
+  .filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
+  .filter-row select, .filter-row input { width: auto; min-width: 140px; }
+  .mode-note { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
+  #scroll-top-btn {
+    position: fixed; right: 22px; bottom: 22px; width: 40px; height: 40px;
+    border-radius: 50%; border: 1px solid var(--border); background: var(--panel);
+    color: var(--text); cursor: pointer; font-size: 1.1rem; opacity: 0; visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s; transform: translateY(6px); z-index: 20;
+  }
+  #scroll-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+  #scroll-top-btn:hover { border-color: var(--accent); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="hero">
-    <div>
-      <h1>AgingWire research intelligence</h1>
-      <div class="meta" id="generated"></div>
+<header>
+  <div>
+    <h1><a href="#" id="home-link">AgingWire Research Intelligence</a></h1>
+    <p>Full run history — every daily intelligence run, browsable by date and topic.</p>
+  </div>
+  <button class="theme-toggle" id="theme-toggle" type="button">Theme</button>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="controls">
+      <label class="sr-only" for="search">Search runs by headline, source, or topic</label>
+      <input type="search" id="search" placeholder="Search runs, sources, topics…" />
+      <label class="sr-only" for="topic-filter">Filter by topic</label>
+      <select id="topic-filter"><option value="">All topics</option></select>
     </div>
-  </div>
-
-  <div class="grid" id="metrics"></div>
-
-  <div class="controls">
-    <input id="q" placeholder="Search stories, sources, topics">
-    <select id="topic"><option value="">All topics</option></select>
-    <select id="aud">
-      <option value="">All opportunities</option>
-      <option value="new">New this run</option>
-      <option value="gap">Confirmed coverage gap</option>
-      <option value="localizable">Localizable</option>
-    </select>
-  </div>
-
-  <div id="items"></div>
-
-  <div class="card">
-    <h2>Pipeline health</h2>
-    <div id="health"></div>
-  </div>
+    <div id="run-count" style="color: var(--muted); font-size: 0.78rem; margin-bottom: 8px;"></div>
+    <div class="run-list" id="run-list"></div>
+  </aside>
+  <main id="main"><div class="empty-state">Loading run history…</div></main>
 </div>
-
+<button id="scroll-top-btn" title="Back to top" aria-label="Back to top">&#8593;</button>
 <script>
-let DATA = {};
-const esc = s => (s ?? '').toString().replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const state = { index: null, filtered: [], activeId: null, runs: new Map(), loadSeq: 0, itemFilter: "" };
 
-function flags(x) {
-  const meta = x.raw_metadata || {};
-  const out = [];
-  if (meta.is_new) out.push('<span class="flag flag-new">New</span>');
-  if (meta.coverage_state === 'gap') out.push('<span class="flag flag-gap">Coverage gap</span>');
-  if (meta.coverage_state === 'unmonitored') out.push('<span class="flag flag-unmonitored">Coverage unknown</span>');
-  return out.join(' ');
+async function loadRun(id) {
+  if (state.runs.has(id)) return state.runs.get(id);
+  const res = await fetch(`data/runs/${encodeURIComponent(id)}.json`);
+  if (!res.ok) throw new Error(`could not load run (${res.status})`);
+  const run = await res.json();
+  state.runs.set(id, run);
+  return run;
 }
 
-function render() {
-  const q = document.querySelector('#q').value.toLowerCase();
-  const t = document.querySelector('#topic').value;
-  const a = document.querySelector('#aud').value;
-  const rows = (DATA.evidence || []).filter(x => {
-    const meta = x.raw_metadata || {};
-    const text = [x.title, x.source_id, x.summary, ...(x.topics || [])].join(' ').toLowerCase();
-    if (q && !text.includes(q)) return false;
-    if (t && !(x.topics || []).includes(t)) return false;
-    if (a === 'new' && !meta.is_new) return false;
-    if (a === 'gap' && meta.coverage_state !== 'gap') return false;
-    if (a === 'localizable' && !x.localizable && !(x.geographies || []).length) return false;
+function esc(s) {
+  return (s ?? "").toString().replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function label(t) { return (t || "").replace(/_/g, " "); }
+
+/* Renders **Label:** paragraphs and "- " bullet lists without a full markdown parser. */
+function renderBlock(raw) {
+  if (!raw) return "";
+  const lines = String(raw).split("\n");
+  let html = "", inList = false;
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    const bullet = trimmed.match(/^-\s+(.*)$/);
+    if (bullet) {
+      if (!inList) { html += "<ul>"; inList = true; }
+      html += `<li>${inline(bullet[1])}</li>`;
+    } else {
+      if (inList) { html += "</ul>"; inList = false; }
+      html += `<p>${inline(trimmed)}</p>`;
+    }
+  }
+  if (inList) html += "</ul>";
+  return html;
+}
+
+function inline(text) {
+  return esc(text)
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*([^*]+)\*(?!\*)/g, "$1<em>$2</em>");
+}
+
+function coverageBadge(item) {
+  const map = {
+    gap: ["gap", "Coverage gap"],
+    unmonitored: ["unmonitored", "Coverage unknown"],
+    light: ["", "Lightly covered"],
+    saturated: ["saturated", "Well covered"],
+  };
+  const hit = map[item.coverage_state];
+  return hit ? `<span class="badge ${hit[0]}">${hit[1]}</span>` : "";
+}
+
+function renderSidebar() {
+  const topicSelect = document.getElementById("topic-filter");
+  if (topicSelect.options.length <= 1) {
+    topicSelect.innerHTML = '<option value="">All topics</option>' +
+      state.index.topics.map(t => `<option value="${esc(t)}">${esc(label(t))}</option>`).join("");
+  }
+  const list = document.getElementById("run-list");
+  list.innerHTML = state.filtered.map(r => `
+    <div class="run-card ${r.id === state.activeId ? "active" : ""}" data-id="${esc(r.id)}"
+         role="button" tabindex="0" aria-current="${r.id === state.activeId ? "true" : "false"}">
+      <div class="rc-title">${esc(r.run_date)}</div>
+      <div class="rc-meta">
+        <span class="badge">${r.evidence_count} items</span>
+        ${r.new_evidence_count ? `<span class="badge new">${r.new_evidence_count} new</span>` : ""}
+        ${r.gap_count ? `<span class="badge gap">${r.gap_count} gaps</span>` : ""}
+      </div>
+    </div>`).join("") || '<div class="empty-state">No runs match.</div>';
+
+  document.getElementById("run-count").textContent =
+    `${state.filtered.length} of ${state.index.run_count} runs`;
+
+  list.querySelectorAll(".run-card").forEach(el => {
+    const select = () => {
+      const hadFocus = document.activeElement === el;
+      const id = el.dataset.id;
+      state.activeId = id;
+      state.itemFilter = "";
+      renderSidebar();
+      renderMain();
+      if (hadFocus) {
+        const next = document.querySelector(`.run-card[data-id="${CSS.escape(id)}"]`);
+        if (next) next.focus();
+      }
+    };
+    el.addEventListener("click", select);
+    el.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(); }
+    });
+  });
+}
+
+function applyFilters() {
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  const topic = document.getElementById("topic-filter").value;
+  state.filtered = state.index.runs.filter(r => {
+    if (topic && !(r.top_topics || []).includes(topic)) return false;
+    if (!q) return true;
+    return `${r.run_date} ${r.title} ${(r.top_topics || []).join(" ")} ${r.search_blob || ""}`
+      .toLowerCase().includes(q);
+  });
+  if (!state.filtered.some(r => r.id === state.activeId)) {
+    state.activeId = state.filtered.length ? state.filtered[0].id : null;
+  }
+}
+
+function renderItem(item) {
+  const findings = (item.key_findings || []).filter(Boolean);
+  return `
+    <article class="item">
+      <div class="item-top">
+        <div class="score">${item.score ?? 0}</div>
+        <div style="flex:1; min-width:0;">
+          <h4><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h4>
+          <div class="item-meta">
+            <span>${esc(item.source_id)}</span>
+            <span>${esc((item.published_at || "").slice(0, 10) || "undated")}</span>
+            <span>B2B ${item.b2b_coverage_count || 0} · B2C ${item.b2c_coverage_count || 0}</span>
+          </div>
+          <div class="tags">
+            ${item.is_new ? '<span class="badge new">New</span>' : ""}
+            ${coverageBadge(item)}
+            ${(item.topics || []).map(t => `<span class="tag">${esc(label(t))}</span>`).join("")}
+          </div>
+          ${item.summary ? `<div class="summary">${esc(item.summary.slice(0, 320))}${item.summary.length > 320 ? "…" : ""}</div>` : ""}
+          ${findings.length ? `<div class="angles"><strong>Key finding</strong><ul>${findings.map(f => `<li>${esc(f)}</li>`).join("")}</ul></div>` : ""}
+          ${(item.story_angles || []).length ? `<div class="angles"><strong>Angles</strong><ul>${item.story_angles.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>` : ""}
+        </div>
+      </div>
+    </article>`;
+}
+
+function itemsFor(run) {
+  const f = state.itemFilter;
+  return (run.items || []).filter(i => {
+    if (f === "new") return i.is_new;
+    if (f === "gap") return i.coverage_state === "gap";
+    if (f === "localizable") return i.localizable || (i.geographies || []).length;
+    if (f && f.startsWith("topic:")) return (i.topics || []).includes(f.slice(6));
     return true;
   });
-  document.querySelector('#items').innerHTML = rows.map(x => `
-    <article class="card item">
-      <div class="score">${x.score ?? 0}<span class="meta"> / 100</span></div>
-      <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
-      <div class="meta">${esc(x.source_id)} · ${esc(x.published_at ? x.published_at.slice(0, 10) : 'undated')} · B2B coverage ${x.b2b_coverage_count || 0} · B2C coverage ${x.b2c_coverage_count || 0}</div>
-      <div class="tags">${flags(x)}${(x.topics || []).map(z => `<span class="tag">${esc(z)}</span>`).join('')}</div>
-      ${x.summary ? `<div class="summary">${esc(x.summary.slice(0, 320))}${x.summary.length > 320 ? '…' : ''}</div>` : ''}
-      ${(x.story_angles || []).length ? `<div class="angles"><strong>Angles</strong><ul>${x.story_angles.map(z => `<li>${esc(z)}</li>`).join('')}</ul></div>` : ''}
-    </article>`).join('') || '<div class="card">No matches.</div>';
 }
 
-fetch('data/latest.json').then(r => r.json()).then(d => {
-  DATA = d;
-  document.querySelector('#generated').textContent = 'Generated ' + d.generated_at;
-  const gaps = (d.evidence || []).filter(x => (x.raw_metadata || {}).coverage_state === 'gap').length;
-  document.querySelector('#metrics').innerHTML = `
-    <div class="card"><div class="metric">${d.evidence_count || 0}</div><div class="meta">evidence candidates</div></div>
-    <div class="card"><div class="metric">${d.new_evidence_count || 0}</div><div class="meta">new since last run</div></div>
-    <div class="card"><div class="metric">${gaps}</div><div class="meta">confirmed coverage gaps</div></div>
-    <div class="card"><div class="metric">${d.monitored_publisher_count || 0}<span class="meta"> / ${d.registry_publisher_count || 0}</span></div><div class="meta">publishers with working feeds</div></div>`;
-  const topics = [...new Set((d.evidence || []).flatMap(x => x.topics || []))].sort();
-  document.querySelector('#topic').innerHTML += topics.map(x => `<option>${esc(x)}</option>`).join('');
-  const all = [...(d.source_status || []), ...(d.media_status || [])];
-  const errors = all.filter(x => x.status === 'error');
-  const empties = all.filter(x => x.status === 'empty');
-  const health = [
-    ...errors.map(x => `<div class="health-error">Error — ${esc(x.source || x.publisher)}: ${esc(x.error)}</div>`),
-    ...empties.map(x => `<div class="health-empty">Ran but returned nothing — ${esc(x.source || x.publisher)}</div>`)
-  ];
-  document.querySelector('#health').innerHTML = health.length ? health.join('') : 'All monitored collectors returned items.';
-  render();
-}).catch(() => {
-  document.querySelector('#items').innerHTML = '<div class="card health-error">No pipeline output yet. Run the intelligence workflow first.</div>';
-});
+async function renderMain() {
+  const main = document.getElementById("main");
+  const id = state.activeId;
+  if (!id) { main.innerHTML = '<div class="empty-state">No run selected.</div>'; return; }
 
-['q', 'topic', 'aud'].forEach(id => document.querySelector('#' + id).addEventListener('input', render));
+  const seq = ++state.loadSeq;
+  let run;
+  try {
+    if (!state.runs.has(id)) main.innerHTML = '<div class="empty-state">Loading run…</div>';
+    run = await loadRun(id);
+  } catch (err) {
+    if (seq === state.loadSeq) main.innerHTML = `<div class="empty-state">Failed to load this run: ${esc(err.message)}</div>`;
+    return;
+  }
+  if (seq !== state.loadSeq) return;
+
+  const jump = [
+    run.feature_pitch_raw ? '<a class="jump-link" href="#feature-pitch">Feature Pitch &#8595;</a>' : "",
+    run.pitch_ideas_raw ? '<a class="jump-link" href="#story-ideas">Story Ideas &#8595;</a>' : "",
+    run.trends_raw ? '<a class="jump-link" href="#trends">Trends &#8595;</a>' : "",
+    (run.clusters || []).length ? '<a class="jump-link" href="#clusters">Clusters &#8595;</a>' : "",
+    '<a class="jump-link" href="#opportunities">Opportunities &#8595;</a>',
+    '<a class="jump-link" href="#health">Pipeline Health &#8595;</a>',
+  ].join("");
+
+  const clusterRows = (run.clusters || []).slice(0, 8).map(c => `
+    <tr><td>${esc(label(c.label || c.topic))}</td><td>${c.source_count}</td><td>${c.item_count}</td>
+    <td>${c.gap_count}</td><td>${c.newest_age_days ?? "—"}</td></tr>`).join("");
+
+  const status = run.source_status || [];
+  const errors = status.filter(s => s.status === "error");
+  const empties = status.filter(s => s.status === "empty");
+  const media = run.media_status_summary || {};
+  const healthHtml = [
+    ...errors.map(s => `<div class="health-error">Error — ${esc(s.source)}: ${esc(s.error)}</div>`),
+    ...empties.map(s => `<div class="health-empty">Ran but returned nothing — ${esc(s.source)} (${esc(s.method)})</div>`),
+    (!errors.length && !empties.length) ? '<div class="health-ok">All evidence sources returned items.</div>' : "",
+    `<div style="margin-top:8px; color: var(--muted); font-size: 0.82rem;">
+      Publisher feeds: ${media.ok || 0} working, ${media.error || 0} error, ${media.no_feed || 0} with no feed found.</div>`,
+  ].join("");
+
+  const modeNote = run.synthesis_mode === "llm"
+    ? `<div class="mode-note">Editorial sections written by ${esc(run.synthesis_model || "an LLM")} from the run's facts.</div>`
+    : `<div class="mode-note">Editorial sections derived from the run data (no model).${run.synthesis_note ? " " + esc(run.synthesis_note) : ""}</div>`;
+
+  const items = itemsFor(run);
+
+  main.innerHTML = `
+    <div class="run-header">
+      <div class="run-header-top">
+        <h2>${esc(run.title)}</h2>
+        <div class="btn-row">
+          <button id="export-docx-btn" class="export-btn">Export .docx</button>
+          <button id="export-csv-btn" class="export-btn">Export .csv</button>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><div class="n">${run.evidence_count}</div><div class="l">evidence candidates</div></div>
+        <div class="stat"><div class="n">${run.new_evidence_count}</div><div class="l">new since last run</div></div>
+        <div class="stat"><div class="n">${run.gap_count}</div><div class="l">confirmed coverage gaps</div></div>
+        <div class="stat"><div class="n">${run.monitored_publisher_count}<span class="l"> / ${run.registry_publisher_count}</span></div><div class="l">publisher feeds working</div></div>
+      </div>
+      <div class="jump-links">${jump}</div>
+    </div>
+
+    ${run.feature_pitch_raw ? `<div class="section-block" id="feature-pitch">
+      <h3>Bigger Picture: Feature Pitch</h3>${renderBlock(run.feature_pitch_raw)}${modeNote}</div>` : ""}
+
+    ${run.pitch_ideas_raw ? `<div class="section-block" id="story-ideas">
+      <h3>Story Ideas</h3>${renderBlock(run.pitch_ideas_raw)}</div>` : ""}
+
+    ${run.trends_raw ? `<div class="section-block" id="trends">
+      <h3>Research Trends &amp; Continuity</h3>${renderBlock(run.trends_raw)}</div>` : ""}
+
+    ${clusterRows ? `<div class="section-block" id="clusters">
+      <h3>Topic Clusters</h3>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Topic</th><th>Sources</th><th>Items</th><th>Gaps</th><th>Newest (days)</th></tr></thead>
+        <tbody>${clusterRows}</tbody>
+      </table></div></div>` : ""}
+
+    <div class="section-block" id="opportunities">
+      <h3>Story Opportunities</h3>
+      <div class="filter-row">
+        <label class="sr-only" for="item-filter">Filter items</label>
+        <select id="item-filter">
+          <option value="">All ${(run.items || []).length} items</option>
+          <option value="new"${state.itemFilter === "new" ? " selected" : ""}>New this run</option>
+          <option value="gap"${state.itemFilter === "gap" ? " selected" : ""}>Confirmed coverage gap</option>
+          <option value="localizable"${state.itemFilter === "localizable" ? " selected" : ""}>Localizable</option>
+          ${(run.top_topics || []).map(t => `<option value="topic:${esc(t)}"${state.itemFilter === "topic:" + t ? " selected" : ""}>Topic: ${esc(label(t))}</option>`).join("")}
+        </select>
+        <span style="color: var(--muted); font-size: 0.8rem;">${items.length} shown</span>
+      </div>
+      ${items.map(renderItem).join("") || '<div class="empty-state">No items match this filter.</div>'}
+    </div>
+
+    <div class="section-block" id="health"><h3>Pipeline Health</h3>${healthHtml}</div>
+  `;
+
+  document.getElementById("export-docx-btn").addEventListener("click", () => exportRunToDocx(run));
+  document.getElementById("export-csv-btn").addEventListener("click", () => exportRunToCsv(run));
+  document.getElementById("item-filter").addEventListener("change", e => {
+    state.itemFilter = e.target.value;
+    renderMain();
+  });
+  main.querySelectorAll(".jump-link").forEach(a => a.addEventListener("click", e => {
+    e.preventDefault();
+    const target = document.getElementById(a.getAttribute("href").slice(1));
+    if (!target) return;
+    const offset = (document.querySelector("header")?.getBoundingClientRect().height || 0) + 12;
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: "smooth" });
+  }));
+}
+
+/* ---------- CSV export ---------- */
+function csvCell(v) {
+  const s = (v ?? "").toString().replace(/"/g, '""');
+  return /[",\n]/.test(s) ? `"${s}"` : s;
+}
+
+function exportRunToCsv(run) {
+  const headers = ["score", "title", "source_id", "source_type", "published_at", "topics",
+                   "coverage_state", "is_new", "b2b_coverage_count", "b2c_coverage_count",
+                   "localizable", "url", "story_angles"];
+  const rows = [headers.join(",")];
+  for (const i of run.items || []) {
+    rows.push([
+      i.score, i.title, i.source_id, i.source_type, (i.published_at || "").slice(0, 10),
+      (i.topics || []).join("; "), i.coverage_state, i.is_new ? "yes" : "no",
+      i.b2b_coverage_count, i.b2c_coverage_count,
+      (i.localizable || (i.geographies || []).length) ? "yes" : "no",
+      i.url, (i.story_angles || []).join(" | "),
+    ].map(csvCell).join(","));
+  }
+  // BOM so Excel reads the UTF-8 em dashes and accents correctly.
+  const blob = new Blob(["﻿" + rows.join("\n")], { type: "text/csv;charset=utf-8;" });
+  downloadBlob(blob, `agingwire-intelligence-${run.run_date}.csv`);
+}
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+/* ---------- docx export ---------- */
+/* ~725 KB that only an export needs, so it is fetched on first use. */
+let docxLoader = null;
+function ensureDocx() {
+  if (typeof docx !== "undefined") return Promise.resolve();
+  if (docxLoader) return docxLoader;
+  docxLoader = new Promise((resolve, reject) => {
+    const el = document.createElement("script");
+    el.src = "vendor/docx-8.5.0.umd.js";
+    el.onload = () => typeof docx === "undefined"
+      ? reject(new Error("docx library loaded but did not register")) : resolve();
+    el.onerror = () => { docxLoader = null; reject(new Error("docx library failed to load")); };
+    document.head.appendChild(el);
+  });
+  return docxLoader;
+}
+
+function mdRuns(text) {
+  const parts = String(text || "").split(/(\*\*[^*]+?\*\*|\*[^*]+?\*)/g).filter(p => p !== "");
+  if (!parts.length) return [new docx.TextRun("")];
+  return parts.map(p => {
+    const b = p.match(/^\*\*([^*]+)\*\*$/);
+    if (b) return new docx.TextRun({ text: b[1], bold: true });
+    const i = p.match(/^\*([^*]+)\*$/);
+    if (i) return new docx.TextRun({ text: i[1], italics: true });
+    return new docx.TextRun(p);
+  });
+}
+
+function docxBlock(raw) {
+  return String(raw || "").split("\n").map(l => l.trim()).filter(Boolean).map(trimmed => {
+    const bullet = trimmed.match(/^-\s+(.*)$/);
+    return bullet
+      ? new docx.Paragraph({ children: mdRuns(bullet[1]), bullet: { level: 0 }, spacing: { after: 60 } })
+      : new docx.Paragraph({ children: mdRuns(trimmed), spacing: { after: 120 } });
+  });
+}
+
+function docxItem(item) {
+  const out = [
+    new docx.Paragraph({ text: `${item.score ?? 0} — ${item.title}`, heading: docx.HeadingLevel.HEADING_3, spacing: { before: 240, after: 40 } }),
+    new docx.Paragraph({
+      children: [new docx.TextRun({
+        text: [item.source_id, (item.published_at || "").slice(0, 10) || "undated",
+               (item.topics || []).map(t => t.replace(/_/g, " ")).join(", "),
+               item.coverage_state].filter(Boolean).join("   ·   "),
+        color: "666666", size: 18,
+      })], spacing: { after: 80 },
+    }),
+  ];
+  if (item.summary) out.push(new docx.Paragraph({ text: item.summary, spacing: { after: 80 } }));
+  for (const f of (item.key_findings || []).filter(Boolean)) {
+    out.push(new docx.Paragraph({ text: f, bullet: { level: 0 }, spacing: { after: 40 } }));
+  }
+  if ((item.story_angles || []).length) {
+    out.push(new docx.Paragraph({ children: [new docx.TextRun({ text: "Angles", bold: true })], spacing: { before: 100, after: 40 } }));
+    for (const a of item.story_angles) {
+      out.push(new docx.Paragraph({ text: a, bullet: { level: 0 }, spacing: { after: 40 } }));
+    }
+  }
+  out.push(new docx.Paragraph({
+    children: [new docx.ExternalHyperlink({
+      link: item.url,
+      children: [new docx.TextRun({ text: item.url, color: "0563C1", underline: {}, size: 18 })],
+    })], spacing: { after: 80 },
+  }));
+  return out;
+}
+
+async function exportRunToDocx(run) {
+  const btn = document.getElementById("export-docx-btn");
+  const original = btn.textContent;
+  btn.disabled = true; btn.textContent = "Building…";
+  try {
+    await ensureDocx();
+    const sections = [
+      new docx.Paragraph({ text: run.title, heading: docx.HeadingLevel.TITLE, spacing: { after: 120 } }),
+      new docx.Paragraph({
+        children: [
+          new docx.TextRun(`Run date: ${run.run_date}`),
+          new docx.TextRun("    |    "), new docx.TextRun(`Evidence: ${run.evidence_count}`),
+          new docx.TextRun("    |    "), new docx.TextRun(`New: ${run.new_evidence_count}`),
+          new docx.TextRun("    |    "), new docx.TextRun(`Confirmed gaps: ${run.gap_count}`),
+          new docx.TextRun("    |    "), new docx.TextRun(`Feeds: ${run.monitored_publisher_count}/${run.registry_publisher_count}`),
+        ], spacing: { after: 240 },
+      }),
+    ];
+    if (run.feature_pitch_raw) {
+      sections.push(new docx.Paragraph({ text: "Bigger Picture: Feature Pitch", heading: docx.HeadingLevel.HEADING_2, spacing: { before: 320, after: 80 } }));
+      sections.push(...docxBlock(run.feature_pitch_raw));
+    }
+    if (run.pitch_ideas_raw) {
+      sections.push(new docx.Paragraph({ text: "Story Ideas", heading: docx.HeadingLevel.HEADING_2, spacing: { before: 320, after: 80 } }));
+      sections.push(...docxBlock(run.pitch_ideas_raw));
+    }
+    if (run.trends_raw) {
+      sections.push(new docx.Paragraph({ text: "Research Trends & Continuity", heading: docx.HeadingLevel.HEADING_2, spacing: { before: 320, after: 80 } }));
+      sections.push(...docxBlock(run.trends_raw));
+    }
+    sections.push(new docx.Paragraph({ text: "Story Opportunities", heading: docx.HeadingLevel.HEADING_2, spacing: { before: 320, after: 80 } }));
+    for (const item of itemsFor(run)) sections.push(...docxItem(item));
+
+    const doc = new docx.Document({ sections: [{ properties: {}, children: sections }] });
+    const blob = await docx.Packer.toBlob(doc);
+    downloadBlob(blob, `${(run.title || "agingwire").replace(/[\\/:*?"<>|]/g, "-")}.docx`);
+  } catch (err) {
+    alert("Failed to export .docx: " + err.message);
+  } finally {
+    btn.disabled = false; btn.textContent = original;
+  }
+}
+
+/* ---------- theme, header measurement, boot ---------- */
+function initTheme() {
+  let stored = null;
+  try { stored = localStorage.getItem("aw-theme"); } catch (e) { /* private mode */ }
+  if (stored === "dark" || stored === "light") document.documentElement.dataset.theme = stored;
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const current = document.documentElement.dataset.theme
+      || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem("aw-theme", next); } catch (e) { /* private mode */ }
+  });
+}
+
+function measureHeader() {
+  const h = document.querySelector("header");
+  if (h) document.documentElement.style.setProperty("--header-h", `${h.getBoundingClientRect().height}px`);
+}
+
+function initScrollTop() {
+  const btn = document.getElementById("scroll-top-btn");
+  const onScroll = () => btn.classList.toggle("visible", window.scrollY > 400);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  onScroll();
+}
+
+async function boot() {
+  initTheme();
+  measureHeader();
+  window.addEventListener("resize", measureHeader);
+  initScrollTop();
+
+  try {
+    const res = await fetch("data/index.json");
+    if (!res.ok) throw new Error(`index ${res.status}`);
+    state.index = await res.json();
+  } catch (err) {
+    document.getElementById("main").innerHTML =
+      '<div class="empty-state">No run history yet. Run the intelligence workflow first.</div>';
+    return;
+  }
+  applyFilters();
+  renderSidebar();
+  renderMain();
+
+  document.getElementById("search").addEventListener("input", () => { applyFilters(); renderSidebar(); renderMain(); });
+  document.getElementById("topic-filter").addEventListener("change", () => { applyFilters(); renderSidebar(); renderMain(); });
+  document.getElementById("home-link").addEventListener("click", e => {
+    e.preventDefault();
+    document.getElementById("search").value = "";
+    document.getElementById("topic-filter").value = "";
+    applyFilters(); renderSidebar(); renderMain();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+boot();
 </script>
 </body>
 </html>

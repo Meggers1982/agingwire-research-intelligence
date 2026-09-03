@@ -16,6 +16,9 @@ B2B_TOPICS = {
     "senior_living_quality", "medicare_medicaid",
 }
 STRUCTURED_SOURCES = {"government_api"}
+# A national series tagged "United States" is not localizable. Treating any
+# geography as sub-national produced "Localize: breaks down to United States".
+NATIONAL_ONLY = {"united states", "us", "u.s.", "national", "nationwide"}
 HIGH_TRUST_SOURCES = {"government_api", "regulatory_filing", "academic_study"}
 
 # Weights are what create separation. The previous flat sum put 65 of 85 items
@@ -68,6 +71,17 @@ def _priority(topics: set[str]) -> int:
     if "P1" in tiers:
         return 3
     return 2
+
+
+def sub_national(geographies) -> list[str]:
+    """Geographies that actually support a local cut."""
+    return [g for g in (geographies or []) if str(g).strip().lower() not in NATIONAL_ONLY]
+
+
+def is_localizable(item) -> bool:
+    geographies = item.get("geographies") if isinstance(item, dict) else item.geographies
+    flag = item.get("localizable") if isinstance(item, dict) else item.localizable
+    return bool(sub_national(geographies) or flag)
 
 
 def _freshness(published_at: str | None) -> int:
@@ -139,7 +153,7 @@ def _coverage_gap(b2b: int, b2c: int, monitored: bool) -> tuple[int, str]:
 def _visualization(item) -> int:
     if item.source_type in STRUCTURED_SOURCES:
         return 5
-    if item.geographies:
+    if sub_national(item.geographies):
         return 4
     blob = f"{item.title} {item.summary or ''}"
     return 3 if _NUMERIC.search(blob) else 1
@@ -173,7 +187,7 @@ def score_evidence(
         "timeliness": _freshness(item.published_at),
         "source_quality": _source_quality(item),
         "coverage_gap": gap,
-        "localization": 5 if item.geographies else 3 if item.localizable else 1,
+        "localization": 5 if sub_national(item.geographies) else 3 if item.localizable else 1,
         "consumer_utility": _scaled_overlap(topics, CONSUMER_TOPICS),
         "b2b_relevance": _scaled_overlap(topics, B2B_TOPICS),
         "visualization": _visualization(item),

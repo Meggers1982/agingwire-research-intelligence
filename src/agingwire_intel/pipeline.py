@@ -13,11 +13,10 @@ from agingwire_intel.collectors.census import acs_evidence_item
 from agingwire_intel.collectors.cms_datasets import collect_cms_datasets
 from agingwire_intel.collectors.federal_register import collect_federal_register
 from agingwire_intel.collectors.rss import collect_evidence_feed
-from agingwire_intel.collectors.senior_digest import collect_senior_digest
 from agingwire_intel.collectors.web import collect_link_page
 from agingwire_intel.dedupe import stable_item_id
 from agingwire_intel.media import collect_registry, monitored_topics, topic_coverage_counts
-from agingwire_intel.scoring import score_evidence
+from agingwire_intel.scoring import is_localizable, score_evidence
 from agingwire_intel.state import SeenLedger
 
 STOP = {
@@ -61,7 +60,7 @@ def _coverage_counts(item, coverage) -> tuple[int, int]:
 def _angles(item, coverage_state: str, is_new: bool) -> list[str]:
     angles: list[str] = []
     topics = set(item.topics or [])
-    if item.localizable or item.geographies:
+    if is_localizable(item):
         angles.append("Localize the finding by state, metro or county and identify geographic outliers.")
     if topics & {
         "caregiving", "housing", "aging_in_place", "financial_security", "fraud_scams",
@@ -116,12 +115,6 @@ def _load_collector_items(monitor: dict, output_dir: str) -> list:
         return collect_evidence_feed(monitor["url"], sid, "institutional_rss")
     if method == "web":
         return collect_link_page(monitor["url"], sid)
-    if method == "senior_digest":
-        return collect_senior_digest(
-            monitor["url"],
-            runs=int(monitor.get("runs", 8)),
-            per_run=int(monitor.get("per_run", 20)),
-        )
     if method == "census_acs":
         return [acs_evidence_item(int(monitor.get("year", 2023)), data_dir=Path(output_dir) / "data")]
     if method == "bls_api":
