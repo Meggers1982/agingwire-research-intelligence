@@ -15,6 +15,10 @@ shared rather than reimplemented per source.
 | `rss.py` | `rss` | Institutional feeds (evidence) and publisher feeds (coverage) |
 | `web.py` | `web` | Best-effort listing-page monitor for first-party sites with no feed |
 
+Both `rss.py` and `web.py` populate `EvidenceItem.summary`. They used to keep the
+feed description and page context in `raw_metadata` only, which left every
+RSS-sourced and scraped lead with no hook in the digest and dashboard.
+
 AgingWire does not consume the senior-research-digest. That repo covers the
 clinical/academic PubMed beat; this one covers housing, caregiving, economics,
 workforce, policy and industry. Mixing them buried the nonclinical evidence

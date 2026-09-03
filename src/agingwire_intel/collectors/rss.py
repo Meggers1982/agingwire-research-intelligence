@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
 
@@ -35,6 +36,23 @@ def _date(entry) -> str | None:
     return None
 
 
+_TAG = re.compile(r"<[^>]+>")
+_WS = re.compile(r"\s+")
+_ENTITIES = {"&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#39;": "'", "&nbsp;": " "}
+
+
+def clean_summary(raw: str) -> str:
+    """Feed summaries are HTML fragments; the item needs readable prose.
+
+    Without this the summary only reached raw_metadata, so RSS-sourced leads
+    showed up in the digest and dashboard with no hook at all.
+    """
+    text = _TAG.sub(" ", raw or "")
+    for entity, char in _ENTITIES.items():
+        text = text.replace(entity, char)
+    return _WS.sub(" ", text).strip()
+
+
 def collect_evidence_feed(feed_url: str, source_id: str, source_type: str = "rss", limit: int = 50) -> list[EvidenceItem]:
     feed = _parse(feed_url)
     items: list[EvidenceItem] = []
@@ -44,7 +62,8 @@ def collect_evidence_feed(feed_url: str, source_id: str, source_type: str = "rss
         if not title or not url:
             continue
         summary = entry.get("summary", "") or entry.get("description", "")
-        topics = tag_text(f"{title} {summary}")
+        clean = clean_summary(summary)
+        topics = tag_text(f"{title} {clean}")
         items.append(EvidenceItem(
             source_id=source_id,
             title=title,
@@ -52,7 +71,8 @@ def collect_evidence_feed(feed_url: str, source_id: str, source_type: str = "rss
             source_type=source_type,
             published_at=_date(entry),
             topics=topics,
-            raw_metadata={"summary": summary, "feed_url": feed_url},
+            summary=clean[:1500] or None,
+            raw_metadata={"feed_url": feed_url},
         ))
     return items
 
@@ -65,7 +85,7 @@ def collect_media_feed(feed_url: str, publisher: str, audience_type: str, limit:
         url = entry.get("link", "").strip()
         if not title or not url:
             continue
-        summary = entry.get("summary", "") or entry.get("description", "")
+        summary = clean_summary(entry.get("summary", "") or entry.get("description", ""))
         items.append(CoverageItem(
             publisher=publisher,
             audience_type=audience_type,

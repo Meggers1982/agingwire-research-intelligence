@@ -37,6 +37,12 @@ class ContractTests(unittest.TestCase):
         item = self.doc["items"][0]
         self.assertEqual(sorted(f for f in used if f not in item), [])
 
+    def test_every_story_idea_field_the_dashboard_reads_exists(self):
+        used = set(re.findall(r"\bidea\.([a-z_0-9]+)", self.js))
+        idea = self.doc["story_ideas"][0]
+        self.assertTrue(used, "no idea fields found; the regex needs updating")
+        self.assertEqual(sorted(f for f in used if f not in idea), [])
+
     def test_every_index_entry_field_the_dashboard_reads_exists(self):
         used = set(re.findall(r"\br\.([a-z_]+)", self.js))
         self.assertEqual(sorted(f for f in used if f not in self.entry), [])

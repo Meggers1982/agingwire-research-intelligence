@@ -30,6 +30,35 @@ def _extract_date(text: str) -> str | None:
     return None
 
 
+_MONTH_NAMES = (
+    "January|February|March|April|May|June|July|August|September|October|November|December"
+)
+# Two ordered strips rather than one pattern: a combined regex let the name
+# group swallow the month, leaving an orphaned "2, 2026" as the hook.
+_BYLINE = re.compile(
+    rf"^by\s+(?:(?!(?:{_MONTH_NAMES})\b)[A-Z][\w.'-]*\s*){{1,4}}[,|·-]?\s*",
+    re.I,
+)
+_DATELINE = re.compile(rf"^(?:{_MONTH_NAMES})\s+\d{{1,2}},\s+20\d{{2}}\s*[,|·-]?\s*", re.I)
+_TRIM = " -–—:·|"
+
+
+def _clean_context(context: str, title: str) -> str | None:
+    """Trim the link's surrounding text into something readable as a summary.
+
+    Strips the link text (which repeats the headline) and any leading byline or
+    dateline, which otherwise surfaced as the story hook -- "By <name> <date>"
+    is not a reason to write something, and naming individual commentators is
+    against house style.
+    """
+    text = re.sub(r"\s+", " ", context or "").strip()
+    if text.lower().startswith(title.lower()):
+        text = text[len(title):].strip(_TRIM)
+    text = _BYLINE.sub("", text, count=1).strip(_TRIM)
+    text = _DATELINE.sub("", text, count=1).strip(_TRIM)
+    return text[:400] or None
+
+
 def collect_link_page(url: str, source_id: str, source_type: str = "web_release", limit: int = 50) -> list[EvidenceItem]:
     """Best-effort monitor for first-party news/report listing pages.
 
@@ -70,7 +99,11 @@ def collect_link_page(url: str, source_id: str, source_type: str = "web_release"
             source_type=source_type,
             published_at=_extract_date(context),
             topics=topics,
-            raw_metadata={"listing_page": url, "context": context[:400]},
+            # The surrounding link context is the only prose these pages give
+            # us; without it on the item, scraped leads reach the digest and
+            # dashboard with no hook at all.
+            summary=_clean_context(context, title),
+            raw_metadata={"listing_page": url},
         ))
         if len(out) >= limit:
             break

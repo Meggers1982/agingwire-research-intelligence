@@ -21,20 +21,21 @@
     --bad: #b23b3b;
     --new: #1f6f4a;
     --new-soft: #dcefe4;
+    --strong: #101318;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #16181c; --panel: #1e2126; --border: #31353c; --text: #e8eaed;
       --muted: #9aa2ad; --accent: #8fc0e0; --accent-soft: #22303a;
       --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
-      --new: #7fd3a6; --new-soft: #1d3329;
+      --new: #7fd3a6; --new-soft: #1d3329; --strong: #ffffff;
     }
   }
   :root[data-theme="dark"] {
     --bg: #16181c; --panel: #1e2126; --border: #31353c; --text: #e8eaed;
     --muted: #9aa2ad; --accent: #8fc0e0; --accent-soft: #22303a;
     --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
-    --new: #7fd3a6; --new-soft: #1d3329;
+    --new: #7fd3a6; --new-soft: #1d3329; --strong: #ffffff;
   }
   * { box-sizing: border-box; }
   body {
@@ -92,8 +93,9 @@
   .run-header h2 { margin: 0 0 8px; font-size: 1.4rem; }
   .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 14px 0; }
   .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
-  .stat .n { font-size: 1.5rem; font-weight: 700; line-height: 1.1; }
-  .stat .l { font-size: 0.75rem; color: var(--muted); }
+  .stat .n { font-size: 1.7rem; font-weight: 700; line-height: 1.1; color: var(--accent); }
+  .stat .l { font-size: 0.73rem; color: var(--muted); letter-spacing: 0.02em; }
+  .stat.is-zero .n { color: var(--muted); }
   .badge {
     display: inline-block; font-size: 0.7rem; padding: 1px 7px; border-radius: 999px;
     background: var(--accent-soft); color: var(--accent); border: 1px solid var(--border);
@@ -116,19 +118,57 @@
   }
   .jump-link:hover { border-color: var(--accent); }
   .section-block {
-    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
-    padding: 16px 18px; margin: 18px 0; scroll-margin-top: calc(var(--header-h) + 12px);
+    background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 22px; margin: 22px 0; scroll-margin-top: calc(var(--header-h) + 12px);
   }
-  .section-block h3 { margin: 0 0 10px; font-size: 1.05rem; }
-  .section-block p { margin: 0 0 8px; }
-  .section-block ul { margin: 0 0 10px; padding-left: 20px; }
-  .section-block li { margin-bottom: 4px; }
+  .section-block h3 {
+    margin: 0 0 14px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--muted);
+    padding-bottom: 9px; border-bottom: 1px solid var(--border);
+  }
+  .section-block p { margin: 0 0 10px; }
+  .section-block ul { margin: 0 0 12px; padding-left: 20px; }
+  .section-block li { margin-bottom: 5px; }
+  .section-block strong { color: var(--strong); }
+
+  /* The pitch is the point of the page; it should not look like a sibling. */
+  .section-block.feature {
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(180deg, var(--accent-soft) 0%, var(--panel) 130px);
+  }
+  .section-block.feature h3 { color: var(--accent); border-bottom-color: var(--accent); }
+  .section-block.feature > p:first-of-type { font-size: 1.06rem; line-height: 1.5; }
+
+  .idea {
+    border: 1px solid var(--border); border-radius: 11px; padding: 14px 16px; margin-bottom: 10px;
+    background: var(--bg);
+  }
+  .idea-head { display: flex; gap: 10px; align-items: baseline; margin-bottom: 4px; }
+  .idea-rank { font-size: 0.75rem; font-weight: 700; color: var(--muted); min-width: 1.4rem; }
+  .idea h4 { margin: 0; font-size: 0.97rem; line-height: 1.35; }
+  .idea h4 a { color: inherit; text-decoration: none; }
+  .idea h4 a:hover { color: var(--accent); text-decoration: underline; }
+  .idea-meta { font-size: 0.76rem; color: var(--muted); margin: 0 0 9px 2.2rem; display: flex; gap: 9px; flex-wrap: wrap; }
+  .idea-lines { margin: 0 0 0 2.2rem; display: grid; grid-template-columns: max-content 1fr; gap: 5px 12px; font-size: 0.87rem; }
+  .idea-lines dt {
+    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--accent); padding-top: 2px; white-space: nowrap;
+  }
+  .idea-lines dd { margin: 0; }
+  @media (max-width: 620px) {
+    .idea-lines { grid-template-columns: 1fr; gap: 2px; }
+    .idea-lines dd { margin-bottom: 7px; }
+    .idea-meta, .idea-lines { margin-left: 0; }
+  }
   .item {
     background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
     padding: 14px 16px; margin-bottom: 10px;
   }
   .item-top { display: flex; gap: 12px; align-items: baseline; }
-  .item .score { font-size: 1.15rem; font-weight: 800; color: var(--accent); min-width: 2.4rem; }
+  .item .score {
+    font-size: 0.95rem; font-weight: 800; color: var(--accent); background: var(--accent-soft);
+    border-radius: 8px; padding: 4px 9px; min-width: 2.6rem; text-align: center;
+  }
   .item h4 { margin: 0 0 4px; font-size: 0.98rem; line-height: 1.35; }
   .item h4 a { color: inherit; text-decoration: none; }
   .item h4 a:hover { text-decoration: underline; color: var(--accent); }
@@ -224,6 +264,41 @@ function inline(text) {
   return esc(text)
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/(^|[^*])\*([^*]+)\*(?!\*)/g, "$1<em>$2</em>");
+}
+
+function renderIdea(idea, rank) {
+  const lines = [
+    ["Hook", idea.hook],
+    ["Localize", idea.localize],
+    ["Chart", idea.chart],
+    ["Competitive", idea.competitive],
+  ].filter(([, v]) => v);
+  return `
+    <div class="idea">
+      <div class="idea-head">
+        <span class="idea-rank">${rank}</span>
+        <h4><a href="${esc(idea.url)}" target="_blank" rel="noopener">${esc(idea.title)}</a></h4>
+      </div>
+      <div class="idea-meta">
+        <span>${esc(idea.source_id)}</span>
+        <span>${esc((idea.published_at || "").slice(0, 10) || "undated")}</span>
+        <span>score ${idea.score ?? 0}</span>
+        ${idea.is_new ? '<span class="badge new">New</span>' : ""}
+        ${coverageBadge(idea)}
+      </div>
+      <dl class="idea-lines">
+        ${lines.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}
+      </dl>
+    </div>`;
+}
+
+function storyIdeasHtml(run) {
+  // In LLM mode pitch_ideas_raw is prose and the structured list is the
+  // deterministic one, so the prose wins to avoid showing two versions.
+  if (run.synthesis_mode === "llm" || !(run.story_ideas || []).length) {
+    return renderBlock(run.pitch_ideas_raw);
+  }
+  return run.story_ideas.map((idea, i) => renderIdea(idea, i + 1)).join("");
 }
 
 function coverageBadge(item) {
@@ -387,18 +462,18 @@ async function renderMain() {
       </div>
       <div class="stat-row">
         <div class="stat"><div class="n">${run.evidence_count}</div><div class="l">evidence candidates</div></div>
-        <div class="stat"><div class="n">${run.new_evidence_count}</div><div class="l">new since last run</div></div>
-        <div class="stat"><div class="n">${run.gap_count}</div><div class="l">confirmed coverage gaps</div></div>
+        <div class="stat${run.new_evidence_count ? "" : " is-zero"}"><div class="n">${run.new_evidence_count}</div><div class="l">new since last run</div></div>
+        <div class="stat${run.gap_count ? "" : " is-zero"}"><div class="n">${run.gap_count}</div><div class="l">confirmed coverage gaps</div></div>
         <div class="stat"><div class="n">${run.monitored_publisher_count}<span class="l"> / ${run.registry_publisher_count}</span></div><div class="l">publisher feeds working</div></div>
       </div>
       <div class="jump-links">${jump}</div>
     </div>
 
-    ${run.feature_pitch_raw ? `<div class="section-block" id="feature-pitch">
-      <h3>Bigger Picture: Feature Pitch</h3>${renderBlock(run.feature_pitch_raw)}${modeNote}</div>` : ""}
+    ${run.feature_pitch_raw ? `<div class="section-block feature" id="feature-pitch">
+      <h3>Bigger Picture — Feature Pitch</h3>${renderBlock(run.feature_pitch_raw)}${modeNote}</div>` : ""}
 
-    ${run.pitch_ideas_raw ? `<div class="section-block" id="story-ideas">
-      <h3>Story Ideas</h3>${renderBlock(run.pitch_ideas_raw)}</div>` : ""}
+    ${(run.pitch_ideas_raw || (run.story_ideas || []).length) ? `<div class="section-block" id="story-ideas">
+      <h3>Story Ideas</h3>${storyIdeasHtml(run)}</div>` : ""}
 
     ${run.trends_raw ? `<div class="section-block" id="trends">
       <h3>Research Trends &amp; Continuity</h3>${renderBlock(run.trends_raw)}</div>` : ""}

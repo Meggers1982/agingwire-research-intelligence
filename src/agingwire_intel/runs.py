@@ -73,6 +73,7 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
         "source_status": payload.get("source_status", []),
         "media_status_summary": _media_summary(payload.get("media_status", [])),
         "clusters": synthesis.get("clusters", []),
+        "story_ideas": synthesis.get("story_ideas", []),
         "trends_raw": synthesis.get("trends_raw", ""),
         "feature_pitch_raw": synthesis.get("feature_pitch_raw", ""),
         "pitch_ideas_raw": synthesis.get("pitch_ideas_raw", ""),

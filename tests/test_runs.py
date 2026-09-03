@@ -36,9 +36,17 @@ PAYLOAD = {
          "raw_metadata": {"coverage_state": "saturated", "is_new": False, "runs_seen": 4}},
     ],
 }
+STORY_IDEA = {
+    "title": "Alpha", "url": "https://example.org/a", "source_id": "s",
+    "published_at": "2026-09-01T00:00:00+00:00", "score": 90, "topics": ["workforce"],
+    "coverage_state": "gap", "is_new": True, "hook": "A hook.",
+    "localize": "Breaks down to US states.", "chart": None,
+    "competitive": "Monitored trades cover this beat and have not written it.",
+}
 SYNTHESIS = {
     "clusters": [{"topic": "workforce", "label": "workforce", "source_count": 2,
                   "item_count": 3, "gap_count": 2, "newest_age_days": 1}],
+    "story_ideas": [STORY_IDEA],
     "trends_raw": "**Volume:** 2 items.",
     "feature_pitch_raw": "**The convergence:** workforce.",
     "pitch_ideas_raw": "**Alpha**",
@@ -74,6 +82,9 @@ class RunDocumentTests(unittest.TestCase):
     def test_carries_the_synthesis_sections(self):
         self.assertEqual(self.run["feature_pitch_raw"], SYNTHESIS["feature_pitch_raw"])
         self.assertEqual(self.run["synthesis_mode"], "deterministic")
+
+    def test_carries_the_structured_story_ideas(self):
+        self.assertEqual(self.run["story_ideas"], SYNTHESIS["story_ideas"])
 
 
 class WriteRunTests(unittest.TestCase):

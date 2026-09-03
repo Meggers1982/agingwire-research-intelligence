@@ -142,7 +142,7 @@ python -m http.server 8000 -d docs
 `docs/index.html` is a browsable archive rather than a single snapshot. The sidebar lists every run ever generated, searchable and filterable by topic; selecting one loads its record from `docs/data/runs/<date>.json`. Each run page carries:
 
 - **Feature pitch** — the strongest cross-source convergence in that run, with the specific evidence named.
-- **Story ideas** — per-item hooks, localization and chart angles, and the competitive situation.
+- **Story ideas** — per-item hooks, localization and chart angles, and the competitive situation, rendered as cards. Sources are rotated so adjacent ideas never come from the same feed.
 - **Trends** — what changed against the previous run: rising and quieter topics, sources that went silent or resumed.
 - **Topic clusters** — the ranked convergences behind the pitch.
 - **Story opportunities** — the scored items, filterable by new / confirmed gap / localizable / topic.

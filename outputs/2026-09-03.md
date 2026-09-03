@@ -1,6 +1,6 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T16:45:15.905106+00:00
+Generated: 2026-09-03T17:09:22.504590+00:00
 
 Evidence candidates: **168** (0 new since the last run)  
 Media coverage items: **1037** from **65** working publisher feeds
@@ -9,7 +9,7 @@ Media coverage items: **1037** from **65** working publisher feeds
 
 ### 1. CMS refreshed dataset: Medical Equipment Suppliers
 
-**Score:** 86/100  
+**Score:** 79/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-30  
 **Topics:** medicare_medicaid  
@@ -27,7 +27,7 @@ A list of Suppliers that indicates the supplies carried at that location and the
 
 ### 2. CMS refreshed dataset: Medicare Claims Quality Measures
 
-**Score:** 85/100  
+**Score:** 78/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, medicare_medicaid  
@@ -45,7 +45,7 @@ Quality measures that are based on Medicare claims data. Each row contains a spe
 
 ### 3. CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data
 
-**Score:** 85/100  
+**Score:** 78/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, medicare_medicaid  
@@ -63,7 +63,7 @@ Skilled Nursing Facilities (SNFs) provide Medicare Part A SNF services to benefi
 
 ### 4. CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-07  
 **Topics:** medicare_medicaid, palliative_hospice  
@@ -81,7 +81,7 @@ This data set contains the national average (mean) scores of Medicare-certified 
 
 ### 5. CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-07  
 **Topics:** medicare_medicaid, palliative_hospice  
@@ -99,7 +99,7 @@ This data set contains state average (mean) scores of Medicare-certified hospice
 
 ### 6. CMS refreshed dataset: National Downloadable File
 
-**Score:** 84/100  
+**Score:** 76/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-07-31  
 **Topics:** medicare_medicaid  
@@ -117,7 +117,7 @@ The Doctors and Clinicians national downloadable file is organized such that eac
 
 ### 7. CMS refreshed dataset: Nursing Home Data Collection Intervals
 
-**Score:** 82/100  
+**Score:** 75/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care, workforce  
@@ -134,7 +134,7 @@ This table lists the data collection periods for the quality measures displayed 
 
 ### 8. CMS refreshed dataset: Utilization Data
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-11  
 **Topics:** long_term_care  
@@ -151,7 +151,7 @@ The Doctors and Clinicians utilization data file reports volume information for 
 
 ### 9. CMS refreshed dataset: Patient-Reported Outcomes - Hospital
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-05  
 **Topics:** long_term_care  
@@ -168,7 +168,7 @@ Patient-reported outcomes are reports from patients about aspects of care that m
 
 ### 10. CMS refreshed dataset: Fire Safety Deficiencies
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -185,7 +185,7 @@ A list of nursing home fire safety citations in the last three years, including 
 
 ### 11. CMS refreshed dataset: Health Deficiencies
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -202,7 +202,7 @@ A list of nursing home health citations in the last three years, including the n
 
 ### 12. CMS refreshed dataset: MDS Quality Measures
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -219,7 +219,7 @@ Quality measures that are based on the resident assessments that make up the nur
 
 ### 13. CMS refreshed dataset: Ownership
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -236,7 +236,7 @@ A list of ownership information for currently active nursing homes.
 
 ### 14. CMS refreshed dataset: Penalties
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -253,7 +253,7 @@ A list of the fines and payment denials received by nursing homes in the last th
 
 ### 15. CMS refreshed dataset: Provider Information
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -270,7 +270,7 @@ General information on currently active nursing homes, including number of certi
 
 ### 16. CMS refreshed dataset: Survey Summary
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -287,7 +287,7 @@ Nursing home summary information for nursing home health, fire safety, infection
 
 ### 17. CMS refreshed dataset: Citation Code Look-up
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -304,7 +304,7 @@ This is a look-up table for nursing home inspection citations, providing a text 
 
 ### 18. CMS refreshed dataset: Inspection Dates
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-08-01  
 **Topics:** long_term_care  
@@ -321,7 +321,7 @@ A list of nursing home inspection dates in the past three years, including healt
 
 ### 19. CMS refreshed dataset: Facility Affiliation Data
 
-**Score:** 81/100  
+**Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
 **Published:** 2026-07-31  
 **Topics:** long_term_care  
@@ -338,7 +338,7 @@ This is the facility affiliations data publicly reported in the Provider Data Ca
 
 ### 20. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
 
-**Score:** 74/100  
+**Score:** 67/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-09-01  
 **Topics:** housing  
@@ -355,7 +355,7 @@ HUD is required to publish FMRs not less than annually, adjusted to be effective
 
 ### 21. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
-**Score:** 74/100  
+**Score:** 67/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 2026-08-21  
 **Topics:** housing  
@@ -372,7 +372,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 22. BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)
 
-**Score:** 74/100  
+**Score:** 67/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** workforce, caregiving, aging_in_place  
@@ -387,7 +387,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 23. BLS: Continuing care retirement communities and assisted living employment, July 2026 — 1,028.20 thousands of jobs (+1.5% year over year)
 
-**Score:** 74/100  
+**Score:** 67/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** workforce, assisted_living, housing  
@@ -402,7 +402,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 24. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
 
-**Score:** 73/100  
+**Score:** 66/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-07-01  
 **Topics:** financial_security, medicare_medicaid  
@@ -417,7 +417,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 25. BLS: Home health care services average hourly earnings, June 2026 — 27.91 dollars per hour (+1.2% year over year)
 
-**Score:** 73/100  
+**Score:** 66/100  
 **Source:** bls-api (government_api)  
 **Published:** 2026-06-01  
 **Topics:** workforce, caregiving  
@@ -435,7 +435,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 **Volume:** 168 evidence candidates, 0 first surfaced in this run.
 **Baseline:** no previous run in the archive, so nothing to compare against yet.
 **Heaviest topics this run:** medicare medicaid (29), long term care (18), housing (12), workforce (11), dementia (10), palliative hospice (9).
-**Coverage posture:** 82 confirmed gaps, 74 on beats no monitored publisher covers.
+**Coverage posture:** 84 confirmed gaps, 72 on beats no monitored publisher covers.
 
 ## Bigger picture: feature pitch
 
@@ -443,11 +443,11 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 **Evidence on the table:**
 - **cms-provider-data** — CMS refreshed dataset: Medical Equipment Suppliers (2026-08-30)
-- **cms-provider-data** — CMS refreshed dataset: Medicare Claims Quality Measures (2026-08-01)
 - **bls-api** — BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year) (2026-07-01) — July 2026: 593.78 index 1982-84=100
 - **federal-register** — Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants (2026-08-13)
-- **federal-register** — Medicare Program; Regulatory Alignment for Predictable and Immediate Device (RAPID) Coverage Pathway (2026-08-11)
 - **kff-feed** — Medicaid Coverage for Women (2026-08-26)
+- **center-retirement-research** — Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk (2026-08-26)
+- **ebri** — New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement (2026-03-11)
 
 **Why now:** the most recent item landed 4 days ago; 9 unrelated sources converged without coordination; 26 of 29 items show a confirmed coverage gap.
 
@@ -464,87 +464,67 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 **CMS refreshed dataset: Medical Equipment Suppliers**
 - Hook: A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
+- Localize: Breaks down to US states, US counties — rank the outliers.
+- Competitive: Monitored trades cover this beat and have not written it.
 - Source: https://data.cms.gov/provider-data/dataset/ct36-nrcq
 
-**CMS refreshed dataset: Medicare Claims Quality Measures**
-- Hook: Quality measures that are based on Medicare claims data. Each row contains a specific quality measure for a specific nursing home and includes the risk-adjusted score.
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/ijh5-nb2v
+**Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027**
+- Hook: HUD is required to publish FMRs not less than annually, adjusted to be effective on October 1 of each year. This notice describes the methods used to calculate the FY 2027 FMRs and lists the procedures for public housing
+- Chart: The underlying file supports an original ranking or trend line.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room
 
-**CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data**
-- Hook: Skilled Nursing Facilities (SNFs) provide Medicare Part A SNF services to beneficiaries and must report data on certain measures of quality to Medicare through the Skilled Nursing Facility Quality Rep
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/fykj-qjee
+**BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)**
+- Hook: July 2026: 1,886.10 thousands of jobs
+- Chart: The underlying file supports an original ranking or trend line.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://data.bls.gov/timeseries/CES6562160001
 
-**CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data**
-- Hook: This data set contains the national average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/7cv8-v37d
+**Medicaid Coverage for Women**
+- Hook: This data note presents key data points describing the current state of the Medicaid program as it affects women.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/
 
-**CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data**
-- Hook: This data set contains state average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/a55e-5b88
+**Here’s How Much Americans Rely on Social Security – at All Income Levels**
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/
 
-**CMS refreshed dataset: National Downloadable File**
-- Hook: The Doctors and Clinicians national downloadable file is organized such that each line is unique at the clinician/enrollment record/group/address level. Clinicians with multiple Medicare enrollment re
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/mj5m-pzi6
+**RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act**
+- Hook: RentGrow, a provider of consumer reports for tenant screening, will be required to pay $2.25 million to settle Federal Trade Commission allegations that the company violated the Fair Credit Reporting Act (FCRA), includin
+- Chart: The figures in the finding are the spine of a simple graphic.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act
 
-**CMS refreshed dataset: Nursing Home Data Collection Intervals**
-- Hook: This table lists the data collection periods for the quality measures displayed for Nursing Homes including Rehab Services as well as the intervals for complaint citations and citations on focused inf
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/qmdc-9999
+**NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options**
+- Hook: The National Investment Center for Seniors Housing & Care (NIC) establishes a multi-year collaboration with the MIT AgeLab to rethink what adults want in housing and care as they age ANNAPOLIS, Md. (August 5, 2026) —The 
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.nic.org/news-press/nic-and-mit-agelab-launch-landmark-study-to-reimagine-senior-living-options/
 
-**CMS refreshed dataset: Utilization Data**
-- Hook: The Doctors and Clinicians utilization data file reports volume information for procedures of interest on clinician profile pages and in the provider data catalog (PDC) to inform patients and caregive
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/n0yb-util
+**New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement**
+- Hook: EBRI Press Release March 11, 2026 2 pages Summary Full Content
+- Chart: The figures in the finding are the spine of a simple graphic.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.ebri.org/media/press-releases/content/new-ebri-report-finds-some-medicare-households-may-need-nearly--500-000-for-health-care-in-retirement
 
-**CMS refreshed dataset: Patient-Reported Outcomes - Hospital**
-- Hook: Patient-reported outcomes are reports from patients about aspects of care that matter most to them, like pain management, functional ability (like their ability to walk, think, see, hear and remember)
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/mxtu-43qs
+**Review of Medicare data reveals potential new statistics on dementia diagnosis**
+- Hook: A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis
 
-**CMS refreshed dataset: Fire Safety Deficiencies**
-- Hook: A list of nursing home fire safety citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope 
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/ifjz-ge4w
+**Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026**
+- Hook: Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on the Medicare Advantage quality bonus program in 2026, as 68% of Medicare Advantage enrollees are in a plan that qualifies for higher paymen
+- Chart: The figures in the finding are the spine of a simple graphic.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/
 
-**CMS refreshed dataset: Health Deficiencies**
-- Hook: A list of nursing home health citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and s
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/r5ix-sfxw
+**June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.**
+- Chart: The figures in the finding are the spine of a simple graphic.
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://acl.gov/news-and-events/acl-blog/june-1-5-medicare-fraud-prevention-week-heres-how-americans-can-help
 
-**CMS refreshed dataset: MDS Quality Measures**
-- Hook: Quality measures that are based on the resident assessments that make up the nursing home Minimum Data Set (MDS). Each row contains a specific quality measure for a specific nursing home and includes 
-- Localize: breaks down to US states, US counties — rank the outliers.
-- Chart: the underlying file supports an original ranking or trend line.
-- Competitive: monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/djen-97ju
+**The Story Comes First. The Word “Caregiver” Often Comes Later.**
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/
 
 ## Pipeline health
 

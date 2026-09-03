@@ -93,23 +93,28 @@ def build_clusters(evidence: list[dict], now: datetime | None = None) -> list[di
 
 
 def _diverse_sample(items: list[dict], limit: int, per_source: int = 2) -> list[dict]:
-    """Pick the strongest items while showing more than one source.
+    """Pick the strongest items, rotating through sources.
 
     Taking the top N by score alone let one prolific feed fill a pitch that
-    claims several independent sources, which reads as padding.
+    claims several independent sources. Capping per source fixed the count but
+    still produced three consecutive rows from the same agency with identical
+    localization and competitive lines, which reads as one idea repeated. Round
+    robin puts a different source in every adjacent slot.
     """
-    picked: list[dict] = []
-    used: Counter[str] = Counter()
+    by_source: dict[str, list[dict]] = defaultdict(list)
     for item in items:
-        source = item.get("source_id") or ""
-        if used[source] >= per_source:
-            continue
-        picked.append(item)
-        used[source] += 1
-        if len(picked) >= limit:
-            break
-    # The cap is strict: showing four items from four sources beats six items
-    # where half come from the one feed that happens to publish most.
+        by_source[item.get("source_id") or ""].append(item)
+
+    # Strongest source first, so the best item still leads.
+    order = sorted(by_source, key=lambda s: -(by_source[s][0].get("score") or 0))
+    picked: list[dict] = []
+    for round_index in range(per_source):
+        for source in order:
+            queue = by_source[source]
+            if round_index < len(queue):
+                picked.append(queue[round_index])
+                if len(picked) >= limit:
+                    return picked
     return picked
 
 
@@ -180,39 +185,70 @@ def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> s
     return "\n".join(lines).strip()
 
 
-def render_story_ideas(evidence: list[dict], limit: int = 12) -> str:
-    """Per-item story ideas, built from each item's own specifics."""
-    ranked = [i for i in evidence if (i.get("score") or 0) > 0][:limit]
-    if not ranked:
+COMPETITIVE = {
+    "gap": "Monitored trades cover this beat and have not written it.",
+    "unmonitored": "Unknown — no monitored publisher covers this beat.",
+    "light": "One or two monitored publishers have touched it.",
+    "saturated": "Already well covered; needs an original angle to be worth it.",
+}
+
+
+def build_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 3) -> list[dict]:
+    """Structured story ideas, one per item.
+
+    Capped per source: the top of the ranking is often one agency's dataset
+    refreshes, and five consecutive entries with identical localization and
+    chart lines read as filler rather than as ideas.
+    """
+    scored = [i for i in evidence if (i.get("score") or 0) > 0]
+    ideas = []
+    for item in _diverse_sample(scored, limit, per_source=per_source):
+        findings = [f for f in (item.get("key_findings") or []) if f]
+        hook = str(findings[0])[:220] if findings else str(item.get("summary") or "")[:220]
+        local = sub_national(item.get("geographies"))
+
+        localize = None
+        if local:
+            localize = f"Breaks down to {', '.join(local[:3])} — rank the outliers."
+        elif item.get("localizable"):
+            localize = "The underlying data supports a state or metro cut."
+
+        chart = None
+        if item.get("source_type") in STRUCTURED_TYPES and not local:
+            chart = "The underlying file supports an original ranking or trend line."
+        elif _NUMBER.search(item.get("title") or "") and not local:
+            chart = "The figures in the finding are the spine of a simple graphic."
+
+        ideas.append({
+            "title": item.get("title"),
+            "url": item.get("url"),
+            "source_id": item.get("source_id"),
+            "published_at": item.get("published_at"),
+            "score": item.get("score"),
+            "topics": item.get("topics") or [],
+            "coverage_state": _coverage_state(item),
+            "is_new": bool((item.get("raw_metadata") or {}).get("is_new")),
+            "hook": hook or None,
+            "localize": localize,
+            "chart": chart,
+            "competitive": COMPETITIVE.get(_coverage_state(item)),
+        })
+    return ideas
+
+
+def render_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 3) -> str:
+    """Markdown rendering of the story ideas, for the digest and .docx export."""
+    ideas = build_story_ideas(evidence, limit, per_source)
+    if not ideas:
         return ""
     lines = []
-    for item in ranked:
-        lines.append(f"**{item.get('title', 'Untitled')}**")
-        detail = []
-        numbers = _NUMBER.findall(item.get("title") or "")
-        findings = [f for f in (item.get("key_findings") or []) if f]
-        if findings:
-            detail.append(f"Hook: {str(findings[0])[:200]}")
-        elif item.get("summary"):
-            detail.append(f"Hook: {str(item['summary'])[:200]}")
-        local = sub_national(item.get("geographies"))
-        if local:
-            detail.append(f"Localize: breaks down to {', '.join(local[:3])} — rank the outliers.")
-        elif item.get("localizable"):
-            detail.append("Localize: the underlying data supports a state or metro cut.")
-        if item.get("source_type") in STRUCTURED_TYPES:
-            detail.append("Chart: the underlying file supports an original ranking or trend line.")
-        elif numbers:
-            detail.append("Chart: the figures in the finding are the spine of a simple graphic.")
-        state = _coverage_state(item)
-        if state == "gap":
-            detail.append("Competitive: monitored trades cover this beat and have not written it.")
-        elif state == "unmonitored":
-            detail.append("Competitive: unknown — no monitored publisher covers this beat.")
-        elif state == "saturated":
-            detail.append("Competitive: already well covered; needs an original angle to be worth it.")
-        detail.append(f"Source: {item.get('url')}")
-        lines += [f"- {d}" for d in detail]
+    for idea in ideas:
+        lines.append(f"**{idea['title']}**")
+        for prefix, key in (("Hook", "hook"), ("Localize", "localize"),
+                            ("Chart", "chart"), ("Competitive", "competitive")):
+            if idea.get(key):
+                lines.append(f"- {prefix}: {idea[key]}")
+        lines.append(f"- Source: {idea['url']}")
         lines.append("")
     return "\n".join(lines).strip()
 
@@ -273,6 +309,7 @@ def synthesize(payload: dict, previous: dict | None = None, now: datetime | None
     clusters = build_clusters(evidence, now)
     return {
         "clusters": [{k: v for k, v in c.items() if k != "items"} for c in clusters[:10]],
+        "story_ideas": build_story_ideas(evidence),
         "trends_raw": render_trends(payload, previous),
         "feature_pitch_raw": render_feature_pitch(clusters, now),
         "pitch_ideas_raw": render_story_ideas(evidence),
@@ -293,6 +330,7 @@ def recent_window(payload: dict, days: int = 30) -> list[dict]:
 
 __all__ = [
     "build_clusters",
+    "build_story_ideas",
     "recent_window",
     "render_feature_pitch",
     "render_story_ideas",
