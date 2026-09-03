@@ -2,7 +2,9 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
-P0_TOPICS = {"caregiving", "assisted_living", "aging_in_place", "housing", "loneliness_social_connection", "ltss", "workforce", "age_tech", "financial_security", "fraud_financial_exploitation"}
+P0_TOPICS = {"caregiving", "assisted_living", "aging_in_place", "housing", "loneliness_social_connection", "long_term_care", "workforce", "age_tech", "financial_security", "fraud_scams", "medicare_medicaid", "senior_living_quality"}
+CONSUMER_TOPICS = {"caregiving", "housing", "aging_in_place", "financial_security", "fraud_scams", "loneliness_social_connection", "medicare_medicaid", "elder_abuse", "transportation", "food_security"}
+B2B_TOPICS = {"assisted_living", "long_term_care", "workforce", "housing", "age_tech", "caregiving", "senior_living_quality", "medicare_medicaid"}
 
 
 def story_score(novelty:int, impact:int, localization:int, consumer_utility:int,
@@ -35,8 +37,8 @@ def score_evidence(item, b2b_coverage: int = 0, b2c_coverage: int = 0) -> tuple[
     priority = 5 if topics & P0_TOPICS else 3 if topics else 2
     source = 5 if item.source_type in {"government_api", "academic_digest"} else 4 if item.evidence_grade in {"A", "B"} else 3
     localization = 5 if item.localizable or item.geographies else 2
-    consumer = 5 if topics & {"caregiving", "housing", "aging_in_place", "financial_security", "fraud_financial_exploitation", "loneliness_social_connection"} else 3
-    b2b = 5 if topics & {"assisted_living", "ltss", "workforce", "housing", "age_tech", "caregiving"} else 3
+    consumer = 5 if topics & CONSUMER_TOPICS else 3
+    b2b = 5 if topics & B2B_TOPICS else 3
     visualization = 5 if item.source_type == "government_api" else 3
     timeliness = _freshness(item.published_at)
     gap = 5 if (b2b_coverage + b2c_coverage) == 0 else 4 if (b2b_coverage + b2c_coverage) <= 2 else 2
