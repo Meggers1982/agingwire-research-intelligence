@@ -1,36 +1,15 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T19:01:01.274675+00:00
+Generated: 2026-09-03T19:02:50.975741+00:00
 
-Evidence candidates: **150** (1 new since the last run)  
+Evidence candidates: **150** (0 new since the last run)  
 Media coverage items: **1036** from **65** working publisher feeds
-
-## New since the last run
-
-### 1. American Community Survey 2023 state aging and housing profile (52 states)
-
-**Score:** 85/100  
-**Source:** american-community-survey (government_api)  
-**Published:** undated  
-**Topics:** housing, financial_security, migration_retirement, rural_aging  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://data.census.gov/table?q=DP05&y=2023
-
-State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
-
-**Potential angles**
-- Localize the finding by state, metro or county and identify geographic outliers.
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
 ## Highest-priority story opportunities
 
 ### 1. American Community Survey 2023 state aging and housing profile (52 states)
 
-**Score:** 85/100  
+**Score:** 78/100  
 **Source:** american-community-survey (government_api)  
 **Published:** undated  
 **Topics:** housing, financial_security, migration_retirement, rural_aging  
@@ -44,7 +23,6 @@ State-level counts for 65+, 65-74, 75-84 and 85+ populations with median househo
 - Consumer angle: explain what the evidence changes for older adults and families.
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
 - Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
 ### 2. CMS refreshed dataset: Medical Equipment Suppliers
@@ -457,100 +435,60 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ## Research trends and continuity
 
-**Volume:** 150 evidence candidates, 1 first surfaced in this run.
-**Baseline:** no previous run in the archive, so nothing to compare against yet.
-**Heaviest topics this run:** medicare medicaid (28), long term care (18), housing (13), workforce (11), financial security (10), palliative hospice (8).
-**Coverage posture:** 76 confirmed gaps, 65 on beats no monitored publisher covers.
+**Volume:** 150 evidence candidates surfaced, none of them new to this run, drawn from 65 monitored publishers against a registry of 132.
+
+**Baseline:** No previous run sits in the archive, so this is the first snapshot and there is no prior period to measure against. Treat the topic weights below as the opening baseline.
+
+**Where the weight sits:** Medicare and Medicaid at 28 items, long-term care at 18, housing at 13, workforce at 11, financial security at 10 and palliative and hospice at eight. The concentration is driven by CMS provider data, which refreshed most of the nursing home and hospice files on 2026-08-01 and 2026-08-07, and by the Federal Register, which contributed Medicare, HUD and Social Security notices between 2026-08-10 and 2026-09-01.
+
+**Coverage posture:** 76 confirmed gaps across the run, with 65 additional items on beats where no monitored publisher is being watched. Housing and assisted living show no covered items at all, 13 of 13 and three of three respectively. Financial security is the most contested cluster, with four of 10 items already covered, so it rewards a distinctive angle rather than a first-mover play.
+
+**Freshness spread:** Long-term care carries a same-day item and Medicare and Medicaid a four-day-old one, while workforce runs 33 days behind and caregiving 64 days. The recent regulatory and data flow is concentrated in Medicare, long-term care and housing; the labor and caregiving material is best used as context inside those pieces rather than as standalone news.
+
+**Shape of the beat:** Government sources dominate. Structured public data underlies 10 of the top items, and the run's regulatory filings cluster around Medicare payment mechanics, HUD housing standards and Social Security income and disability policy. That mix favors data-built reporting and rule-tracking over event coverage this cycle.
 
 ## Bigger picture: feature pitch
 
-**The convergence:** Medicare Medicaid — 8 independent sources this run, no monitored B2B or B2C publisher has matched most of it
+**The convergence:** Eight independent sources landed on Medicare and Medicaid this run, producing 28 items of which 25 show a confirmed coverage gap among the 65 publishers we monitor. The strongest cross-source story is the widening distance between what Medicare beneficiaries are being asked to absorb and what the program's own machinery is doing about it.
 
 **Evidence on the table:**
-- **cms-provider-data** — CMS refreshed dataset: Medical Equipment Suppliers (2026-08-30)
-- **bls-api** — BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year) (2026-07-01) — July 2026: 593.78 index 1982-84=100
-- **federal-register** — Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants (2026-08-13)
-- **kff-feed** — Medicaid Coverage for Women (2026-08-26)
-- **center-retirement-research** — Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk (2026-08-26)
-- **ebri** — New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement (2026-03-11)
+- **EBRI** reports some Medicare households may need nearly $500,000 for health care in retirement (published 2026-03-11), the single largest household-level figure in the run.
+- **BLS** puts the medical care Consumer Price Index at 593.78 (1982-84=100) for July 2026, up 1.7% year over year, the cost-side counterweight to the EBRI projection.
+- **CMS** refreshed its Medical Equipment Suppliers dataset on 2026-08-30, listing supplies carried by location and each supplier's Medicare participation status, the closest thing in the run to a beneficiary-facing access map.
+- **Federal Register** carries two Medicare notices: the Alternative Payment Model incentive payment advisory for qualifying clinicians whose billing information CMS does not have (2026-08-13), and the Regulatory Alignment for Predictable and Immediate Device (RAPID) coverage pathway notice with comment period (2026-08-11).
+- **KFF** published "Medicaid Coverage for Women" on 2026-08-26.
+- **Center for Retirement Research** posted analysis on 2026-08-26 arguing that state funding of Medicare would weaken the program and put Americans at risk.
 
-**Why now:** the most recent item landed 4 days ago; 8 unrelated sources converged without coordination; 25 of 28 items show a confirmed coverage gap.
+**Why now:** The newest item in the cluster is four days old, and eight unrelated sources arrived at the same beat without coordination. The RAPID notice carries a comment period, which gives the reporting a live procedural clock.
 
-**Localization:** 6 of 28 items break below the national level, so the same reporting supports state, metro or facility-level versions.
+**Localization:** Six of the 28 Medicare and Medicaid items break below the national level, and the CMS provider datasets carry state and county geography, so the same reporting supports state, metro and facility-level versions.
 
-**Visuals:** 10 items sit on structured public data — a ranking, map or trend line can be built directly rather than sourced.
+**Visuals:** Ten items in the run sit on structured public data, including the American Community Survey 2023 state aging and housing profile covering 52 states, with California at 5,994,486 residents aged 65 and older and Florida at 4,630,733. A ranking, map or trend line can be built directly rather than sourced.
 
 **Also converging this run:**
-- long term care — 4 sources, 18 items, 16 with a confirmed gap
-- housing — 6 sources, 13 items, 13 with a confirmed gap
-- financial security — 5 sources, 10 items, 6 with a confirmed gap
+- Long-term care: four sources, 18 items, 16 with a confirmed gap, newest item from today.
+- Housing: six sources, 13 items, all 13 with a confirmed gap.
+- Financial security: five sources, 10 items, six with a confirmed gap.
 
 ## Story ideas
 
-**American Community Survey 2023 state aging and housing profile (52 states)**
-- Hook: California: 5,994,486 residents aged 65+
-- Localize: Breaks down to US states — rank the outliers.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://data.census.gov/table?q=DP05&y=2023
+- **The $500,000 retirement health bill against a 1.7% medical inflation reading.** Hook: EBRI's finding that some Medicare households may need nearly $500,000 for health care in retirement sits alongside a BLS medical care CPI of 593.78 for July 2026, a 1.7% year-over-year increase that looks mild next to the lifetime number. Angle: reconcile the two, showing what a modest monthly inflation print compounds into across a retirement. Competitive situation: both items are confirmed gaps, and the medical care CPI series is public and chartable back through its full history.
 
-**CMS refreshed dataset: Medical Equipment Suppliers**
-- Hook: A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.
-- Localize: Breaks down to US states, US counties — rank the outliers.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/ct36-nrcq
+- **The nursing home accountability file, rebuilt in one pass.** Hook: CMS refreshed Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Provider Information, Survey Summary, Inspection Dates, MDS Quality Measures and the Citation Code Look-up table on 2026-08-01, with Skilled Nursing Facility Quality Reporting Program and Medicare Claims Quality Measures on the same date. Angle: join ownership to citations and fines over the last three years and publish a state or county accountability ranking. Competitive situation: 16 of the 18 long-term care items are confirmed gaps, and every dataset carries state and county geography, so a national piece and 50 localized versions come from one build.
 
-**Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027**
-- Hook: HUD is required to publish FMRs not less than annually, adjusted to be effective on October 1 of each year. This notice describes the methods used to calculate the FY 2027 FMRs and lists the procedures for public housing
-- Chart: The underlying file supports an original ranking or trend line.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room
+- **The equipment supplier map nobody has drawn.** Hook: the CMS Medical Equipment Suppliers dataset, refreshed 2026-08-30, lists which supplies each location carries and whether the supplier participates in Medicare. Angle: map supplier density and Medicare participation by county to identify where a beneficiary who needs a wheelchair or oxygen has the fewest participating options. Competitive situation: confirmed gap, highest-scoring dated item in the run at 75, and localizable to the county.
 
-**BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)**
-- Hook: July 2026: 1,886.10 thousands of jobs
-- Chart: The underlying file supports an original ranking or trend line.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://data.bls.gov/timeseries/CES6562160001
+- **Fast-track device coverage while beneficiaries wait on paperwork.** Hook: the RAPID coverage pathway notice (2026-08-11) sets out how CMS will grant expedited national Medicare coverage for eligible new technologies, published in the same month as an advisory that CMS lacks current billing information needed to pay Alternative Payment Model incentives to qualifying clinicians (2026-08-13). Angle: a trade piece on the administrative asymmetry, one process accelerating and another stalled on missing data. Competitive situation: both confirmed gaps, and the RAPID notice's comment period gives providers and suppliers a reason to act on the story.
 
-**Medicaid Coverage for Women**
-- Hook: This data note presents key data points describing the current state of the Medicaid program as it affects women.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/
+- **Two housing rules that reach older renters.** Hook: HUD published its Fiscal Year 2027 Fair Market Rents notice on 2026-09-01, including the procedures for public housing agencies to request reevaluations under the Housing Opportunity Through Modernization Act of 2016, and on 2026-08-10 issued a supplemental proposed rule continuing its effort to remove disparate-impact regulations under the Fair Housing Act and amend its Title VI regulations. Angle: what the voucher payment standard and the disparate-impact retreat mean together for older renters on fixed incomes. Competitive situation: all 13 housing items are confirmed gaps.
 
-**Here’s How Much Americans Rely on Social Security – at All Income Levels**
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/
+- **Home care is hiring fast and paying almost the same.** Hook: BLS puts home health care services employment at 1,886,100 jobs in July 2026, up 4.8% year over year, while average hourly earnings in the sector reached $27.91 in June 2026, up only 1.2%. Angle: the sector adding workers fastest is the one raising wages slowest, with continuing care retirement communities and assisted living at 1,028,200 jobs (up 1.5%) and $25.47 an hour (up 3.2%) as the contrast, and nursing care facilities at 1,592,900 jobs (up 2.6%). Competitive situation: nine of 11 workforce items are confirmed gaps, though the newest workforce item is 33 days old, so this is analysis rather than breaking news.
 
-**RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act**
-- Hook: RentGrow, a provider of consumer reports for tenant screening, will be required to pay $2.25 million to settle Federal Trade Commission allegations that the company violated the Fair Credit Reporting Act (FCRA), includin
-- Chart: The figures in the finding are the spine of a simple graphic.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act
+- **Where the 65-plus population actually lives, and what it can afford.** Hook: the American Community Survey 2023 state aging and housing profile covers 52 states with counts for 65-plus, 65-74, 75-84 and 85-plus alongside median household income and housing tenure, led by California at 5,994,486 and Florida at 4,630,733 residents aged 65 and older. Angle: pair the 85-plus counts with housing tenure to show which states face the sharpest mismatch between the oldest cohort and owned versus rented housing. Competitive situation: highest-scoring item in the run at 78, a confirmed gap, and it touches housing, financial security, migration and rural aging at once.
 
-**NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options**
-- Hook: The National Investment Center for Seniors Housing & Care (NIC) establishes a multi-year collaboration with the MIT AgeLab to rethink what adults want in housing and care as they age ANNAPOLIS, Md. (August 5, 2026) —The 
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.nic.org/news-press/nic-and-mit-agelab-launch-landmark-study-to-reimagine-senior-living-options/
+- **The full hospice quality picture, national to ZIP code.** Hook: CMS refreshed National, State and Provider CAHPS Hospice Survey data on 2026-08-07, along with Hospice Provider Data, State Data and National Data the same day, Hospice Zip Data on 2026-08-18 and Hospice General Information, including ownership, on 2026-08-19. Angle: rank providers against their state and national averages and use the ZIP service-area file to show which communities have a single hospice option. Competitive situation: eight palliative and hospice items this run, all sitting on structured public data.
 
-**New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement**
-- Hook: EBRI Press Release March 11, 2026 2 pages Summary Full Content
-- Chart: The figures in the finding are the spine of a simple graphic.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.ebri.org/media/press-releases/content/new-ebri-report-finds-some-medicare-households-may-need-nearly--500-000-for-health-care-in-retirement
-
-**Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026**
-- Hook: Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on the Medicare Advantage quality bonus program in 2026, as 68% of Medicare Advantage enrollees are in a plan that qualifies for higher paymen
-- Chart: The figures in the finding are the spine of a simple graphic.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/
-
-**June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.**
-- Chart: The figures in the finding are the spine of a simple graphic.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://acl.gov/news-and-events/acl-blog/june-1-5-medicare-fraud-prevention-week-heres-how-americans-can-help
-
-**The Story Comes First. The Word “Caregiver” Often Comes Later.**
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/
+- **Two Social Security notices that change how income is counted.** Hook: the Commissioner of Social Security rescinded Acquiescence Ruling 90-2(2), which governed evaluation of a rental subsidy as in-kind income for Supplemental Security Income benefit calculations (2026-08-31), and issued SSR 26-2p on documenting and evaluating disability in young adults, rescinding and replacing SSR 11-2p (2026-09-01). Angle: a consumer service piece on what changes for SSI recipients who receive housing help. Competitive situation: the rescission shows light coverage among monitored publishers, so speed and a benefits-desk framing matter; the SSR 26-2p notice is a confirmed gap.
 
 ## Pipeline health
 
