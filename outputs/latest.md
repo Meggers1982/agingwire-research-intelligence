@@ -1,9 +1,24 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T17:10:52.982409+00:00
+Generated: 2026-09-03T18:49:08.151942+00:00
 
-Evidence candidates: **148** (0 new since the last run)  
+Evidence candidates: **149** (1 new since the last run)  
 Media coverage items: **1036** from **65** working publisher feeds
+
+## New since the last run
+
+### 1. Falls Prevention Awareness Month Is Here
+
+**Score:** 47/100  
+**Source:** acl-news (web_release)  
+**Published:** undated  
+**Topics:** falls  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://acl.gov/news-and-events/announcements/falls-prevention-awareness-month-here
+
+**Potential angles**
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
 ## Highest-priority story opportunities
 
@@ -432,10 +447,10 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ## Research trends and continuity
 
-**Volume:** 148 evidence candidates, 0 first surfaced in this run.
+**Volume:** 149 evidence candidates, 1 first surfaced in this run.
 **Baseline:** no previous run in the archive, so nothing to compare against yet.
 **Heaviest topics this run:** medicare medicaid (28), long term care (18), housing (12), workforce (11), financial security (9), palliative hospice (8).
-**Coverage posture:** 74 confirmed gaps, 65 on beats no monitored publisher covers.
+**Coverage posture:** 75 confirmed gaps, 65 on beats no monitored publisher covers.
 
 ## Bigger picture: feature pitch
 
