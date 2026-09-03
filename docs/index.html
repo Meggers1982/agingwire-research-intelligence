@@ -124,32 +124,51 @@
     border-radius: 999px; color: var(--accent); text-decoration: none; background: var(--panel);
   }
   .jump-link:hover { border-color: var(--accent); }
+  .toggle-all {
+    font-size: 0.8rem; font-weight: 600; padding: 5px 13px; cursor: pointer;
+    border: 1px solid var(--accent); border-radius: 999px;
+    color: var(--accent); background: var(--accent-soft);
+  }
+  .toggle-all:hover { background: var(--panel); }
   .section-block {
     background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
     padding: 20px 22px; margin: 22px 0; scroll-margin-top: calc(var(--header-h) + 12px);
   }
   .section-block h3 {
-    margin: 0 0 14px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.09em;
-    text-transform: uppercase; color: var(--muted);
-    padding-bottom: 9px; border-bottom: 1px solid var(--border);
+    margin: 0 0 16px; font-size: 1rem; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--text);
+    padding-bottom: 10px; border-bottom: 1px solid var(--border);
   }
   /* The heading is the control. A real <button> keeps Enter/Space and focus
      order for free; the h3 stays for document outline and screen readers. */
   .section-toggle {
-    display: flex; align-items: center; gap: 9px; width: 100%;
-    background: none; border: 0; padding: 0; margin: 0; cursor: pointer;
+    display: flex; align-items: center; gap: 12px; width: 100%;
+    background: none; border: 0; margin: 0 0 -4px; cursor: pointer;
+    padding: 8px 12px 10px; border-radius: 8px;
     font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit;
-    text-align: left;
+    text-align: left; transition: background 0.15s, color 0.15s;
   }
-  .section-toggle:hover { color: var(--accent); }
-  .section-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+  .section-toggle:hover { color: var(--accent); background: var(--accent-soft); }
+  .section-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* The caret was 0.7rem in the muted heading color, which read as punctuation
+     rather than a control — the feature was shipped and invisible. */
   .section-caret {
-    font-size: 0.7rem; line-height: 1; transition: transform 0.18s ease; flex: none;
+    font-size: 1.45rem; line-height: 1; flex: none; color: var(--accent);
+    transition: transform 0.18s ease;
   }
+  .section-hint {
+    margin-left: auto; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+    color: var(--accent); border: 1px solid var(--border); border-radius: 999px;
+    padding: 3px 10px; opacity: 0.55; transition: opacity 0.15s, border-color 0.15s;
+  }
+  .section-toggle:hover .section-hint, .section-toggle:focus-visible .section-hint {
+    opacity: 1; border-color: var(--accent);
+  }
+  .section-block.collapsed .section-toggle { margin-bottom: 0; }
   .section-block.collapsed .section-caret { transform: rotate(-90deg); }
   .section-block.collapsed h3 { margin-bottom: 0; padding-bottom: 0; border-bottom-color: transparent; }
   .section-block.collapsed .section-body { display: none; }
-  .section-count { margin-left: auto; font-weight: 600; letter-spacing: 0.04em; opacity: 0.8; }
+  .section-count { font-weight: 600; letter-spacing: 0.04em; opacity: 0.8; }
   .section-block p { margin: 0 0 10px; }
   .section-block ul { margin: 0 0 12px; padding-left: 20px; }
   .section-block li { margin-bottom: 5px; }
@@ -264,6 +283,14 @@ function esc(s) {
 
 function label(t) { return (t || "").replace(/_/g, " "); }
 
+/* Display only. Run ids, filenames and sort keys stay ISO — reformatting those
+   would break ordering and the run-file lookup. */
+function fmtDate(value) {
+  const iso = (value || "").toString().slice(0, 10);
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return m ? `${m[2]}/${m[3]}/${m[1].slice(2)}` : (iso || "");
+}
+
 /* Renders **Label:** paragraphs and "- " bullet lists without a full markdown parser. */
 function renderBlock(raw) {
   if (!raw) return "";
@@ -306,7 +333,7 @@ function renderIdea(idea, rank) {
       </div>
       <div class="idea-meta">
         <span>${esc(idea.source_id)}</span>
-        <span>${esc((idea.published_at || "").slice(0, 10) || "undated")}</span>
+        <span>${esc(fmtDate(idea.published_at) || "undated")}</span>
         <span>score ${idea.score ?? 0}</span>
         ${idea.is_new ? '<span class="badge new">New</span>' : ""}
         ${coverageBadge(idea)}
@@ -358,7 +385,7 @@ function renderSidebar() {
   list.innerHTML = state.filtered.map(r => `
     <div class="run-card ${r.id === state.activeId ? "active" : ""}" data-id="${esc(r.id)}"
          role="button" tabindex="0" aria-current="${r.id === state.activeId ? "true" : "false"}">
-      <div class="rc-title">${esc(r.run_date)}</div>
+      <div class="rc-title">${esc(fmtDate(r.run_date))}</div>
       <div class="rc-meta">
         <span class="badge">${r.evidence_count} items</span>
         ${r.new_evidence_count ? `<span class="badge new">${r.new_evidence_count} new</span>` : ""}
@@ -429,33 +456,57 @@ function sectionBlock(id, title, body, opts = {}) {
   return `
     <section class="section-block${opts.extraClass ? " " + opts.extraClass : ""}${collapsed ? " collapsed" : ""}" id="${id}">
       <h3><button type="button" class="section-toggle" aria-expanded="${!collapsed}" aria-controls="${id}-body">
-        <span class="section-caret" aria-hidden="true">&#9662;</span>${esc(title)}${count}
+        <span class="section-caret" aria-hidden="true">&#9662;</span>${esc(title)}${count}<span class="section-hint">${collapsed ? "SHOW" : "HIDE"}</span>
       </button></h3>
       <div class="section-body" id="${id}-body">${body}</div>
     </section>`;
+}
+
+function setCollapsed(block, collapsed) {
+  block.classList.toggle("collapsed", collapsed);
+  const btn = block.querySelector(".section-toggle");
+  if (btn) {
+    btn.setAttribute("aria-expanded", String(!collapsed));
+    const hint = btn.querySelector(".section-hint");
+    if (hint) hint.textContent = collapsed ? "SHOW" : "HIDE";
+  }
+  const set = collapsedSet();
+  collapsed ? set.add(block.id) : set.delete(block.id);
+  persistCollapsed(set);
+}
+
+function refreshToggleAll(root) {
+  const btn = root.querySelector("#toggle-all-btn");
+  if (!btn) return;
+  const blocks = [...root.querySelectorAll(".section-block")];
+  const anyOpen = blocks.some(b => !b.classList.contains("collapsed"));
+  btn.textContent = anyOpen ? "Collapse all" : "Expand all";
 }
 
 function wireSectionToggles(root) {
   root.querySelectorAll(".section-toggle").forEach(btn => {
     btn.addEventListener("click", () => {
       const block = btn.closest(".section-block");
-      const nowCollapsed = block.classList.toggle("collapsed");
-      btn.setAttribute("aria-expanded", String(!nowCollapsed));
-      const set = collapsedSet();
-      nowCollapsed ? set.add(block.id) : set.delete(block.id);
-      persistCollapsed(set);
+      setCollapsed(block, !block.classList.contains("collapsed"));
+      refreshToggleAll(root);
     });
   });
+  const all = root.querySelector("#toggle-all-btn");
+  if (all) {
+    all.addEventListener("click", () => {
+      const blocks = [...root.querySelectorAll(".section-block")];
+      const collapse = blocks.some(b => !b.classList.contains("collapsed"));
+      blocks.forEach(b => setCollapsed(b, collapse));
+      refreshToggleAll(root);
+    });
+  }
+  refreshToggleAll(root);
 }
 
 function expandSection(block) {
   if (!block || !block.classList.contains("collapsed")) return;
-  block.classList.remove("collapsed");
-  const btn = block.querySelector(".section-toggle");
-  if (btn) btn.setAttribute("aria-expanded", "true");
-  const set = collapsedSet();
-  set.delete(block.id);
-  persistCollapsed(set);
+  setCollapsed(block, false);
+  refreshToggleAll(document.getElementById("main") || document);
 }
 
 function renderItem(item) {
@@ -468,7 +519,7 @@ function renderItem(item) {
           <h4><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h4>
           <div class="item-meta">
             <span>${esc(item.source_id)}</span>
-            <span>${esc((item.published_at || "").slice(0, 10) || "undated")}</span>
+            <span>${esc(fmtDate(item.published_at) || "undated")}</span>
             <span>B2B ${item.b2b_coverage_count || 0} · B2C ${item.b2c_coverage_count || 0}</span>
           </div>
           <div class="tags">
@@ -551,7 +602,7 @@ async function renderMain() {
   main.innerHTML = `
     <div class="run-header">
       <div class="run-header-top">
-        <h2>${esc(run.title)}</h2>
+        <h2>AgingWire Research Intelligence — ${esc(fmtDate(run.run_date))}</h2>
         <div class="btn-row">
           <button id="export-docx-btn" class="export-btn">Export .docx</button>
           <button id="export-csv-btn" class="export-btn">Export .csv</button>
@@ -563,7 +614,9 @@ async function renderMain() {
         <div class="stat${run.gap_count ? "" : " is-zero"}"><div class="n">${run.gap_count}</div><div class="l">confirmed coverage gaps</div></div>
         <div class="stat"><div class="n">${run.monitored_publisher_count}<span class="l"> / ${run.registry_publisher_count}</span></div><div class="l">publisher feeds working</div></div>
       </div>
-      <div class="jump-links">${jump}</div>
+      <div class="jump-links">${jump}
+        <button type="button" id="toggle-all-btn" class="toggle-all">Collapse all</button>
+      </div>
     </div>
 
     ${sectionBlock("feature-pitch", "Bigger Picture — Feature Pitch",
@@ -631,7 +684,7 @@ function exportRunToCsv(run) {
   const rows = [headers.join(",")];
   for (const i of run.items || []) {
     rows.push([
-      i.score, i.title, i.source_id, i.source_type, (i.published_at || "").slice(0, 10),
+      i.score, i.title, i.source_id, i.source_type, fmtDate(i.published_at),
       (i.topics || []).join("; "), i.coverage_state, i.is_new ? "yes" : "no",
       i.b2b_coverage_count, i.b2c_coverage_count,
       (i.localizable || (i.geographies || []).length) ? "yes" : "no",
@@ -694,7 +747,7 @@ function docxItem(item) {
     new docx.Paragraph({ text: `${item.score ?? 0} — ${item.title}`, heading: docx.HeadingLevel.HEADING_3, spacing: { before: 240, after: 40 } }),
     new docx.Paragraph({
       children: [new docx.TextRun({
-        text: [item.source_id, (item.published_at || "").slice(0, 10) || "undated",
+        text: [item.source_id, fmtDate(item.published_at) || "undated",
                (item.topics || []).map(t => t.replace(/_/g, " ")).join(", "),
                item.coverage_state].filter(Boolean).join("   ·   "),
         color: "666666", size: 18,
@@ -727,10 +780,13 @@ async function exportRunToDocx(run) {
   try {
     await ensureDocx();
     const sections = [
-      new docx.Paragraph({ text: run.title, heading: docx.HeadingLevel.TITLE, spacing: { after: 120 } }),
+      new docx.Paragraph({
+        text: `AgingWire Research Intelligence — ${fmtDate(run.run_date)}`,
+        heading: docx.HeadingLevel.TITLE, spacing: { after: 120 },
+      }),
       new docx.Paragraph({
         children: [
-          new docx.TextRun(`Run date: ${run.run_date}`),
+          new docx.TextRun(`Run date: ${fmtDate(run.run_date)}`),
           new docx.TextRun("    |    "), new docx.TextRun(`Evidence: ${run.evidence_count}`),
           new docx.TextRun("    |    "), new docx.TextRun(`New: ${run.new_evidence_count}`),
           new docx.TextRun("    |    "), new docx.TextRun(`Confirmed gaps: ${run.gap_count}`),

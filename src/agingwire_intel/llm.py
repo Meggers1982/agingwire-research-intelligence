@@ -4,6 +4,7 @@ import json
 import logging
 import os
 
+from agingwire_intel.matching import us_date
 from agingwire_intel.synthesis import build_clusters
 
 log = logging.getLogger(__name__)
@@ -27,7 +28,8 @@ Hard rules:
   or quotation. If a claim is not in the input, leave it out.
 - Never name individual commentators or experts. Refer to agencies, journals and \
   organizations only.
-- American English throughout, including spellings and date formats.
+- American English throughout. Write every date as mm/dd/yy, exactly as the
+  input gives them. Never reformat a date to ISO or spell a month out.
 - Do not open with an announcement ("Here's the story:", "The big picture:"). Do not \
   use a rhetorical question as a topic sentence. No em-dash-heavy filler.
 - Be specific and concrete. Cite the actual numbers and source names from the input.
@@ -97,7 +99,8 @@ def _facts(payload: dict, previous: dict | None) -> str:
             "title": i.get("title"),
             "source": i.get("source_id"),
             "source_type": i.get("source_type"),
-            "published": (i.get("published_at") or "")[:10] or None,
+            # US format here, so the model's prose carries it rather than ISO.
+            "published": us_date(i.get("published_at")) or None,
             "topics": i.get("topics"),
             "score": i.get("score"),
             "coverage_state": (i.get("raw_metadata") or {}).get("coverage_state"),
@@ -111,7 +114,7 @@ def _facts(payload: dict, previous: dict | None) -> str:
         for i in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]
     ]
     facts = {
-        "run_date": (payload.get("generated_at") or "")[:10],
+        "run_date": us_date(payload.get("generated_at")),
         "evidence_count": payload.get("evidence_count"),
         "new_evidence_count": payload.get("new_evidence_count"),
         "monitored_publishers": payload.get("monitored_publisher_count"),
@@ -121,7 +124,7 @@ def _facts(payload: dict, previous: dict | None) -> str:
     }
     if previous:
         facts["previous_run"] = {
-            "run_date": (previous.get("generated_at") or "")[:10],
+            "run_date": us_date(previous.get("generated_at")),
             "evidence_count": previous.get("evidence_count"),
             "topics": sorted({t for i in previous.get("evidence", []) for t in i.get("topics") or []}),
         }

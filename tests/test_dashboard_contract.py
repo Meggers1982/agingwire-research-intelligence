@@ -94,3 +94,32 @@ class BuildDashboardTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DateFormatTests(unittest.TestCase):
+    """US format for display; ISO stays internal for sorting and file lookup."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.js = dashboard_js()
+
+    def test_formatter_exists(self):
+        self.assertIn("function fmtDate(", self.js)
+
+    def test_no_raw_iso_slicing_remains_in_display(self):
+        self.assertNotIn('(item.published_at || "").slice(0, 10)', self.js)
+        self.assertNotIn('(idea.published_at || "").slice(0, 10)', self.js)
+
+    def test_sidebar_run_cards_are_formatted(self):
+        self.assertIn("fmtDate(r.run_date)", self.js)
+
+    def test_csv_export_uses_us_format(self):
+        """The standing rule covers spreadsheets, not just the page."""
+        self.assertIn("fmtDate(i.published_at)", self.js)
+
+    def test_docx_export_uses_us_format(self):
+        self.assertIn("fmtDate(run.run_date)", self.js)
+
+    def test_run_file_lookup_still_uses_the_iso_id(self):
+        """Formatting the id would break the data/runs/<id>.json fetch."""
+        self.assertIn("data/runs/${encodeURIComponent(id)}.json", self.js)

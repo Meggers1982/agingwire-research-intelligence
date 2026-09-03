@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from agingwire_intel.matching import us_date
+
 
 def _health_section(payload: dict) -> list[str]:
     source_status = payload.get("source_status", [])
@@ -91,7 +93,7 @@ def _render_item(index: int, item: dict) -> list[str]:
         "unmonitored": "unknown — no monitored publisher covers this beat",
     }.get(coverage_state, coverage_state)
     topics = ", ".join(item.get("topics") or []) or "unclassified"
-    published = (item.get("published_at") or "")[:10] or "undated"
+    published = us_date(item.get("published_at")) or "undated"
 
     lines = [
         f"### {index}. {item.get('title', 'Untitled')}",

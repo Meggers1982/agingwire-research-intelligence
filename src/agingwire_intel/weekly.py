@@ -4,6 +4,8 @@ import json
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
+from agingwire_intel.matching import us_date
+
 
 def _load_window(root: Path, days: int) -> list[dict]:
     cutoff = (datetime.now(UTC) - timedelta(days=days)).date().isoformat()
@@ -40,7 +42,7 @@ def build_weekly(output_dir: str = "outputs", limit: int = 40, days: int = 8) ->
     lines = [
         "# AgingWire weekly research intelligence",
         "",
-        f"Week ending: {datetime.now(UTC).date().isoformat()}",
+        f"Week ending: {us_date(datetime.now(UTC).date().isoformat())}",
         "",
         f"Daily runs in window: **{len(payloads)}**  ",
         f"Distinct evidence candidates: **{len(candidates)}**  ",
@@ -74,7 +76,7 @@ def _render(items: list[dict]) -> list[str]:
             "",
             f"**Score:** {item.get('score', 0)}/100  ",
             f"**Source:** {item.get('source_id')}  ",
-            f"**Published:** {(item.get('published_at') or '')[:10] or 'undated'}  ",
+            f"**Published:** {us_date(item.get('published_at')) or 'undated'}  ",
             f"**Topics:** {', '.join(item.get('topics') or []) or 'unclassified'}  ",
             f"**Coverage:** {meta.get('coverage_state', 'unknown')} — "
             f"B2B {item.get('b2b_coverage_count', 0)} · B2C {item.get('b2c_coverage_count', 0)}  ",

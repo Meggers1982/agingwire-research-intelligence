@@ -56,3 +56,22 @@ class CoverageCountTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class UsDateTests(unittest.TestCase):
+    """Display dates are US format; ISO stays internal for sorting and lookup."""
+
+    def test_formats_iso_dates(self):
+        from agingwire_intel.matching import us_date
+        self.assertEqual(us_date("2026-09-03"), "09/03/26")
+        self.assertEqual(us_date("2026-09-03T15:00:00+00:00"), "09/03/26")
+
+    def test_passes_through_non_dates(self):
+        from agingwire_intel.matching import us_date
+        self.assertEqual(us_date(""), "")
+        self.assertEqual(us_date(None), "")
+        self.assertEqual(us_date("undated"), "undated")
+
+    def test_single_digit_parts_keep_their_padding(self):
+        from agingwire_intel.matching import us_date
+        self.assertEqual(us_date("2026-01-05"), "01/05/26")

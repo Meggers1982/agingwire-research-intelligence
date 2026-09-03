@@ -4,6 +4,7 @@ import re
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 
+from agingwire_intel.matching import us_date
 from agingwire_intel.scoring import is_localizable, sub_national
 from agingwire_intel.topics import topic_priority
 
@@ -120,7 +121,7 @@ def _diverse_sample(items: list[dict], limit: int, per_source: int = 2) -> list[
 
 def _evidence_line(item: dict) -> str:
     bits = [f"**{item.get('source_id')}** — {item.get('title', '')}"]
-    published = (item.get("published_at") or "")[:10]
+    published = us_date(item.get("published_at"))
     if published:
         bits.append(f"({published})")
     findings = item.get("key_findings") or []

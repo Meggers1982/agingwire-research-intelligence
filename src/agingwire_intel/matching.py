@@ -32,3 +32,16 @@ def title_similar(left_title: str, right_title: str) -> bool:
     return jaccard >= JACCARD_FLOOR or (
         len(shared) >= SHARED_MIN and len(shared) / min(len(left), len(right)) >= SHARED_RATIO
     )
+
+
+def us_date(value) -> str:
+    """mm/dd/yy for anything a person reads.
+
+    ISO stays internal — run ids, filenames, sort keys and the seen ledger all
+    depend on it sorting lexicographically.
+    """
+    iso = str(value or "")[:10]
+    parts = iso.split("-")
+    if len(parts) == 3 and len(parts[0]) == 4 and all(p.isdigit() for p in parts):
+        return f"{parts[1]}/{parts[2]}/{parts[0][2:]}"
+    return iso

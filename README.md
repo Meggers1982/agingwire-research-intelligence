@@ -157,7 +157,15 @@ python -m http.server 8000 -d docs
 - **Story opportunities** — the scored items, filterable by new / confirmed gap / localizable / topic.
 - **Pipeline health** — errors, empty sources and feed coverage.
 
-Every section collapses from its heading, and the collapsed set is remembered in `localStorage` — a jump link to a collapsed section opens it rather than scrolling to a closed header. Jump links, a light/dark toggle, `.docx` export and `.csv` export are on every run. The palette matches `senior-research-digest` so the two dashboards read as one family.
+Every section collapses from its heading, and the collapsed set is remembered in `localStorage` — a jump link to a collapsed section opens it rather than scrolling to a closed header. Jump links, a light/dark toggle, `.docx` export and `.csv` export are on every run.
+A **Collapse all** control sits with the jump links, and each heading carries an
+accent caret and a HIDE/SHOW pill — the first version shipped with only a small
+muted caret and read as decoration, so nobody found it.
+
+Dates read as `mm/dd/yy` everywhere a person sees them: the dashboard, the
+digest, the weekly rollup, the `.docx` and the `.csv`. ISO stays internal — run
+ids, filenames, the seen ledger and every sort key depend on it ordering
+lexicographically. `matching.us_date` is the single formatter. The palette matches `senior-research-digest` so the two dashboards read as one family.
 
 ### Editorial layer: how it is written
 

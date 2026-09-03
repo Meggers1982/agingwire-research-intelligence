@@ -60,3 +60,10 @@ class DigestTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DateFormatTests(unittest.TestCase):
+    def test_digest_dates_are_us_format(self):
+        text = render_digest(PAYLOAD)
+        self.assertIn("09/01/26", text)
+        self.assertNotIn("2026-09-01T", text)
