@@ -1,355 +1,31 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T19:14:17.204298+00:00
+Generated: 2026-09-03T19:15:23.630177+00:00
 
-Evidence candidates: **189** (20 new since the last run)  
+Evidence candidates: **170** (0 new since the last run)  
 Media coverage items: **1036** from **65** working publisher feeds
-
-## New since the last run
-
-### 1. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
-
-**Score:** 78/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** age_tech, caregiving, palliative_hospice  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71470.html
-
-This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 2. Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule
-
-**Score:** 76/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/
-
-Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 3. Medicaid Home and Community-Based Services for Older Adults: A Primer
-
-**Score:** 75/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-08-20  
-**Topics:** long_term_care, medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/
-
-Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 4. Breaking Glass, Missing Hands
-
-**Score:** 74/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** workforce  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/research_reports/RRA3665-2.html
-
-U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.
-
-**Potential angles**
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 5. Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations
-
-**Score:** 61/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** depression_mental_health  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71368.html
-
-We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 6. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
-
-**Score:** 56/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** depression_mental_health  
-**Coverage:** lightly covered — B2B 2, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71382.html
-
-The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 7. Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms
-
-**Score:** 54/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-06-10  
-**Topics:** dementia  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/
-
-The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 8. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
-
-**Score:** 47/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-09-02  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/statement-on-department-of-justices-proposed-resolution-of-texas-v-kennedy/
-
-On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department of Health and Human Services (HHS), along with Texas, Florida and Alaska filed a proposed resolution of Texas v. Kennedy. These states challenged the HHS 2024 regulations implementing Section 504 of the Rehabilitation Act, which prohibits discrimination on the basis of [&#8230;] The post Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy appeared first on Justice in Aging .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 9. Public Charge Final Rule: What Advocates Need to Know
-
-**Score:** 45/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-08-26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/public-charge-final-rule-what-advocates-need-to-know/
-
-This resource explains the public charge rule, its impact on older immigrants and families, and what advocates can do to help protect access to essential benefits. The post Public Charge Final Rule: What Advocates Need to Know appeared first on Justice in Aging .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 10. From DC: New Public Charge Guidance, Immigration Enforcement Protections, and More
-
-**Score:** 45/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-08-21  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/from-dc-08212026/
-
-In this week's edition: New Public Charge Guidance, Immigration Enforcement Protections, and More. The post From DC: New Public Charge Guidance, Immigration Enforcement Protections, and More appeared first on Justice in Aging .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 11. Now Hiring: Director of Public Policy and Government Relations
-
-**Score:** 45/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-08-21  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/now-hiring-public-policy-manager/
-
-The post Now Hiring: Director of Public Policy and Government Relations appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 12. Celebrating World Senior Citizens Day – Today and Every Day
-
-**Score:** 45/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-08-20  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/celebrating-world-senior-citizens-day-today-and-every-day/
-
-The post Celebrating World Senior Citizens Day – Today and Every Day appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 13. Justice in Aging’s Comment on Senate Finance Committee’s RFI on Lowering Drug Prices
-
-**Score:** 42/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-08-18  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/justice-in-agings-comment-on-senate-finance-committees-rfi-on-lowering-drug-prices/
-
-Justice in Aging responds to the Senate Finance Committee’s request for information on lowering drug prices, highlighting the need to make medications more affordable for older adults. The post Justice in Aging’s Comment on Senate Finance Committee’s RFI on Lowering Drug Prices appeared first on Justice in Aging .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 14. Meet Lauren Belsky, Development Coordinator for the Alliance
-
-**Score:** 42/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-08-12  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/meet-lauren-belsky-development-coordinator-for-the-alliance/
-
-The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 15. Navigating Air Travel — Tips for Older Adventurers
-
-**Score:** 42/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-07-27  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/navigating-air-travel-tips-for-older-adventurers/
-
-The post Navigating Air Travel — Tips for Older Adventurers appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 16. Balancing Boredom on World Brain Day
-
-**Score:** 42/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-07-21  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/balancing-boredom-on-world-brain-day/
-
-The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 17. Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
-
-**Score:** 40/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-07-09  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/dont-sweat-it-a-cool-guide-for-older-adults-to-beat-the-summer-heat/
-
-The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 18. ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’
-
-**Score:** 40/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-06-17  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/do-what-you-love-to-end-alz-offers-yearlong-spin-on-the-longest-day/
-
-The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’ appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 19. Why Preventative Care is a ‘Manly’ Long-Term Health Investment
-
-**Score:** 40/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-06-15  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/why-preventative-care-is-a-manly-long-term-health-investment/
-
-The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 20. 2025 Impact Report Highlights its Mission and Vision in Action
-
-**Score:** 40/100  
-**Source:** alliance-aging-research (institutional_rss)  
-**Published:** 2026-06-09  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.agingresearch.org/blog/2025-impact-report-highlights-its-mission-and-vision-in-action/
-
-The post 2025 Impact Report Highlights its Mission and Vision in Action appeared first on Alliance for Aging Research .
-
-**Potential angles**
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
 
 ## Highest-priority story opportunities
 
-### 1. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
+### 1. American Community Survey 2023 state aging and housing profile (52 states)
 
 **Score:** 78/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** age_tech, caregiving, palliative_hospice  
+**Source:** american-community-survey (government_api)  
+**Published:** undated  
+**Topics:** housing, financial_security, migration_retirement, rural_aging  
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71470.html
+**Source URL:** https://data.census.gov/table?q=DP05&y=2023
 
-This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.
+State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
 
 **Potential angles**
+- Localize the finding by state, metro or county and identify geographic outliers.
 - Consumer angle: explain what the evidence changes for older adults and families.
 - B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
+- Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 2. Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule
-
-**Score:** 76/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/
-
-Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 3. CMS refreshed dataset: Medical Equipment Suppliers
+### 2. CMS refreshed dataset: Medical Equipment Suppliers
 
 **Score:** 75/100  
 **Source:** cms-provider-data (government_api)  
@@ -367,40 +43,7 @@ A list of Suppliers that indicates the supplies carried at that location and the
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 4. Medicaid Home and Community-Based Services for Older Adults: A Primer
-
-**Score:** 75/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 2026-08-20  
-**Topics:** long_term_care, medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/
-
-Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 5. Breaking Glass, Missing Hands
-
-**Score:** 74/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 2026-08-31  
-**Topics:** workforce  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/research_reports/RRA3665-2.html
-
-U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.
-
-**Potential angles**
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 6. CMS refreshed dataset: Medicare Claims Quality Measures
+### 3. CMS refreshed dataset: Medicare Claims Quality Measures
 
 **Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
@@ -418,7 +61,7 @@ Quality measures that are based on Medicare claims data. Each row contains a spe
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 7. CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data
+### 4. CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data
 
 **Score:** 74/100  
 **Source:** cms-provider-data (government_api)  
@@ -436,7 +79,7 @@ Skilled Nursing Facilities (SNFs) provide Medicare Part A SNF services to benefi
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 8. CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data
+### 5. CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data
 
 **Score:** 73/100  
 **Source:** cms-provider-data (government_api)  
@@ -454,7 +97,7 @@ This data set contains the national average (mean) scores of Medicare-certified 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 9. CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data
+### 6. CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data
 
 **Score:** 73/100  
 **Source:** cms-provider-data (government_api)  
@@ -472,7 +115,7 @@ This data set contains state average (mean) scores of Medicare-certified hospice
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 10. CMS refreshed dataset: National Downloadable File
+### 7. CMS refreshed dataset: National Downloadable File
 
 **Score:** 73/100  
 **Source:** cms-provider-data (government_api)  
@@ -490,7 +133,7 @@ The Doctors and Clinicians national downloadable file is organized such that eac
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 11. CMS refreshed dataset: Nursing Home Data Collection Intervals
+### 8. CMS refreshed dataset: Nursing Home Data Collection Intervals
 
 **Score:** 72/100  
 **Source:** cms-provider-data (government_api)  
@@ -507,7 +150,23 @@ This table lists the data collection periods for the quality measures displayed 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 12. CMS refreshed dataset: Utilization Data
+### 9. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
+
+**Score:** 71/100  
+**Source:** rand-research (institutional_rss)  
+**Published:** 2026-08-31  
+**Topics:** age_tech, caregiving, palliative_hospice  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.rand.org/pubs/external_publications/EP71470.html
+
+This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.
+
+**Potential angles**
+- Consumer angle: explain what the evidence changes for older adults and families.
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 10. CMS refreshed dataset: Utilization Data
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -524,7 +183,7 @@ The Doctors and Clinicians utilization data file reports volume information for 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 13. CMS refreshed dataset: Patient-Reported Outcomes - Hospital
+### 11. CMS refreshed dataset: Patient-Reported Outcomes - Hospital
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -541,7 +200,7 @@ Patient-reported outcomes are reports from patients about aspects of care that m
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 14. CMS refreshed dataset: Fire Safety Deficiencies
+### 12. CMS refreshed dataset: Fire Safety Deficiencies
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -558,7 +217,7 @@ A list of nursing home fire safety citations in the last three years, including 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 15. CMS refreshed dataset: Health Deficiencies
+### 13. CMS refreshed dataset: Health Deficiencies
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -575,7 +234,7 @@ A list of nursing home health citations in the last three years, including the n
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 16. CMS refreshed dataset: MDS Quality Measures
+### 14. CMS refreshed dataset: MDS Quality Measures
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -592,7 +251,7 @@ Quality measures that are based on the resident assessments that make up the nur
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 17. CMS refreshed dataset: Ownership
+### 15. CMS refreshed dataset: Ownership
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -609,7 +268,7 @@ A list of ownership information for currently active nursing homes.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 18. CMS refreshed dataset: Penalties
+### 16. CMS refreshed dataset: Penalties
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -626,7 +285,7 @@ A list of the fines and payment denials received by nursing homes in the last th
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 19. CMS refreshed dataset: Provider Information
+### 17. CMS refreshed dataset: Provider Information
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -643,7 +302,7 @@ General information on currently active nursing homes, including number of certi
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 20. CMS refreshed dataset: Survey Summary
+### 18. CMS refreshed dataset: Survey Summary
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -660,7 +319,7 @@ Nursing home summary information for nursing home health, fire safety, infection
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 21. CMS refreshed dataset: Citation Code Look-up
+### 19. CMS refreshed dataset: Citation Code Look-up
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -677,7 +336,7 @@ This is a look-up table for nursing home inspection citations, providing a text 
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 22. CMS refreshed dataset: Inspection Dates
+### 20. CMS refreshed dataset: Inspection Dates
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -694,7 +353,7 @@ A list of nursing home inspection dates in the past three years, including healt
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 23. CMS refreshed dataset: Facility Affiliation Data
+### 21. CMS refreshed dataset: Facility Affiliation Data
 
 **Score:** 71/100  
 **Source:** cms-provider-data (government_api)  
@@ -711,7 +370,54 @@ This is the facility affiliations data publicly reported in the Provider Data Ca
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 24. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
+### 22. Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule
+
+**Score:** 69/100  
+**Source:** justice-in-aging (institutional_rss)  
+**Published:** 2026-08-31  
+**Topics:** medicare_medicaid  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/
+
+Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .
+
+**Potential angles**
+- Consumer angle: explain what the evidence changes for older adults and families.
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 23. Medicaid Home and Community-Based Services for Older Adults: A Primer
+
+**Score:** 68/100  
+**Source:** justice-in-aging (institutional_rss)  
+**Published:** 2026-08-20  
+**Topics:** long_term_care, medicare_medicaid  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/
+
+Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .
+
+**Potential angles**
+- Consumer angle: explain what the evidence changes for older adults and families.
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 24. Breaking Glass, Missing Hands
+
+**Score:** 67/100  
+**Source:** rand-research (institutional_rss)  
+**Published:** 2026-08-31  
+**Topics:** workforce  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.rand.org/pubs/research_reports/RRA3665-2.html
+
+U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.
+
+**Potential angles**
+- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 25. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
 
 **Score:** 64/100  
 **Source:** federal-register (regulatory_filing)  
@@ -728,118 +434,56 @@ HUD is required to publish FMRs not less than annually, adjusted to be effective
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 25. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
-
-**Score:** 64/100  
-**Source:** federal-register (regulatory_filing)  
-**Published:** 2026-08-21  
-**Topics:** housing  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.federalregister.gov/documents/2026/08/21/2026-17051/mortgage-and-loan-insurance-programs-under-the-national-housing-act-debenture-interest-rates
-
-This notice announces changes in the interest rates to be paid on debentures issued with respect to a loan or mortgage insured by the Federal Housing Administration under the provisions of the National Housing Act (the Act). The interest rate for debentures issued under Section 221(g)(4) of the Act during the 6-month period beginning January 1, 2026, is 4 percent. The interest rate for debentures issued under any other provision of the Act is the rate in effect on the date that the commitment to insure the loan or mortgage was issued, or the date that the loan or mortgage was endorsed (or init
-
-**Potential angles**
-- Consumer angle: explain what the evidence changes for older adults and families.
-- B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
 ## Research trends and continuity
 
-**Volume:** 189 evidence candidates, 20 first surfaced in this run.
-**Baseline:** no previous run in the archive, so nothing to compare against yet.
-**Heaviest topics this run:** medicare medicaid (31), long term care (19), workforce (12), housing (12), dementia (11), palliative hospice (10).
-**Coverage posture:** 89 confirmed gaps, 87 on beats no monitored publisher covers.
+**Volume:** 170 evidence candidates in the 2026-09-03 run, none of them first surfaced here. This is the archive's opening run, so there is no prior baseline to measure movement against and no delta to report. Treat the topic weights below as the starting reference line rather than a change signal.
+
+**Where the weight sits:** Medicare and Medicaid dominates at 30 items, followed by long-term care at 19, housing at 13, workforce at 12, financial security at 10 and palliative and hospice care at 9. The Medicare and Medicaid cluster is also the broadest by sourcing, drawing on nine distinct feeds spanning government APIs, regulatory filings and institutional research.
+
+**Recency:** long-term care carries an item published today, financial security one day old, housing two days, and Medicare and Medicaid, workforce, palliative and hospice care and mental health all three days. Nothing in the top clusters is stale enough to need a fresh news peg.
+
+**Coverage posture:** 82 items are confirmed gaps, meaning monitored publishers work those beats and none matched the item. Housing (13 of 13) and palliative and hospice care (9 of 9) are entirely unmatched. Financial security is the most contested beat in the run, with 4 of 10 items already covered, so speed matters more there than framing. A further 78 items fall on beats where we monitor no publisher at all, which tells us where our own visibility is thin rather than where the market is empty.
+
+**Shape of the beat:** structured public data is doing the heavy lifting. CMS Provider Data alone accounts for the bulk of the highest-scoring items, all refreshed between 2026-07-31 and 2026-08-30, and BLS series supply the wage, employment and price numbers. The run favors a data-desk posture: build the file, rank it, localize it, and publish before the monthly refresh cycle turns over.
+
+**Monitoring footprint:** 65 publishers monitored against a registry of 132. Expanding coverage on hospice and housing would convert some of the unmonitored volume into readable competitive signal for the next run.
 
 ## Bigger picture: feature pitch
 
-**The convergence:** Medicare Medicaid — 10 independent sources this run, no monitored B2B or B2C publisher has matched most of it
+**The convergence:** Medicare and Medicaid policy is the spine of this run. Nine independent sources fed 30 items into the cluster, 27 of them with a confirmed gap among monitored publishers and only 3 matched. The newest landed three days ago, on 2026-08-31.
 
 **Evidence on the table:**
-- **justice-in-aging** — Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule (2026-08-31)
-- **cms-provider-data** — CMS refreshed dataset: Medical Equipment Suppliers (2026-08-30)
-- **bls-api** — BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year) (2026-07-01) — July 2026: 593.78 index 1982-84=100
-- **federal-register** — Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants (2026-08-13)
-- **kff-feed** — Medicaid Coverage for Women (2026-08-26)
-- **nia-news** — Review of Medicare data reveals potential new statistics on dementia diagnosis (2025-03-13)
+- **CMS Provider Data** refreshed its Medical Equipment Suppliers file on 2026-08-30, carrying supply lines and Medicare participation status down to state and county level.
+- **Justice in Aging** published template comments and instructions on 2026-08-31 addressing Medicare eligibility for immigrants under the Physician Fee Schedule proposed rule, plus a Medicaid home and community-based services primer for older adults on 2026-08-20.
+- **BLS** put the medical care Consumer Price Index at 593.78 (1982-84=100) for July 2026, up 1.7 percent year over year.
+- **Federal Register** carried the Alternative Payment Model incentive payment advisory for qualifying clinicians on 2026-08-13 and the Regulatory Alignment for Predictable and Immediate Device (RAPID) coverage pathway notice with comment period on 2026-08-11.
+- **KFF** posted Medicaid Coverage for Women on 2026-08-26, the same day the **Center for Retirement Research** published an analysis arguing that shifting Medicare funding to the states would weaken the program.
 
-**Why now:** the most recent item landed 3 days ago; 10 unrelated sources converged without coordination; 28 of 31 items show a confirmed coverage gap.
+**The frame:** eligibility, coverage pathways, payment plumbing and price all moved inside a single month, without coordination among the sources. The reporting question is what a beneficiary's access actually depends on right now: who qualifies, which devices and services get covered how fast, which clinicians get paid, and what the cost curve looks like at 1.7 percent medical care inflation.
 
-**Localization:** 6 of 31 items break below the national level, so the same reporting supports state, metro or facility-level versions.
+**Localization:** 6 of the 30 items break below the national level, so the same reporting supports state, metro and facility-level versions.
 
-**Visuals:** 10 items sit on structured public data — a ranking, map or trend line can be built directly rather than sourced.
+**Visuals:** 10 items sit on structured public data. A ranking, map or trend line can be built directly from CMS and BLS files rather than sourced secondhand.
 
-**Also converging this run:**
-- long term care — 5 sources, 19 items, 17 with a confirmed gap
-- housing — 5 sources, 12 items, 12 with a confirmed gap
-- workforce — 4 sources, 12 items, 10 with a confirmed gap
+**Also converging:** long-term care (5 sources, 19 items, 17 gaps, newest today), housing (6 sources, 13 items, 13 gaps and zero matched), workforce (4 sources, 12 items, 10 gaps), palliative and hospice care (2 sources, 9 items, 9 gaps and zero matched).
 
 ## Story ideas
 
-**Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care**
-- Hook: This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences 
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.rand.org/pubs/external_publications/EP71470.html
+- **The nursing home accountability package.** CMS refreshed nine facility-level nursing home files on 2026-08-01: Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Provider Information, Survey Summary, MDS Quality Measures, Inspection Dates and the Citation Code Look-up table, alongside Nursing Home Data Collection Intervals and Medicare Claims Quality Measures. **Hook:** three years of citations, fines, payment denials and ownership records, all current as of the same refresh date. **Angle:** join ownership to penalties and deficiency scope-and-severity to identify which operators concentrate the worst outcomes in a given state, then localize by county. **Competitive situation:** every one of these datasets shows a confirmed gap among monitored publishers, and the long-term care cluster's newest item is zero days old.
 
-**Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule**
-- Hook: Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/
+- **Hospice quality, mapped.** CMS refreshed the National CAHPS Hospice Survey Data and the State CAHPS Hospice Survey Data on 2026-08-07, Hospice Provider Data the same day, Hospice Zip Data on 2026-08-18 and Hospice General Information on 2026-08-19. **Hook:** national and state mean scores plus the ZIP codes each provider actually serves. **Angle:** show where families can compare providers and where the service map thins out, using ownership data from the General Information file. **Competitive situation:** the palliative and hospice cluster has 9 items and 9 confirmed gaps, with nothing matched by any monitored publisher.
 
-**CMS refreshed dataset: Medical Equipment Suppliers**
-- Hook: A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.
-- Localize: Breaks down to US states, US counties — rank the outliers.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://data.cms.gov/provider-data/dataset/ct36-nrcq
+- **Where the 65-plus population lives, and what it can afford.** The American Community Survey 2023 state aging and housing profile covers 52 states with counts for 65-plus, 65-74, 75-84 and 85-plus, plus median household income and housing tenure. **Hook:** California reports 5,994,486 residents aged 65 and over, Florida 4,630,733. **Angle:** rank states by the 85-plus share rather than raw 65-plus counts and pair it with tenure to show which states face the oldest population with the least housing equity. **Competitive situation:** highest-scoring item in the run at 78, confirmed gap, and localizable to all 52 state profiles.
 
-**Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027**
-- Hook: HUD is required to publish FMRs not less than annually, adjusted to be effective on October 1 of each year. This notice describes the methods used to calculate the FY 2027 FMRs and lists the procedures for public housing
-- Chart: The underlying file supports an original ranking or trend line.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room
+- **Care wages against care prices.** BLS reported home health care services employment at 1,886,100 jobs in July 2026, up 4.8 percent year over year, with average hourly earnings of $27.91 in June 2026, up only 1.2 percent. Continuing care retirement community and assisted living employment reached 1,028,200 jobs, up 1.5 percent, with hourly earnings of $25.47, up 3.2 percent. Nursing care facilities employment stood at 1,592,900, up 2.6 percent. Medical care CPI rose 1.7 percent. **Hook:** the fastest-growing setting is paying the slowest-growing wage, and its pay increase trails medical care inflation while assisted living's exceeds it. **Angle:** a single chart of the five series over the past year, with the CPI line as the reference. **Competitive situation:** each series is a confirmed gap; the workforce cluster shows 10 gaps across 12 items.
 
-**BLS: Home health care services employment, July 2026 — 1,886.10 thousands of jobs (+4.8% year over year)**
-- Hook: July 2026: 1,886.10 thousands of jobs
-- Chart: The underlying file supports an original ranking or trend line.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://data.bls.gov/timeseries/CES6562160001
+- **Housing rules moving under older renters and owners.** HUD published Fiscal Year 2027 Fair Market Rents for the Housing Choice Voucher and Moderate Rehabilitation Single Room Occupancy programs on 2026-09-01, including the reevaluation procedures public housing agencies must follow under the Housing Opportunity Through Modernization Act of 2016. A supplemental notice of proposed rulemaking on 2026-08-10 continues HUD's effort to remove its disparate-impact regulations under the Fair Housing Act and amend its Title VI regulations. FHA debenture interest rates published 2026-08-21 set the Section 221(g)(4) rate at 4 percent for the six-month period beginning 2026-01-01. **Hook:** rent ceilings, fair housing enforcement standards and insurance program economics all shifted within three weeks. **Angle:** what a voucher-holding older renter faces on October 1, when the FY 2027 FMRs take effect. **Competitive situation:** the housing cluster has 13 items, 13 confirmed gaps and nothing matched.
 
-**Medicaid Coverage for Women**
-- Hook: This data note presents key data points describing the current state of the Medicaid program as it affects women.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/
+- **Telehealth and the palliative conversation.** RAND published a qualitative study on 2026-08-31 examining patient and family caregiver experiences with telehealth versus in-person outpatient palliative care visits, including mode preferences and perceived differences in communication quality after the pandemic. **Hook:** the question is not whether tele-palliative care works logistically but whether the hardest conversations survive the screen. **Angle:** a consumer piece on how families should choose visit mode, paired with a trade piece on program design. **Competitive situation:** confirmed gap, scored 71, and it sits across the age tech, caregiving and hospice clusters at once.
 
-**Review of Medicare data reveals potential new statistics on dementia diagnosis**
-- Hook: A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis
+- **Medicare eligibility for immigrants, in the comment window.** Justice in Aging's 2026-08-31 template comments target Medicare eligibility changes for immigrants in the Physician Fee Schedule proposed rule. **Hook:** an advocacy organization is publishing a comment template, which means the window is open and the stakes are concrete. **Angle:** explain who would lose eligibility and what the proposed rule changes, then pair it with the organization's 2026-08-20 Medicaid HCBS primer to show what coverage remains. **Competitive situation:** confirmed gap, scored 69.
 
-**Here’s How Much Americans Rely on Social Security – at All Income Levels**
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/
-
-**RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act**
-- Hook: RentGrow, a provider of consumer reports for tenant screening, will be required to pay $2.25 million to settle Federal Trade Commission allegations that the company violated the Fair Credit Reporting Act (FCRA), includin
-- Chart: The figures in the finding are the spine of a simple graphic.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act
-
-**Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms**
-- Hook: The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.agingresearch.org/blog/facing-alzheimers-together-support-for-caregivers-navigating-behavioral-symptoms/
-
-**NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options**
-- Hook: The National Investment Center for Seniors Housing & Care (NIC) establishes a multi-year collaboration with the MIT AgeLab to rethink what adults want in housing and care as they age ANNAPOLIS, Md. (August 5, 2026) —The 
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.nic.org/news-press/nic-and-mit-agelab-launch-landmark-study-to-reimagine-senior-living-options/
-
-**New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement**
-- Hook: EBRI Press Release March 11, 2026 2 pages Summary Full Content
-- Chart: The figures in the finding are the spine of a simple graphic.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.ebri.org/media/press-releases/content/new-ebri-report-finds-some-medicare-households-may-need-nearly--500-000-for-health-care-in-retirement
+- **Note on one false positive.** The RAND report "Breaking Glass, Missing Hands" scored 67 in the workforce cluster but concerns space defense industrial base staffing and STEM pipelines. It is classifier noise, not a care workforce story, and should be dropped before assignment.
 
 ## Pipeline health
 
@@ -848,4 +492,4 @@ Publisher feeds: **65 working** of **132 in the registry** (9 error, 58 no feed 
 
 ### Evidence-source errors
 
-- **census-acs** — CENSUS_API_KEY is not set. api.census.gov rejects keyless requests by redirecting to an HTML page. Request a free key at https://api.census.gov/data/key_signup.html and add it as a repository secret.
+- **nia-news** — 405 Client Error: Not Allowed for url: https://www.nia.nih.gov/news/rss.xml
