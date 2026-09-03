@@ -1,9 +1,9 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T17:09:22.504590+00:00
+Generated: 2026-09-03T17:10:52.982409+00:00
 
-Evidence candidates: **168** (0 new since the last run)  
-Media coverage items: **1037** from **65** working publisher feeds
+Evidence candidates: **148** (0 new since the last run)  
+Media coverage items: **1036** from **65** working publisher feeds
 
 ## Highest-priority story opportunities
 
@@ -432,14 +432,14 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ## Research trends and continuity
 
-**Volume:** 168 evidence candidates, 0 first surfaced in this run.
+**Volume:** 148 evidence candidates, 0 first surfaced in this run.
 **Baseline:** no previous run in the archive, so nothing to compare against yet.
-**Heaviest topics this run:** medicare medicaid (29), long term care (18), housing (12), workforce (11), dementia (10), palliative hospice (9).
-**Coverage posture:** 84 confirmed gaps, 72 on beats no monitored publisher covers.
+**Heaviest topics this run:** medicare medicaid (28), long term care (18), housing (12), workforce (11), financial security (9), palliative hospice (8).
+**Coverage posture:** 74 confirmed gaps, 65 on beats no monitored publisher covers.
 
 ## Bigger picture: feature pitch
 
-**The convergence:** Medicare Medicaid — 9 independent sources this run, no monitored B2B or B2C publisher has matched most of it
+**The convergence:** Medicare Medicaid — 8 independent sources this run, no monitored B2B or B2C publisher has matched most of it
 
 **Evidence on the table:**
 - **cms-provider-data** — CMS refreshed dataset: Medical Equipment Suppliers (2026-08-30)
@@ -449,9 +449,9 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - **center-retirement-research** — Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk (2026-08-26)
 - **ebri** — New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement (2026-03-11)
 
-**Why now:** the most recent item landed 4 days ago; 9 unrelated sources converged without coordination; 26 of 29 items show a confirmed coverage gap.
+**Why now:** the most recent item landed 4 days ago; 8 unrelated sources converged without coordination; 25 of 28 items show a confirmed coverage gap.
 
-**Localization:** 6 of 29 items break below the national level, so the same reporting supports state, metro or facility-level versions.
+**Localization:** 6 of 28 items break below the national level, so the same reporting supports state, metro or facility-level versions.
 
 **Visuals:** 10 items sit on structured public data — a ranking, map or trend line can be built directly rather than sourced.
 
@@ -506,11 +506,6 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Competitive: Monitored trades cover this beat and have not written it.
 - Source: https://www.ebri.org/media/press-releases/content/new-ebri-report-finds-some-medicare-households-may-need-nearly--500-000-for-health-care-in-retirement
 
-**Review of Medicare data reveals potential new statistics on dementia diagnosis**
-- Hook: A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.
-- Competitive: Monitored trades cover this beat and have not written it.
-- Source: https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis
-
 **Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026**
 - Hook: Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on the Medicare Advantage quality bonus program in 2026, as 68% of Medicare Advantage enrollees are in a plan that qualifies for higher paymen
 - Chart: The figures in the finding are the spine of a simple graphic.
@@ -526,11 +521,16 @@ This notice announces changes in the interest rates to be paid on debentures iss
 - Competitive: Monitored trades cover this beat and have not written it.
 - Source: https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/
 
+**Workforce Data Center**
+- Competitive: Monitored trades cover this beat and have not written it.
+- Source: https://www.phinational.org/policy-research/workforce-data-center/
+
 ## Pipeline health
 
-Evidence sources: **14 ok**, **0 empty**, **1 error**  
+Evidence sources: **13 ok**, **0 empty**, **2 error**  
 Publisher feeds: **65 working** of **132 in the registry** (9 error, 58 no feed found)
 
 ### Evidence-source errors
 
 - **census-acs** — CENSUS_API_KEY is not set. api.census.gov rejects keyless requests by redirecting to an HTML page. Request a free key at https://api.census.gov/data/key_signup.html and add it as a repository secret.
+- **nia-news** — 405 Client Error: Not Allowed for url: https://www.nia.nih.gov/news/rss.xml
