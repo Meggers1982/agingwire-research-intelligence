@@ -1,9 +1,9 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-03T16:23:07.004088+00:00
+Generated: 2026-09-03T16:25:28.311536+00:00
 
-Evidence candidates: **306** (0 new since the last run)  
-Media coverage items: **1037** from **65** working publisher feeds
+Evidence candidates: **286** (0 new since the last run)  
+Media coverage items: **1007** from **61** working publisher feeds
 
 ## Highest-priority story opportunities
 
@@ -442,9 +442,10 @@ A list of the fines and payment denials received by nursing homes in the last th
 
 ## Pipeline health
 
-Evidence sources: **15 ok**, **0 empty**, **1 error**  
-Publisher feeds: **65 working** of **132 in the registry** (9 error, 58 no feed found)
+Evidence sources: **14 ok**, **0 empty**, **2 error**  
+Publisher feeds: **61 working** of **132 in the registry** (13 error, 58 no feed found)
 
 ### Evidence-source errors
 
 - **census-acs** — CENSUS_API_KEY is not set. api.census.gov rejects keyless requests by redirecting to an HTML page. Request a free key at https://api.census.gov/data/key_signup.html and add it as a repository secret.
+- **nia-news** — 405 Client Error: Not Allowed for url: https://www.nia.nih.gov/news/rss.xml

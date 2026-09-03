@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T16:23:07.004088+00:00",
-  "evidence_count": 306,
+  "generated_at": "2026-09-03T16:25:28.311536+00:00",
+  "evidence_count": 286,
   "new_evidence_count": 0,
-  "coverage_count": 1037,
-  "monitored_publisher_count": 65,
+  "coverage_count": 1007,
+  "monitored_publisher_count": 61,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -17,7 +17,6 @@
     "falls",
     "financial_security",
     "housing",
-    "loneliness_social_connection",
     "long_term_care",
     "medicare_medicaid",
     "nutrition",
@@ -29,22 +28,21 @@
   ],
   "topic_coverage_counts": {
     "age_tech": 6,
-    "ageism_work": 1,
     "aging_in_place": 14,
-    "assisted_living": 65,
+    "assisted_living": 59,
     "cardiovascular_disease": 4,
     "caregiving": 8,
     "chronic_pain": 1,
     "cognitive_decline": 3,
     "dementia": 24,
     "depression_mental_health": 9,
-    "falls": 9,
+    "falls": 8,
     "financial_security": 12,
     "fraud_scams": 2,
     "housing": 55,
     "incontinence": 1,
-    "loneliness_social_connection": 4,
-    "long_term_care": 46,
+    "loneliness_social_connection": 2,
+    "long_term_care": 37,
     "medicare_medicaid": 36,
     "nutrition": 10,
     "oral_health": 1,
@@ -52,7 +50,7 @@
     "palliative_hospice": 12,
     "relationships_sexuality": 1,
     "sarcopenia_frailty": 1,
-    "senior_living_quality": 5,
+    "senior_living_quality": 4,
     "sleep": 5,
     "transportation": 5,
     "workforce": 15
@@ -97,8 +95,8 @@
     {
       "source": "nia-news",
       "method": "rss",
-      "status": "ok",
-      "items": 20
+      "status": "error",
+      "error": "405 Client Error: Not Allowed for url: https://www.nia.nih.gov/news/rss.xml"
     },
     {
       "source": "cfpb-newsroom",
@@ -175,10 +173,9 @@
     {
       "publisher": "McKnight's Senior Living",
       "audience": "b2b",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.mcknightsseniorliving.com/feed/",
-      "discovered": true,
-      "items": 10
+      "error": "403 Client Error: Forbidden for url: https://www.mcknightsseniorliving.com/feed/"
     },
     {
       "publisher": "Seniors Housing Business",
@@ -199,10 +196,9 @@
     {
       "publisher": "McKnight's Long-Term Care News",
       "audience": "b2b",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.mcknights.com/feed/",
-      "discovered": true,
-      "items": 10
+      "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
     },
     {
       "publisher": "Skilled Nursing News",
@@ -231,10 +227,9 @@
     {
       "publisher": "McKnight's Home Care",
       "audience": "b2b",
-      "status": "empty",
+      "status": "error",
       "feed": "https://www.mcknightshomecare.com/homepage/feed/",
-      "discovered": true,
-      "items": 0
+      "error": "403 Client Error: Forbidden for url: https://www.mcknightshomecare.com/homepage/feed/"
     },
     {
       "publisher": "iAdvance Senior Care",
@@ -249,7 +244,7 @@
       "audience": "b2b",
       "status": "error",
       "feed": "http://homecaremag.com/combo/feed",
-      "error": "404 Client Error: Not Found for url: https://www.homecaremag.com/features/feed"
+      "error": "403 Client Error: Forbidden for url: https://www.homecaremag.com/combo/feed"
     },
     {
       "publisher": "Next Avenue",
@@ -437,10 +432,9 @@
     {
       "publisher": "McKnight's Tech Daily",
       "audience": "b2b",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.mcknights.com/feed/",
-      "discovered": true,
-      "items": 10
+      "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
     },
     {
       "publisher": "Mobility Management",
@@ -1136,7 +1130,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1192,7 +1186,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1242,7 +1236,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1293,7 +1287,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1350,7 +1344,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1407,7 +1401,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1464,7 +1458,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1521,7 +1515,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1577,7 +1571,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1712,7 +1706,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1847,7 +1841,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1899,7 +1893,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -1951,7 +1945,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2003,7 +1997,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2054,7 +2048,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2110,7 +2104,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2244,7 +2238,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2378,7 +2372,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2433,7 +2427,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2488,7 +2482,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2543,7 +2537,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2598,7 +2592,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2653,7 +2647,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2708,7 +2702,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2763,7 +2757,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2818,7 +2812,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2873,7 +2867,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2928,7 +2922,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -2983,7 +2977,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3038,7 +3032,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3172,7 +3166,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3306,7 +3300,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3355,7 +3349,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3488,7 +3482,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3540,7 +3534,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3591,7 +3585,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3642,7 +3636,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3694,7 +3688,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3747,7 +3741,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3797,7 +3791,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3847,7 +3841,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3897,7 +3891,7 @@
         "upstream_topic": "",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3948,7 +3942,7 @@
         "upstream_topic": "",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3999,7 +3993,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4051,7 +4045,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4102,7 +4096,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4154,7 +4148,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4207,7 +4201,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4259,7 +4253,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4312,7 +4306,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4366,7 +4360,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4420,7 +4414,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4474,7 +4468,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4528,7 +4522,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4582,7 +4576,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4636,7 +4630,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4689,7 +4683,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4733,7 +4727,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4777,7 +4771,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4821,7 +4815,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4865,7 +4859,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4915,7 +4909,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4965,7 +4959,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5017,7 +5011,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5069,7 +5063,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5121,7 +5115,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5174,7 +5168,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5226,7 +5220,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5276,7 +5270,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5327,7 +5321,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5370,7 +5364,7 @@
         "context": "Here’s How Much Americans Rely on Social Security – at All Income Levels By Alicia H. Munnell September 2, 2026",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5414,7 +5408,7 @@
         "context": "Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk By Alicia H. Munnell August 26, 2026",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5458,7 +5452,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5502,7 +5496,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5552,7 +5546,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5602,7 +5596,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5653,7 +5647,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5703,7 +5697,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5755,7 +5749,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5806,7 +5800,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5858,7 +5852,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5903,7 +5897,7 @@
         "context": "NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options The National Investment Center for Seniors Housing & Care (NIC) establishes a multi-year collaboration with the MIT AgeLab to rethink what adults want in housing and care as they age   ANNAPOLIS, Md. (August 5, 2026) —The senior living industry is changing, and NIC is leading the research effort to meet that moment. As old",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5946,7 +5940,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5996,7 +5990,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6039,7 +6033,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6090,7 +6084,7 @@
         "upstream_topic": "falls",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6134,7 +6128,7 @@
         "context": "New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement EBRI Press Release March 11, 2026 2 pages Summary Full Content",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6186,7 +6180,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6235,7 +6229,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6280,7 +6274,7 @@
         "context": "New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security EBRI Press Release June 2, 2026 2 pages Summary Full Content",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6322,52 +6316,7 @@
         "context": "Long-Term Care in Israel and the U.S.: Different Systems, Shared Challenges By Harry S. Margolis September 3, 2026",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Review of Medicare data reveals potential new statistics on dementia diagnosis",
-      "url": "https://www.nia.nih.gov/news/review-medicare-data-reveals-potential-new-statistics-dementia-diagnosis",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-13T00:00:00+00:00",
-      "topics": [
-        "dementia",
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 60,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Consumer angle: explain what the evidence changes for older adults and families.",
-        "B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "A study of Medicare data showed that roughly 9% of beneficiaries — 5.3 million people — may have Alzheimer’s disease or a related dementia.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6415,7 +6364,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6463,7 +6412,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6511,7 +6460,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6560,7 +6509,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6608,7 +6557,7 @@
         "upstream_topic": "",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6652,7 +6601,7 @@
         "context": "Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026 Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on the Medicare Advantage quality bonus program in 2026, as 68% of Medicare Advantage enrollees are in a plan that qualifies for higher payments under the program.",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6698,7 +6647,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6748,7 +6697,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6796,7 +6745,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6844,7 +6793,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6894,7 +6843,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6943,7 +6892,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6991,7 +6940,7 @@
         "upstream_topic": "",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7039,7 +6988,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7091,7 +7040,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7141,7 +7090,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7189,7 +7138,7 @@
         "upstream_topic": "",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7238,7 +7187,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7286,7 +7235,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7334,7 +7283,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7382,7 +7331,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7430,7 +7379,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7478,7 +7427,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7527,7 +7476,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7576,7 +7525,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7625,7 +7574,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7673,7 +7622,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7721,7 +7670,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7771,7 +7720,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7820,7 +7769,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7870,7 +7819,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7918,7 +7867,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -7968,7 +7917,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8012,7 +7961,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8056,7 +8005,7 @@
         "context": "2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs EBRI Press Release April 21, 2026 2 pages Summary Full Content",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8103,7 +8052,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8150,7 +8099,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8193,7 +8142,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8237,7 +8186,7 @@
         "context": "June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8281,7 +8230,7 @@
         "context": "Medicaid Coverage for Women Aug 26, 2026 Issue Brief This data note presents key data points describing the current state of the Medicaid program as it affects women.",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8325,7 +8274,7 @@
         "context": "Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid Aug 26, 2026 Issue Brief Considering the existing challenges to hospital-based maternity care in rural areas and the potential for it to worsen, this data note analyzes the availability of hospitals providing inpatient maternity care in rural areas for Medicaid enrollees and illustrates how access to these services coul",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8369,7 +8318,7 @@
         "context": "5 Questions and Answers About Medicaid and Provider Taxes Aug 20, 2026 Issue Brief This issue brief uses data from KFF’s  2025-2026 survey of Medicaid directors and from a proposed rule on provider taxes to describe states’ current provider taxes, explore how rules governing provider taxes are changing because of the 2025 reconciliation law and the regulations implementing that law, and summarizes",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8413,7 +8362,7 @@
         "context": "At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits Aug 14, 2026 Issue Brief This analysis estimates the number of states impacted by and the amount of current federal spending on Medicaid state directed payments for hospital services that exceeds the new limits established by the 2025 reconciliation law when fu",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8457,7 +8406,7 @@
         "context": "Optional Medicaid and CHIP Coverage for Lawfully Present Immigrant Children Could Mitigate Coverage Losses Due to 2025 Reconciliation Law Aug 14, 2026 Issue Brief This brief provides an overview of health coverage of noncitizen children to provide greater insight into the potential role of Immigrant Children’s Health Improvement Act (ICHIA) coverage in limiting the 2025 reconciliation law's impact",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8501,7 +8450,7 @@
         "context": "Prior Authorization Metrics Provide New Insights into Insurer Practices, but Gaps Remain Aug 13, 2026 Issue Brief This analysis of available 2025 prior authorization data finds insurers denied at least 1 in 8 standard requests for prior authorization across three insurance markets: Medicare Advantage, Medicaid managed care, and the federally facilitated ACA Marketplaces. Denial rates varied wide s",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8545,7 +8494,7 @@
         "context": "Variability in Reimbursement Rates for State-funded Abortion Services for Medicaid Enrollees: A 2026 Update Aug 7, 2026 Issue Brief This KFF analysis examines physician fee schedules for medication abortion and abortion procedures to see what states that use their own state funds to pay for abortion services are reimbursing for providing abortion services to Medicaid enrollees.",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8589,7 +8538,7 @@
         "context": "The Story Comes First. The Word “Caregiver” Often Comes Later.",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8633,7 +8582,7 @@
         "context": "Statement of the National Alliance for Caregiving on the Department of Justice Office of Legal Counsel Opinion on the ADA Integration Mandate",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8677,7 +8626,7 @@
         "context": "New Research Report Examining Where Households Spend Defined Contribution Plan Loans Finds a Likelihood to Spend Loan Money on Health Care and Housing Rather Than on Travel or Entertainment EBRI Press Release Oct 16, 2025 3 pages Summary Full Content",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8721,7 +8670,7 @@
         "context": "NIC Insider: The most trusted and objective insights, exclusive data, and key senior housing industry access—delivered straight to your inbox monthly. In this edition: Strong 2Q Returns, Memory Care Demand, a New Occupancy Era, and more. Subscribe to the NIC Insider ▶",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8765,7 +8714,7 @@
         "context": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance 22 Senior Housing Properties Added to the NCREIF Property Index in 2Q Senior housing investment performance in the second quarter of 2026 maintained the prior quarter’s momentum, posting a total return of 3.9% and bringing year-to-date returns to 8.0%. Overall, senior housing during the quarter outperformed the br",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8809,7 +8758,7 @@
         "context": "CCRC Performance 2Q 2026: Continued Demand for Memory Care The following analysis examines broader occupancy trends, year-over-year changes in inventory, and same-store asking rent growth – by care segment – within 1,036 Continuing Care Retirement Communities (CCRCs) and 13,701 non-CCRCs in the 99 NIC MAP Primary and Secondary Markets. 2Q 2026 Market Fundamentals by Care Segment –…",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8853,7 +8802,7 @@
         "context": "Senior Care Chapter 11 Bankruptcy Filings: Trends and Profile (2Q2019-2Q2026) In collaboration with the National Investment Center for Seniors Housing & Care (“NIC”), Gibbins Advisors prepared this Senior Care subsector report as a deeper dive within its broader healthcare Chapter 11 bankruptcy research. This analysis reviews Senior Care sector Chapter 11 bankruptcy filings from 2Q2019 through 2Q2",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8897,7 +8846,7 @@
         "context": "The Great Tightening: How Senior Housing Is Entering a New Occupancy Era For much of the past five years, the senior housing story has been one of recovery. Quarter after quarter, occupancy climbed steadily from the unprecedented lows of the pandemic. Each NIC MAP data release marked another step toward normalcy, and each increase was viewed as evidence that the industry…",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8946,7 +8895,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -8995,7 +8944,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9043,7 +8992,7 @@
         "upstream_topic": "",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9091,7 +9040,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9140,7 +9089,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9190,7 +9139,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9238,7 +9187,7 @@
         "upstream_topic": "depression",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9287,7 +9236,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9337,7 +9286,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9385,7 +9334,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9434,7 +9383,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9482,7 +9431,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9530,7 +9479,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9578,7 +9527,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9626,7 +9575,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9674,7 +9623,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9722,7 +9671,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9773,7 +9722,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9821,7 +9770,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9872,7 +9821,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9922,7 +9871,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -9971,7 +9920,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10020,7 +9969,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10068,7 +10017,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10118,7 +10067,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10166,7 +10115,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10215,7 +10164,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10264,7 +10213,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10315,7 +10264,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10363,7 +10312,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10413,7 +10362,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10462,7 +10411,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10511,7 +10460,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10562,7 +10511,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10606,7 +10555,7 @@
         "context": "Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10653,7 +10602,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10695,7 +10644,7 @@
         "context": "Can Equity Investments Help Social Security’s Long-Run Financing? By Anqi Chen , Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10738,7 +10687,7 @@
         "context": "Workforce Data Center",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10781,7 +10730,7 @@
         "context": "Workforce Research and Strategy Services",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10823,7 +10772,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10874,7 +10823,7 @@
         "upstream_topic": "depression",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10921,7 +10870,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -10969,7 +10918,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11018,7 +10967,7 @@
         "upstream_topic": "falls",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11068,7 +11017,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11118,7 +11067,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11167,7 +11116,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11216,7 +11165,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11266,7 +11215,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11314,7 +11263,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11364,7 +11313,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11415,7 +11364,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11464,7 +11413,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11512,7 +11461,7 @@
         "upstream_topic": "sleep",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11563,7 +11512,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11612,7 +11561,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11661,7 +11610,7 @@
         "upstream_topic": "cardiovascular disease",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11705,7 +11654,7 @@
         "context": "Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11753,7 +11702,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11801,7 +11750,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11850,7 +11799,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11892,7 +11841,7 @@
         "context": "Workforce Interventions",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11939,7 +11888,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -11985,7 +11934,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12031,7 +11980,7 @@
         "upstream_topic": "dementia",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12079,7 +12028,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12127,7 +12076,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12170,7 +12119,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12212,7 +12161,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12254,7 +12203,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12303,7 +12252,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12349,7 +12298,7 @@
         "upstream_topic": "palliative care",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12397,7 +12346,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12445,7 +12394,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12493,218 +12442,7 @@
         "upstream_topic": "osteoporosis",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIH releases Alzheimer’s Disease and Related Dementias Research Progress Report and FY27 Professional Judgment Budget",
-      "url": "https://www.nia.nih.gov/news/nih-releases-alzheimers-disease-and-related-dementias-research-progress-report-and-fy27",
-      "source_type": "institutional_rss",
-      "published_at": "2025-09-08T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 45,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "NIH released the FY 2027 Professional Judgment Budget for Alzheimer’s Disease and Related Dementias and the NIH Scientific Progress Report.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Connect with NIA at AAIC 2025",
-      "url": "https://www.nia.nih.gov/news/connect-nia-aaic-2025",
-      "source_type": "institutional_rss",
-      "published_at": "2025-07-23T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 45,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "Join NIA at the Alzheimer's Association International Conference (AAIC) in Toronto from July 27-31.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "A gene guiding brain cell growth may regulate Alzheimer’s plaque size and toxicity",
-      "url": "https://www.nia.nih.gov/news/gene-guiding-brain-cell-growth-may-regulate-alzheimers-plaque-size-and-toxicity",
-      "source_type": "institutional_rss",
-      "published_at": "2025-04-10T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 45,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "Plexin-B1 shapes glial networks around beta-amyloid plaques. An NIA-funded study has found that targeting it may improve plaque clearance and reduce brain inflammation.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "New drug candidate targeting synaptic resilience well tolerated in Alzheimer’s patients",
-      "url": "https://www.nia.nih.gov/news/new-drug-candidate-targeting-synaptic-resilience-well-tolerated-alzheimers-patients",
-      "source_type": "institutional_rss",
-      "published_at": "2025-04-03T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 45,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "A new drug targeting synaptic resilience shows potential in treating Alzheimer’s disease in an NIA-funded study, with early trials indicating safety and possible brain damage reduction. Further research is needed on the drug’s long-term effects.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "South Africa cash transfer program slowed cognitive decline for midlife and older adults",
-      "url": "https://www.nia.nih.gov/news/south-africa-cash-transfer-program-slowed-cognitive-decline-midlife-and-older-adults",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-27T00:00:00+00:00",
-      "topics": [
-        "cognitive_decline",
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 45,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "A modest cash-transfer intervention slowed memory decline and lowered dementia risk among midlife and older adults in rural South Africa.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12746,7 +12484,7 @@
         "context": "The Social Security Claiming Guide By Steven A. Sass , Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12792,7 +12530,7 @@
         "upstream_topic": "",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12838,7 +12576,7 @@
         "upstream_topic": "",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12884,7 +12622,7 @@
         "upstream_topic": "",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -12930,92 +12668,7 @@
         "upstream_topic": "",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Bright brain spots from small blood vessels could help predict Alzheimer’s risk",
-      "url": "https://www.nia.nih.gov/news/bright-brain-spots-small-blood-vessels-could-help-predict-alzheimers-risk",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-20T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "Bright spots in the brain called white matter hyperintensities contribute to Alzheimer’s risk. Reducing their accumulation might help slow or prevent the disease.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Difficulty managing bills may signal early dementia",
-      "url": "https://www.nia.nih.gov/news/difficulty-managing-bills-may-signal-early-dementia",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-18T00:00:00+00:00",
-      "topics": [
-        "cognitive_decline",
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "summary": "Missed mortgage and credit card payments may signal early cognitive decline years before a dementia diagnosis, according to an NIA-funded study.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13055,7 +12708,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13095,7 +12748,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13141,87 +12794,7 @@
         "upstream_topic": "",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIA statement on the U.S. Cost of Dementia Model report",
-      "url": "https://www.nia.nih.gov/news/nia-statement-u-s-cost-dementia-model-report",
-      "source_type": "institutional_rss",
-      "published_at": "2025-04-25T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 40,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 1,
-      "story_angles": [],
-      "raw_metadata": {
-        "summary": "Read an announcement about an NIA-funded project that reports the economic burden of Alzheimer's disease and related dementia in the United States.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Advance care planning intervention improved end-of-life documentation but increased potentially burdensome care",
-      "url": "https://www.nia.nih.gov/news/advance-care-planning-intervention-improved-end-life-documentation-increased-potentially",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-20T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 40,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [],
-      "raw_metadata": {
-        "summary": "An advance care planning intervention increased both the documentation of end-of-life preferences and potentially burdensome care.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13263,7 +12836,7 @@
         "context": "Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13305,7 +12878,7 @@
         "context": "Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13345,7 +12918,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13385,7 +12958,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13425,7 +12998,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13465,7 +13038,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13505,7 +13078,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13545,7 +13118,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13585,7 +13158,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13625,7 +13198,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13665,7 +13238,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13705,7 +13278,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13745,7 +13318,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13785,7 +13358,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13825,7 +13398,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13865,7 +13438,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13905,7 +13478,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13945,7 +13518,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -13985,7 +13558,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14025,7 +13598,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14065,7 +13638,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14105,91 +13678,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIA-funded small business spotlight: Bone Health Technologies shakes up the market to prevent bone density loss",
-      "url": "https://www.nia.nih.gov/news/nia-funded-small-business-spotlight-bone-health-technologies-shakes-market-prevent-bone",
-      "source_type": "institutional_rss",
-      "published_at": "2025-05-28T00:00:00+00:00",
-      "topics": [
-        "osteoporosis_bone_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 38,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "Read how Bone Health Technologies, an NIA-funded small business, shakes up the market to prevent bone density loss.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Biological clock based on blood measurements predicts mouse lifespan and frailty",
-      "url": "https://www.nia.nih.gov/news/biological-clock-based-blood-measurements-predicts-mouse-lifespan-and-frailty",
-      "source_type": "institutional_rss",
-      "published_at": "2025-05-01T00:00:00+00:00",
-      "topics": [
-        "sarcopenia_frailty"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 38,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "NIA investigators have created a biological clock for mice based on blood measurements. Learn how the clock can help predict differences in aging and how the findings could translate to clinical practice.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14231,7 +13720,7 @@
         "context": "Employers and Older Workers: 2006 and 2019 Surveys May 26, 2019",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14271,7 +13760,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14311,7 +13800,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14351,7 +13840,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14391,7 +13880,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14431,7 +13920,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14471,7 +13960,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14511,7 +14000,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14551,7 +14040,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14591,7 +14080,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14631,49 +14120,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Senolytic therapy shows subtle impact on age-related bone health in women",
-      "url": "https://www.nia.nih.gov/news/senolytic-therapy-shows-subtle-impact-age-related-bone-health-women",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-27T00:00:00+00:00",
-      "topics": [
-        "osteoporosis_bone_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 35,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "An NIA-funded clinical trial investigating whether senolytics could improve bone health in older women had just subtle results.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14713,7 +14160,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14753,7 +14200,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14793,7 +14240,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14833,7 +14280,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14873,7 +14320,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14913,7 +14360,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14953,7 +14400,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -14993,7 +14440,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15033,7 +14480,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15073,87 +14520,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Risk and future burden of dementia in the United States",
-      "url": "https://www.nia.nih.gov/news/risk-and-future-burden-dementia-united-states",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-11T00:00:00+00:00",
-      "topics": [
-        "dementia"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 33,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 1,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 2,
-      "story_angles": [],
-      "raw_metadata": {
-        "summary": "NIA study reveals that nearly 42% of Americans over 55 may develop dementia, with new cases possibly doubling by 2060. Learn about the rising risk and future impact.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "saturated",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Butler-Williams Scholars Program 2026",
-      "url": "https://www.nia.nih.gov/news/butler-williams-scholars-program-2026",
-      "source_type": "institutional_rss",
-      "published_at": "2026-02-27T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 31,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "Learn about the unique opportunities the Butler-Williams Scholars Program provides for junior faculty, researchers who are new to the field of aging, and postdoctoral fellows.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15193,7 +14560,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15233,7 +14600,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15273,7 +14640,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15313,7 +14680,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15353,7 +14720,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15393,7 +14760,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15433,87 +14800,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Research training spotlight: NIA funding enables researcher-mentor to “pay it forward”",
-      "url": "https://www.nia.nih.gov/news/research-training-spotlight-nia-funding-enables-researcher-mentor-pay-it-forward",
-      "source_type": "institutional_rss",
-      "published_at": "2025-06-02T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 31,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "Read about how renowned researcher María J. Marquine, Ph.D.'s helps clinicians understand cognitive differences in aging across populations.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "NIA Experimental Aging Research Training Course",
-      "url": "https://www.nia.nih.gov/news/nia-experimental-aging-research-training-course-2025",
-      "source_type": "institutional_rss",
-      "published_at": "2025-05-23T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 31,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 1,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "Apply by July 11, 2025, for the Annual Summer Training Course in Experimental Aging Research on Sep. 8-12, 2025, which will provide exposure to research programs in the experimental biology of aging.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15553,7 +14840,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15593,7 +14880,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15633,7 +14920,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15673,7 +14960,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15713,7 +15000,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15753,7 +15040,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15793,127 +15080,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Timeframe of 8-hour restricted eating irrelevant to weight loss",
-      "url": "https://www.nia.nih.gov/news/timeframe-8-hour-restricted-eating-irrelevant-weight-loss",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-06T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 28,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "European adults with obesity who limited eating to any of three 8-hour window timeframes each day lost weight and improved cardiometabolic health.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "A mother’s X chromosome affects learning and memory in later life",
-      "url": "https://www.nia.nih.gov/news/mothers-x-chromosome-affects-learning-and-memory-later-life",
-      "source_type": "institutional_rss",
-      "published_at": "2025-03-04T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 28,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "A mother’s X chromosomes may turn off key genes, accelerate brain cell aging process, and impair learning and memory later in life.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nia-news",
-      "title": "Scientists develop improved mouse model for studying systemic aging-related health decline",
-      "url": "https://www.nia.nih.gov/news/scientists-develop-improved-mouse-model-studying-systemic-aging-related-health-decline",
-      "source_type": "institutional_rss",
-      "published_at": "2025-02-25T00:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 28,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "summary": "NIA scientists developed an improved mouse model to study aging-related health decline, revealing how inflammation drives organ damage.",
-        "feed_url": "https://www.nia.nih.gov/news/rss.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -15953,7 +15120,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:21:27.878672+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     }
