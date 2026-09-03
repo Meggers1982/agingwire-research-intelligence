@@ -135,7 +135,7 @@ python -m http.server 8000 -d docs
 | --- | --- | --- |
 | `CENSUS_API_KEY` | Yes, for the ACS monitor | The census source errors with an explicit message. Free key: <https://api.census.gov/data/key_signup.html> |
 | `BLS_API_KEY` | Optional | The BLS collector falls back to the unregistered rate limit |
-| `ANTHROPIC_API_KEY` | Optional | The editorial sections stay deterministic instead of being written by Claude |
+| `ANTHROPIC_API_KEY` | Optional | The editorial sections stay deterministic instead of being written by Claude. Needs the `llm` extra installed too — the daily workflow installs `".[dev,llm]"` |
 
 ## The dashboard
 
@@ -154,7 +154,7 @@ Jump links, a light/dark toggle, `.docx` export and `.csv` export are on every r
 
 The pitch, story ideas and trends are **derived from the run's own data** by `synthesis.py` — clustering, coverage state, dates and real figures. No model is required and nothing is invented.
 
-When `ANTHROPIC_API_KEY` is present, `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version and the run's facts as its only input. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch. Pass `--no-llm` to force the deterministic path.
+When `ANTHROPIC_API_KEY` is present **and the `llm` extra is installed** (`pip install -e ".[llm]"`), `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version and the run's facts as its only input. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch — including *why* it stayed deterministic, so a key set without the SDK installed does not look identical to no key at all. Pass `--no-llm` to force the deterministic path.
 
 ## What gets committed
 

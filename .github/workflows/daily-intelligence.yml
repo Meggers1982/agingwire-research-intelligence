@@ -40,7 +40,7 @@ jobs:
           python-version: '3.12'
           cache: pip
       - name: Install dependencies
-        run: pip install -r requirements.txt -e ".[dev]"
+        run: pip install -r requirements.txt -e ".[dev,llm]"
       - name: Run tests
         run: python -m pytest -q
       - name: Run intelligence pipeline

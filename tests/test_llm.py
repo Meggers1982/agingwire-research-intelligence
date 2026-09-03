@@ -38,24 +38,35 @@ class AvailabilityTests(unittest.TestCase):
     def test_unavailable_without_a_key(self):
         with mock.patch.dict("os.environ", {"ANTHROPIC_API_KEY": ""}, clear=False):
             self.assertFalse(llm.available())
+            self.assertIn("ANTHROPIC_API_KEY", llm.unavailable_reason())
 
     def test_unavailable_when_the_sdk_is_missing(self):
+        """A key set with the SDK missing must not look like no key at all."""
         with mock.patch.dict("os.environ", {"ANTHROPIC_API_KEY": "sk-test"}, clear=False), \
              mock.patch.dict("sys.modules", {"anthropic": None}):
             self.assertFalse(llm.available())
+            self.assertIn("anthropic SDK is not installed", llm.unavailable_reason())
+
+    def test_available_with_key_and_sdk(self):
+        with mock.patch.dict("os.environ", {"ANTHROPIC_API_KEY": "sk-test"}, clear=False), \
+             mock.patch.dict("sys.modules", {"anthropic": mock.Mock()}):
+            self.assertIsNone(llm.unavailable_reason())
 
 
 class FallbackTests(unittest.TestCase):
     """A synthesis failure must never cost the run its editorial sections."""
 
-    def test_returns_deterministic_untouched_when_unavailable(self):
-        with mock.patch.object(llm, "available", return_value=False):
-            self.assertEqual(llm.upgrade_synthesis(PAYLOAD, DETERMINISTIC), DETERMINISTIC)
+    def test_keeps_deterministic_text_and_says_why_when_unavailable(self):
+        with mock.patch.object(llm, "unavailable_reason", return_value="ANTHROPIC_API_KEY is not set"):
+            out = llm.upgrade_synthesis(PAYLOAD, DETERMINISTIC)
+        self.assertEqual(out["feature_pitch_raw"], DETERMINISTIC["feature_pitch_raw"])
+        self.assertEqual(out["synthesis_mode"], "deterministic")
+        self.assertIn("ANTHROPIC_API_KEY is not set", out["synthesis_note"])
 
     def test_api_error_keeps_deterministic_text(self):
         client = mock.Mock()
         client.messages.create.side_effect = RuntimeError("503 upstream")
-        with mock.patch.object(llm, "available", return_value=True), \
+        with mock.patch.object(llm, "unavailable_reason", return_value=None), \
              mock.patch.dict("sys.modules", {"anthropic": mock.Mock(Anthropic=lambda: client)}):
             out = llm.upgrade_synthesis(PAYLOAD, DETERMINISTIC)
         self.assertEqual(out["feature_pitch_raw"], DETERMINISTIC["feature_pitch_raw"])
@@ -65,7 +76,7 @@ class FallbackTests(unittest.TestCase):
     def test_malformed_json_keeps_deterministic_text(self):
         client = mock.Mock()
         client.messages.create.return_value = fake_response("not json at all")
-        with mock.patch.object(llm, "available", return_value=True), \
+        with mock.patch.object(llm, "unavailable_reason", return_value=None), \
              mock.patch.dict("sys.modules", {"anthropic": mock.Mock(Anthropic=lambda: client)}):
             out = llm.upgrade_synthesis(PAYLOAD, DETERMINISTIC)
         self.assertEqual(out["synthesis_mode"], "deterministic")
@@ -74,7 +85,7 @@ class FallbackTests(unittest.TestCase):
     def test_refusal_keeps_deterministic_text(self):
         client = mock.Mock()
         client.messages.create.return_value = fake_response("{}", stop_reason="refusal")
-        with mock.patch.object(llm, "available", return_value=True), \
+        with mock.patch.object(llm, "unavailable_reason", return_value=None), \
              mock.patch.dict("sys.modules", {"anthropic": mock.Mock(Anthropic=lambda: client)}):
             out = llm.upgrade_synthesis(PAYLOAD, DETERMINISTIC)
         self.assertEqual(out["feature_pitch_raw"], DETERMINISTIC["feature_pitch_raw"])
@@ -91,7 +102,7 @@ class SuccessTests(unittest.TestCase):
         }))
 
     def _run(self):
-        with mock.patch.object(llm, "available", return_value=True), \
+        with mock.patch.object(llm, "unavailable_reason", return_value=None), \
              mock.patch.dict("sys.modules", {"anthropic": mock.Mock(Anthropic=lambda: self.client)}):
             return llm.upgrade_synthesis(PAYLOAD, DETERMINISTIC)
 

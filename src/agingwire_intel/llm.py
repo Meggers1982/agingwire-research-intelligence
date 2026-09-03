@@ -59,14 +59,24 @@ SCHEMA = {
 }
 
 
-def available() -> bool:
+def unavailable_reason() -> str | None:
+    """Why the LLM path cannot run, or None if it can.
+
+    Returning a reason rather than a bare False matters: a key set in the repo
+    with the SDK missing from the install looks identical to no key at all, and
+    the run just quietly stays deterministic.
+    """
     if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
-        return False
+        return "ANTHROPIC_API_KEY is not set"
     try:
         import anthropic  # noqa: F401
     except ImportError:
-        return False
-    return True
+        return "the anthropic SDK is not installed (pip install -e '.[llm]')"
+    return None
+
+
+def available() -> bool:
+    return unavailable_reason() is None
 
 
 def _facts(payload: dict, previous: dict | None) -> str:
@@ -125,8 +135,9 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
     the API key is missing, the SDK is absent, the call fails, or the model
     declines — so a run never depends on this succeeding.
     """
-    if not available():
-        return deterministic
+    reason = unavailable_reason()
+    if reason:
+        return {**deterministic, "synthesis_note": f"LLM synthesis skipped: {reason}"}
 
     try:
         import anthropic
