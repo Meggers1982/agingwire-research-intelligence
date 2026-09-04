@@ -373,6 +373,7 @@ COMPETITIVE = {
     "unmonitored": "Unknown — no monitored publisher covers this beat.",
     "light": "One or two monitored publishers have touched it.",
     "saturated": "Already well covered; needs an original angle to be worth it.",
+    "reference": "Reference data — a refreshed file, so no coverage claim applies either way.",
 }
 
 

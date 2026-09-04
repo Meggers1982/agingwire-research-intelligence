@@ -19,7 +19,7 @@ The daily GitHub Actions workflow runs at 12:15 UTC and whenever relevant code/c
 5. Scores each candidate 0-100 across nine weighted components, including novelty against previous runs.
 6. Generates B2B/B2C/localization story-angle prompts.
 7. Clusters the run's evidence by topic and builds the editorial layer: a feature pitch, per-item story ideas, and trends versus the previous run.
-8. Writes `outputs/latest.json`, a dated snapshot, `outputs/latest.md`, and a run record in the dashboard's run database.
+8. Writes `outputs/latest.json`, a dated snapshot, the digest at `outputs/latest.md`, the full ranking at `outputs/latest-inventory.md`, and a run record in the dashboard's run database.
 9. Rebuilds the browsable static dashboard in `docs/`.
 10. Runs the test suite and commits generated intelligence and run state back to the repo.
 
@@ -49,6 +49,47 @@ user agent, which is enough for hosts that filter on the string alone.
 ### Sources reached by API rather than scraping
 
 `www.bls.gov` and `www.ssa.gov` return 403 to automated requests regardless of user agent, and `www.cms.gov/newsroom` is JavaScript-rendered with no feed. Those signals come through `api.bls.gov`, the Federal Register API and the CMS provider-data metastore instead. Sources with no machine-readable route at all are listed under `unresolved` in `config/monitors.yml` rather than left as permanently empty monitors.
+
+## The digest leads with the writing, not the ranking
+
+The digest used to open with twenty-five fully rendered candidates and reach the
+feature pitch at line 455 of 561 — so the only prose in the file sat below four
+hundred lines of scoring telemetry, and a reader met the pipeline's arithmetic
+before its argument. The order is now pitch, story ideas, trends, anything new
+since the last run, then the ranking as a collapsed table. Per-item detail moved
+to `outputs/latest-inventory.md`, which nothing has to scroll past.
+
+The templated "Potential angles" bullets no longer print. They are keyed on
+topic and source type, so every item on a beat carried the same lines — the
+nineteen CMS files in one run repeated an identical five-bullet block nineteen
+times. They stay in the JSON, where the dashboard filters on them.
+
+A run with nothing new says so instead of reprinting yesterday's ranking. Two
+consecutive digests were byte-identical for their first twenty items while the
+header read "0 new since the last run".
+
+### One release is one entry
+
+CMS reissues its nursing home oversight file family in a single pass. Every file
+scores in the low seventies for the same structural reasons, so the ranking
+spent its top nineteen slots on one event and pushed the HUD and BLS items off
+the page. `grouping.py` collapses a release — three or more catalog records
+sharing a source and a title prefix — into one entry at its strongest member's
+rank, with the files nested underneath.
+
+Only catalog records group. The BLS series all begin `BLS:` too, but each is a
+different number for a different sector, so a shared prefix alone is not enough:
+the items must carry `record_type: dataset`, which marks a file from a drop
+rather than a measurement.
+
+### A refreshed file is not an uncovered story
+
+Scoring gave every CMS dataset a full coverage-gap bonus because no monitored
+publisher ran a headline matching its name. No publisher ever will — "Citation
+Code Look-up" is a file, not a story — so the test was measuring nothing and
+handing out two free weighted points. Reference records now score neutral and
+carry a `reference` coverage state, which the digest, the dashboard and the
+model prompt all describe as what it is rather than as a gap.
 
 ## The pitch is a worksheet unless a model writes it
 

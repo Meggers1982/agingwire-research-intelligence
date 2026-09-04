@@ -77,6 +77,9 @@ def collect_cms_datasets(days: int = 45, limit: int = 25) -> list[EvidenceItem]:
                 summary=description[:1200] or None,
                 localizable=True,
                 raw_metadata={
+                    # Scoring reads this: a refreshed file is a lead, but it is
+                    # not an event, so the coverage-gap test does not apply.
+                    "record_type": "dataset",
                     "dataset_id": identifier,
                     "modified": modified,
                     "next_update": entry.get("nextUpdateDate"),

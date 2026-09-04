@@ -86,6 +86,8 @@ def _angles(item, coverage_state: str, is_new: bool) -> list[str]:
         angles.append("Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.")
     elif coverage_state == "unmonitored":
         angles.append("Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.")
+    elif coverage_state == "reference":
+        angles.append("Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.")
     return angles
 
 

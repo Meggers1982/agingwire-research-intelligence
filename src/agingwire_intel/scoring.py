@@ -135,17 +135,31 @@ def _source_quality(item) -> int:
     return 2
 
 
-def _coverage_gap(b2b: int, b2c: int, monitored: bool) -> tuple[int, str]:
+def is_reference_record(item) -> bool:
+    """A catalog entry for a data file, rather than something that happened.
+
+    The CMS collector emits one item per refreshed provider-data file. Those are
+    real leads, but they are not events, and no publisher will ever run a
+    headline matching "Citation Code Look-up" -- so scoring them a confirmed
+    coverage gap measures nothing and hands them two free weighted points.
+    """
+    meta = (item.get("raw_metadata") if isinstance(item, dict) else item.raw_metadata) or {}
+    return meta.get("record_type") == "dataset"
+
+
+def _coverage_gap(b2b: int, b2c: int, monitored: bool, reference: bool = False) -> tuple[int, str]:
     """Score the gap only when the topic is actually being monitored.
 
     89 of 132 registry publishers had no working feed, so "zero coverage" mostly
     meant "not watched". Claiming a coverage gap on that basis is misleading.
+    Reference records get the same neutral treatment for a different reason:
+    absence of a title-level match is not evidence of anything about them.
     """
     if not monitored:
         return 2, "unmonitored"
     total = b2b + b2c
     if total == 0:
-        return 5, "gap"
+        return (2, "reference") if reference else (5, "gap")
     if total <= 2:
         return 3, "light"
     return 1, "saturated"
@@ -186,7 +200,9 @@ def score_evidence(
     the ranking is unchanged when no Trends snapshot is available.
     """
     topics = set(item.topics or [])
-    gap, coverage_state = _coverage_gap(b2b_coverage, b2c_coverage, monitored)
+    gap, coverage_state = _coverage_gap(
+        b2b_coverage, b2c_coverage, monitored, reference=is_reference_record(item)
+    )
     components = {
         "priority": _priority(topics),
         "novelty": _novelty(history),

@@ -65,6 +65,21 @@ class ScoreEvidenceTests(unittest.TestCase):
         self.assertEqual(unknown_state, "unmonitored")
         self.assertGreater(gap, unknown)
 
+    def test_a_refreshed_dataset_is_not_a_coverage_gap(self):
+        """No outlet runs a headline matching "Citation Code Look-up"."""
+        dataset = item(topics=["caregiving"], raw_metadata={"record_type": "dataset"})
+        event = item(topics=["caregiving"])
+        ref, _, ref_state = score_evidence(dataset, 0, 0, monitored=True)
+        gap, _, gap_state = score_evidence(event, 0, 0, monitored=True)
+        self.assertEqual(ref_state, "reference")
+        self.assertEqual(gap_state, "gap")
+        self.assertLess(ref, gap)
+
+    def test_a_covered_dataset_still_reports_real_coverage(self):
+        dataset = item(topics=["caregiving"], raw_metadata={"record_type": "dataset"})
+        _, _, state = score_evidence(dataset, 3, 4, monitored=True)
+        self.assertEqual(state, "saturated")
+
     def test_saturated_coverage_scores_below_a_real_gap(self):
         gap, _, _ = score_evidence(item(topics=["caregiving"]), 0, 0, monitored=True)
         covered, _, state = score_evidence(item(topics=["caregiving"]), 3, 4, monitored=True)

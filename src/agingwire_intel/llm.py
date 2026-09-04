@@ -37,6 +37,8 @@ Hard rules:
 - Be specific and concrete. Cite the actual numbers and source names from the input.
 - A coverage_state of "unmonitored" means we are not watching any publisher on that \
   beat. It does NOT mean nobody has covered it. Never describe it as a gap.
+- A coverage_state of "reference" is a refreshed public data file, not an event. No \
+  outlet would run a headline matching its name, so never call it uncovered or a gap.
 - Several sources touching one topic is NOT convergence. Each cluster carries a \
   "coheres" flag: when it is false the items share a tag and nothing else, so \
   call it the busiest beat and say plainly that it is not one story. Only when \
