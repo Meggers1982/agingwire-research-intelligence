@@ -191,7 +191,13 @@ def tdz_offenders(js: str) -> list[str]:
 
 
 class TemporalDeadZoneTests(unittest.TestCase):
-    """A blank page in the browser and a green pipeline in CI, without this."""
+    """A static backstop for when node is unavailable.
+
+    test_dashboard_render.py executes the script and catches this properly,
+    with the browser's own error message. This check is the one that still
+    runs when node is missing, and it names the call site and the declaration
+    line directly, which a stack trace does not.
+    """
 
     def test_the_check_catches_the_shape_that_broke_the_dashboard(self):
         broken = """
