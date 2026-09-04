@@ -70,10 +70,17 @@ told explicitly that a source count is a statistic, not a pattern.
 ### Outlets come from the registry
 
 The research digest names outlets from the model's general knowledge. This repo
-monitors 132 of them with beats and tiers, so `outlets.py` suggests from that
-list, splits consumer and trade, and excludes any publisher the Google News
-check already found reporting the item — pitching a story to the outlet that
-just ran it is the one suggestion guaranteed to be wrong.
+has the prospecting databases, so `outlets.py` matches a story's topics against
+what each publication *says it covers* — the `Core Coverage` column — using the
+taxonomy's own synonym bundles, the same terms that tag the evidence. Results
+are ranked on relevance, then `Data-Story Fit`, then tier, and each carries the
+`Why It Matters / Pitch Angle` note from the workbook.
+
+Any publication in the registry is a candidate. A missing RSS feed only
+disqualifies an outlet from *monitoring*, not from being pitched. Publishers the
+Google News check already found reporting the item are excluded — pitching a
+story to the outlet that just ran it is the one suggestion guaranteed to be
+wrong.
 
 ## Convergence versus a busy beat
 

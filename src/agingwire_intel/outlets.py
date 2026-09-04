@@ -4,35 +4,24 @@ import csv
 import re
 from functools import lru_cache
 
-# senior-research-digest names outlets from the model's general knowledge. This
-# repo already monitors 132 of them with tiers and beats, so its outlet
-# suggestions can come from the registry -- and can say which have not touched
-# the story yet.
+from agingwire_intel.topics import expanded_terms
+
+# The prospecting workbooks carry a Core Coverage list and a written pitch
+# rationale per outlet. The CSV export had dropped both, so matching ran on
+# hand-written category guesses instead of what each publication says it covers.
 B2C_PATH = "config/media/b2c_publications.csv"
 B2B_PATH = "config/media/b2b_publications.csv"
 TIER_RANK = {"Tier 1": 0, "Tier 2": 1, "Tier 3": 2, "Tier 4": 3, "Watchlist": 4}
+# Taxonomy synonym bundles include narrow clinical terms that match nothing in a
+# publication's coverage blurb, and short ones that match everything.
+MIN_TERM_LEN = 5
 
-# Registry categories are free text ("Women 60+ lifestyle", "Senior housing real
-# estate"), so topics map onto them by keyword.
-TOPIC_CATEGORY_HINTS = {
-    "caregiving": ["caregiv", "family", "dementia"],
-    "medicare_medicaid": ["policy", "health", "medicare", "insurance", "finance"],
-    "housing": ["housing", "real estate", "senior living", "home"],
-    "aging_in_place": ["home", "housing", "lifestyle", "caregiv"],
-    "assisted_living": ["senior living", "senior housing", "association"],
-    "long_term_care": ["senior living", "skilled nursing", "long-term", "post-acute", "health"],
-    "senior_living_quality": ["senior living", "skilled nursing", "quality", "association"],
-    "workforce": ["workforce", "hr", "staffing", "senior living", "health"],
-    "financial_security": ["finance", "retirement", "money", "advisor"],
-    "fraud_scams": ["finance", "consumer", "retirement", "journalism"],
-    "loneliness_social_connection": ["lifestyle", "journalism", "caregiv", "wellness"],
-    "age_tech": ["tech", "innovation", "digital", "age tech"],
-    "transportation": ["mobility", "lifestyle", "government"],
-    "food_security": ["food", "dining", "nutrition", "nonprofit"],
-    "elder_abuse": ["policy", "journalism", "nonprofit", "government"],
-    "rural_aging": ["government", "policy", "journalism"],
-    "palliative_hospice": ["hospice", "health", "senior living", "skilled nursing"],
-}
+
+def _int(value) -> int:
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return 0
 
 
 @lru_cache(maxsize=4)
@@ -44,56 +33,74 @@ def _load(path: str, audience: str) -> tuple[dict, ...]:
                 name = (row.get("Publication") or "").strip()
                 if not name:
                     continue
-                try:
-                    score = int(row.get("Total Score") or 0)
-                except (TypeError, ValueError):
-                    score = 0
                 rows.append({
                     "publisher": name,
                     "audience": audience,
                     "category": (row.get("Category") or "").strip(),
+                    "coverage": (row.get("Core Coverage") or "").strip(),
+                    "reader": (row.get("Primary Audience") or "").strip(),
+                    "rationale": (row.get("Why It Matters / Pitch Angle") or "").strip(),
                     "tier": (row.get("Priority Tier") or "").strip(),
-                    "score": score,
+                    "score": _int(row.get("Total Score")),
+                    "data_fit": _int(row.get("Data-Story Fit (1-5)")),
+                    "syndication": _int(row.get("Syndication Likelihood (1-5)")),
                 })
     except OSError:
         return ()
     return tuple(rows)
 
 
-def _matches(row: dict, hints: list[str]) -> bool:
-    blob = f"{row['category']} {row['publisher']}".lower()
-    return any(h in blob for h in hints)
+@lru_cache(maxsize=64)
+def _terms(topic: str) -> tuple[str, ...]:
+    """Match on the taxonomy's own synonym bundle, the same terms that tag evidence."""
+    terms = {t.lower() for t in expanded_terms(topic) if len(t) >= MIN_TERM_LEN}
+    return tuple(sorted(terms))
+
+
+def _relevance(row: dict, topics) -> int:
+    blob = f"{row['coverage']} {row['category']} {row['publisher']}".lower()
+    hits = 0
+    for topic in topics or []:
+        if any(term in blob for term in _terms(topic)):
+            hits += 1
+    return hits
 
 
 def suggest(topics, audience: str, limit: int = 3, exclude: set[str] | None = None,
             b2c_path: str = B2C_PATH, b2b_path: str = B2B_PATH) -> list[dict]:
-    """Registry outlets that fit these topics, best tier first.
+    """Publications whose stated coverage fits these topics.
 
-    `exclude` drops publishers already found covering the story — pitching a
-    piece to the outlet that just ran it is the one suggestion guaranteed to be
-    wrong.
+    Ranked on relevance first, then how well the outlet takes a data story, then
+    tier. `exclude` drops publishers already found reporting it — pitching to
+    the outlet that just ran the story is the one suggestion guaranteed wrong.
     """
-    path = b2c_path if audience == "b2c" else b2b_path
-    rows = _load(path, audience)
+    rows = _load(b2c_path if audience == "b2c" else b2b_path, audience)
     if not rows:
         return []
-    hints: list[str] = []
-    for topic in topics or []:
-        hints.extend(TOPIC_CATEGORY_HINTS.get(topic, []))
     excluded = {e.lower() for e in (exclude or set())}
+    scored = []
+    for row in rows:
+        if row["publisher"].lower() in excluded:
+            continue
+        scored.append((_relevance(row, topics), row))
 
-    candidates = [r for r in rows if r["publisher"].lower() not in excluded]
-    matched = [r for r in candidates if hints and _matches(r, hints)]
-    # A tier-1 general outlet beats no suggestion at all when nothing matches.
-    pool = matched or [r for r in candidates if TIER_RANK.get(r["tier"], 9) <= 1]
-    pool.sort(key=lambda r: (TIER_RANK.get(r["tier"], 9), -r["score"], r["publisher"]))
-    return pool[:limit]
+    matched = [(n, r) for n, r in scored if n > 0]
+    # A strong general title beats no suggestion when nothing matches on coverage.
+    pool = matched or [(0, r) for _, r in scored if TIER_RANK.get(r["tier"], 9) <= 1]
+    pool.sort(key=lambda pair: (
+        -pair[0], -pair[1]["data_fit"], TIER_RANK.get(pair[1]["tier"], 9),
+        -pair[1]["score"], pair[1]["publisher"],
+    ))
+    return [r for _, r in pool[:limit]]
 
 
-def describe(row: dict) -> str:
+def describe(row: dict, with_reason: bool = True) -> str:
     tier = f", {row['tier']}" if row["tier"] else ""
-    category = row["category"] or ("consumer" if row["audience"] == "b2c" else "trade")
-    return f"{row['publisher']} — {category}{tier}"
+    beat = row["coverage"] or row["category"] or ("consumer" if row["audience"] == "b2c" else "trade")
+    text = f"{row['publisher']} — {beat}{tier}"
+    if with_reason and row.get("rationale"):
+        text += f". {row['rationale']}"
+    return text
 
 
 def covered_by(item: dict) -> set[str]:
@@ -106,7 +113,5 @@ _WS = re.compile(r"\s+")
 
 
 def headline_from(title: str, limit: int = 90) -> str:
-    """A plain-language working headline seeded on the item title."""
     text = _WS.sub(" ", re.sub(r"\([^)]*\)", "", title or "")).strip(" ;,-—")
-    text = re.split(r"[;:]", text)[0].strip()
-    return text[:limit].rstrip(" ,;-—")
+    return re.split(r"[;:]", text)[0].strip()[:limit].rstrip(" ,;-—")
