@@ -152,12 +152,21 @@ state/
   feed_discovery.json        cached publisher feed discovery
 src/agingwire_intel/
   collectors/                one module per source family
-  http.py                    shared user agent, retries and 403 fallback
-  synthesis.py               clustering, feature pitch, story ideas, trends
+  pipeline.py                collection, scoring and payload assembly
+  http.py                    shared user agent, retries and 403/405 fallback
+  matching.py                shared title-similarity test and US date formatting
+  scoring.py                 the weighted 0-100 model
+  synthesis.py               clustering, pitch worksheet, story ideas, trends
   llm.py                     optional Claude rewrite of the editorial sections
+  serpapi.py                 SerpAPI client with a per-run call budget
+  demand.py                  Google Trends search interest, cached weekly
+  web_coverage.py            Google News check on the top-scoring items
+  outlets.py                 pitch targets from the publisher registry
   runs.py                    run database writer (index + per-run records)
+  state.py                   run-to-run memory behind the novelty score
+  media.py                   publisher feed collection and discovery
+  digest.py / weekly.py      markdown digest and weekly rollup
   templates/dashboard.html   dashboard markup
-  ...
 tests/
 ```
 
