@@ -35,6 +35,11 @@ Hard rules:
 - Be specific and concrete. Cite the actual numbers and source names from the input.
 - A coverage_state of "unmonitored" means we are not watching any publisher on that \
   beat. It does NOT mean nobody has covered it. Never describe it as a gap.
+- Several sources touching one topic is NOT convergence. Each cluster carries a \
+  "coheres" flag: when it is false the items share a tag and nothing else, so \
+  call it the busiest beat and say plainly that it is not one story. Only when \
+  it is true may you say sources converged, landed on the same story, or \
+  reached it independently.
 - A coverage_state of "gap" means monitored publishers do cover that beat and none \
   matched the item. That is a real opportunity and can be described as one.
 
@@ -96,7 +101,9 @@ def _facts(payload: dict, previous: dict | None) -> str:
     clusters = build_clusters(payload.get("evidence", []))
     slim_clusters = [
         {
-            "topic": c["topic"],
+            "topic": c["label"],
+            "coheres": c["coheres"],
+            "cohesion": c["cohesion"],
             "sources": c["sources"],
             "item_count": c["item_count"],
             "gap_count": c["gap_count"],

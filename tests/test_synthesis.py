@@ -171,3 +171,97 @@ class AudienceAngleTests(unittest.TestCase):
         angles = _angles(ev, "gap", False)
         self.assertTrue(angles[0].startswith("For readers:"), angles)
         self.assertTrue(any(a.startswith("For the trade:") for a in angles))
+
+
+class CohesionTests(unittest.TestCase):
+    """A topic several sources merely touched is a beat, not a convergence.
+
+    Measured on a real run: the medicare_medicaid cluster had 9 sources and 30
+    items with mean pairwise title overlap of 0.046, sharing only the words
+    "medicare" and "medicaid", across a five-month span — and the pitch called
+    it "9 unrelated sources converged without coordination".
+    """
+
+    def test_topic_co_occurrence_does_not_cohere(self):
+        loose = [
+            item("Medicaid coverage for women", "s1", ["medicare_medicaid"]),
+            item("Medicare payment advisory for clinicians", "s2", ["medicare_medicaid"]),
+            item("CMS refreshed dataset: medical equipment suppliers", "s3", ["medicare_medicaid"]),
+        ]
+        self.assertFalse(build_clusters(loose, NOW)[0]["coheres"])
+
+    def test_the_same_story_from_several_sources_coheres(self):
+        tight = [
+            item("Nursing home staffing shortages persist in rural counties", "s1", ["workforce"]),
+            item("Rural counties still face nursing home staffing shortages", "s2", ["workforce"]),
+            item("Nursing home staffing shortages deepen across rural counties", "s3", ["workforce"]),
+        ]
+        self.assertTrue(build_clusters(tight, NOW)[0]["coheres"])
+
+    def test_stale_items_are_excluded_from_clusters(self):
+        """A six-month span is not a convergence window."""
+        mixed = [
+            item("Nursing home staffing shortages persist", "s1", ["workforce"], days_ago=2),
+            item("Nursing home staffing shortages persist", "s2", ["workforce"], days_ago=200),
+        ]
+        self.assertEqual(build_clusters(mixed, NOW), [])
+
+    def test_a_loose_cluster_is_not_called_a_convergence(self):
+        loose = [
+            item("Medicaid coverage for women", "s1", ["medicare_medicaid"]),
+            item("Medicare payment advisory for clinicians", "s2", ["medicare_medicaid"]),
+        ]
+        text = render_feature_pitch(build_clusters(loose, NOW), NOW)
+        self.assertIn("busiest beat", text)
+        self.assertNotIn("convergence", text)
+
+    def test_a_tight_cluster_is_called_a_convergence(self):
+        tight = [
+            item("Nursing home staffing shortages persist in rural counties", "s1", ["workforce"]),
+            item("Rural counties still face nursing home staffing shortages", "s2", ["workforce"]),
+        ]
+        self.assertIn("convergence", render_feature_pitch(build_clusters(tight, NOW), NOW))
+
+
+class RenderingDetailTests(unittest.TestCase):
+    def test_topic_labels_read_as_prose(self):
+        from agingwire_intel.synthesis import _label
+        self.assertEqual(_label("medicare_medicaid"), "Medicare and Medicaid")
+        self.assertEqual(_label("long_term_care"), "long-term care")
+        self.assertEqual(_label("workforce"), "workforce")
+
+    def test_one_day_is_singular(self):
+        from agingwire_intel.synthesis import _plural
+        self.assertEqual(_plural(1, "day"), "1 day")
+        self.assertEqual(_plural(3, "day"), "3 days")
+
+    def test_runaway_titles_are_trimmed(self):
+        from agingwire_intel.synthesis import MAX_TITLE_CHARS, _trim_title
+        long_title = "Medicare Program; " + "Policy Changes and Requirements " * 12
+        trimmed = _trim_title(long_title)
+        self.assertLessEqual(len(trimmed), MAX_TITLE_CHARS + 1)
+        self.assertTrue(trimmed.endswith("…"))
+
+    def test_short_titles_are_untouched(self):
+        from agingwire_intel.synthesis import _trim_title
+        self.assertEqual(_trim_title("CMS refreshed dataset: Utilization Data"),
+                         "CMS refreshed dataset: Utilization Data")
+
+    def test_a_finding_that_restates_the_title_is_dropped(self):
+        from agingwire_intel.synthesis import _evidence_line
+        line = _evidence_line({
+            "source_id": "bls-api",
+            "title": "BLS: Home health employment, July 2026 — 1,886.10 thousands of jobs",
+            "key_findings": ["July 2026: 1,886.10 thousands of jobs"],
+        })
+        self.assertEqual(line.count("1,886.10"), 1)
+
+    def test_evidence_lines_trim_runaway_titles(self):
+        """The truncation has to be wired into the renderer, not just defined."""
+        from agingwire_intel.synthesis import MAX_TITLE_CHARS, _evidence_line
+        line = _evidence_line({
+            "source_id": "federal-register",
+            "title": "Medicare Program; " + "Policy Changes and Requirements " * 12,
+        })
+        self.assertIn("…", line)
+        self.assertLess(len(line), MAX_TITLE_CHARS + 60)

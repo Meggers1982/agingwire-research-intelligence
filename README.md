@@ -50,6 +50,25 @@ user agent, which is enough for hosts that filter on the string alone.
 
 `www.bls.gov` and `www.ssa.gov` return 403 to automated requests regardless of user agent, and `www.cms.gov/newsroom` is JavaScript-rendered with no feed. Those signals come through `api.bls.gov`, the Federal Register API and the CMS provider-data metastore instead. Sources with no machine-readable route at all are listed under `unresolved` in `config/monitors.yml` rather than left as permanently empty monitors.
 
+## Convergence versus a busy beat
+
+Topic co-occurrence is not a story. Measured on a real run, the
+`medicare_medicaid` cluster had 9 sources and 30 items spanning five months
+with a mean pairwise title overlap of **0.046** — they shared the words
+"medicare" and "medicaid" and nothing else — and the pitch called it "9
+unrelated sources converged without coordination".
+
+Clusters are now bounded to a 45-day window and carry a `cohesion` score. Above
+the floor, the pitch may say sources converged; below it, the section is headed
+**the busiest beat** and states that the items do not describe one story.
+Cohesion also leads the cluster ranking, so a tight three-source cluster
+outranks a sprawling nine-source one. The LLM prompt is given the same flag and
+the same rule, or it re-inflates the claim in prose.
+
+This is the third place the same lesson had to be applied — registry coverage
+matching, the Google News check, and now clustering all needed a title-level
+test rather than a shared tag.
+
 ## A source cannot cover itself
 
 NIA and NIC are both evidence monitors and entries in the publisher registry — an
@@ -150,7 +169,7 @@ python -m http.server 8000 -d docs
 
 `docs/index.html` is a browsable archive rather than a single snapshot. The sidebar lists every run ever generated, searchable and filterable by topic; selecting one loads its record from `docs/data/runs/<date>.json`. Each run page carries:
 
-- **Feature pitch** — the strongest cross-source convergence in that run, with the specific evidence named.
+- **Feature pitch** — the strongest cluster in that run, with the specific evidence named. A cluster is only called a *convergence* when its items actually cohere; when several sources merely touch the same topic it is labelled the **busiest beat** and says plainly that it is not one story. See below.
 - **Story ideas** — per-item cards carrying a hook, then two audience angles, then the craft and competitive notes. Sources are rotated so adjacent ideas never come from the same feed.
 
 ### Consumer first, then trade

@@ -4,13 +4,37 @@ import re
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 
-from agingwire_intel.matching import us_date
+from agingwire_intel.matching import title_similar, tokens, us_date
 from agingwire_intel.scoring import is_localizable, sub_national
 from agingwire_intel.topics import topic_priority
 
 # A cluster needs independent corroboration to be worth pitching: two items from
 # the same feed is one source's news judgement, not a convergence.
 MIN_CLUSTER_SOURCES = 2
+# A cluster spanning six months is a beat, not a convergence.
+CLUSTER_WINDOW_DAYS = 45
+# Mean pairwise title overlap. Measured on a real run, the medicare_medicaid
+# cluster scored 0.046 while sharing nothing but the words "medicare" and
+# "medicaid"; the pipeline's own same-story threshold is 0.18. Below this the
+# items co-occur on a topic rather than converging on a story.
+COHESION_FLOOR = 0.10
+
+# Taxonomy keys are snake_case identifiers, not prose: "medicare_medicaid"
+# title-cased reads "Medicare Medicaid", which is not a phrase anyone writes.
+DISPLAY_NAMES = {
+    "medicare_medicaid": "Medicare and Medicaid",
+    "loneliness_social_connection": "loneliness and social connection",
+    "depression_mental_health": "depression and mental health",
+    "osteoporosis_bone_health": "osteoporosis and bone health",
+    "sarcopenia_frailty": "sarcopenia and frailty",
+    "palliative_hospice": "palliative and hospice care",
+    "migration_retirement": "retirement migration",
+    "ageism_work": "ageism at work",
+    "fraud_scams": "fraud and scams",
+    "long_term_care": "long-term care",
+    "relationships_sexuality": "relationships and sexuality",
+    "age_tech": "age tech",
+}
 MAX_PITCH_EVIDENCE = 6
 STRUCTURED_TYPES = {"government_api", "regulatory_filing"}
 
@@ -18,7 +42,16 @@ _NUMBER = re.compile(r"\$?\d[\d,]*\.?\d*\s*(?:%|percent|million|billion|thousand
 
 
 def _label(topic: str) -> str:
-    return topic.replace("_", " ")
+    return DISPLAY_NAMES.get(topic, topic.replace("_", " "))
+
+
+def _cohesion(items: list[dict]) -> float:
+    """Mean pairwise title overlap: do these items describe the same thing?"""
+    toks = [t for t in (tokens(i.get("title", "")) for i in items) if t]
+    if len(toks) < 2:
+        return 0.0
+    scores = [len(a & b) / len(a | b) for i, a in enumerate(toks) for b in toks[i + 1:]]
+    return sum(scores) / len(scores)
 
 
 def _age_days(published_at: str | None, now: datetime) -> int | None:
@@ -46,6 +79,10 @@ def build_clusters(evidence: list[dict], now: datetime | None = None) -> list[di
     now = now or datetime.now(UTC)
     by_topic: dict[str, list[dict]] = defaultdict(list)
     for item in evidence:
+        age = _age_days(item.get("published_at"), now)
+        # Undated items still count; a stale dated one does not.
+        if age is not None and age > CLUSTER_WINDOW_DAYS:
+            continue
         for topic in item.get("topics") or []:
             by_topic[topic].append(item)
 
@@ -62,10 +99,14 @@ def build_clusters(evidence: list[dict], now: datetime | None = None) -> list[di
         structured = sum(1 for i in items if i.get("source_type") in STRUCTURED_TYPES)
         localizable = sum(1 for i in items if is_localizable(i))
 
-        # Independence and an unwritten beat carry the most weight; freshness and
-        # chartability break ties.
+        cohesion = _cohesion(ranked)
+
+        # Cohesion leads: a tight three-source cluster is a better pitch than a
+        # sprawling nine-source one that shares only a tag.
         cluster_score = (
-            len(sources) * 12
+            (40 if cohesion >= COHESION_FLOOR else 0)
+            + round(cohesion * 60)
+            + len(sources) * 12
             + gaps * 6
             + new_items * 3
             + structured * 3
@@ -77,6 +118,8 @@ def build_clusters(evidence: list[dict], now: datetime | None = None) -> list[di
         clusters.append({
             "topic": topic,
             "label": _label(topic),
+            "cohesion": round(cohesion, 3),
+            "coheres": cohesion >= COHESION_FLOOR,
             "priority": topic_priority(topic),
             "cluster_score": cluster_score,
             "item_count": len(items),
@@ -119,44 +162,108 @@ def _diverse_sample(items: list[dict], limit: int, per_source: int = 2) -> list[
     return picked
 
 
+def _focus_group(items: list[dict], limit: int) -> list[dict]:
+    """The items that actually go together, seeded on the strongest one.
+
+    Falls back to the source-diverse sample when nothing coheres, so the pitch
+    still has evidence behind it — it just is not called a convergence.
+    """
+    if not items:
+        return []
+    seed, rest = items[0], items[1:]
+    related = [seed] + [i for i in rest if title_similar(seed.get("title", ""), i.get("title", ""))]
+    if len({i.get("source_id") for i in related}) >= MIN_CLUSTER_SOURCES:
+        return related[:limit]
+    return _diverse_sample(items, limit)
+
+
+MAX_TITLE_CHARS = 130
+
+
+def _plural(n: int, word: str) -> str:
+    return f"{n} {word}" if n == 1 else f"{n} {word}s"
+
+
+def _trim_title(title: str) -> str:
+    """Federal Register titles run to 300 characters of enumerated policy.
+
+    The first clause carries the subject; the rest is the table of contents.
+    """
+    title = (title or "").strip()
+    if len(title) <= MAX_TITLE_CHARS:
+        return title
+    head = title[:MAX_TITLE_CHARS]
+    for sep in ("; ", " — ", " - ", ", "):
+        cut = head.rfind(sep)
+        if cut > MAX_TITLE_CHARS // 2:
+            return head[:cut] + "…"
+    return head.rsplit(" ", 1)[0] + "…"
+
+
+def _restates(title: str, finding: str) -> bool:
+    """Whether a key finding just repeats the headline."""
+    finding_tokens = tokens(finding)
+    if not finding_tokens:
+        return True
+    return len(finding_tokens - tokens(title)) / len(finding_tokens) < 0.34
+
+
 def _evidence_line(item: dict) -> str:
-    bits = [f"**{item.get('source_id')}** — {item.get('title', '')}"]
+    bits = [f"**{item.get('source_id')}** — {_trim_title(item.get('title', ''))}"]
     published = us_date(item.get("published_at"))
     if published:
         bits.append(f"({published})")
-    findings = item.get("key_findings") or []
-    if findings and findings[0]:
+    findings = [f for f in (item.get("key_findings") or []) if f]
+    # BLS titles already carry the figure, so appending the finding printed the
+    # same number twice in one line.
+    if findings and not _restates(item.get("title", ""), str(findings[0])):
         bits.append(f"— {str(findings[0])[:180]}")
     return " ".join(bits)
 
 
 def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> str:
-    """Deterministic feature pitch built from the strongest cluster."""
+    """The strongest cluster, described as what the evidence supports.
+
+    A topic several sources merely touched is a busy beat, not a convergence;
+    calling it one puts a claim in the editor's mouth the data does not carry.
+    """
     if not clusters:
         return ""
     now = now or datetime.now(UTC)
     top = clusters[0]
-    items = _diverse_sample(top["items"], MAX_PITCH_EVIDENCE)
+    coheres = top.get("coheres", False)
+    items = (_focus_group(top["items"], MAX_PITCH_EVIDENCE) if coheres
+             else _diverse_sample(top["items"], MAX_PITCH_EVIDENCE))
+    shown_sources = len({i.get("source_id") for i in items})
 
-    coverage_clause = (
-        f"no monitored B2B or B2C publisher has matched {'any' if top['gap_count'] == top['item_count'] else 'most'} of it"
-        if top["gap_count"]
-        else f"{top['covered_count']} of these already have monitored coverage"
-    )
-    headline = (
-        f"{top['label'].title()} — {top['source_count']} independent sources this run, {coverage_clause}"
-    )
+    if coheres:
+        gap_clause = (
+            "and no monitored publisher has matched it"
+            if top["gap_count"] >= top["item_count"] - 1
+            else f"and {top['gap_count']} of {top['item_count']} show a confirmed coverage gap"
+        )
+        lines = [
+            f"**The convergence:** {shown_sources} sources landed on the same "
+            f"{top['label']} story within {CLUSTER_WINDOW_DAYS} days, {gap_clause}.",
+            "",
+        ]
+    else:
+        lines = [
+            f"**The busiest beat:** {top['label']} drew {top['item_count']} items from "
+            f"{top['source_count']} sources in the last {CLUSTER_WINDOW_DAYS} days, but they "
+            "do not describe one story — work it as a beat, not a single pitch.",
+            "",
+        ]
 
-    lines = [f"**The convergence:** {headline}", ""]
     lines.append("**Evidence on the table:**")
     lines += [f"- {_evidence_line(i)}" for i in items]
     lines.append("")
 
     why = []
     if top["newest_age_days"] is not None and top["newest_age_days"] <= 14:
-        why.append(f"the most recent item landed {top['newest_age_days']} days ago")
-    if top["source_count"] >= 3:
-        why.append(f"{top['source_count']} unrelated sources converged without coordination")
+        why.append(f"the most recent item landed {_plural(top['newest_age_days'], 'day')} ago")
+    if coheres and shown_sources >= 3:
+        why.append(f"{shown_sources} unrelated sources reached it independently")
     if top["gap_count"]:
         why.append(f"{top['gap_count']} of {top['item_count']} items show a confirmed coverage gap")
     if why:
@@ -164,8 +271,9 @@ def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> s
 
     if top["localizable_count"]:
         lines += [
-            f"**Localization:** {top['localizable_count']} of {top['item_count']} items break below the national level, "
-            "so the same reporting supports state, metro or facility-level versions.",
+            f"**Localization:** {top['localizable_count']} of {top['item_count']} items break "
+            "below the national level, so the same reporting supports state, metro or "
+            "facility-level versions.",
             "",
         ]
     if top["structured_count"]:
@@ -175,20 +283,18 @@ def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> s
             "",
         ]
 
-    runners = [c for c in clusters[1:4] if c["source_count"] >= MIN_CLUSTER_SOURCES]
+    runners = [c for c in clusters[1:5] if c.get("coheres")]
     if runners:
-        lines.append("**Also converging this run:**")
+        lines.append("**Also holding together this run:**")
         lines += [
-            f"- {c['label']} — {c['source_count']} sources, {c['item_count']} items, {c['gap_count']} with a confirmed gap"
+            f"- {c['label']} — {c['source_count']} sources, {c['item_count']} items, "
+            f"{c['gap_count']} with a confirmed gap"
             for c in runners
         ]
         lines.append("")
     return "\n".join(lines).strip()
 
 
-# Mirrors senior-research-digest's "To"/"About" split: the reader angle comes
-# first and speaks to them directly; the trade angle must be a different
-# framing, not the same sentence addressed to operators.
 CONSUMER_ANGLE = {
     "caregiving": "What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
     "medicare_medicaid": "What a beneficiary should check about their own coverage, and by when.",
