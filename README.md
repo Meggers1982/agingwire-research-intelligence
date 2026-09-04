@@ -229,6 +229,22 @@ Research/evidence sources and media/distribution sources are different things. A
 
 A gap is only claimed when the registry demonstrably watches the beat — at least three monitored articles on that topic in the window. Otherwise the item is marked `unmonitored` and scored neutrally. Absence of coverage in an unwatched beat is not evidence of an opportunity.
 
+### Watching the publishers that have no feed
+
+The limit on all of this was the registry itself: 58 of 132 publishers had no discoverable RSS, so for nearly half the registry `no coverage found` meant `nobody was looking`. Probing those publishers showed most of them are reachable by other means — 38 declare a sitemap in `robots.txt`, 31 serve one at a guessable path, 7 answer the WordPress REST API, and Google News indexes most of what is left.
+
+`media.discover_source()` tries all four in descending order of fidelity — feed, WordPress API, sitemap, Google News — and stores which route it used next to the URL in `state/feed_discovery.json`. A publisher is never watched more loosely than it has to be.
+
+The fallbacks do not all support the same claims, and the code says which is which rather than flattening them into one "watched" number:
+
+- A sitemap's `lastmod` is a **modification date**. It moves when a page is edited, so it cannot date a story. Only a sitemap carrying `<news:news>` tags gives a real publication date, and few do.
+- A sitemap gives a **URL, not a headline**. Where `<news:title>` is absent the title is reconstructed from the slug — enough to match words against, not the publisher's own wording.
+- Google News coverage is **Google's decision, not the publisher's**. `discover_source` probes with a windowless `site:` query before committing, because a domain Google does not index would otherwise be recorded as monitored and read as permanently quiet. Next Avenue and BenefitsPro both behave this way and stay unwatched.
+
+`CoverageItem.date_basis` and `CoverageItem.title_is_derived` carry that provenance downstream, and the dashboard's limits panel reports the breakdown by route.
+
+One caveat the numbers above do not capture: they were measured from a laptop. GitHub Actions runner IPs get more aggressive bot treatment — the same reason `nia-news` is already blocked there — so the recovery rate in CI will be lower than the recovery rate locally.
+
 ## Topic coverage
 
 The taxonomy includes the original clinical subjects plus the major gaps identified for AgingWire: caregiving, assisted living, aging in place, housing, loneliness/social connection, LTSS, workforce, senior-living quality, age-tech, financial security, fraud/scams, Medicare/Medicaid, rural aging, transportation, food security, retirement migration, climate resilience, ageism/work, elder abuse, oral health and more.
@@ -263,7 +279,7 @@ state/
   seen.json                  run-to-run memory, drives the novelty score
   feed_discovery.json        cached publisher feed discovery
 src/agingwire_intel/
-  collectors/                one module per source family
+  collectors/                one module per source family, plus the three coverage fallbacks
   pipeline.py                collection, scoring and payload assembly
   http.py                    shared user agent, retries and 403/405 fallback
   matching.py                shared title-similarity test and US date formatting
@@ -276,7 +292,7 @@ src/agingwire_intel/
   outlets.py                 pitch targets from the publisher registry
   runs.py                    run database writer (index + per-run records)
   state.py                   run-to-run memory behind the novelty score
-  media.py                   publisher feed collection and discovery
+  media.py                   publisher coverage collection; picks a monitoring route per publisher
   digest.py / weekly.py      markdown digest and weekly rollup
   templates/dashboard.html   dashboard markup
 tests/

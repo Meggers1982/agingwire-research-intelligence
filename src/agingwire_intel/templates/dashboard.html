@@ -837,7 +837,8 @@ async function renderMain() {
     ...empties.map(s => `<div class="health-empty">Ran but returned nothing — ${esc(s.source)} (${esc(s.method)})</div>`),
     (!errors.length && !empties.length) ? '<div class="health-ok">All evidence sources returned items.</div>' : "",
     `<div style="margin-top:8px; color: var(--muted); font-size: 0.82rem;">
-      Publisher feeds: ${media.ok || 0} working, ${media.error || 0} error, ${media.no_feed || 0} with no feed found.</div>`,
+      Publishers: ${media.ok || 0} watched, ${media.error || 0} error, ${media.no_feed || 0} with no route found.${
+        kindSummary(media) ? " Watched via " + kindSummary(media) + "." : ""}</div>`,
     `<div style="margin-top:6px; color: var(--muted); font-size: 0.82rem;">
       Editorial sections: ${esc(run.synthesis_mode === "llm"
         ? "written by " + (run.synthesis_model || "a model")
@@ -860,12 +861,30 @@ async function renderMain() {
       </ul>
     </div>`).join("");
 
+  /* Naming the route is the honest version of a "watched" count: a feed and a
+     sitemap do not support the same claims. */
+  const KIND_LABELS = { rss: "a feed", wp_json: "the WordPress API", sitemap: "a sitemap", gnews: "Google News" };
+  function kindSummary(media) {
+    const kinds = media.kinds || {};
+    return Object.entries(kinds)
+      .filter(([, n]) => n)
+      .sort((a, b) => b[1] - a[1])
+      .map(([k, n]) => `${n} ${KIND_LABELS[k] || k}`)
+      .join(", ");
+  }
+
   /* A number is more useful when the page says what it cannot support. Each of
      these invalidates a specific figure shown above it. */
+  const loose = (media.kinds || {}).sitemap || 0;
   const limits = [
-    `<b>${media.no_feed || 0} of ${run.registry_publisher_count || 0} registry publishers have no working feed</b>,
-     so "no coverage found" usually means "not watched". That is why an item can read
-     <em>Unknown</em> rather than <em>Gap</em> — the two are not the same claim.`,
+    `<b>${media.no_feed || 0} of ${run.registry_publisher_count || 0} registry publishers cannot be watched
+     at all</b> — no feed, no WordPress API, no sitemap, and not indexed by Google News. For those,
+     "no coverage found" still means "not watched", which is why an item can read
+     <em>Unknown</em> rather than <em>Gap</em>. The two are not the same claim.`,
+    loose ? `<b>${loose} publisher${loose === 1 ? " is" : "s are"} watched through a sitemap rather than a feed.</b>
+     A sitemap's <code>lastmod</code> is a modification date, not a publication date, and where it carries no
+     headline the title here is reconstructed from the URL slug. Coverage from those publishers is a weaker
+     signal than a feed's: good enough to answer "has anyone written about this", not to date the piece.` : "",
     `<b>A <em>Reference data</em> item is a refreshed public file, not an event.</b> No outlet
      would run a headline matching "Citation Code Look-up", so its coverage state says
      nothing either way and it earns no gap bonus.`,

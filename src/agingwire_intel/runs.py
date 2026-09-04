@@ -174,11 +174,20 @@ def _outlet_index(items: list[dict]) -> list[dict]:
 
 def _media_summary(media_status: list[dict]) -> dict:
     counts = Counter(m.get("status") for m in media_status)
+    # How each watched publisher is watched. A sitemap monitor knows a URL
+    # changed, not that a story was published, so a page that reports "watched"
+    # without saying by what route overstates what the run can support.
+    kinds = Counter(
+        m.get("kind") or "rss"
+        for m in media_status
+        if m.get("status") in {"ok", "empty"}
+    )
     return {
         "ok": counts.get("ok", 0),
         "empty": counts.get("empty", 0),
         "error": counts.get("error", 0),
         "no_feed": counts.get("no_feed", 0),
+        "kinds": dict(sorted(kinds.items())),
         "errors": [
             {"publisher": m.get("publisher"), "error": str(m.get("error"))[:200]}
             for m in media_status

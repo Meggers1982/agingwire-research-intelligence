@@ -36,6 +36,15 @@ class CoverageItem:
     url: str
     published_at: str | None = None
     topics: list[str] = field(default_factory=list)
+    # How published_at was obtained. RSS and the WordPress API state a real
+    # publication date; a sitemap's <lastmod> is a modification date, which moves
+    # when a page is edited, so coverage sourced that way must not be read as
+    # "published on". None means the item carries no date at all.
+    date_basis: str | None = None
+    # A sitemap gives a URL, not a headline. When the title had to be derived
+    # from the slug it is a reconstruction, not the publisher's own words, and
+    # matching should be able to tell the difference.
+    title_is_derived: bool = False
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
