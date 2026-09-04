@@ -39,6 +39,39 @@ class SearchTests(unittest.TestCase):
             self.assertIsNone(serpapi.search({"engine": "google_news"}))
         self.assertTrue(serpapi.failure_summary())
 
+    def test_google_having_nothing_is_an_answer_not_a_failure(self):
+        """SerpAPI reports an empty result set through the same error body.
+
+        Folded into None it read as "the probe failed", so the domain was never
+        cached as unwatched and every run paid to ask again.
+        """
+        response = mock.Mock(status_code=200)
+        response.json.return_value = {
+            "error": "Google News hasn't returned any results for this query."
+        }
+        with mock.patch.dict("os.environ", {"SERPAPI_API_KEY": "k"}, clear=False), \
+             mock.patch.object(serpapi.requests, "get", return_value=response):
+            result = serpapi.search({"engine": "google_news"})
+        self.assertIs(result, serpapi.NO_RESULTS)
+        self.assertIsNotNone(result)
+        self.assertEqual(serpapi.failure_summary(), [])
+
+    def test_a_timeout_retry_widens_the_deadline_instead_of_repeating_it(self):
+        """Three identical 30s attempts burned 90s and failed the same way."""
+        deadlines = []
+
+        def timeout(url, params=None, timeout=None):
+            deadlines.append(timeout)
+            raise serpapi.requests.Timeout()
+
+        with mock.patch.dict("os.environ", {"SERPAPI_API_KEY": "k"}, clear=False), \
+             mock.patch.object(serpapi.requests, "get", side_effect=timeout):
+            self.assertIsNone(serpapi.search({"engine": "google_news"}, timeout=30))
+        self.assertEqual(deadlines, [30, 60])
+        # Same wall clock as the three-identical-attempts version it replaces.
+        self.assertLessEqual(sum(deadlines), 30 * serpapi.TIMEOUT_BUDGET)
+        self.assertIn("google_news timeout", serpapi.failure_summary()[0]["reason"])
+
     def test_success_returns_the_payload(self):
         response = mock.Mock(status_code=200)
         response.json.return_value = {"news_results": [{"title": "x"}]}

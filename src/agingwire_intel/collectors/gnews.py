@@ -19,6 +19,7 @@ Two honest limits:
 from __future__ import annotations
 
 import re
+import time
 from datetime import UTC, datetime
 from urllib.parse import quote_plus, urlparse
 
@@ -46,13 +47,23 @@ _SUFFIX = re.compile(r"\s+-\s+[^-]{2,40}$")
 # atomic across the registry's worker threads, so a race costs at most one extra
 # call -- far cheaper than the lock.
 SERPAPI_BUDGET_LIMIT = 25
+
+# A call cap does not bound wall clock. Nine timed-out probes cost thirteen
+# minutes of a 45-minute job while spending nine of twenty-five calls, so the
+# budget read as barely touched while the run was running out of time. Cap the
+# seconds too, and stop probing when they are gone.
+SERPAPI_SECONDS_LIMIT = 360
+
 _budget = serpapi.Budget(SERPAPI_BUDGET_LIMIT)
+_seconds_left = float(SERPAPI_SECONDS_LIMIT)
 
 
-def reset_budget(limit: int = SERPAPI_BUDGET_LIMIT) -> None:
-    """Start a fresh per-run allowance."""
-    global _budget
+def reset_budget(limit: int = SERPAPI_BUDGET_LIMIT,
+                 seconds: float = SERPAPI_SECONDS_LIMIT) -> None:
+    """Start a fresh per-run allowance of calls and of time."""
+    global _budget, _seconds_left
     _budget = serpapi.Budget(limit)
+    _seconds_left = float(seconds)
 
 
 def _serpapi_date(value: str) -> str | None:
@@ -98,9 +109,25 @@ def _serpapi_entries(website: str, window: str) -> list[dict]:
     query = f"site:{domain_of(website)}"
     if window:
         query += f" when:{window}"
-    data = serpapi.search(
-        {"engine": "google_news", "q": query, "gl": "us", "hl": "en"}, budget=_budget
-    )
+    global _seconds_left
+    if _seconds_left <= 0:
+        # Out of time rather than out of answers. Raising keeps the domain out
+        # of the discovery cache as a miss, so tomorrow's run asks again
+        # instead of writing the publisher off for the full miss TTL.
+        raise ProbeFailed("gnews time budget spent before this publisher")
+
+    started = time.monotonic()
+    try:
+        data = serpapi.search(
+            {"engine": "google_news", "q": query, "gl": "us", "hl": "en"}, budget=_budget
+        )
+    finally:
+        _seconds_left -= time.monotonic() - started
+
+    if data is serpapi.NO_RESULTS:
+        # Google answered: it indexes nothing here. An answer, so let it cache
+        # as unwatched rather than be re-probed every run forever.
+        return []
     if data is None:
         # None covers a missing key, an exhausted budget and a transport
         # failure alike, and the caller must not read that as "no coverage".

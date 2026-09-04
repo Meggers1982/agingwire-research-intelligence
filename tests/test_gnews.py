@@ -125,6 +125,21 @@ class TransportTests(unittest.TestCase):
             with self.assertRaises(gnews.ProbeFailed):
                 gnews.is_indexed("https://x.com/")
 
+    def test_google_indexing_nothing_is_an_empty_answer_not_a_failed_probe(self):
+        """The one case where "no results" really does mean no results."""
+        with patch.object(gnews.serpapi, "available", return_value=True), \
+             patch.object(gnews.serpapi, "search", return_value=gnews.serpapi.NO_RESULTS):
+            self.assertFalse(gnews.is_indexed("https://x.com/"))
+
+    def test_probing_stops_when_the_time_budget_is_spent(self):
+        """A call cap does not bound wall clock; timeouts spend seconds, not calls."""
+        gnews.reset_budget(seconds=0)
+        with patch.object(gnews.serpapi, "available", return_value=True), \
+             patch.object(gnews.serpapi, "search",
+                          side_effect=AssertionError("must not call")):
+            with self.assertRaises(gnews.ProbeFailed):
+                gnews._serpapi_entries("https://x.com/", "")
+
     def test_calls_are_capped_so_a_shared_key_cannot_be_drained(self):
         gnews.reset_budget(2)
         with patch.object(gnews.serpapi, "available", return_value=True):
