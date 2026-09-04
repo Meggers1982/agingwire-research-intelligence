@@ -255,10 +255,18 @@ def _collect_one(
         # reach publishers like these; it just was never asked on this path.
         retry = None
         if configured_source and website.startswith("http") and discover:
-            try:
-                retry = discover_source(website, allow_fallbacks=fallbacks)
-            except gnews.ProbeFailed:
-                retry = None
+            # Consult the cache before re-walking the ladder. Without this the
+            # recovery route is written on every run and read on none of them,
+            # so a publisher whose configured feed is permanently 403 pays a
+            # full rediscovery -- and a SerpAPI call -- every morning forever.
+            cached, cached_source = cache.get(website) if cache else (False, None)
+            if cached:
+                retry = cached_source
+            else:
+                try:
+                    retry = discover_source(website, allow_fallbacks=fallbacks)
+                except gnews.ProbeFailed:
+                    retry = None
         if retry is None or retry == source:
             return [], {
                 "publisher": publisher, "audience": audience_type, "status": "error",

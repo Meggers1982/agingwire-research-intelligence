@@ -305,3 +305,46 @@ class ConfiguredFeedFallbackTests(unittest.TestCase):
         self.assertEqual(status["kind"], media.KIND_RSS)
         self.assertNotIn("recovered_from", status)
         self.assertEqual(len(items), 1)
+
+
+class RetryUsesTheCacheTests(unittest.TestCase):
+    """The recovery route is written once and read every run after.
+
+    Writing it without reading it means a permanently-403 publisher walks the
+    whole ladder daily -- roughly sixteen requests and a SerpAPI call each --
+    which is a standing cost, not a one-time refill.
+    """
+
+    def setUp(self):
+        self.dir = tempfile.mkdtemp()
+        self.cache = media.DiscoveryCache(Path(self.dir) / "d.json")
+        self.row = {
+            "Publication": "GlobeSt", "Website": "https://x.com/",
+            "RSS Feed URL / Hub": "https://x.com/rss/",
+        }
+        self.item = CoverageItem(publisher="GlobeSt", audience_type="b2b",
+                                 title="t", url="https://x.com/a")
+        self.sitemap = media.Source(media.KIND_SITEMAP, "https://x.com/sitemap.xml")
+
+    def tearDown(self):
+        shutil.rmtree(self.dir, ignore_errors=True)
+
+    def test_the_second_run_does_not_rediscover(self):
+        with patch.object(media, "collect_source", side_effect=[RuntimeError("403"), [self.item]]), \
+             patch.object(media, "discover_source", return_value=self.sitemap):
+            media._collect_one(self.row, "b2b", True, self.cache)
+
+        with patch.object(media, "collect_source", side_effect=[RuntimeError("403"), [self.item]]), \
+             patch.object(media, "discover_source") as discover:
+            items, status = media._collect_one(self.row, "b2b", True, self.cache)
+        discover.assert_not_called()
+        self.assertEqual(status["kind"], media.KIND_SITEMAP)
+        self.assertEqual(len(items), 1)
+
+    def test_a_cached_miss_is_not_rediscovered_either(self):
+        self.cache.put("https://x.com/", None)
+        with patch.object(media, "collect_source", side_effect=RuntimeError("403")), \
+             patch.object(media, "discover_source") as discover:
+            _, status = media._collect_one(self.row, "b2b", True, self.cache)
+        discover.assert_not_called()
+        self.assertEqual(status["status"], "error")
