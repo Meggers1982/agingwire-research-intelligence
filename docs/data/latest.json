@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T14:02:43.200289+00:00",
+  "generated_at": "2026-09-04T14:06:53.177913+00:00",
   "evidence_count": 169,
   "new_evidence_count": 0,
-  "coverage_count": 1037,
-  "monitored_publisher_count": 65,
+  "coverage_count": 1007,
+  "monitored_publisher_count": 59,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -18,7 +18,6 @@
     "financial_security",
     "fraud_scams",
     "housing",
-    "loneliness_social_connection",
     "long_term_care",
     "medicare_medicaid",
     "nutrition",
@@ -177,23 +176,22 @@
   ],
   "topic_coverage_counts": {
     "age_tech": 7,
-    "ageism_work": 1,
     "aging_in_place": 14,
-    "assisted_living": 65,
+    "assisted_living": 59,
     "cardiovascular_disease": 6,
     "caregiving": 7,
     "chronic_pain": 1,
     "cognitive_decline": 3,
     "dementia": 21,
-    "depression_mental_health": 8,
-    "falls": 12,
+    "depression_mental_health": 9,
+    "falls": 9,
     "financial_security": 13,
     "food_security": 1,
     "fraud_scams": 3,
     "housing": 51,
     "incontinence": 1,
-    "loneliness_social_connection": 4,
-    "long_term_care": 46,
+    "loneliness_social_connection": 2,
+    "long_term_care": 39,
     "medicare_medicaid": 39,
     "nutrition": 9,
     "oral_health": 1,
@@ -201,7 +199,7 @@
     "palliative_hospice": 11,
     "relationships_sexuality": 1,
     "sarcopenia_frailty": 1,
-    "senior_living_quality": 5,
+    "senior_living_quality": 4,
     "sleep": 7,
     "transportation": 4,
     "workforce": 14
@@ -336,10 +334,9 @@
     {
       "publisher": "McKnight's Senior Living",
       "audience": "b2b",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.mcknightsseniorliving.com/feed/",
-      "discovered": true,
-      "items": 10
+      "error": "403 Client Error: Forbidden for url: https://www.mcknightsseniorliving.com/feed/"
     },
     {
       "publisher": "Seniors Housing Business",
@@ -360,10 +357,9 @@
     {
       "publisher": "McKnight's Long-Term Care News",
       "audience": "b2b",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.mcknights.com/feed/",
-      "discovered": true,
-      "items": 10
+      "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
     },
     {
       "publisher": "Skilled Nursing News",
@@ -392,10 +388,9 @@
     {
       "publisher": "McKnight's Home Care",
       "audience": "b2b",
-      "status": "empty",
+      "status": "error",
       "feed": "https://www.mcknightshomecare.com/homepage/feed/",
-      "discovered": true,
-      "items": 0
+      "error": "403 Client Error: Forbidden for url: https://www.mcknightshomecare.com/homepage/feed/"
     },
     {
       "publisher": "iAdvance Senior Care",
@@ -598,10 +593,9 @@
     {
       "publisher": "McKnight's Tech Daily",
       "audience": "b2b",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.mcknights.com/feed/",
-      "discovered": true,
-      "items": 10
+      "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
     },
     {
       "publisher": "Mobility Management",
@@ -796,18 +790,16 @@
     {
       "publisher": "PLANADVISER",
       "audience": "b2b",
-      "status": "empty",
+      "status": "error",
       "feed": "https://www.planadviser.com/pa-rss/",
-      "discovered": false,
-      "items": 0
+      "error": "HTTPSConnectionPool(host='www.planadviser.com', port=443): Max retries exceeded with url: /pa-rss/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.planadviser.com', port=443) at 0x7f97c88ba630>, 'Connection to www.planadviser.com timed out. (connect timeout=30)'))"
     },
     {
       "publisher": "PLANSPONSOR",
       "audience": "b2b",
-      "status": "empty",
+      "status": "error",
       "feed": "https://www.plansponsor.com/ps-rss/",
-      "discovered": false,
-      "items": 0
+      "error": "HTTPSConnectionPool(host='www.plansponsor.com', port=443): Max retries exceeded with url: /ps-rss/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.plansponsor.com', port=443) at 0x7f97c88d2b40>, 'Connection to www.plansponsor.com timed out. (connect timeout=30)'))"
     },
     {
       "publisher": "InvestmentNews",
@@ -6420,18 +6412,19 @@
     },
     {
       "source_id": "ftc-consumer-protection",
-      "title": "FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes",
+      "title": "FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children",
       "source_type": "institutional_rss",
       "published_at": "2026-06-17T12:00:00+00:00",
       "topics": [
-        "nutrition"
+        "depression_mental_health",
+        "incontinence"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and treat ADHD symptoms to PDF editing tools, according to a complaint filed by the FTC . The defendants deceptively market subscriptions to consumers and bill consumers without their permission, resulting in consumers worldwide being defrauded. “The Trump-Vance FTC is engaged in robust enforcement to address deception and illegal subscription offerings,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This case illustrates the benefits and importance of the Bureau’s reinvigorated anti-fraud program.” According to the FTC’s complaint, Genesis Tech operates as a common enterprise through a network of entities it controls, including a series of affiliates incorporated in Cyprus and operating in Ukraine. The Cyprus companies market to U.S. consumers and access U.S. payment processing through counterparts incorporated in Delaware. Genesis Tech and its subsidiar",
+      "summary": "The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex traits. In their complaint , the FTC and its state partners allege that these recommendations misled parents and children about the medical consensus and medical necessity, as well as the safety and effectiveness, of such services, in violation of the FTC Act. “Today, the FTC filed a lawsuit against WPATH alleging that the organization made false and unsubstantiated claims regarding the necessity, effectiveness and safety of puberty blockers, hormones and sex-change surgeries,” said Chairman Andrew N. Ferguson. “Children, but especially their parents, must have complete and truthful information when making decisions to purchase medical services. For decades, the FTC has taken action against entities that make deceptive and unsubstantiated health-related claims. The complaint filed today reflects that same long-standing mandate: when an entity makes a claim about a medical treatment, the cl",
       "key_findings": [],
       "localizable": false,
       "score": 35,
@@ -6462,19 +6455,18 @@
     },
     {
       "source_id": "ftc-consumer-protection",
-      "title": "FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children",
+      "title": "FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes",
       "source_type": "institutional_rss",
       "published_at": "2026-06-17T12:00:00+00:00",
       "topics": [
-        "depression_mental_health",
-        "incontinence"
+        "nutrition"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex traits. In their complaint , the FTC and its state partners allege that these recommendations misled parents and children about the medical consensus and medical necessity, as well as the safety and effectiveness, of such services, in violation of the FTC Act. “Today, the FTC filed a lawsuit against WPATH alleging that the organization made false and unsubstantiated claims regarding the necessity, effectiveness and safety of puberty blockers, hormones and sex-change surgeries,” said Chairman Andrew N. Ferguson. “Children, but especially their parents, must have complete and truthful information when making decisions to purchase medical services. For decades, the FTC has taken action against entities that make deceptive and unsubstantiated health-related claims. The complaint filed today reflects that same long-standing mandate: when an entity makes a claim about a medical treatment, the cl",
+      "summary": "At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and treat ADHD symptoms to PDF editing tools, according to a complaint filed by the FTC . The defendants deceptively market subscriptions to consumers and bill consumers without their permission, resulting in consumers worldwide being defrauded. “The Trump-Vance FTC is engaged in robust enforcement to address deception and illegal subscription offerings,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This case illustrates the benefits and importance of the Bureau’s reinvigorated anti-fraud program.” According to the FTC’s complaint, Genesis Tech operates as a common enterprise through a network of entities it controls, including a series of affiliates incorporated in Cyprus and operating in Ukraine. The Cyprus companies market to U.S. consumers and access U.S. payment processing through counterparts incorporated in Delaware. Genesis Tech and its subsidiar",
       "key_findings": [],
       "localizable": false,
       "score": 35,
