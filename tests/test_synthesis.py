@@ -74,13 +74,16 @@ class FeaturePitchTests(unittest.TestCase):
             self.assertIn(source, text)
 
     def test_pitch_does_not_fill_up_from_one_source(self):
-        """A pitch claiming N sources must show more than one of them."""
+        """A pitch citing several sources must show more than one of them.
+
+        Counts the evidence bullets only: the pattern line names the sources,
+        so a whole-text count double-counts each one.
+        """
         flood = [item(f"CMS file {i}", "cms-provider-data", ["workforce"], score=99) for i in range(10)]
-        clusters = build_clusters(flood + self.evidence, NOW)
-        text = render_feature_pitch(clusters, NOW)
-        shown = text.split("**Why now")[0]
-        self.assertLessEqual(shown.count("cms-provider-data"), 2)
-        self.assertIn("bls-api", shown)
+        text = render_feature_pitch(build_clusters(flood + self.evidence, NOW), NOW)
+        bullets = [ln for ln in text.splitlines() if ln.startswith("- **")]
+        sources = {ln.split("**")[1] for ln in bullets}
+        self.assertGreater(len(sources), 1, bullets)
 
 
 class StoryIdeaTests(unittest.TestCase):
@@ -206,21 +209,55 @@ class CohesionTests(unittest.TestCase):
         ]
         self.assertEqual(build_clusters(mixed, NOW), [])
 
-    def test_a_loose_cluster_is_not_called_a_convergence(self):
+    def test_a_loose_cluster_claims_no_pattern(self):
         loose = [
             item("Medicaid coverage for women", "s1", ["medicare_medicaid"]),
             item("Medicare payment advisory for clinicians", "s2", ["medicare_medicaid"]),
         ]
         text = render_feature_pitch(build_clusters(loose, NOW), NOW)
-        self.assertIn("busiest beat", text)
-        self.assertNotIn("convergence", text)
+        self.assertIn("No single pattern", text)
+        self.assertIn("share a tag rather than a subject", text)
 
-    def test_a_tight_cluster_is_called_a_convergence(self):
+    def test_a_tight_cluster_states_a_pattern(self):
         tight = [
             item("Nursing home staffing shortages persist in rural counties", "s1", ["workforce"]),
             item("Rural counties still face nursing home staffing shortages", "s2", ["workforce"]),
         ]
-        self.assertIn("convergence", render_feature_pitch(build_clusters(tight, NOW), NOW))
+        text = render_feature_pitch(build_clusters(tight, NOW), NOW)
+        self.assertIn("**The pattern:**", text)
+        self.assertIn("What they have in common", text)
+
+
+class PitchShapeTests(unittest.TestCase):
+    """The deterministic pitch is a worksheet and must say so.
+
+    senior-research-digest's pitch works because it states what the evidence
+    *means* ("cheap, equipment-free tests reveal hidden bone risk"). No template
+    produces that, and the previous version dressed pipeline metrics up as a
+    finished pitch.
+    """
+
+    def setUp(self):
+        evidence = [
+            item("Nursing home staffing shortages persist in rural counties", "s1", ["workforce"]),
+            item("Rural counties still face nursing home staffing shortages", "s2", ["workforce"]),
+        ]
+        self.text = render_feature_pitch(build_clusters(evidence, NOW), NOW)
+
+    def test_labels_itself_a_worksheet(self):
+        self.assertIn("Worksheet, not a finished pitch", self.text)
+
+    def test_carries_the_sections_a_pitch_needs(self):
+        for section in ("**The pattern:**", "**Why now:**", "**Where it could land**"):
+            self.assertIn(section, self.text)
+
+    def test_suggests_outlets_from_the_registry(self):
+        self.assertIn("Consumer:", self.text)
+        self.assertIn("Trade:", self.text)
+
+    def test_does_not_claim_sources_converged(self):
+        """A count is not an editorial insight, and the old wording implied one."""
+        self.assertNotIn("converged without coordination", self.text)
 
 
 class RenderingDetailTests(unittest.TestCase):

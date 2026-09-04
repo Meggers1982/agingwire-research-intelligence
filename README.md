@@ -50,6 +50,31 @@ user agent, which is enough for hosts that filter on the string alone.
 
 `www.bls.gov` and `www.ssa.gov` return 403 to automated requests regardless of user agent, and `www.cms.gov/newsroom` is JavaScript-rendered with no feed. Those signals come through `api.bls.gov`, the Federal Register API and the CMS provider-data metastore instead. Sources with no machine-readable route at all are listed under `unresolved` in `config/monitors.yml` rather than left as permanently empty monitors.
 
+## The pitch is a worksheet unless a model writes it
+
+`senior-research-digest`'s feature pitch works because it says what the evidence
+*means* — "cheap, equipment-free physical tests performed in seconds can reveal
+hidden bone and fall risk that standard checkups miss" — then gives an angle, a
+working title, three headlines and named outlets. No template produces that
+sentence. The earlier version here printed source counts, gap counts and
+localizable counts in a pitch-shaped wrapper, which reads as telemetry rather
+than a story.
+
+The deterministic path now labels itself a worksheet and lays out only what it
+can honestly assemble: which items, the words they share, why now, and which
+monitored outlets to aim at. Naming the angle is left to the editor. With
+`ANTHROPIC_API_KEY` set, `llm.py` writes the real thing in the same shape as the
+research digest — pattern, why now, angle, three headlines, outlets — and is
+told explicitly that a source count is a statistic, not a pattern.
+
+### Outlets come from the registry
+
+The research digest names outlets from the model's general knowledge. This repo
+monitors 132 of them with beats and tiers, so `outlets.py` suggests from that
+list, splits consumer and trade, and excludes any publisher the Google News
+check already found reporting the item — pitching a story to the outlet that
+just ran it is the one suggestion guaranteed to be wrong.
+
 ## Convergence versus a busy beat
 
 Topic co-occurrence is not a story. Measured on a real run, the

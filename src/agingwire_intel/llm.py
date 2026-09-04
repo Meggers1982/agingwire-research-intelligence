@@ -43,6 +43,25 @@ Hard rules:
 - A coverage_state of "gap" means monitored publishers do cover that beat and none \
   matched the item. That is a real opportunity and can be described as one.
 
+THE FEATURE PITCH must follow this shape, which is what makes a pitch usable:
+
+**The pattern:** Name the specific items and state what substantively connects
+them — the actual editorial insight, not a count. "Three federal releases in one
+month all point at the same eligibility bottleneck" is a pattern. "Four sources
+converged" is a statistic and is not usable. If the items do not share a real
+thread, say so plainly and treat them as separate leads.
+
+**Why pitch this now:** External context — what is happening in the world that
+makes an editor want it this month. Pipeline metrics are not a reason to pitch.
+
+**Angle:** One named story with a working title and who it is for.
+
+**Potential headlines:** Three. Plain language, no colons-and-subtitles.
+
+**Potential outlets:** Pick from the candidate list in the facts, which comes
+from the outlets this project actually monitors. Say in one clause why each fits.
+Never suggest an outlet already listed as having reported the item.
+
 Story ideas carry two audience angles, always in this order:
 - **For readers** first: what an older adult or their family does with this. Use
   "you" language. Concrete — what to check, ask for, compare, or claim.
@@ -131,8 +150,21 @@ def _facts(payload: dict, previous: dict | None) -> str:
         }
         for i in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]
     ]
+    from agingwire_intel import outlets as outlet_mod
+    top_topics = [c["topic"] for c in clusters[:3]]
+    covered: set[str] = set()
+    for i in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]:
+        covered |= outlet_mod.covered_by(i)
+
     facts = {
         "run_date": us_date(payload.get("generated_at")),
+        "candidate_outlets": {
+            "consumer": [outlet_mod.describe(r) for r in
+                         outlet_mod.suggest(top_topics, "b2c", limit=6, exclude=covered)],
+            "trade": [outlet_mod.describe(r) for r in
+                      outlet_mod.suggest(top_topics, "b2b", limit=6, exclude=covered)],
+        },
+        "already_reported_by": sorted(covered)[:20],
         "evidence_count": payload.get("evidence_count"),
         "new_evidence_count": payload.get("new_evidence_count"),
         "monitored_publishers": payload.get("monitored_publisher_count"),

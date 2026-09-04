@@ -4,6 +4,7 @@ import re
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 
+from agingwire_intel import outlets
 from agingwire_intel.matching import title_similar, tokens, us_date
 from agingwire_intel.scoring import is_localizable, sub_national
 from agingwire_intel.topics import topic_priority
@@ -221,11 +222,26 @@ def _evidence_line(item: dict) -> str:
     return " ".join(bits)
 
 
-def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> str:
-    """The strongest cluster, described as what the evidence supports.
+def _shared_thread(items: list[dict]) -> list[str]:
+    """Words most of these items have in common, minus the topic name itself."""
+    from collections import Counter
+    counts: Counter[str] = Counter()
+    for item in items:
+        counts.update(tokens(item.get("title", "")))
+    threshold = max(2, len(items) // 2)
+    return [w for w, n in counts.most_common(12) if n >= threshold][:6]
 
-    A topic several sources merely touched is a busy beat, not a convergence;
-    calling it one puts a claim in the editor's mouth the data does not carry.
+
+def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> str:
+    """Assemble the pitch worksheet for the strongest cluster.
+
+    This deliberately does not claim to be a finished pitch. The thing that
+    makes senior-research-digest's pitch work — "cheap, equipment-free tests
+    reveal hidden bone risk that standard checkups miss" — is a reading of what
+    the evidence *means*, and no template produces that. What a template can do
+    is lay out the raw materials in the shape a pitch takes: which items,
+    what they share, why now, and which monitored outlets to aim at. When
+    ANTHROPIC_API_KEY is set, llm.py replaces this with the written version.
     """
     if not clusters:
         return ""
@@ -234,61 +250,71 @@ def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> s
     coheres = top.get("coheres", False)
     items = (_focus_group(top["items"], MAX_PITCH_EVIDENCE) if coheres
              else _diverse_sample(top["items"], MAX_PITCH_EVIDENCE))
-    shown_sources = len({i.get("source_id") for i in items})
+    shown_sources = sorted({i.get("source_id") for i in items if i.get("source_id")})
+
+    lines = [
+        f"*Worksheet, not a finished pitch — the angle and headline still need writing. "
+        f"Cluster: {top['label']}, cohesion {top.get('cohesion', 0):.2f}.*",
+        "",
+    ]
 
     if coheres:
-        gap_clause = (
-            "and no monitored publisher has matched it"
-            if top["gap_count"] >= top["item_count"] - 1
-            else f"and {top['gap_count']} of {top['item_count']} show a confirmed coverage gap"
+        lines.append(
+            f"**The pattern:** {len(shown_sources)} independent sources "
+            f"({', '.join(shown_sources)}) produced these inside "
+            f"{CLUSTER_WINDOW_DAYS} days:"
         )
-        lines = [
-            f"**The convergence:** {shown_sources} sources landed on the same "
-            f"{top['label']} story within {CLUSTER_WINDOW_DAYS} days, {gap_clause}.",
-            "",
-        ]
     else:
-        lines = [
-            f"**The busiest beat:** {top['label']} drew {top['item_count']} items from "
-            f"{top['source_count']} sources in the last {CLUSTER_WINDOW_DAYS} days, but they "
-            "do not describe one story — work it as a beat, not a single pitch.",
-            "",
-        ]
-
-    lines.append("**Evidence on the table:**")
+        lines.append(
+            f"**No single pattern.** {top['label']} was the busiest beat this run — "
+            f"{top['item_count']} items from {top['source_count']} sources — but they "
+            f"share a tag rather than a subject. Work these as separate leads:"
+        )
     lines += [f"- {_evidence_line(i)}" for i in items]
     lines.append("")
 
+    thread = _shared_thread(items)
+    if coheres and thread:
+        lines += [
+            f"**What they have in common:** {', '.join(thread)}. The story is whatever "
+            "connects those — name it before pitching.",
+            "",
+        ]
+
     why = []
     if top["newest_age_days"] is not None and top["newest_age_days"] <= 14:
-        why.append(f"the most recent item landed {_plural(top['newest_age_days'], 'day')} ago")
-    if coheres and shown_sources >= 3:
-        why.append(f"{shown_sources} unrelated sources reached it independently")
+        why.append(f"the newest item is {_plural(top['newest_age_days'], 'day')} old")
     if top["gap_count"]:
-        why.append(f"{top['gap_count']} of {top['item_count']} items show a confirmed coverage gap")
+        why.append(
+            f"{top['gap_count']} of {top['item_count']} are unmatched by the "
+            f"publishers being monitored"
+        )
+    if top["localizable_count"]:
+        why.append(f"{top['localizable_count']} break below the national level")
+    if top["structured_count"]:
+        why.append(f"{top['structured_count']} sit on structured data a chart can be built from")
     if why:
         lines += [f"**Why now:** {'; '.join(why)}.", ""]
 
-    if top["localizable_count"]:
-        lines += [
-            f"**Localization:** {top['localizable_count']} of {top['item_count']} items break "
-            "below the national level, so the same reporting supports state, metro or "
-            "facility-level versions.",
-            "",
-        ]
-    if top["structured_count"]:
-        lines += [
-            f"**Visuals:** {top['structured_count']} items sit on structured public data — "
-            "a ranking, map or trend line can be built directly rather than sourced.",
-            "",
-        ]
+    topics = [top["topic"]]
+    covered = set()
+    for item in items:
+        covered |= outlets.covered_by(item)
+    consumer = outlets.suggest(topics, "b2c", exclude=covered)
+    trade = outlets.suggest(topics, "b2b", exclude=covered)
+    if consumer or trade:
+        lines.append("**Where it could land** (from the monitored registry, "
+                     "excluding anyone already found reporting it):")
+        lines += [f"- Consumer: {outlets.describe(r)}" for r in consumer]
+        lines += [f"- Trade: {outlets.describe(r)}" for r in trade]
+        lines.append("")
 
     runners = [c for c in clusters[1:5] if c.get("coheres")]
     if runners:
         lines.append("**Also holding together this run:**")
         lines += [
             f"- {c['label']} — {c['source_count']} sources, {c['item_count']} items, "
-            f"{c['gap_count']} with a confirmed gap"
+            f"{c['gap_count']} unmatched"
             for c in runners
         ]
         lines.append("")
