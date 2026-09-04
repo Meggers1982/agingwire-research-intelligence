@@ -1,14 +1,26 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import sys
+from datetime import UTC, datetime
+from pathlib import Path
 
 from agingwire_intel import llm, runs
 from agingwire_intel.dashboard import build_dashboard
 from agingwire_intel.digest import write_digest
 from agingwire_intel.pipeline import run
 from agingwire_intel.synthesis import synthesize
+
+
+def _generated_at(payload: dict) -> datetime | None:
+    raw = str(payload.get("generated_at") or "")
+    try:
+        parsed = datetime.fromisoformat(raw)
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=UTC)
 
 
 def main() -> int:
@@ -28,6 +40,14 @@ def main() -> int:
         help="Skip the SerpAPI demand and open-web coverage lookups.",
     )
     parser.add_argument(
+        "--replay",
+        metavar="YYYY-MM-DD",
+        help="Re-synthesise a stored day instead of collecting a new one. The "
+             "collectors read live APIs and cannot be asked for a past date, "
+             "but outputs/<date>.json keeps that day's evidence, so the "
+             "editorial layer can be rewritten over it after a prompt change.",
+    )
+    parser.add_argument(
         "--fail-on-source-errors",
         type=int,
         default=None,
@@ -37,17 +57,31 @@ def main() -> int:
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
-    payload = run(args.config, args.output_dir, docs_dir=args.docs_dir, state_path=args.state,
-                  enrich=not args.no_enrich)
+    replay = bool(args.replay)
+    if replay:
+        archive = Path(args.output_dir) / f"{args.replay}.json"
+        if not archive.exists():
+            print(f"FAIL: no stored run at {archive}", file=sys.stderr)
+            return 1
+        payload = json.loads(archive.read_text(encoding="utf-8"))
+        print(f"Replaying {args.replay} from {archive} (no collection)")
+    else:
+        payload = run(args.config, args.output_dir, docs_dir=args.docs_dir,
+                      state_path=args.state, enrich=not args.no_enrich)
 
     current_id = runs.run_id(payload.get("generated_at", ""))
     previous = runs.load_previous_payload(args.output_dir, current_id)
-    synthesis = synthesize(payload, previous)
+    # Cluster recency is measured against the clock. Replaying with today's
+    # would age that day's evidence by however long ago it ran, so the rerun
+    # would not be the same report with a new editorial layer -- it would be a
+    # different report.
+    now = _generated_at(payload) if replay else None
+    synthesis = synthesize(payload, previous, now=now)
     if not args.no_llm:
         synthesis = llm.upgrade_synthesis(payload, synthesis, previous)
 
     run_path = runs.write_run(payload, synthesis, docs_dir=args.docs_dir)
-    digest = write_digest(payload, args.output_dir, synthesis)
+    digest = write_digest(payload, args.output_dir, synthesis, latest=not replay)
     dashboard = build_dashboard(f"{args.docs_dir}/index.html")
 
     errors = [x for x in payload["source_status"] if x["status"] == "error"]

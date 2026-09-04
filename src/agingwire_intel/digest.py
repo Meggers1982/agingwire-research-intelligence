@@ -244,14 +244,21 @@ def _render_item(index: int, item: dict) -> list[str]:
     return lines
 
 
-def write_digest(payload: dict, output_dir: str = "outputs", synthesis: dict | None = None) -> Path:
+def write_digest(payload: dict, output_dir: str = "outputs", synthesis: dict | None = None,
+                 latest: bool = True) -> Path:
+    """Write the dated digest, and by default point latest.md at it too.
+
+    latest=False is for replaying an older day: rewriting that day's file is
+    the point, overwriting today's latest.md with it is not.
+    """
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
     text = render_digest(payload, synthesis=synthesis)
-    latest = out / "latest.md"
-    latest.write_text(text, encoding="utf-8")
-    (out / "latest-inventory.md").write_text(render_inventory(payload), encoding="utf-8")
     date = str(payload.get("generated_at", ""))[:10]
-    if date:
-        (out / f"{date}.md").write_text(text, encoding="utf-8")
-    return latest
+    dated = out / f"{date}.md" if date else None
+    if latest:
+        (out / "latest.md").write_text(text, encoding="utf-8")
+        (out / "latest-inventory.md").write_text(render_inventory(payload), encoding="utf-8")
+    if dated:
+        dated.write_text(text, encoding="utf-8")
+    return (out / "latest.md") if latest else (dated or out)

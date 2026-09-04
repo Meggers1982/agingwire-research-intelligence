@@ -227,10 +227,16 @@ def write_run(payload: dict, synthesis: dict, docs_dir: str | Path = "docs") -> 
 
     index_path = data_dir / INDEX_NAME
     runs: list[dict] = []
+    index_generated_at = payload.get("generated_at") or ""
     if index_path.exists():
         try:
             existing = json.loads(index_path.read_text(encoding="utf-8"))
             runs = [r for r in existing.get("runs", []) if r.get("id") != run["id"]]
+            # Replaying an old day must not drag the index clock backwards and
+            # make the dashboard report yesterday as the freshest thing it has.
+            # A live run always carries the newest timestamp, so max() is right
+            # in both cases without the caller having to say which it is.
+            index_generated_at = max(index_generated_at, existing.get("generated_at") or "")
         except (json.JSONDecodeError, OSError):
             runs = []
 
@@ -241,7 +247,7 @@ def write_run(payload: dict, synthesis: dict, docs_dir: str | Path = "docs") -> 
     index_path.write_text(
         json.dumps(
             {
-                "generated_at": payload.get("generated_at"),
+                "generated_at": index_generated_at,
                 "run_count": len(runs),
                 "topics": all_topics,
                 "runs": runs,

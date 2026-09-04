@@ -1,0 +1,56 @@
+name: Replay an intelligence report
+
+# The collectors read live APIs and cannot be asked for a past date, so a
+# "rerun" of an older day means re-synthesising the evidence that day already
+# collected. Useful after a prompt change: the report is rewritten, the
+# underlying evidence is not re-gathered and does not drift.
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Run to replay (YYYY-MM-DD), must exist in outputs/'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  # Shares the daily job's group: both commit to main, and a replay racing a
+  # collection would lose one of them to the reset --hard in the commit step.
+  group: agingwire-intelligence
+  cancel-in-progress: false
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt -e ".[dev,llm]"
+      - name: Replay ${{ inputs.date }}
+        run: python -m agingwire_intel --replay "${{ inputs.date }}"
+      - name: Commit the rewritten report
+        run: |
+          set -euo pipefail
+          date="${{ inputs.date }}"
+          git config user.name "agingwire-intelligence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          # Only the replayed day's files. A replay must never touch latest.*
+          # or another day's run, and staging just these makes that a fact
+          # rather than a promise about what the code did.
+          git add "outputs/${date}.md" "docs/data/runs/${date}.json" docs/data/index.json
+          if git diff --cached --quiet; then
+            echo "Replay produced no change for ${date}"
+          else
+            git commit -m "Replay the ${date} report"
+            git push origin main
+          fi

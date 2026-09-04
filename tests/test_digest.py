@@ -1,6 +1,8 @@
+import tempfile
 import unittest
+from pathlib import Path
 
-from agingwire_intel.digest import render_digest, render_inventory
+from agingwire_intel.digest import render_digest, render_inventory, write_digest
 
 PAYLOAD = {
     "generated_at": "2026-09-03T12:00:00+00:00",
@@ -103,3 +105,31 @@ class DateFormatTests(unittest.TestCase):
         text = render_digest(PAYLOAD)
         self.assertIn("09/01/26", text)
         self.assertNotIn("2026-09-01T", text)
+
+
+class ReplayWriteTests(unittest.TestCase):
+    """Replaying an older day rewrites that day, and only that day."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.out = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_a_live_run_points_latest_at_itself(self):
+        write_digest(PAYLOAD, str(self.out))
+        self.assertTrue((self.out / "latest.md").exists())
+        self.assertTrue((self.out / "2026-09-03.md").exists())
+
+    def test_a_replay_rewrites_the_dated_file_and_leaves_latest_alone(self):
+        newer = {**PAYLOAD, "generated_at": "2026-09-04T12:00:00+00:00"}
+        write_digest(newer, str(self.out))
+        latest_before = (self.out / "latest.md").read_text(encoding="utf-8")
+
+        write_digest(PAYLOAD, str(self.out), latest=False)
+
+        self.assertTrue((self.out / "2026-09-03.md").exists())
+        self.assertEqual((self.out / "latest.md").read_text(encoding="utf-8"), latest_before,
+                         "a replay of an older day must not become latest.md")
+        self.assertIn("2026-09-04", (self.out / "2026-09-04.md").read_text(encoding="utf-8"))

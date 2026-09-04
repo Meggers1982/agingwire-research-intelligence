@@ -130,6 +130,17 @@ class WriteRunTests(unittest.TestCase):
         write_run(PAYLOAD, SYNTHESIS, docs_dir=self.docs)
         self.assertEqual(self._index()["run_count"], 1)
 
+    def test_replaying_an_old_day_does_not_drag_the_index_clock_back(self):
+        """The dashboard reads index.generated_at as "how fresh is this?"."""
+        write_run(PAYLOAD, SYNTHESIS, docs_dir=self.docs)
+        later = {**PAYLOAD, "generated_at": "2026-09-04T15:00:00+00:00"}
+        write_run(later, SYNTHESIS, docs_dir=self.docs)
+        write_run(PAYLOAD, SYNTHESIS, docs_dir=self.docs)  # replay the older day
+        index = self._index()
+        self.assertEqual(index["generated_at"], "2026-09-04T15:00:00+00:00")
+        self.assertEqual(index["run_count"], 2, "replay must not add a run")
+        self.assertEqual(index["runs"][0]["run_date"], "2026-09-04")
+
     def test_index_entry_stays_small(self):
         write_run(PAYLOAD, SYNTHESIS, docs_dir=self.docs)
         entry = self._index()["runs"][0]
