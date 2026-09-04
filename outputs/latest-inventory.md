@@ -1,12 +1,12 @@
 # AgingWire evidence inventory
 
-Generated: 2026-09-04T17:21:01.467144+00:00
+Generated: 2026-09-04T17:42:14.643192+00:00
 
 All **169** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 
 ### 1. CMS refreshed dataset: 25 files refreshed, 07/31/26–08/30/26
 
-**Top score:** 67/100  
+**Top score:** Strong — 67/100  
 **Source:** cms-provider-data (government_api)  
 **Topics:** medicare_medicaid
 
@@ -40,7 +40,7 @@ Released together, so this is one event rather than 25 separate leads:
 
 ### 2. American Community Survey 2023 state aging and housing profile (52 states)
 
-**Score:** 66/100  
+**Score:** Strong — 66/100  
 **Source:** american-community-survey (government_api)  
 **Published:** undated  
 **Topics:** housing, financial_security, migration_retirement, rural_aging  
@@ -51,7 +51,7 @@ State-level counts for 65+, 65-74, 75-84 and 85+ populations with median househo
 
 ### 3. BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)
 
-**Score:** 65/100  
+**Score:** Strong — 65/100  
 **Source:** bls-api (government_api)  
 **Published:** 08/01/26  
 **Topics:** workforce, assisted_living, housing  
@@ -60,7 +60,7 @@ State-level counts for 65+, 65-74, 75-84 and 85+ populations with median househo
 
 ### 4. Housing Trust Fund: Fiscal Year 2026 Allocation Notice
 
-**Score:** 64/100  
+**Score:** Strong — 64/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 09/04/26  
 **Topics:** financial_security, housing  
@@ -71,7 +71,7 @@ The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Tru
 
 ### 5. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
 
-**Score:** 63/100  
+**Score:** Strong — 63/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 09/01/26  
 **Topics:** housing  
@@ -82,7 +82,7 @@ HUD is required to publish FMRs not less than annually, adjusted to be effective
 
 ### 6. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
-**Score:** 63/100  
+**Score:** Strong — 63/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 08/21/26  
 **Topics:** housing  
@@ -93,7 +93,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 7. BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)
 
-**Score:** 63/100  
+**Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
 **Published:** 08/01/26  
 **Topics:** workforce, caregiving, aging_in_place  
@@ -102,7 +102,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 8. BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)
 
-**Score:** 63/100  
+**Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
 **Published:** 08/01/26  
 **Topics:** workforce, long_term_care, senior_living_quality  
@@ -111,7 +111,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 9. BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)
 
-**Score:** 63/100  
+**Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
 **Published:** 08/01/26  
 **Topics:** workforce, financial_security  
@@ -120,7 +120,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 10. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
 
-**Score:** 62/100  
+**Score:** Strong — 62/100  
 **Source:** bls-api (government_api)  
 **Published:** 07/01/26  
 **Topics:** financial_security, medicare_medicaid  
@@ -129,7 +129,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ### 11. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
 
-**Score:** 61/100  
+**Score:** Strong — 61/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 09/01/26  
 **Topics:** financial_security  
@@ -140,7 +140,7 @@ We are providing notice of SSR 26-2p. This SSR explains our policies and consoli
 
 ### 12. BLS: Home health care services average hourly earnings, July 2026 — 28.04 dollars per hour (+2.0% year over year)
 
-**Score:** 60/100  
+**Score:** Strong — 60/100  
 **Source:** bls-api (government_api)  
 **Published:** 07/01/26  
 **Topics:** workforce, caregiving  
@@ -149,7 +149,7 @@ We are providing notice of SSR 26-2p. This SSR explains our policies and consoli
 
 ### 13. BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)
 
-**Score:** 60/100  
+**Score:** Strong — 60/100  
 **Source:** bls-api (government_api)  
 **Published:** 07/01/26  
 **Topics:** workforce, assisted_living  
@@ -158,7 +158,7 @@ We are providing notice of SSR 26-2p. This SSR explains our policies and consoli
 
 ### 14. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants
 
-**Score:** 59/100  
+**Score:** Strong — 59/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 08/13/26  
 **Topics:** medicare_medicaid  
@@ -169,7 +169,7 @@ This advisory is to alert certain clinicians who are Qualifying Alternative Paym
 
 ### 15. Medicare Program; Regulatory Alignment for Predictable and Immediate Device (RAPID) Coverage Pathway
 
-**Score:** 59/100  
+**Score:** Strong — 59/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 08/11/26  
 **Topics:** medicare_medicaid  
@@ -180,7 +180,7 @@ This notice with comment period provides information to the public on the proces
 
 ### 16. HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations
 
-**Score:** 59/100  
+**Score:** Strong — 59/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 08/10/26  
 **Topics:** housing  
@@ -191,7 +191,7 @@ HUD published a notice of proposed rulemaking in January of 2026 that proposed t
 
 ### 17. Medicaid Coverage for Women
 
-**Score:** 57/100  
+**Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/26/26  
 **Topics:** medicare_medicaid  
@@ -202,7 +202,7 @@ This data note presents key data points describing the current state of the Medi
 
 ### 18. Medicaid/CHIP Monthly Enrollment Tracker
 
-**Score:** 57/100  
+**Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/26/26  
 **Topics:** medicare_medicaid  
@@ -213,7 +213,7 @@ This tracker presents the most recent Medicaid monthly enrollment data.
 
 ### 19. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
 
-**Score:** 57/100  
+**Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/26/26  
 **Topics:** medicare_medicaid  
@@ -224,7 +224,7 @@ Considering the existing challenges to hospital-based maternity care in rural ar
 
 ### 20. Status of State Medicaid Expansion Decisions
 
-**Score:** 57/100  
+**Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/21/26  
 **Topics:** medicare_medicaid  
@@ -235,7 +235,7 @@ This page displays an interactive map of the current status of state decisions o
 
 ### 21. 5 Questions and Answers About Medicaid and Provider Taxes
 
-**Score:** 57/100  
+**Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/20/26  
 **Topics:** medicare_medicaid  
@@ -246,7 +246,7 @@ This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors a
 
 ### 22. Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits
 
-**Score:** 57/100  
+**Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/14/26  
 **Topics:** medicare_medicaid  
@@ -257,7 +257,7 @@ An estimated $60 billion in federal Medicaid spending in 37 states (including th
 
 ### 23. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
 
-**Score:** 56/100  
+**Score:** Strong — 56/100  
 **Source:** rand-research (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** age_tech, caregiving, palliative_hospice  
@@ -268,7 +268,7 @@ This paper qualitatively explores patient and family caregiver experiences with 
 
 ### 24. Medicaid Home and Community-Based Services for Older Adults: A Primer
 
-**Score:** 56/100  
+**Score:** Strong — 56/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 08/20/26  
 **Topics:** long_term_care, medicare_medicaid  
@@ -279,7 +279,7 @@ Explore how Medicaid HCBS help older adults with disabilities live independently
 
 ### 25. Here’s How Much Americans Rely on Social Security – at All Income Levels
 
-**Score:** 55/100  
+**Score:** Strong — 55/100  
 **Source:** center-retirement-research (web_release)  
 **Published:** 09/02/26  
 **Topics:** financial_security  
@@ -288,7 +288,7 @@ Explore how Medicaid HCBS help older adults with disabilities live independently
 
 ### 26. Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule
 
-**Score:** 55/100  
+**Score:** Strong — 55/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** medicare_medicaid  
@@ -299,7 +299,7 @@ Justice in Aging’s template comments address Medicare eligibility for immigran
 
 ### 27. Breaking Glass, Missing Hands
 
-**Score:** 55/100  
+**Score:** Strong — 55/100  
 **Source:** rand-research (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** workforce  
@@ -310,7 +310,7 @@ U.S. space defense industrial base workforce shortfalls threaten the ability to 
 
 ### 28. Rescission of Social Security Acquiescence Ruling 90-2(2)
 
-**Score:** 55/100  
+**Score:** Strong — 55/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 08/31/26  
 **Topics:** financial_security  
@@ -321,7 +321,7 @@ The Commissioner of Social Security gives notice of the rescission of AR 90-2(2)
 
 ### 29. Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk
 
-**Score:** 55/100  
+**Score:** Strong — 55/100  
 **Source:** center-retirement-research (web_release)  
 **Published:** 08/26/26  
 **Topics:** medicare_medicaid  
@@ -330,7 +330,7 @@ The Commissioner of Social Security gives notice of the rescission of AR 90-2(2)
 
 ### 30. RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act
 
-**Score:** 55/100  
+**Score:** Strong — 55/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/09/26  
 **Topics:** housing  
@@ -341,7 +341,7 @@ RentGrow, a provider of consumer reports for tenant screening, will be required 
 
 ### 31. NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options
 
-**Score:** 54/100  
+**Score:** Worth a look — 54/100  
 **Source:** nic (web_release)  
 **Published:** 08/05/26  
 **Topics:** assisted_living, housing  
@@ -352,7 +352,7 @@ The National Investment Center for Seniors Housing & Care (NIC) establishes a mu
 
 ### 32. FTC and States Act Against Hims & Hers for Deceptive and Unlawful Privacy Practices
 
-**Score:** 53/100  
+**Score:** Worth a look — 53/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/29/26  
 **Topics:** age_tech  
@@ -363,7 +363,7 @@ The Federal Trade Commission, joined by Utah and California, by and through Los 
 
 ### 33. New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement
 
-**Score:** 53/100  
+**Score:** Worth a look — 53/100  
 **Source:** ebri (web_release)  
 **Published:** 03/11/26  
 **Topics:** medicare_medicaid  
@@ -374,7 +374,7 @@ EBRI Press Release March 11, 2026 2 pages Summary Full Content
 
 ### 34. New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security
 
-**Score:** 49/100  
+**Score:** Worth a look — 49/100  
 **Source:** ebri (web_release)  
 **Published:** 06/02/26  
 **Topics:** caregiving, financial_security  
@@ -385,7 +385,7 @@ EBRI Press Release June 2, 2026 2 pages Summary Full Content
 
 ### 35. Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026
 
-**Score:** 48/100  
+**Score:** Worth a look — 48/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -396,7 +396,7 @@ Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on
 
 ### 36. Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance
 
-**Score:** 48/100  
+**Score:** Worth a look — 48/100  
 **Source:** nic (web_release)  
 **Published:** undated  
 **Topics:** housing  
@@ -407,7 +407,7 @@ Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on
 
 ### 37. FTC Data Show People Reported Losing $3.5 Billion to Imposter Scams in 2025
 
-**Score:** 47/100  
+**Score:** Worth a look — 47/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 06/15/26  
 **Topics:** elder_abuse, fraud_scams  
@@ -418,7 +418,7 @@ New data from the Federal Trade Commission reveal that people reported losing a 
 
 ### 38. 2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs
 
-**Score:** 47/100  
+**Score:** Worth a look — 47/100  
 **Source:** ebri (web_release)  
 **Published:** 04/21/26  
 **Topics:** financial_security, medicare_medicaid  
@@ -429,7 +429,7 @@ EBRI Press Release April 21, 2026 2 pages Summary Full Content
 
 ### 39. Long-Term Care in Israel and the U.S.: Different Systems, Shared Challenges
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** center-retirement-research (web_release)  
 **Published:** 09/03/26  
 **Topics:** long_term_care  
@@ -438,7 +438,7 @@ EBRI Press Release April 21, 2026 2 pages Summary Full Content
 
 ### 40. June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** acl-news (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -447,7 +447,7 @@ EBRI Press Release April 21, 2026 2 pages Summary Full Content
 
 ### 41. Medicaid Coverage for Women
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -458,7 +458,7 @@ Aug 26, 2026 Issue Brief This data note presents key data points describing the 
 
 ### 42. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -469,7 +469,7 @@ Aug 26, 2026 Issue Brief Considering the existing challenges to hospital-based m
 
 ### 43. 5 Questions and Answers About Medicaid and Provider Taxes
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -480,7 +480,7 @@ Aug 20, 2026 Issue Brief This issue brief uses data from KFF’s 2025-2026 surve
 
 ### 44. At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -491,7 +491,7 @@ Aug 14, 2026 Issue Brief This analysis estimates the number of states impacted b
 
 ### 45. Optional Medicaid and CHIP Coverage for Lawfully Present Immigrant Children Could Mitigate Coverage Losses Due to 2025 Reconciliation Law
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -502,7 +502,7 @@ Aug 14, 2026 Issue Brief This brief provides an overview of health coverage of n
 
 ### 46. Prior Authorization Metrics Provide New Insights into Insurer Practices, but Gaps Remain
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -513,7 +513,7 @@ Aug 13, 2026 Issue Brief This analysis of available 2025 prior authorization dat
 
 ### 47. Variability in Reimbursement Rates for State-funded Abortion Services for Medicaid Enrollees: A 2026 Update
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
 **Topics:** medicare_medicaid  
@@ -524,7 +524,7 @@ Aug 7, 2026 Issue Brief This KFF analysis examines physician fee schedules for m
 
 ### 48. New Research Report Examining Where Households Spend Defined Contribution Plan Loans Finds a Likelihood to Spend Loan Money on Health Care and Housing Rather Than on Travel or Entertainment
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** ebri (web_release)  
 **Published:** undated  
 **Topics:** housing  
@@ -535,7 +535,7 @@ EBRI Press Release Oct 16, 2025 3 pages Summary Full Content
 
 ### 49. Subscribe to the NIC Insider ▶
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** nic (web_release)  
 **Published:** undated  
 **Topics:** housing  
@@ -546,7 +546,7 @@ NIC Insider: The most trusted and objective insights, exclusive data, and key se
 
 ### 50. CCRC Performance 2Q 2026: Continued Demand for Memory Care
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** nic (web_release)  
 **Published:** undated  
 **Topics:** housing  
@@ -557,7 +557,7 @@ The following analysis examines broader occupancy trends, year-over-year changes
 
 ### 51. Senior Care Chapter 11 Bankruptcy Filings: Trends and Profile (2Q2019-2Q2026)
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** nic (web_release)  
 **Published:** undated  
 **Topics:** housing  
@@ -568,7 +568,7 @@ In collaboration with the National Investment Center for Seniors Housing & Care 
 
 ### 52. The Great Tightening: How Senior Housing Is Entering a New Occupancy Era
 
-**Score:** 46/100  
+**Score:** Worth a look — 46/100  
 **Source:** nic (web_release)  
 **Published:** undated  
 **Topics:** housing  
@@ -579,7 +579,7 @@ For much of the past five years, the senior housing story has been one of recove
 
 ### 53. Can Equity Investments Help Social Security’s Long-Run Financing?
 
-**Score:** 44/100  
+**Score:** Worth a look — 44/100  
 **Source:** center-retirement-research (web_release)  
 **Published:** 05/19/26  
 **Topics:** financial_security  
@@ -590,7 +590,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 ### 54. The Story Comes First. The Word “Caregiver” Often Comes Later.
 
-**Score:** 44/100  
+**Score:** Worth a look — 44/100  
 **Source:** national-alliance-caregiving (web_release)  
 **Published:** undated  
 **Topics:** caregiving  
@@ -599,7 +599,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 ### 55. Statement of the National Alliance for Caregiving on the Department of Justice Office of Legal Counsel Opinion on the ADA Integration Mandate
 
-**Score:** 44/100  
+**Score:** Worth a look — 44/100  
 **Source:** national-alliance-caregiving (web_release)  
 **Published:** undated  
 **Topics:** caregiving  
@@ -608,7 +608,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 ### 56. Workforce Data Center
 
-**Score:** 44/100  
+**Score:** Worth a look — 44/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** workforce  
@@ -617,7 +617,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 ### 57. Workforce Research and Strategy Services
 
-**Score:** 44/100  
+**Score:** Worth a look — 44/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** workforce  
@@ -626,7 +626,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 ### 58. Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness
 
-**Score:** 41/100  
+**Score:** Worth a look — 41/100  
 **Source:** acl-news (web_release)  
 **Published:** undated  
 **Topics:** loneliness_social_connection, transportation  
@@ -635,7 +635,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 ### 59. THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER
 
-**Score:** 41/100  
+**Score:** Worth a look — 41/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** caregiving, workforce  
@@ -646,7 +646,7 @@ Home Workforce Innovations About Our Services Advanced Roles Curriculum Design O
 
 ### 60. Workforce Interventions
 
-**Score:** 40/100  
+**Score:** Worth a look — 40/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** workforce  
@@ -655,7 +655,7 @@ Home Workforce Innovations About Our Services Advanced Roles Curriculum Design O
 
 ### 61. Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations
 
-**Score:** 39/100  
+**Score:** Background — 39/100  
 **Source:** rand-research (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** depression_mental_health  
@@ -666,7 +666,7 @@ We aimed to quantify how prevalence varies under conservative vs expansive defin
 
 ### 62. Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor
 
-**Score:** 39/100  
+**Score:** Background — 39/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/27/26  
 **Topics:** depression_mental_health  
@@ -677,7 +677,7 @@ States are taking different regulatory approaches to AI mental health tools in r
 
 ### 63. Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms
 
-**Score:** 37/100  
+**Score:** Background — 37/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 06/10/26  
 **Topics:** dementia  
@@ -688,7 +688,7 @@ The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavi
 
 ### 64. The Social Security Claiming Guide
 
-**Score:** 36/100  
+**Score:** Background — 36/100  
 **Source:** center-retirement-research (web_release)  
 **Published:** 08/02/16  
 **Topics:** financial_security  
@@ -699,7 +699,7 @@ Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016
 
 ### 65. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
 
-**Score:** 35/100  
+**Score:** Background — 35/100  
 **Source:** rand-research (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** depression_mental_health  
@@ -710,7 +710,7 @@ The authors estimated the prevalence rates of mental health service use in a nat
 
 ### 66. Telemarketing Sales Rule Fees
 
-**Score:** 35/100  
+**Score:** Background — 35/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 08/26/26  
 **Topics:** unclassified  
@@ -719,20 +719,9 @@ The authors estimated the prevalence rates of mental health service use in a nat
 
 The Federal Trade Commission ("Commission") is amending its Telemarketing Sales Rule ("TSR") by updating the fees charged to entities accessing the National Do Not Call Registry ("Registry") as required by the Do-Not-Call Registry Fee Extension Act of 2007.
 
-### 67. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
+### 67. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
 
-**Score:** 35/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 06/17/26  
-**Topics:** depression_mental_health, incontinence  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children
-
-The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex tr
-
-### 68. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
-
-**Score:** 35/100  
+**Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 06/17/26  
 **Topics:** nutrition  
@@ -741,9 +730,20 @@ The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today
 
 At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and
 
+### 68. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
+
+**Score:** Background — 35/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 06/17/26  
+**Topics:** depression_mental_health, incontinence  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children
+
+The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex tr
+
 ### 69. FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims
 
-**Score:** 35/100  
+**Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 06/12/26  
 **Topics:** depression_mental_health  
@@ -754,7 +754,7 @@ The Federal Trade Commission has asked a federal court to hold in contempt dieta
 
 ### 70. FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing
 
-**Score:** 33/100  
+**Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 09/03/26  
 **Topics:** unclassified  
@@ -765,7 +765,7 @@ The Federal Trade Commission extended by seven days the public comment period on
 
 ### 71. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
 
-**Score:** 33/100  
+**Score:** Background — 33/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 09/02/26  
 **Topics:** unclassified  
@@ -776,7 +776,7 @@ On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department
 
 ### 72. FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service
 
-**Score:** 33/100  
+**Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/27/26  
 **Topics:** unclassified  
@@ -787,7 +787,7 @@ The Federal Trade Commission finalized orders requiring Cox Media Group (CMG) an
 
 ### 73. FTC Announces 2027 Telemarketer Fees to Access the National Do Not Call Registry
 
-**Score:** 33/100  
+**Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/26/26  
 **Topics:** unclassified  
@@ -798,7 +798,7 @@ The Federal Trade Commission today announced new fees for telemarketers to acces
 
 ### 74. Kindergarten Routine Vaccination Rates Continue to Decline
 
-**Score:** 33/100  
+**Score:** Background — 33/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/21/26  
 **Topics:** unclassified  
@@ -809,7 +809,7 @@ This issue brief provides an update on the latest trends in kindergarten childre
 
 ### 75. Revising HUD's Noise Abatement and Control Regulations; Correcting Amendment
 
-**Score:** 33/100  
+**Score:** Background — 33/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 08/20/26  
 **Topics:** unclassified  
@@ -820,7 +820,7 @@ On June 12, 2026, HUD published a final rule revising its noise abatement and co
 
 ### 76. Falls Prevention Awareness Month Is Here
 
-**Score:** 33/100  
+**Score:** Background — 33/100  
 **Source:** acl-news (web_release)  
 **Published:** undated  
 **Topics:** falls  
@@ -829,7 +829,7 @@ On June 12, 2026, HUD published a final rule revising its noise abatement and co
 
 ### 77. Events and Observances
 
-**Score:** 32/100  
+**Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
 **Published:** undated  
 **Topics:** elder_abuse  
@@ -840,7 +840,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 ### 78. Available for download
 
-**Score:** 32/100  
+**Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
 **Published:** undated  
 **Topics:** elder_abuse  
@@ -851,7 +851,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 ### 79. FTC, States Sue Amazon Over Secret Ad Surcharge Scheme
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** unclassified  
@@ -862,7 +862,7 @@ Today, 22 states joined the Federal Trade Commission in filing suit against Amaz
 
 ### 80. KFF Survey Methodology & Data Collection Standards
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/28/26  
 **Topics:** unclassified  
@@ -873,7 +873,7 @@ This publication describes KFF's survey methodology and data collection standard
 
 ### 81. Protected: Who Do We Trust to Decide What Health Care Gets Covered, and at What Price?
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/28/26  
 **Topics:** unclassified  
@@ -884,7 +884,7 @@ There is no excerpt because this is a protected post.
 
 ### 82. Protected: What Do We Get for the Cut Health Insurers Take?
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/28/26  
 **Topics:** unclassified  
@@ -895,7 +895,7 @@ There is no excerpt because this is a protected post.
 
 ### 83. Protected: What’s Driving Rising Health Premiums?
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/28/26  
 **Topics:** unclassified  
@@ -906,7 +906,7 @@ There is no excerpt because this is a protected post.
 
 ### 84. Protected: Are Health Insurers to Blame for Our Health System Problems?
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/28/26  
 **Topics:** unclassified  
@@ -917,7 +917,7 @@ There is no excerpt because this is a protected post.
 
 ### 85. Global COVID-19 Tracker
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/27/26  
 **Topics:** unclassified  
@@ -928,7 +928,7 @@ This tracker provides data on global COVID-19 cases and deaths by country, regio
 
 ### 86. Examining LGBTQ+ Adults’ Experiences with Health Care Costs and Access
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/27/26  
 **Topics:** unclassified  
@@ -939,7 +939,7 @@ This report examines how LGBTQ+ adults' experiences with health care costs and a
 
 ### 87. Litigation Involving Reproductive Health and Rights in the Federal Courts
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/26/26  
 **Topics:** unclassified  
@@ -950,7 +950,7 @@ This State and Federal Reproductive Rights Litigation tracker aggregates informa
 
 ### 88. Public Charge Final Rule: What Advocates Need to Know
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 08/26/26  
 **Topics:** unclassified  
@@ -961,7 +961,7 @@ This resource explains the public charge rule, its impact on older immigrants an
 
 ### 89. The Status of Abortion-related State Ballot Initiatives Since Dobbs
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/21/26  
 **Topics:** unclassified  
@@ -972,7 +972,7 @@ Last updated on August 21, 2026 Since the Supreme Court’s&#160;Dobbs&#160;deci
 
 ### 90. From DC: New Public Charge Guidance, Immigration Enforcement Protections, and More
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 08/21/26  
 **Topics:** unclassified  
@@ -983,7 +983,7 @@ In this week's edition: New Public Charge Guidance, Immigration Enforcement Prot
 
 ### 91. Overview of President Trump’s Executive Actions Impacting LGBTQ+ Health
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/21/26  
 **Topics:** unclassified  
@@ -994,7 +994,7 @@ This tracker examines Executive Actions taken by the Trump administration that h
 
 ### 92. Now Hiring: Director of Public Policy and Government Relations
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 08/21/26  
 **Topics:** unclassified  
@@ -1005,7 +1005,7 @@ The post Now Hiring: Director of Public Policy and Government Relations appeared
 
 ### 93. State and Local Policies on School Vaccine Requirements: Overview and Current Status
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/21/26  
 **Topics:** unclassified  
@@ -1016,7 +1016,7 @@ States and local governments, rather than the federal government, have authority
 
 ### 94. Celebrating World Senior Citizens Day – Today and Every Day
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 08/20/26  
 **Topics:** unclassified  
@@ -1027,7 +1027,7 @@ The post Celebrating World Senior Citizens Day – Today and Every Day appeared 
 
 ### 95. FTC, Connecticut Secure $4 Million Settlement with Manchester City Nissan Over Deceptive Fees Allegations
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/19/26  
 **Topics:** unclassified  
@@ -1038,7 +1038,7 @@ The Federal Trade Commission and state of Connecticut today secured a $4 million
 
 ### 96. Bill Payment Firm Doxo to Pay $2.1 Million to Settle FTC Allegations It Deceived Consumers and Charged Them Add-On Fees
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/17/26  
 **Topics:** unclassified  
@@ -1049,7 +1049,7 @@ Online bill payment firm Doxo will pay $2.1 million to settle Federal Trade Comm
 
 ### 97. FTC Sends More than $23.8 Million to Drivers and Diners Harmed by Grubhub’s Deceptive Advertising Claims and Other Unlawful Conduct
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/12/26  
 **Topics:** unclassified  
@@ -1060,7 +1060,7 @@ The Federal Trade Commission is sending payments totaling more than $23.8 millio
 
 ### 98. FTC Stops Sprawling Credit Repair Scheme that Scammed Consumers Out of Nearly $200 Million
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/10/26  
 **Topics:** unclassified  
@@ -1071,7 +1071,7 @@ At the request of the Federal Trade Commission, a federal court has temporarily 
 
 ### 99. FTC Takes Action Against Elite Events for Bypassing Ticket Purchase Limits in Violation of Better Online Ticket Sales Act
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/27/26  
 **Topics:** unclassified  
@@ -1082,7 +1082,7 @@ Ticket broker Elite Events and its operators will pay $300,000 in civil penaltie
 
 ### 100. FTC Returns Money to Consumers Harmed by Trend Deploy’s Deceptive Marketing
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/22/26  
 **Topics:** unclassified  
@@ -1093,7 +1093,7 @@ The Federal Trade Commission is sending more than $672,000 to consumers deceived
 
 ### 101. Student Loan Forgiveness Scammer Permanently Banned from Debt Relief Industry and Telemarketing
 
-**Score:** 31/100  
+**Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/21/26  
 **Topics:** unclassified  
@@ -1104,7 +1104,7 @@ Dennise Merdjanian, an operator of a student loan debt forgiveness scheme, will 
 
 ### 102. Employers and Older Workers: 2006 and 2019 Surveys
 
-**Score:** 29/100  
+**Score:** Background — 29/100  
 **Source:** center-retirement-research (web_release)  
 **Published:** 05/26/19  
 **Topics:** ageism_work  
@@ -1113,7 +1113,7 @@ Dennise Merdjanian, an operator of a student loan debt forgiveness scheme, will 
 
 ### 103. HHS Public Health Policy Actions Under the Trump Administration 2025-2026
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 08/19/26  
 **Topics:** unclassified  
@@ -1124,7 +1124,7 @@ A comprehensive timeline of public health policy actions by the Department of He
 
 ### 104. FTC Seeks Comment on Enforcement Policy Statement Regarding Personalized Pricing
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/19/26  
 **Topics:** unclassified  
@@ -1135,7 +1135,7 @@ This release was updated on August 31, 2026 at 2:40 PM to correct an earlier err
 
 ### 105. Justice in Aging’s Comment on Senate Finance Committee’s RFI on Lowering Drug Prices
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 08/18/26  
 **Topics:** unclassified  
@@ -1146,7 +1146,7 @@ Justice in Aging responds to the Senate Finance Committee’s request for inform
 
 ### 106. The CFPB to Cease Discretionary Publication of Complaint Narratives and Visualizations
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 08/14/26  
 **Topics:** unclassified  
@@ -1155,7 +1155,7 @@ Justice in Aging responds to the Senate Finance Committee’s request for inform
 
 ### 107. Meet Lauren Belsky, Development Coordinator for the Alliance
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 08/12/26  
 **Topics:** unclassified  
@@ -1166,7 +1166,7 @@ The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared f
 
 ### 108. FTC Ditches ‘Disparate Impact’
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 08/07/26  
 **Topics:** unclassified  
@@ -1177,7 +1177,7 @@ The Federal Trade Commission today announced a policy statement clarifying that 
 
 ### 109. Navigating Air Travel — Tips for Older Adventurers
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 07/27/26  
 **Topics:** unclassified  
@@ -1188,7 +1188,7 @@ The post Navigating Air Travel — Tips for Older Adventurers appeared first on 
 
 ### 110. Deputy Director Mark Paoletta’s Remarks to the Financial Literacy and Education Commission
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 07/27/26  
 **Topics:** unclassified  
@@ -1199,7 +1199,7 @@ Deputy Director Mark Paoletta provided remarks to the Financial Literacy and Edu
 
 ### 111. Balancing Boredom on World Brain Day
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 07/21/26  
 **Topics:** unclassified  
@@ -1210,7 +1210,7 @@ The post Balancing Boredom on World Brain Day appeared first on Alliance for Agi
 
 ### 112. Founders of Celsius Network Ordered to Pay $16.5 Million to Resolve FTC Charges
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/20/26  
 **Topics:** unclassified  
@@ -1221,7 +1221,7 @@ Alexander Mashinsky, the former CEO of cryptocurrency platform Celsius Network I
 
 ### 113. FTC Approves Final Order Against TruHeight for Deceptive and Unsubstantiated Advertising of Supplements for Kids and Teens
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/15/26  
 **Topics:** unclassified  
@@ -1232,7 +1232,7 @@ The Federal Trade Commission finalized an order with Vanilla Chip LLC—which do
 
 ### 114. FTC Sends More Than $2.7 Million to Consumers Harmed by Handy Technologies
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/07/26  
 **Topics:** unclassified  
@@ -1243,7 +1243,7 @@ Image The Federal Trade Commission is sending checks totaling more than $2.7 mil
 
 ### 115. Travel App Hopper to Pay $35 Million to Settle FTC Allegations It Charged Fees Without Consent and Deceived Users About Fees and Benefits of Some Products
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/02/26  
 **Topics:** unclassified  
@@ -1254,7 +1254,7 @@ The companies that operate the Hopper travel apps have agreed to pay $35 million
 
 ### 116. FTC Approves Final Order Against Publishing.com, Settling Allegations It Misled Consumers
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/02/26  
 **Topics:** unclassified  
@@ -1265,7 +1265,7 @@ The Federal Trade Commission finalized an order with Publishing.com LLC and its 
 
 ### 117. FTC Requires Amazon to Pay $2.25 Million to Resolve Charges It Knowingly Violated the Fair Credit Reporting Act
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 06/30/26  
 **Topics:** unclassified  
@@ -1276,7 +1276,7 @@ Amazon will pay $2.25 million in civil penalties to settle Federal Trade Commiss
 
 ### 118. FTC Returns Nearly $3 Million to Consumers Deceived by Mortgage Relief Scheme
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 06/09/26  
 **Topics:** unclassified  
@@ -1287,7 +1287,7 @@ The Federal Trade Commission is returning nearly $3 million to consumers deceive
 
 ### 119. FTC Gives Final Approval to Order Against Illuminate Settling Allegations It Failed to Secure Students’ Personal Data
 
-**Score:** 28/100  
+**Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 06/05/26  
 **Topics:** unclassified  
@@ -1298,7 +1298,7 @@ Following a public comment period, the Federal Trade Commission finalized a modi
 
 ### 120. Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 07/09/26  
 **Topics:** unclassified  
@@ -1309,7 +1309,7 @@ The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
 
 ### 121. FTC Warns Companies Making Questionable ‘Made in the USA’ Claims
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/06/26  
 **Topics:** unclassified  
@@ -1320,7 +1320,7 @@ The Federal Trade Commission today issued warning letters to seven companies tha
 
 ### 122. FTC Seeks Public Comment on Policy Statement Addressing AI Accuracy
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 07/01/26  
 **Topics:** unclassified  
@@ -1331,7 +1331,7 @@ The Federal Trade Commission is seeking public comment on a proposed policy stat
 
 ### 123. CFPB Announces Joint Final Rule on Adopting Uniform Standards for Reporting Financial Data
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 06/25/26  
 **Topics:** unclassified  
@@ -1340,7 +1340,7 @@ The Federal Trade Commission is seeking public comment on a proposed policy stat
 
 ### 124. The CFPB is Correcting Flaws to Restore Integrity and Utility to the Consumer Complaint System
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 06/24/26  
 **Topics:** unclassified  
@@ -1351,7 +1351,7 @@ The consumer complaint portal has long been plagued by issues that severely limi
 
 ### 125. ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 06/17/26  
 **Topics:** unclassified  
@@ -1362,7 +1362,7 @@ The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longes
 
 ### 126. Why Preventative Care is a ‘Manly’ Long-Term Health Investment
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 06/15/26  
 **Topics:** unclassified  
@@ -1373,7 +1373,7 @@ The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appe
 
 ### 127. 2025 Impact Report Highlights its Mission and Vision in Action
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
 **Published:** 06/09/26  
 **Topics:** unclassified  
@@ -1384,7 +1384,7 @@ The post 2025 Impact Report Highlights its Mission and Vision in Action appeared
 
 ### 128. FTC Issues Report to Congress on Adoption Practices
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
 **Published:** 06/04/26  
 **Topics:** unclassified  
@@ -1395,7 +1395,7 @@ The Federal Trade Commission issued a report to Congress detailing the agency’
 
 ### 129. The CFPB Works To Ensure Bilt Consumers Are Made Whole
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 06/02/26  
 **Topics:** unclassified  
@@ -1406,7 +1406,7 @@ The CFPB has been working to ensure consumers affected by Bilt’s transition to
 
 ### 130. 2025 HMDA Data on Mortgage Lending Now Available
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 03/31/26  
 **Topics:** unclassified  
@@ -1417,7 +1417,7 @@ The 2025 HMDA Loan Application Register data can be found on the FFIEC's HMDA Pl
 
 ### 131. Agencies Announce Dollar Thresholds for Smaller Loan Exemption from Appraisal Requirements for Higher-priced Mortgage Loans
 
-**Score:** 26/100  
+**Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 12/15/25  
 **Topics:** unclassified  
@@ -1428,7 +1428,7 @@ The CFPB, FRB, and OCC are announcing that the 2026 threshold for higher-priced 
 
 ### 132. Estimating the Cost of the Consumer Financial Protection Bureau to Consumers
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 02/17/26  
 **Topics:** unclassified  
@@ -1437,7 +1437,7 @@ The CFPB, FRB, and OCC are announcing that the 2026 threshold for higher-priced 
 
 ### 133. Consumer Financial Protection Bureau and the Department of Justice Withdraw Joint Statement on Fair Lending and Credit Opportunities for Noncitizen Borrowers
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 01/12/26  
 **Topics:** unclassified  
@@ -1448,7 +1448,7 @@ CFPB and Justice have withdrawn a joint statement linked to a creditor’s consi
 
 ### 134. Agencies Announce Dollar Thresholds for Applicability of Truth in Lending and Consumer Leasing Rules for Consumer Credit and Lease Transactions
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 12/15/25  
 **Topics:** unclassified  
@@ -1459,7 +1459,7 @@ The CFPB and the FRB are announcing the dollar thresholds used to determine whet
 
 ### 135. CFPB’s Supervision Division Releases New 'Humility Pledge'
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 11/21/25  
 **Topics:** unclassified  
@@ -1470,7 +1470,7 @@ Washington, D.C.—Today, the CFPB made changes to how the Supervision Division 
 
 ### 136. CFPB Notifies Court it Cannot Lawfully Draw Funds from the Federal Reserve
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 11/11/25  
 **Topics:** unclassified  
@@ -1481,7 +1481,7 @@ Washington, D.C.—Today, the Consumer Financial Protection Bureau (CFPB) filed 
 
 ### 137. CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 07/11/25  
 **Topics:** unclassified  
@@ -1492,7 +1492,7 @@ Today, in the Consumer Financial Protection Bureau’s (CFPB) November 12, 2021 
 
 ### 138. CFPB Amends Wise Order for Remittance Practices
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 05/15/25  
 **Topics:** unclassified  
@@ -1503,7 +1503,7 @@ The CFPB amended its January 30, 2025 consent order with the international remit
 
 ### 139. CFPB Announcement Regarding Enforcement Actions Related to Buy Now, Pay Later Loans
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 05/06/25  
 **Topics:** unclassified  
@@ -1514,7 +1514,7 @@ The CFPB is announcing that it will not prioritize enforcement actions taken on 
 
 ### 140. CFPB Keeps Its Enforcement and Supervision Resources Focused on Pressing Threats to Consumers
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 04/30/25  
 **Topics:** unclassified  
@@ -1525,7 +1525,7 @@ The CFPB is announcing that it will not prioritize enforcement or supervision ac
 
 ### 141. CFPB Offers Regulatory Relief From Registration Requirements for Small Loan Providers
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 04/11/25  
 **Topics:** unclassified  
@@ -1536,7 +1536,7 @@ The Consumer Financial Protection Bureau will not prioritize enforcement or supe
 
 ### 142. 2024 HMDA Data on Mortgage Lending Now Available
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 03/31/25  
 **Topics:** unclassified  
@@ -1547,7 +1547,7 @@ The published data contain loan-level information filed by financial institution
 
 ### 143. CFPB Offers Regulatory Relief for Small Loan Providers
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 03/28/25  
 **Topics:** unclassified  
@@ -1558,7 +1558,7 @@ The Bureau will keep its enforcement and supervision resources focused on pressi
 
 ### 144. CFPB Seeks to Vacate Abusive, Unjust Case Against Townstone
 
-**Score:** 24/100  
+**Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 03/28/25  
 **Topics:** unclassified  
@@ -1567,7 +1567,7 @@ The Bureau will keep its enforcement and supervision resources focused on pressi
 
 ### 145. Statement on Designation of Treasury Secretary Scott Bessent as Acting Director of the Consumer Financial Protection Bureau
 
-**Score:** 22/100  
+**Score:** Background — 22/100  
 **Source:** cfpb-newsroom (institutional_rss)  
 **Published:** 02/03/25  
 **Topics:** unclassified  

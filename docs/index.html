@@ -25,6 +25,11 @@
     --new: #2f7a4f;
     --new-soft: #e3ecdd;
     --strong: #1a1613;
+    /* Score bands, strongest to weakest. */
+    --lead: #2f7a4f;
+    --band-strong: #7a5c3e;
+    --band-look: #a5710f;
+    --band-bg: #b0a795;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -32,6 +37,7 @@
       --muted: #a89d8c; --accent: #d9b98a; --accent-soft: #332c22;
       --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
       --new: #6fcf94; --new-soft: #24301f; --strong: #ffffff;
+      --lead: #6fcf94; --band-strong: #d9b98a; --band-look: #e0ac4f; --band-bg: #6d6558;
     }
   }
   :root[data-theme="dark"] {
@@ -39,6 +45,7 @@
     --muted: #a89d8c; --accent: #d9b98a; --accent-soft: #332c22;
     --good: #6fcf94; --warn: #e0ac4f; --bad: #e07a7a;
     --new: #6fcf94; --new-soft: #24301f; --strong: #ffffff;
+    --lead: #6fcf94; --band-strong: #d9b98a; --band-look: #e0ac4f; --band-bg: #6d6558;
   }
   * { box-sizing: border-box; }
   body {
@@ -205,6 +212,115 @@
   th { color: var(--muted); font-weight: 600; }
   .filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
   .filter-row select, .filter-row input { width: auto; min-width: 140px; }
+
+  /* A chip is the base control for every facet. Ported from freelance-opps-app,
+     where the whole filter model is multi-select chips rather than one dropdown
+     of mutually exclusive options. 36px min-height is the touch target. */
+  .chip {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    border: 1px solid var(--border); background: var(--panel); color: var(--muted);
+    border-radius: 999px; padding: 0.35rem 0.7rem; min-height: 32px;
+    font-size: 0.78rem; line-height: 1.4; white-space: nowrap; cursor: pointer;
+    font-family: inherit;
+    transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--text); }
+  .chip[data-on="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+  .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chip .chip-n { opacity: 0.65; font-variant-numeric: tabular-nums; }
+
+  .facets { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+  .facet { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .facet-legend {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); min-width: 74px; flex: none; padding-top: 6px;
+  }
+  .facet-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .facet-bar {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 12px; flex-wrap: wrap; margin-bottom: 10px;
+    padding-bottom: 10px; border-bottom: 1px solid var(--border);
+  }
+  .facet-count { font-size: 0.82rem; color: var(--muted); }
+  .facet-count b { color: var(--text); }
+  .link-btn {
+    background: none; border: 0; padding: 0; font: inherit; font-size: 0.78rem;
+    color: var(--accent); text-decoration: underline; cursor: pointer;
+  }
+  .link-btn:hover { opacity: 0.75; }
+
+  /* renderItem() has always emitted these classes and the stylesheet has never
+     defined them, so every opportunity card rendered as unstyled default HTML —
+     bare h4s, run-together fields, no chips. */
+  .item {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 12px;
+  }
+  .item h4 { margin: 0 0 6px; font-size: 0.98rem; line-height: 1.4; font-weight: 700; }
+  .item h4 a { color: inherit; text-decoration: none; }
+  .item h4 a:hover { color: var(--accent); text-decoration: underline; }
+  .item-num { color: var(--muted); font-weight: 700; margin-right: 2px; }
+  .item-meta {
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+    font-size: 0.78rem; color: var(--muted); margin-bottom: 8px;
+  }
+  .score-chip {
+    font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent);
+    background: var(--accent-soft); border-radius: 6px; padding: 1px 7px;
+  }
+  .field-label {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--muted); margin: 10px 0 3px;
+  }
+  .field-body { font-size: 0.9rem; line-height: 1.5; }
+  .story-angle { font-size: 0.9rem; line-height: 1.5; margin-bottom: 4px; }
+  .story-angle b { color: var(--strong); }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+  .tag {
+    font-size: 0.72rem; padding: 1px 8px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--muted); background: var(--bg);
+  }
+  .idea-source { font-size: 0.78rem; color: var(--muted); font-style: italic; margin: -4px 0 6px; }
+
+  /* Priority reads off the left edge before any number is parsed. */
+  .item { border-left: 3px solid var(--border); }
+  .item.band-lead { border-left-color: var(--lead); }
+  .item.band-strong { border-left-color: var(--band-strong); }
+  .item.band-look { border-left-color: var(--band-look); }
+  .item.band-background { border-left-color: var(--band-bg); }
+  .band-chip {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+    padding: 1px 8px; border-radius: 999px; border: 1px solid currentColor; opacity: 0.9;
+  }
+  .band-chip.band-lead { color: var(--lead); }
+  .band-chip.band-strong { color: var(--band-strong); }
+  .band-chip.band-look { color: var(--band-look); }
+  .band-chip.band-background { color: var(--band-bg); }
+  .score-raw { font-size: 0.72rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  .status-picker {
+    font-size: 0.75rem; padding: 4px 8px; border-radius: 999px; width: auto;
+    min-width: 0; border: 1px solid var(--border); background: var(--panel); color: var(--muted);
+  }
+  .status-picker[data-set="true"] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+
+  .outlets { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .outlet-chip {
+    font-size: 0.74rem; padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--bg); color: var(--muted); cursor: help;
+  }
+  .outlet-chip b { color: var(--text); font-weight: 600; }
+  .outlet-row { padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .outlet-row:last-child { border-bottom: 0; }
+  .outlet-row h5 { margin: 0 0 3px; font-size: 0.92rem; }
+  .outlet-row .o-meta { font-size: 0.76rem; color: var(--muted); margin-bottom: 5px; }
+  .outlet-row ul { margin: 0; padding-left: 18px; }
+  .outlet-row li { font-size: 0.82rem; margin-bottom: 2px; }
+  /* Default link blue/purple against the warm dark panel was unreadable. */
+  .outlet-row a { color: var(--accent); text-decoration: none; }
+  .outlet-row a:hover { text-decoration: underline; }
+  .outlet-row a:visited { color: var(--accent); }
+  .limits li { margin-bottom: 8px; }
   .mode-note { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
   #scroll-top-btn {
     position: fixed; right: 22px; bottom: 22px; width: 42px; height: 42px;
@@ -240,7 +356,67 @@
 </div>
 <button id="scroll-top-btn" title="Back to top" aria-label="Back to top">&#8593;</button>
 <script>
-const state = { index: null, filtered: [], activeId: null, runs: new Map(), loadSeq: 0, itemFilter: "" };
+const state = {
+  index: null, filtered: [], activeId: null, runs: new Map(), loadSeq: 0,
+  /* Multi-select facets. The single <select> could not express "new AND
+     localizable", which is the first question anyone actually has. */
+  facets: { status: new Set(), band: new Set(), coverage: new Set(), topic: new Set(), flag: new Set() },
+  sort: "score",
+};
+
+/* ---------- editorial status ----------
+   The pipeline remembers what it surfaced; nothing remembered what you did
+   about it, so every run re-presented the same 169 candidates as if untouched.
+   Keyed on url because a run file is rebuilt daily but an item's url is stable.
+
+   `passed` and `killed` are both negative and the difference is the point:
+   `killed` is an editor saying no, `passed` is you saying no. Only the second
+   says anything about what you want to write, which makes it a signal on the
+   scoring rubric rather than on the market. */
+const STATUSES = {
+  "": { label: "To review" },
+  shortlist: { label: "Shortlisted" },
+  drafting: { label: "Drafting" },
+  pitched: { label: "Pitched" },
+  published: { label: "Published" },
+  passed: { label: "Passed" },
+  killed: { label: "Killed" },
+};
+const STATUS_KEY = "agingwire:status:v1";
+
+function statusMap() {
+  try {
+    return JSON.parse(localStorage.getItem(STATUS_KEY) || "{}");
+  } catch (e) {
+    return {};
+  }
+}
+
+function statusOf(item) {
+  return statusMap()[item.url] || "";
+}
+
+function setStatus(url, value) {
+  const map = statusMap();
+  value ? (map[url] = value) : delete map[url];
+  try {
+    localStorage.setItem(STATUS_KEY, JSON.stringify(map));
+  } catch (e) {
+    /* private browsing denies storage; the picker still works for this view */
+  }
+}
+
+/* ---------- score bands ----------
+   A weighted sum of ten 0-5 components does not carry two significant figures.
+   Ranks 2-6 of one run scored 73, 73, 72, 72, 72 — noise shown as a ranking. */
+const BANDS = [[70, "Lead", "lead"], [55, "Strong", "strong"],
+               [40, "Worth a look", "look"], [0, "Background", "background"]];
+
+function bandFor(score) {
+  return BANDS.find(b => (score || 0) >= b[0]) || BANDS[BANDS.length - 1];
+}
+function bandOf(item) { return item.score_band || bandFor(item.score)[1]; }
+function bandClass(item) { return "band-" + bandFor(item.score)[2]; }
 
 async function loadRun(id) {
   if (state.runs.has(id)) return state.runs.get(id);
@@ -293,32 +469,40 @@ function inline(text) {
 }
 
 function renderIdea(idea, rank) {
-  /* Reader angle first, trade angle second — the same order the digest works
-     in. The craft and competitive notes come after because they inform how to
-     write it, not whether it is a story. */
+  /* The headline is what the story would be called; the record's own name sits
+     under it as the citation. Leading with "CMS refreshed dataset: Penalties"
+     made every idea look like a filename rather than a pitch. */
   const craft = [["Localize", idea.localize], ["Chart", idea.chart],
                  ["Competitive", idea.competitive], ["Also", idea.note]]
                  .filter(([, v]) => v);
+  const heading = idea.headline || idea.title;
+  const outlets = idea.outlets || [];
   return `
     <div class="idea">
       <div class="idea-head">
         <span class="idea-rank">${rank}</span>
-        <h4><a href="${esc(idea.url)}" target="_blank" rel="noopener">${esc(idea.title)}</a></h4>
+        <h4><a href="${esc(idea.url)}" target="_blank" rel="noopener">${esc(heading)}</a></h4>
       </div>
+      ${idea.headline ? `<div class="idea-source">${esc(idea.title)}</div>` : ""}
       <div class="idea-meta">
         <span>${esc(idea.source_id)}</span>
         <span>${esc(fmtDate(idea.published_at) || "undated")}</span>
-        <span>score ${idea.score ?? 0}</span>
+        <span>${esc(bandOf(idea))}</span>
         ${idea.is_new ? '<span class="badge new">New</span>' : ""}
         ${coverageBadge(idea)}
         ${webCoverageBadge(idea)}
       </div>
+      ${idea.angle ? `<div class="field-label">Angle</div><div class="field-body">${esc(idea.angle)}</div>` : ""}
       ${idea.hook ? `<div class="field-label">Hook</div><div class="field-body">${esc(idea.hook)}</div>` : ""}
+      ${(!idea.hook && idea.summary) ? `<div class="field-label">What it is (source's own description)</div>
+        <div class="field-body">${esc(idea.summary)}</div>` : ""}
       ${(idea.consumer || idea.b2b) ? `<div class="field-label">Story angles</div>
         ${idea.consumer ? `<div class="story-angle"><b>For readers:</b> ${esc(idea.consumer)}</div>` : ""}
         ${idea.b2b ? `<div class="story-angle"><b>For the trade:</b> ${esc(idea.b2b)}</div>` : ""}` : ""}
       ${craft.length ? `<div class="field-label">Also worth noting</div>
         <div class="field-body">${craft.map(([k, v]) => `${k}: ${esc(v)}`).join(" ")}</div>` : ""}
+      ${outlets.length ? `<div class="field-label">Pitch to</div>
+        <div class="outlets">${outlets.map(o => `<span class="outlet-chip"><b>${esc(o)}</b></span>`).join("")}</div>` : ""}
     </div>`;
 }
 
@@ -492,19 +676,31 @@ function renderItem(item, index) {
   // prefixed, so they can be lifted out and given the emphasis they deserve.
   const audience = angles.filter(a => /^For (readers|the trade):/.test(a));
   const craft = angles.filter(a => !/^For (readers|the trade):/.test(a));
+  const cls = bandClass(item);
+  const current = statusOf(item);
+  const outlets = item.outlets || [];
   return `
-    <article class="item">
+    <article class="item ${cls}" data-url="${esc(item.url)}">
       <h4>${index != null ? `<span class="item-num">${index}.</span> ` : ""}<a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h4>
       <div class="item-meta">
-        <span class="score-chip">${item.score ?? 0}</span>
+        <span class="band-chip ${cls}">${esc(bandOf(item))}</span>
+        <span class="score-raw">${item.score ?? 0}</span>
         <span>${esc(item.source_id)}</span>
         <span>${esc(fmtDate(item.published_at) || "undated")}</span>
         <span>B2B ${item.b2b_coverage_count || 0} · B2C ${item.b2c_coverage_count || 0}</span>
         ${item.is_new ? '<span class="badge new">New</span>' : ""}
         ${coverageBadge(item)}
         ${webCoverageBadge(item)}
+        <label class="sr-only" for="st-${esc(item.url)}">Editorial status</label>
+        <select class="status-picker" id="st-${esc(item.url)}" data-status-for="${esc(item.url)}"
+                data-set="${current ? "true" : "false"}">
+          ${Object.entries(STATUSES).map(([k, v]) =>
+            `<option value="${k}"${current === k ? " selected" : ""}>${esc(v.label)}</option>`).join("")}
+        </select>
       </div>
-      ${item.summary ? `<div class="field-label">What it is</div>
+      ${item.hook ? `<div class="field-label">Hook</div>
+        <div class="field-body">${esc(item.hook)}</div>` : ""}
+      ${item.summary ? `<div class="field-label">${item.hook ? "What it is" : "What it is (source's own description)"}</div>
         <div class="field-body">${esc(item.summary.slice(0, 460))}${item.summary.length > 460 ? "…" : ""}</div>` : ""}
       ${findings.length ? `<div class="field-label">Key finding</div>
         <div class="field-body">${esc(findings[0])}</div>` : ""}
@@ -515,20 +711,91 @@ function renderItem(item, index) {
         }).join("") : ""}
       ${craft.length ? `<div class="field-label">Also worth noting</div>
         <div class="field-body">${craft.map(esc).join(" ")}</div>` : ""}
+      ${outlets.length ? `<div class="field-label">Pitch to</div>
+        <div class="outlets">${outlets.map(o =>
+          `<span class="outlet-chip" title="${esc(o.rationale || o.beat || "")}"><b>${esc(o.publisher)}</b> · ${esc(o.audience)}${o.tier ? " · " + esc(o.tier) : ""}</span>`).join("")}</div>` : ""}
       ${(item.topics || []).length ? `<div class="tags">${item.topics.map(t => `<span class="tag">${esc(label(t))}</span>`).join("")}</div>` : ""}
     </article>`;
 }
 
-function itemsFor(run) {
-  const f = state.itemFilter;
-  return (run.items || []).filter(i => {
-    if (f === "new") return i.is_new;
-    if (f === "gap") return i.coverage_state === "gap";
-    if (f === "localizable") return i.localizable || (i.geographies || []).length;
-    if (f && f.startsWith("topic:")) return (i.topics || []).includes(f.slice(6));
-    return true;
-  });
+const FLAG_TESTS = {
+  new: i => i.is_new,
+  localizable: i => i.localizable || (i.geographies || []).length,
+  outlets: i => (i.outlets || []).length,
+  hook: i => !!i.hook,
+};
+
+/* Within a facet group the chips are alternatives; across groups they compound.
+   An empty group means "no constraint", which is what makes the default view
+   the whole run rather than nothing. */
+function matchesFacets(item) {
+  const f = state.facets;
+  if (f.status.size && !f.status.has(statusOf(item) || "")) return false;
+  if (f.band.size && !f.band.has(bandOf(item))) return false;
+  if (f.coverage.size && !f.coverage.has(item.coverage_state || "")) return false;
+  if (f.topic.size && !(item.topics || []).some(t => f.topic.has(t))) return false;
+  for (const flag of f.flag) {
+    if (!(FLAG_TESTS[flag] || (() => true))(item)) return false;
+  }
+  return true;
 }
+
+function activeFacetCount() {
+  return Object.values(state.facets).reduce((n, set) => n + set.size, 0);
+}
+
+function clearFacets() {
+  Object.values(state.facets).forEach(set => set.clear());
+}
+
+function itemsFor(run) {
+  const rows = (run.items || []).filter(matchesFacets);
+  if (state.sort === "date") {
+    rows.sort((a, b) => (b.published_at || "").localeCompare(a.published_at || ""));
+  } else if (state.sort === "title") {
+    rows.sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+  } else {
+    rows.sort((a, b) => (b.score || 0) - (a.score || 0));
+  }
+  return rows;
+}
+
+function chip(group, value, text, count) {
+  const on = state.facets[group].has(value);
+  return `<button type="button" class="chip" data-facet="${group}" data-value="${esc(value)}"
+    data-on="${on}" aria-pressed="${on}">${esc(text)}${
+      count != null ? ` <span class="chip-n">${count}</span>` : ""}</button>`;
+}
+
+function facetsHtml(run) {
+  const all = run.items || [];
+  const n = (test) => all.filter(test).length;
+  const topics = (run.top_topics || []).slice(0, 8);
+  const coverage = ["gap", "reference", "light", "saturated", "unmonitored"]
+    .filter(c => all.some(i => i.coverage_state === c));
+  const groups = [
+    ["Status", Object.entries(STATUSES).map(([k, v]) =>
+      chip("status", k, v.label, n(i => (statusOf(i) || "") === k)))],
+    ["Score", BANDS.map(([, name]) => chip("band", name, name, n(i => bandOf(i) === name)))],
+    ["Coverage", coverage.map(c =>
+      chip("coverage", c, COVERAGE_LABEL[c] || c, n(i => i.coverage_state === c)))],
+    ["Topic", topics.map(t => chip("topic", t, label(t), n(i => (i.topics || []).includes(t))))],
+    ["Flags", [
+      chip("flag", "new", "New this run", n(FLAG_TESTS.new)),
+      chip("flag", "localizable", "Localizable", n(FLAG_TESTS.localizable)),
+      chip("flag", "outlets", "Has a matched outlet", n(FLAG_TESTS.outlets)),
+      chip("flag", "hook", "Has a written hook", n(FLAG_TESTS.hook)),
+    ]],
+  ];
+  return `<div class="facets">${groups.filter(([, c]) => c.length).map(([legend, chips]) => `
+    <div class="facet"><span class="facet-legend">${legend}</span>
+      <div class="facet-chips">${chips.join("")}</div></div>`).join("")}</div>`;
+}
+
+const COVERAGE_LABEL = {
+  gap: "Gap", reference: "Reference data", light: "Lightly covered",
+  saturated: "Well covered", unmonitored: "Unknown",
+};
 
 async function renderMain() {
   const main = document.getElementById("main");
@@ -548,7 +815,9 @@ async function renderMain() {
 
   const jump = [
     run.feature_pitch_raw ? '<a class="jump-link" href="#feature-pitch">Feature Pitch &#8595;</a>' : "",
+    run.pitch_draft_raw ? '<a class="jump-link" href="#pitch-draft">The Pitch &#8595;</a>' : "",
     run.pitch_ideas_raw ? '<a class="jump-link" href="#story-ideas">Story Ideas &#8595;</a>' : "",
+    (run.outlet_index || []).length ? '<a class="jump-link" href="#outlets">Outlets &#8595;</a>' : "",
     run.trends_raw ? '<a class="jump-link" href="#trends">Trends &#8595;</a>' : "",
     (run.clusters || []).length ? '<a class="jump-link" href="#clusters">Clusters &#8595;</a>' : "",
     '<a class="jump-link" href="#opportunities">Opportunities &#8595;</a>',
@@ -581,7 +850,43 @@ async function renderMain() {
         ? " · skipped: " + esc(run.web_coverage_status.skipped_reason) : ""}</div>`,
   ].join("");
 
+  const outletHtml = (run.outlet_index || []).slice(0, 20).map(o => `
+    <div class="outlet-row">
+      <h5>${esc(o.publisher)}</h5>
+      <div class="o-meta">${esc(o.audience)}${o.tier ? " · " + esc(o.tier) : ""}${
+        o.beat ? " · " + esc(o.beat) : ""}${o.rationale ? " — " + esc(o.rationale) : ""}</div>
+      <ul>${o.items.slice(0, 6).map(i =>
+        `<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a></li>`).join("")}
+      </ul>
+    </div>`).join("");
+
+  /* A number is more useful when the page says what it cannot support. Each of
+     these invalidates a specific figure shown above it. */
+  const limits = [
+    `<b>${media.no_feed || 0} of ${run.registry_publisher_count || 0} registry publishers have no working feed</b>,
+     so "no coverage found" usually means "not watched". That is why an item can read
+     <em>Unknown</em> rather than <em>Gap</em> — the two are not the same claim.`,
+    `<b>A <em>Reference data</em> item is a refreshed public file, not an event.</b> No outlet
+     would run a headline matching "Citation Code Look-up", so its coverage state says
+     nothing either way and it earns no gap bonus.`,
+    run.synthesis_mode === "llm"
+      ? `<b>The pitch, story ideas and trends were written by ${esc(run.synthesis_model || "a model")}</b>
+         from the facts on this page. The evidence, scores and coverage states are the pipeline's;
+         the prose is not.`
+      : `<b>No model wrote this run's editorial sections.</b> The pitch is a worksheet — it lays out
+         what can be assembled deterministically. Naming the angle is left to you.`,
+    `<b>Search demand comes from a cached weekly snapshot</b>, not from this run
+     (${esc(run.demand_source || "unknown source")}, ${Object.keys(run.demand_topics || {}).length} topics).`,
+    (run.source_status || []).some(x => x.status === "error")
+      ? `<b>${(run.source_status || []).filter(x => x.status === "error").length} evidence source(s) errored</b>
+         and contributed nothing, so their beats are underrepresented in every count above.`
+      : "",
+  ].filter(Boolean);
+  const limitsHtml = `<ul class="limits">${limits.map(l => `<li>${l}</li>`).join("")}</ul>`;
+
   const items = itemsFor(run);
+  const universe = (run.items || []).length;
+  const active = activeFacetCount();
 
   main.innerHTML = `
     <div class="run-header">
@@ -607,6 +912,10 @@ async function renderMain() {
       run.feature_pitch_raw ? renderBlock(run.feature_pitch_raw) : "",
       { extraClass: "feature" })}
 
+    ${sectionBlock("pitch-draft", "The Pitch",
+      run.pitch_draft_raw ? renderBlock(run.pitch_draft_raw) : "",
+      { extraClass: "feature" })}
+
     ${sectionBlock("story-ideas", "Story Ideas",
       (run.pitch_ideas_raw || (run.story_ideas || []).length) ? storyIdeasHtml(run) : "",
       { count: (run.story_ideas || []).length || "" })}
@@ -621,29 +930,49 @@ async function renderMain() {
       </table></div>` : "", { count: (run.clusters || []).length || "" })}
 
     ${sectionBlock("opportunities", "Story Opportunities", `
-      <div class="filter-row">
-        <label class="sr-only" for="item-filter">Filter items</label>
-        <select id="item-filter">
-          <option value="">All ${(run.items || []).length} items</option>
-          <option value="new"${state.itemFilter === "new" ? " selected" : ""}>New this run</option>
-          <option value="gap"${state.itemFilter === "gap" ? " selected" : ""}>Confirmed coverage gap</option>
-          <option value="localizable"${state.itemFilter === "localizable" ? " selected" : ""}>Localizable</option>
-          ${(run.top_topics || []).map(t => `<option value="topic:${esc(t)}"${state.itemFilter === "topic:" + t ? " selected" : ""}>Topic: ${esc(label(t))}</option>`).join("")}
-        </select>
-        <span style="color: var(--muted); font-size: 0.8rem;">${items.length} shown</span>
+      <div class="facet-bar">
+        <span class="facet-count"><b>${items.length}</b> of ${universe} candidates</span>
+        <span style="display:flex; gap:10px; align-items:center;">
+          ${active ? `<button type="button" class="link-btn" id="clear-facets">Clear ${active} filter${active === 1 ? "" : "s"}</button>` : ""}
+          <label class="sr-only" for="sort-items">Sort</label>
+          <select id="sort-items" style="width:auto; font-size:0.8rem; padding:4px 8px;">
+            <option value="score"${state.sort === "score" ? " selected" : ""}>Highest score</option>
+            <option value="date"${state.sort === "date" ? " selected" : ""}>Newest first</option>
+            <option value="title"${state.sort === "title" ? " selected" : ""}>Title A–Z</option>
+          </select>
+        </span>
       </div>
-      ${items.map((it, n) => renderItem(it, n + 1)).join("") || '<div class="empty-state">No items match this filter.</div>'}
+      ${facetsHtml(run)}
+      ${items.map((it, n) => renderItem(it, n + 1)).join("") || '<div class="empty-state">Nothing matches those filters.</div>'}
     `, { count: items.length })}
+
+    ${sectionBlock("outlets", "Outlets — What To Send Where", outletHtml,
+      { count: (run.outlet_index || []).length || "" })}
+
+    ${sectionBlock("limits", "What This Run Does Not Tell You", limitsHtml)}
 
     ${sectionBlock("health", "Pipeline Health", healthHtml)}
   `;
 
   document.getElementById("export-docx-btn").addEventListener("click", () => exportRunToDocx(run));
   document.getElementById("export-csv-btn").addEventListener("click", () => exportRunToCsv(run));
-  document.getElementById("item-filter").addEventListener("change", e => {
-    state.itemFilter = e.target.value;
+  main.querySelectorAll("[data-facet]").forEach(btn => btn.addEventListener("click", () => {
+    const set = state.facets[btn.dataset.facet];
+    const value = btn.dataset.value;
+    set.has(value) ? set.delete(value) : set.add(value);
+    renderMain();
+  }));
+  const clearBtn = document.getElementById("clear-facets");
+  if (clearBtn) clearBtn.addEventListener("click", () => { clearFacets(); renderMain(); });
+  document.getElementById("sort-items").addEventListener("change", e => {
+    state.sort = e.target.value;
     renderMain();
   });
+  main.querySelectorAll("[data-status-for]").forEach(sel => sel.addEventListener("change", e => {
+    setStatus(e.target.dataset.statusFor, e.target.value);
+    // Re-render so the status facet counts stay honest.
+    renderMain();
+  }));
   wireSectionToggles(main);
   main.querySelectorAll(".jump-link").forEach(a => a.addEventListener("click", e => {
     e.preventDefault();
@@ -662,16 +991,19 @@ function csvCell(v) {
 }
 
 function exportRunToCsv(run) {
-  const headers = ["score", "title", "source_id", "source_type", "published_at", "topics",
-                   "coverage_state", "is_new", "b2b_coverage_count", "b2c_coverage_count",
-                   "localizable", "url", "story_angles"];
+  const headers = ["score", "score_band", "status", "title", "source_id", "source_type",
+                   "published_at", "topics", "coverage_state", "is_new",
+                   "b2b_coverage_count", "b2c_coverage_count", "localizable",
+                   "outlets", "hook", "url", "story_angles"];
   const rows = [headers.join(",")];
   for (const i of run.items || []) {
     rows.push([
-      i.score, i.title, i.source_id, i.source_type, fmtDate(i.published_at),
+      i.score, bandOf(i), STATUSES[statusOf(i)] ? STATUSES[statusOf(i)].label : "",
+      i.title, i.source_id, i.source_type, fmtDate(i.published_at),
       (i.topics || []).join("; "), i.coverage_state, i.is_new ? "yes" : "no",
       i.b2b_coverage_count, i.b2c_coverage_count,
       (i.localizable || (i.geographies || []).length) ? "yes" : "no",
+      (i.outlets || []).map(o => o.publisher).join("; "), i.hook || "",
       i.url, (i.story_angles || []).join(" | "),
     ].map(csvCell).join(","));
   }
@@ -781,6 +1113,10 @@ async function exportRunToDocx(run) {
     if (run.feature_pitch_raw) {
       sections.push(new docx.Paragraph({ text: "Bigger Picture: Feature Pitch", heading: docx.HeadingLevel.HEADING_2, spacing: { before: 320, after: 80 } }));
       sections.push(...docxBlock(run.feature_pitch_raw));
+    }
+    if (run.pitch_draft_raw) {
+      sections.push(new docx.Paragraph({ text: "The Pitch", heading: docx.HeadingLevel.HEADING_2, spacing: { before: 320, after: 80 } }));
+      sections.push(...docxBlock(run.pitch_draft_raw));
     }
     if (run.pitch_ideas_raw) {
       sections.push(new docx.Paragraph({ text: "Story Ideas", heading: docx.HeadingLevel.HEADING_2, spacing: { before: 320, after: 80 } }));
