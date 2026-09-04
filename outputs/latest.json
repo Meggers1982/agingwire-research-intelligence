@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T23:21:12.741077+00:00",
+  "generated_at": "2026-09-04T23:35:29.376729+00:00",
   "evidence_count": 169,
   "new_evidence_count": 0,
-  "coverage_count": 2401,
-  "monitored_publisher_count": 111,
+  "coverage_count": 2567,
+  "monitored_publisher_count": 113,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -165,14 +165,14 @@
     }
   },
   "web_coverage_status": {
-    "checked": 9,
+    "checked": 10,
     "top_n": 15
   },
   "serpapi_calls": 15,
   "serpapi_failures": [
     {
       "reason": "google_news timeout",
-      "count": 9
+      "count": 4
     },
     {
       "reason": "google_news: Google News hasn't returned any results for this query.",
@@ -180,22 +180,22 @@
     }
   ],
   "topic_coverage_counts": {
-    "age_tech": 4,
+    "age_tech": 8,
     "ageism_work": 1,
     "aging_in_place": 19,
-    "assisted_living": 100,
+    "assisted_living": 98,
     "cardiovascular_disease": 11,
     "caregiving": 14,
     "chronic_pain": 1,
     "cognitive_decline": 14,
-    "dementia": 61,
-    "depression_mental_health": 11,
-    "falls": 27,
+    "dementia": 59,
+    "depression_mental_health": 10,
+    "falls": 26,
     "financial_security": 18,
     "food_security": 1,
     "fraud_scams": 2,
     "hearing_loss": 5,
-    "housing": 80,
+    "housing": 95,
     "incontinence": 2,
     "loneliness_social_connection": 2,
     "long_term_care": 53,
@@ -440,10 +440,12 @@
     {
       "publisher": "Multi-Housing News - Senior Housing",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://news.google.com/rss/search?q=site%3Amultihousingnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
-      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.multihousingnews.com/senior-housing/feed/); gnews also failed (serpapi returned nothing)"
+      "discovered": false,
+      "items": 45,
+      "recovered_from": "https://www.multihousingnews.com/senior-housing/feed/"
     },
     {
       "publisher": "InsuranceNewsNet",
@@ -682,10 +684,12 @@
     {
       "publisher": "Commercial Property Executive",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://news.google.com/rss/search?q=site%3Acommercialsearch.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
-      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.commercialsearch.com/news/feed/); gnews also failed (serpapi returned nothing)"
+      "discovered": false,
+      "items": 50,
+      "recovered_from": "https://www.commercialsearch.com/news/feed/"
     },
     {
       "publisher": "Connect CRE",
@@ -821,10 +825,12 @@
     {
       "publisher": "GlobeSt",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://news.google.com/rss/search?q=site%3Aglobest.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
-      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.globest.com/rss/); gnews also failed (serpapi returned nothing)"
+      "discovered": false,
+      "items": 50,
+      "recovered_from": "https://www.globest.com/rss/"
     },
     {
       "publisher": "Senior Housing Investor",
@@ -868,10 +874,12 @@
     {
       "publisher": "Healthcare IT News",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://news.google.com/rss/search?q=site%3Ahealthcareitnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
-      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.healthcareitnews.com/rss.xml); gnews also failed (serpapi returned nothing)"
+      "discovered": false,
+      "items": 41,
+      "recovered_from": "https://www.healthcareitnews.com/rss.xml"
     },
     {
       "publisher": "MobiHealthNews",
@@ -888,20 +896,20 @@
     {
       "publisher": "PLANADVISER",
       "audience": "b2b",
-      "status": "empty",
-      "feed": "https://www.planadviser.com/pa-rss/",
+      "status": "ok",
+      "feed": "https://www.planadviser.com/rss",
       "kind": "rss",
       "discovered": false,
-      "items": 0
+      "items": 30,
+      "recovered_from": "https://www.planadviser.com/pa-rss/"
     },
     {
       "publisher": "PLANSPONSOR",
       "audience": "b2b",
-      "status": "empty",
-      "feed": "https://www.plansponsor.com/ps-rss/",
+      "status": "error",
+      "feed": "https://www.plansponsor.com/feed/",
       "kind": "rss",
-      "discovered": false,
-      "items": 0
+      "error": "configured feed failed (HTTPSConnectionPool(host='www.plansponsor.com', port=443): Max retries exceeded with url: /ps-rss/ (Caused by ConnectTim); rss also failed (HTTPSConnectionPool(host='www.plansponsor.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeo)"
     },
     {
       "publisher": "InvestmentNews",
@@ -973,11 +981,10 @@
     {
       "publisher": "Senior Helpers News/Resources",
       "audience": "b2b",
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.seniorhelpers.com/sitemap.xml",
       "kind": "sitemap",
-      "discovered": true,
-      "items": 50
+      "error": "HTTPSConnectionPool(host='www.seniorhelpers.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.seniorhelpers.com', port=443) at 0x7f84a555e270>, 'Connection to www.seniorhelpers.com timed out. (connect timeout=12)'))"
     },
     {
       "publisher": "SHRM HR News",
@@ -1689,74 +1696,6 @@
           ],
           "state": "lightly_reported"
         }
-      }
-    },
-    {
-      "source_id": "american-community-survey",
-      "title": "American Community Survey 2023 state aging and housing profile (52 states)",
-      "url": "https://data.census.gov/table?q=DP05&y=2023",
-      "source_type": "government_api",
-      "published_at": null,
-      "topics": [
-        "housing",
-        "financial_security",
-        "migration_retirement",
-        "rural_aging"
-      ],
-      "geographies": [
-        "US states"
-      ],
-      "population": "All US residents, with 65+ age bands",
-      "methodology": "ACS 5-year Data Profile API; selected aging, income and housing-tenure measures",
-      "evidence_grade": "A",
-      "summary": "State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.",
-      "key_findings": [
-        "California: 5,994,486 residents aged 65+",
-        "Florida: 4,630,733 residents aged 65+",
-        "Texas: 3,905,545 residents aged 65+",
-        "New York: 3,461,186 residents aged 65+",
-        "Pennsylvania: 2,476,241 residents aged 65+"
-      ],
-      "localizable": true,
-      "score": 66,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "year": 2023,
-        "variables": {
-          "DP05_0024E": "population_65_plus",
-          "DP05_0015E": "population_65_74",
-          "DP05_0016E": "population_75_84",
-          "DP05_0017E": "population_85_plus",
-          "DP03_0062E": "median_household_income",
-          "DP04_0046E": "owner_occupied_housing_units",
-          "DP04_0047E": "renter_occupied_housing_units"
-        },
-        "state_count": 52,
-        "data_file": "outputs/data/acs-2023-state-profile.json",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:01:01.274675+00:00",
-        "runs_seen": 27,
-        "is_new": false
       }
     },
     {
@@ -2751,7 +2690,24 @@
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 37,
-        "is_new": false
+        "is_new": false,
+        "web_coverage": {
+          "query": "Fire Safety Deficiencies",
+          "returned": 20,
+          "outlet_count": 1,
+          "outlets": [
+            "The Express Tribune"
+          ],
+          "articles": [
+            {
+              "title": "Fire safety lapses exposed at capital hospitals",
+              "outlet": "The Express Tribune",
+              "link": "https://tribune.com.pk/story/2626163/fire-safety-lapses-exposed-at-capital-hospitals",
+              "date": "08/28/2026, 04:46 AM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
       }
     },
     {
@@ -3407,6 +3363,73 @@
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 37,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "american-community-survey",
+      "title": "American Community Survey 2023 state aging and housing profile (52 states)",
+      "url": "https://data.census.gov/table?q=DP05&y=2023",
+      "source_type": "government_api",
+      "published_at": null,
+      "topics": [
+        "housing",
+        "financial_security",
+        "migration_retirement",
+        "rural_aging"
+      ],
+      "geographies": [
+        "US states"
+      ],
+      "population": "All US residents, with 65+ age bands",
+      "methodology": "ACS 5-year Data Profile API; selected aging, income and housing-tenure measures",
+      "evidence_grade": "A",
+      "summary": "State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.",
+      "key_findings": [
+        "California: 5,994,486 residents aged 65+",
+        "Florida: 4,630,733 residents aged 65+",
+        "Texas: 3,905,545 residents aged 65+",
+        "New York: 3,461,186 residents aged 65+",
+        "Pennsylvania: 2,476,241 residents aged 65+"
+      ],
+      "localizable": true,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 4,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "year": 2023,
+        "variables": {
+          "DP05_0024E": "population_65_plus",
+          "DP05_0015E": "population_65_74",
+          "DP05_0016E": "population_75_84",
+          "DP05_0017E": "population_85_plus",
+          "DP03_0062E": "median_household_income",
+          "DP04_0046E": "owner_occupied_housing_units",
+          "DP04_0047E": "renter_occupied_housing_units"
+        },
+        "state_count": 52,
+        "data_file": "outputs/data/acs-2023-state-profile.json",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T19:01:01.274675+00:00",
+        "runs_seen": 27,
         "is_new": false
       }
     },
@@ -6172,6 +6195,94 @@
       }
     },
     {
+      "source_id": "phi-workforce",
+      "title": "Workforce Data Center",
+      "url": "https://www.phinational.org/policy-research/workforce-data-center/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "workforce"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 44,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: Whether you will be able to find and afford help at home.",
+        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.phinational.org/policy-research/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 37,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "phi-workforce",
+      "title": "Workforce Research and Strategy Services",
+      "url": "https://www.phinational.org/service/workforce-research-strategy/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "workforce"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 44,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: Whether you will be able to find and afford help at home.",
+        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.phinational.org/policy-research/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 37,
+        "is_new": false
+      }
+    },
+    {
       "source_id": "acl-news",
       "title": "Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness",
       "url": "https://acl.gov/news-and-events/announcements/commit-connect-webinar-transportation-strategies-strengthen-social",
@@ -6218,92 +6329,6 @@
     },
     {
       "source_id": "phi-workforce",
-      "title": "Workforce Data Center",
-      "url": "https://www.phinational.org/policy-research/workforce-data-center/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "workforce"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 40,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
-      "story_angles": [
-        "For readers: Whether you will be able to find and afford help at home.",
-        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.phinational.org/policy-research/",
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 37,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "phi-workforce",
-      "title": "Workforce Research and Strategy Services",
-      "url": "https://www.phinational.org/service/workforce-research-strategy/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "workforce"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 40,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
-      "story_angles": [
-        "For readers: Whether you will be able to find and afford help at home.",
-        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.phinational.org/policy-research/",
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 37,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "phi-workforce",
       "title": "Workforce Interventions",
       "url": "https://www.phinational.org/issue/workforce-interventions/",
       "source_type": "web_release",
@@ -6332,7 +6357,7 @@
         "visualization": 1
       },
       "b2b_coverage_count": 1,
-      "b2c_coverage_count": 1,
+      "b2c_coverage_count": 0,
       "story_angles": [
         "For readers: Whether you will be able to find and afford help at home.",
         "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
@@ -6342,6 +6367,48 @@
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 37,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "rand-research",
+      "title": "Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations",
+      "url": "https://www.rand.org/pubs/external_publications/EP71368.html",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:15:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 39,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -6459,7 +6526,7 @@
         "b2b_relevance": 4,
         "visualization": 1
       },
-      "b2b_coverage_count": 2,
+      "b2b_coverage_count": 3,
       "b2c_coverage_count": 1,
       "story_angles": [
         "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
@@ -6518,8 +6585,8 @@
     },
     {
       "source_id": "rand-research",
-      "title": "Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations",
-      "url": "https://www.rand.org/pubs/external_publications/EP71368.html",
+      "title": "Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation",
+      "url": "https://www.rand.org/pubs/external_publications/EP71382.html",
       "source_type": "institutional_rss",
       "published_at": "2026-08-31T08:15:00+00:00",
       "topics": [
@@ -6529,7 +6596,7 @@
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.",
+      "summary": "The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.",
       "key_findings": [],
       "localizable": false,
       "score": 35,
@@ -6545,8 +6612,8 @@
         "b2b_relevance": 1,
         "visualization": 1
       },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 0,
       "story_angles": [],
       "raw_metadata": {
         "feed_url": "https://www.rand.org/pubs/new.xml",
@@ -7102,46 +7169,6 @@
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 37,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "rand-research",
-      "title": "Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation",
-      "url": "https://www.rand.org/pubs/external_publications/EP71382.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T08:15:00+00:00",
-      "topics": [
-        "depression_mental_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 31,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 1,
-        "localization": 1,
-        "demand": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 1,
-      "story_angles": [],
-      "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
-        "coverage_state": "saturated",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 28,
         "is_new": false
       }
     },

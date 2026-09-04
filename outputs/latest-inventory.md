@@ -1,6 +1,6 @@
 # AgingWire evidence inventory
 
-Generated: 2026-09-04T23:21:12.741077+00:00
+Generated: 2026-09-04T23:35:29.376729+00:00
 
 All **169** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 
@@ -38,18 +38,7 @@ Released together, so this is one event rather than 25 separate leads:
 - [Hospice - State Data](https://data.cms.gov/provider-data/dataset/eda0-92f0) — 49/100, 08/07/26
 - [Hospice - National Data](https://data.cms.gov/provider-data/dataset/3xeb-u9wp) — 49/100, 08/07/26
 
-### 2. American Community Survey 2023 state aging and housing profile (52 states)
-
-**Score:** Strong — 66/100  
-**Source:** american-community-survey (government_api)  
-**Published:** undated  
-**Topics:** housing, financial_security, migration_retirement, rural_aging  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://data.census.gov/table?q=DP05&y=2023
-
-State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
-
-### 3. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
+### 2. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
 
 **Score:** Strong — 63/100  
 **Source:** federal-register (regulatory_filing)  
@@ -60,7 +49,7 @@ State-level counts for 65+, 65-74, 75-84 and 85+ populations with median househo
 
 HUD is required to publish FMRs not less than annually, adjusted to be effective on October 1 of each year. This notice describes the methods used to calculate the FY 2027 FMRs and lists the procedures for public housing agencies (PHAs) to request reevaluations of their FMRs as required by the Housing Opportunity Through Modernization Act of 2016 (HOTMA).
 
-### 4. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
+### 3. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
 **Score:** Strong — 63/100  
 **Source:** federal-register (regulatory_filing)  
@@ -71,7 +60,7 @@ HUD is required to publish FMRs not less than annually, adjusted to be effective
 
 This notice announces changes in the interest rates to be paid on debentures issued with respect to a loan or mortgage insured by the Federal Housing Administration under the provisions of the National Housing Act (the Act). The interest rate for debentures issued under Section 221(g)(4) of the Act during the 6-month period beginning January 1, 2026, is 4 percent. The interest rate for debentures issued under any other provision of the Act is the rate in effect on the date that the commitment to insure the loan or mortgage was issued, or the date that the loan or mortgage was endorsed (or init
 
-### 5. BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)
+### 4. BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)
 
 **Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
@@ -80,7 +69,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562160001
 
-### 6. BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)
+### 5. BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)
 
 **Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
@@ -89,7 +78,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562310001
 
-### 7. BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)
+### 6. BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)
 
 **Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
@@ -98,7 +87,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/LNU02000097
 
-### 8. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
+### 7. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
 
 **Score:** Strong — 62/100  
 **Source:** bls-api (government_api)  
@@ -106,6 +95,17 @@ This notice announces changes in the interest rates to be paid on debentures iss
 **Topics:** financial_security, medicare_medicaid  
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CUUR0000SAM
+
+### 8. American Community Survey 2023 state aging and housing profile (52 states)
+
+**Score:** Strong — 62/100  
+**Source:** american-community-survey (government_api)  
+**Published:** undated  
+**Topics:** housing, financial_security, migration_retirement, rural_aging  
+**Coverage:** lightly covered — B2B 1, B2C 0  
+**Source URL:** https://data.census.gov/table?q=DP05&y=2023
+
+State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
 
 ### 9. BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)
 
@@ -617,7 +617,25 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://www.caregiving.org/statement-of-the-national-alliance-for-caregiving-on-the-department-of-justice-office-of-legal-counsel-opinion-on-the-ada-integration-mandate/
 
-### 57. Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness
+### 57. Workforce Data Center
+
+**Score:** Worth a look — 44/100  
+**Source:** phi-workforce (web_release)  
+**Published:** undated  
+**Topics:** workforce  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.phinational.org/policy-research/workforce-data-center/
+
+### 58. Workforce Research and Strategy Services
+
+**Score:** Worth a look — 44/100  
+**Source:** phi-workforce (web_release)  
+**Published:** undated  
+**Topics:** workforce  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.phinational.org/service/workforce-research-strategy/
+
+### 59. Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness
 
 **Score:** Worth a look — 41/100  
 **Source:** acl-news (web_release)  
@@ -626,34 +644,27 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://acl.gov/news-and-events/announcements/commit-connect-webinar-transportation-strategies-strengthen-social
 
-### 58. Workforce Data Center
-
-**Score:** Worth a look — 40/100  
-**Source:** phi-workforce (web_release)  
-**Published:** undated  
-**Topics:** workforce  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.phinational.org/policy-research/workforce-data-center/
-
-### 59. Workforce Research and Strategy Services
-
-**Score:** Worth a look — 40/100  
-**Source:** phi-workforce (web_release)  
-**Published:** undated  
-**Topics:** workforce  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.phinational.org/service/workforce-research-strategy/
-
 ### 60. Workforce Interventions
 
 **Score:** Worth a look — 40/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** workforce  
-**Coverage:** lightly covered — B2B 1, B2C 1  
+**Coverage:** lightly covered — B2B 1, B2C 0  
 **Source URL:** https://www.phinational.org/issue/workforce-interventions/
 
-### 61. Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor
+### 61. Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations
+
+**Score:** Background — 39/100  
+**Source:** rand-research (institutional_rss)  
+**Published:** 08/31/26  
+**Topics:** depression_mental_health  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.rand.org/pubs/external_publications/EP71368.html
+
+We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.
+
+### 62. Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor
 
 **Score:** Background — 39/100  
 **Source:** kff-feed (institutional_rss)  
@@ -664,7 +675,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 States are taking different regulatory approaches to AI mental health tools in response to concerns about chatbots providing inaccurate or potentially dangerous advice. Laws and pending legislation in some states restrict AI from providing or advertising itself as therapy, while others focus on data protections, disclosures, and patient consent requirements.
 
-### 62. Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms
+### 63. Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms
 
 **Score:** Background — 37/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -675,18 +686,18 @@ States are taking different regulatory approaches to AI mental health tools in r
 
 The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .
 
-### 63. THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER
+### 64. THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER
 
 **Score:** Background — 37/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** caregiving, workforce  
-**Coverage:** well covered — B2B 2, B2C 1  
+**Coverage:** well covered — B2B 3, B2C 1  
 **Source URL:** https://www.phinational.org/national-resource-center
 
 Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St
 
-### 64. The Social Security Claiming Guide
+### 65. The Social Security Claiming Guide
 
 **Score:** Background — 36/100  
 **Source:** center-retirement-research (web_release)  
@@ -697,18 +708,18 @@ Home Workforce Innovations About Our Services Advanced Roles Curriculum Design O
 
 Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016
 
-### 65. Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations
+### 66. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
 
 **Score:** Background — 35/100  
 **Source:** rand-research (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** depression_mental_health  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71368.html
+**Coverage:** lightly covered — B2B 2, B2C 0  
+**Source URL:** https://www.rand.org/pubs/external_publications/EP71382.html
 
-We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.
+The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.
 
-### 66. Telemarketing Sales Rule Fees
+### 67. Telemarketing Sales Rule Fees
 
 **Score:** Background — 35/100  
 **Source:** federal-register (regulatory_filing)  
@@ -719,7 +730,7 @@ We aimed to quantify how prevalence varies under conservative vs expansive defin
 
 The Federal Trade Commission ("Commission") is amending its Telemarketing Sales Rule ("TSR") by updating the fees charged to entities accessing the National Do Not Call Registry ("Registry") as required by the Do-Not-Call Registry Fee Extension Act of 2007.
 
-### 67. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
+### 68. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
 
 **Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -730,7 +741,7 @@ The Federal Trade Commission ("Commission") is amending its Telemarketing Sales 
 
 The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex tr
 
-### 68. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
+### 69. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
 
 **Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -741,7 +752,7 @@ The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today
 
 At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and
 
-### 69. FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims
+### 70. FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims
 
 **Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -752,7 +763,7 @@ At the Federal Trade Commission’s request, a federal court has temporarily hal
 
 The Federal Trade Commission has asked a federal court to hold in contempt dietary supplement provider Amare Global Holdings, its former Chief Science Officer Shawn Talbott and two others over allegations they violated an FTC order that banned Talbott and those who work with him from making false, deceptive or unsubstantiated health claims. Earlier this month, the FTC sued multilevel marketer Amare Global , Talbott, the company’s founding brand partner Patrick Hintze and current CEO and majority shareholder David Chung for misrepresenting to parents and other consumers that dietary supplements
 
-### 70. FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing
+### 71. FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing
 
 **Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -763,7 +774,7 @@ The Federal Trade Commission has asked a federal court to hold in contempt dieta
 
 The Federal Trade Commission extended by seven days the public comment period on the proposed enforcement policy statement regarding personalized pricing . The new deadline to submit comments is Sept. 25, 2026. On Aug. 19, 2026, the Commission invited the public to submit comments electronically until Sept. 18, 2026 on the proposed policy statement related to personalized pricing. Personalized pricing refers to the use of personal data to set prices according to the amount that a company believes an individual consumer is willing to spend.
 
-### 71. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
+### 72. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
 
 **Score:** Background — 33/100  
 **Source:** justice-in-aging (institutional_rss)  
@@ -774,7 +785,7 @@ The Federal Trade Commission extended by seven days the public comment period on
 
 On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department of Health and Human Services (HHS), along with Texas, Florida and Alaska filed a proposed resolution of Texas v. Kennedy. These states challenged the HHS 2024 regulations implementing Section 504 of the Rehabilitation Act, which prohibits discrimination on the basis of [&#8230;] The post Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy appeared first on Justice in Aging .
 
-### 72. FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service
+### 73. FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service
 
 **Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -785,7 +796,7 @@ On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department
 
 The Federal Trade Commission finalized orders requiring Cox Media Group (CMG) and two other firms to pay a total of $930,000 to settle allegations they deceived customers by falsely claiming to offer an AI-powered service that could target localized ads based on conversations captured from consumers’ smart devices and that consumers had opted into such targeting. In three separate complaints first announced in May , the FTC alleged that Georgia-based media and marketing company CMG Media Corporation, which does business as Cox Media Group , and two marketing firms it worked with, New Hampshire
 
-### 73. FTC Announces 2027 Telemarketer Fees to Access the National Do Not Call Registry
+### 74. FTC Announces 2027 Telemarketer Fees to Access the National Do Not Call Registry
 
 **Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -796,7 +807,7 @@ The Federal Trade Commission finalized orders requiring Cox Media Group (CMG) an
 
 The Federal Trade Commission today announced new fees for telemarketers to access phone numbers on the National Do Not Call (DNC) Registry for Fiscal Year 2027 which begins on October 1, 2026. All telemarketers calling consumers in the United States are required to download the numbers on the National DNC Registry to ensure they do not call consumers who have registered their phone numbers. The first five area codes are free to download, and organizations that are exempt, such as some charities and political callers, may obtain the entire list for free. Telemarketers must subscribe each year f
 
-### 74. Kindergarten Routine Vaccination Rates Continue to Decline
+### 75. Kindergarten Routine Vaccination Rates Continue to Decline
 
 **Score:** Background — 33/100  
 **Source:** kff-feed (institutional_rss)  
@@ -807,7 +818,7 @@ The Federal Trade Commission today announced new fees for telemarketers to acces
 
 This issue brief provides an update on the latest trends in kindergarten children's routine vaccination and exemption rates. Over three-quarters of states had measles, mumps, rubella (MMR) vaccination rates below the “target” rate of 95% for the 2025-2026 school year.
 
-### 75. Revising HUD's Noise Abatement and Control Regulations; Correcting Amendment
+### 76. Revising HUD's Noise Abatement and Control Regulations; Correcting Amendment
 
 **Score:** Background — 33/100  
 **Source:** federal-register (regulatory_filing)  
@@ -818,7 +829,7 @@ This issue brief provides an update on the latest trends in kindergarten childre
 
 On June 12, 2026, HUD published a final rule revising its noise abatement and control regulations. Due to an amendatory instruction drafting error, codified text of was not revised as HUD intended and continues to reference the Assistant Secretary for Community Planning and Development. This document corrects that text to conform to HUD's intent as described in the preamble to the final rule.
 
-### 76. Events and Observances
+### 77. Events and Observances
 
 **Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
@@ -829,7 +840,7 @@ On June 12, 2026, HUD published a final rule revising its noise abatement and co
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 77. Available for download
+### 78. Available for download
 
 **Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
@@ -840,7 +851,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 78. FTC, States Sue Amazon Over Secret Ad Surcharge Scheme
+### 79. FTC, States Sue Amazon Over Secret Ad Surcharge Scheme
 
 **Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -850,17 +861,6 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 **Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme
 
 Today, 22 states joined the Federal Trade Commission in filing suit against Amazon, alleging that the company engaged in deceptive and unfair practices that secretly inflated prices in its online search advertising auctions. The complaint alleges that, for over seven years, Amazon has covertly and substantially increased the prices that more than one million brands and sellers were required to pay to advertise on its platform. As a result, the complaint alleges that Amazon’s scheme has likely extracted tens of billions of dollars from its unwitting advertising customers. “When one of the world
-
-### 79. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
-
-**Score:** Background — 31/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 08/31/26  
-**Topics:** depression_mental_health  
-**Coverage:** well covered — B2B 2, B2C 1  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71382.html
-
-The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.
 
 ### 80. KFF Survey Methodology & Data Collection Standards
 
