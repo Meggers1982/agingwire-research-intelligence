@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-04T12:54:49.594163+00:00",
+  "generated_at": "2026-09-04T13:02:19.187145+00:00",
   "evidence_count": 169,
-  "new_evidence_count": 7,
+  "new_evidence_count": 0,
   "coverage_count": 1037,
   "monitored_publisher_count": 65,
   "registry_publisher_count": 132,
@@ -165,14 +165,14 @@
     }
   },
   "web_coverage_status": {
-    "checked": 12,
+    "checked": 13,
     "top_n": 15
   },
   "serpapi_calls": 15,
   "serpapi_failures": [
     {
       "reason": "google_news: Google News hasn't returned any results for this query.",
-      "count": 3
+      "count": 2
     }
   ],
   "topic_coverage_counts": {
@@ -188,6 +188,7 @@
     "depression_mental_health": 8,
     "falls": 10,
     "financial_security": 13,
+    "food_security": 1,
     "fraud_scams": 3,
     "housing": 51,
     "incontinence": 1,
@@ -203,7 +204,7 @@
     "senior_living_quality": 5,
     "sleep": 7,
     "transportation": 4,
-    "workforce": 13
+    "workforce": 14
   },
   "source_status": [
     {
@@ -1272,10 +1273,10 @@
         "Year-over-year change: +1.4%"
       ],
       "localizable": false,
-      "score": 81,
+      "score": 75,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1291,7 +1292,6 @@
         "For readers: What a family touring communities should ask about, and what the numbers say.",
         "For the trade: Operating margin, census and what the disclosure means competitively.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1381,8 +1381,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 1,
-        "is_new": true,
+        "runs_seen": 2,
+        "is_new": false,
         "web_coverage": {
           "query": "Continuing care retirement communities assisted living employment August 2026 026",
           "returned": 8,
@@ -1412,10 +1412,10 @@
       "summary": "The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.",
       "key_findings": [],
       "localizable": false,
-      "score": 80,
+      "score": 74,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 5,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1431,7 +1431,6 @@
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1442,8 +1441,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 1,
-        "is_new": true,
+        "runs_seen": 2,
+        "is_new": false,
         "web_coverage": {
           "query": "Housing Trust Fund Fiscal Year 2026 Allocation",
           "returned": 14,
@@ -1451,6 +1450,80 @@
           "outlets": [],
           "articles": [],
           "state": "unreported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Medical Equipment Suppliers",
+      "url": "https://data.cms.gov/provider-data/dataset/ct36-nrcq",
+      "source_type": "government_api",
+      "published_at": "2026-08-30T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 74,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "ct36-nrcq",
+        "modified": "2026-08-30",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "e12cc197-5a3f-5a4a-a9f9-3b326f938bc4",
+            "data": "Supplier directory"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Medical Equipment Suppliers",
+          "returned": 20,
+          "outlet_count": 1,
+          "outlets": [
+            "American Hospital Association"
+          ],
+          "articles": [
+            {
+              "title": "CMS moratorium on durable medical equipment supplier enrollment expires",
+              "outlet": "American Hospital Association",
+              "link": "https://www.aha.org/news/headline/2026-08-28-cms-moratorium-durable-medical-equipment-supplier-enrollment-expires",
+              "date": "08/28/2026, 07:39 PM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
         }
       }
     },
@@ -1477,10 +1550,10 @@
         "Year-over-year change: +5.0%"
       ],
       "localizable": false,
-      "score": 79,
+      "score": 73,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1496,7 +1569,6 @@
         "For readers: Whether staying in your own home stays realistic, and what would have to change.",
         "For the trade: How home-based demand reshapes the case for congregate settings.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1586,8 +1658,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
       }
     },
     {
@@ -1613,10 +1685,10 @@
         "Year-over-year change: +2.1%"
       ],
       "localizable": false,
-      "score": 79,
+      "score": 73,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1632,7 +1704,6 @@
         "For readers: How to plan for, pay for, or challenge a long-term care decision.",
         "For the trade: Reimbursement, census mix and regulatory exposure.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1722,8 +1793,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 1,
-        "is_new": true,
+        "runs_seen": 2,
+        "is_new": false,
         "web_coverage": {
           "query": "Nursing care facilities employment August 2026 590 thousands jobs",
           "returned": 2,
@@ -1756,10 +1827,10 @@
         "Year-over-year change: +2.1%"
       ],
       "localizable": false,
-      "score": 79,
+      "score": 73,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1775,7 +1846,6 @@
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1865,8 +1935,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 1,
-        "is_new": true,
+        "runs_seen": 2,
+        "is_new": false,
         "web_coverage": {
           "query": "Employment level years over August 2026 753 thousands people",
           "returned": 1,
@@ -1875,6 +1945,1158 @@
           "articles": [],
           "state": "unreported"
         }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Medicare Claims Quality Measures",
+      "url": "https://data.cms.gov/provider-data/dataset/ijh5-nb2v",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care",
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "Quality measures that are based on Medicare claims data. Each row contains a specific quality measure for a specific nursing home and includes the risk-adjusted score.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 73,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "ijh5-nb2v",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Medicare Claims Quality Measures",
+          "returned": 12,
+          "outlet_count": 1,
+          "outlets": [
+            "EIN News"
+          ],
+          "articles": [
+            {
+              "title": "Medicare Quality Measures Spotlight Medication Safety—IntractMD™ Identifies Hidden Supplement Risks",
+              "outlet": "EIN News",
+              "link": "https://www.einnews.com/pr_news/933364849/medicare-quality-measures-spotlight-medication-safety-intractmd-identifies-hidden-supplement-risks",
+              "date": "08/11/2026, 02:09 PM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data",
+      "url": "https://data.cms.gov/provider-data/dataset/fykj-qjee",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care",
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "Skilled Nursing Facilities (SNFs) provide Medicare Part A SNF services to beneficiaries and must report data on certain measures of quality to Medicare through the Skilled Nursing Facility Quality Reporting Program (SNF QRP). This file contains a list of SNFs, as well as their results on the quality of resident care measures implemented under the IMPACT Act.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 73,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "fykj-qjee",
+        "modified": "2026-08-01",
+        "next_update": "2026-10-28",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Skilled Nursing Facility Quality Reporting Provider Data",
+          "returned": 14,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data",
+      "url": "https://data.cms.gov/provider-data/dataset/7cv8-v37d",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid",
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "This data set contains the national average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 72,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "7cv8-v37d",
+        "modified": "2026-08-07",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Hospice care National CAHPS Hospice Survey Data",
+          "returned": 1,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data",
+      "url": "https://data.cms.gov/provider-data/dataset/a55e-5b88",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid",
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "This data set contains state average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 72,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "a55e-5b88",
+        "modified": "2026-08-07",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
+            "data": "Hospice care"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Hospice care State CAHPS Hospice Survey Data",
+          "returned": 1,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: National Downloadable File",
+      "url": "https://data.cms.gov/provider-data/dataset/mj5m-pzi6",
+      "source_type": "government_api",
+      "published_at": "2026-07-31T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "The Doctors and Clinicians national downloadable file is organized such that each line is unique at the clinician/enrollment record/group/address level. Clinicians with multiple Medicare enrollment records and/or single enrollments linking to multiple practice locations are listed on multiple lines.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 72,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "mj5m-pzi6",
+        "modified": "2026-07-31",
+        "next_update": "2026-09-10",
+        "themes": [
+          {
+            "identifier": "2d4e6b14-abb6-5b27-8e8d-047c7832ac1d",
+            "data": "Doctors and clinicians"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "National Downloadable File",
+          "returned": 16,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Nursing Home Data Collection Intervals",
+      "url": "https://data.cms.gov/provider-data/dataset/qmdc-9999",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care",
+        "workforce"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "This table lists the data collection periods for the quality measures displayed for Nursing Homes including Rehab Services as well as the intervals for complaint citations and citations on focused infection control inspections. It also includes the data collection period for the nursing home staffing measures. The data collection periods for some short-stay measures differ slightly from the measure periods in the MDS Quality Measure file due to the look-back periods for these measures.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 71,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 4,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "qmdc-9999",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Utilization Data",
+      "url": "https://data.cms.gov/provider-data/dataset/n0yb-util",
+      "source_type": "government_api",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "The Doctors and Clinicians utilization data file reports volume information for procedures of interest on clinician profile pages and in the provider data catalog (PDC) to inform patients and caregivers about clinicians' experience.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "n0yb-util",
+        "modified": "2026-08-11",
+        "next_update": "2026-10-15",
+        "themes": [
+          {
+            "identifier": "2d4e6b14-abb6-5b27-8e8d-047c7832ac1d",
+            "data": "Doctors and clinicians"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Utilization Data",
+          "returned": 20,
+          "outlet_count": 1,
+          "outlets": [
+            "Aviation Week"
+          ],
+          "articles": [
+            {
+              "title": "Data: Leap Fleet Growth Narrows The Utilization Gap On CFM56",
+              "outlet": "Aviation Week",
+              "link": "https://aviationweek.com/awin-knowledge-center/data-leap-fleet-growth-narrows-utilization-gap-cfm56",
+              "date": "08/26/2026, 06:07 PM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Patient-Reported Outcomes - Hospital",
+      "url": "https://data.cms.gov/provider-data/dataset/mxtu-43qs",
+      "source_type": "government_api",
+      "published_at": "2026-08-05T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "Patient-reported outcomes are reports from patients about aspects of care that matter most to them, like pain management, functional ability (like their ability to walk, think, see, hear and remember), and overall quality of life. Through surveys or questionnaires, patients self-report the effectiveness of the care they got from their provider.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "mxtu-43qs",
+        "modified": "2026-08-05",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "5628a6e0-bae4-5da6-8546-8bb13705c1d5",
+            "data": "Hospitals"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Patient Reported Outcomes Hospital",
+          "returned": 20,
+          "outlet_count": 3,
+          "outlets": [
+            "Hospital Pharmacy Europe",
+            "Pharmacy Times",
+            "Nature"
+          ],
+          "articles": [
+            {
+              "title": "Digital patient-reported measures remain underused in hospital pharmacy, Spanish study finds",
+              "outlet": "Hospital Pharmacy Europe",
+              "link": "https://hospitalpharmacyeurope.com/pharmacy-practice/health-technology/digital-patient-reported-measures-proms-prems-remain-underused-in-hospital-pharmacy-spanish-study-finds/",
+              "date": "08/28/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Patient-Reported Outcomes and Quality of Life With Axatilimab in cGVHD",
+              "outlet": "Pharmacy Times",
+              "link": "https://www.pharmacytimes.com/view/patient-reported-outcomes-and-quality-of-life-with-axatilimab-in-cgvhd",
+              "date": "08/28/2026, 12:14 AM, +0000 UTC"
+            },
+            {
+              "title": "Single-stage dorsal-inlay augmented metoidioplasty: technique, complications, and patient-reported outcomes",
+              "outlet": "Nature",
+              "link": "https://www.nature.com/articles/s41443-026-01342-4",
+              "date": "08/13/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Fire Safety Deficiencies",
+      "url": "https://data.cms.gov/provider-data/dataset/ifjz-ge4w",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of nursing home fire safety citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "ifjz-ge4w",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Fire Safety Deficiencies",
+          "returned": 20,
+          "outlet_count": 2,
+          "outlets": [
+            "brighterkashmir.com",
+            "The Express Tribune"
+          ],
+          "articles": [
+            {
+              "title": "HC warns JMC over building, fire-safety violations",
+              "outlet": "brighterkashmir.com",
+              "link": "https://brighterkashmir.com/news/hc-warns-jmc-over-building-fire-safety-violations-91568.html",
+              "date": "09/01/2026, 10:42 AM, +0000 UTC"
+            },
+            {
+              "title": "Fire safety lapses exposed at capital hospitals",
+              "outlet": "The Express Tribune",
+              "link": "https://tribune.com.pk/story/2626163/fire-safety-lapses-exposed-at-capital-hospitals",
+              "date": "08/28/2026, 04:46 AM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Health Deficiencies",
+      "url": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of nursing home health citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "r5ix-sfxw",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: MDS Quality Measures",
+      "url": "https://data.cms.gov/provider-data/dataset/djen-97ju",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "Quality measures that are based on the resident assessments that make up the nursing home Minimum Data Set (MDS). Each row contains a specific quality measure for a specific nursing home and includes the 4-quarter score average and scores for each individual quarter.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "djen-97ju",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Ownership",
+      "url": "https://data.cms.gov/provider-data/dataset/y2hd-n93e",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of ownership information for currently active nursing homes.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "y2hd-n93e",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Penalties",
+      "url": "https://data.cms.gov/provider-data/dataset/g6vv-u9sr",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of the fines and payment denials received by nursing homes in the last three years.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "g6vv-u9sr",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Provider Information",
+      "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "General information on currently active nursing homes, including number of certified beds, quality measure scores, staffing and other information used in the Five-Star Rating System. Data are presented as one row per nursing home.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "4pq5-n9py",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Survey Summary",
+      "url": "https://data.cms.gov/provider-data/dataset/tbry-pc2d",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "Nursing home summary information for nursing home health, fire safety, infection control, and complaint inspections in the last three years, including dates of the three most recent inspections (including those with no citations), and counts of citations, overall and within specified categories. Data are presented as one inspection per provider. Citation counts also include citations from infection control surveys and complaint inspections.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "tbry-pc2d",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Citation Code Look-up",
+      "url": "https://data.cms.gov/provider-data/dataset/tagd-9999",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "This is a look-up table for nursing home inspection citations, providing a text description for each citation or tag code.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "tagd-9999",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Inspection Dates",
+      "url": "https://data.cms.gov/provider-data/dataset/svdt-c123",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of nursing home inspection dates in the past three years, including health inspections, fire safety inspections, complaint inspections and infection control inspections",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "svdt-c123",
+        "modified": "2026-08-01",
+        "next_update": "2026-09-30",
+        "themes": [
+          {
+            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
+            "data": "Nursing homes including rehab services"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Facility Affiliation Data",
+      "url": "https://data.cms.gov/provider-data/dataset/27ea-46a8",
+      "source_type": "government_api",
+      "published_at": "2026-07-31T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "This is the facility affiliations data publicly reported in the Provider Data Catalog.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "dataset_id": "27ea-46a8",
+        "modified": "2026-07-31",
+        "next_update": "2026-09-10",
+        "themes": [
+          {
+            "identifier": "2d4e6b14-abb6-5b27-8e8d-047c7832ac1d",
+            "data": "Doctors and clinicians"
+          }
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
+        "is_new": false
       }
     },
     {
@@ -1899,10 +3121,10 @@
         "Year-over-year change: +2.0%"
       ],
       "localizable": false,
-      "score": 76,
+      "score": 69,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 2,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1918,7 +3140,6 @@
         "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
         "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -2008,16 +3229,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 1,
-        "is_new": true,
-        "web_coverage": {
-          "query": "Home health care services average hourly earnings July 2026 dollars",
-          "returned": 20,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
+        "runs_seen": 2,
+        "is_new": false
       }
     },
     {
@@ -2042,10 +3255,10 @@
         "Year-over-year change: +3.2%"
       ],
       "localizable": false,
-      "score": 76,
+      "score": 69,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 2,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -2061,7 +3274,6 @@
         "For readers: What a family touring communities should ask about, and what the numbers say.",
         "For the trade: Operating margin, census and what the disclosure means competitively.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -2151,1178 +3363,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Medical Equipment Suppliers",
-      "url": "https://data.cms.gov/provider-data/dataset/ct36-nrcq",
-      "source_type": "government_api",
-      "published_at": "2026-08-30T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 74,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "ct36-nrcq",
-        "modified": "2026-08-30",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "e12cc197-5a3f-5a4a-a9f9-3b326f938bc4",
-            "data": "Supplier directory"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Medical Equipment Suppliers",
-          "returned": 20,
-          "outlet_count": 1,
-          "outlets": [
-            "American Hospital Association"
-          ],
-          "articles": [
-            {
-              "title": "CMS moratorium on durable medical equipment supplier enrollment expires",
-              "outlet": "American Hospital Association",
-              "link": "https://www.aha.org/news/headline/2026-08-28-cms-moratorium-durable-medical-equipment-supplier-enrollment-expires",
-              "date": "08/28/2026, 07:39 PM, +0000 UTC"
-            }
-          ],
-          "state": "lightly_reported"
-        }
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Medicare Claims Quality Measures",
-      "url": "https://data.cms.gov/provider-data/dataset/ijh5-nb2v",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care",
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "Quality measures that are based on Medicare claims data. Each row contains a specific quality measure for a specific nursing home and includes the risk-adjusted score.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 73,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "ijh5-nb2v",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Medicare Claims Quality Measures",
-          "returned": 12,
-          "outlet_count": 1,
-          "outlets": [
-            "EIN News"
-          ],
-          "articles": [
-            {
-              "title": "Medicare Quality Measures Spotlight Medication Safety—IntractMD™ Identifies Hidden Supplement Risks",
-              "outlet": "EIN News",
-              "link": "https://www.einnews.com/pr_news/933364849/medicare-quality-measures-spotlight-medication-safety-intractmd-identifies-hidden-supplement-risks",
-              "date": "08/11/2026, 02:09 PM, +0000 UTC"
-            }
-          ],
-          "state": "lightly_reported"
-        }
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data",
-      "url": "https://data.cms.gov/provider-data/dataset/fykj-qjee",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care",
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "Skilled Nursing Facilities (SNFs) provide Medicare Part A SNF services to beneficiaries and must report data on certain measures of quality to Medicare through the Skilled Nursing Facility Quality Reporting Program (SNF QRP). This file contains a list of SNFs, as well as their results on the quality of resident care measures implemented under the IMPACT Act.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 73,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "fykj-qjee",
-        "modified": "2026-08-01",
-        "next_update": "2026-10-28",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Skilled Nursing Facility Quality Reporting Provider Data",
-          "returned": 14,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data",
-      "url": "https://data.cms.gov/provider-data/dataset/7cv8-v37d",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid",
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "This data set contains the national average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 72,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "7cv8-v37d",
-        "modified": "2026-08-07",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Hospice care National CAHPS Hospice Survey Data",
-          "returned": 1,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data",
-      "url": "https://data.cms.gov/provider-data/dataset/a55e-5b88",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid",
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "This data set contains state average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 72,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "a55e-5b88",
-        "modified": "2026-08-07",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "2e78fc6b-a248-57c6-9c69-0ecef4abe16d",
-            "data": "Hospice care"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Hospice care State CAHPS Hospice Survey Data",
-          "returned": 1,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: National Downloadable File",
-      "url": "https://data.cms.gov/provider-data/dataset/mj5m-pzi6",
-      "source_type": "government_api",
-      "published_at": "2026-07-31T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "The Doctors and Clinicians national downloadable file is organized such that each line is unique at the clinician/enrollment record/group/address level. Clinicians with multiple Medicare enrollment records and/or single enrollments linking to multiple practice locations are listed on multiple lines.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 72,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "mj5m-pzi6",
-        "modified": "2026-07-31",
-        "next_update": "2026-09-10",
-        "themes": [
-          {
-            "identifier": "2d4e6b14-abb6-5b27-8e8d-047c7832ac1d",
-            "data": "Doctors and clinicians"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false,
-        "web_coverage": {
-          "query": "National Downloadable File",
-          "returned": 16,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Nursing Home Data Collection Intervals",
-      "url": "https://data.cms.gov/provider-data/dataset/qmdc-9999",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care",
-        "workforce"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "This table lists the data collection periods for the quality measures displayed for Nursing Homes including Rehab Services as well as the intervals for complaint citations and citations on focused infection control inspections. It also includes the data collection period for the nursing home staffing measures. The data collection periods for some short-stay measures differ slightly from the measure periods in the MDS Quality Measure file due to the look-back periods for these measures.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 71,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 4,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "qmdc-9999",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Utilization Data",
-      "url": "https://data.cms.gov/provider-data/dataset/n0yb-util",
-      "source_type": "government_api",
-      "published_at": "2026-08-11T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "The Doctors and Clinicians utilization data file reports volume information for procedures of interest on clinician profile pages and in the provider data catalog (PDC) to inform patients and caregivers about clinicians' experience.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "n0yb-util",
-        "modified": "2026-08-11",
-        "next_update": "2026-10-15",
-        "themes": [
-          {
-            "identifier": "2d4e6b14-abb6-5b27-8e8d-047c7832ac1d",
-            "data": "Doctors and clinicians"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Utilization Data",
-          "returned": 20,
-          "outlet_count": 1,
-          "outlets": [
-            "Aviation Week"
-          ],
-          "articles": [
-            {
-              "title": "Data: Leap Fleet Growth Narrows The Utilization Gap On CFM56",
-              "outlet": "Aviation Week",
-              "link": "https://aviationweek.com/awin-knowledge-center/data-leap-fleet-growth-narrows-utilization-gap-cfm56",
-              "date": "08/26/2026, 06:07 PM, +0000 UTC"
-            }
-          ],
-          "state": "lightly_reported"
-        }
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Patient-Reported Outcomes - Hospital",
-      "url": "https://data.cms.gov/provider-data/dataset/mxtu-43qs",
-      "source_type": "government_api",
-      "published_at": "2026-08-05T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "Patient-reported outcomes are reports from patients about aspects of care that matter most to them, like pain management, functional ability (like their ability to walk, think, see, hear and remember), and overall quality of life. Through surveys or questionnaires, patients self-report the effectiveness of the care they got from their provider.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "mxtu-43qs",
-        "modified": "2026-08-05",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "5628a6e0-bae4-5da6-8546-8bb13705c1d5",
-            "data": "Hospitals"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Fire Safety Deficiencies",
-      "url": "https://data.cms.gov/provider-data/dataset/ifjz-ge4w",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of nursing home fire safety citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "ifjz-ge4w",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Health Deficiencies",
-      "url": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of nursing home health citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "r5ix-sfxw",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: MDS Quality Measures",
-      "url": "https://data.cms.gov/provider-data/dataset/djen-97ju",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "Quality measures that are based on the resident assessments that make up the nursing home Minimum Data Set (MDS). Each row contains a specific quality measure for a specific nursing home and includes the 4-quarter score average and scores for each individual quarter.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "djen-97ju",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Ownership",
-      "url": "https://data.cms.gov/provider-data/dataset/y2hd-n93e",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of ownership information for currently active nursing homes.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "y2hd-n93e",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Penalties",
-      "url": "https://data.cms.gov/provider-data/dataset/g6vv-u9sr",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of the fines and payment denials received by nursing homes in the last three years.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "g6vv-u9sr",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Provider Information",
-      "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "General information on currently active nursing homes, including number of certified beds, quality measure scores, staffing and other information used in the Five-Star Rating System. Data are presented as one row per nursing home.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "4pq5-n9py",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Survey Summary",
-      "url": "https://data.cms.gov/provider-data/dataset/tbry-pc2d",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "Nursing home summary information for nursing home health, fire safety, infection control, and complaint inspections in the last three years, including dates of the three most recent inspections (including those with no citations), and counts of citations, overall and within specified categories. Data are presented as one inspection per provider. Citation counts also include citations from infection control surveys and complaint inspections.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "tbry-pc2d",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Citation Code Look-up",
-      "url": "https://data.cms.gov/provider-data/dataset/tagd-9999",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "This is a look-up table for nursing home inspection citations, providing a text description for each citation or tag code.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "tagd-9999",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Inspection Dates",
-      "url": "https://data.cms.gov/provider-data/dataset/svdt-c123",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of nursing home inspection dates in the past three years, including health inspections, fire safety inspections, complaint inspections and infection control inspections",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "svdt-c123",
-        "modified": "2026-08-01",
-        "next_update": "2026-09-30",
-        "themes": [
-          {
-            "identifier": "fd81c516-c2be-5fc3-81f2-8232d8b2b07b",
-            "data": "Nursing homes including rehab services"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Facility Affiliation Data",
-      "url": "https://data.cms.gov/provider-data/dataset/27ea-46a8",
-      "source_type": "government_api",
-      "published_at": "2026-07-31T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "This is the facility affiliations data publicly reported in the Provider Data Catalog.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "dataset_id": "27ea-46a8",
-        "modified": "2026-07-31",
-        "next_update": "2026-09-10",
-        "themes": [
-          {
-            "identifier": "2d4e6b14-abb6-5b27-8e8d-047c7832ac1d",
-            "data": "Doctors and clinicians"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -3390,7 +3431,7 @@
         "data_file": "outputs/data/acs-2023-state-profile.json",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:01:01.274675+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -3441,7 +3482,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3492,7 +3533,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3626,7 +3667,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3677,7 +3718,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3729,7 +3770,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3781,7 +3822,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3832,7 +3873,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3877,7 +3918,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -3921,7 +3962,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -3965,7 +4006,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4009,7 +4050,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4053,7 +4094,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4097,7 +4138,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4141,7 +4182,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4187,7 +4228,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -4242,7 +4283,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4297,7 +4338,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4352,7 +4393,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4407,7 +4448,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4462,7 +4503,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4517,7 +4558,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4561,7 +4602,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4604,7 +4645,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -4648,7 +4689,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -4698,7 +4739,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4742,7 +4783,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4786,7 +4827,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4831,7 +4872,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4876,7 +4917,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4920,7 +4961,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4964,7 +5005,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5009,7 +5050,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5053,7 +5094,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5097,7 +5138,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5141,7 +5182,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5184,7 +5225,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5228,7 +5269,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5272,7 +5313,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5316,7 +5357,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5360,7 +5401,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5404,7 +5445,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5448,7 +5489,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5492,7 +5533,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5536,7 +5577,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5580,7 +5621,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5624,7 +5665,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5668,7 +5709,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5712,7 +5753,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5756,7 +5797,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5799,7 +5840,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5843,7 +5884,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5887,7 +5928,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5931,7 +5972,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5975,7 +6016,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6020,7 +6061,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6064,7 +6105,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6107,7 +6148,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6149,7 +6190,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -6191,7 +6232,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6233,7 +6274,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -6276,7 +6317,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6316,7 +6357,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -6363,7 +6404,49 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes",
+      "source_type": "institutional_rss",
+      "published_at": "2026-06-17T12:00:00+00:00",
+      "topics": [
+        "nutrition"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and treat ADHD symptoms to PDF editing tools, according to a complaint filed by the FTC . The defendants deceptively market subscriptions to consumers and bill consumers without their permission, resulting in consumers worldwide being defrauded. “The Trump-Vance FTC is engaged in robust enforcement to address deception and illegal subscription offerings,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This case illustrates the benefits and importance of the Bureau’s reinvigorated anti-fraud program.” According to the FTC’s complaint, Genesis Tech operates as a common enterprise through a network of entities it controls, including a series of affiliates incorporated in Cyprus and operating in Ukraine. The Cyprus companies market to U.S. consumers and access U.S. payment processing through counterparts incorporated in Delaware. Genesis Tech and its subsidiar",
+      "key_findings": [],
+      "localizable": false,
+      "score": 35,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6406,49 +6489,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-17T12:00:00+00:00",
-      "topics": [
-        "nutrition"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and treat ADHD symptoms to PDF editing tools, according to a complaint filed by the FTC . The defendants deceptively market subscriptions to consumers and bill consumers without their permission, resulting in consumers worldwide being defrauded. “The Trump-Vance FTC is engaged in robust enforcement to address deception and illegal subscription offerings,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This case illustrates the benefits and importance of the Bureau’s reinvigorated anti-fraud program.” According to the FTC’s complaint, Genesis Tech operates as a common enterprise through a network of entities it controls, including a series of affiliates incorporated in Cyprus and operating in Ukraine. The Cyprus companies market to U.S. consumers and access U.S. payment processing through counterparts incorporated in Delaware. Genesis Tech and its subsidiar",
-      "key_findings": [],
-      "localizable": false,
-      "score": 35,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6490,7 +6531,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6530,7 +6571,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6570,7 +6611,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -6610,7 +6651,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6650,7 +6691,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6690,7 +6731,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6737,7 +6778,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6779,7 +6820,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T18:49:08.151942+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -6823,7 +6864,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6867,7 +6908,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6907,7 +6948,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6947,7 +6988,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -6987,7 +7028,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7027,7 +7068,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7067,7 +7108,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7107,7 +7148,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7147,7 +7188,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7187,7 +7228,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7227,7 +7268,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7267,7 +7308,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -7307,7 +7348,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7347,7 +7388,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -7387,7 +7428,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7427,7 +7468,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -7467,7 +7508,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7507,7 +7548,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -7547,7 +7588,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7587,7 +7628,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7627,7 +7668,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7667,7 +7708,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7707,7 +7748,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7747,7 +7788,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7787,7 +7828,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7829,7 +7870,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7869,7 +7910,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7909,7 +7950,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7949,7 +7990,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -7989,7 +8030,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8029,7 +8070,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -8069,7 +8110,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8109,7 +8150,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -8149,7 +8190,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8189,7 +8230,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -8229,7 +8270,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8269,7 +8310,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8309,7 +8350,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8349,7 +8390,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8389,7 +8430,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8429,7 +8470,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8469,7 +8510,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8509,7 +8550,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8549,7 +8590,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -8589,7 +8630,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8629,7 +8670,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8669,7 +8710,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8709,7 +8750,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8749,7 +8790,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -8789,7 +8830,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -8829,7 +8870,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -8869,7 +8910,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8909,7 +8950,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8949,7 +8990,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -8989,7 +9030,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9029,7 +9070,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9069,7 +9110,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9109,7 +9150,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9149,7 +9190,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9189,7 +9230,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9229,7 +9270,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9269,7 +9310,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9309,7 +9350,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9349,7 +9390,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9389,7 +9430,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9429,7 +9470,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9469,7 +9510,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9509,7 +9550,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -9549,7 +9590,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     }
