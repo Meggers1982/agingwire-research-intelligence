@@ -4,8 +4,9 @@ import json
 import logging
 import os
 import re
+from collections import Counter
 
-from agingwire_intel.matching import title_similar, us_date
+from agingwire_intel.matching import tokens, us_date
 from agingwire_intel.synthesis import build_clusters
 
 log = logging.getLogger(__name__)
@@ -211,21 +212,52 @@ def _normalize_title(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
 
 
-def _match_record(title: str, fallback: list[dict], by_norm: dict) -> dict:
+def _distinctive(title: str, boilerplate: set[str]) -> set[str]:
+    """What is left of a title once the words everything shares are removed."""
+    return tokens(title) - boilerplate
+
+
+def _shared_boilerplate(titles: list[str], threshold: float = 0.4) -> set[str]:
+    """Tokens common to a large share of the titles, so they identify nothing.
+
+    A run dominated by "CMS refreshed dataset: X" makes cms/refreshed/dataset
+    meaningless for telling those items apart.
+    """
+    if len(titles) < 3:
+        return set()
+    counts: Counter[str] = Counter()
+    for title in titles:
+        counts.update(tokens(title))
+    floor = max(2, int(len(titles) * threshold))
+    return {word for word, n in counts.items() if n >= floor}
+
+
+def _match_record(title: str, candidates: list[dict], by_norm: dict,
+                  boilerplate: set[str]) -> dict:
     """Find the pipeline record this idea is about.
 
     An exact lookup is not enough: the model returns "CMS refreshed dataset:
-    Health Deficiencies (08/01/26)" for an item titled "CMS refreshed dataset:
-    Health Deficiencies", so every record missed and the cards lost their links
-    and scores.
+    Health Deficiencies (08/01/26)" for an item titled "...Health Deficiencies".
+    But a plain similarity fallback is worse — "Penalties" and "Ownership" share
+    "CMS refreshed dataset" with every sibling, so all three matched the same
+    record and linked to the wrong file. The fallback therefore compares only
+    the distinctive part of each title.
     """
     norm = _normalize_title(title)
     if norm in by_norm:
         return by_norm[norm]
-    for candidate in fallback:
-        if title_similar(title, str(candidate.get("title", ""))):
-            return candidate
-    return {}
+    wanted = _distinctive(title, boilerplate)
+    if not wanted:
+        return {}
+    best, best_overlap = {}, 0.0
+    for candidate in candidates:
+        have = _distinctive(str(candidate.get("title", "")), boilerplate)
+        if not have:
+            continue
+        overlap = len(wanted & have) / len(wanted | have)
+        if overlap > best_overlap:
+            best, best_overlap = candidate, overlap
+    return best if best_overlap >= 0.34 else {}
 
 
 def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
@@ -235,10 +267,18 @@ def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
     business restating — while replacing the written angles.
     """
     by_norm = {_normalize_title(f.get("title", "")): f for f in fallback}
+    boilerplate = _shared_boilerplate([str(f.get("title", "")) for f in fallback])
+    # One record per idea: without this, three siblings all claimed the same
+    # dataset and carried its URL.
+    remaining = list(fallback)
     out = []
     for idea in ideas:
         title = str(idea.get("title", "")).strip()
-        base = dict(_match_record(title, fallback, by_norm))
+        base = dict(_match_record(title, remaining, by_norm, boilerplate))
+        if base:
+            remaining = [r for r in remaining if r is not base
+                         and r.get("url") != base.get("url")]
+            by_norm.pop(_normalize_title(base.get("title", "")), None)
         base.update({
             "title": title or base.get("title"),
             "hook": idea.get("hook") or base.get("hook"),

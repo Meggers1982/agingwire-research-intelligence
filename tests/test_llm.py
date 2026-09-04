@@ -222,3 +222,46 @@ class RecordMatchingTests(unittest.TestCase):
         merged = self._merge("Something else entirely about hospice surveys")
         self.assertEqual(merged["consumer"], "c")
         self.assertIsNone(merged.get("url"))
+
+
+class SiblingTitleTests(unittest.TestCase):
+    """Titles sharing a long prefix must not collapse onto one record.
+
+    A live run linked "Health Deficiencies", "Penalties" and "Ownership" all to
+    the Medical Equipment Suppliers dataset: they share "CMS refreshed dataset"
+    with every sibling, which was enough to clear the similarity gate.
+    """
+
+    FALLBACK = [
+        {"title": "CMS refreshed dataset: Medical Equipment Suppliers", "url": "u/a", "score": 70},
+        {"title": "CMS refreshed dataset: Penalties", "url": "u/b", "score": 71},
+        {"title": "CMS refreshed dataset: Ownership", "url": "u/c", "score": 72},
+        {"title": "CMS refreshed dataset: Health Deficiencies", "url": "u/d", "score": 73},
+    ]
+
+    def _merge(self, titles):
+        ideas = [{"title": t, "hook": "h", "consumer": "c", "b2b": "b", "note": "n"}
+                 for t in titles]
+        return llm._as_records(ideas, self.FALLBACK)
+
+    def test_each_sibling_keeps_its_own_record(self):
+        merged = self._merge([
+            "CMS refreshed dataset: Health Deficiencies (08/01/26)",
+            "CMS refreshed dataset: Penalties (08/01/26)",
+            "CMS refreshed dataset: Ownership (08/01/26)",
+        ])
+        self.assertEqual([m["url"] for m in merged], ["u/d", "u/b", "u/c"])
+
+    def test_no_record_is_claimed_twice(self):
+        merged = self._merge([t["title"] for t in self.FALLBACK])
+        urls = [m["url"] for m in merged]
+        self.assertEqual(len(urls), len(set(urls)))
+
+    def test_boilerplate_alone_does_not_match(self):
+        """"CMS refreshed dataset" identifies nothing when every item has it."""
+        merged = self._merge(["CMS refreshed dataset: Something Never Collected"])
+        self.assertIsNone(merged[0].get("url"))
+
+    def test_shared_boilerplate_needs_several_titles(self):
+        boiler = llm._shared_boilerplate(["One title", "Another title"])
+        self.assertEqual(boiler, set())
