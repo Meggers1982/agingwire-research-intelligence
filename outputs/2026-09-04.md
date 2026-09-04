@@ -1,6 +1,6 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-04T13:58:53.385882+00:00
+Generated: 2026-09-04T14:02:43.200289+00:00
 
 Evidence candidates: **169** (0 new since the last run)  
 Media coverage items: **1037** from **65** working publisher feeds
@@ -450,102 +450,102 @@ This notice announces changes in the interest rates to be paid on debentures iss
 
 ## Research trends and continuity
 
-Volume held essentially flat, 169 evidence candidates against 170 on 09/03/26, and nothing surfaced for the first time in this run. That makes it a consolidation day rather than a news day, and the interesting movement is in shape rather than size. Housing and financial security each gained an item, driven by federal register activity: fair market rents for FY 2027 on 09/01/26, the Housing Trust Fund FY 2026 allocation notice on 09/04/26, and the HUD disparate impact supplemental proposed rulemaking on 08/10/26. Long-term care and Medicare and Medicaid each shed one. Medicare and Medicaid remains the busiest beat by a wide margin, 26 items drawn from seven sources including ACL, CMS, the Federal Register, KFF and Justice in Aging, but its cohesion is 0.054 and the items share a tag and nothing else. It is not one story and should not be pitched as one. Long-term care is the opposite case: fewer items, 18, but they hold together at 0.256 around the 08/01/26 CMS provider data refresh, and that is where the assignable work is. Palliative and hospice care is the tightest cluster in the run at 0.457 across CMS and RAND, nine items, none matched by monitored publishers. Coverage posture is unusually open. There are 84 confirmed gaps, meaning beats we do watch where nobody matched the item, and another 76 items sit on beats no monitored publisher covers at all, which tells us nothing about whether they have been written elsewhere. The practical read: the federal data pipeline is doing the work this week, most of it is localizable to states and counties, and the competitive risk on the nursing home files is that they have been sitting in public since 08/01/26.
+Volume held essentially flat at 169 evidence candidates against 170 in the 09/03/26 run, with nothing surfacing for the first time, so this is a run to work the standing inventory rather than chase an arrival. Housing and financial security each gained an item, both on the back of federal notices: the FY 2027 Fair Market Rents on 09/01/26 and the FY 2026 Housing Trust Fund allocation on 09/04/26, which is zero days old. Long-term care and Medicare and Medicaid each shed one. Medicare and Medicaid remains the busiest beat at 26 items drawing on seven sources, but its cohesion is 0.054 and the flag says it does not hold together: acl-news, the Federal Register, KFF, Justice in Aging, the Center for Retirement Research and CMS provider data share a tag and nothing else. Treat it as a supply of separate leads, not a story. Housing has the same shape at 13 items and cohesion of 0.031. Two clusters do cohere. Long-term care, at 18 items and cohesion 0.256, is the run's real editorial center and the basis of the feature above. Palliative and hospice care is the tightest thing in the file at 0.457 across nine items from CMS provider data and RAND, none of them matched by a monitored publisher, and the refreshed national and state CAHPS Hospice Survey files on 08/07/26 make it the second feature waiting to be written. Coverage posture is the running story: 84 confirmed gaps where monitored publishers work the beat and none matched the item, plus 76 items on beats no monitored publisher covers at all, which is an absence of monitoring rather than an absence of coverage. Nearly everything of value here is state or county localizable and sits on structured data, so the constraint this month is production capacity, not evidence.
 
 ## Bigger picture: feature pitch
 
-**The pattern:** On 08/01/26 CMS refreshed nearly the entire public record on nursing homes in a single sweep: Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Provider Information (the file behind the Five-Star Rating System), MDS Quality Measures, Survey Summary, Inspection Dates and the Citation Code Look-up, alongside Medicare Claims Quality Measures and the Skilled Nursing Facility Quality Reporting Program provider file. Every one of those carries state and county detail. Three other sources land on the same story inside the same window: BLS puts nursing care facilities employment at 1,590.20 thousand jobs in August 2026, up 2.1% year over year, while home health care services employment reached 1,896.40 thousand, up 5.0%; Justice in Aging's 08/20/26 primer on Medicaid home and community-based services describes the policy gaps that limit access to the community alternative; and the Center for Retirement Research on 09/03/26 sets the U.S. long-term care system against Israel's. The connective tissue is not "quality data" in the abstract. It is that the institutional side of long-term care is now documented down to the individual citation and the individual owner, refreshed this month, while the alternative most families would prefer stays rationed by program design and staffed by a workforce growing two and a half times faster than the facility workforce. Seventeen of the 18 items in this cluster went unmatched by the publishers we monitor.
+**The pattern:** CMS rebuilt almost the entire public record behind nursing home ratings in a single pass. Provider Information, Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Survey Summary, Inspection Dates, Citation Code Look-up, MDS Quality Measures, Medicare Claims Quality Measures and the Skilled Nursing Facility Quality Reporting Program file all carry a refresh date of 08/01/26, with Facility Affiliation Data on 07/31/26 and Utilization Data on 08/11/26. In the same window BLS put nursing care facilities employment at 1,590.20 thousands of jobs in August 2026, up 2.1% year over year, against home health care services at 1,896.40 thousands of jobs, up 5.0%. Justice in Aging's Medicaid Home and Community-Based Services primer (08/20/26) and the Center for Retirement Research's comparison of long-term care in Israel and the U.S. (09/03/26) come at the same question from policy. What connects them is not the subject tag: the facility-level record of citations, fines and ownership is freshly documented down to the county at the exact moment the workforce is growing more than twice as fast outside facility walls as inside them. The quality files describe the building; the labor series explains why staffing it is getting harder.
 
-**Why pitch this now:** Medicaid is the payer behind most of this care, and its financing is actively being rewritten. KFF's 08/20/26 brief describes how the rules governing state provider taxes are changing because of the 2025 reconciliation law and the regulations implementing it, and which states each change may affect. In the same weeks, HUD published FY 2027 fair market rents on 09/01/26 with an October 1 effective date and the Housing Trust Fund FY 2026 allocation notice on 09/04/26, both of which shape what the community alternative actually costs. Families make fall placement decisions against exactly this backdrop, and the facility-level record they need to make them was refreshed weeks ago with almost no one reading it out.
+**Why pitch this now:** The refreshed deficiency and penalty files each cover the last three years of citations, so this is the first clean look at a full post-pandemic enforcement cycle by state. Cost pressure is running alongside it: BLS put the medical care Consumer Price Index at 593.78 in July 2026, up 1.7% year over year, and the housing side of the ledger moved this week, with HUD's FY 2027 Fair Market Rents published 09/01/26 and the FY 2026 Housing Trust Fund allocation notice on 09/04/26. Families make placement decisions in the fall, and the underlying files were refreshed weeks ago with no monitored publisher matching 17 of the 18 items on this beat.
 
-**Angle:** "What Your State's Nursing Homes Were Cited For," a state-by-state read of the 08/01/26 CMS refresh that pairs health and fire safety citations and penalties with ownership records and staffing measures, written for families comparing facilities now, with a companion trade cut on what the same files say about staffing and ownership concentration.
+**Angle:** "The August Refresh," a state-by-state read of what the 08/01/26 CMS files show about citations, fines, ownership and staffing, written for families comparing facilities this fall and paired with a trade sidebar on where the caregiving labor force actually went.
 
 **Potential headlines:**
-- Every nursing home citation in your state, updated last month
-- The nursing home fines nobody read
-- Who owns the nursing home you are about to choose
+- What Your State's Nursing Homes Were Cited For In The Last Three Years
+- Nursing Home Jobs Grew 2.1 Percent While Home Health Grew 5 Percent
+- The Federal Files That Show Who Owns The Nursing Home Down The Road
 
 **Potential outlets:**
-- Kiplinger, which handles long-term care costs and state comparisons for a retirement audience and can carry the consumer version of a 50-state build.
-- SeniorLiving.org, a major consumer senior-living publisher that runs state rankings and data studies and would take the facility-comparison framing directly.
-- Family Caregiver Alliance, the natural distribution partner for the version aimed at an adult child choosing a facility this month.
-- McKnight's Long-Term Care News, the primary trade home for skilled nursing survey, citation and staffing data.
-- Skilled Nursing News, for the ownership and penalties cut, where original data with business implications performs.
-- Provider Magazine, strong on Medicaid, staffing and quality and well suited to state-by-state tables.
+- Kiplinger, which handles long-term care costs and state comparisons and can carry the county-level breakouts without simplifying them.
+- SeniorLiving.org, a natural home for a facility-comparison guide built directly on refreshed CMS provider data.
+- Family Caregiver Alliance, where a families-facing checklist for reading deficiency and penalty records has distribution beyond a single article.
+- McKnight's Long-Term Care News, the primary trade audience for a national enforcement and staffing read from the same refresh cycle.
+- Skilled Nursing News, for the ownership and facility affiliation files, which carry business implications the consumer version will not touch.
+- Provider Magazine, strong on state-by-state quality and staffing data for both nursing facilities and assisted living.
 
 ## Story ideas
 
 **CMS refreshed dataset: Health Deficiencies (08/01/26)**
-- Hook: Three years of nursing home health citations, one row per citation with scope, severity, current status and correction date, refreshed on 08/01/26 and untouched by monitored publishers.
-- For readers: Before you tour a facility, pull its citation history and look at two columns most families skip: scope and severity, and whether the citation is still open or was corrected. Ask the administrator directly about anything from the last three years that has not been closed out, and ask what changed afterward.
-- For the trade: The refresh resets the comparison baseline for every operator in a market. Ownership groups can benchmark their citation profile against county and state peers and anticipate which tags referral sources and Medicaid managed care plans will screen on.
-- Also: State and county detail supports a 50-state table and a county map. Coverage state is a confirmed gap.
+- Hook: The federal list of nursing home health citations from the last three years, with scope, severity, status and correction date on every row, was refreshed 08/01/26 and no monitored publisher has matched it.
+- For readers: Before you tour a facility, pull its citation history and look past the count to the scope and severity codes and the correction dates. Ask the administrator directly about any citation still showing an open status, and ask what changed in staffing or procedure after the ones marked corrected.
+- For the trade: Enforcement patterns by state are now re-baselined for a full three-year window, which gives operators a defensible way to benchmark their citation profile against regional peers before survey season and to test whether their compliance spending is tracking the tags that actually get cited.
+- Also: Coverage state is a confirmed gap. Breaks to states and counties, so a severity-weighted citation map is buildable straight from the file.
 
 **CMS refreshed dataset: Penalties (08/01/26)**
-- Hook: The file of fines and payment denials received by nursing homes over the last three years was refreshed on 08/01/26.
-- For readers: A fine is a harder fact than a star rating. Check whether the home you are considering has been fined or had Medicare payment denied in the last three years, and if it has, ask what the money was for and what the facility did in response.
-- For the trade: Penalty history travels with a building through a sale. Pair the penalties file with the ownership file to see which portfolios carry concentrated enforcement exposure heading into a financing or acquisition conversation.
-- Also: Chartable at state level. No monitored publisher matched it.
+- Hook: Three years of fines and payment denials issued to nursing homes, refreshed in the same 08/01/26 pass, sit unmatched by any monitored publisher.
+- For readers: A fine is a fact you can ask about. Check whether the facility you are considering has received payment denials, which suspend new Medicare or Medicaid admissions, and ask how the money and the corrective plan were handled.
+- For the trade: Fines and payment denials are a cash-flow event as much as a compliance one, and the refreshed file lets finance teams model penalty exposure by state alongside the census interruption that a denial of payment for new admissions creates.
+- Also: Confirmed gap, state and county localizable. Penalty totals by state are the single cleanest chart in the whole refresh.
 
 **CMS refreshed dataset: Ownership (08/01/26)**
-- Hook: Ownership information for every currently active nursing home, refreshed 08/01/26, sits alongside the citation and penalty files that can now be joined to it.
-- For readers: The name over the door often is not the company running the building. Look up who actually owns the home, then check whether that owner's other facilities in your state carry citations or fines.
-- For the trade: Joining ownership to penalties and deficiencies produces the chain-level view operators rarely publish about themselves, and it is the analysis referral partners, lenders and state agencies increasingly want.
-- Also: Strong original-analysis play; supports state concentration rankings. Confirmed gap.
+- Hook: Ownership information for every currently active nursing home was refreshed 08/01/26, alongside Facility Affiliation Data on 07/31/26.
+- For readers: The name on the sign is often not the owner. Look up who actually holds the facility and which chain or affiliated group it belongs to, then compare citation and staffing records across the other homes under the same ownership before you sign anything.
+- For the trade: Pairing the ownership file with facility affiliation data makes chain-level quality comparison reproducible, which matters for anyone underwriting a transaction, evaluating a management contract or defending a portfolio's record to a state agency.
+- Also: Confirmed gap. Chain-level rollups localize cleanly to states and counties and support a searchable table.
 
 **CMS refreshed dataset: Provider Information (08/01/26)**
-- Hook: The file behind the Five-Star Rating System, including certified beds, quality measure scores and staffing, was refreshed 08/01/26 with one row per nursing home.
-- For readers: Stars compress a lot of detail. Open the underlying numbers for the homes on your shortlist and compare certified beds and staffing side by side, then ask each one how many staff are on the floor overnight and on weekends.
-- For the trade: Staffing figures inside this file are the ones payers, surveyors and families will cite back to operators all year. Knowing where a building sits against its state distribution is a recruiting and rate-negotiation input, not just a compliance one.
-- Also: National, state and county cuts available; pairs naturally with the BLS nursing care employment series.
+- Hook: The core Five-Star file, with certified bed counts, quality measure scores and staffing for every active nursing home, refreshed 08/01/26.
+- For readers: Look up the staffing numbers behind the star rating rather than the star itself, and compare certified bed counts against the staffing figure to understand how thinly a place may be covered on a weekend shift.
+- For the trade: The refreshed staffing fields land in the same month BLS reported nursing care facilities employment at 1,590.20 thousands of jobs, up 2.1% year over year, giving operators a way to test whether their own staffing ratios are keeping pace with a sector adding workers slowly.
+- Also: Confirmed gap, state and county breakouts. This is the file that anchors any ranking product.
 
 **CMS refreshed dataset: Fire Safety Deficiencies (08/01/26)**
-- Hook: Three years of nursing home fire safety citations, refreshed 08/01/26 and separately reported from health citations, which most consumer comparisons never surface.
-- For readers: Fire safety citations are listed apart from health citations, so a home can look clean on one list and not the other. Check both, and ask when the last fire safety inspection happened and whether anything is still open.
-- For the trade: Life safety code findings are a distinct capital problem from clinical findings. The refreshed file lets operators and their capital partners see which markets carry the heaviest remediation load.
-- Also: Rarely covered angle with clear local-market variation. Confirmed gap.
+- Hook: Three years of nursing home fire safety citations, a category most families never think to check, refreshed in the August pass.
+- For readers: Fire safety citations are listed separately from health citations, so a facility with a clean health record can still have a life safety problem. Pull both lists and ask what physical plant work was done to close any fire safety tag.
+- For the trade: Life safety citations often point to capital expense rather than staffing, and the three-year record gives owners and lenders a way to spot deferred building investment across a portfolio before it becomes a survey finding.
+- Also: Confirmed gap. Localizable to states and counties; pairs naturally with the Penalties file for a capital-neglect story.
 
-**CMS refreshed dataset: Hospice care - State and National CAHPS Hospice Survey Data (08/07/26)**
-- Hook: State and national average scores from the CAHPS Hospice Survey of Medicare-certified providers were refreshed on 08/07/26, anchoring a hospice cluster of nine items with no monitored coverage at all.
-- For readers: Hospice choice is usually made in a hurry. Look up how your state's hospice providers score on the family survey before you need one, and ask any agency you are offered how it compares to the state average.
-- For the trade: Publicly comparable state averages sharpen the competitive picture for hospice operators and for the health systems and nursing homes that steer referrals to them.
-- Also: The palliative and hospice cluster is the run's most internally coherent, at 0.457 cohesion across two sources, with all nine items unmatched.
+**CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data (08/07/26)**
+- Hook: State-level average scores from the family survey of Medicare-certified hospice providers were refreshed 08/07/26, alongside the national file, in a hospice cluster where nine items are all unmatched.
+- For readers: Hospice quality is measured largely by what bereaved families report afterward. Compare a provider's survey scores against the state average before you enroll, and ask about the specific measures where it falls short.
+- For the trade: State averages give hospice operators an external benchmark for family experience that boards and referral partners already have access to, and the refreshed national file makes cross-state positioning arguable rather than anecdotal.
+- Also: Confirmed gap and the only cluster in the run where the items genuinely hold together. State-average comparison maps are immediate.
+
+**CMS refreshed dataset: Medical Equipment Suppliers (08/30/26)**
+- Hook: The highest-scoring item in the run is a refreshed list of suppliers showing what each carries and its Medicare participation status.
+- For readers: Before you order a walker, wheelchair, oxygen or a hospital bed, check whether the supplier participates in Medicare and stocks the item, because that participation status is what determines your out-of-pocket cost.
+- For the trade: Discharge planners and home health agencies can use supplier density and participation status by county to identify where equipment delays are structurally likely, which is a readmission risk as much as a supply one.
+- Also: Confirmed gap, refreshed 08/30/26, breaks to states and counties. Supplier deserts by county is a strong map.
 
 **BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)**
-- Hook: Home health employment grew 5.0% year over year while nursing care facilities grew 2.1%, and home health average hourly earnings reached $28.04 in July 2026, up 2.0%.
-- For readers: If you are weighing home care against a facility, the labor market is moving toward home care. When you interview an agency, ask what it pays aides, how it has handled turnover in the last year, and who covers a shift when your regular aide is out.
-- For the trade: A 5.0% employment gain against 2.1% in nursing facilities is a competition-for-labor story, and $28.04 an hour in home health against $25.65 in assisted living and continuing care sets the wage floor operators are hiring against.
-- Also: Two clean national time series that chart well together; both are confirmed gaps.
+- Hook: Home health employment grew 5.0% year over year while nursing care facilities grew 2.1%, and home health average hourly earnings reached 28.04 dollars in July 2026, up 2.0%.
+- For readers: If you are trying to keep a parent at home, the hiring picture is on your side compared with a year ago, but wages are rising slower than the number of jobs. Ask agencies about aide turnover and guaranteed hours, not just hourly rate.
+- For the trade: Facility operators competing for the same aides are losing on volume, and the pay gap between home health at 28.04 dollars an hour and assisted living and CCRCs at 25.65 dollars is now a documentable recruiting problem rather than a suspicion.
+- Also: Confirmed gap. National only, but the two employment series plotted together is the clearest chart in the run.
 
 **BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)**
-- Hook: Nearly 11.8 million people aged 65 and over were employed in August 2026, up 2.1% year over year, while medical care CPI rose 1.7% in July 2026.
-- For readers: If you are working past 65 or planning to, compare what another year of earnings does for you against what you are spending on medical care, which rose 1.7% over the year on the federal index. Check how continued work interacts with your benefits before you commit to a schedule.
-- For the trade: Older workers are a labor pool senior living and home care operators recruit from and compete with. The growth rate matters for staffing plans that assume retirement-age attrition.
-- Also: National only, but pairs with the medical care CPI series for a cost-versus-earnings chart.
+- Hook: Nearly 11.8 million Americans 65 and over were employed in August 2026, up 2.1% from a year earlier, while the medical care CPI rose 1.7% in July 2026.
+- For readers: If you are working past 65 or thinking about it, check how earnings interact with your Social Security timing and Medicare enrollment before you assume the extra income is clean gain.
+- For the trade: A growing 65-plus workforce reshapes both the customer and the labor pool for senior living, and operators struggling to hire should be looking at older workers as a recruiting channel rather than only as residents.
+- Also: Confirmed gap. National series; pairs with the medical care CPI at 593.78 for a cost-versus-income line chart.
 
-**Fair Market Rents for the Housing Choice Voucher Program and Other Programs, Fiscal Year 2027 (09/01/26)**
-- Hook: HUD published the FY 2027 fair market rents on 09/01/26, with the methods used to calculate them and the procedure for public housing agencies to request reevaluations.
-- For readers: If you rent with a voucher, the payment standard behind your rent is being reset effective October 1. Find your area's new figure and ask your housing agency what it means for your share of the rent next year.
-- For the trade: Affordable senior housing operators and the agencies that fund them work off these numbers directly, and the reevaluation procedure is a live lever for markets where the published figure understates local rents.
-- Also: Localizable to every FMR area; housing was one of two rising topics this run.
+**Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027 (09/01/26)**
+- Hook: HUD's FY 2027 Fair Market Rents were published 09/01/26 with the reevaluation procedure public housing agencies must follow under the Housing Opportunity Through Modernization Act of 2016.
+- For readers: If you use a housing voucher or are on a waiting list, the new figures take effect October 1 and set what your voucher will cover. Find your area's number and ask your housing agency whether it plans to request a reevaluation.
+- For the trade: Affordable senior housing developers and operators underwrite against these rents, and the reevaluation pathway is the only lever available where the published figure understates a local market.
+- Also: Confirmed gap, published three days before the run date. Localizable to metro areas and states; year-over-year change by market is the chart.
 
 **Housing Trust Fund: Fiscal Year 2026 Allocation Notice (09/04/26)**
-- Hook: HUD's FY 2026 Housing Trust Fund allocation notice, published 09/04/26, is the newest item in the run and names the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Commonwealth of the Northern Mariana Islands among eligible grantees.
-- For readers: Housing Trust Fund money flows through your state to build and preserve rental housing. If you are on a waiting list for affordable senior housing, ask your state housing agency how it is programming this year's allocation.
-- For the trade: Nonprofit developers building affordable senior housing plan against this notice. The allocation table is the starting point for the next application cycle.
-- Also: Published the day of the run and unmatched; strongest fit for a state-by-state allocation table.
+- Hook: HUD's FY 2026 Housing Trust Fund allocations, distributed to the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Commonwealth of the Northern Mariana Islands, published the day of this run.
+- For readers: Your state receives a specific Housing Trust Fund allocation each year, and states decide how it is spent. If affordable senior housing is scarce where you live, that allocation and your state's plan for it are worth asking your housing agency about.
+- For the trade: Nonprofit providers building affordable senior units should be reading the state-by-state allocation against their pipeline now, because the fund is administered through state plans rather than direct federal award.
+- Also: Confirmed gap, published 09/04/26, the freshest item in the run. Allocation by state is a ready-made table.
 
 **Medicaid Home and Community-Based Services for Older Adults: A Primer (08/20/26)**
-- Hook: Justice in Aging published a primer on 08/20/26 explaining how Medicaid HCBS help older adults with disabilities live independently and the policy gaps that limit access.
-- For readers: If staying at home is the goal, HCBS is the program that pays for it, and access depends on rules that vary. Ask your state Medicaid agency or Area Agency on Aging what services are covered, whether there is a waiting list, and what the financial eligibility test actually counts.
-- For the trade: Home and community-based services are both the competitive alternative to facility care and a growth line for providers. The primer's account of access limits maps to where demand exists but funded capacity does not.
-- Also: Not localizable on its own, but it frames the whole long-term care cluster and gives the CMS facility data its policy counterweight.
-
-**5 Questions and Answers About Medicaid and Provider Taxes (08/20/26)**
-- Hook: KFF used its 2025-2026 survey of Medicaid directors and a proposed rule on provider taxes to describe how the rules are changing under the 2025 reconciliation law and which states each change may affect.
-- For readers: Provider taxes are one of the ways your state pays for nursing home and home care coverage. If your state's arrangement is changing, that is worth watching in the budget debate that decides eligibility and services where you live.
-- For the trade: Provider tax structures underpin Medicaid rates. Operators need to know which of the changes described apply in their states and how far out the rate consequences run.
-- Also: Sits in the Medicare and Medicaid cluster, which does not cohere; treat it as its own lead rather than part of a package.
+- Hook: Justice in Aging published a primer on 08/20/26 laying out how Medicaid HCBS supports older adults with disabilities at home and where policy gaps limit access, arriving alongside KFF's 08/20/26 explainer on Medicaid provider taxes and the 2025 reconciliation law.
+- For readers: If you are trying to get help at home paid for, HCBS is the program to ask your state Medicaid agency about by name. Find out whether your state has a waiting list, what the eligibility test is, and what services the waiver actually covers.
+- For the trade: Home and community-based access is the demand-side counterpart to a home health workforce growing 5.0% year over year, and changes to provider tax rules under the 2025 reconciliation law bear directly on how states finance the services providers deliver.
+- Also: Confirmed gap. Not localizable in the file itself, but state HCBS waiting lists give the story a local hook anywhere it runs.
 
 ## Pipeline health
 
