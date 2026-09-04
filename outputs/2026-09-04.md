@@ -1,9 +1,9 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-04T13:53:19.523454+00:00
+Generated: 2026-09-04T13:53:59.315270+00:00
 
 Evidence candidates: **169** (0 new since the last run)  
-Media coverage items: **1007** from **61** working publisher feeds
+Media coverage items: **1037** from **65** working publisher feeds
 
 ## Highest-priority story opportunities
 
@@ -463,7 +463,7 @@ State-level counts for 65+, 65-74, 75-84 and 85+ populations with median househo
 - **center-retirement-research** — Long-Term Care in Israel and the U.S.: Different Systems, Shared Challenges (09/03/26)
 - **cms-provider-data** — CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data (08/01/26)
 
-**What they have in common:** dataset, cms, refreshed, quality, care, nursing. The story is whatever connects those — name it before pitching.
+**What they have in common:** dataset, refreshed, quality, cms, care, nursing. The story is whatever connects those — name it before pitching.
 
 **Why now:** the newest item is 1 day old; 17 of 18 are unmatched by the publishers being monitored; 15 break below the national level; 16 sit on structured data a chart can be built from.
 
@@ -573,7 +573,7 @@ State-level counts for 65+, 65-74, 75-84 and 85+ populations with median househo
 ## Pipeline health
 
 Evidence sources: **17 ok**, **0 empty**, **1 error**  
-Publisher feeds: **61 working** of **132 in the registry** (13 error, 58 no feed found)
+Publisher feeds: **65 working** of **132 in the registry** (9 error, 58 no feed found)
 
 ### Evidence-source errors
 
