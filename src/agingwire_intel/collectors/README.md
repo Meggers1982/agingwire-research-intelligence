@@ -60,6 +60,8 @@ four routes in descending order of fidelity and records which one it used:
 | `sitemap` | A URL and a `lastmod` | `lastmod` is a modification date, not a publication date; without `<news:title>` the headline is reconstructed from the slug |
 | `gnews` | Headline and date, via Google News `site:` search | Only what Google indexes; a domain it ignores looks silent rather than unwatched |
 
+`gnews` goes through SerpAPI when `SERPAPI_API_KEY` is set and falls back to fetching the Google News feed directly when it is not. This is not a preference: `news.google.com` refuses GitHub Actions runners, so the direct path recovered five publishers locally and none in CI.
+
 The order matters: a publisher is never watched more loosely than it has to be.
 Google News is last because what it indexes is Google's decision, so
 `discover_source` probes with `is_indexed()` before committing — otherwise a

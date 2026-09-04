@@ -233,3 +233,75 @@ class ProbeVersionTests(unittest.TestCase):
         with patch.object(media, "discover_source", return_value=None):
             media._collect_one(row, "b2b", True, cache, fallbacks=False)
         self.assertEqual(cache.entries["https://x.com/"]["probe_version"], 1)
+
+
+class ConfiguredFeedFallbackTests(unittest.TestCase):
+    """A feed named in the registry is not exempt from the fallback ladder.
+
+    Nine hand-picked trade titles -- Healthcare IT News, GlobeSt, HomeCare
+    Magazine among them -- were returning 403 on every run while the registry
+    counted them as watched, because a configured feed was used as-is and never
+    reconsidered when it failed.
+    """
+
+    def setUp(self):
+        self.dir = tempfile.mkdtemp()
+        self.cache = media.DiscoveryCache(Path(self.dir) / "d.json")
+        self.row = {
+            "Publication": "Healthcare IT News",
+            "Website": "https://x.com/",
+            "RSS Feed URL / Hub": "https://x.com/rss.xml",
+        }
+        self.item = CoverageItem(publisher="Healthcare IT News", audience_type="b2b",
+                                 title="t", url="https://x.com/a")
+
+    def tearDown(self):
+        shutil.rmtree(self.dir, ignore_errors=True)
+
+    def _collect(self, side_effect, retry=None):
+        with patch.object(media, "collect_source", side_effect=side_effect), \
+             patch.object(media, "discover_source", return_value=retry):
+            return media._collect_one(self.row, "b2b", True, self.cache)
+
+    def test_a_403_on_the_configured_feed_falls_through_to_a_sitemap(self):
+        sitemap = media.Source(media.KIND_SITEMAP, "https://x.com/sitemap.xml")
+        items, status = self._collect([RuntimeError("403 Forbidden"), [self.item]], retry=sitemap)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(status["status"], "ok")
+        self.assertEqual(status["kind"], media.KIND_SITEMAP)
+        self.assertEqual(status["recovered_from"], "https://x.com/rss.xml")
+
+    def test_the_working_route_is_cached_so_the_403_is_not_repeated_daily(self):
+        sitemap = media.Source(media.KIND_SITEMAP, "https://x.com/sitemap.xml")
+        self._collect([RuntimeError("403 Forbidden"), [self.item]], retry=sitemap)
+        _, cached = self.cache.get("https://x.com/")
+        self.assertEqual(cached, sitemap)
+
+    def test_no_alternative_route_still_reports_the_original_error(self):
+        items, status = self._collect([RuntimeError("403 Forbidden")], retry=None)
+        self.assertEqual(items, [])
+        self.assertEqual(status["status"], "error")
+        self.assertIn("403", status["error"])
+        self.assertEqual(status["feed"], "https://x.com/rss.xml")
+
+    def test_a_retry_that_also_fails_reports_both_failures(self):
+        sitemap = media.Source(media.KIND_SITEMAP, "https://x.com/sitemap.xml")
+        _, status = self._collect(
+            [RuntimeError("403 Forbidden"), RuntimeError("timed out")], retry=sitemap)
+        self.assertEqual(status["status"], "error")
+        self.assertIn("403", status["error"])
+        self.assertIn("timed out", status["error"])
+
+    def test_rediscovering_the_same_feed_is_not_retried_forever(self):
+        same = media.Source(media.KIND_RSS, "https://x.com/rss.xml")
+        _, status = self._collect([RuntimeError("403 Forbidden")], retry=same)
+        self.assertEqual(status["status"], "error")
+
+    def test_a_working_configured_feed_is_left_alone(self):
+        with patch.object(media, "collect_source", return_value=[self.item]), \
+             patch.object(media, "discover_source") as discover:
+            items, status = media._collect_one(self.row, "b2b", True, self.cache)
+        discover.assert_not_called()
+        self.assertEqual(status["kind"], media.KIND_RSS)
+        self.assertNotIn("recovered_from", status)
+        self.assertEqual(len(items), 1)

@@ -221,7 +221,8 @@ def _collect_one(
     publisher = (row.get("Publication") or "").strip()
     website = (row.get("Website") or "").strip()
     configured = (row.get("RSS Feed URL / Hub") or "").strip()
-    source = Source(KIND_RSS, configured) if _valid_feed_value(configured) else None
+    configured_source = _valid_feed_value(configured)
+    source = Source(KIND_RSS, configured) if configured_source else None
     discovered = False
     if source is None and website.startswith("http") and discover:
         cached, cached_source = cache.get(website) if cache else (False, None)
@@ -244,19 +245,46 @@ def _collect_one(
             "publisher": publisher, "audience": audience_type,
             "status": "no_feed", "website": website,
         }
+    recovered_from = None
     try:
         feed_items = collect_source(source, website, publisher, audience_type)
     except Exception as exc:
-        return [], {
-            "publisher": publisher, "audience": audience_type, "status": "error",
-            "feed": source.url, "kind": source.kind, "error": str(exc)[:300],
-        }
+        # A feed named in the registry was used as-is and never reconsidered, so
+        # nine hand-picked trade titles were 403ing every run while the registry
+        # reported them as watched. The fallback ladder already knows how to
+        # reach publishers like these; it just was never asked on this path.
+        retry = None
+        if configured_source and website.startswith("http") and discover:
+            try:
+                retry = discover_source(website, allow_fallbacks=fallbacks)
+            except gnews.ProbeFailed:
+                retry = None
+        if retry is None or retry == source:
+            return [], {
+                "publisher": publisher, "audience": audience_type, "status": "error",
+                "feed": source.url, "kind": source.kind, "error": str(exc)[:300],
+            }
+        try:
+            feed_items = collect_source(retry, website, publisher, audience_type)
+        except Exception as retry_exc:
+            return [], {
+                "publisher": publisher, "audience": audience_type, "status": "error",
+                "feed": retry.url, "kind": retry.kind,
+                "error": f"configured feed failed ({str(exc)[:120]}); "
+                         f"{retry.kind} also failed ({str(retry_exc)[:120]})",
+            }
+        recovered_from, source = source.url, retry
+        if cache is not None:
+            cache.put(website, retry)
     status = "ok" if feed_items else "empty"
-    return feed_items, {
+    row_status = {
         "publisher": publisher, "audience": audience_type, "status": status,
         "feed": source.url, "kind": source.kind, "discovered": discovered,
         "items": len(feed_items),
     }
+    if recovered_from:
+        row_status["recovered_from"] = recovered_from
+    return feed_items, row_status
 
 
 def collect_registry(
@@ -280,6 +308,9 @@ def collect_registry(
     rows.sort(key=sort_key, reverse=True)
     selected = rows[:max_publishers]
 
+    # Fresh allowance per registry, so two registries in one run cannot spend
+    # the shared SerpAPI key twice over.
+    gnews.reset_budget()
     cache = DiscoveryCache(cache_path) if cache_path else None
     items: list[CoverageItem] = []
     status: list[dict] = []

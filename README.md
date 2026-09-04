@@ -243,7 +243,11 @@ The fallbacks do not all support the same claims, and the code says which is whi
 
 `CoverageItem.date_basis` and `CoverageItem.title_is_derived` carry that provenance downstream, and the dashboard's limits panel reports the breakdown by route.
 
-One caveat the numbers above do not capture: they were measured from a laptop. GitHub Actions runner IPs get more aggressive bot treatment — the same reason `nia-news` is already blocked there — so the recovery rate in CI will be lower than the recovery rate locally.
+The first CI run proved that caveat exactly: 34 sitemap and 7 WordPress monitors came up, and **zero** Google News ones. `news.google.com` answers a laptop and refuses an Actions runner. That route now goes through SerpAPI's `google_news` engine, which makes the request from its own address, so the same query works from anywhere; the direct feed remains the path for a checkout with no key. It carries a 25-call cap of its own because the key is shared with two other repos.
+
+### A configured feed is not exempt from the ladder
+
+Nine hand-picked trade titles — Healthcare IT News, GlobeSt, HomeCare Magazine, Managed Healthcare Executive and others — were returning 403 on every run while the registry counted them as watched, because a feed named in the registry CSV was used as-is and never reconsidered when it failed. A collection error on a configured feed now re-runs discovery and retries once, and caches whatever route works so the 403 is not repeated daily. All nine recover: four through a different working feed, five through Google News.
 
 ## Topic coverage
 
