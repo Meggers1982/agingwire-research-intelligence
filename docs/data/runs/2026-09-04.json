@@ -2,11 +2,11 @@
   "id": "2026-09-04",
   "title": "AgingWire Research Intelligence — 2026-09-04",
   "run_date": "2026-09-04",
-  "generated_at": "2026-09-04T17:42:14.643192+00:00",
+  "generated_at": "2026-09-04T21:14:29.171473+00:00",
   "evidence_count": 169,
-  "new_evidence_count": 0,
-  "coverage_count": 1019,
-  "monitored_publisher_count": 64,
+  "new_evidence_count": 1,
+  "coverage_count": 1008,
+  "monitored_publisher_count": 61,
   "registry_publisher_count": 132,
   "gap_count": 58,
   "top_topics": [
@@ -30,17 +30,17 @@
     "depression_mental_health": 5,
     "assisted_living": 3,
     "elder_abuse": 3,
+    "fraud_scams": 2,
     "age_tech": 2,
     "migration_retirement": 1,
     "rural_aging": 1,
     "aging_in_place": 1,
     "senior_living_quality": 1,
-    "fraud_scams": 1,
     "loneliness_social_connection": 1,
     "transportation": 1,
     "dementia": 1,
-    "nutrition": 1,
     "incontinence": 1,
+    "nutrition": 1,
     "falls": 1,
     "ageism_work": 1
   },
@@ -64,6 +64,77 @@
     "american-community-survey": 1
   },
   "items": [
+    {
+      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+      "source_id": "ftc-consumer-protection",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-04T12:00:00+00:00",
+      "topics": [
+        "fraud_scams"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 68,
+      "score_band": "Strong",
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "hook": "The FTC alleges the Canada-based processor opened and kept accounts for merchants it knew or should have known were deceiving consumers, including tech support scams that took millions of dollars.",
+      "outlets": [
+        {
+          "publisher": "Generations Today",
+          "audience": "b2b",
+          "tier": "Tier 1",
+          "beat": "Current aging trends, policy, practice, people and programs",
+          "rationale": "Excellent prospect for readable data journalism about older adults and aging systems."
+        },
+        {
+          "publisher": "Home Health Care News",
+          "audience": "b2b",
+          "tier": "Tier 1",
+          "beat": "Home health, personal care, M&A, payment, staffing, technology, policy",
+          "rationale": "Top target for aging-in-place, caregiving workforce and home-care demand data."
+        },
+        {
+          "publisher": "Next Avenue",
+          "audience": "b2c",
+          "tier": "Tier 1",
+          "beat": "Aging, caregiving, health, money, work, purpose, housing",
+          "rationale": "One of the cleanest editorial fits for original aging data and human-centered state/local stories."
+        },
+        {
+          "publisher": "GOBankingRates",
+          "audience": "b2c",
+          "tier": "Tier 1",
+          "beat": "Retirement costs, Social Security, places to retire, senior discounts",
+          "rationale": "Very good target for list/ranking-friendly localized datasets."
+        }
+      ],
+      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumers. Specifically, Nuvei processed more than $30 million in consumer payments for Reimage, an offshore tech support scam, from 2017 to 2023, according to the FTC’s complaint. “Today’s action underscores the Commission’s commitment to ensuring that our payments system operates free of fraud,” said Chri",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How the scam works and what protects you or a parent from it.",
+        "For the trade: Liability, resident protection duties and reputational exposure.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "unmonitored",
+      "is_new": true,
+      "runs_seen": 1,
+      "web_coverage": null
+    },
     {
       "title": "CMS refreshed dataset: Medical Equipment Suppliers",
       "url": "https://data.cms.gov/provider-data/dataset/ct36-nrcq",
@@ -136,7 +207,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": {
         "query": "Medical Equipment Suppliers",
         "returned": 20,
@@ -228,23 +299,14 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": {
         "query": "Medicare Claims Quality Measures",
         "returned": 13,
-        "outlet_count": 1,
-        "outlets": [
-          "EIN News"
-        ],
-        "articles": [
-          {
-            "title": "Medicare Quality Measures Spotlight Medication Safety—IntractMD™ Identifies Hidden Supplement Risks",
-            "outlet": "EIN News",
-            "link": "https://www.einnews.com/pr_news/933364849/medicare-quality-measures-spotlight-medication-safety-intractmd-identifies-hidden-supplement-risks",
-            "date": "08/11/2026, 02:09 PM, +0000 UTC"
-          }
-        ],
-        "state": "lightly_reported"
+        "outlet_count": 0,
+        "outlets": [],
+        "articles": [],
+        "state": "unreported"
       }
     },
     {
@@ -320,14 +382,23 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": {
         "query": "Skilled Nursing Facility Quality Reporting Provider Data",
         "returned": 15,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
+        "outlet_count": 1,
+        "outlets": [
+          "HealthLeaders Media"
+        ],
+        "articles": [
+          {
+            "title": "CMS' New Skilled Nursing Rule Will Have Broader Implications on Documentation and Healthcare Data",
+            "outlet": "HealthLeaders Media",
+            "link": "https://www.healthleadersmedia.com/cno/cms-new-skilled-nursing-rule-will-have-broader-implications-documentation-and-healthcare-data",
+            "date": "08/24/2026, 07:00 AM, +0000 UTC"
+          }
+        ],
+        "state": "lightly_reported"
       }
     },
     {
@@ -360,7 +431,7 @@
         "b2b_relevance": 3,
         "visualization": 5
       },
-      "hook": "The two largest older populations in the country are not in the same place as the fastest-growing care workforce.",
+      "hook": "California reports 5,994,486 residents aged 65+ and Florida 4,630,733 in the 2023 ACS 5-year estimates, and the 85+ splits change what each of those numbers means.",
       "outlets": [
         {
           "publisher": "Senior Housing News",
@@ -408,7 +479,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 23,
+      "runs_seen": 24,
       "web_coverage": null
     },
     {
@@ -484,7 +555,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": {
         "query": "Hospice care National CAHPS Hospice Survey Data",
         "returned": 2,
@@ -523,7 +594,7 @@
         "b2b_relevance": 3,
         "visualization": 5
       },
-      "hook": "These are survey answers from bereaved families, one of the few quality measures in hospice that comes from the household rather than the provider.",
+      "hook": "State averages sit alongside the national averages in the companion file, so any provider's numbers can be read against both.",
       "outlets": [
         {
           "publisher": "LeadingAge",
@@ -567,10 +638,10 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": {
         "query": "Hospice care State CAHPS Hospice Survey Data",
-        "returned": 1,
+        "returned": 2,
         "outlet_count": 0,
         "outlets": [],
         "articles": [],
@@ -606,7 +677,7 @@
         "b2b_relevance": 5,
         "visualization": 5
       },
-      "hook": "The slowest-growing workforce sits in the setting selling itself hardest on service levels.",
+      "hook": "1,026.90 thousand jobs and 1.4% growth is the weakest of the three settings, in the part of the sector with the least public staffing disclosure.",
       "outlets": [
         {
           "publisher": "McKnight's Senior Living",
@@ -652,10 +723,10 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 14,
+      "runs_seen": 15,
       "web_coverage": {
         "query": "Continuing care retirement communities assisted living employment August 2026 026",
-        "returned": 6,
+        "returned": 9,
         "outlet_count": 0,
         "outlets": [],
         "articles": [],
@@ -734,15 +805,8 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
-      "web_coverage": {
-        "query": "National Downloadable File",
-        "returned": 4,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
+      "runs_seen": 34,
+      "web_coverage": null
     },
     {
       "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
@@ -772,7 +836,7 @@
         "b2b_relevance": 3,
         "visualization": 1
       },
-      "hook": "It is the freshest item in the run and it puts a dollar figure on each state's affordable housing capacity for the year.",
+      "hook": "The allocation notice published 09/04/26 sets the year's HUD-administered Housing Trust Fund figures for every eligible grantee.",
       "outlets": [
         {
           "publisher": "Senior Housing News",
@@ -815,14 +879,23 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 14,
+      "runs_seen": 15,
       "web_coverage": {
         "query": "Housing Trust Fund Fiscal Year 2026 Allocation",
-        "returned": 15,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
+        "returned": 19,
+        "outlet_count": 1,
+        "outlets": [
+          "Brainerd Dispatch"
+        ],
+        "articles": [
+          {
+            "title": "Crow Wing County majority nixes Housing Trust Fund request",
+            "outlet": "Brainerd Dispatch",
+            "link": "https://www.brainerddispatch.com/news/local/crow-wing-county-majority-nixes-housing-trust-fund-request",
+            "date": "09/04/2026, 07:30 PM, +0000 UTC"
+          }
+        ],
+        "state": "lightly_reported"
       }
     },
     {
@@ -898,15 +971,8 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
-      "web_coverage": {
-        "query": "Nursing Home Data Collection Intervals",
-        "returned": 1,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
+      "runs_seen": 34,
+      "web_coverage": null
     },
     {
       "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
@@ -935,7 +1001,7 @@
         "b2b_relevance": 3,
         "visualization": 1
       },
-      "hook": "HUD must publish these annually to take effect October 1, so the numbers governing next year's voucher rents are already on the table.",
+      "hook": "HUD must publish FMRs at least annually adjusted to take effect October 1, and the notice sets out how agencies request reevaluation under HOTMA.",
       "outlets": [
         {
           "publisher": "Senior Housing News",
@@ -978,7 +1044,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -1051,7 +1117,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -1126,7 +1192,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": {
         "query": "Utilization Data",
         "returned": 20,
@@ -1217,20 +1283,20 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": {
         "query": "Patient Reported Outcomes Hospital",
         "returned": 20,
         "outlet_count": 3,
         "outlets": [
-          "Hospital Pharmacy Europe",
+          "hospitalpharmacyeurope.com",
           "Pharmacy Times",
           "Nature"
         ],
         "articles": [
           {
             "title": "Digital patient-reported measures remain underused in hospital pharmacy, Spanish study finds",
-            "outlet": "Hospital Pharmacy Europe",
+            "outlet": "hospitalpharmacyeurope.com",
             "link": "https://hospitalpharmacyeurope.com/pharmacy-practice/health-technology/digital-patient-reported-measures-proms-prems-remain-underused-in-hospital-pharmacy-spanish-study-finds/",
             "date": "08/28/2026, 07:00 AM, +0000 UTC"
           },
@@ -1279,7 +1345,7 @@
         "b2b_relevance": 4,
         "visualization": 5
       },
-      "hook": "No other long-term care setting in this run grew at half that rate.",
+      "hook": "At 1,896.40 thousand jobs and 5.0% annual growth, home health is now the largest and fastest-growing of the three care settings in the federal series.",
       "outlets": [
         {
           "publisher": "Workspan Daily",
@@ -1325,7 +1391,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 14,
+      "runs_seen": 15,
       "web_coverage": null
     },
     {
@@ -1357,7 +1423,7 @@
         "b2b_relevance": 5,
         "visualization": 5
       },
-      "hook": "Growth is positive but less than half the home health rate, which reframes every staffing shortage conversation.",
+      "hook": "1,590.20 thousand jobs and 2.1% annual growth puts skilled nursing behind home health at a moment when its staffing measures are publicly posted and scored.",
       "outlets": [
         {
           "publisher": "Provider Magazine",
@@ -1403,7 +1469,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 14,
+      "runs_seen": 15,
       "web_coverage": null
     },
     {
@@ -1434,7 +1500,7 @@
         "b2b_relevance": 3,
         "visualization": 5
       },
-      "hook": "The 65-plus employment level is climbing at the same rate as nursing home staffing, from a far bigger base.",
+      "hook": "11,753 thousand workers aged 65 and over, up 2.1% year over year, is a labor force segment growing at the same rate as nursing home staffing.",
       "outlets": [
         {
           "publisher": "McKnight's Home Care",
@@ -1480,7 +1546,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 14,
+      "runs_seen": 15,
       "web_coverage": null
     },
     {
@@ -1555,7 +1621,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -1630,7 +1696,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -1705,7 +1771,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -1780,7 +1846,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -1855,7 +1921,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -1930,7 +1996,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2005,7 +2071,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2080,7 +2146,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2155,7 +2221,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2230,7 +2296,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2261,7 +2327,7 @@
         "b2b_relevance": 3,
         "visualization": 5
       },
-      "hook": null,
+      "hook": "At 593.78 on the 1982-84 base and 1.7% annual growth, medical inflation is running below the pace many retirement budgets assume.",
       "outlets": [
         {
           "publisher": "ThinkAdvisor",
@@ -2307,7 +2373,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2373,7 +2439,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2450,7 +2516,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 14,
+      "runs_seen": 15,
       "web_coverage": null
     },
     {
@@ -2481,7 +2547,7 @@
         "b2b_relevance": 4,
         "visualization": 5
       },
-      "hook": "The faster raise still leaves the setting paying $2.39 an hour less than its main competitor for workers.",
+      "hook": "A 3.2% raise did not close the gap, because the setting paying more is also the setting hiring fastest.",
       "outlets": [
         {
           "publisher": "McKnight's Senior Living",
@@ -2527,7 +2593,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 14,
+      "runs_seen": 15,
       "web_coverage": null
     },
     {
@@ -2600,7 +2666,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2673,7 +2739,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2703,7 +2769,7 @@
         "b2b_relevance": 3,
         "visualization": 1
       },
-      "hook": "A supplemental proposal signals an active rulemaking with a comment window rather than a settled outcome.",
+      "hook": null,
       "outlets": [
         {
           "publisher": "Senior Housing News",
@@ -2746,7 +2812,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2816,7 +2882,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2886,7 +2952,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -2956,7 +3022,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3026,77 +3092,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
-      "web_coverage": null
-    },
-    {
-      "title": "5 Questions and Answers About Medicaid and Provider Taxes",
-      "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
-      "source_id": "kff-feed",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-20T20:01:22+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 57,
-      "score_band": "Strong",
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "hook": "Provider taxes are how many states finance their Medicaid share, so changing them changes what the program can buy.",
-      "outlets": [
-        {
-          "publisher": "Fierce Healthcare",
-          "audience": "b2b",
-          "tier": "Tier 2",
-          "beat": "Payers, providers, policy, Medicare, digital health, finance",
-          "rationale": "Strong secondary healthcare target for Medicare, access, utilization and aging-tech data."
-        },
-        {
-          "publisher": "Modern Healthcare",
-          "audience": "b2b",
-          "tier": "Tier 3",
-          "beat": "Healthcare business, policy, finance, workforce, Medicare/Medicaid",
-          "rationale": "Prestige target for major aging-healthcare datasets with national significance."
-        },
-        {
-          "publisher": "SeniorLiving.org",
-          "audience": "b2c",
-          "tier": "Tier 2",
-          "beat": "Senior living, care, aging in place, finance, Medicare, technology, retirement",
-          "rationale": "Major consumer senior-living publisher; useful target and competitor for state rankings/data studies."
-        },
-        {
-          "publisher": "Bankrate Retirement",
-          "audience": "b2c",
-          "tier": "Tier 2",
-          "beat": "Retirement, Social Security, Medicare, long-term care, savings",
-          "rationale": "Strong consumer finance target and frequent survey/data publisher."
-        }
-      ],
-      "summary": "This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors and from a proposed rule on provider taxes to describe states’ current provider taxes, explore how rules governing provider taxes are changing because of the 2025 reconciliation law and the regulations implementing that law, and summarizes which changes may affect each state.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3124,7 +3120,7 @@
         "b2b_relevance": 3,
         "visualization": 3
       },
-      "hook": "A named list of states with quantified exposure turns an abstract payment rule into a local budget story.",
+      "hook": "KFF names California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among the states with the biggest potential reductions in Medicaid payments to hospitals.",
       "outlets": [
         {
           "publisher": "Fierce Healthcare",
@@ -3166,7 +3162,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3238,7 +3234,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 24,
+      "runs_seen": 25,
       "web_coverage": null
     },
     {
@@ -3309,7 +3305,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 24,
+      "runs_seen": 25,
       "web_coverage": null
     },
     {
@@ -3372,76 +3368,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
-      "web_coverage": null
-    },
-    {
-      "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
-      "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
-      "source_id": "justice-in-aging",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T18:16:11+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 55,
-      "score_band": "Strong",
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "hook": null,
-      "outlets": [
-        {
-          "publisher": "Fierce Healthcare",
-          "audience": "b2b",
-          "tier": "Tier 2",
-          "beat": "Payers, providers, policy, Medicare, digital health, finance",
-          "rationale": "Strong secondary healthcare target for Medicare, access, utilization and aging-tech data."
-        },
-        {
-          "publisher": "Modern Healthcare",
-          "audience": "b2b",
-          "tier": "Tier 3",
-          "beat": "Healthcare business, policy, finance, workforce, Medicare/Medicaid",
-          "rationale": "Prestige target for major aging-healthcare datasets with national significance."
-        },
-        {
-          "publisher": "SeniorLiving.org",
-          "audience": "b2c",
-          "tier": "Tier 2",
-          "beat": "Senior living, care, aging in place, finance, Medicare, technology, retirement",
-          "rationale": "Major consumer senior-living publisher; useful target and competitor for state rankings/data studies."
-        },
-        {
-          "publisher": "Bankrate Retirement",
-          "audience": "b2c",
-          "tier": "Tier 2",
-          "beat": "Retirement, Social Security, Medicare, long-term care, savings",
-          "rationale": "Strong consumer finance target and frequent survey/data publisher."
-        }
-      ],
-      "summary": "Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers."
-      ],
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "coverage_state": "light",
-      "is_new": false,
-      "runs_seen": 24,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3504,7 +3431,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 24,
+      "runs_seen": 25,
       "web_coverage": null
     },
     {
@@ -3569,7 +3496,7 @@
       "b2c_coverage_count": 2,
       "coverage_state": "light",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3639,7 +3566,77 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
+      "web_coverage": null
+    },
+    {
+      "title": "5 Questions and Answers About Medicaid and Provider Taxes",
+      "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
+      "source_id": "kff-feed",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-20T20:01:22+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 55,
+      "score_band": "Strong",
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "hook": null,
+      "outlets": [
+        {
+          "publisher": "Fierce Healthcare",
+          "audience": "b2b",
+          "tier": "Tier 2",
+          "beat": "Payers, providers, policy, Medicare, digital health, finance",
+          "rationale": "Strong secondary healthcare target for Medicare, access, utilization and aging-tech data."
+        },
+        {
+          "publisher": "Modern Healthcare",
+          "audience": "b2b",
+          "tier": "Tier 3",
+          "beat": "Healthcare business, policy, finance, workforce, Medicare/Medicaid",
+          "rationale": "Prestige target for major aging-healthcare datasets with national significance."
+        },
+        {
+          "publisher": "SeniorLiving.org",
+          "audience": "b2c",
+          "tier": "Tier 2",
+          "beat": "Senior living, care, aging in place, finance, Medicare, technology, retirement",
+          "rationale": "Major consumer senior-living publisher; useful target and competitor for state rankings/data studies."
+        },
+        {
+          "publisher": "Bankrate Retirement",
+          "audience": "b2c",
+          "tier": "Tier 2",
+          "beat": "Retirement, Social Security, Medicare, long-term care, savings",
+          "rationale": "Strong consumer finance target and frequent survey/data publisher."
+        }
+      ],
+      "summary": "This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors and from a proposed rule on provider taxes to describe states’ current provider taxes, explore how rules governing provider taxes are changing because of the 2025 reconciliation law and the regulations implementing that law, and summarizes which changes may affect each state.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": false,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3709,7 +3706,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3780,7 +3777,76 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
+      "web_coverage": null
+    },
+    {
+      "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+      "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+      "source_id": "justice-in-aging",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T18:16:11+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 53,
+      "score_band": "Worth a look",
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "hook": null,
+      "outlets": [
+        {
+          "publisher": "Fierce Healthcare",
+          "audience": "b2b",
+          "tier": "Tier 2",
+          "beat": "Payers, providers, policy, Medicare, digital health, finance",
+          "rationale": "Strong secondary healthcare target for Medicare, access, utilization and aging-tech data."
+        },
+        {
+          "publisher": "Modern Healthcare",
+          "audience": "b2b",
+          "tier": "Tier 3",
+          "beat": "Healthcare business, policy, finance, workforce, Medicare/Medicaid",
+          "rationale": "Prestige target for major aging-healthcare datasets with national significance."
+        },
+        {
+          "publisher": "SeniorLiving.org",
+          "audience": "b2c",
+          "tier": "Tier 2",
+          "beat": "Senior living, care, aging in place, finance, Medicare, technology, retirement",
+          "rationale": "Major consumer senior-living publisher; useful target and competitor for state rankings/data studies."
+        },
+        {
+          "publisher": "Bankrate Retirement",
+          "audience": "b2c",
+          "tier": "Tier 2",
+          "beat": "Retirement, Social Security, Medicare, long-term care, savings",
+          "rationale": "Strong consumer finance target and frequent survey/data publisher."
+        }
+      ],
+      "summary": "Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers."
+      ],
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "coverage_state": "light",
+      "is_new": false,
+      "runs_seen": 25,
       "web_coverage": null
     },
     {
@@ -3850,7 +3916,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3920,7 +3986,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -3993,7 +4059,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -4066,7 +4132,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -4139,7 +4205,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -4212,7 +4278,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -4285,7 +4351,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -4358,7 +4424,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -4429,7 +4495,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     },
     {
@@ -4499,77 +4565,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 33,
-      "web_coverage": null
-    },
-    {
-      "title": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance",
-      "url": "https://www.nic.org/blog/another-strong-quarter-for-senior-housing-seven-straight-quarters-of-outperformance/",
-      "source_id": "nic",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "housing"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 48,
-      "score_band": "Worth a look",
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "hook": null,
-      "outlets": [
-        {
-          "publisher": "Senior Housing News",
-          "audience": "b2b",
-          "tier": "Tier 1",
-          "beat": "Operations, development, finance, staffing, technology, marketing, memory care",
-          "rationale": "Top pure-play senior living target; strong appetite for reports, market data and operator implications."
-        },
-        {
-          "publisher": "Seniors Housing Business",
-          "audience": "b2b",
-          "tier": "Tier 1",
-          "beat": "Transactions, development, capital markets, operations, investment",
-          "rationale": "Excellent for geographically localized development, affordability, inventory, financing and demand data."
-        },
-        {
-          "publisher": "Next Avenue",
-          "audience": "b2c",
-          "tier": "Tier 1",
-          "beat": "Aging, caregiving, health, money, work, purpose, housing",
-          "rationale": "One of the cleanest editorial fits for original aging data and human-centered state/local stories."
-        },
-        {
-          "publisher": "Retirement Living",
-          "audience": "b2c",
-          "tier": "Tier 1",
-          "beat": "Retirement locations, senior housing, products/services, finance, health",
-          "rationale": "Strong fit for state rankings, affordability, migration, senior housing and retirement-location studies."
-        }
-      ],
-      "summary": "22 Senior Housing Properties Added to the NCREIF Property Index in 2Q Senior housing investment performance in the second quarter of 2026 maintained the prior quarter’s momentum, posting a total return of 3.9% and bringing year-to-date returns to 8.0%. Overall, senior housing during the quarter outperformed the broader…",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 33,
+      "runs_seen": 34,
       "web_coverage": null
     }
   ],
@@ -4727,11 +4723,6 @@
           "score": 57
         },
         {
-          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
-          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
-          "score": 57
-        },
-        {
           "title": "Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits",
           "url": "https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/",
           "score": 57
@@ -4747,11 +4738,6 @@
           "score": 55
         },
         {
-          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
-          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
-          "score": 55
-        },
-        {
           "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
           "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17746/rescission-of-social-security-acquiescence-ruling-90-22",
           "score": 55
@@ -4760,6 +4746,16 @@
           "title": "Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk",
           "url": "https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/",
           "score": 55
+        },
+        {
+          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
+          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
+          "score": 55
+        },
+        {
+          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+          "score": 53
         },
         {
           "title": "New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement",
@@ -4836,24 +4832,24 @@
           "score": 57
         },
         {
-          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
-          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
-          "score": 57
-        },
-        {
           "title": "Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits",
           "url": "https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/",
           "score": 57
         },
         {
-          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
-          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
-          "score": 55
-        },
-        {
           "title": "Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk",
           "url": "https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/",
           "score": 55
+        },
+        {
+          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
+          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
+          "score": 55
+        },
+        {
+          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+          "score": 53
         },
         {
           "title": "FTC and States Act Against Hims & Hers for Deceptive and Unlawful Privacy Practices",
@@ -4879,6 +4875,11 @@
       "beat": "Aging, caregiving, health, money, work, purpose, housing",
       "rationale": "One of the cleanest editorial fits for original aging data and human-centered state/local stories.",
       "items": [
+        {
+          "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+          "score": 68
+        },
         {
           "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
           "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room",
@@ -4958,11 +4959,6 @@
           "title": "New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security",
           "url": "https://www.ebri.org/media/press-releases/content/new-national-initiative-examines-how-caregiving-is-reshaping-the-workplace--employee-benefits-and-long-term-financial-security",
           "score": 49
-        },
-        {
-          "title": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance",
-          "url": "https://www.nic.org/blog/another-strong-quarter-for-senior-housing-seven-straight-quarters-of-outperformance/",
-          "score": 48
         }
       ]
     },
@@ -5029,24 +5025,24 @@
           "score": 57
         },
         {
-          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
-          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
-          "score": 57
-        },
-        {
           "title": "Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits",
           "url": "https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/",
           "score": 57
         },
         {
-          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
-          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
-          "score": 55
-        },
-        {
           "title": "Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk",
           "url": "https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/",
           "score": 55
+        },
+        {
+          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
+          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
+          "score": 55
+        },
+        {
+          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+          "score": 53
         },
         {
           "title": "New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement",
@@ -5229,6 +5225,85 @@
       ]
     },
     {
+      "publisher": "GOBankingRates",
+      "audience": "b2c",
+      "tier": "Tier 1",
+      "beat": "Retirement costs, Social Security, places to retire, senior discounts",
+      "rationale": "Very good target for list/ranking-friendly localized datasets.",
+      "items": [
+        {
+          "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+          "score": 68
+        },
+        {
+          "title": "American Community Survey 2023 state aging and housing profile (52 states)",
+          "url": "https://data.census.gov/table?q=DP05&y=2023",
+          "score": 66
+        },
+        {
+          "title": "BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)",
+          "url": "https://data.bls.gov/timeseries/LNU02000097",
+          "score": 63
+        },
+        {
+          "title": "Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults",
+          "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17814/social-security-ruling-ssr-26-2p-titles-ii-and-xvi-documenting-and-evaluating-disability-in-young",
+          "score": 61
+        },
+        {
+          "title": "Here’s How Much Americans Rely on Social Security – at All Income Levels",
+          "url": "https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/",
+          "score": 55
+        },
+        {
+          "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
+          "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17746/rescission-of-social-security-acquiescence-ruling-90-22",
+          "score": 55
+        },
+        {
+          "title": "FTC and States Act Against Hims & Hers for Deceptive and Unlawful Privacy Practices",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-states-act-against-hims-hers-deceptive-unlawful-privacy-practices",
+          "score": 53
+        },
+        {
+          "title": "CMS refreshed dataset: Hospice - General Information",
+          "url": "https://data.cms.gov/provider-data/dataset/yc9t-dgbk",
+          "score": 49
+        },
+        {
+          "title": "CMS refreshed dataset: Hospice - Zip Data",
+          "url": "https://data.cms.gov/provider-data/dataset/95rg-2usp",
+          "score": 49
+        },
+        {
+          "title": "CMS refreshed dataset: Hospice - Provider Data",
+          "url": "https://data.cms.gov/provider-data/dataset/252m-zfp9",
+          "score": 49
+        },
+        {
+          "title": "CMS refreshed dataset: Hospice care - Provider CAHPS Hospice Survey Data",
+          "url": "https://data.cms.gov/provider-data/dataset/gxki-hrr8",
+          "score": 49
+        },
+        {
+          "title": "CMS refreshed dataset: Hospice - State Data",
+          "url": "https://data.cms.gov/provider-data/dataset/eda0-92f0",
+          "score": 49
+        },
+        {
+          "title": "CMS refreshed dataset: Hospice - National Data",
+          "url": "https://data.cms.gov/provider-data/dataset/3xeb-u9wp",
+          "score": 49
+        },
+        {
+          "title": "New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security",
+          "url": "https://www.ebri.org/media/press-releases/content/new-national-initiative-examines-how-caregiving-is-reshaping-the-workplace--employee-benefits-and-long-term-financial-security",
+          "score": 49
+        }
+      ]
+    },
+    {
       "publisher": "Family Caregiver Alliance",
       "audience": "b2c",
       "tier": "Tier 2",
@@ -5355,24 +5430,24 @@
           "score": 57
         },
         {
-          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
-          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
-          "score": 57
-        },
-        {
           "title": "Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits",
           "url": "https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/",
           "score": 57
         },
         {
-          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
-          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
-          "score": 55
-        },
-        {
           "title": "Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk",
           "url": "https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/",
           "score": 55
+        },
+        {
+          "title": "5 Questions and Answers About Medicaid and Provider Taxes",
+          "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
+          "score": 55
+        },
+        {
+          "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
+          "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
+          "score": 53
         },
         {
           "title": "New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement",
@@ -5383,80 +5458,6 @@
           "title": "Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026",
           "url": "https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/",
           "score": 48
-        }
-      ]
-    },
-    {
-      "publisher": "GOBankingRates",
-      "audience": "b2c",
-      "tier": "Tier 1",
-      "beat": "Retirement costs, Social Security, places to retire, senior discounts",
-      "rationale": "Very good target for list/ranking-friendly localized datasets.",
-      "items": [
-        {
-          "title": "American Community Survey 2023 state aging and housing profile (52 states)",
-          "url": "https://data.census.gov/table?q=DP05&y=2023",
-          "score": 66
-        },
-        {
-          "title": "BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)",
-          "url": "https://data.bls.gov/timeseries/LNU02000097",
-          "score": 63
-        },
-        {
-          "title": "Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults",
-          "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17814/social-security-ruling-ssr-26-2p-titles-ii-and-xvi-documenting-and-evaluating-disability-in-young",
-          "score": 61
-        },
-        {
-          "title": "Here’s How Much Americans Rely on Social Security – at All Income Levels",
-          "url": "https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/",
-          "score": 55
-        },
-        {
-          "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
-          "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17746/rescission-of-social-security-acquiescence-ruling-90-22",
-          "score": 55
-        },
-        {
-          "title": "FTC and States Act Against Hims & Hers for Deceptive and Unlawful Privacy Practices",
-          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-states-act-against-hims-hers-deceptive-unlawful-privacy-practices",
-          "score": 53
-        },
-        {
-          "title": "CMS refreshed dataset: Hospice - General Information",
-          "url": "https://data.cms.gov/provider-data/dataset/yc9t-dgbk",
-          "score": 49
-        },
-        {
-          "title": "CMS refreshed dataset: Hospice - Zip Data",
-          "url": "https://data.cms.gov/provider-data/dataset/95rg-2usp",
-          "score": 49
-        },
-        {
-          "title": "CMS refreshed dataset: Hospice - Provider Data",
-          "url": "https://data.cms.gov/provider-data/dataset/252m-zfp9",
-          "score": 49
-        },
-        {
-          "title": "CMS refreshed dataset: Hospice care - Provider CAHPS Hospice Survey Data",
-          "url": "https://data.cms.gov/provider-data/dataset/gxki-hrr8",
-          "score": 49
-        },
-        {
-          "title": "CMS refreshed dataset: Hospice - State Data",
-          "url": "https://data.cms.gov/provider-data/dataset/eda0-92f0",
-          "score": 49
-        },
-        {
-          "title": "CMS refreshed dataset: Hospice - National Data",
-          "url": "https://data.cms.gov/provider-data/dataset/3xeb-u9wp",
-          "score": 49
-        },
-        {
-          "title": "New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security",
-          "url": "https://www.ebri.org/media/press-releases/content/new-national-initiative-examines-how-caregiving-is-reshaping-the-workplace--employee-benefits-and-long-term-financial-security",
-          "score": 49
         }
       ]
     },
@@ -5506,11 +5507,6 @@
           "title": "NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options",
           "url": "https://www.nic.org/news-press/nic-and-mit-agelab-launch-landmark-study-to-reimagine-senior-living-options/",
           "score": 54
-        },
-        {
-          "title": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance",
-          "url": "https://www.nic.org/blog/another-strong-quarter-for-senior-housing-seven-straight-quarters-of-outperformance/",
-          "score": 48
         }
       ]
     },
@@ -5599,11 +5595,6 @@
           "title": "RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act",
           "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act",
           "score": 55
-        },
-        {
-          "title": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance",
-          "url": "https://www.nic.org/blog/another-strong-quarter-for-senior-housing-seven-straight-quarters-of-outperformance/",
-          "score": 48
         }
       ]
     },
@@ -5720,40 +5711,6 @@
       ]
     },
     {
-      "publisher": "Retirement Living",
-      "audience": "b2c",
-      "tier": "Tier 1",
-      "beat": "Retirement locations, senior housing, products/services, finance, health",
-      "rationale": "Strong fit for state rankings, affordability, migration, senior housing and retirement-location studies.",
-      "items": [
-        {
-          "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
-          "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room",
-          "score": 63
-        },
-        {
-          "title": "Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates",
-          "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17051/mortgage-and-loan-insurance-programs-under-the-national-housing-act-debenture-interest-rates",
-          "score": 63
-        },
-        {
-          "title": "HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations",
-          "url": "https://www.federalregister.gov/documents/2026/08/10/2026-16228/huds-implementation-of-the-fair-housing-acts-disparate-impact-standard-amendments-to-huds-title-vi",
-          "score": 59
-        },
-        {
-          "title": "RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act",
-          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act",
-          "score": 55
-        },
-        {
-          "title": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance",
-          "url": "https://www.nic.org/blog/another-strong-quarter-for-senior-housing-seven-straight-quarters-of-outperformance/",
-          "score": 48
-        }
-      ]
-    },
-    {
       "publisher": "Kiplinger",
       "audience": "b2c",
       "tier": "Tier 2",
@@ -5812,6 +5769,35 @@
         {
           "title": "Breaking Glass, Missing Hands",
           "url": "https://www.rand.org/pubs/research_reports/RRA3665-2.html",
+          "score": 55
+        }
+      ]
+    },
+    {
+      "publisher": "Retirement Living",
+      "audience": "b2c",
+      "tier": "Tier 1",
+      "beat": "Retirement locations, senior housing, products/services, finance, health",
+      "rationale": "Strong fit for state rankings, affordability, migration, senior housing and retirement-location studies.",
+      "items": [
+        {
+          "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
+          "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room",
+          "score": 63
+        },
+        {
+          "title": "Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates",
+          "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17051/mortgage-and-loan-insurance-programs-under-the-national-housing-act-debenture-interest-rates",
+          "score": 63
+        },
+        {
+          "title": "HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations",
+          "url": "https://www.federalregister.gov/documents/2026/08/10/2026-16228/huds-implementation-of-the-fair-housing-acts-disparate-impact-standard-amendments-to-huds-title-vi",
+          "score": 59
+        },
+        {
+          "title": "RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act",
           "score": 55
         }
       ]
@@ -5961,6 +5947,34 @@
           "title": "BLS: Home health care services average hourly earnings, July 2026 — 28.04 dollars per hour (+2.0% year over year)",
           "url": "https://data.bls.gov/timeseries/CES6562160003",
           "score": 60
+        }
+      ]
+    },
+    {
+      "publisher": "Generations Today",
+      "audience": "b2b",
+      "tier": "Tier 1",
+      "beat": "Current aging trends, policy, practice, people and programs",
+      "rationale": "Excellent prospect for readable data journalism about older adults and aging systems.",
+      "items": [
+        {
+          "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "publisher": "Home Health Care News",
+      "audience": "b2b",
+      "tier": "Tier 1",
+      "beat": "Home health, personal care, M&A, payment, staffing, technology, policy",
+      "rationale": "Top target for aging-in-place, caregiving workforce and home-care demand data.",
+      "items": [
+        {
+          "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+          "score": 68
         }
       ]
     },
@@ -6118,11 +6132,26 @@
     }
   ],
   "media_status_summary": {
-    "ok": 57,
-    "empty": 7,
-    "error": 10,
+    "ok": 55,
+    "empty": 6,
+    "error": 13,
     "no_feed": 58,
+    "kinds": {
+      "rss": 61
+    },
     "errors": [
+      {
+        "publisher": "McKnight's Senior Living",
+        "error": "403 Client Error: Forbidden for url: https://www.mcknightsseniorliving.com/feed/"
+      },
+      {
+        "publisher": "McKnight's Long-Term Care News",
+        "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
+      },
+      {
+        "publisher": "McKnight's Home Care",
+        "error": "403 Client Error: Forbidden for url: https://www.mcknightshomecare.com/homepage/feed/"
+      },
       {
         "publisher": "HomeCare Magazine",
         "error": "403 Client Error: Forbidden for url: https://www.homecaremag.com/combo/feed"
@@ -6138,6 +6167,10 @@
       {
         "publisher": "Managed Healthcare Executive",
         "error": "403 Client Error: Forbidden for url: https://www.managedhealthcareexecutive.com/rss"
+      },
+      {
+        "publisher": "McKnight's Tech Daily",
+        "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
       },
       {
         "publisher": "Commercial Property Executive",
@@ -6158,10 +6191,6 @@
       {
         "publisher": "Financial Advisor Magazine",
         "error": "403 Client Error: Forbidden for url: https://www.fa-mag.com/rss.php"
-      },
-      {
-        "publisher": "The NonProfit Times",
-        "error": "HTTPSConnectionPool(host='thenonprofittimes.com', port=443): Read timed out. (read timeout=30)"
       }
     ]
   },
@@ -6302,7 +6331,7 @@
     }
   },
   "web_coverage_status": {
-    "checked": 11,
+    "checked": 9,
     "top_n": 15
   },
   "serpapi_calls": 15,
@@ -6330,7 +6359,7 @@
       "new_count": 0,
       "structured_count": 8,
       "localizable_count": 6,
-      "newest_age_days": 3
+      "newest_age_days": 4
     },
     {
       "topic": "long_term_care",
@@ -6526,137 +6555,37 @@
   ],
   "story_ideas": [
     {
-      "title": "BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562160001",
-      "source_id": "bls-api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 63,
-      "topics": [
-        "workforce",
-        "caregiving",
-        "aging_in_place"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "headline": "Home care is hiring faster than any other part of the care economy",
-      "angle": "Count the 1,896.40 thousand home health jobs in August 2026 and the 5.0% year-over-year gain against every other care setting, for families trying to hire an aide and for the agencies competing for the same workers.",
+      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+      "headline": "The company that moved the money for tech support scams is paying $4.85 million",
+      "angle": "The Federal Trade Commission settlement requires Nuvei to screen the merchants it processes for, which matters to anyone who has ever paid a pop-up warning about a virus.",
       "outlets": [
         "Next Avenue",
-        "Caring.com"
+        "GOBankingRates"
       ],
-      "hook": "No other long-term care setting in this run grew at half that rate.",
-      "summary": null,
-      "consumer": "If you have been told there is nobody available to cover your father's mornings, the national numbers say hiring is up 5.0% in a year, so ask the agency how many aides it added in your county and what its current fill rate is before you accept a waitlist.",
-      "b2b": "Home health is absorbing labor supply that nursing homes and assisted living were counting on, which turns wage benchmarking into a retention question rather than a budget line.",
-      "note": "National series, gap status, and a clean three-line chart when plotted against nursing facilities and assisted living employment."
-    },
-    {
-      "title": "BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562310001",
-      "source_id": "bls-api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 63,
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+      "source_id": "ftc-consumer-protection",
+      "published_at": "2026-09-04T12:00:00+00:00",
+      "score": 68,
       "topics": [
-        "workforce",
-        "long_term_care",
-        "senior_living_quality"
+        "fraud_scams"
       ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "headline": "Nursing homes are staffing up again, just slowly",
-      "angle": "Track the 1,590.20 thousand nursing care facility jobs in August 2026 and their 2.1% annual gain for residents' families judging whether staffing promises are real and for administrators explaining vacancies.",
-      "outlets": [
-        "Provider Magazine",
-        "Family Caregiver Alliance"
-      ],
-      "hook": "Growth is positive but less than half the home health rate, which reframes every staffing shortage conversation.",
-      "summary": null,
-      "consumer": "When you tour a nursing home, ask for its own year-over-year change in nursing hours per resident day and compare it with the CMS Provider Information staffing measures rather than accepting a general statement about the labor market.",
-      "b2b": "A 2.1% national gain gives operators a benchmark to test their own hiring against, and a talking point in reimbursement arguments about the cost of matching home health pay.",
-      "note": "Pairs directly with the home health series for a single comparison graphic; localizable through facility-level CMS staffing data."
-    },
-    {
-      "title": "BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)",
-      "headline": "Assisted living added the fewest workers of any care setting this year",
-      "angle": "Report the 1,026.90 thousand assisted living and CCRC jobs in August 2026 and the 1.4% annual gain for prospective residents comparing communities and for operators budgeting for next year's census.",
-      "outlets": [
-        "Senior Housing News",
-        "Where You Live Matters"
-      ],
-      "url": "https://data.bls.gov/timeseries/CES6562330001",
-      "source_id": "bls-api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 65,
-      "topics": [
-        "workforce",
-        "assisted_living",
-        "housing"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": "The slowest-growing workforce sits in the setting selling itself hardest on service levels.",
-      "summary": null,
-      "consumer": "Before you sign a residency agreement, ask what the community's caregiver-to-resident ratio was twelve months ago and what it is today, and get the answer in writing alongside the care plan.",
-      "b2b": "Slow headcount growth against rising rents raises a service-delivery question for operators marketing higher acuity, and a due diligence question for anyone underwriting expansion.",
+      "coverage_state": "unmonitored",
+      "is_new": true,
+      "hook": "The FTC alleges the Canada-based processor opened and kept accounts for merchants it knew or should have known were deceiving consumers, including tech support scams that took millions of dollars.",
+      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsi",
+      "consumer": "If you or a parent ever paid a tech support company that called or popped up on screen, pull the card statements for that period, dispute what you can, and report the incident to the FTC — the enforcement record shows these charges moved through mainstream payment processors, not obscure ones.",
+      "b2b": "Anyone who takes card payments from older clients now has a documented standard for merchant screening to point at, and resident fraud-education programming can be built around how the money actually travels.",
       "localize": null,
-      "chart": "The underlying file supports an original ranking or trend line.",
-      "competitive": "Monitored trades cover this beat and have not written it.",
-      "note": "National only, but the ACS state 65-plus counts allow a demand-versus-staffing read by state."
-    },
-    {
-      "title": "BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562330003",
-      "source_id": "bls-api",
-      "published_at": "2026-07-01T00:00:00+00:00",
-      "score": 60,
-      "topics": [
-        "workforce",
-        "assisted_living"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "headline": "Assisted living raised pay 3.2% and still pays less than home care",
-      "angle": "Set the $25.65 average hourly wage in assisted living and CCRCs for July 2026 against home health's $28.04 for job seekers, families pricing care and operators setting wage scales.",
-      "outlets": [
-        "McKnight's Senior Living",
-        "SeniorLiving.org"
-      ],
-      "hook": "The faster raise still leaves the setting paying $2.39 an hour less than its main competitor for workers.",
-      "summary": null,
-      "consumer": "If you are paying a community for personal care, these are the wages behind the invoice, and it is fair to ask what share of your monthly fee reaches direct care staff.",
-      "b2b": "A 3.2% wage increase that does not close the gap with home health means turnover pressure persists, and pricing models built on last year's labor cost are already behind.",
-      "note": "Two national series, one chart, and the wage gap is the headline number."
-    },
-    {
-      "title": "BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)",
-      "url": "https://data.bls.gov/timeseries/LNU02000097",
-      "source_id": "bls-api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 63,
-      "topics": [
-        "workforce",
-        "financial_security"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "headline": "Nearly 11.8 million Americans over 65 were working last month",
-      "angle": "Use the 11,753 thousand people aged 65 and over employed in August 2026, up 2.1% in a year, to look at how many older adults are staying in the labor force, for readers planning a retirement date and for employers writing schedules.",
-      "outlets": [
-        "Bankrate Retirement",
-        "McKnight's Senior Living"
-      ],
-      "hook": "The 65-plus employment level is climbing at the same rate as nursing home staffing, from a far bigger base.",
-      "summary": null,
-      "consumer": "If you are weighing another year of work against claiming benefits, you are joining 11.75 million peers who already made that call, and the wage and hours data give you a realistic picture of what part-time later work pays.",
-      "b2b": "Senior living and home care operators recruiting older workers have a measurable pool here, relevant to scheduling flexibility and part-time role design.",
-      "note": "Confirmed gap on a beat monitored publishers do cover; strong annual-comparison chart."
+      "chart": "The figures in the finding are the spine of a simple graphic.",
+      "competitive": "Unknown — no monitored publisher covers this beat.",
+      "note": "Published 09/04/26 and the only item that first surfaced in this run; the beat is unmonitored, so we are simply not watching a publisher on it. No geography attached, so no localization."
     },
     {
       "title": "American Community Survey 2023 state aging and housing profile (52 states)",
-      "headline": "Where the older population actually lives, state by state",
-      "angle": "Rank the 2023 ACS five-year counts of residents 65 and over across 52 states, led by California at 5,994,486 and Florida at 4,630,733, with median household income and housing tenure, for readers considering a move and for developers siting inventory.",
+      "headline": "Two states hold more than 10 million of the country's oldest residents",
+      "angle": "State-level counts for 65+, 65-74, 75-84 and 85+ with median household income and housing tenure, for readers deciding where to age and for anyone sizing a market.",
       "outlets": [
-        "Seniors Housing Business",
+        "Senior Housing News",
         "Kiplinger"
       ],
       "url": "https://data.census.gov/table?q=DP05&y=2023",
@@ -6671,14 +6600,164 @@
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "The two largest older populations in the country are not in the same place as the fastest-growing care workforce.",
+      "hook": "California reports 5,994,486 residents aged 65+ and Florida 4,630,733 in the 2023 ACS 5-year estimates, and the 85+ splits change what each of those numbers means.",
       "summary": "State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.",
-      "consumer": "If you are thinking about relocating in retirement, check your target state's 65-plus count and homeownership share before you assume services will be there, because population size drives what gets built.",
-      "b2b": "Development and acquisition teams can set the 85-plus share against local staffing supply to test which markets can actually be operated, not just filled.",
+      "consumer": "Look up your state's 85+ count next to its homeownership share before you assume you can stay put — the states with the most owners over 75 are the ones with the thinnest supply of anything else.",
+      "b2b": "These are the denominators for a development pipeline: 85+ population against existing tenure tells you where demand is captive in single-family homes rather than served by inventory.",
       "localize": "Breaks down to US states — rank the outliers.",
       "chart": null,
       "competitive": "Monitored trades cover this beat and have not written it.",
-      "note": "Localizable to all 52 jurisdictions and the strongest ranking asset in the run."
+      "note": "Fifty-two jurisdictions, chart-ready, confirmed gap among monitored publishers, and localizable to every state desk."
+    },
+    {
+      "title": "BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562160001",
+      "source_id": "bls-api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "score": 63,
+      "topics": [
+        "workforce",
+        "caregiving",
+        "aging_in_place"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "headline": "Home care added workers five times faster than assisted living did",
+      "angle": "The August 2026 home health employment series, read by families waiting on aide hours and by agencies competing for the same workers.",
+      "outlets": [
+        "Next Avenue",
+        "Caring.com"
+      ],
+      "hook": "At 1,896.40 thousand jobs and 5.0% annual growth, home health is now the largest and fastest-growing of the three care settings in the federal series.",
+      "summary": null,
+      "consumer": "If your agency says nobody is available, the national numbers say the workforce is growing — ask specifically about shift times and geography rather than accepting a blanket shortage.",
+      "b2b": "Facility recruiters are competing against a sector adding staff at 5.0% a year; retention math should be built against that rate, not against last year's own headcount.",
+      "note": "Confirmed gap; national only, but the series pairs cleanly with state care-hour data for localization."
+    },
+    {
+      "title": "BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562310001",
+      "source_id": "bls-api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "score": 63,
+      "topics": [
+        "workforce",
+        "long_term_care",
+        "senior_living_quality"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "headline": "Nursing homes are still hiring, just slowly",
+      "angle": "The August 2026 nursing care facilities headcount, for administrators budgeting agency spend and families reading staffing measures on a facility page.",
+      "outlets": [
+        "Provider Magazine",
+        "McKnight's Home Care"
+      ],
+      "hook": "1,590.20 thousand jobs and 2.1% annual growth puts skilled nursing behind home health at a moment when its staffing measures are publicly posted and scored.",
+      "summary": null,
+      "consumer": "Ask a facility what its own staffing has done over the past year and compare the answer to the posted staffing measure in the CMS Provider Information file rather than to a national average.",
+      "b2b": "A 2.1% growth rate against rising acuity is the argument operators need for reimbursement conversations, and it frames the gap between census recovery and staffing recovery.",
+      "note": "Confirmed gap; the trend line charts well against the nursing care employment series over multiple years."
+    },
+    {
+      "title": "BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)",
+      "headline": "Assisted living has the slowest-growing workforce in senior care",
+      "angle": "The August 2026 CCRC and assisted living employment figure, for operators planning fall hiring and for families touring communities this month.",
+      "outlets": [
+        "McKnight's Senior Living",
+        "Senior Housing News"
+      ],
+      "url": "https://data.bls.gov/timeseries/CES6562330001",
+      "source_id": "bls-api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "score": 65,
+      "topics": [
+        "workforce",
+        "assisted_living",
+        "housing"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "hook": "1,026.90 thousand jobs and 1.4% growth is the weakest of the three settings, in the part of the sector with the least public staffing disclosure.",
+      "summary": null,
+      "consumer": "Assisted living does not post staffing the way nursing homes do, so ask for the current caregiver-to-resident ratio by shift, in writing, and ask how many open positions the community is carrying.",
+      "b2b": "A 1.4% national growth rate against move-in demand is a capacity ceiling, and it belongs in underwriting assumptions for new communities as much as in HR planning.",
+      "localize": null,
+      "chart": "The underlying file supports an original ranking or trend line.",
+      "competitive": "Monitored trades cover this beat and have not written it.",
+      "note": "Confirmed gap; national figure, but useful as the benchmark line in any metro staffing story."
+    },
+    {
+      "title": "BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562330003",
+      "source_id": "bls-api",
+      "published_at": "2026-07-01T00:00:00+00:00",
+      "score": 60,
+      "topics": [
+        "workforce",
+        "assisted_living"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "headline": "Assisted living raised pay faster than home health and is still paying less",
+      "angle": "July 2026 average hourly earnings of $25.65 in assisted living and CCRCs against $28.04 in home health, for anyone weighing a caregiving job or pricing one.",
+      "outlets": [
+        "McKnight's Senior Living",
+        "Caring.com"
+      ],
+      "hook": "A 3.2% raise did not close the gap, because the setting paying more is also the setting hiring fastest.",
+      "summary": null,
+      "consumer": "If you are hiring private help, $25.65 to $28.04 an hour is the market these workers can walk into, which tells you what a below-market offer will actually get you.",
+      "b2b": "Wage increases are being spent to slow attrition rather than to win recruits, and boards should see the 3.2% and the 1.4% headcount growth on the same slide.",
+      "note": "Confirmed gap; two-line chart of earnings by setting is the simplest visual in this run."
+    },
+    {
+      "title": "BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)",
+      "url": "https://data.bls.gov/timeseries/LNU02000097",
+      "source_id": "bls-api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "score": 63,
+      "topics": [
+        "workforce",
+        "financial_security"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "headline": "Nearly 11.8 million Americans over 65 are working",
+      "angle": "The August 2026 employment level for people 65 and over, for readers deciding whether to keep working and for employers who already depend on them.",
+      "outlets": [
+        "GOBankingRates",
+        "Bankrate Retirement"
+      ],
+      "hook": "11,753 thousand workers aged 65 and over, up 2.1% year over year, is a labor force segment growing at the same rate as nursing home staffing.",
+      "summary": null,
+      "consumer": "If you are working past 65, check how your earnings interact with Social Security timing and Medicare enrollment before you set next year's hours.",
+      "b2b": "Senior care employers recruiting from a labor pool this large should be looking at scheduling and benefit design for older workers, not only at younger entrants.",
+      "note": "Confirmed gap; the series supports a multi-year trend chart and pairs with the care workforce numbers."
+    },
+    {
+      "title": "BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)",
+      "url": "https://data.bls.gov/timeseries/CUUR0000SAM",
+      "source_id": "bls-api",
+      "published_at": "2026-07-01T00:00:00+00:00",
+      "score": 62,
+      "topics": [
+        "financial_security",
+        "medicare_medicaid"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "headline": "Medical care prices rose 1.7% over the year",
+      "angle": "The July 2026 medical care CPI, for retirees setting a health budget and for anyone modeling out-of-pocket costs.",
+      "outlets": [
+        "Bankrate Retirement",
+        "Forbes Retirement"
+      ],
+      "hook": "At 593.78 on the 1982-84 base and 1.7% annual growth, medical inflation is running below the pace many retirement budgets assume.",
+      "summary": null,
+      "consumer": "Use 1.7% as the check on your own numbers when you compare plan options this fall, and see whether your premium and drug costs are moving faster than the national index.",
+      "b2b": "Advisers and insurers building longevity and long-term care cost projections have a current inflation anchor rather than a rule of thumb.",
+      "note": "Confirmed gap; national index, straightforward line chart, and it dovetails with fall plan-comparison coverage."
     },
     {
       "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
@@ -6691,25 +6770,25 @@
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "headline": "The rent your voucher will cover changes on October 1",
-      "angle": "Explain the FY 2027 Fair Market Rents published 09/01/26 and the reevaluation process public housing agencies can request, for older renters using vouchers and for affordable senior housing owners setting rents.",
+      "headline": "The rent number your voucher is measured against changes October 1",
+      "angle": "HUD's FY 2027 Fair Market Rents notice and the reevaluation procedure public housing agencies can use, for older renters on vouchers and the agencies serving them.",
       "outlets": [
         "Next Avenue",
-        "Seniors Housing Business"
+        "Retirement Living"
       ],
-      "hook": "HUD must publish these annually to take effect October 1, so the numbers governing next year's voucher rents are already on the table.",
+      "hook": "HUD must publish FMRs at least annually adjusted to take effect October 1, and the notice sets out how agencies request reevaluation under HOTMA.",
       "summary": null,
-      "consumer": "If you rent with a voucher, look up your area's FY 2027 figure now and ask your housing agency whether it plans to request a reevaluation, because the answer decides what you can afford next year.",
-      "b2b": "Owners of affordable senior units can model FY 2027 revenue against the HOTMA reevaluation timeline before leases turn.",
-      "note": "Confirmed gap, hard October 1 effective date, and every metro area is a local story."
+      "consumer": "Find your area's FY 2027 figure before October 1 and ask your housing agency what it means for your unit, especially if your rent already sits above the current standard.",
+      "b2b": "Affordable senior housing operators and agencies have a defined window and a defined procedure to challenge a figure that misprices their market.",
+      "note": "Confirmed gap, published 09/01/26, hard October 1 effective date, and localizable to every metro area."
     },
     {
       "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
-      "headline": "Every state just learned its share of the affordable housing money",
-      "angle": "Break down the FY 2026 Housing Trust Fund allocations published 09/04/26 to the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Northern Mariana Islands, for older renters watching waitlists and for nonprofit developers planning applications.",
+      "headline": "Every state just learned what it gets to build affordable housing this year",
+      "angle": "The FY 2026 Housing Trust Fund allocation to the 50 states, the District of Columbia, Puerto Rico and the territories, for readers on affordable senior housing waitlists and the developers who fill them.",
       "outlets": [
         "Senior Housing News",
-        "MarketWatch Retirement"
+        "Kiplinger"
       ],
       "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice",
       "source_id": "federal-register",
@@ -6721,37 +6800,14 @@
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "It is the freshest item in the run and it puts a dollar figure on each state's affordable housing capacity for the year.",
+      "hook": "The allocation notice published 09/04/26 sets the year's HUD-administered Housing Trust Fund figures for every eligible grantee.",
       "summary": "The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana ",
-      "consumer": "If you are on a waitlist for affordable senior housing, your state's allocation is public, and it tells you how much new construction money your housing finance agency has to work with this year.",
-      "b2b": "Developers can time HTF applications against state allocation size, and nonprofit sponsors can build the case for age-restricted set-asides where allocations grew.",
+      "consumer": "Ask your state housing agency how it plans to use its Housing Trust Fund allocation and whether any of it is set aside for units serving older residents.",
+      "b2b": "Developers structuring affordable senior projects can time applications to the state's allocation cycle rather than waiting for a notice of funding availability.",
       "localize": null,
       "chart": "The underlying file supports an original ranking or trend line.",
       "competitive": "Monitored trades cover this beat and have not written it.",
-      "note": "Published 09/04/26, confirmed gap, and localizable to every state and territory."
-    },
-    {
-      "title": "HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations",
-      "url": "https://www.federalregister.gov/documents/2026/08/10/2026-16228/huds-implementation-of-the-fair-housing-acts-disparate-impact-standard-amendments-to-huds-title-vi",
-      "source_id": "federal-register",
-      "published_at": "2026-08-10T00:00:00+00:00",
-      "score": 59,
-      "topics": [
-        "housing"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "headline": "HUD moves again to drop its disparate impact rule",
-      "angle": "Explain the supplemental notice of proposed rulemaking published 08/10/26, which continues HUD's effort begun in a January 2026 proposal to remove its disparate-impact regulations and leave the question to the courts, for older renters facing screening policies and for housing providers writing them.",
-      "outlets": [
-        "Next Avenue",
-        "Retirement Living"
-      ],
-      "hook": "A supplemental proposal signals an active rulemaking with a comment window rather than a settled outcome.",
-      "summary": null,
-      "consumer": "If a rental application was denied on an income, credit or occupancy rule rather than anything about you personally, this proposal affects how such policies can be challenged, and comments are how the public weighs in.",
-      "b2b": "Senior housing owners and affordable providers need to know what tenant selection criteria would look like if liability turns on evidence of intent.",
-      "note": "Confirmed gap, national, and the rulemaking calendar keeps it live for weeks."
+      "note": "Confirmed gap, dated 09/04/26, and inherently localizable across 50 states plus territories."
     },
     {
       "title": "Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits",
@@ -6764,40 +6820,17 @@
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "headline": "Sixty billion dollars in Medicaid hospital payments now sits above the new federal limits",
-      "angle": "Walk through KFF's finding of 08/14/26 that an estimated $60 billion in federal Medicaid spending across 37 states including the District of Columbia would likely exceed the 2025 reconciliation law's limits on state directed payments, with California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among the largest exposures, for patients in those states and for hospital finance teams.",
+      "headline": "Hospitals in 37 states are facing limits on a Medicaid payment stream worth $60 billion",
+      "angle": "A KFF analysis estimating $60 billion in federal Medicaid spending across 37 states that would likely exceed new limits on state directed payments, for older patients in states where hospital finances are thin.",
       "outlets": [
         "Modern Healthcare",
         "Fierce Healthcare"
       ],
-      "hook": "A named list of states with quantified exposure turns an abstract payment rule into a local budget story.",
+      "hook": "KFF names California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among the states with the biggest potential reductions in Medicaid payments to hospitals.",
       "summary": null,
-      "consumer": "If you live in one of the named states and rely on a hospital that serves many Medicaid patients, this is the number behind any service reduction announcement you hear about in the next year.",
-      "b2b": "Post-acute and skilled nursing operators should read hospital payment exposure as a referral-volume and discharge-planning risk, not just a hospital problem.",
-      "note": "Confirmed gap with seven states named, which makes it immediately localizable."
-    },
-    {
-      "title": "5 Questions and Answers About Medicaid and Provider Taxes",
-      "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
-      "source_id": "kff-feed",
-      "published_at": "2026-08-20T20:01:22+00:00",
-      "score": 57,
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "headline": "The tax states use to fund Medicaid is being rewritten",
-      "angle": "Unpack KFF's 08/20/26 brief drawing on its 2025-2026 survey of Medicaid directors and a proposed rule to describe current state provider taxes and which states the 2025 reconciliation law's changes may affect, for families relying on Medicaid long-term care and for providers who pay the tax.",
-      "outlets": [
-        "Fierce Healthcare",
-        "Modern Healthcare"
-      ],
-      "hook": "Provider taxes are how many states finance their Medicaid share, so changing them changes what the program can buy.",
-      "summary": null,
-      "consumer": "If a parent's nursing home or home care is paid for by Medicaid, your state's financing mechanism is under revision, and your state Medicaid agency's budget hearings are where that gets decided.",
-      "b2b": "Nursing facilities that pay provider taxes and receive supplemental payments need to model both sides of the change before rate-setting season.",
-      "note": "Confirmed gap, state-by-state framing built into the source brief."
+      "consumer": "If you live in one of the named states, the hospital you would be taken to is facing a payment change; ask locally whether service lines older patients rely on are under review.",
+      "b2b": "Skilled nursing and post-acute operators should model referral volume against hospitals whose directed payments are most exposed, since discharge patterns move before closures do.",
+      "note": "Confirmed gap, published 08/14/26, state-level and chart-ready across 37 jurisdictions."
     },
     {
       "title": "CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data",
@@ -6811,23 +6844,23 @@
       ],
       "coverage_state": "reference",
       "is_new": false,
-      "headline": "How families in your state rate hospice care",
-      "angle": "Compare state average scores from the CAHPS Hospice Survey across Medicare-certified providers, refreshed 08/07/26, for families choosing a hospice under time pressure and for hospice leaders benchmarking against their own state.",
+      "headline": "How families rate hospice care in your state, in their own words",
+      "angle": "State average scores from the CAHPS Hospice Survey of Medicare-certified providers, for families choosing hospice under time pressure and for the agencies being scored.",
       "outlets": [
         "LeadingAge",
         "SeniorLiving.org"
       ],
-      "hook": "These are survey answers from bereaved families, one of the few quality measures in hospice that comes from the household rather than the provider.",
+      "hook": "State averages sit alongside the national averages in the companion file, so any provider's numbers can be read against both.",
       "summary": null,
-      "consumer": "When a hospice referral comes, look up your state's average CAHPS scores and ask each provider you are offered how its own results compare, especially on communication and getting help when you need it.",
-      "b2b": "Hospice operators can position against a state mean rather than a national one, which is the comparison referral partners are most likely to make.",
-      "note": "Refreshed public data file rather than an event; usable state by state, and the national companion file supports a two-level comparison."
+      "consumer": "Before you sign with a hospice, ask how it scores on the CAHPS survey measures and compare that to your state's average rather than to the national one.",
+      "b2b": "Providers can see where their state sits nationally and use the survey domains to target the parts of the family experience that drive referrals.",
+      "note": "A refreshed public data file rather than an event; the state-versus-national comparison is the chart, and it localizes to all 50 states."
     }
   ],
-  "trends_raw": "Volume held essentially flat, 169 evidence candidates against 170 on 09/03/26, with nothing surfacing for the first time in this run. Housing and financial security each gained an item while long-term care and Medicare and Medicaid each shed one, small moves that leave the same six topics carrying the beat: Medicare and Medicaid at 29, long-term care at 18, housing at 14, workforce at 12, financial security at 11, and palliative and hospice care at 9. Medicare and Medicaid was again the busiest beat, 26 items from seven sources including CMS provider data, the Federal Register, KFF, Justice in Aging and the Center for Retirement Research, but cohesion of 0.054 means those items share a tag and nothing else. It is not one story and should be worked as separate leads. The two clusters that do hold together are the ones worth building on: palliative and hospice care at 0.457 cohesion across CMS provider data and RAND, and long-term care at 0.256 across BLS, CMS provider data, the Center for Retirement Research and Justice in Aging, with its newest item one day old. Housing is the loosest of the large clusters at 0.031 cohesion, yet every one of its 13 items is a confirmed gap, which makes it the richest source of standalone leads even though it supports no single feature. Across the run there are 58 confirmed gaps against 64 monitored publishers, plus 77 items on beats where we watch no publisher at all, which says nothing about whether those have been covered elsewhere.",
-  "feature_pitch_raw": "**The pattern:** Paid long-term care is being rebuilt around the home rather than the building, and four sources in this run land on that same story from different directions. BLS puts home health care services employment at 1,896.40 thousand jobs in August 2026, up 5.0% year over year, against 1,590.20 thousand in nursing care facilities (+2.1%) and 1,026.90 thousand in continuing care retirement communities and assisted living (+1.4%). Wages point the same way: home health averaged $28.04 an hour in July 2026, assisted living and CCRCs $25.65. Set that against the CMS nursing home provider files refreshed on 08/01/26 — Provider Information with its Five-Star staffing measures, Health Deficiencies, Penalties, Ownership, Survey Summary — and Justice in Aging's Medicaid home and community-based services primer of 08/20/26, and the shape of the problem shows: the setting families are leaving is the one with a searchable public record, and the setting they are moving toward is the one growing fastest.\n\n**Why pitch this now:** The August 2026 payroll figures complete a clean twelve-month comparison across all three care settings at the same moment CMS's nursing home files carry an 08/01/26 refresh, so both halves of the comparison are current together. That pairing expires with the next monthly employment print, and the American Community Survey 2023 state profile is already in hand to localize it to 52 states.\n\n**Angle:** The piece argues that a family choosing between hiring help at home and moving a parent into a facility can inspect the shrinking option in detail and the growing one barely at all, and asks what a household should demand of a home care agency to close that distance. Working title: \"The Care Workforce Went Home.\" It is for adult children in their fifties and sixties running that decision as a money problem, with a second read for operators watching a 5.0% competitor pull staff.\n\n**Potential headlines:**\n- Home care is hiring five times faster than assisted living\n- The aide who helps your mother earns $28.04 an hour, and that is the higher number\n- Nursing homes added staff this year and still lost the hiring race\n\n**Potential outlets:**\n- **Next Avenue** — its readers are the adult children actually weighing hired help against a move, and the wage and staffing split is the arithmetic behind that choice.\n- **McKnight's Long-Term Care News** — skilled nursing staffing and reimbursement are the core beat, and 2.1% growth in nursing care facilities against 5.0% in home health is a recruiting problem its operators are living.\n- **Senior Housing News** — assisted living's 1.4% employment growth and $25.65 average hourly wage against home health's $28.04 is a direct labor-competition story for operators and their marketing teams.\n- **Kiplinger** — long-term care costs and state comparisons are house specialties, and the hourly figures plus the ACS 2023 state 65-plus counts give readers a planning number rather than a trend line.",
-  "pitch_draft_raw": "Paid care is moving into the home faster than into any building, and the August 2026 employment figures make the gap unmistakable. BLS puts home health care services at 1,896.40 thousand jobs, up 5.0% year over year, while nursing care facilities grew 2.1% to 1,590.20 thousand and continuing care retirement communities and assisted living grew 1.4% to 1,026.90 thousand. Pay runs the same direction: home health averaged $28.04 an hour in July 2026, assisted living and CCRCs $25.65. I would write about 1,400 words on what that split means for a family deciding between hiring help and moving a parent, including how to read the CMS nursing home files refreshed 08/01/26 — Provider Information, Health Deficiencies, Penalties, Ownership — against the far thinner record on home care, and where the 65-plus population actually sits in the 2023 American Community Survey: 5,994,486 in California, 4,630,733 in Florida. Your readers make this decision as a family question and a money question at once, which is exactly the frame these numbers support.",
-  "pitch_ideas_raw": "**Home care is hiring faster than any other part of the care economy**\n*BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)*  \n- Angle: Count the 1,896.40 thousand home health jobs in August 2026 and the 5.0% year-over-year gain against every other care setting, for families trying to hire an aide and for the agencies competing for the same workers.\n- Hook: No other long-term care setting in this run grew at half that rate.\n- For readers: If you have been told there is nobody available to cover your father's mornings, the national numbers say hiring is up 5.0% in a year, so ask the agency how many aides it added in your county and what its current fill rate is before you accept a waitlist.\n- For the trade: Home health is absorbing labor supply that nursing homes and assisted living were counting on, which turns wage benchmarking into a retention question rather than a budget line.\n- Also: National series, gap status, and a clean three-line chart when plotted against nursing facilities and assisted living employment.\n- Pitch to: Next Avenue, Caring.com\n\n**Nursing homes are staffing up again, just slowly**\n*BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)*  \n- Angle: Track the 1,590.20 thousand nursing care facility jobs in August 2026 and their 2.1% annual gain for residents' families judging whether staffing promises are real and for administrators explaining vacancies.\n- Hook: Growth is positive but less than half the home health rate, which reframes every staffing shortage conversation.\n- For readers: When you tour a nursing home, ask for its own year-over-year change in nursing hours per resident day and compare it with the CMS Provider Information staffing measures rather than accepting a general statement about the labor market.\n- For the trade: A 2.1% national gain gives operators a benchmark to test their own hiring against, and a talking point in reimbursement arguments about the cost of matching home health pay.\n- Also: Pairs directly with the home health series for a single comparison graphic; localizable through facility-level CMS staffing data.\n- Pitch to: Provider Magazine, Family Caregiver Alliance\n\n**Assisted living added the fewest workers of any care setting this year**\n*BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)*  \n- Angle: Report the 1,026.90 thousand assisted living and CCRC jobs in August 2026 and the 1.4% annual gain for prospective residents comparing communities and for operators budgeting for next year's census.\n- Hook: The slowest-growing workforce sits in the setting selling itself hardest on service levels.\n- For readers: Before you sign a residency agreement, ask what the community's caregiver-to-resident ratio was twelve months ago and what it is today, and get the answer in writing alongside the care plan.\n- For the trade: Slow headcount growth against rising rents raises a service-delivery question for operators marketing higher acuity, and a due diligence question for anyone underwriting expansion.\n- Also: National only, but the ACS state 65-plus counts allow a demand-versus-staffing read by state.\n- Pitch to: Senior Housing News, Where You Live Matters\n\n**Assisted living raised pay 3.2% and still pays less than home care**\n*BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)*  \n- Angle: Set the $25.65 average hourly wage in assisted living and CCRCs for July 2026 against home health's $28.04 for job seekers, families pricing care and operators setting wage scales.\n- Hook: The faster raise still leaves the setting paying $2.39 an hour less than its main competitor for workers.\n- For readers: If you are paying a community for personal care, these are the wages behind the invoice, and it is fair to ask what share of your monthly fee reaches direct care staff.\n- For the trade: A 3.2% wage increase that does not close the gap with home health means turnover pressure persists, and pricing models built on last year's labor cost are already behind.\n- Also: Two national series, one chart, and the wage gap is the headline number.\n- Pitch to: McKnight's Senior Living, SeniorLiving.org\n\n**Nearly 11.8 million Americans over 65 were working last month**\n*BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)*  \n- Angle: Use the 11,753 thousand people aged 65 and over employed in August 2026, up 2.1% in a year, to look at how many older adults are staying in the labor force, for readers planning a retirement date and for employers writing schedules.\n- Hook: The 65-plus employment level is climbing at the same rate as nursing home staffing, from a far bigger base.\n- For readers: If you are weighing another year of work against claiming benefits, you are joining 11.75 million peers who already made that call, and the wage and hours data give you a realistic picture of what part-time later work pays.\n- For the trade: Senior living and home care operators recruiting older workers have a measurable pool here, relevant to scheduling flexibility and part-time role design.\n- Also: Confirmed gap on a beat monitored publishers do cover; strong annual-comparison chart.\n- Pitch to: Bankrate Retirement, McKnight's Senior Living\n\n**Where the older population actually lives, state by state**\n*American Community Survey 2023 state aging and housing profile (52 states)*  \n- Angle: Rank the 2023 ACS five-year counts of residents 65 and over across 52 states, led by California at 5,994,486 and Florida at 4,630,733, with median household income and housing tenure, for readers considering a move and for developers siting inventory.\n- Hook: The two largest older populations in the country are not in the same place as the fastest-growing care workforce.\n- For readers: If you are thinking about relocating in retirement, check your target state's 65-plus count and homeownership share before you assume services will be there, because population size drives what gets built.\n- For the trade: Development and acquisition teams can set the 85-plus share against local staffing supply to test which markets can actually be operated, not just filled.\n- Also: Localizable to all 52 jurisdictions and the strongest ranking asset in the run.\n- Pitch to: Seniors Housing Business, Kiplinger\n\n**The rent your voucher will cover changes on October 1**\n*Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027*  \n- Angle: Explain the FY 2027 Fair Market Rents published 09/01/26 and the reevaluation process public housing agencies can request, for older renters using vouchers and for affordable senior housing owners setting rents.\n- Hook: HUD must publish these annually to take effect October 1, so the numbers governing next year's voucher rents are already on the table.\n- For readers: If you rent with a voucher, look up your area's FY 2027 figure now and ask your housing agency whether it plans to request a reevaluation, because the answer decides what you can afford next year.\n- For the trade: Owners of affordable senior units can model FY 2027 revenue against the HOTMA reevaluation timeline before leases turn.\n- Also: Confirmed gap, hard October 1 effective date, and every metro area is a local story.\n- Pitch to: Next Avenue, Seniors Housing Business\n\n**Every state just learned its share of the affordable housing money**\n*Housing Trust Fund: Fiscal Year 2026 Allocation Notice*  \n- Angle: Break down the FY 2026 Housing Trust Fund allocations published 09/04/26 to the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Northern Mariana Islands, for older renters watching waitlists and for nonprofit developers planning applications.\n- Hook: It is the freshest item in the run and it puts a dollar figure on each state's affordable housing capacity for the year.\n- For readers: If you are on a waitlist for affordable senior housing, your state's allocation is public, and it tells you how much new construction money your housing finance agency has to work with this year.\n- For the trade: Developers can time HTF applications against state allocation size, and nonprofit sponsors can build the case for age-restricted set-asides where allocations grew.\n- Also: Published 09/04/26, confirmed gap, and localizable to every state and territory.\n- Pitch to: Senior Housing News, MarketWatch Retirement\n\n**HUD moves again to drop its disparate impact rule**\n*HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations*  \n- Angle: Explain the supplemental notice of proposed rulemaking published 08/10/26, which continues HUD's effort begun in a January 2026 proposal to remove its disparate-impact regulations and leave the question to the courts, for older renters facing screening policies and for housing providers writing them.\n- Hook: A supplemental proposal signals an active rulemaking with a comment window rather than a settled outcome.\n- For readers: If a rental application was denied on an income, credit or occupancy rule rather than anything about you personally, this proposal affects how such policies can be challenged, and comments are how the public weighs in.\n- For the trade: Senior housing owners and affordable providers need to know what tenant selection criteria would look like if liability turns on evidence of intent.\n- Also: Confirmed gap, national, and the rulemaking calendar keeps it live for weeks.\n- Pitch to: Next Avenue, Retirement Living\n\n**Sixty billion dollars in Medicaid hospital payments now sits above the new federal limits**\n*Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits*  \n- Angle: Walk through KFF's finding of 08/14/26 that an estimated $60 billion in federal Medicaid spending across 37 states including the District of Columbia would likely exceed the 2025 reconciliation law's limits on state directed payments, with California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among the largest exposures, for patients in those states and for hospital finance teams.\n- Hook: A named list of states with quantified exposure turns an abstract payment rule into a local budget story.\n- For readers: If you live in one of the named states and rely on a hospital that serves many Medicaid patients, this is the number behind any service reduction announcement you hear about in the next year.\n- For the trade: Post-acute and skilled nursing operators should read hospital payment exposure as a referral-volume and discharge-planning risk, not just a hospital problem.\n- Also: Confirmed gap with seven states named, which makes it immediately localizable.\n- Pitch to: Modern Healthcare, Fierce Healthcare\n\n**The tax states use to fund Medicaid is being rewritten**\n*5 Questions and Answers About Medicaid and Provider Taxes*  \n- Angle: Unpack KFF's 08/20/26 brief drawing on its 2025-2026 survey of Medicaid directors and a proposed rule to describe current state provider taxes and which states the 2025 reconciliation law's changes may affect, for families relying on Medicaid long-term care and for providers who pay the tax.\n- Hook: Provider taxes are how many states finance their Medicaid share, so changing them changes what the program can buy.\n- For readers: If a parent's nursing home or home care is paid for by Medicaid, your state's financing mechanism is under revision, and your state Medicaid agency's budget hearings are where that gets decided.\n- For the trade: Nursing facilities that pay provider taxes and receive supplemental payments need to model both sides of the change before rate-setting season.\n- Also: Confirmed gap, state-by-state framing built into the source brief.\n- Pitch to: Fierce Healthcare, Modern Healthcare\n\n**How families in your state rate hospice care**\n*CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data*  \n- Angle: Compare state average scores from the CAHPS Hospice Survey across Medicare-certified providers, refreshed 08/07/26, for families choosing a hospice under time pressure and for hospice leaders benchmarking against their own state.\n- Hook: These are survey answers from bereaved families, one of the few quality measures in hospice that comes from the household rather than the provider.\n- For readers: When a hospice referral comes, look up your state's average CAHPS scores and ask each provider you are offered how its own results compare, especially on communication and getting help when you need it.\n- For the trade: Hospice operators can position against a state mean rather than a national one, which is the comparison referral partners are most likely to make.\n- Also: Refreshed public data file rather than an event; usable state by state, and the national companion file supports a two-level comparison.\n- Pitch to: LeadingAge, SeniorLiving.org",
+  "trends_raw": "Volume held nearly flat, 169 evidence candidates against 170 on 09/03/26, with exactly one item first surfacing in this run: the FTC settlement with payment processor Nuvei, published 09/04/26. Fraud and scams, housing and financial security each picked up an item; long-term care and Medicare and Medicaid each shed one. Medicare and Medicaid remains the busiest beat by a wide margin at 26 items from seven sources, but its cohesion is 0.054, which means those items share a tag and nothing else. Treat them as separate leads rather than one story: the CMS provider files, the APM incentive payment advisory of 08/13/26, the RAPID device coverage notice of 08/11/26 and the KFF Medicaid data notes are four different beats wearing one label. Two clusters do hold together. Long-term care coheres at 0.256 across bls-api, cms-provider-data, center-retirement-research and justice-in-aging, and it carries the run's freshest material; that is the feature. Palliative and hospice care coheres more tightly still at 0.457, though on only two sources, cms-provider-data and rand-research. Housing is the sleeper: 13 items and all 13 unmatched by monitored publishers, including the FY 2027 Fair Market Rents of 09/01/26, the Housing Trust Fund allocation of 09/04/26 and HUD's supplemental disparate-impact proposal of 08/10/26. Coverage posture across the run is 58 confirmed gaps against 61 monitored publishers, plus 77 items on beats where we watch nobody, which is a blind spot in our monitoring rather than an open field.",
+  "feature_pitch_raw": "**The pattern:** The paid care workforce is growing, but it is growing away from the buildings that answer to inspectors. Federal employment data for August 2026 puts home health care services at 1,896.40 thousand jobs, up 5.0% year over year, while nursing care facilities sit at 1,590.20 thousand, up 2.1%, and continuing care retirement communities and assisted living at 1,026.90 thousand, up 1.4%. Average hourly earnings run $28.04 in home health against $25.65 in assisted living and CCRCs. Four sources landed on long-term care independently this run, and the CMS nursing home files refreshed 08/01/26 supply the other half of the comparison: Provider Information carries the staffing measures behind the Five-Star Rating System, and Health Deficiencies, Penalties and Survey Summary carry three years of citations, fines and inspection counts for the same facilities. Together the employment series and the provider files make it possible to ask, facility by facility and state by state, whether the homes losing the wage competition are the homes collecting the citations.\n\n**Why pitch this now:** The August 2026 employment and earnings figures and the CMS nursing home suite refreshed on 08/01/26 and 07/31/26 describe the same period, so staffing levels and the citation record line up without stitching cycles together. That alignment closes with the next refresh. Hiring season for the fall census build is underway at the same time, and the FY 2027 Fair Market Rents published 09/01/26 are adjusted to take effect October 1, so labor and occupancy cost pressure land in the same quarter.\n\n**Angle:** The piece argues that the wage differential between home health and facility-based care is now large enough to show up in the survey record, and asks whether the facilities that cannot match $28.04 an hour are the ones accumulating health deficiencies and penalties. Working title: \"Where the Care Workers Went.\" It is for skilled nursing and senior living operators who own the staffing line, and for families comparing two facilities on Care Compare.\n\n**Potential headlines:**\n- Home care is hiring more than twice as fast as nursing homes\n- The $2.39 an hour that decides who staffs your mother's building\n- What August's job numbers predict about your next survey\n\n**Potential outlets:**\n- **McKnight's Long-Term Care News** — its readers manage the staffing measure that feeds Five-Star and answer for every citation in the Health Deficiencies file, so the pairing is their daily problem in numbers.\n- **Skilled Nursing News** — an operations and finance readership that will want the wage gap expressed as a margin and recruitment cost, not a labor statistic.\n- **Senior Housing News** — assisted living and CCRC operators are the ones at $25.65 an hour with the slowest headcount growth of the three settings, 1.4%.\n- **Next Avenue** — families use staffing and citation records to choose a building, and this explains why the two move together.",
+  "pitch_draft_raw": "Federal employment figures for August 2026 show home health care services at 1,896.40 thousand jobs, up 5.0% year over year, while nursing care facilities sit at 1,590.20 thousand, up 2.1%, and assisted living and CCRCs at 1,026.90 thousand, up 1.4%. Average hourly earnings run $28.04 in home health against $25.65 in assisted living and CCRCs. I want to set those numbers beside the CMS nursing home files refreshed 08/01/26 — Provider Information, which carries the staffing measures behind Five-Star, plus Health Deficiencies, Penalties and Survey Summary — and ask whether facilities losing the wage competition are the ones accumulating citations and fines. Because both the employment series and the provider files describe the same period, the comparison holds without stitching cycles together. Roughly 1,200 words, entirely on public data, with a state-level table operators can find their own market in. Your readers own the staffing line and answer for the survey results, which is why I am bringing it here first.",
+  "pitch_ideas_raw": "**The company that moved the money for tech support scams is paying $4.85 million**\n*Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud*  \n- Angle: The Federal Trade Commission settlement requires Nuvei to screen the merchants it processes for, which matters to anyone who has ever paid a pop-up warning about a virus.\n- Hook: The FTC alleges the Canada-based processor opened and kept accounts for merchants it knew or should have known were deceiving consumers, including tech support scams that took millions of dollars.\n- For readers: If you or a parent ever paid a tech support company that called or popped up on screen, pull the card statements for that period, dispute what you can, and report the incident to the FTC — the enforcement record shows these charges moved through mainstream payment processors, not obscure ones.\n- For the trade: Anyone who takes card payments from older clients now has a documented standard for merchant screening to point at, and resident fraud-education programming can be built around how the money actually travels.\n- Also: Published 09/04/26 and the only item that first surfaced in this run; the beat is unmonitored, so we are simply not watching a publisher on it. No geography attached, so no localization.\n- Pitch to: Next Avenue, GOBankingRates\n\n**Two states hold more than 10 million of the country's oldest residents**\n*American Community Survey 2023 state aging and housing profile (52 states)*  \n- Angle: State-level counts for 65+, 65-74, 75-84 and 85+ with median household income and housing tenure, for readers deciding where to age and for anyone sizing a market.\n- Hook: California reports 5,994,486 residents aged 65+ and Florida 4,630,733 in the 2023 ACS 5-year estimates, and the 85+ splits change what each of those numbers means.\n- For readers: Look up your state's 85+ count next to its homeownership share before you assume you can stay put — the states with the most owners over 75 are the ones with the thinnest supply of anything else.\n- For the trade: These are the denominators for a development pipeline: 85+ population against existing tenure tells you where demand is captive in single-family homes rather than served by inventory.\n- Also: Fifty-two jurisdictions, chart-ready, confirmed gap among monitored publishers, and localizable to every state desk.\n- Pitch to: Senior Housing News, Kiplinger\n\n**Home care added workers five times faster than assisted living did**\n*BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)*  \n- Angle: The August 2026 home health employment series, read by families waiting on aide hours and by agencies competing for the same workers.\n- Hook: At 1,896.40 thousand jobs and 5.0% annual growth, home health is now the largest and fastest-growing of the three care settings in the federal series.\n- For readers: If your agency says nobody is available, the national numbers say the workforce is growing — ask specifically about shift times and geography rather than accepting a blanket shortage.\n- For the trade: Facility recruiters are competing against a sector adding staff at 5.0% a year; retention math should be built against that rate, not against last year's own headcount.\n- Also: Confirmed gap; national only, but the series pairs cleanly with state care-hour data for localization.\n- Pitch to: Next Avenue, Caring.com\n\n**Nursing homes are still hiring, just slowly**\n*BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)*  \n- Angle: The August 2026 nursing care facilities headcount, for administrators budgeting agency spend and families reading staffing measures on a facility page.\n- Hook: 1,590.20 thousand jobs and 2.1% annual growth puts skilled nursing behind home health at a moment when its staffing measures are publicly posted and scored.\n- For readers: Ask a facility what its own staffing has done over the past year and compare the answer to the posted staffing measure in the CMS Provider Information file rather than to a national average.\n- For the trade: A 2.1% growth rate against rising acuity is the argument operators need for reimbursement conversations, and it frames the gap between census recovery and staffing recovery.\n- Also: Confirmed gap; the trend line charts well against the nursing care employment series over multiple years.\n- Pitch to: Provider Magazine, McKnight's Home Care\n\n**Assisted living has the slowest-growing workforce in senior care**\n*BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)*  \n- Angle: The August 2026 CCRC and assisted living employment figure, for operators planning fall hiring and for families touring communities this month.\n- Hook: 1,026.90 thousand jobs and 1.4% growth is the weakest of the three settings, in the part of the sector with the least public staffing disclosure.\n- For readers: Assisted living does not post staffing the way nursing homes do, so ask for the current caregiver-to-resident ratio by shift, in writing, and ask how many open positions the community is carrying.\n- For the trade: A 1.4% national growth rate against move-in demand is a capacity ceiling, and it belongs in underwriting assumptions for new communities as much as in HR planning.\n- Also: Confirmed gap; national figure, but useful as the benchmark line in any metro staffing story.\n- Pitch to: McKnight's Senior Living, Senior Housing News\n\n**Assisted living raised pay faster than home health and is still paying less**\n*BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)*  \n- Angle: July 2026 average hourly earnings of $25.65 in assisted living and CCRCs against $28.04 in home health, for anyone weighing a caregiving job or pricing one.\n- Hook: A 3.2% raise did not close the gap, because the setting paying more is also the setting hiring fastest.\n- For readers: If you are hiring private help, $25.65 to $28.04 an hour is the market these workers can walk into, which tells you what a below-market offer will actually get you.\n- For the trade: Wage increases are being spent to slow attrition rather than to win recruits, and boards should see the 3.2% and the 1.4% headcount growth on the same slide.\n- Also: Confirmed gap; two-line chart of earnings by setting is the simplest visual in this run.\n- Pitch to: McKnight's Senior Living, Caring.com\n\n**Nearly 11.8 million Americans over 65 are working**\n*BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)*  \n- Angle: The August 2026 employment level for people 65 and over, for readers deciding whether to keep working and for employers who already depend on them.\n- Hook: 11,753 thousand workers aged 65 and over, up 2.1% year over year, is a labor force segment growing at the same rate as nursing home staffing.\n- For readers: If you are working past 65, check how your earnings interact with Social Security timing and Medicare enrollment before you set next year's hours.\n- For the trade: Senior care employers recruiting from a labor pool this large should be looking at scheduling and benefit design for older workers, not only at younger entrants.\n- Also: Confirmed gap; the series supports a multi-year trend chart and pairs with the care workforce numbers.\n- Pitch to: GOBankingRates, Bankrate Retirement\n\n**Medical care prices rose 1.7% over the year**\n*BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)*  \n- Angle: The July 2026 medical care CPI, for retirees setting a health budget and for anyone modeling out-of-pocket costs.\n- Hook: At 593.78 on the 1982-84 base and 1.7% annual growth, medical inflation is running below the pace many retirement budgets assume.\n- For readers: Use 1.7% as the check on your own numbers when you compare plan options this fall, and see whether your premium and drug costs are moving faster than the national index.\n- For the trade: Advisers and insurers building longevity and long-term care cost projections have a current inflation anchor rather than a rule of thumb.\n- Also: Confirmed gap; national index, straightforward line chart, and it dovetails with fall plan-comparison coverage.\n- Pitch to: Bankrate Retirement, Forbes Retirement\n\n**The rent number your voucher is measured against changes October 1**\n*Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027*  \n- Angle: HUD's FY 2027 Fair Market Rents notice and the reevaluation procedure public housing agencies can use, for older renters on vouchers and the agencies serving them.\n- Hook: HUD must publish FMRs at least annually adjusted to take effect October 1, and the notice sets out how agencies request reevaluation under HOTMA.\n- For readers: Find your area's FY 2027 figure before October 1 and ask your housing agency what it means for your unit, especially if your rent already sits above the current standard.\n- For the trade: Affordable senior housing operators and agencies have a defined window and a defined procedure to challenge a figure that misprices their market.\n- Also: Confirmed gap, published 09/01/26, hard October 1 effective date, and localizable to every metro area.\n- Pitch to: Next Avenue, Retirement Living\n\n**Every state just learned what it gets to build affordable housing this year**\n*Housing Trust Fund: Fiscal Year 2026 Allocation Notice*  \n- Angle: The FY 2026 Housing Trust Fund allocation to the 50 states, the District of Columbia, Puerto Rico and the territories, for readers on affordable senior housing waitlists and the developers who fill them.\n- Hook: The allocation notice published 09/04/26 sets the year's HUD-administered Housing Trust Fund figures for every eligible grantee.\n- For readers: Ask your state housing agency how it plans to use its Housing Trust Fund allocation and whether any of it is set aside for units serving older residents.\n- For the trade: Developers structuring affordable senior projects can time applications to the state's allocation cycle rather than waiting for a notice of funding availability.\n- Also: Confirmed gap, dated 09/04/26, and inherently localizable across 50 states plus territories.\n- Pitch to: Senior Housing News, Kiplinger\n\n**Hospitals in 37 states are facing limits on a Medicaid payment stream worth $60 billion**\n*Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits*  \n- Angle: A KFF analysis estimating $60 billion in federal Medicaid spending across 37 states that would likely exceed new limits on state directed payments, for older patients in states where hospital finances are thin.\n- Hook: KFF names California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among the states with the biggest potential reductions in Medicaid payments to hospitals.\n- For readers: If you live in one of the named states, the hospital you would be taken to is facing a payment change; ask locally whether service lines older patients rely on are under review.\n- For the trade: Skilled nursing and post-acute operators should model referral volume against hospitals whose directed payments are most exposed, since discharge patterns move before closures do.\n- Also: Confirmed gap, published 08/14/26, state-level and chart-ready across 37 jurisdictions.\n- Pitch to: Modern Healthcare, Fierce Healthcare\n\n**How families rate hospice care in your state, in their own words**\n*CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data*  \n- Angle: State average scores from the CAHPS Hospice Survey of Medicare-certified providers, for families choosing hospice under time pressure and for the agencies being scored.\n- Hook: State averages sit alongside the national averages in the companion file, so any provider's numbers can be read against both.\n- For readers: Before you sign with a hospice, ask how it scores on the CAHPS survey measures and compare that to your state's average rather than to the national one.\n- For the trade: Providers can see where their state sits nationally and use the survey domains to target the parts of the family experience that drive referrals.\n- Also: A refreshed public data file rather than an event; the state-versus-national comparison is the chart, and it localizes to all 50 states.\n- Pitch to: LeadingAge, SeniorLiving.org",
   "synthesis_mode": "llm",
   "synthesis_model": "claude-opus-5",
   "synthesis_note": null
