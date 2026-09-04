@@ -2,6 +2,7 @@ import json
 import shutil
 import tempfile
 import unittest
+from datetime import UTC, datetime
 from pathlib import Path
 from unittest.mock import patch
 
@@ -187,3 +188,48 @@ class TransientProbeFailureTests(unittest.TestCase):
             media._collect_one(self.row, "b2b", True, self.cache)
         self.assertIn("https://x.com/", self.cache.entries)
         self.assertIsNone(self.cache.entries["https://x.com/"]["feed"])
+
+
+class ProbeVersionTests(unittest.TestCase):
+    """A cached miss only rules out the routes that were tried to earn it."""
+
+    def setUp(self):
+        self.dir = tempfile.mkdtemp()
+        self.path = Path(self.dir) / "d.json"
+
+    def tearDown(self):
+        shutil.rmtree(self.dir, ignore_errors=True)
+
+    def _write(self, entry):
+        self.path.write_text(json.dumps({"sites": {"https://x.com/": entry}}), encoding="utf-8")
+
+    def test_a_miss_from_rss_only_discovery_is_reprobed(self):
+        # Without this the 53 misses on record would suppress every fallback for
+        # the full TTL and the feature would ship doing nothing.
+        self._write({"feed": None, "checked_at": datetime.now(UTC).isoformat()})
+        found, source = media.DiscoveryCache(self.path).get("https://x.com/")
+        self.assertFalse(found)
+        self.assertIsNone(source)
+
+    def test_a_miss_from_current_discovery_is_honoured(self):
+        self._write({
+            "feed": None, "probe_version": media.PROBE_VERSION,
+            "checked_at": datetime.now(UTC).isoformat(),
+        })
+        found, _ = media.DiscoveryCache(self.path).get("https://x.com/")
+        self.assertTrue(found)
+
+    def test_an_old_hit_is_still_a_hit(self):
+        # A working feed is the best route whatever came after it; re-probing
+        # every publisher that already has one would be pure cost.
+        self._write({"feed": "https://x.com/feed", "checked_at": "2026-01-01T00:00:00+00:00"})
+        found, source = media.DiscoveryCache(self.path).get("https://x.com/")
+        self.assertTrue(found)
+        self.assertEqual(source, media.Source(media.KIND_RSS, "https://x.com/feed"))
+
+    def test_a_run_without_fallbacks_does_not_claim_a_full_probe(self):
+        cache = media.DiscoveryCache(self.path)
+        row = {"Publication": "X", "Website": "https://x.com/", "RSS Feed URL / Hub": ""}
+        with patch.object(media, "discover_source", return_value=None):
+            media._collect_one(row, "b2b", True, cache, fallbacks=False)
+        self.assertEqual(cache.entries["https://x.com/"]["probe_version"], 1)

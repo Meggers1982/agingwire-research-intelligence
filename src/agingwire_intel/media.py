@@ -22,6 +22,11 @@ CANDIDATE_PATHS = ("feed/", "rss", "rss.xml", "feed.xml", "atom.xml", "index.xml
 FEED_MARKERS = (b"<rss", b"<feed", b"rdf:rdf")
 DISCOVERY_CACHE = "state/feed_discovery.json"
 CACHE_TTL_DAYS = 14
+# Bumped whenever a new discovery route is added. A cached miss only rules out
+# the routes that existed when it was written, so without this the 53 misses
+# recorded by RSS-only discovery would suppress every fallback below for the
+# full TTL -- the feature would ship and do nothing for two weeks.
+PROBE_VERSION = 2
 
 # Monitoring routes, best first. A feed states what the publisher published; the
 # WordPress API says the same thing in JSON; a sitemap knows the URL but usually
@@ -65,8 +70,12 @@ class DiscoveryCache:
         feed = entry.get("feed")
         if feed:
             # Entries written before the fallbacks existed record a URL and no
-            # kind; every one of them was an RSS feed.
+            # kind; every one of them was an RSS feed. A hit stays a hit -- a
+            # working feed is the best route regardless of what came later.
             return True, Source(entry.get("kind") or KIND_RSS, feed)
+        # A miss is only as good as the routes that were tried to earn it.
+        if entry.get("probe_version", 1) < PROBE_VERSION:
+            return False, None
         checked = entry.get("checked_at", "")
         try:
             when = datetime.fromisoformat(checked)
@@ -76,10 +85,12 @@ class DiscoveryCache:
             return False, None
         return True, None
 
-    def put(self, website: str, source: Source | None) -> None:
+    def put(self, website: str, source: Source | None,
+            probe_version: int = PROBE_VERSION) -> None:
         self.entries[website] = {
             "feed": source.url if source else None,
             "kind": source.kind if source else None,
+            "probe_version": probe_version,
             "checked_at": datetime.now(UTC).isoformat(),
         }
 
@@ -226,7 +237,7 @@ def _collect_one(
                 # leave the cache alone so the next run asks again.
                 source, reliable = None, False
             if cache is not None and reliable:
-                cache.put(website, source)
+                cache.put(website, source, PROBE_VERSION if fallbacks else 1)
         discovered = source is not None
     if source is None:
         return [], {
