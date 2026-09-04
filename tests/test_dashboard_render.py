@@ -60,6 +60,11 @@ class RenderTests(unittest.TestCase):
         # The block whose const ordering took the whole dashboard down.
         self.assertIn("registry publishers", self.html)
 
+    def test_a_story_idea_shows_what_is_at_stake(self):
+        # The pitch said what changed and when to file it, never who it lands on.
+        self.assertIn("Why it matters", self.html)
+        self.assertIn("inspect one option", self.html)
+
     def test_the_run_headline_numbers_render(self):
         self.assertIn("evidence candidates", self.html)
         self.assertIn("confirmed coverage gaps", self.html)

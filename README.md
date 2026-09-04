@@ -143,6 +143,21 @@ monitored outlets to aim at. Naming the angle is left to the editor. With
 research digest — pattern, why now, angle, three headlines, outlets — and is
 told explicitly that a source count is a statistic, not a pattern.
 
+### A pitch names the stake, not just the timing
+
+The pitch had a **Why pitch this now** section from the start, and it was doing a
+narrower job than its name suggested: it answers the editor's calendar question —
+why this month rather than next — and nothing about who the story lands on. A
+pitch that only answers that reads as a filing deadline attached to a dataset.
+
+**Why it matters** is now its own section, before the timing: who is affected,
+how many of them, and what they stand to lose or gain. It is held to the same
+honesty rule as the hook. Rest it on a figure already in the facts where one
+exists; where none does, state the stake at the size the evidence supports. An
+item whose only consequence is that a file moved should say that, because
+claiming otherwise is how a pitch loses an editor. Story ideas carry the same
+field, one sentence each.
+
 ### A pitch names a headline, an outlet and the thing you send
 
 The pitch was analysis about a story rather than a pitch for one. `senior-research-digest`

@@ -57,6 +57,19 @@ it. Say what those records, together, now make visible or possible that was not
 before. If the items share no real thread, say so plainly and treat them as
 separate leads rather than forcing one.
 
+**Why it matters:** Who is affected, how many of them, and what they stand to
+lose or gain. This is the stake, not the timing and not a restatement of the
+pattern. "The August figures just landed" belongs in the next section; "families
+are choosing between two kinds of care" is a description, not a stake. Name the
+consequence of the pattern being true: what someone can now find out that they
+could not, what is being decided about them without a record, or what is
+happening to them that nobody is counting. Rest it on a figure from the facts
+wherever one exists, and where none does, state the stake at the size the
+evidence actually supports rather than inflating it. If the evidence carries no
+stake beyond a record changing, say so — a file being republished is sometimes
+just a file being republished, and claiming otherwise is how a pitch loses an
+editor.
+
 **Why pitch this now:** External timing — a deadline, an effective date, a rule
 taking force, a season, a number that just moved. What makes an editor want it
 this month rather than next. Pipeline metrics are never a reason to pitch.
@@ -99,6 +112,10 @@ summary of the record:
 - **For the trade**: the operator, provider, workforce or senior-housing question.
   A genuinely different framing, not the reader angle addressed to executives. If
   the item supports no real trade angle, leave it out rather than padding.
+- **why**: one sentence on what is at stake for the person in the reader angle —
+  what they lose by not knowing this, or gain by knowing it. Not the headline
+  with "matters" appended, and never a stake the item does not carry. An item
+  whose only consequence is that a file moved should say that.
 
 The consumer angle leads because most of this evidence reaches an older adult
 before it reaches an operator.
@@ -144,9 +161,10 @@ SCHEMA = {
                     "hook": {"type": "string", "description": "One sentence: what makes it a story."},
                     "consumer": {"type": "string", "description": "For readers, in 'you' language."},
                     "b2b": {"type": "string", "description": "For the trade — a different framing, not a rewording."},
+                    "why": {"type": "string", "description": "One sentence: what is at stake for the reader, and for whom."},
                     "note": {"type": "string", "description": "Localization, chart potential or competitive situation."},
                 },
-                "required": ["title", "headline", "angle", "outlets", "hook", "consumer", "b2b", "note"],
+                "required": ["title", "headline", "angle", "outlets", "hook", "consumer", "b2b", "why", "note"],
                 "additionalProperties": False,
             },
         },
@@ -360,6 +378,7 @@ def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
             "summary": base.get("summary"),
             "consumer": idea.get("consumer") or base.get("consumer"),
             "b2b": idea.get("b2b") or base.get("b2b"),
+            "why": idea.get("why") or base.get("why"),
             "note": idea.get("note"),
         })
         out.append(base)
@@ -378,7 +397,8 @@ def _as_markdown(ideas: list[dict]) -> str:
         if idea.get("angle"):
             lines.append(f"- Angle: {idea['angle']}")
         for label, key in (("Hook", "hook"), ("For readers", "consumer"),
-                           ("For the trade", "b2b"), ("Also", "note")):
+                           ("For the trade", "b2b"), ("Why it matters", "why"),
+                           ("Also", "note")):
             if idea.get(key):
                 lines.append(f"- {label}: {idea[key]}")
         if idea.get("outlets"):

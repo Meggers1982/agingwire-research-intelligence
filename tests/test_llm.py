@@ -170,7 +170,7 @@ class SuccessTests(unittest.TestCase):
         self.assertEqual(ideas["type"], "array")
         self.assertEqual(set(ideas["items"]["required"]),
                          {"title", "headline", "angle", "outlets", "hook",
-                          "consumer", "b2b", "note"})
+                          "consumer", "b2b", "why", "note"})
 
     def test_a_pitch_draft_comes_back(self):
         """The thing you actually send an editor, not just analysis of it."""
@@ -345,3 +345,42 @@ class RecordPoolTests(unittest.TestCase):
     def test_coverage_state_comes_from_the_pipeline(self):
         merged = self._merge(["Penalties"])
         self.assertEqual(merged[0]["coverage_state"], "gap")
+
+
+class StakeTests(unittest.TestCase):
+    """The pitch said what changed and when to file it, never who it lands on.
+
+    "Why pitch this now" is the editor's calendar. It answers why this month,
+    not why anyone should care, and a pitch that only answers the first reads as
+    a filing deadline attached to a dataset.
+    """
+
+    def test_the_feature_pitch_asks_for_the_stake_and_the_timing_separately(self):
+        self.assertIn("**Why it matters:**", llm.SYSTEM)
+        self.assertIn("**Why pitch this now:**", llm.SYSTEM)
+        # Stated as distinct, or the model collapses one into the other.
+        self.assertIn("This is the stake, not the timing", llm.SYSTEM)
+
+    def test_the_stake_comes_before_the_timing(self):
+        # Order is what the reader sees: what it means, who it lands on, then
+        # why this month.
+        self.assertLess(llm.SYSTEM.index("**The pattern:**"), llm.SYSTEM.index("**Why it matters:**"))
+        self.assertLess(llm.SYSTEM.index("**Why it matters:**"), llm.SYSTEM.index("**Why pitch this now:**"))
+
+    def test_an_unsupported_stake_is_not_to_be_manufactured(self):
+        # The same honesty rule the hook already follows: absent beats invented.
+        self.assertIn("a file being republished is sometimes", llm.SYSTEM)
+
+    def test_story_ideas_carry_a_stake_through_the_merge(self):
+        merged = llm._as_records(
+            [{"title": "Alpha", "headline": "H", "angle": "A", "outlets": ["O"],
+              "hook": "K", "consumer": "C", "b2b": "B", "why": "What a family loses.",
+              "note": None}],
+            [{"title": "Alpha", "url": "https://example.org/a", "score": 90}],
+        )
+        self.assertEqual(merged[0]["why"], "What a family loses.")
+
+    def test_the_markdown_digest_renders_the_stake(self):
+        md = llm._as_markdown([{"headline": "H", "title": "Alpha",
+                                "why": "What a family loses."}])
+        self.assertIn("- Why it matters: What a family loses.", md)

@@ -45,6 +45,8 @@ STORY_IDEA = {
     "outlets": ["Provider Magazine"],
     "consumer": "What it changes for a family managing care at home.",
     "b2b": "Referral volume and staffing exposure for providers.",
+    "why": "A family comparing home care against a facility can inspect one option's "
+           "record in detail and the other's barely at all.",
     "localize": "Breaks down to US states.", "chart": None, "note": None,
     "competitive": "Monitored trades cover this beat and have not written it.",
 }
