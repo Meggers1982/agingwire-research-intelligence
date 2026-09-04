@@ -669,6 +669,21 @@ function expandSection(block) {
   refreshToggleAll(document.getElementById("main") || document);
 }
 
+/* Naming the route is the honest version of a "watched" count: a feed and a
+   sitemap do not support the same claims. Declared at module scope: it is read
+   while the pipeline-health block is built, which runs before the limits panel
+   where this used to sit -- a const cannot be read above its own declaration. */
+const KIND_LABELS = { rss: "a feed", wp_json: "the WordPress API", sitemap: "a sitemap", gnews: "Google News" };
+
+function kindSummary(media) {
+  const kinds = (media || {}).kinds || {};
+  return Object.entries(kinds)
+    .filter(([, n]) => n)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, n]) => `${n} ${KIND_LABELS[k] || k}`)
+    .join(", ");
+}
+
 function renderItem(item, index) {
   const findings = (item.key_findings || []).filter(Boolean);
   const angles = item.story_angles || [];
@@ -860,18 +875,6 @@ async function renderMain() {
         `<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a></li>`).join("")}
       </ul>
     </div>`).join("");
-
-  /* Naming the route is the honest version of a "watched" count: a feed and a
-     sitemap do not support the same claims. */
-  const KIND_LABELS = { rss: "a feed", wp_json: "the WordPress API", sitemap: "a sitemap", gnews: "Google News" };
-  function kindSummary(media) {
-    const kinds = media.kinds || {};
-    return Object.entries(kinds)
-      .filter(([, n]) => n)
-      .sort((a, b) => b[1] - a[1])
-      .map(([k, n]) => `${n} ${KIND_LABELS[k] || k}`)
-      .join(", ");
-  }
 
   /* A number is more useful when the page says what it cannot support. Each of
      these invalidates a specific figure shown above it. */
