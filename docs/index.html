@@ -345,6 +345,7 @@ function coverageBadge(item) {
     unmonitored: ["unmonitored", "Coverage unknown"],
     light: ["", "Lightly covered"],
     saturated: ["saturated", "Well covered"],
+    reference: ["saturated", "Reference data"],
   };
   const hit = map[item.coverage_state];
   return hit ? `<span class="badge ${hit[0]}">${hit[1]}</span>` : "";

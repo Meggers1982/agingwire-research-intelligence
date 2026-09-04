@@ -2,13 +2,13 @@
   "id": "2026-09-04",
   "title": "AgingWire Research Intelligence — 2026-09-04",
   "run_date": "2026-09-04",
-  "generated_at": "2026-09-04T16:21:38.143775+00:00",
+  "generated_at": "2026-09-04T17:21:01.467144+00:00",
   "evidence_count": 169,
   "new_evidence_count": 0,
-  "coverage_count": 1019,
-  "monitored_publisher_count": 64,
+  "coverage_count": 1037,
+  "monitored_publisher_count": 65,
   "registry_publisher_count": 132,
-  "gap_count": 84,
+  "gap_count": 58,
   "top_topics": [
     "medicare_medicaid",
     "long_term_care",
@@ -39,8 +39,8 @@
     "loneliness_social_connection": 1,
     "transportation": 1,
     "dementia": 1,
-    "nutrition": 1,
     "incontinence": 1,
+    "nutrition": 1,
     "falls": 1,
     "ageism_work": 1
   },
@@ -78,13 +78,13 @@
         "US counties"
       ],
       "localizable": true,
-      "score": 74,
+      "score": 67,
       "score_components": {
         "priority": 5,
         "novelty": 0,
         "timeliness": 4,
         "source_quality": 5,
-        "coverage_gap": 5,
+        "coverage_gap": 2,
         "localization": 5,
         "demand": 3,
         "consumer_utility": 3,
@@ -98,13 +98,13 @@
         "For the trade: Payment, eligibility and compliance exposure for providers.",
         "Localize the finding by state, metro or county and identify geographic outliers.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
       ],
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
-      "coverage_state": "gap",
+      "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": {
         "query": "Medical Equipment Suppliers",
         "returned": 20,
@@ -138,13 +138,13 @@
         "US counties"
       ],
       "localizable": true,
-      "score": 73,
+      "score": 66,
       "score_components": {
         "priority": 5,
         "novelty": 0,
         "timeliness": 3,
         "source_quality": 5,
-        "coverage_gap": 5,
+        "coverage_gap": 2,
         "localization": 5,
         "demand": 3,
         "consumer_utility": 3,
@@ -158,13 +158,13 @@
         "For the trade: Reimbursement, census mix and regulatory exposure.",
         "Localize the finding by state, metro or county and identify geographic outliers.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
       ],
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
-      "coverage_state": "gap",
+      "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": {
         "query": "Medicare Claims Quality Measures",
         "returned": 13,
@@ -198,13 +198,13 @@
         "US counties"
       ],
       "localizable": true,
-      "score": 73,
+      "score": 66,
       "score_components": {
         "priority": 5,
         "novelty": 0,
         "timeliness": 3,
         "source_quality": 5,
-        "coverage_gap": 5,
+        "coverage_gap": 2,
         "localization": 5,
         "demand": 3,
         "consumer_utility": 3,
@@ -218,13 +218,13 @@
         "For the trade: Reimbursement, census mix and regulatory exposure.",
         "Localize the finding by state, metro or county and identify geographic outliers.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
       ],
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
-      "coverage_state": "gap",
+      "coverage_state": "reference",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": {
         "query": "Skilled Nursing Facility Quality Reporting Provider Data",
         "returned": 15,
@@ -233,838 +233,6 @@
         "articles": [],
         "state": "unreported"
       }
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data",
-      "url": "https://data.cms.gov/provider-data/dataset/7cv8-v37d",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid",
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 72,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "This data set contains the national average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Hospice care National CAHPS Hospice Survey Data",
-        "returned": 2,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data",
-      "url": "https://data.cms.gov/provider-data/dataset/a55e-5b88",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid",
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 72,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "This data set contains state average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Hospice care State CAHPS Hospice Survey Data",
-        "returned": 1,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: National Downloadable File",
-      "url": "https://data.cms.gov/provider-data/dataset/mj5m-pzi6",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-07-31T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 72,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "The Doctors and Clinicians national downloadable file is organized such that each line is unique at the clinician/enrollment record/group/address level. Clinicians with multiple Medicare enrollment records and/or single enrollments linking to multiple practice locations are listed on multiple lines.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "National Downloadable File",
-        "returned": 4,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Nursing Home Data Collection Intervals",
-      "url": "https://data.cms.gov/provider-data/dataset/qmdc-9999",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care",
-        "workforce"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 71,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 4,
-        "visualization": 5
-      },
-      "summary": "This table lists the data collection periods for the quality measures displayed for Nursing Homes including Rehab Services as well as the intervals for complaint citations and citations on focused infection control inspections. It also includes the data collection period for the nursing home staffing measures. The data collection periods for some short-stay measures differ slightly from the measure periods in the MDS Quality Measure file due to the look-back periods for these measures.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Nursing Home Data Collection Intervals",
-        "returned": 1,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Utilization Data",
-      "url": "https://data.cms.gov/provider-data/dataset/n0yb-util",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-11T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "The Doctors and Clinicians utilization data file reports volume information for procedures of interest on clinician profile pages and in the provider data catalog (PDC) to inform patients and caregivers about clinicians' experience.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Utilization Data",
-        "returned": 20,
-        "outlet_count": 1,
-        "outlets": [
-          "Aviation Week"
-        ],
-        "articles": [
-          {
-            "title": "Data: Leap Fleet Growth Narrows The Utilization Gap On CFM56",
-            "outlet": "Aviation Week",
-            "link": "https://aviationweek.com/awin-knowledge-center/data-leap-fleet-growth-narrows-utilization-gap-cfm56",
-            "date": "08/26/2026, 06:07 PM, +0000 UTC"
-          }
-        ],
-        "state": "lightly_reported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Patient-Reported Outcomes - Hospital",
-      "url": "https://data.cms.gov/provider-data/dataset/mxtu-43qs",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-05T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "Patient-reported outcomes are reports from patients about aspects of care that matter most to them, like pain management, functional ability (like their ability to walk, think, see, hear and remember), and overall quality of life. Through surveys or questionnaires, patients self-report the effectiveness of the care they got from their provider.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Patient Reported Outcomes Hospital",
-        "returned": 20,
-        "outlet_count": 3,
-        "outlets": [
-          "Hospital Pharmacy Europe",
-          "Pharmacy Times",
-          "Nature"
-        ],
-        "articles": [
-          {
-            "title": "Digital patient-reported measures remain underused in hospital pharmacy, Spanish study finds",
-            "outlet": "Hospital Pharmacy Europe",
-            "link": "https://hospitalpharmacyeurope.com/pharmacy-practice/health-technology/digital-patient-reported-measures-proms-prems-remain-underused-in-hospital-pharmacy-spanish-study-finds/",
-            "date": "08/28/2026, 07:00 AM, +0000 UTC"
-          },
-          {
-            "title": "Patient-Reported Outcomes and Quality of Life With Axatilimab in cGVHD",
-            "outlet": "Pharmacy Times",
-            "link": "https://www.pharmacytimes.com/view/patient-reported-outcomes-and-quality-of-life-with-axatilimab-in-cgvhd",
-            "date": "08/28/2026, 12:14 AM, +0000 UTC"
-          },
-          {
-            "title": "Single-stage dorsal-inlay augmented metoidioplasty: technique, complications, and patient-reported outcomes",
-            "outlet": "Nature",
-            "link": "https://www.nature.com/articles/s41443-026-01342-4",
-            "date": "08/13/2026, 07:00 AM, +0000 UTC"
-          }
-        ],
-        "state": "widely_reported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Fire Safety Deficiencies",
-      "url": "https://data.cms.gov/provider-data/dataset/ifjz-ge4w",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "A list of nursing home fire safety citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Fire Safety Deficiencies",
-        "returned": 20,
-        "outlet_count": 2,
-        "outlets": [
-          "Brighter Kashmir",
-          "The Express Tribune"
-        ],
-        "articles": [
-          {
-            "title": "HC warns JMC over building, fire-safety violations",
-            "outlet": "Brighter Kashmir",
-            "link": "https://brighterkashmir.com/news/hc-warns-jmc-over-building-fire-safety-violations-91568.html",
-            "date": "09/01/2026, 10:42 AM, +0000 UTC"
-          },
-          {
-            "title": "Fire safety lapses exposed at capital hospitals",
-            "outlet": "The Express Tribune",
-            "link": "https://tribune.com.pk/story/2626163/fire-safety-lapses-exposed-at-capital-hospitals",
-            "date": "08/28/2026, 04:46 AM, +0000 UTC"
-          }
-        ],
-        "state": "lightly_reported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Health Deficiencies",
-      "url": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "A list of nursing home health citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Health Deficiencies",
-        "returned": 20,
-        "outlet_count": 1,
-        "outlets": [
-          "The Globe and Mail"
-        ],
-        "articles": [
-          {
-            "title": "Aimei Health Faces Nasdaq Listing Compliance Deficiencies",
-            "outlet": "The Globe and Mail",
-            "link": "https://www.theglobeandmail.com/investing/markets/stocks/AFJK/pressreleases/4137531/aimei-health-faces-nasdaq-listing-compliance-deficiencies/",
-            "date": "08/26/2026, 08:36 PM, +0000 UTC"
-          }
-        ],
-        "state": "lightly_reported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: MDS Quality Measures",
-      "url": "https://data.cms.gov/provider-data/dataset/djen-97ju",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "Quality measures that are based on the resident assessments that make up the nursing home Minimum Data Set (MDS). Each row contains a specific quality measure for a specific nursing home and includes the 4-quarter score average and scores for each individual quarter.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "MDS Quality Measures",
-        "returned": 3,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Ownership",
-      "url": "https://data.cms.gov/provider-data/dataset/y2hd-n93e",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "A list of ownership information for currently active nursing homes.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Ownership",
-        "returned": 20,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Penalties",
-      "url": "https://data.cms.gov/provider-data/dataset/g6vv-u9sr",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "A list of the fines and payment denials received by nursing homes in the last three years.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Penalties",
-        "returned": 20,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Provider Information",
-      "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "General information on currently active nursing homes, including number of certified beds, quality measure scores, staffing and other information used in the Five-Star Rating System. Data are presented as one row per nursing home.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": {
-        "query": "Provider Information",
-        "returned": 20,
-        "outlet_count": 0,
-        "outlets": [],
-        "articles": [],
-        "state": "unreported"
-      }
-    },
-    {
-      "title": "CMS refreshed dataset: Survey Summary",
-      "url": "https://data.cms.gov/provider-data/dataset/tbry-pc2d",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "Nursing home summary information for nursing home health, fire safety, infection control, and complaint inspections in the last three years, including dates of the three most recent inspections (including those with no citations), and counts of citations, overall and within specified categories. Data are presented as one inspection per provider. Citation counts also include citations from infection control surveys and complaint inspections.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Citation Code Look-up",
-      "url": "https://data.cms.gov/provider-data/dataset/tagd-9999",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "This is a look-up table for nursing home inspection citations, providing a text description for each citation or tag code.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Inspection Dates",
-      "url": "https://data.cms.gov/provider-data/dataset/svdt-c123",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "A list of nursing home inspection dates in the past three years, including health inspections, fire safety inspections, complaint inspections and infection control inspections",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Facility Affiliation Data",
-      "url": "https://data.cms.gov/provider-data/dataset/27ea-46a8",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-07-31T00:00:00+00:00",
-      "topics": [
-        "long_term_care"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "summary": "This is the facility affiliations data publicly reported in the Provider Data Catalog.",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
     },
     {
       "title": "American Community Survey 2023 state aging and housing profile (52 states)",
@@ -1112,8 +280,110 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 21,
+      "runs_seen": 22,
       "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice care - National CAHPS Hospice Survey Data",
+      "url": "https://data.cms.gov/provider-data/dataset/7cv8-v37d",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid",
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 65,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "This data set contains the national average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": {
+        "query": "Hospice care National CAHPS Hospice Survey Data",
+        "returned": 2,
+        "outlet_count": 0,
+        "outlets": [],
+        "articles": [],
+        "state": "unreported"
+      }
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data",
+      "url": "https://data.cms.gov/provider-data/dataset/a55e-5b88",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid",
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 65,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "This data set contains state average (mean) scores of Medicare-certified hospice providers on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": {
+        "query": "Hospice care State CAHPS Hospice Survey Data",
+        "returned": 1,
+        "outlet_count": 0,
+        "outlets": [],
+        "articles": [],
+        "state": "unreported"
+      }
     },
     {
       "title": "BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)",
@@ -1158,8 +428,65 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 12,
-      "web_coverage": null
+      "runs_seen": 13,
+      "web_coverage": {
+        "query": "Continuing care retirement communities assisted living employment August 2026 026",
+        "returned": 6,
+        "outlet_count": 0,
+        "outlets": [],
+        "articles": [],
+        "state": "unreported"
+      }
+    },
+    {
+      "title": "CMS refreshed dataset: National Downloadable File",
+      "url": "https://data.cms.gov/provider-data/dataset/mj5m-pzi6",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-07-31T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 65,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "The Doctors and Clinicians national downloadable file is organized such that each line is unique at the clinician/enrollment record/group/address level. Clinicians with multiple Medicare enrollment records and/or single enrollments linking to multiple practice locations are listed on multiple lines.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": {
+        "query": "National Downloadable File",
+        "returned": 4,
+        "outlet_count": 0,
+        "outlets": [],
+        "articles": [],
+        "state": "unreported"
+      }
     },
     {
       "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
@@ -1200,8 +527,66 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 12,
-      "web_coverage": null
+      "runs_seen": 13,
+      "web_coverage": {
+        "query": "Housing Trust Fund Fiscal Year 2026 Allocation",
+        "returned": 15,
+        "outlet_count": 0,
+        "outlets": [],
+        "articles": [],
+        "state": "unreported"
+      }
+    },
+    {
+      "title": "CMS refreshed dataset: Nursing Home Data Collection Intervals",
+      "url": "https://data.cms.gov/provider-data/dataset/qmdc-9999",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care",
+        "workforce"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 64,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 4,
+        "visualization": 5
+      },
+      "summary": "This table lists the data collection periods for the quality measures displayed for Nursing Homes including Rehab Services as well as the intervals for complaint citations and citations on focused infection control inspections. It also includes the data collection period for the nursing home staffing measures. The data collection periods for some short-stay measures differ slightly from the measure periods in the MDS Quality Measure file due to the look-back periods for these measures.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": {
+        "query": "Nursing Home Data Collection Intervals",
+        "returned": 1,
+        "outlet_count": 0,
+        "outlets": [],
+        "articles": [],
+        "state": "unreported"
+      }
     },
     {
       "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
@@ -1241,7 +626,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1282,8 +667,140 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Utilization Data",
+      "url": "https://data.cms.gov/provider-data/dataset/n0yb-util",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-11T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "The Doctors and Clinicians utilization data file reports volume information for procedures of interest on clinician profile pages and in the provider data catalog (PDC) to inform patients and caregivers about clinicians' experience.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": {
+        "query": "Utilization Data",
+        "returned": 20,
+        "outlet_count": 1,
+        "outlets": [
+          "Aviation Week"
+        ],
+        "articles": [
+          {
+            "title": "Data: Leap Fleet Growth Narrows The Utilization Gap On CFM56",
+            "outlet": "Aviation Week",
+            "link": "https://aviationweek.com/awin-knowledge-center/data-leap-fleet-growth-narrows-utilization-gap-cfm56",
+            "date": "08/26/2026, 06:07 PM, +0000 UTC"
+          }
+        ],
+        "state": "lightly_reported"
+      }
+    },
+    {
+      "title": "CMS refreshed dataset: Patient-Reported Outcomes - Hospital",
+      "url": "https://data.cms.gov/provider-data/dataset/mxtu-43qs",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-05T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "Patient-reported outcomes are reports from patients about aspects of care that matter most to them, like pain management, functional ability (like their ability to walk, think, see, hear and remember), and overall quality of life. Through surveys or questionnaires, patients self-report the effectiveness of the care they got from their provider.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": {
+        "query": "Patient Reported Outcomes Hospital",
+        "returned": 20,
+        "outlet_count": 3,
+        "outlets": [
+          "Hospital Pharmacy Europe",
+          "Pharmacy Times",
+          "Nature"
+        ],
+        "articles": [
+          {
+            "title": "Digital patient-reported measures remain underused in hospital pharmacy, Spanish study finds",
+            "outlet": "Hospital Pharmacy Europe",
+            "link": "https://hospitalpharmacyeurope.com/pharmacy-practice/health-technology/digital-patient-reported-measures-proms-prems-remain-underused-in-hospital-pharmacy-spanish-study-finds/",
+            "date": "08/28/2026, 07:00 AM, +0000 UTC"
+          },
+          {
+            "title": "Patient-Reported Outcomes and Quality of Life With Axatilimab in cGVHD",
+            "outlet": "Pharmacy Times",
+            "link": "https://www.pharmacytimes.com/view/patient-reported-outcomes-and-quality-of-life-with-axatilimab-in-cgvhd",
+            "date": "08/28/2026, 12:14 AM, +0000 UTC"
+          },
+          {
+            "title": "Single-stage dorsal-inlay augmented metoidioplasty: technique, complications, and patient-reported outcomes",
+            "outlet": "Nature",
+            "link": "https://www.nature.com/articles/s41443-026-01342-4",
+            "date": "08/13/2026, 07:00 AM, +0000 UTC"
+          }
+        ],
+        "state": "widely_reported"
+      }
     },
     {
       "title": "BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)",
@@ -1328,7 +845,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 12,
+      "runs_seen": 13,
       "web_coverage": null
     },
     {
@@ -1374,7 +891,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 12,
+      "runs_seen": 13,
       "web_coverage": null
     },
     {
@@ -1419,7 +936,437 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 12,
+      "runs_seen": 13,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Fire Safety Deficiencies",
+      "url": "https://data.cms.gov/provider-data/dataset/ifjz-ge4w",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "A list of nursing home fire safety citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Health Deficiencies",
+      "url": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "A list of nursing home health citations in the last three years, including the nursing home that received the citation, the associated inspection date, citation tag number and description, scope and severity, the current status of the citation and the correction date. Data are presented as one citation per row.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: MDS Quality Measures",
+      "url": "https://data.cms.gov/provider-data/dataset/djen-97ju",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "Quality measures that are based on the resident assessments that make up the nursing home Minimum Data Set (MDS). Each row contains a specific quality measure for a specific nursing home and includes the 4-quarter score average and scores for each individual quarter.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Ownership",
+      "url": "https://data.cms.gov/provider-data/dataset/y2hd-n93e",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "A list of ownership information for currently active nursing homes.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Penalties",
+      "url": "https://data.cms.gov/provider-data/dataset/g6vv-u9sr",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "A list of the fines and payment denials received by nursing homes in the last three years.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Provider Information",
+      "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "General information on currently active nursing homes, including number of certified beds, quality measure scores, staffing and other information used in the Five-Star Rating System. Data are presented as one row per nursing home.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Survey Summary",
+      "url": "https://data.cms.gov/provider-data/dataset/tbry-pc2d",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "Nursing home summary information for nursing home health, fire safety, infection control, and complaint inspections in the last three years, including dates of the three most recent inspections (including those with no citations), and counts of citations, overall and within specified categories. Data are presented as one inspection per provider. Citation counts also include citations from infection control surveys and complaint inspections.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Citation Code Look-up",
+      "url": "https://data.cms.gov/provider-data/dataset/tagd-9999",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "This is a look-up table for nursing home inspection citations, providing a text description for each citation or tag code.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Inspection Dates",
+      "url": "https://data.cms.gov/provider-data/dataset/svdt-c123",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "A list of nursing home inspection dates in the past three years, including health inspections, fire safety inspections, complaint inspections and infection control inspections",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Facility Affiliation Data",
+      "url": "https://data.cms.gov/provider-data/dataset/27ea-46a8",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-07-31T00:00:00+00:00",
+      "topics": [
+        "long_term_care"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "summary": "This is the facility affiliations data publicly reported in the Provider Data Catalog.",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1464,7 +1411,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1505,7 +1452,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1550,7 +1497,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 12,
+      "runs_seen": 13,
       "web_coverage": null
     },
     {
@@ -1595,7 +1542,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 12,
+      "runs_seen": 13,
       "web_coverage": null
     },
     {
@@ -1636,7 +1583,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1677,7 +1624,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1718,46 +1665,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer",
-      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
-      "source_id": "justice-in-aging",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-20T17:01:38+00:00",
-      "topics": [
-        "long_term_care",
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 58,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 1
-      },
-      "summary": "Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 22,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1795,7 +1703,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1833,7 +1741,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1871,7 +1779,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1909,7 +1817,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1947,7 +1855,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -1985,7 +1893,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2025,253 +1933,46 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 22,
+      "runs_seen": 23,
       "web_coverage": null
     },
     {
-      "title": "CMS refreshed dataset: Hospice - General Information",
-      "url": "https://data.cms.gov/provider-data/dataset/yc9t-dgbk",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-19T00:00:00+00:00",
+      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer",
+      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
+      "source_id": "justice-in-aging",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-20T17:01:38+00:00",
       "topics": [
-        "palliative_hospice"
+        "long_term_care",
+        "medicare_medicaid"
       ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
+      "geographies": [],
+      "localizable": false,
       "score": 56,
       "score_components": {
-        "priority": 2,
+        "priority": 5,
         "novelty": 0,
         "timeliness": 3,
-        "source_quality": 5,
+        "source_quality": 3,
         "coverage_gap": 5,
-        "localization": 5,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
       },
-      "summary": "This dataset shows characteristics of hospice providers such as address, phone number, ownership data and more.",
+      "summary": "Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .",
       "key_findings": [],
       "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice - Zip Data",
-      "url": "https://data.cms.gov/provider-data/dataset/95rg-2usp",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-18T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 56,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "summary": "A list of zip codes where hospice provides services.",
-      "key_findings": [],
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice - Provider Data",
-      "url": "https://data.cms.gov/provider-data/dataset/252m-zfp9",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 56,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "summary": "A list of hospice providers with data on the quality of patient care measures.",
-      "key_findings": [],
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice care - Provider CAHPS Hospice Survey Data",
-      "url": "https://data.cms.gov/provider-data/dataset/gxki-hrr8",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 56,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "summary": "This data set contains a list of hospice providers with data on their scores on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
-      "key_findings": [],
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice - State Data",
-      "url": "https://data.cms.gov/provider-data/dataset/eda0-92f0",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 56,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "summary": "State data on the quality of patient care measures.",
-      "key_findings": [],
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice - National Data",
-      "url": "https://data.cms.gov/provider-data/dataset/3xeb-u9wp",
-      "source_id": "cms-provider-data",
-      "source_type": "government_api",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "topics": [
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "localizable": true,
-      "score": 56,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 5,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 5
-      },
-      "summary": "National data on the quality of patient care measures.",
-      "key_findings": [],
-      "story_angles": [
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 23,
       "web_coverage": null
     },
     {
@@ -2309,7 +2010,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2346,7 +2047,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "light",
       "is_new": false,
-      "runs_seen": 22,
+      "runs_seen": 23,
       "web_coverage": null
     },
     {
@@ -2384,7 +2085,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 22,
+      "runs_seen": 23,
       "web_coverage": null
     },
     {
@@ -2424,7 +2125,7 @@
       "b2c_coverage_count": 2,
       "coverage_state": "light",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2462,7 +2163,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2500,7 +2201,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2539,46 +2240,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
-      "web_coverage": null
-    },
-    {
-      "title": "FTC Data Show People Reported Losing $3.5 Billion to Imposter Scams in 2025",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-data-show-people-reported-losing-3-point-5-billion-imposter-scams-2025",
-      "source_id": "ftc-consumer-protection",
-      "source_type": "institutional_rss",
-      "published_at": "2026-06-15T12:00:00+00:00",
-      "topics": [
-        "elder_abuse",
-        "fraud_scams"
-      ],
-      "geographies": [],
-      "localizable": false,
-      "score": 54,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "summary": "New data from the Federal Trade Commission reveal that people reported losing a staggering $3.5 billion to imposter scams in 2025, with reported losses increasing nearly three times since 2020. FTC data also show that people reported imposter scams more than any other fraud category in 2025—nearly one in three fraud reports were about imposter scams. These scams lured consumers through text, phone, email, social media, search engine results and other means. Some of the costliest impersonation scams start with a fake security alert, often from a bank. People are convinced to move money to “protect” it, with their losses often limited only by their available funds. Last year, people reported losing nearly $1 billion to business impersonators with the highest reported losses to bank impersonators—and about $920 million to government impersonators, up from $866 million and $789 million respe",
-      "key_findings": [],
-      "story_angles": [
-        "For readers: The warning signs and who to call.",
-        "For the trade: Reporting duties, screening practice and survey risk.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "coverage_state": "gap",
-      "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2616,7 +2278,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2654,7 +2316,253 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice - General Information",
+      "url": "https://data.cms.gov/provider-data/dataset/yc9t-dgbk",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-19T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 49,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "summary": "This dataset shows characteristics of hospice providers such as address, phone number, ownership data and more.",
+      "key_findings": [],
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice - Zip Data",
+      "url": "https://data.cms.gov/provider-data/dataset/95rg-2usp",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-18T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 49,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "summary": "A list of zip codes where hospice provides services.",
+      "key_findings": [],
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice - Provider Data",
+      "url": "https://data.cms.gov/provider-data/dataset/252m-zfp9",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 49,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "summary": "A list of hospice providers with data on the quality of patient care measures.",
+      "key_findings": [],
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice care - Provider CAHPS Hospice Survey Data",
+      "url": "https://data.cms.gov/provider-data/dataset/gxki-hrr8",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 49,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "summary": "This data set contains a list of hospice providers with data on their scores on the Consumer Assessment of Healthcare Providers and Systems (CAHPS®) Hospice Survey measures.",
+      "key_findings": [],
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice - State Data",
+      "url": "https://data.cms.gov/provider-data/dataset/eda0-92f0",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 49,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "summary": "State data on the quality of patient care measures.",
+      "key_findings": [],
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice - National Data",
+      "url": "https://data.cms.gov/provider-data/dataset/3xeb-u9wp",
+      "source_id": "cms-provider-data",
+      "source_type": "government_api",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "topics": [
+        "palliative_hospice"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "localizable": true,
+      "score": 49,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 5
+      },
+      "summary": "National data on the quality of patient care measures.",
+      "key_findings": [],
+      "story_angles": [
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "reference",
+      "is_new": false,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2693,7 +2601,7 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
       "web_coverage": null
     },
     {
@@ -2731,7 +2639,45 @@
       "b2c_coverage_count": 0,
       "coverage_state": "gap",
       "is_new": false,
-      "runs_seen": 31,
+      "runs_seen": 32,
+      "web_coverage": null
+    },
+    {
+      "title": "Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance",
+      "url": "https://www.nic.org/blog/another-strong-quarter-for-senior-housing-seven-straight-quarters-of-outperformance/",
+      "source_id": "nic",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "housing"
+      ],
+      "geographies": [],
+      "localizable": false,
+      "score": 48,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 3
+      },
+      "summary": "22 Senior Housing Properties Added to the NCREIF Property Index in 2Q Senior housing investment performance in the second quarter of 2026 maintained the prior quarter’s momentum, posting a total return of 3.9% and bringing year-to-date returns to 8.0%. Overall, senior housing during the quarter outperformed the broader…",
+      "key_findings": [],
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "coverage_state": "gap",
+      "is_new": false,
+      "runs_seen": 32,
       "web_coverage": null
     }
   ],
@@ -2846,9 +2792,9 @@
     }
   ],
   "media_status_summary": {
-    "ok": 57,
+    "ok": 58,
     "empty": 7,
-    "error": 10,
+    "error": 9,
     "no_feed": 58,
     "errors": [
       {
@@ -2886,10 +2832,6 @@
       {
         "publisher": "Financial Advisor Magazine",
         "error": "403 Client Error: Forbidden for url: https://www.fa-mag.com/rss.php"
-      },
-      {
-        "publisher": "The NonProfit Times",
-        "error": "HTTPSConnectionPool(host='thenonprofittimes.com', port=443): Read timed out. (read timeout=30)"
       }
     ]
   },
@@ -3030,40 +2972,18 @@
     }
   },
   "web_coverage_status": {
-    "checked": 15,
+    "checked": 11,
     "top_n": 15
   },
   "serpapi_calls": 15,
   "clusters": [
-    {
-      "topic": "long_term_care",
-      "label": "long-term care",
-      "cohesion": 0.256,
-      "coheres": true,
-      "priority": "P0",
-      "cluster_score": 295,
-      "item_count": 18,
-      "source_count": 4,
-      "sources": [
-        "bls-api",
-        "center-retirement-research",
-        "cms-provider-data",
-        "justice-in-aging"
-      ],
-      "gap_count": 17,
-      "covered_count": 1,
-      "new_count": 0,
-      "structured_count": 16,
-      "localizable_count": 15,
-      "newest_age_days": 1
-    },
     {
       "topic": "medicare_medicaid",
       "label": "Medicare and Medicaid",
       "cohesion": 0.054,
       "coheres": false,
       "priority": "P0",
-      "cluster_score": 285,
+      "cluster_score": 249,
       "item_count": 26,
       "source_count": 7,
       "sources": [
@@ -3075,7 +2995,7 @@
         "kff-feed",
         "kff-issue-briefs"
       ],
-      "gap_count": 25,
+      "gap_count": 19,
       "covered_count": 1,
       "new_count": 0,
       "structured_count": 8,
@@ -3083,24 +3003,26 @@
       "newest_age_days": 3
     },
     {
-      "topic": "palliative_hospice",
-      "label": "palliative and hospice care",
-      "cohesion": 0.457,
+      "topic": "long_term_care",
+      "label": "long-term care",
+      "cohesion": 0.256,
       "coheres": true,
-      "priority": "clinical",
-      "cluster_score": 195,
-      "item_count": 9,
-      "source_count": 2,
+      "priority": "P0",
+      "cluster_score": 205,
+      "item_count": 18,
+      "source_count": 4,
       "sources": [
+        "bls-api",
+        "center-retirement-research",
         "cms-provider-data",
-        "rand-research"
+        "justice-in-aging"
       ],
-      "gap_count": 9,
-      "covered_count": 0,
+      "gap_count": 2,
+      "covered_count": 1,
       "new_count": 0,
-      "structured_count": 8,
-      "localizable_count": 8,
-      "newest_age_days": 4
+      "structured_count": 16,
+      "localizable_count": 15,
+      "newest_age_days": 1
     },
     {
       "topic": "housing",
@@ -3126,12 +3048,32 @@
       "newest_age_days": 0
     },
     {
+      "topic": "palliative_hospice",
+      "label": "palliative and hospice care",
+      "cohesion": 0.457,
+      "coheres": true,
+      "priority": "clinical",
+      "cluster_score": 147,
+      "item_count": 9,
+      "source_count": 2,
+      "sources": [
+        "cms-provider-data",
+        "rand-research"
+      ],
+      "gap_count": 1,
+      "covered_count": 0,
+      "new_count": 0,
+      "structured_count": 8,
+      "localizable_count": 8,
+      "newest_age_days": 4
+    },
+    {
       "topic": "workforce",
       "label": "workforce",
       "cohesion": 0.096,
       "coheres": false,
       "priority": "P0",
-      "cluster_score": 127,
+      "cluster_score": 121,
       "item_count": 10,
       "source_count": 4,
       "sources": [
@@ -3140,7 +3082,7 @@
         "phi-workforce",
         "rand-research"
       ],
-      "gap_count": 8,
+      "gap_count": 7,
       "covered_count": 2,
       "new_count": 0,
       "structured_count": 5,
@@ -3254,101 +3196,62 @@
   ],
   "story_ideas": [
     {
-      "title": "CMS refreshed dataset: Provider Information (08/01/26)",
-      "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
-      "source_id": "cms-provider-data",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 69,
+      "title": "American Community Survey 2023 state aging and housing profile (52 states)",
+      "url": "https://data.census.gov/table?q=DP05&y=2023",
+      "source_id": "american-community-survey",
+      "published_at": null,
+      "score": 66,
       "topics": [
-        "long_term_care"
+        "housing",
+        "financial_security",
+        "migration_retirement",
+        "rural_aging"
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "The file holding certified bed counts, staffing figures and the quality measure scores that feed the Five-Star Rating System was republished on 08/01/26, one row per nursing home.",
-      "consumer": "Before you tour anywhere, pull the row for each home on your shortlist and compare certified beds and staffing against the two or three others you are considering; ask the admissions director to explain any measure where their number sits below the others, and get the answer in writing.",
-      "b2b": "Every competitor's staffing and quality inputs are current again in the same refresh, which makes this the natural moment for operators to run a market-level benchmarking pass and for referral partners to re-sort their preferred provider lists.",
-      "note": "Localizable to US states and counties, one row per facility — supports a state-ranked table or a county-level lookup tool."
+      "hook": "State-level counts for 65+, 65-74, 75-84 and 85+ populations sit alongside median household income and housing tenure in one 2023 ACS 5-year file, with California at 5,994,486 residents aged 65 and older and Florida at 4,630,733.",
+      "consumer": "If you are weighing a move, look up your current state and your shortlist state in the same table and compare three things before you commit: the size of the 85+ population, the split between owners and renters, and median household income. A state with a big 65+ headline number is not the same as a state with a big 85+ population, and it is the 85+ number that predicts what care and housing you will be competing for.",
+      "b2b": "The 85+ column crossed with housing tenure is a site-selection screen: it separates markets where prospects are equity-rich homeowners from markets where they will arrive as renters with no sale proceeds, which changes entry-fee and rental product mix state by state.",
+      "localize": "Breaks down to US states — rank the outliers.",
+      "chart": null,
+      "competitive": "Monitored trades cover this beat and have not written it.",
+      "note": "Fifty-two geographies, no monitored publisher matched it, and it charts cleanly as a ranking or a two-axis scatter. Strong fit for Retirement Living and Multi-Housing News - Senior Housing."
     },
     {
-      "title": "CMS refreshed dataset: Health Deficiencies (08/01/26)",
-      "url": "https://data.cms.gov/provider-data/dataset/r5ix-sfxw",
-      "source_id": "cms-provider-data",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 69,
+      "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027",
+      "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room",
+      "source_id": "federal-register",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "score": 63,
       "topics": [
-        "long_term_care"
+        "housing"
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "Three years of nursing home health citations, with scope and severity, correction dates and current status, went live again on 08/01/26.",
-      "consumer": "Look up the last three years of citations for any home you are considering, check the scope and severity code rather than the raw count, and ask whether each citation has been corrected and on what date.",
-      "b2b": "Scope-and-severity distributions by state and by ownership type are the cleanest available proxy for where survey enforcement is tightening, which matters for compliance staffing budgets and for how chains allocate regional quality directors.",
-      "note": "Confirmed gap among monitored publishers; state and county breakouts make a heat map straightforward."
+      "hook": "HUD published the FY 2027 Fair Market Rents on 09/01/26, along with the methods behind them and the procedure for public housing agencies to request reevaluations under the Housing Opportunity Through Modernization Act of 2016.",
+      "consumer": "If you rent with a Housing Choice Voucher, the numbers that set your subsidy are adjusted to take effect October 1. Find your metro's figure, compare it with what your landlord is asking, and ask your public housing agency directly whether it intends to request a reevaluation for your area.",
+      "b2b": "For affordable senior housing owners and the agencies they work with, the reevaluation request window is the actionable part of this notice, and voucher-heavy portfolios should be modeling FY 2027 rents against operating cost growth now rather than in October.",
+      "note": "Metro-level, so it localizes almost anywhere, and year-over-year FMR change by metro is a straightforward chart. No monitored publisher matched it, so this is a real opening."
     },
     {
-      "title": "CMS refreshed dataset: Penalties (08/01/26)",
-      "url": "https://data.cms.gov/provider-data/dataset/g6vv-u9sr",
-      "source_id": "cms-provider-data",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 69,
+      "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
+      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice",
+      "source_id": "federal-register",
+      "published_at": "2026-09-04T00:00:00+00:00",
+      "score": 64,
       "topics": [
-        "long_term_care"
+        "financial_security",
+        "housing"
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "Fines and payment denials issued to nursing homes over the last three years were refreshed on 08/01/26.",
-      "consumer": "A fine is public information, so ask the home directly about any payment denial in its record and what changed afterward; a facility that cannot describe the fix is telling you something.",
-      "b2b": "Penalty totals cross-referenced with the Ownership file show which corporate structures are absorbing the most enforcement cost, a question that carries into underwriting, acquisition diligence and insurance renewal.",
-      "note": "Pairs naturally with the Ownership and Health Deficiencies files for one analysis; strong Skilled Nursing News fit."
-    },
-    {
-      "title": "CMS refreshed dataset: Ownership (08/01/26)",
-      "url": "https://data.cms.gov/provider-data/dataset/y2hd-n93e",
-      "source_id": "cms-provider-data",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 69,
-      "topics": [
-        "long_term_care"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": "Current ownership information for every active nursing home was reissued on 08/01/26, alongside the Facility Affiliation Data refreshed 07/31/26.",
-      "consumer": "Find out who actually owns the home you are visiting and what else that owner runs; then check whether the sister facilities carry similar deficiency and penalty records, because patterns travel across a portfolio.",
-      "b2b": "The affiliation file lets operators and their investors map regional concentration and see which chains have grown or shed facilities since the last refresh, which is competitive intelligence rather than compliance.",
-      "note": "Two files, two dates, one story; localizable to states and counties for a market-concentration chart."
-    },
-    {
-      "title": "CMS refreshed dataset: Fire Safety Deficiencies (08/01/26)",
-      "url": "https://data.cms.gov/provider-data/dataset/ifjz-ge4w",
-      "source_id": "cms-provider-data",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 69,
-      "topics": [
-        "long_term_care"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": "Three years of nursing home fire safety citations, with tag numbers and correction dates, were refreshed on 08/01/26 and are entirely uncovered by monitored publishers.",
-      "consumer": "Fire safety citations sit in a separate file from health citations, so a home with a clean health record can still have open fire safety tags; check both before you sign anything.",
-      "b2b": "Life safety code citations are a capital expenditure signal as much as a compliance one, and the correction-date field shows how long facilities in each state are taking to close them out.",
-      "note": "Confirmed gap; the least-reported of the inspection files and the easiest to own outright."
-    },
-    {
-      "title": "CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data (08/07/26)",
-      "url": "https://data.cms.gov/provider-data/dataset/a55e-5b88",
-      "source_id": "cms-provider-data",
-      "published_at": "2026-08-07T00:00:00+00:00",
-      "score": 72,
-      "topics": [
-        "medicare_medicaid",
-        "palliative_hospice"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": "State-level average scores for Medicare-certified hospice providers on the CAHPS Hospice Survey were refreshed 08/07/26, with the national file refreshed the same day.",
-      "consumer": "Families rate hospices on things you cannot see on a tour, including communication and timeliness of help; compare your state's average against the national file before you choose, and ask a provider that trails its state average why.",
-      "b2b": "State-versus-national CAHPS spreads identify markets where family experience scores are systematically lower, which is a recruitment and training argument for hospice operators and a referral-steering question for hospital discharge planners.",
-      "note": "Sits in the palliative and hospice cluster, which coheres at 0.457 across CMS and RAND, with all nine items unmatched; state-level charting is built in."
+      "hook": "HUD's FY 2026 Housing Trust Fund allocation notice published 09/04/26, the newest item in the run, covering the program established by the Housing and Economic Recovery Act of 2008 with eligible grantees being the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Commonwealth of the Northern Mariana Islands.",
+      "consumer": "These dollars do not come to you directly; they pass through your state's housing agency. If you or a parent are on a waiting list for affordable housing, ask the state agency how it plans to use its Housing Trust Fund allocation this year and which projects are in line for it.",
+      "b2b": "Nonprofit developers can read state allocations as a pipeline signal, and the notice is the moment to line up applications against the state's stated priorities rather than after awards are announced.",
+      "localize": null,
+      "chart": "The underlying file supports an original ranking or trend line.",
+      "competitive": "Monitored trades cover this beat and have not written it.",
+      "note": "Published the day of the run and unmatched by monitored publishers. State-by-state allocation makes a map."
     },
     {
       "title": "BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)",
@@ -3363,10 +3266,10 @@
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "Home health care services added jobs at more than twice the rate of nursing care facilities in the year to August 2026, and average hourly earnings in the sector reached 28.04 dollars in July 2026, up 2.0%.",
-      "consumer": "If you are trying to stay at home, the workforce is growing faster in home care than in facilities, which affects how many agencies will actually pick up your call; ask any agency how many hours it can guarantee weekly, not just whether it serves your area.",
-      "b2b": "Wage growth of 2.0% against 5.0% headcount growth suggests agencies are expanding on volume rather than on pay, which is the number skilled nursing operators should be watching when they lose aides to home care employers.",
-      "note": "Confirmed gap; two BLS series make a single clean line chart against the nursing facility series."
+      "hook": "Home health care services employment reached 1,896.40 thousand jobs in August 2026, up 5.0% year over year, the fastest growth of any care setting in this run.",
+      "consumer": "More hiring does not automatically mean more reliable coverage in your house. When you interview an agency, ask how many aides it has added in the past year, how often shifts go unfilled, and who shows up when your regular aide is out.",
+      "b2b": "Home health is pulling workers at a rate nursing homes and assisted living are not matching, which makes it the wage-setter in most local labor markets. Operators in the other two settings should be pricing their offers against home health, not against each other.",
+      "note": "Monthly series with a long history, so a three-line chart of the three care settings writes itself. Unmatched by monitored publishers."
     },
     {
       "title": "BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)",
@@ -3381,108 +3284,134 @@
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "Nursing care facility employment grew 2.1% year over year while home health grew 5.0%, the sharpest contrast in this run's workforce evidence.",
-      "consumer": "Staffing figures in the refreshed CMS Provider Information file are your best check on whether a specific home is keeping pace; ask what the ratio is on nights and weekends, not the daily average.",
-      "b2b": "A 2.1% growth rate sets a ceiling on census recovery, and operators should be modeling admissions against the staffing they can realistically hire rather than against licensed bed capacity.",
-      "note": "Pairs with the CMS staffing measures in Provider Information and Nursing Home Data Collection Intervals for a single labor-and-quality piece."
+      "hook": "Nursing care facilities employed 1,590.20 thousand people in August 2026, up 2.1% year over year, growth less than half the home health rate.",
+      "consumer": "Staffing figures for individual nursing homes are in the CMS Provider Information file that feeds the Five-Star Rating System. Look up the facility you are considering, then ask the administrator directly whether staffing has increased in the past year and how many shifts run short.",
+      "b2b": "National growth of 2.1% is the benchmark to hold facility-level hiring against, and pairing it with the CMS staffing measures and Nursing Home Data Collection Intervals file shows whether a market's recovery is broad or concentrated in a few chains.",
+      "note": "Unmatched by monitored publishers, and it pairs directly with the CMS files refreshed 08/01/26 for a staffing-versus-quality treatment."
     },
     {
-      "title": "BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562330001",
+      "title": "BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562330003",
       "source_id": "bls-api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "score": 65,
+      "published_at": "2026-07-01T00:00:00+00:00",
+      "score": 60,
       "topics": [
         "workforce",
-        "assisted_living",
-        "housing"
+        "assisted_living"
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "Assisted living and CCRC employment rose 1.4% year over year while average hourly earnings in the segment hit 25.65 dollars in July 2026, up 3.2%.",
-      "consumer": "Pay in assisted living is rising faster than headcount, which shows up in your monthly bill; when you compare communities, ask what the last two years of rate increases were and what staffing changed in return.",
-      "b2b": "Earnings growing more than twice as fast as employment is a margin problem before it is a staffing problem, and it frames the pricing conversation for every CCRC entering the FY 2027 budget cycle.",
-      "localize": null,
-      "chart": "The underlying file supports an original ranking or trend line.",
-      "competitive": "Monitored trades cover this beat and have not written it.",
-      "note": "Confirmed gap; two BLS series, national only, best charted as wages versus headcount."
+      "hook": "Average hourly earnings in assisted living and continuing care retirement communities reached $25.65 in July 2026, up 3.2% year over year, while home health care services averaged $28.04, up 2.0%.",
+      "consumer": "Labor is the largest cost in any community you tour. When you get the fee schedule, ask what last year's increase was, how much of it went to caregiver pay, and what the community's turnover rate is now compared with a year ago.",
+      "b2b": "Assisted living wages are rising faster in percentage terms but remain more than two dollars an hour below home health, which is the retention arithmetic in a sentence. Compensation reviews built on the internal budget alone will miss the competing offer.",
+      "note": "Two BLS series that plot against each other on one chart. Both unmatched by monitored publishers."
     },
     {
-      "title": "Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027 (09/01/26)",
-      "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17891/fair-market-rents-for-the-housing-choice-voucher-program-moderate-rehabilitation-single-room",
-      "source_id": "federal-register",
-      "published_at": "2026-09-01T00:00:00+00:00",
+      "title": "BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)",
+      "url": "https://data.bls.gov/timeseries/LNU02000097",
+      "source_id": "bls-api",
+      "published_at": "2026-08-01T00:00:00+00:00",
       "score": 63,
       "topics": [
-        "housing"
+        "workforce",
+        "financial_security"
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "HUD published the FY 2027 Fair Market Rents on 09/01/26, including the methods used and the procedure for public housing agencies to request reevaluations under HOTMA.",
-      "consumer": "If you rent with a voucher, the amount it covers changes on October 1; find your area's FY 2027 figure now and ask your housing agency whether your unit still fits under the new payment standard.",
-      "b2b": "The reevaluation procedure is the actionable part for affordable senior housing providers and the agencies that fund them, since an FMR that lags a local market can be formally challenged rather than absorbed.",
-      "note": "Confirmed gap; area-level figures make this the most localizable housing item in the run. Housing is one of two rising topics this run, but the cluster does not cohere, so treat this as its own lead."
+      "hook": "Some 11,753 thousand people aged 65 and over were employed in August 2026, up 2.1% from a year earlier.",
+      "consumer": "If you are still working past 65, ask your employer's benefits office in writing how its plan coordinates with Medicare and what your enrollment obligations are while you remain covered at work. Do not assume one arrangement replaces the other automatically.",
+      "b2b": "This is also a labor supply story for the aging services sector, which recruits from the same cohort it serves. Operators building part-time and flexible schedules have a pool of 11.75 million people to recruit from.",
+      "note": "Long-running monthly series, easy trend line, unmatched by monitored publishers. Good fit for the consumer finance titles."
     },
     {
-      "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice (09/04/26)",
-      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice",
-      "source_id": "federal-register",
-      "published_at": "2026-09-04T00:00:00+00:00",
-      "score": 64,
+      "title": "BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)",
+      "url": "https://data.bls.gov/timeseries/CUUR0000SAM",
+      "source_id": "bls-api",
+      "published_at": "2026-07-01T00:00:00+00:00",
+      "score": 62,
       "topics": [
         "financial_security",
-        "housing"
-      ],
-      "coverage_state": "gap",
-      "is_new": false,
-      "hook": "HUD's FY 2026 Housing Trust Fund allocation notice, published 09/04/26, is the newest item in the run and names the 50 states, DC, Puerto Rico, American Samoa, Guam and the Northern Mariana Islands as eligible grantees.",
-      "consumer": "Housing Trust Fund money flows through your state, so if you are on a waiting list for affordable housing it is worth asking your state agency what this year's allocation is going toward and when applications open.",
-      "b2b": "Nonprofit senior housing developers should be reading the allocation against their pipeline now, because state-level HTF awards set what is financeable in the next cycle.",
-      "localize": null,
-      "chart": "The underlying file supports an original ranking or trend line.",
-      "competitive": "Monitored trades cover this beat and have not written it.",
-      "note": "One day old at run date and a confirmed gap; LeadingAge and Kiplinger are the natural split between provider and consumer framing."
-    },
-    {
-      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer (08/20/26)",
-      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
-      "source_id": "justice-in-aging",
-      "published_at": "2026-08-20T17:01:38+00:00",
-      "score": 58,
-      "topics": [
-        "long_term_care",
         "medicare_medicaid"
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "Justice in Aging published a primer on 08/20/26 explaining how Medicaid HCBS help older adults with disabilities live independently and which policy gaps limit access.",
-      "consumer": "If you or a parent needs help at home rather than a facility, this lays out what Medicaid HCBS can pay for and where the access barriers sit; start by asking your state Medicaid agency which waiver you would apply under and how long the list is.",
-      "b2b": "HCBS is where the labor growth is going, per BLS, and providers weighing a home-based service line should read the identified policy gaps as the constraint on reimbursement, not the demand ceiling.",
-      "localize": null,
-      "chart": null,
-      "competitive": "Monitored trades cover this beat and have not written it.",
-      "note": "Not localizable and no geography attached, but it supplies the policy spine for the whole long-term care cluster; confirmed gap."
+      "hook": "Medical care prices rose 1.7% year over year in July 2026 by the Consumer Price Index measure.",
+      "consumer": "Use 1.7% as your yardstick. If a plan, provider or community raises what you pay by substantially more than that this year, ask what specifically is driving the increase and what the same service cost last year.",
+      "b2b": "A 1.7% medical care CPI is a hard external reference in rate conversations and budget defenses, and it is a useful contrast with the 3.2% wage growth in assisted living, where input costs are outrunning the general medical price measure.",
+      "note": "Unmatched by monitored publishers. Charts well against the wage series for a cost-squeeze graphic."
     },
     {
-      "title": "5 Questions and Answers About Medicaid and Provider Taxes (08/20/26)",
-      "url": "https://www.kff.org/medicaid/5-questions-and-answers-about-medicaid-and-provider-taxes/",
+      "title": "Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits",
+      "url": "https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/",
       "source_id": "kff-feed",
-      "published_at": "2026-08-20T20:01:22+00:00",
+      "published_at": "2026-08-14T12:52:31+00:00",
       "score": 57,
       "topics": [
         "medicare_medicaid"
       ],
       "coverage_state": "gap",
       "is_new": false,
-      "hook": "KFF's 08/20/26 issue brief uses its 2025-2026 survey of Medicaid directors and a proposed rule to describe how provider tax rules are changing under the 2025 reconciliation law and which states are affected.",
-      "consumer": "Provider taxes are part of how your state pays for Medicaid long-term care, so changes here reach the nursing home and home care benefits your family may rely on; ask your state's long-term care ombudsman what is changing locally.",
-      "b2b": "State-by-state exposure to the provider tax changes is a direct reimbursement forecast for nursing facility operators, and finance teams should be mapping it against their Medicaid census before the next rate cycle.",
-      "note": "Sits inside the Medicare and Medicaid group, which is the busiest beat in this run at 26 items across seven sources but does not cohere; this item stands on its own rather than as part of one story."
+      "hook": "KFF estimates that roughly $60 billion in federal Medicaid spending across 37 states including the District of Columbia would likely exceed the new federal limits on state directed payments for hospital services once fully implemented, with California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among those facing the biggest potential reductions.",
+      "consumer": "If you live in one of the named states and depend on a single nearby hospital, this is the year to ask which service lines it expects to keep. Find out now where the next-closest emergency department and inpatient beds are, before you need them in a hurry.",
+      "b2b": "Hospital payment exposure travels downstream to skilled nursing and post-acute referral relationships. Operators in the seven named states should be modeling what reduced hospital payments do to discharge patterns and to partners' willingness to hold beds.",
+      "note": "Named states make this immediately localizable, the $60 billion figure carries a headline, and no monitored publisher matched it."
+    },
+    {
+      "title": "Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026",
+      "url": "https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/",
+      "source_id": "kff-issue-briefs",
+      "published_at": null,
+      "score": 48,
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "coverage_state": "gap",
+      "is_new": false,
+      "hook": "A KFF issue brief puts Medicare Advantage quality bonus spending above $13 billion in 2026.",
+      "consumer": "Before you renew a Medicare Advantage plan, look up its star rating rather than the marketing. The rating is what determines whether the plan draws from this bonus pool, and it is the single comparable number across plans in your county.",
+      "b2b": "For providers and senior living operators with Medicare Advantage contracts, bonus economics shape what plans can afford at the negotiating table, and $13 billion is the size of the pool those conversations sit inside.",
+      "localize": null,
+      "chart": "The figures in the finding are the spine of a simple graphic.",
+      "competitive": "Monitored trades cover this beat and have not written it.",
+      "note": "National figure, strong standalone stat, unmatched by monitored publishers. Fits Fierce Healthcare or the consumer Medicare titles equally."
+    },
+    {
+      "title": "CMS refreshed dataset: Hospice care - National and State CAHPS Hospice Survey Data",
+      "url": "https://data.cms.gov/provider-data/dataset/7cv8-v37d",
+      "source_id": "cms-provider-data",
+      "published_at": "2026-08-07T00:00:00+00:00",
+      "score": 65,
+      "topics": [
+        "medicare_medicaid",
+        "palliative_hospice"
+      ],
+      "coverage_state": "reference",
+      "is_new": false,
+      "hook": "CMS refreshed both the national and the state average CAHPS Hospice Survey scores for Medicare-certified hospice providers on 08/07/26, giving families two comparison points for the same measures.",
+      "consumer": "When a hospital or physician hands you a list of hospices, ask each one how it scored on the CAHPS Hospice Survey and compare that with your state's average. Family members who used the hospice answered those questions, and the state figure tells you whether a provider is ahead of or behind its neighbors.",
+      "b2b": "Having national and state means refreshed together lets hospice operators benchmark precisely rather than against a single national number, and it gives quality teams a defensible target for the measures where their state runs above the national average.",
+      "note": "This is a refreshed public data file rather than a news event, so treat it as the spine of an analysis. Palliative and hospice care was the tightest cluster in the run at 0.457 cohesion, and state means chart on a map."
+    },
+    {
+      "title": "CMS refreshed dataset: Penalties",
+      "url": "https://data.cms.gov/provider-data/dataset/g6vv-u9sr",
+      "source_id": "cms-provider-data",
+      "published_at": "2026-08-01T00:00:00+00:00",
+      "score": 63,
+      "topics": [
+        "long_term_care"
+      ],
+      "coverage_state": "reference",
+      "is_new": false,
+      "hook": "CMS refreshed its file of fines and payment denials received by nursing homes in the last three years on 08/01/26, alongside the Health Deficiencies, Ownership and Survey Summary files.",
+      "consumer": "Before you sign an admission agreement, look up the facility in the penalties file and the health deficiencies file, then check the ownership file to see who actually owns it. Bring the specific citations to your tour and ask what was corrected, when, and by whom.",
+      "b2b": "Joining penalties to the ownership file surfaces chain-level patterns rather than one-off facility problems, which is the version of this data that matters for acquisition due diligence and for insurers pricing a portfolio.",
+      "note": "A refreshed reference file, presented one citation per row, with state and county geography, so it supports a county-level map or a chain ranking. Pairs naturally with the BLS nursing care facilities employment series."
     }
   ],
-  "trends_raw": "Volume held nearly flat at 169 evidence candidates against 170 on 09/03/26, with nothing first surfacing in this run. Housing and financial security each gained an item; long-term care and Medicare and Medicaid each lost one. The order of weight is unchanged: Medicare and Medicaid at 26 items, long-term care at 18, housing at 13, workforce at 10, financial security at 6 and palliative and hospice care at 9. Two clusters actually hold together. Long-term care coheres at 0.256 across BLS, the Center for Retirement Research, CMS provider data and Justice in Aging, and palliative and hospice care coheres at 0.457 across CMS provider data and RAND with all nine items unmatched. Medicare and Medicaid, at seven sources and 26 items, is the busiest beat rather than one story, and its cohesion of 0.054 says so plainly; the KFF items on provider taxes, expansion status, enrollment and rural maternity access share a tag and nothing more. Housing at 0.031 and caregiving at 0.031 are the same situation. The run's shape is a monthly federal data drop rather than a news cycle: the CMS provider files were reissued in a cluster around 07/31/26 and 08/01/26, the BLS series land on the same reference month, and the freshest items are the HUD notices from 09/01/26 and 09/04/26. Coverage posture shows 84 confirmed gaps where monitored publishers work the beat and matched nothing, which is where the reporting leverage sits, plus 76 items on beats no monitored publisher is being watched on at all.",
-  "feature_pitch_raw": "**The pattern:** On 08/01/26 CMS reissued the entire nursing home oversight file family in one pass — Provider Information (certified beds, staffing and the quality scores behind the Five-Star system), Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Survey Summary, Inspection Dates, Citation Code Look-up, MDS Quality Measures, Medicare Claims Quality Measures and the Skilled Nursing Facility Quality Reporting Program file — with Facility Affiliation Data refreshed 07/31/26 and Utilization Data on 08/11/26. Inside the same window, BLS put August 2026 nursing care facilities employment at 1,590.20 thousand jobs, up 2.1% year over year, against home health care services at 1,896.40 thousand, up 5.0%. Justice in Aging published its Medicaid home and community-based services primer on 08/20/26 and the Center for Retirement Research published a comparison of long-term care in Israel and the U.S. on 09/03/26. What connects them is not the subject tag: the public record used to judge an institutional bed was rebuilt all at once, while the employment and policy evidence in the same weeks points at care delivered somewhere else. This cluster coheres, and the four sources reached the same story independently.\n\n**Why pitch this now:** HUD published FY 2027 Fair Market Rents on 09/01/26, which take effect October 1 each year and reset what a voucher covers, and issued the Housing Trust Fund FY 2026 allocation notice on 09/04/26. KFF's 08/20/26 brief describes how provider tax rules are changing under the 2025 reconciliation law and its implementing regulations, state by state. The same facilities whose penalties, deficiencies and ownership records just went back online are heading into a fall in which their Medicaid financing rules and their residents' housing subsidies both move.\n\n**Angle:** \"The August File Drop\" — a single explainer-plus-data piece for families weighing a nursing home this fall and for operators whose citation and ownership history is newly current, built on the CMS Provider Information, Health Deficiencies, Penalties and Ownership files with the BLS facility-versus-home-care employment split as the frame.\n\n**Potential headlines:**\n- Every nursing home inspection record in the country was just refreshed\n- Facility jobs grew 2.1 percent last year. Home care grew 5 percent.\n- What CMS quietly republished in August about the home you are considering\n\n**Potential outlets:**\n- McKnight's Long-Term Care News — Tier 1 on skilled nursing regulation and clinical operations, and the deficiency, penalty and staffing files are exactly its reporting substrate.\n- Skilled Nursing News — Tier 1 on operations and finance; the ownership and facility affiliation refresh has direct business implications.\n- Kiplinger — Tier 2 retirement outlet that runs long-term care costs and state comparisons, which the county- and state-level CMS files support.\n- Family Caregiver Alliance — Tier 2 caregiving authority and the right distribution partner for a how-to-read-the-file guide aimed at adult children.",
-  "pitch_ideas_raw": "**CMS refreshed dataset: Provider Information (08/01/26)**\n- Hook: The file holding certified bed counts, staffing figures and the quality measure scores that feed the Five-Star Rating System was republished on 08/01/26, one row per nursing home.\n- For readers: Before you tour anywhere, pull the row for each home on your shortlist and compare certified beds and staffing against the two or three others you are considering; ask the admissions director to explain any measure where their number sits below the others, and get the answer in writing.\n- For the trade: Every competitor's staffing and quality inputs are current again in the same refresh, which makes this the natural moment for operators to run a market-level benchmarking pass and for referral partners to re-sort their preferred provider lists.\n- Also: Localizable to US states and counties, one row per facility — supports a state-ranked table or a county-level lookup tool.\n\n**CMS refreshed dataset: Health Deficiencies (08/01/26)**\n- Hook: Three years of nursing home health citations, with scope and severity, correction dates and current status, went live again on 08/01/26.\n- For readers: Look up the last three years of citations for any home you are considering, check the scope and severity code rather than the raw count, and ask whether each citation has been corrected and on what date.\n- For the trade: Scope-and-severity distributions by state and by ownership type are the cleanest available proxy for where survey enforcement is tightening, which matters for compliance staffing budgets and for how chains allocate regional quality directors.\n- Also: Confirmed gap among monitored publishers; state and county breakouts make a heat map straightforward.\n\n**CMS refreshed dataset: Penalties (08/01/26)**\n- Hook: Fines and payment denials issued to nursing homes over the last three years were refreshed on 08/01/26.\n- For readers: A fine is public information, so ask the home directly about any payment denial in its record and what changed afterward; a facility that cannot describe the fix is telling you something.\n- For the trade: Penalty totals cross-referenced with the Ownership file show which corporate structures are absorbing the most enforcement cost, a question that carries into underwriting, acquisition diligence and insurance renewal.\n- Also: Pairs naturally with the Ownership and Health Deficiencies files for one analysis; strong Skilled Nursing News fit.\n\n**CMS refreshed dataset: Ownership (08/01/26)**\n- Hook: Current ownership information for every active nursing home was reissued on 08/01/26, alongside the Facility Affiliation Data refreshed 07/31/26.\n- For readers: Find out who actually owns the home you are visiting and what else that owner runs; then check whether the sister facilities carry similar deficiency and penalty records, because patterns travel across a portfolio.\n- For the trade: The affiliation file lets operators and their investors map regional concentration and see which chains have grown or shed facilities since the last refresh, which is competitive intelligence rather than compliance.\n- Also: Two files, two dates, one story; localizable to states and counties for a market-concentration chart.\n\n**CMS refreshed dataset: Fire Safety Deficiencies (08/01/26)**\n- Hook: Three years of nursing home fire safety citations, with tag numbers and correction dates, were refreshed on 08/01/26 and are entirely uncovered by monitored publishers.\n- For readers: Fire safety citations sit in a separate file from health citations, so a home with a clean health record can still have open fire safety tags; check both before you sign anything.\n- For the trade: Life safety code citations are a capital expenditure signal as much as a compliance one, and the correction-date field shows how long facilities in each state are taking to close them out.\n- Also: Confirmed gap; the least-reported of the inspection files and the easiest to own outright.\n\n**CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data (08/07/26)**\n- Hook: State-level average scores for Medicare-certified hospice providers on the CAHPS Hospice Survey were refreshed 08/07/26, with the national file refreshed the same day.\n- For readers: Families rate hospices on things you cannot see on a tour, including communication and timeliness of help; compare your state's average against the national file before you choose, and ask a provider that trails its state average why.\n- For the trade: State-versus-national CAHPS spreads identify markets where family experience scores are systematically lower, which is a recruitment and training argument for hospice operators and a referral-steering question for hospital discharge planners.\n- Also: Sits in the palliative and hospice cluster, which coheres at 0.457 across CMS and RAND, with all nine items unmatched; state-level charting is built in.\n\n**BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)**\n- Hook: Home health care services added jobs at more than twice the rate of nursing care facilities in the year to August 2026, and average hourly earnings in the sector reached 28.04 dollars in July 2026, up 2.0%.\n- For readers: If you are trying to stay at home, the workforce is growing faster in home care than in facilities, which affects how many agencies will actually pick up your call; ask any agency how many hours it can guarantee weekly, not just whether it serves your area.\n- For the trade: Wage growth of 2.0% against 5.0% headcount growth suggests agencies are expanding on volume rather than on pay, which is the number skilled nursing operators should be watching when they lose aides to home care employers.\n- Also: Confirmed gap; two BLS series make a single clean line chart against the nursing facility series.\n\n**BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)**\n- Hook: Nursing care facility employment grew 2.1% year over year while home health grew 5.0%, the sharpest contrast in this run's workforce evidence.\n- For readers: Staffing figures in the refreshed CMS Provider Information file are your best check on whether a specific home is keeping pace; ask what the ratio is on nights and weekends, not the daily average.\n- For the trade: A 2.1% growth rate sets a ceiling on census recovery, and operators should be modeling admissions against the staffing they can realistically hire rather than against licensed bed capacity.\n- Also: Pairs with the CMS staffing measures in Provider Information and Nursing Home Data Collection Intervals for a single labor-and-quality piece.\n\n**BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)**\n- Hook: Assisted living and CCRC employment rose 1.4% year over year while average hourly earnings in the segment hit 25.65 dollars in July 2026, up 3.2%.\n- For readers: Pay in assisted living is rising faster than headcount, which shows up in your monthly bill; when you compare communities, ask what the last two years of rate increases were and what staffing changed in return.\n- For the trade: Earnings growing more than twice as fast as employment is a margin problem before it is a staffing problem, and it frames the pricing conversation for every CCRC entering the FY 2027 budget cycle.\n- Also: Confirmed gap; two BLS series, national only, best charted as wages versus headcount.\n\n**Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027 (09/01/26)**\n- Hook: HUD published the FY 2027 Fair Market Rents on 09/01/26, including the methods used and the procedure for public housing agencies to request reevaluations under HOTMA.\n- For readers: If you rent with a voucher, the amount it covers changes on October 1; find your area's FY 2027 figure now and ask your housing agency whether your unit still fits under the new payment standard.\n- For the trade: The reevaluation procedure is the actionable part for affordable senior housing providers and the agencies that fund them, since an FMR that lags a local market can be formally challenged rather than absorbed.\n- Also: Confirmed gap; area-level figures make this the most localizable housing item in the run. Housing is one of two rising topics this run, but the cluster does not cohere, so treat this as its own lead.\n\n**Housing Trust Fund: Fiscal Year 2026 Allocation Notice (09/04/26)**\n- Hook: HUD's FY 2026 Housing Trust Fund allocation notice, published 09/04/26, is the newest item in the run and names the 50 states, DC, Puerto Rico, American Samoa, Guam and the Northern Mariana Islands as eligible grantees.\n- For readers: Housing Trust Fund money flows through your state, so if you are on a waiting list for affordable housing it is worth asking your state agency what this year's allocation is going toward and when applications open.\n- For the trade: Nonprofit senior housing developers should be reading the allocation against their pipeline now, because state-level HTF awards set what is financeable in the next cycle.\n- Also: One day old at run date and a confirmed gap; LeadingAge and Kiplinger are the natural split between provider and consumer framing.\n\n**Medicaid Home and Community-Based Services for Older Adults: A Primer (08/20/26)**\n- Hook: Justice in Aging published a primer on 08/20/26 explaining how Medicaid HCBS help older adults with disabilities live independently and which policy gaps limit access.\n- For readers: If you or a parent needs help at home rather than a facility, this lays out what Medicaid HCBS can pay for and where the access barriers sit; start by asking your state Medicaid agency which waiver you would apply under and how long the list is.\n- For the trade: HCBS is where the labor growth is going, per BLS, and providers weighing a home-based service line should read the identified policy gaps as the constraint on reimbursement, not the demand ceiling.\n- Also: Not localizable and no geography attached, but it supplies the policy spine for the whole long-term care cluster; confirmed gap.\n\n**5 Questions and Answers About Medicaid and Provider Taxes (08/20/26)**\n- Hook: KFF's 08/20/26 issue brief uses its 2025-2026 survey of Medicaid directors and a proposed rule to describe how provider tax rules are changing under the 2025 reconciliation law and which states are affected.\n- For readers: Provider taxes are part of how your state pays for Medicaid long-term care, so changes here reach the nursing home and home care benefits your family may rely on; ask your state's long-term care ombudsman what is changing locally.\n- For the trade: State-by-state exposure to the provider tax changes is a direct reimbursement forecast for nursing facility operators, and finance teams should be mapping it against their Medicaid census before the next rate cycle.\n- Also: Sits inside the Medicare and Medicaid group, which is the busiest beat in this run at 26 items across seven sources but does not cohere; this item stands on its own rather than as part of one story.",
+  "trends_raw": "Volume was essentially flat at 169 evidence candidates against 170 in the 09/03/26 run, and nothing surfaced for the first time. Housing and financial security each ticked up by one, while long-term care and Medicare and Medicaid each ticked down by one. Medicare and Medicaid remains the heaviest topic at 29 items, followed by long-term care at 18, housing at 14, workforce at 12, financial security at 11, and palliative and hospice care at 9. Coverage posture shows 58 confirmed gaps where monitored publishers cover the beat and none matched the item, plus 77 items on beats where no monitored publisher is being watched at all, which says nothing about whether anyone has written them. The shape of the run matters more than the count. The top of the file is dominated by refreshed CMS reference datasets, which means the advantage this week is analysis rather than a scoop: the nursing home suite, the hospice CAHPS files and the doctors and clinicians files are all public and all sitting there unanalyzed. Housing is where the live edge is, with the Housing Trust Fund FY 2026 allocation notice published 09/04/26 at zero days old and the FY 2027 Fair Market Rents on 09/01/26, and every housing item in the run went unmatched by monitored publishers. Of the eight clusters, only long-term care, palliative and hospice care, and depression and mental health hold together as subjects; Medicare and Medicaid, housing, workforce, financial security and caregiving are tag collections this week and should be pitched as individual leads.",
+  "feature_pitch_raw": "**The pattern:** The long-term care cluster is the one place this run where the items genuinely share a subject: the full CMS nursing home file suite refreshed 08/01/26 (Provider Information, Health Deficiencies, Fire Safety Deficiencies, Penalties, Ownership, Survey Summary, MDS Quality Measures, Nursing Home Data Collection Intervals), the BLS August 2026 employment series for nursing care facilities (1,590.20 thousand jobs, +2.1% year over year), home health care services (1,896.40 thousand, +5.0%) and continuing care retirement communities and assisted living (1,026.90 thousand, +1.4%), and Justice in Aging's Medicaid Home and Community-Based Services primer (08/20/26). Put side by side, they say something specific: every facility-level accountability file in this run describes nursing homes, while hiring is growing more than twice as fast in home health as in the buildings those files grade. The wage series point the same direction, with home health average hourly earnings at $28.04 in July 2026 and assisted living and CCRC earnings at $25.65. Separately, Medicare and Medicaid was the busiest beat of the run at 26 items from seven sources, but those items share a tag and nothing else, from a CMS medical equipment supplier file refreshed 08/30/26 to a KFF data note on Medicaid coverage for women dated 08/26/26. That is not one story and should be worked as separate leads.\n\n**Why pitch this now:** The money underneath these settings is being rewritten. A KFF analysis dated 08/14/26 estimates $60 billion in federal Medicaid spending across 37 states including the District of Columbia would likely exceed the new federal limits on state directed payments for hospital services under the 2025 reconciliation law, with California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among the states facing the biggest potential reductions, and a companion KFF brief on 08/20/26 lays out how provider tax rules are changing. Medical care CPI rose 1.7% year over year in July 2026. Payment pressure and a shifting labor base land on the same operators at the same time.\n\n**Angle:** \"Where the care jobs went,\" a national data story pairing the CMS nursing home files with the three BLS care-setting employment and wage series, written for families choosing between a facility and care at home, with an operator sidebar on recruiting competition across the three settings.\n\n**Potential headlines:**\n- Home health hiring grew 5 percent this year while nursing homes grew 2 percent\n- The care workforce is moving out of buildings and into houses\n- Three care settings, three very different hiring curves\n\n**Potential outlets:**\n- McKnight's Long-Term Care News, because the nursing home staffing and inspection files are its core beat and it will want the reimbursement context\n- Skilled Nursing News, because the employment gap between settings is a business story about census and recruiting cost\n- Senior Housing News, because assisted living and CCRC employment at 1,026.90 thousand jobs with the slowest growth of the three is an operator problem worth its own treatment\n- Next Avenue, because the family-facing version of choosing between home care and a facility is exactly its editorial register\n- Kiplinger, because the wage and medical care CPI series turn the same evidence into a cost-of-care piece for readers planning ahead",
+  "pitch_ideas_raw": "**American Community Survey 2023 state aging and housing profile (52 states)**\n- Hook: State-level counts for 65+, 65-74, 75-84 and 85+ populations sit alongside median household income and housing tenure in one 2023 ACS 5-year file, with California at 5,994,486 residents aged 65 and older and Florida at 4,630,733.\n- For readers: If you are weighing a move, look up your current state and your shortlist state in the same table and compare three things before you commit: the size of the 85+ population, the split between owners and renters, and median household income. A state with a big 65+ headline number is not the same as a state with a big 85+ population, and it is the 85+ number that predicts what care and housing you will be competing for.\n- For the trade: The 85+ column crossed with housing tenure is a site-selection screen: it separates markets where prospects are equity-rich homeowners from markets where they will arrive as renters with no sale proceeds, which changes entry-fee and rental product mix state by state.\n- Also: Fifty-two geographies, no monitored publisher matched it, and it charts cleanly as a ranking or a two-axis scatter. Strong fit for Retirement Living and Multi-Housing News - Senior Housing.\n\n**Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027**\n- Hook: HUD published the FY 2027 Fair Market Rents on 09/01/26, along with the methods behind them and the procedure for public housing agencies to request reevaluations under the Housing Opportunity Through Modernization Act of 2016.\n- For readers: If you rent with a Housing Choice Voucher, the numbers that set your subsidy are adjusted to take effect October 1. Find your metro's figure, compare it with what your landlord is asking, and ask your public housing agency directly whether it intends to request a reevaluation for your area.\n- For the trade: For affordable senior housing owners and the agencies they work with, the reevaluation request window is the actionable part of this notice, and voucher-heavy portfolios should be modeling FY 2027 rents against operating cost growth now rather than in October.\n- Also: Metro-level, so it localizes almost anywhere, and year-over-year FMR change by metro is a straightforward chart. No monitored publisher matched it, so this is a real opening.\n\n**Housing Trust Fund: Fiscal Year 2026 Allocation Notice**\n- Hook: HUD's FY 2026 Housing Trust Fund allocation notice published 09/04/26, the newest item in the run, covering the program established by the Housing and Economic Recovery Act of 2008 with eligible grantees being the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Commonwealth of the Northern Mariana Islands.\n- For readers: These dollars do not come to you directly; they pass through your state's housing agency. If you or a parent are on a waiting list for affordable housing, ask the state agency how it plans to use its Housing Trust Fund allocation this year and which projects are in line for it.\n- For the trade: Nonprofit developers can read state allocations as a pipeline signal, and the notice is the moment to line up applications against the state's stated priorities rather than after awards are announced.\n- Also: Published the day of the run and unmatched by monitored publishers. State-by-state allocation makes a map.\n\n**BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)**\n- Hook: Home health care services employment reached 1,896.40 thousand jobs in August 2026, up 5.0% year over year, the fastest growth of any care setting in this run.\n- For readers: More hiring does not automatically mean more reliable coverage in your house. When you interview an agency, ask how many aides it has added in the past year, how often shifts go unfilled, and who shows up when your regular aide is out.\n- For the trade: Home health is pulling workers at a rate nursing homes and assisted living are not matching, which makes it the wage-setter in most local labor markets. Operators in the other two settings should be pricing their offers against home health, not against each other.\n- Also: Monthly series with a long history, so a three-line chart of the three care settings writes itself. Unmatched by monitored publishers.\n\n**BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)**\n- Hook: Nursing care facilities employed 1,590.20 thousand people in August 2026, up 2.1% year over year, growth less than half the home health rate.\n- For readers: Staffing figures for individual nursing homes are in the CMS Provider Information file that feeds the Five-Star Rating System. Look up the facility you are considering, then ask the administrator directly whether staffing has increased in the past year and how many shifts run short.\n- For the trade: National growth of 2.1% is the benchmark to hold facility-level hiring against, and pairing it with the CMS staffing measures and Nursing Home Data Collection Intervals file shows whether a market's recovery is broad or concentrated in a few chains.\n- Also: Unmatched by monitored publishers, and it pairs directly with the CMS files refreshed 08/01/26 for a staffing-versus-quality treatment.\n\n**BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)**\n- Hook: Average hourly earnings in assisted living and continuing care retirement communities reached $25.65 in July 2026, up 3.2% year over year, while home health care services averaged $28.04, up 2.0%.\n- For readers: Labor is the largest cost in any community you tour. When you get the fee schedule, ask what last year's increase was, how much of it went to caregiver pay, and what the community's turnover rate is now compared with a year ago.\n- For the trade: Assisted living wages are rising faster in percentage terms but remain more than two dollars an hour below home health, which is the retention arithmetic in a sentence. Compensation reviews built on the internal budget alone will miss the competing offer.\n- Also: Two BLS series that plot against each other on one chart. Both unmatched by monitored publishers.\n\n**BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)**\n- Hook: Some 11,753 thousand people aged 65 and over were employed in August 2026, up 2.1% from a year earlier.\n- For readers: If you are still working past 65, ask your employer's benefits office in writing how its plan coordinates with Medicare and what your enrollment obligations are while you remain covered at work. Do not assume one arrangement replaces the other automatically.\n- For the trade: This is also a labor supply story for the aging services sector, which recruits from the same cohort it serves. Operators building part-time and flexible schedules have a pool of 11.75 million people to recruit from.\n- Also: Long-running monthly series, easy trend line, unmatched by monitored publishers. Good fit for the consumer finance titles.\n\n**BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)**\n- Hook: Medical care prices rose 1.7% year over year in July 2026 by the Consumer Price Index measure.\n- For readers: Use 1.7% as your yardstick. If a plan, provider or community raises what you pay by substantially more than that this year, ask what specifically is driving the increase and what the same service cost last year.\n- For the trade: A 1.7% medical care CPI is a hard external reference in rate conversations and budget defenses, and it is a useful contrast with the 3.2% wage growth in assisted living, where input costs are outrunning the general medical price measure.\n- Also: Unmatched by monitored publishers. Charts well against the wage series for a cost-squeeze graphic.\n\n**Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits**\n- Hook: KFF estimates that roughly $60 billion in federal Medicaid spending across 37 states including the District of Columbia would likely exceed the new federal limits on state directed payments for hospital services once fully implemented, with California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among those facing the biggest potential reductions.\n- For readers: If you live in one of the named states and depend on a single nearby hospital, this is the year to ask which service lines it expects to keep. Find out now where the next-closest emergency department and inpatient beds are, before you need them in a hurry.\n- For the trade: Hospital payment exposure travels downstream to skilled nursing and post-acute referral relationships. Operators in the seven named states should be modeling what reduced hospital payments do to discharge patterns and to partners' willingness to hold beds.\n- Also: Named states make this immediately localizable, the $60 billion figure carries a headline, and no monitored publisher matched it.\n\n**Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026**\n- Hook: A KFF issue brief puts Medicare Advantage quality bonus spending above $13 billion in 2026.\n- For readers: Before you renew a Medicare Advantage plan, look up its star rating rather than the marketing. The rating is what determines whether the plan draws from this bonus pool, and it is the single comparable number across plans in your county.\n- For the trade: For providers and senior living operators with Medicare Advantage contracts, bonus economics shape what plans can afford at the negotiating table, and $13 billion is the size of the pool those conversations sit inside.\n- Also: National figure, strong standalone stat, unmatched by monitored publishers. Fits Fierce Healthcare or the consumer Medicare titles equally.\n\n**CMS refreshed dataset: Hospice care - National and State CAHPS Hospice Survey Data**\n- Hook: CMS refreshed both the national and the state average CAHPS Hospice Survey scores for Medicare-certified hospice providers on 08/07/26, giving families two comparison points for the same measures.\n- For readers: When a hospital or physician hands you a list of hospices, ask each one how it scored on the CAHPS Hospice Survey and compare that with your state's average. Family members who used the hospice answered those questions, and the state figure tells you whether a provider is ahead of or behind its neighbors.\n- For the trade: Having national and state means refreshed together lets hospice operators benchmark precisely rather than against a single national number, and it gives quality teams a defensible target for the measures where their state runs above the national average.\n- Also: This is a refreshed public data file rather than a news event, so treat it as the spine of an analysis. Palliative and hospice care was the tightest cluster in the run at 0.457 cohesion, and state means chart on a map.\n\n**CMS refreshed dataset: Penalties**\n- Hook: CMS refreshed its file of fines and payment denials received by nursing homes in the last three years on 08/01/26, alongside the Health Deficiencies, Ownership and Survey Summary files.\n- For readers: Before you sign an admission agreement, look up the facility in the penalties file and the health deficiencies file, then check the ownership file to see who actually owns it. Bring the specific citations to your tour and ask what was corrected, when, and by whom.\n- For the trade: Joining penalties to the ownership file surfaces chain-level patterns rather than one-off facility problems, which is the version of this data that matters for acquisition due diligence and for insurers pricing a portfolio.\n- Also: A refreshed reference file, presented one citation per row, with state and county geography, so it supports a county-level map or a chain ranking. Pairs naturally with the BLS nursing care facilities employment series.",
   "synthesis_mode": "llm",
   "synthesis_model": "claude-opus-5",
   "synthesis_note": null
