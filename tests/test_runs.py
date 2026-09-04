@@ -160,3 +160,22 @@ class PreviousPayloadTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SerpApiDiagnosticTests(unittest.TestCase):
+    """A call count says what was spent; only the reasons say what went wrong.
+
+    "serpapi returned nothing" was the entire diagnosis available for a failed
+    Google News lookup, because the failure summary was collected in the
+    pipeline and then dropped on the way into the run document.
+    """
+
+    def test_failure_reasons_reach_the_run_document(self):
+        payload = {**PAYLOAD, "serpapi_failures": [{"reason": "google_news: quota", "count": 3}]}
+        doc = build_run_document(payload, SYNTHESIS)
+        self.assertEqual(doc["serpapi_failures"], [{"reason": "google_news: quota", "count": 3}])
+
+    def test_no_failures_is_an_empty_list_not_a_missing_key(self):
+        # The dashboard reads .length on it; absent would throw.
+        doc = build_run_document(PAYLOAD, SYNTHESIS)
+        self.assertEqual(doc["serpapi_failures"], [])

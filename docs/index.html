@@ -499,6 +499,8 @@ function renderIdea(idea, rank) {
       ${(idea.consumer || idea.b2b) ? `<div class="field-label">Story angles</div>
         ${idea.consumer ? `<div class="story-angle"><b>For readers:</b> ${esc(idea.consumer)}</div>` : ""}
         ${idea.b2b ? `<div class="story-angle"><b>For the trade:</b> ${esc(idea.b2b)}</div>` : ""}` : ""}
+      ${idea.why ? `<div class="field-label">Why it matters</div>
+        <div class="field-body">${esc(idea.why)}</div>` : ""}
       ${craft.length ? `<div class="field-label">Also worth noting</div>
         <div class="field-body">${craft.map(([k, v]) => `${k}: ${esc(v)}`).join(" ")}</div>` : ""}
       ${outlets.length ? `<div class="field-label">Pitch to</div>
@@ -860,7 +862,9 @@ async function renderMain() {
         : "derived from the run data, no model")}${run.synthesis_note
         ? " — " + esc(run.synthesis_note) : ""}</div>`,
     `<div style="margin-top:6px; color: var(--muted); font-size: 0.82rem;">
-      SerpAPI: ${run.serpapi_calls || 0} calls · demand ${esc(run.demand_source || "—")}
+      SerpAPI: ${run.serpapi_calls || 0} calls${(run.serpapi_failures || []).length
+        ? " (" + (run.serpapi_failures || []).map(f => `${esc(f.reason)} ×${f.count}`).join(", ") + ")"
+        : ""} · demand ${esc(run.demand_source || "—")}
       (${Object.keys(run.demand_topics || {}).length} topics) · web coverage checked
       ${(run.web_coverage_status || {}).checked || 0}${(run.web_coverage_status || {}).skipped_reason
         ? " · skipped: " + esc(run.web_coverage_status.skipped_reason) : ""}</div>`,

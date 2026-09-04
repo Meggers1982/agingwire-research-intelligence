@@ -131,6 +131,10 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
         "demand_topics": payload.get("demand_topics") or {},
         "web_coverage_status": payload.get("web_coverage_status") or {},
         "serpapi_calls": payload.get("serpapi_calls", 0),
+        # The call count says how much was spent; only the failure reasons say
+        # why a lookup came back empty. Dropping them here left "serpapi
+        # returned nothing" as the whole diagnosis, which is not one.
+        "serpapi_failures": payload.get("serpapi_failures") or [],
         "clusters": synthesis.get("clusters", []),
         "story_ideas": synthesis.get("story_ideas", []),
         "trends_raw": synthesis.get("trends_raw", ""),
