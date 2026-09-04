@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T21:14:29.171473+00:00",
+  "generated_at": "2026-09-04T21:37:40.228268+00:00",
   "evidence_count": 169,
-  "new_evidence_count": 1,
-  "coverage_count": 1008,
-  "monitored_publisher_count": 61,
+  "new_evidence_count": 0,
+  "coverage_count": 2292,
+  "monitored_publisher_count": 108,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -16,10 +16,12 @@
     "depression_mental_health",
     "falls",
     "financial_security",
+    "hearing_loss",
     "housing",
     "long_term_care",
     "medicare_medicaid",
     "nutrition",
+    "osteoporosis_bone_health",
     "palliative_hospice",
     "senior_living_quality",
     "sleep",
@@ -163,44 +165,47 @@
     }
   },
   "web_coverage_status": {
-    "checked": 9,
+    "checked": 8,
     "top_n": 15
   },
   "serpapi_calls": 15,
   "serpapi_failures": [
     {
       "reason": "google_news: Google News hasn't returned any results for this query.",
-      "count": 6
+      "count": 7
     }
   ],
   "topic_coverage_counts": {
     "age_tech": 4,
-    "aging_in_place": 13,
-    "assisted_living": 59,
-    "cardiovascular_disease": 5,
-    "caregiving": 8,
+    "ageism_work": 1,
+    "aging_in_place": 19,
+    "assisted_living": 100,
+    "cardiovascular_disease": 9,
+    "caregiving": 14,
     "chronic_pain": 1,
-    "cognitive_decline": 3,
-    "dementia": 22,
-    "depression_mental_health": 8,
-    "falls": 9,
-    "financial_security": 13,
+    "cognitive_decline": 14,
+    "dementia": 61,
+    "depression_mental_health": 11,
+    "falls": 24,
+    "financial_security": 18,
+    "food_security": 1,
     "fraud_scams": 2,
-    "housing": 50,
+    "hearing_loss": 5,
+    "housing": 78,
     "incontinence": 1,
     "loneliness_social_connection": 2,
-    "long_term_care": 38,
-    "medicare_medicaid": 36,
+    "long_term_care": 53,
+    "medicare_medicaid": 49,
     "nutrition": 9,
     "oral_health": 1,
-    "osteoporosis_bone_health": 2,
-    "palliative_hospice": 11,
+    "osteoporosis_bone_health": 4,
+    "palliative_hospice": 12,
     "relationships_sexuality": 1,
     "sarcopenia_frailty": 1,
-    "senior_living_quality": 5,
-    "sleep": 7,
-    "transportation": 3,
-    "workforce": 16
+    "senior_living_quality": 6,
+    "sleep": 11,
+    "transportation": 4,
+    "workforce": 22
   },
   "source_status": [
     {
@@ -334,10 +339,11 @@
     {
       "publisher": "McKnight's Senior Living",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://www.mcknightsseniorliving.com/feed/",
       "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.mcknightsseniorliving.com/feed/"
+      "discovered": true,
+      "items": 10
     },
     {
       "publisher": "Seniors Housing Business",
@@ -360,10 +366,11 @@
     {
       "publisher": "McKnight's Long-Term Care News",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://www.mcknights.com/feed/",
       "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
+      "discovered": true,
+      "items": 10
     },
     {
       "publisher": "Skilled Nursing News",
@@ -395,10 +402,11 @@
     {
       "publisher": "McKnight's Home Care",
       "audience": "b2b",
-      "status": "error",
+      "status": "empty",
       "feed": "https://www.mcknightshomecare.com/homepage/feed/",
       "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.mcknightshomecare.com/homepage/feed/"
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "iAdvance Senior Care",
@@ -451,20 +459,29 @@
     {
       "publisher": "Caregiving.com",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.caregiving.com/"
+      "status": "empty",
+      "feed": "https://web.caregiving.com/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "Senior Living Executive",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.argentum.org/argentummedia/senior-living-executive-magazine/"
+      "status": "ok",
+      "feed": "https://www.argentum.org/wp-json/wp/v2/posts",
+      "kind": "wp_json",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Provider Magazine",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.providermagazine.com/"
+      "status": "ok",
+      "feed": "https://www.providermagazine.com:443/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 4
     },
     {
       "publisher": "Generations Journal",
@@ -496,8 +513,11 @@
     {
       "publisher": "USAging",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.usaging.org/"
+      "status": "ok",
+      "feed": "https://www.usaging.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "REBusinessOnline",
@@ -529,8 +549,11 @@
     {
       "publisher": "AHEAD",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.argentum.org/argentummedia/ahead/"
+      "status": "ok",
+      "feed": "https://www.argentum.org/wp-json/wp/v2/posts",
+      "kind": "wp_json",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Hospice News",
@@ -553,8 +576,11 @@
     {
       "publisher": "National Council on Aging",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.ncoa.org/"
+      "status": "ok",
+      "feed": "https://www.ncoa.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Aging and Disability Business Institute",
@@ -621,22 +647,29 @@
     {
       "publisher": "McKnight's Tech Daily",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://www.mcknights.com/feed/",
       "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.mcknights.com/feed/"
+      "discovered": true,
+      "items": 10
     },
     {
       "publisher": "Mobility Management",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://mobilitymgmt.com/"
+      "status": "ok",
+      "feed": "https://mobilitymgmt.com/wp-json/wp/v2/posts",
+      "kind": "wp_json",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "AARP Public Policy Institute",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.aarp.org/ppi/"
+      "status": "empty",
+      "feed": "https://www.aarp.org/news-sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "Commercial Property Executive",
@@ -720,8 +753,11 @@
     {
       "publisher": "NIC Insider / NIC Notes",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.nic.org/"
+      "status": "ok",
+      "feed": "https://www.nic.org/wp-json/wp/v2/posts",
+      "kind": "wp_json",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "HR Dive",
@@ -735,8 +771,11 @@
     {
       "publisher": "Route Fifty",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.route-fifty.com/"
+      "status": "ok",
+      "feed": "https://www.route-fifty.com/sitemap-news.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 2
     },
     {
       "publisher": "Governing",
@@ -759,8 +798,11 @@
     {
       "publisher": "Home Health Line",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://homehealthline.decisionhealth.com/"
+      "status": "ok",
+      "feed": "http://homehealthline.decisionhealth.com/RobotsSitemap.axd",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Journal of Aging Life Care",
@@ -803,8 +845,11 @@
     {
       "publisher": "Modern Healthcare",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.modernhealthcare.com/"
+      "status": "ok",
+      "feed": "https://www.modernhealthcare.com/sitemap-news.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 12
     },
     {
       "publisher": "HealthLeaders",
@@ -870,20 +915,29 @@
     {
       "publisher": "Longevity.Technology",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://longevity.technology/"
+      "status": "ok",
+      "feed": "https://longevity.technology/feed/",
+      "kind": "rss",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Workspan Daily",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://worldatwork.org/"
+      "status": "ok",
+      "feed": "https://worldatwork.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "NAPA Net Daily",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.napa-net.org/news-info/daily-news"
+      "status": "ok",
+      "feed": "https://www.napa-net.org/globalassets/sitemaps/sitemap-napa.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Food Management",
@@ -909,14 +963,20 @@
     {
       "publisher": "Senior Helpers News/Resources",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.seniorhelpers.com/resources/"
+      "status": "ok",
+      "feed": "https://www.seniorhelpers.com/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "SHRM HR News",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.shrm.org/topics-tools/news"
+      "status": "ok",
+      "feed": "https://www.shrm.org/sitemap-index.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "RIABiz",
@@ -939,8 +999,11 @@
     {
       "publisher": "Longevity Global / Longevity Business Review",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://longevity.technology/"
+      "status": "ok",
+      "feed": "https://longevity.technology/feed/",
+      "kind": "rss",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "StateScoop",
@@ -978,8 +1041,11 @@
     {
       "publisher": "Caregiving.com",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.caregiving.com/"
+      "status": "empty",
+      "feed": "https://web.caregiving.com/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "DailyCaring",
@@ -993,14 +1059,20 @@
     {
       "publisher": "GOBankingRates",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.gobankingrates.com/retirement/"
+      "status": "empty",
+      "feed": "https://www.gobankingrates.com/sitemap-news.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "Retirement Living",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.retirementliving.com/"
+      "status": "ok",
+      "feed": "https://www.retirementliving.com/sitemap_index.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Seniors Guide",
@@ -1014,8 +1086,11 @@
     {
       "publisher": "50Plus-Today",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://50plus-today.com/"
+      "status": "ok",
+      "feed": "https://50plus-today.com/wp-json/wp/v2/posts",
+      "kind": "wp_json",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Ageist",
@@ -1029,8 +1104,11 @@
     {
       "publisher": "AgingCare",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.agingcare.com/"
+      "status": "empty",
+      "feed": "https://www.agingcare.com/sitemaps/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "Apartment Therapy",
@@ -1041,38 +1119,56 @@
     {
       "publisher": "Caring.com",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.caring.com/"
+      "status": "ok",
+      "feed": "https://www.caring.com/sitemap_index.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Family Caregiver Alliance",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.caregiver.org/"
+      "status": "ok",
+      "feed": "https://www.caregiver.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 12
     },
     {
       "publisher": "National Council on Aging",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.ncoa.org/"
+      "status": "ok",
+      "feed": "https://www.ncoa.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "SeniorLiving.org",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.seniorliving.org/"
+      "status": "ok",
+      "feed": "https://www.seniorliving.org/wp-json/wp/v2/posts",
+      "kind": "wp_json",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "The Senior List",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.theseniorlist.com/"
+      "status": "ok",
+      "feed": "https://www.theseniorlist.com/wp-json/wp/v2/posts",
+      "kind": "wp_json",
+      "discovered": true,
+      "items": 6
     },
     {
       "publisher": "USAging",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.usaging.org/resources"
+      "status": "ok",
+      "feed": "https://www.usaging.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Where You Live Matters",
@@ -1092,8 +1188,11 @@
     {
       "publisher": "Bankrate Retirement",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.bankrate.com/retirement/"
+      "status": "ok",
+      "feed": "https://www.bankrate.com/sitemap/sitemap-index.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 37
     },
     {
       "publisher": "Forbes Retirement",
@@ -1107,14 +1206,20 @@
     {
       "publisher": "Yahoo Finance Retirement",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://finance.yahoo.com/topic/retirement/"
+      "status": "empty",
+      "feed": "https://finance.yahoo.com/sitemap_en-us_quotes_index.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "AARP",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.aarp.org/"
+      "status": "empty",
+      "feed": "https://www.aarp.org/news-sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "Boldin",
@@ -1155,14 +1260,20 @@
     {
       "publisher": "USA Today",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.usatoday.com/"
+      "status": "ok",
+      "feed": "https://www.usatoday.com/news-sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Alzheimer's Association",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.alz.org/"
+      "status": "ok",
+      "feed": "https://www.alz.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Better Homes & Gardens",
@@ -1176,14 +1287,20 @@
     {
       "publisher": "Consumer Reports",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.consumerreports.org/"
+      "status": "empty",
+      "feed": "https://www.consumerreports.org/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "Erickson Senior Living",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.ericksonseniorliving.com/"
+      "status": "ok",
+      "feed": "https://www.ericksonseniorliving.com/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Experience Life",
@@ -1203,8 +1320,11 @@
     {
       "publisher": "MarketWatch Retirement",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.marketwatch.com/retirement"
+      "status": "ok",
+      "feed": "https://www.marketwatch.com/mw_news_sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "NPR",
@@ -1218,14 +1338,20 @@
     {
       "publisher": "Prevention",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.prevention.com/"
+      "status": "ok",
+      "feed": "https://www.prevention.com/sitemap_google_news.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 7
     },
     {
       "publisher": "Senior Planet",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://seniorplanet.org/"
+      "status": "ok",
+      "feed": "https://seniorplanet.org/sitemap_index.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 24
     },
     {
       "publisher": "U.S. News Retirement",
@@ -1245,14 +1371,20 @@
     {
       "publisher": "Sisters From AARP",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.sistersletter.com/"
+      "status": "empty",
+      "feed": "https://www.sistersletter.com/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "The Ethel",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.aarpethel.com/"
+      "status": "empty",
+      "feed": "https://www.aarpethel.com/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "The Guardian US",
@@ -1266,8 +1398,11 @@
     {
       "publisher": "Healthline",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.healthline.com/"
+      "status": "empty",
+      "feed": "https://www.healthline.com/hlcms-articles-99.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "Senior Lifestyle Blog",
@@ -1296,8 +1431,11 @@
     {
       "publisher": "Acts Retirement-Life Communities",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.actsretirement.org/latest-retirement-news/"
+      "status": "empty",
+      "feed": "https://www.actsretirement.org/xml-sitemap/",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "National Institute on Aging",
@@ -1316,51 +1454,6 @@
     }
   ],
   "evidence": [
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-04T12:00:00+00:00",
-      "topics": [
-        "fraud_scams"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumers. Specifically, Nuvei processed more than $30 million in consumer payments for Reimage, an offshore tech support scam, from 2017 to 2023, according to the FTC’s complaint. “Today’s action underscores the Commission’s commitment to ensuring that our payments system operates free of fraud,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Our enforcement work reinforces the transparency and trust in the payments system that consumers and businesses depend on. Consumers deserve a payment system that is competitive, transparent and fortified against fraud—and we will take action anytime those standards are threatened.” The complaint also alleges that, through its merchant acquiring bank registered in Cyprus, Nuvei furnished Reimage and other overseas deceptive tech support schemes with payment processing accounts that enabled the schemes to take credit card ",
-      "key_findings": [],
-      "localizable": false,
-      "score": 68,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How the scam works and what protects you or a parent from it.",
-        "For the trade: Liability, resident protection duties and reputational exposure.",
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-04T21:14:29.171473+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
     {
       "source_id": "cms-provider-data",
       "title": "CMS refreshed dataset: Medical Equipment Suppliers",
@@ -1415,7 +1508,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false,
         "web_coverage": {
           "query": "Medical Equipment Suppliers",
@@ -1491,7 +1584,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false,
         "web_coverage": {
           "query": "Medicare Claims Quality Measures",
@@ -1558,7 +1651,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false,
         "web_coverage": {
           "query": "Skilled Nursing Facility Quality Reporting Provider Data",
@@ -1643,7 +1736,7 @@
         "data_file": "outputs/data/acs-2023-state-profile.json",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:01:01.274675+00:00",
-        "runs_seen": 24,
+        "runs_seen": 25,
         "is_new": false
       }
     },
@@ -1702,7 +1795,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false,
         "web_coverage": {
           "query": "Hospice care National CAHPS Hospice Survey Data",
@@ -1769,154 +1862,11 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false,
         "web_coverage": {
           "query": "Hospice care State CAHPS Hospice Survey Data",
           "returned": 2,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "bls-api",
-      "title": "BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562330001",
-      "source_type": "government_api",
-      "published_at": "2026-08-01T00:00:00+00:00",
-      "topics": [
-        "workforce",
-        "assisted_living",
-        "housing"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "BLS Public Data API v2, series CES6562330001; latest observation and year-over-year change",
-      "evidence_grade": "A",
-      "summary": null,
-      "key_findings": [
-        "August 2026: 1,026.90 thousands of jobs",
-        "Year-over-year change: +1.4%"
-      ],
-      "localizable": false,
-      "score": 65,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 5,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a family touring communities should ask about, and what the numbers say.",
-        "For the trade: Operating margin, census and what the disclosure means competitively.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "series_id": "CES6562330001",
-        "units": "thousands of jobs",
-        "latest_value": 1026.9,
-        "yoy_change_pct": 1.4,
-        "observations": [
-          {
-            "year": "2026",
-            "period": "M08",
-            "periodName": "August",
-            "value": "1026.9"
-          },
-          {
-            "year": "2026",
-            "period": "M07",
-            "periodName": "July",
-            "value": "1028.3"
-          },
-          {
-            "year": "2026",
-            "period": "M06",
-            "periodName": "June",
-            "value": "1027.0"
-          },
-          {
-            "year": "2026",
-            "period": "M05",
-            "periodName": "May",
-            "value": "1024.8"
-          },
-          {
-            "year": "2026",
-            "period": "M04",
-            "periodName": "April",
-            "value": "1020.8"
-          },
-          {
-            "year": "2026",
-            "period": "M03",
-            "periodName": "March",
-            "value": "1015.5"
-          },
-          {
-            "year": "2026",
-            "period": "M02",
-            "periodName": "February",
-            "value": "1013.3"
-          },
-          {
-            "year": "2026",
-            "period": "M01",
-            "periodName": "January",
-            "value": "1018.4"
-          },
-          {
-            "year": "2025",
-            "period": "M12",
-            "periodName": "December",
-            "value": "1013.5"
-          },
-          {
-            "year": "2025",
-            "period": "M11",
-            "periodName": "November",
-            "value": "1014.0"
-          },
-          {
-            "year": "2025",
-            "period": "M10",
-            "periodName": "October",
-            "value": "1016.5"
-          },
-          {
-            "year": "2025",
-            "period": "M09",
-            "periodName": "September",
-            "value": "1013.9"
-          },
-          {
-            "year": "2025",
-            "period": "M08",
-            "periodName": "August",
-            "value": "1012.9"
-          }
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 15,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Continuing care retirement communities assisted living employment August 2026 026",
-          "returned": 9,
           "outlet_count": 0,
           "outlets": [],
           "articles": [],
@@ -1978,77 +1928,8 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
-      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-09-04T00:00:00+00:00",
-      "topics": [
-        "financial_security",
-        "housing"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
-      "evidence_grade": "A",
-      "summary": "The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 64,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-18163",
-        "document_type": "Notice",
-        "agencies": [
-          "Housing and Urban Development Department"
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 15,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Housing Trust Fund Fiscal Year 2026 Allocation",
-          "returned": 19,
-          "outlet_count": 1,
-          "outlets": [
-            "Brainerd Dispatch"
-          ],
-          "articles": [
-            {
-              "title": "Crow Wing County majority nixes Housing Trust Fund request",
-              "outlet": "Brainerd Dispatch",
-              "link": "https://www.brainerddispatch.com/news/local/crow-wing-county-majority-nixes-housing-trust-fund-request",
-              "date": "09/04/2026, 07:30 PM, +0000 UTC"
-            }
-          ],
-          "state": "lightly_reported"
-        }
       }
     },
     {
@@ -2106,7 +1987,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -2157,7 +2038,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -2208,7 +2089,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -2266,7 +2147,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false,
         "web_coverage": {
           "query": "Utilization Data",
@@ -2341,7 +2222,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false,
         "web_coverage": {
           "query": "Patient Reported Outcomes Hospital",
@@ -2507,7 +2388,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -2642,8 +2523,16 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 15,
-        "is_new": false
+        "runs_seen": 16,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Nursing care facilities employment August 2026 590 thousands jobs",
+          "returned": 2,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
       }
     },
     {
@@ -2776,7 +2665,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -2834,7 +2723,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -2892,7 +2781,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -2950,7 +2839,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3008,7 +2897,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3066,7 +2955,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3124,7 +3013,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3182,7 +3071,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3240,7 +3129,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3298,7 +3187,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3356,7 +3245,51 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "ftc-consumer-protection",
+      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-04T12:00:00+00:00",
+      "topics": [
+        "fraud_scams"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumers. Specifically, Nuvei processed more than $30 million in consumer payments for Reimage, an offshore tech support scam, from 2017 to 2023, according to the FTC’s complaint. “Today’s action underscores the Commission’s commitment to ensuring that our payments system operates free of fraud,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Our enforcement work reinforces the transparency and trust in the payments system that consumers and businesses depend on. Consumers deserve a payment system that is competitive, transparent and fortified against fraud—and we will take action anytime those standards are threatened.” The complaint also alleges that, through its merchant acquiring bank registered in Cyprus, Nuvei furnished Reimage and other overseas deceptive tech support schemes with payment processing accounts that enabled the schemes to take credit card ",
+      "key_findings": [],
+      "localizable": false,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How the scam works and what protects you or a parent from it.",
+        "For the trade: Liability, resident protection duties and reputational exposure.",
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-04T21:14:29.171473+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -3490,58 +3423,192 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
     {
-      "source_id": "federal-register",
-      "title": "Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults",
-      "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17814/social-security-ruling-ssr-26-2p-titles-ii-and-xvi-documenting-and-evaluating-disability-in-young",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-09-01T00:00:00+00:00",
+      "source_id": "bls-api",
+      "title": "BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562330001",
+      "source_type": "government_api",
+      "published_at": "2026-08-01T00:00:00+00:00",
       "topics": [
-        "financial_security"
+        "workforce",
+        "assisted_living",
+        "housing"
       ],
       "geographies": [
         "United States"
       ],
       "population": null,
-      "methodology": "Federal Register API; Notice from Social Security Administration",
+      "methodology": "BLS Public Data API v2, series CES6562330001; latest observation and year-over-year change",
       "evidence_grade": "A",
-      "summary": "We are providing notice of SSR 26-2p. This SSR explains our policies and consolidates information from our regulations on documenting and evaluating disability in young adults. This ruling rescinds and replaces SSR 11-2p.",
-      "key_findings": [],
+      "summary": null,
+      "key_findings": [
+        "August 2026: 1,026.90 thousands of jobs",
+        "Year-over-year change: +1.4%"
+      ],
       "localizable": false,
       "score": 61,
       "score_components": {
         "priority": 5,
         "novelty": 0,
-        "timeliness": 5,
+        "timeliness": 3,
         "source_quality": 5,
-        "coverage_gap": 5,
+        "coverage_gap": 3,
         "localization": 1,
         "demand": 3,
         "consumer_utility": 3,
-        "b2b_relevance": 1,
+        "b2b_relevance": 5,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a family touring communities should ask about, and what the numbers say.",
+        "For the trade: Operating margin, census and what the disclosure means competitively.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "series_id": "CES6562330001",
+        "units": "thousands of jobs",
+        "latest_value": 1026.9,
+        "yoy_change_pct": 1.4,
+        "observations": [
+          {
+            "year": "2026",
+            "period": "M08",
+            "periodName": "August",
+            "value": "1026.9"
+          },
+          {
+            "year": "2026",
+            "period": "M07",
+            "periodName": "July",
+            "value": "1028.3"
+          },
+          {
+            "year": "2026",
+            "period": "M06",
+            "periodName": "June",
+            "value": "1027.0"
+          },
+          {
+            "year": "2026",
+            "period": "M05",
+            "periodName": "May",
+            "value": "1024.8"
+          },
+          {
+            "year": "2026",
+            "period": "M04",
+            "periodName": "April",
+            "value": "1020.8"
+          },
+          {
+            "year": "2026",
+            "period": "M03",
+            "periodName": "March",
+            "value": "1015.5"
+          },
+          {
+            "year": "2026",
+            "period": "M02",
+            "periodName": "February",
+            "value": "1013.3"
+          },
+          {
+            "year": "2026",
+            "period": "M01",
+            "periodName": "January",
+            "value": "1018.4"
+          },
+          {
+            "year": "2025",
+            "period": "M12",
+            "periodName": "December",
+            "value": "1013.5"
+          },
+          {
+            "year": "2025",
+            "period": "M11",
+            "periodName": "November",
+            "value": "1014.0"
+          },
+          {
+            "year": "2025",
+            "period": "M10",
+            "periodName": "October",
+            "value": "1016.5"
+          },
+          {
+            "year": "2025",
+            "period": "M09",
+            "periodName": "September",
+            "value": "1013.9"
+          },
+          {
+            "year": "2025",
+            "period": "M08",
+            "periodName": "August",
+            "value": "1012.9"
+          }
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-09-04T12:54:49.594163+00:00",
+        "runs_seen": 16,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
+      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-09-04T00:00:00+00:00",
+      "topics": [
+        "financial_security",
+        "housing"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
+      "evidence_grade": "A",
+      "summary": "The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 60,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 4,
+        "b2b_relevance": 3,
         "visualization": 1
       },
-      "b2b_coverage_count": 0,
+      "b2b_coverage_count": 1,
       "b2c_coverage_count": 0,
       "story_angles": [
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "Build an original ranking, map or trend analysis from the underlying public data."
       ],
       "raw_metadata": {
-        "document_number": "2026-17814",
+        "document_number": "2026-18163",
         "document_type": "Notice",
         "agencies": [
-          "Social Security Administration"
+          "Housing and Urban Development Department"
         ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "coverage_state": "light",
+        "first_seen": "2026-09-04T12:54:49.594163+00:00",
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -3675,7 +3742,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -3809,7 +3876,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -3861,7 +3928,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3913,7 +3980,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3964,7 +4031,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults",
+      "url": "https://www.federalregister.gov/documents/2026/09/01/2026-17814/social-security-ruling-ssr-26-2p-titles-ii-and-xvi-documenting-and-evaluating-disability-in-young",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "topics": [
+        "financial_security"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Social Security Administration",
+      "evidence_grade": "A",
+      "summary": "We are providing notice of SSR 26-2p. This SSR explains our policies and consolidates information from our regulations on documenting and evaluating disability in young adults. This ruling rescinds and replaces SSR 11-2p.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 57,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 1,
+      "story_angles": [
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-17814",
+        "document_type": "Notice",
+        "agencies": [
+          "Social Security Administration"
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4008,7 +4125,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4052,7 +4169,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4096,7 +4213,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4140,7 +4257,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4184,7 +4301,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4230,96 +4347,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "justice-in-aging",
-      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer",
-      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-20T17:01:38+00:00",
-      "topics": [
-        "long_term_care",
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 56,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
-        "For the trade: Reimbursement, census mix and regulatory exposure.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "center-retirement-research",
-      "title": "Here’s How Much Americans Rely on Social Security – at All Income Levels",
-      "url": "https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/",
-      "source_type": "web_release",
-      "published_at": "2026-09-02T00:00:00+00:00",
-      "topics": [
-        "financial_security"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 55,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 5,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://crr.bc.edu/publications/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -4363,57 +4391,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
-      "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17746/rescission-of-social-security-acquiescence-ruling-90-22",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-08-31T00:00:00+00:00",
-      "topics": [
-        "financial_security"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Notice from Social Security Administration",
-      "evidence_grade": "A",
-      "summary": "The Commissioner of Social Security gives notice of the rescission of AR 90-2(2): Ruppert v. Bowen, 871 F.2d 1172 (2d Cir. 1989)--Evaluation of a Rental Subsidy as In-Kind Income for Supplemental Security Income (SSI) Benefit Calculation Purposes--Title XVI of the Social Security Act (Act).",
-      "key_findings": [],
-      "localizable": false,
-      "score": 55,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 2,
-      "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-17746",
-        "document_type": "Notice",
-        "agencies": [
-          "Social Security Administration"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -4457,7 +4435,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4501,7 +4479,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4545,7 +4523,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4590,7 +4568,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4633,7 +4611,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -4677,7 +4655,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4721,7 +4699,144 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "Medicaid Home and Community-Based Services for Older Adults: A Primer",
+      "url": "https://justiceinaging.org/report-medicaid-home-and-community-based-services-for-older-adults-with-disabilities-a-primer/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-20T17:01:38+00:00",
+      "topics": [
+        "long_term_care",
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 52,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How to plan for, pay for, or challenge a long-term care decision.",
+        "For the trade: Reimbursement, census mix and regulatory exposure."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 26,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "center-retirement-research",
+      "title": "Here’s How Much Americans Rely on Social Security – at All Income Levels",
+      "url": "https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/",
+      "source_type": "web_release",
+      "published_at": "2026-09-02T00:00:00+00:00",
+      "topics": [
+        "financial_security"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 51,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 2,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 1,
+      "story_angles": [
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://crr.bc.edu/publications/",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
+      "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17746/rescission-of-social-security-acquiescence-ruling-90-22",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "topics": [
+        "financial_security"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Social Security Administration",
+      "evidence_grade": "A",
+      "summary": "The Commissioner of Social Security gives notice of the rescission of AR 90-2(2): Ruppert v. Bowen, 871 F.2d 1172 (2d Cir. 1989)--Evaluation of a Rental Subsidy as In-Kind Income for Supplemental Security Income (SSI) Benefit Calculation Purposes--Title XVI of the Social Security Act (Act).",
+      "key_findings": [],
+      "localizable": false,
+      "score": 51,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 5,
+        "coverage_gap": 1,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 4,
+      "story_angles": [
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-17746",
+        "document_type": "Notice",
+        "agencies": [
+          "Social Security Administration"
+        ],
+        "coverage_state": "saturated",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4777,7 +4892,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4833,7 +4948,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4889,7 +5004,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4945,7 +5060,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5001,7 +5116,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5057,7 +5172,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5102,7 +5217,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5146,7 +5261,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5190,7 +5305,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5235,7 +5350,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5279,7 +5394,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5312,8 +5427,8 @@
         "b2b_relevance": 3,
         "visualization": 1
       },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 2,
+      "b2b_coverage_count": 3,
+      "b2c_coverage_count": 4,
       "story_angles": [
         "For readers: How to plan for, pay for, or challenge a long-term care decision.",
         "For the trade: Reimbursement, census mix and regulatory exposure."
@@ -5322,7 +5437,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5366,7 +5481,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5410,7 +5525,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5454,7 +5569,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5498,7 +5613,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5542,7 +5657,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5586,7 +5701,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5630,7 +5745,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5674,7 +5789,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5718,7 +5833,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5762,7 +5877,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5806,7 +5921,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5850,7 +5965,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5894,7 +6009,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5928,7 +6043,7 @@
         "visualization": 1
       },
       "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
+      "b2c_coverage_count": 2,
       "story_angles": [
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay."
@@ -5937,7 +6052,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -5981,7 +6096,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6025,95 +6140,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "phi-workforce",
-      "title": "Workforce Data Center",
-      "url": "https://www.phinational.org/policy-research/workforce-data-center/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "workforce"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 44,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: Whether you will be able to find and afford help at home.",
-        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.phinational.org/policy-research/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "phi-workforce",
-      "title": "Workforce Research and Strategy Services",
-      "url": "https://www.phinational.org/service/workforce-research-strategy/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "workforce"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 44,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: Whether you will be able to find and afford help at home.",
-        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.phinational.org/policy-research/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6158,28 +6185,27 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
     {
       "source_id": "phi-workforce",
-      "title": "THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER",
-      "url": "https://www.phinational.org/national-resource-center",
+      "title": "Workforce Data Center",
+      "url": "https://www.phinational.org/policy-research/workforce-data-center/",
       "source_type": "web_release",
       "published_at": null,
       "topics": [
-        "caregiving",
         "workforce"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St",
+      "summary": null,
       "key_findings": [],
       "localizable": false,
-      "score": 41,
+      "score": 40,
       "score_components": {
         "priority": 5,
         "novelty": 0,
@@ -6187,22 +6213,65 @@
         "source_quality": 2,
         "coverage_gap": 3,
         "localization": 1,
-        "demand": 2,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
         "visualization": 1
       },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 1,
       "story_angles": [
-        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
-        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers."
+        "For readers: Whether you will be able to find and afford help at home.",
+        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
       ],
       "raw_metadata": {
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "phi-workforce",
+      "title": "Workforce Research and Strategy Services",
+      "url": "https://www.phinational.org/service/workforce-research-strategy/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "workforce"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 40,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 1,
+      "story_angles": [
+        "For readers: Whether you will be able to find and afford help at home.",
+        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.phinational.org/policy-research/",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6236,7 +6305,7 @@
         "visualization": 1
       },
       "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
+      "b2c_coverage_count": 1,
       "story_angles": [
         "For readers: Whether you will be able to find and afford help at home.",
         "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
@@ -6245,49 +6314,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "rand-research",
-      "title": "Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations",
-      "url": "https://www.rand.org/pubs/external_publications/EP71368.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T08:15:00+00:00",
-      "topics": [
-        "depression_mental_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 39,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6329,7 +6356,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6371,7 +6398,51 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "phi-workforce",
+      "title": "THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER",
+      "url": "https://www.phinational.org/national-resource-center",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "caregiving",
+        "workforce"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St",
+      "key_findings": [],
+      "localizable": false,
+      "score": 37,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 1,
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 1,
+      "story_angles": [
+        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
+        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.phinational.org/policy-research/",
+        "coverage_state": "saturated",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6404,8 +6475,8 @@
         "b2b_relevance": 1,
         "visualization": 1
       },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 3,
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 5,
       "story_angles": [
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay."
@@ -6414,14 +6485,14 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
     {
       "source_id": "rand-research",
-      "title": "Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation",
-      "url": "https://www.rand.org/pubs/external_publications/EP71382.html",
+      "title": "Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations",
+      "url": "https://www.rand.org/pubs/external_publications/EP71368.html",
       "source_type": "institutional_rss",
       "published_at": "2026-08-31T08:15:00+00:00",
       "topics": [
@@ -6431,7 +6502,7 @@
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.",
+      "summary": "We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.",
       "key_findings": [],
       "localizable": false,
       "score": 35,
@@ -6447,14 +6518,14 @@
         "b2b_relevance": 1,
         "visualization": 1
       },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 0,
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 1,
       "story_angles": [],
       "raw_metadata": {
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -6501,7 +6572,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6544,7 +6615,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6586,7 +6657,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6628,7 +6699,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6668,7 +6739,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6708,7 +6779,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -6748,7 +6819,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6788,7 +6859,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6828,7 +6899,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6875,49 +6946,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "acl-news",
-      "title": "Falls Prevention Awareness Month Is Here",
-      "url": "https://acl.gov/news-and-events/announcements/falls-prevention-awareness-month-here",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "falls"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 33,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://acl.gov/news",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T18:49:08.151942+00:00",
-        "runs_seen": 28,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6961,7 +6990,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7005,7 +7034,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7045,7 +7074,47 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "rand-research",
+      "title": "Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation",
+      "url": "https://www.rand.org/pubs/external_publications/EP71382.html",
+      "source_type": "institutional_rss",
+      "published_at": "2026-08-31T08:15:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 31,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 1,
+        "localization": 1,
+        "demand": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 1,
+      "story_angles": [],
+      "raw_metadata": {
+        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "coverage_state": "saturated",
+        "first_seen": "2026-09-03T19:14:17.204298+00:00",
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -7085,7 +7154,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7125,7 +7194,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7165,7 +7234,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7205,7 +7274,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7245,7 +7314,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7285,7 +7354,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7325,7 +7394,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7365,7 +7434,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7405,7 +7474,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -7445,7 +7514,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7485,7 +7554,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -7525,7 +7594,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7565,7 +7634,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -7605,7 +7674,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7645,7 +7714,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7685,7 +7754,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7725,7 +7794,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7765,7 +7834,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7805,7 +7874,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7845,7 +7914,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7885,7 +7954,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7927,7 +7996,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7967,7 +8036,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -8007,7 +8076,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8047,7 +8116,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8087,7 +8156,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -8127,7 +8196,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8167,7 +8236,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -8207,7 +8276,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8247,7 +8316,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -8287,7 +8356,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8327,7 +8396,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -8367,7 +8436,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8407,7 +8476,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8447,47 +8516,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC Approves Final Order Against Publishing.com, Settling Allegations It Misled Consumers",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-approves-final-order-against-publishingcom-settling-allegations-it-misled-consumers",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-02T12:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The Federal Trade Commission finalized an order with Publishing.com LLC and its two principals, settling allegations that they misled consumers about how much money consumers were likely to earn using their self-publishing products. Under the order finalized by the Commission, Publishing.com and its principals, CEO Christian Mikkelsen and Chief Product Officer Rasmus Mikkelsen, will pay $1.5 million and be required to substantiate earnings claims in the future. In a complaint first announced in April 2026, the FTC alleged that Publishing.com claimed its programs and services would help consumers earn substantial income publishing e-books and audiobooks online. The FTC further alleged that Christian and Rasmus Mikkelsen claimed that they personally used this system to obtain significant wealth through online self-publishing. The FTC alleged, however, that most consumers who bought Publishing.com’s products and services never made the income the company promised in its advertising. Consumers who sought refunds discovered that Publishing.com imposed many additional conditions, which were often buried in fine print or the company’s lengthy terms of service, that made it difficult or impossible for consumers to get their money back. The FTC’s complaint further alleged that the company failed to disclose when reviews were written by company employees or other interested people, including relatives of the Mikkelsens, and that the company offered incentives to people for providing po",
-      "key_findings": [],
-      "localizable": false,
-      "score": 28,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8527,7 +8556,47 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC Approves Final Order Against Publishing.com, Settling Allegations It Misled Consumers",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-approves-final-order-against-publishingcom-settling-allegations-it-misled-consumers",
+      "source_type": "institutional_rss",
+      "published_at": "2026-07-02T12:00:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The Federal Trade Commission finalized an order with Publishing.com LLC and its two principals, settling allegations that they misled consumers about how much money consumers were likely to earn using their self-publishing products. Under the order finalized by the Commission, Publishing.com and its principals, CEO Christian Mikkelsen and Chief Product Officer Rasmus Mikkelsen, will pay $1.5 million and be required to substantiate earnings claims in the future. In a complaint first announced in April 2026, the FTC alleged that Publishing.com claimed its programs and services would help consumers earn substantial income publishing e-books and audiobooks online. The FTC further alleged that Christian and Rasmus Mikkelsen claimed that they personally used this system to obtain significant wealth through online self-publishing. The FTC alleged, however, that most consumers who bought Publishing.com’s products and services never made the income the company promised in its advertising. Consumers who sought refunds discovered that Publishing.com imposed many additional conditions, which were often buried in fine print or the company’s lengthy terms of service, that made it difficult or impossible for consumers to get their money back. The FTC’s complaint further alleged that the company failed to disclose when reviews were written by company employees or other interested people, including relatives of the Mikkelsens, and that the company offered incentives to people for providing po",
+      "key_findings": [],
+      "localizable": false,
+      "score": 28,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T16:42:45.271073+00:00",
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8567,7 +8636,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8607,7 +8676,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8647,7 +8716,47 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "acl-news",
+      "title": "Falls Prevention Awareness Month Is Here",
+      "url": "https://acl.gov/news-and-events/announcements/falls-prevention-awareness-month-here",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "falls"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 28,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 1,
+      "story_angles": [],
+      "raw_metadata": {
+        "listing_page": "https://acl.gov/news",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T18:49:08.151942+00:00",
+        "runs_seen": 29,
         "is_new": false
       }
     },
@@ -8687,7 +8796,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -8727,7 +8836,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8767,7 +8876,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8807,7 +8916,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8847,7 +8956,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -8887,7 +8996,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -8927,7 +9036,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -8967,7 +9076,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 23,
+        "runs_seen": 24,
         "is_new": false
       }
     },
@@ -9007,7 +9116,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9047,7 +9156,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9087,7 +9196,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9127,7 +9236,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9167,7 +9276,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9207,7 +9316,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9247,7 +9356,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9287,7 +9396,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9327,7 +9436,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9367,7 +9476,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9407,7 +9516,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9447,7 +9556,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9487,7 +9596,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9527,7 +9636,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9567,7 +9676,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9607,7 +9716,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -9647,7 +9756,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     }
