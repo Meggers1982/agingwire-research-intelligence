@@ -64,7 +64,8 @@ from the outlets this project actually monitors. One "- " bullet each, with a
 clause on why it fits. Never suggest an outlet already listed as having
 reported the item.
 
-Story ideas carry two audience angles, always in this order:
+Return 8 to 12 story ideas, one per item, each with two audience angles in this
+order:
 - **For readers** first: what an older adult or their family does with this. Use
   "you" language. Concrete — what to check, ask for, compare, or claim.
 - **For the trade** second: the operator, provider, workforce or senior-housing
@@ -91,9 +92,10 @@ SCHEMA = {
         # deterministic runs with the same card anatomy. Returning markdown here
         # produced one wall of text per idea.
         "story_ideas": {
+            # Structured outputs accept only 0 or 1 for minItems, and the API
+            # rejects the whole request otherwise — the count is asked for in
+            # the prompt instead.
             "type": "array",
-            "minItems": 3,
-            "maxItems": 12,
             "items": {
                 "type": "object",
                 "properties": {

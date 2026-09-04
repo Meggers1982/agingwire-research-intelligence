@@ -166,6 +166,13 @@ class SuccessTests(unittest.TestCase):
         self.assertEqual(set(ideas["items"]["required"]),
                          {"title", "hook", "consumer", "b2b", "note"})
 
+    def test_array_schema_avoids_the_unsupported_minitems(self):
+        """A live run returned 400: minItems other than 0 or 1 is rejected."""
+        self._run()
+        fmt = self.client.messages.create.call_args.kwargs["output_config"]["format"]
+        ideas = fmt["schema"]["properties"]["story_ideas"]
+        self.assertIn(ideas.get("minItems", 0), (0, 1))
+
     def test_system_prompt_forbids_invention_and_gap_confusion(self):
         self._run()
         system = self.client.messages.create.call_args.kwargs["system"]
