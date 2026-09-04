@@ -499,8 +499,6 @@ function renderIdea(idea, rank) {
       ${(idea.consumer || idea.b2b) ? `<div class="field-label">Story angles</div>
         ${idea.consumer ? `<div class="story-angle"><b>For readers:</b> ${esc(idea.consumer)}</div>` : ""}
         ${idea.b2b ? `<div class="story-angle"><b>For the trade:</b> ${esc(idea.b2b)}</div>` : ""}` : ""}
-      ${idea.why ? `<div class="field-label">Why it matters</div>
-        <div class="field-body">${esc(idea.why)}</div>` : ""}
       ${craft.length ? `<div class="field-label">Also worth noting</div>
         <div class="field-body">${craft.map(([k, v]) => `${k}: ${esc(v)}`).join(" ")}</div>` : ""}
       ${outlets.length ? `<div class="field-label">Pitch to</div>

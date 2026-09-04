@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T22:39:37.551270+00:00",
+  "generated_at": "2026-09-04T23:04:38.500664+00:00",
   "evidence_count": 169,
   "new_evidence_count": 0,
-  "coverage_count": 2192,
-  "monitored_publisher_count": 108,
+  "coverage_count": 2326,
+  "monitored_publisher_count": 109,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -21,6 +21,7 @@
     "long_term_care",
     "medicare_medicaid",
     "nutrition",
+    "osteoporosis_bone_health",
     "palliative_hospice",
     "senior_living_quality",
     "sleep",
@@ -164,14 +165,14 @@
     }
   },
   "web_coverage_status": {
-    "checked": 3,
+    "checked": 8,
     "top_n": 15
   },
   "serpapi_calls": 15,
   "serpapi_failures": [
     {
       "reason": "google_news timeout",
-      "count": 12
+      "count": 13
     }
   ],
   "topic_coverage_counts": {
@@ -179,11 +180,11 @@
     "ageism_work": 1,
     "aging_in_place": 19,
     "assisted_living": 100,
-    "cardiovascular_disease": 5,
+    "cardiovascular_disease": 11,
     "caregiving": 14,
     "chronic_pain": 1,
-    "cognitive_decline": 4,
-    "dementia": 33,
+    "cognitive_decline": 14,
+    "dementia": 61,
     "depression_mental_health": 11,
     "falls": 25,
     "financial_security": 18,
@@ -193,17 +194,17 @@
     "housing": 80,
     "incontinence": 1,
     "loneliness_social_connection": 2,
-    "long_term_care": 51,
-    "medicare_medicaid": 48,
+    "long_term_care": 53,
+    "medicare_medicaid": 53,
     "nutrition": 9,
     "oral_health": 1,
-    "osteoporosis_bone_health": 2,
+    "osteoporosis_bone_health": 5,
     "palliative_hospice": 12,
     "relationships_sexuality": 1,
     "sarcopenia_frailty": 1,
     "senior_living_quality": 6,
-    "sleep": 6,
-    "transportation": 4,
+    "sleep": 11,
+    "transportation": 5,
     "workforce": 22
   },
   "source_status": [
@@ -611,10 +612,12 @@
     {
       "publisher": "Managed Healthcare Executive",
       "audience": "b2b",
-      "status": "error",
-      "feed": "https://www.managedhealthcareexecutive.com/rss",
+      "status": "ok",
+      "feed": "https://www.managedhealthcareexecutive.com/rss.xml",
       "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.managedhealthcareexecutive.com/rss"
+      "discovered": false,
+      "items": 30,
+      "recovered_from": "https://www.managedhealthcareexecutive.com/rss"
     },
     {
       "publisher": "Senior Living Innovation Forum",
@@ -907,18 +910,18 @@
       "publisher": "Financial Advisor Magazine",
       "audience": "b2b",
       "status": "error",
-      "feed": "https://www.fa-mag.com/rss.php",
-      "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.fa-mag.com/rss.php"
+      "feed": "https://news.google.com/rss/search?q=site%3Afa-mag.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.fa-mag.com/rss.php); gnews also failed (serpapi returned nothing)"
     },
     {
       "publisher": "Longevity.Technology",
       "audience": "b2b",
-      "status": "empty",
+      "status": "ok",
       "feed": "https://longevity.technology/feed/",
       "kind": "rss",
       "discovered": true,
-      "items": 0
+      "items": 50
     },
     {
       "publisher": "Workspan Daily",
@@ -998,11 +1001,11 @@
     {
       "publisher": "Longevity Global / Longevity Business Review",
       "audience": "b2b",
-      "status": "empty",
+      "status": "ok",
       "feed": "https://longevity.technology/feed/",
       "kind": "rss",
       "discovered": true,
-      "items": 0
+      "items": 50
     },
     {
       "publisher": "StateScoop",
@@ -1131,7 +1134,7 @@
       "feed": "https://www.caregiver.org/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 12
+      "items": 17
     },
     {
       "publisher": "National Council on Aging",
@@ -1341,7 +1344,7 @@
       "feed": "https://www.prevention.com/sitemap_google_news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 7
+      "items": 6
     },
     {
       "publisher": "Senior Planet",
@@ -1643,7 +1646,24 @@
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 36,
-        "is_new": false
+        "is_new": false,
+        "web_coverage": {
+          "query": "Skilled Nursing Facility Quality Reporting Provider Data",
+          "returned": 15,
+          "outlet_count": 1,
+          "outlets": [
+            "HealthLeaders Media"
+          ],
+          "articles": [
+            {
+              "title": "CMS' New Skilled Nursing Rule Will Have Broader Implications on Documentation and Healthcare Data",
+              "outlet": "HealthLeaders Media",
+              "link": "https://www.healthleadersmedia.com/cno/cms-new-skilled-nursing-rule-will-have-broader-implications-documentation-and-healthcare-data",
+              "date": "08/24/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
       }
     },
     {
@@ -1903,7 +1923,15 @@
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 36,
-        "is_new": false
+        "is_new": false,
+        "web_coverage": {
+          "query": "National Downloadable File",
+          "returned": 15,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
       }
     },
     {
@@ -2122,7 +2150,24 @@
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 36,
-        "is_new": false
+        "is_new": false,
+        "web_coverage": {
+          "query": "Utilization Data",
+          "returned": 20,
+          "outlet_count": 1,
+          "outlets": [
+            "Aviation Week"
+          ],
+          "articles": [
+            {
+              "title": "Data: Leap Fleet Growth Narrows The Utilization Gap On CFM56",
+              "outlet": "Aviation Week",
+              "link": "https://aviationweek.com/awin-knowledge-center/data-leap-fleet-growth-narrows-utilization-gap-cfm56",
+              "date": "08/26/2026, 06:07 PM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
       }
     },
     {
@@ -2180,7 +2225,38 @@
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
         "runs_seen": 36,
-        "is_new": false
+        "is_new": false,
+        "web_coverage": {
+          "query": "Patient Reported Outcomes Hospital",
+          "returned": 20,
+          "outlet_count": 3,
+          "outlets": [
+            "Hospital Pharmacy Europe",
+            "Pharmacy Times",
+            "Nature"
+          ],
+          "articles": [
+            {
+              "title": "Digital patient-reported measures remain underused in hospital pharmacy, Spanish study finds",
+              "outlet": "Hospital Pharmacy Europe",
+              "link": "https://hospitalpharmacyeurope.com/pharmacy-practice/health-technology/digital-patient-reported-measures-proms-prems-remain-underused-in-hospital-pharmacy-spanish-study-finds/",
+              "date": "08/28/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Patient-Reported Outcomes and Quality of Life With Axatilimab in cGVHD",
+              "outlet": "Pharmacy Times",
+              "link": "https://www.pharmacytimes.com/view/patient-reported-outcomes-and-quality-of-life-with-axatilimab-in-cgvhd",
+              "date": "08/28/2026, 12:14 AM, +0000 UTC"
+            },
+            {
+              "title": "Single-stage dorsal-inlay augmented metoidioplasty: technique, complications, and patient-reported outcomes",
+              "outlet": "Nature",
+              "link": "https://www.nature.com/articles/s41443-026-01342-4",
+              "date": "08/13/2026, 07:00 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
       }
     },
     {
@@ -2450,7 +2526,15 @@
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
         "runs_seen": 17,
-        "is_new": false
+        "is_new": false,
+        "web_coverage": {
+          "query": "Nursing care facilities employment August 2026 590 thousands jobs",
+          "returned": 2,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
       }
     },
     {

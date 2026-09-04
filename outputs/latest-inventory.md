@@ -1,6 +1,6 @@
 # AgingWire evidence inventory
 
-Generated: 2026-09-04T22:39:37.551270+00:00
+Generated: 2026-09-04T23:04:38.500664+00:00
 
 All **169** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 

@@ -1,146 +1,146 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-04T22:39:37.551270+00:00
+Generated: 2026-09-04T23:04:38.500664+00:00
 
 Evidence candidates: **169** (0 new since the last run)  
-Media coverage items: **2192** from **108** working publisher feeds
+Media coverage items: **2326** from **109** working publisher feeds
 
 ## Bigger picture: feature pitch
 
-**The pattern:** Nursing home payrolls are growing again, and the public record that judges those homes was refreshed at the same moment. BLS puts nursing care facilities employment at 1,590.20 thousands of jobs in August 2026, up 2.1% year over year, while home health care services reached 1,896.40 thousands of jobs, up 5.0%. On 08/01/26 CMS refreshed the files that show where that labor landed: Provider Information, which carries the staffing and quality measures used in the Five-Star Rating System; Health Deficiencies and Fire Safety Deficiencies, each holding three years of citations with scope and severity; Penalties, holding three years of fines and payment denials; and Ownership, naming who runs each active home. Joined, those four sources answer one question facility by facility: is the hiring recovery reaching the homes the surveyors keep coming back to, or the ones that already looked clean.
+**The pattern:** Three HUD filings in under four weeks reset both what an older renter pays and what recourse that renter has if the payment is refused. The FY 2027 Fair Market Rents notice published 09/01/26 sets the payment standards for the Housing Choice Voucher and Moderate Rehabilitation Single Room Occupancy programs, adjusted to be effective October 1, and lays out the procedure for public housing agencies to request reevaluation under the Housing Opportunity Through Modernization Act of 2016. The Housing Trust Fund FY 2026 allocation notice, dated 09/04/26, sends money to the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Northern Mariana Islands. And on 08/10/26 HUD issued a supplemental proposed rule continuing its effort to remove the disparate-impact regulations and leave interpretation of that liability under the Fair Housing Act to the courts. Census ACS 2023 five-year estimates supply the denominator: 5,994,486 California residents aged 65+, 4,630,733 in Florida, with median household income and housing tenure for every state. Separately, Medicare and Medicaid was the busiest beat this run with 26 items from 7 sources, but those items share a tag rather than a subject, so treat them as individual leads rather than one story.
 
-**Why pitch this now:** The August 2026 BLS employment figures are the freshest evidence in this run, one day old, and the CMS deficiency, penalty and ownership files were refreshed 07/31/26 and 08/01/26, so the staffing series and the survey record cover the same stretch of time. Each deficiency and penalty file spans the last three years end to end, which means the comparison can be made now without waiting for another quarterly cycle. Home health's 5.0% growth against nursing homes' 2.1% also gives the piece a second clock: labor is moving toward the home faster than into the building.
+**Why pitch this now:** The FY 2027 rent figures take effect October 1, which gives a September story a live deadline instead of a retrospective one, and the reevaluation window is the only lever a local agency has before the number sticks for a year. The Housing Trust Fund notice, at 09/04/26, is the freshest item in the run, and the disparate-impact proposal is a supplemental notice, meaning the record on it is still open.
 
-**Angle:** The piece argues that a national hiring number tells you almost nothing about the home your mother is in, and then shows what the refreshed CMS files do tell you when citation counts, fines, ownership and reported staffing are read together. Working title: "Hiring Is Up. The Citations Did Not Move." It is written for skilled nursing operators and the state survey and quality staff who answer to these files, with a consumer sidebar for families comparing two homes in one county.
+**Angle:** The piece asks whether a voucher still buys an older renter a home in the states where the 65-and-over population is largest, and what removing the disparate-impact regulations would change for an older applicant who believes a landlord's policy shut them out. Working title: "What a Voucher Buys an Older Renter in October." It is written for older renters and adult children helping a parent move, with a second read for affordable senior housing operators and developers who underwrite to those rent standards.
 
 **Potential headlines:**
-- Hiring is up at nursing homes and the citation counts have not followed
-- Home care is growing at more than twice the rate of nursing homes
-- Three years of fines, ownership and inspections now sit in one place
+- The rent your voucher covers changes October 1
+- HUD wants the courts, not the agency, to decide housing discrimination claims
+- Where 10 million Americans over 65 live, and what the new federal rent numbers say about it
 
 **Potential outlets:**
-- **McKnight's Long-Term Care News** — its skilled nursing readers are the ones measured by the staffing and quality files this story joins, and they argue over Five-Star weighting all year.
-- **Skilled Nursing News** — the refreshed Ownership and Facility Affiliation files let the piece follow citations and penalties up to the chain level, which is the lens its M&A and finance readers already use.
-- **Next Avenue** — the same evidence rewritten as a family's search procedure, which is the kind of practical aging service journalism its readers come for.
-- **Kiplinger** — retirement readers pricing long-term care want the state comparison: where fines, staffing and quality scores diverge before they choose a place to age.
+- **Next Avenue** — writes for the older adult and the adult child actually filling out the voucher paperwork, and this is a fall decision with a fixed date on it.
+- **Senior Housing News** — its operator readership underwrites affordable properties directly against FMR payment standards and Housing Trust Fund allocations.
+- **Seniors Housing Business** — the development and capital-markets audience needs the state-by-state allocation and rent picture before FY 2027 budgets close.
+- **Kiplinger** — pairs the rent numbers with ACS median household income by state for readers weighing whether to stay put or move.
 
 ## The pitch
 
-Nursing care facilities employment hit 1,590.20 thousands of jobs in August 2026, up 2.1% year over year, while home health care services reached 1,896.40 thousands of jobs, up 5.0%. I would like to write the piece that asks where those nursing home hires actually went. CMS refreshed Provider Information, Health Deficiencies, Fire Safety Deficiencies, Penalties, Survey Summary and Ownership on 08/01/26, and the deficiency and penalty files each carry the last three years. Joined to the staffing and quality measures inside Provider Information, they let me sort facilities by citation load, by penalty history and by owner, then test whether reported staffing is rising fastest where the survey record is worst or where it was already clean. Roughly 1,200 words, with a state-level table and a chart of the two BLS series. Your readers are the ones these files measure, and they spend the year arguing about the staffing measure and Five-Star weighting, so the finding lands as an operating question rather than a data curiosity.
+HUD published FY 2027 Fair Market Rents on 09/01/26, adjusted to be effective October 1, and the Housing Trust Fund FY 2026 allocation notice followed on 09/04/26. I would like to write the piece that explains what those two documents change for an older adult holding a Housing Choice Voucher, and what the reevaluation procedure under the Housing Opportunity Through Modernization Act of 2016 lets a local public housing agency do about a payment standard that lands too low for the local market. I would set the rent figures against Census ACS 2023 five-year estimates, which count 5,994,486 California residents aged 65+ and 4,630,733 in Florida alongside median household income and housing tenure, so a reader can find their own state. I would also cover HUD's 08/10/26 supplemental proposal to remove its disparate-impact regulations. About 1,400 words with a state table. Your readers are the people making this decision for themselves or a parent this fall.
 
 ## Story ideas
 
-**Every fine your nursing home paid in the last three years is one search away**
-*CMS refreshed dataset: Penalties*  
-- Angle: The Penalties file lists fines and payment denials for each nursing home over three years, useful to a family vetting a building and to operators watching where enforcement dollars concentrate.
-- Hook: Refreshed 08/01/26 and readable next to the Ownership file, it shows whether fines cluster by owner rather than by building.
-- For readers: Before you sign an admission agreement, pull the last three years of fines and payment denials for the home you are considering and ask the administrator what changed after each one.
-- For the trade: Penalty totals by state and by owner are a due diligence input for acquirers and a reputational exposure operators should model before a survey window opens.
-- Also: Carries state and county geography, so it localizes cleanly and charts as a penalty-per-bed map. This is a refreshed public file rather than an event, so the story has to be the analysis, not the posting.
-- Pitch to: McKnight's Long-Term Care News, Family Caregiver Alliance
+**California has nearly 6 million residents over 65. Your state's number changes what you can afford.**
+*American Community Survey 2023 state aging and housing profile (52 states)*  
+- Angle: Rank all 52 jurisdictions by 65+ population against median household income and the own-versus-rent split, for readers deciding where to age and for developers deciding where to build.
+- Hook: The 2023 ACS five-year estimates put 5,994,486 residents aged 65+ in California and 4,630,733 in Florida, and no monitored publisher matched the file.
+- For readers: Look up your own state's 65+, 65-74, 75-84 and 85+ counts and its median household income before you assume a move south is cheaper, and check the housing tenure figure to see how many people your age there rent rather than own.
+- For the trade: The 75-84 and 85+ breakouts are the acuity signal behind absorption forecasts, and states where the 85+ share is climbing fastest are where independent living inventory converts to assisted living first.
+- Also: Confirmed gap and localizable to every state, with clean chart and ranking potential for a single national table.
+- Pitch to: Senior Housing News, Kiplinger
 
-**Who actually owns the nursing home you are touring**
-*CMS refreshed dataset: Ownership*  
-- Angle: The Ownership file names ownership information for every currently active nursing home, which is the first thing a family cannot find on a facility website and the first thing a competitor checks.
-- Hook: Matched against Health Deficiencies and Penalties, ownership turns a single bad building into a pattern across a chain.
-- For readers: Look up the owner of the home you are considering, then check whether its other facilities in your state carry the same citations you were told were a one-time problem.
-- For the trade: For operators and investors this is the file that makes chain-level quality comparisons possible in public, before a broker or a plaintiff's lawyer runs it first.
-- Also: State and county coverage supports both a national chain ranking and a single-market story.
-- Pitch to: Skilled Nursing News, McKnight's Long-Term Care News
+**The rent your voucher covers changes October 1**
+*Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027*  
+- Angle: Walk through the FY 2027 payment standards and the reevaluation route open to local housing agencies, for older renters on vouchers and the caseworkers fielding their calls.
+- Hook: HUD published the FY 2027 figures on 09/01/26, effective October 1, and no monitored publisher matched the notice.
+- For readers: Ask your public housing agency what the new payment standard is for your unit size, and whether the agency is requesting a reevaluation of your area's FMR under HOTMA before the number takes hold for the year.
+- For the trade: Affordable senior housing owners set FY 2027 rent rolls off these numbers, and the reevaluation procedure is the one route to change a standard that undershoots a metro's actual rents.
+- Also: Confirmed gap with a hard effective date, and the FMR file supports metro-level localization for any market.
+- Pitch to: Next Avenue, Seniors Housing Business
 
-**The citations behind a five-star rating, tag by tag**
-*CMS refreshed dataset: Health Deficiencies*  
-- Angle: The Health Deficiencies file records three years of nursing home health citations with inspection date, tag number, scope and severity and correction status, read by families and by quality directors preparing for their next survey.
-- Hook: Scope and severity, not citation counts, are what separate a paperwork finding from a harm finding, and the file carries both.
-- For readers: Ask the home to show you its most recent health citations and whether each has been corrected, then compare the scope and severity codes rather than counting the number of tags.
-- For the trade: Citation mix by tag is a benchmarking tool for quality teams and a signal to regional operators about where their state survey agency is focusing.
-- Also: Pairs directly with the Citation Code Look-up table, which supplies plain text for each tag, making the analysis reproducible for a local newsroom.
-- Pitch to: McKnight's Long-Term Care News, Skilled Nursing News
+**HUD wants the courts, not the agency, to decide housing discrimination claims**
+*HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations*  
+- Angle: Explain what a supplemental proposal to remove the disparate-impact regulations would mean for an older applicant turned away by a neutral-looking screening policy, written for renters and for the operators who write those policies.
+- Hook: HUD's 08/10/26 supplemental notice continues the effort begun with a January 2026 proposal to leave interpretation of disparate-impact liability under the Fair Housing Act to the courts, and no monitored publisher matched it.
+- For readers: If a community's income, credit or occupancy rule kept you out, understand that the federal route for challenging a policy that harms without proof of intent is what is being rewritten, and that the proposal is still at the comment stage.
+- For the trade: Screening criteria, occupancy standards and marketing practices at senior communities are drafted against this rule, and compliance teams need to read the supplemental notice now rather than after a final rule.
+- Also: Confirmed gap; national in scope but reportable through any state's fair housing enforcement record.
+- Pitch to: Next Avenue, Senior Housing News
+
+**Federal money for the lowest-income renters just got divided up. Here is who got it.**
+*Housing Trust Fund: Fiscal Year 2026 Allocation Notice*  
+- Angle: Track the FY 2026 Housing Trust Fund allocations across the 50 states, the District of Columbia, Puerto Rico, American Samoa, Guam and the Northern Mariana Islands, for readers on affordable housing waitlists and for the developers competing for the funds.
+- Hook: The allocation notice is dated 09/04/26, the freshest item in the run, and coverage so far is light.
+- For readers: Ask your state housing finance agency how it plans to use its Housing Trust Fund allocation and whether any of the resulting units are set aside for older or disabled residents.
+- For the trade: HTF dollars are the gap financing on deals that do not pencil at market rents, and the state-by-state split tells developers where the next round of extremely-low-income senior projects is fundable.
+- Also: Light coverage rather than a gap, and the allocation table localizes to every state and territory.
+- Pitch to: Seniors Housing Business, MarketWatch Retirement
+
+**Home care added workers five times faster than nursing homes this year**
+*BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)*  
+- Angle: Set the August 2026 home health employment level against nursing care facility growth to show where caregiving labor is actually going, for families arranging care at home.
+- Hook: Home health care services employment reached 1,896.40 thousand jobs in August 2026, up 5.0% year over year, while nursing care facilities grew 2.1%, and no monitored publisher matched the series.
+- For readers: If you have been told no aide is available, the national numbers say the workforce is growing, so it is worth asking an agency directly how many hours it can staff and what its current wait is.
+- For the trade: Home care agencies are winning the labor competition against facility-based providers, which reframes referral partnerships and wage benchmarking for skilled nursing and assisted living operators.
+- Also: Confirmed gap, monthly time series, and an easy two-line chart against the nursing facility and assisted living series.
+- Pitch to: Next Avenue, Caring.com
+
+**Nursing homes are hiring again, just not fast**
+*BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)*  
+- Angle: Read the August 2026 nursing care facility staffing level as the backdrop to the staffing measures families see on a facility's public profile.
+- Hook: Nursing care facilities employed 1,590.20 thousand people in August 2026, up 2.1% year over year, and no monitored publisher matched the series.
+- For readers: When you tour a nursing home, ask for its current staffing numbers and how they compare with a year ago, then check the staffing information reported in the federal Provider Information file.
+- For the trade: A 2.1% national gain sets the ceiling for what any single operator can claim as a hiring turnaround, and it is the number reimbursement arguments will be measured against.
+- Also: Confirmed gap; the national series pairs with facility-level CMS staffing data for state comparisons.
+- Pitch to: Provider Magazine, Family Caregiver Alliance
+
+**Assisted living pay is rising faster than home care pay. It is still lower.**
+*BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)*  
+- Angle: Compare July 2026 hourly earnings across assisted living, continuing care and home health to show what the people caring for residents are paid, for families weighing monthly fees.
+- Hook: Assisted living and CCRC average hourly earnings hit $25.65 in July 2026, up 3.2% year over year, against $28.04 in home health care services, up 2.0%, and no monitored publisher matched it.
+- For readers: When a community raises your monthly fee, ask what share went to caregiver wages and how its pay compares with local home care agencies, because the staff you meet on a tour may be choosing between the two.
+- For the trade: Wage growth of 3.2% against 1.4% employment growth in the same sector is a margin question, and operators budgeting FY 2027 labor need both numbers in the same slide.
+- Also: Confirmed gap; both series are monthly and support a wage-gap chart across care settings.
+- Pitch to: McKnight's Senior Living, SeniorLiving.org
+
+**Medical costs rose 1.7% last year. That is not what your out-of-pocket spending will feel like.**
+*BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)*  
+- Angle: Use the July 2026 medical care CPI as the baseline against which readers can test their own premium, drug and dental increases.
+- Hook: The medical care index stood at 593.78 in July 2026, up 1.7% year over year, and no monitored publisher matched the series.
+- For readers: Pull last year's and this year's plan documents side by side and see whether your own increase beat 1.7%, then use the difference as the reason to shop plans during open enrollment.
+- For the trade: Advisers and plan designers building retirement health cost assumptions have an official current figure to anchor projections rather than a rule of thumb.
+- Also: Confirmed gap; a long-running monthly series that charts cleanly against general inflation.
+- Pitch to: Bankrate Retirement, Forbes Retirement
+
+**The tech support scam that emptied your account had a bank behind it**
+*Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud*  
+- Angle: Follow the money past the scammer to the payment processor, for older adults who have been told nothing can be done once a charge clears.
+- Hook: The FTC announced on 09/04/26 that Nuvei will pay $4.85 million to settle charges it opened and maintained accounts for merchants it knew or should have known were engaged in deception, including tech support scams.
+- For readers: If a tech support charge hit your card, dispute it with the card issuer as well as the merchant, because the settlement shows processors are expected to screen the businesses they take on.
+- For the trade: Senior living and home care staff are often the first to hear about a resident's fraudulent charge, and the settlement gives resident-protection programs a concrete escalation path beyond the merchant.
+- Also: We monitor no publisher on the fraud and scams beat, so competitive position here is unknown rather than open; fraud and scams rose by one item this run.
+- Pitch to: Next Avenue, GOBankingRates
+
+**Thirty-seven states face cuts to the payments propping up their hospitals**
+*Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits*  
+- Angle: Localize the estimated $60 billion in federal Medicaid spending that would exceed new limits, state by state, for readers in the eight states named as facing the biggest reductions.
+- Hook: KFF found an estimated $60 billion in federal Medicaid spending across 37 states including the District of Columbia would likely exceed the new limits on state directed payments once fully implemented, and no monitored publisher matched it.
+- For readers: If you live in California, Illinois, Kentucky, Texas, North Carolina, Louisiana or Arizona, ask your local hospital and your state Medicaid agency what services are being reviewed, particularly post-acute and rehabilitation beds.
+- For the trade: Hospital payment reductions push discharge pressure downstream, and skilled nursing and home health operators in the named states should be modeling referral mix changes now.
+- Also: Confirmed gap with a state-by-state structure built for a map.
+- Pitch to: Modern Healthcare, SeniorLiving.org
 
 **How families rated hospice care in your state**
 *CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data*  
-- Angle: The state CAHPS Hospice Survey file gives average scores for Medicare-certified hospice providers by state, which families use when choosing at the hardest possible moment and hospice operators use to benchmark.
-- Hook: The state file was refreshed 08/07/26 alongside the national averages, so every state score has a direct national comparison built in.
-- For readers: Compare your state's hospice family-survey scores against the national average before you choose a provider, and ask any hospice you interview how it scored on the same measures.
-- For the trade: Nonprofit and provider members can see where their state sits against national means, which shapes both marketing claims and quality improvement priorities.
-- Also: Palliative and hospice care was one of the few clusters that genuinely hangs together this run, and the two CAHPS files chart as a single state ranking.
+- Angle: Rank state average scores on the CAHPS Hospice Survey against the national means, for families choosing a hospice under time pressure.
+- Hook: CMS refreshed both the national and state CAHPS Hospice Survey files on 08/07/26, and the pairing lets any state's family-reported scores be read directly against the national average.
+- For readers: Before you sign with a hospice, look up how your state scores on the family survey measures and ask the agency how its own results compare with that state average.
+- For the trade: Hospice operators are marketed on these measures whether they cite them or not, and a state ranking tells a provider exactly where it sits in a referral conversation.
+- Also: A refreshed public data file rather than an event, so the story is the comparison, not the release; the hospice cluster is the run's most coherent, drawing on CMS provider data and RAND research.
 - Pitch to: LeadingAge, SeniorLiving.org
 
-**Home care added workers five times faster than the number of people it lost to turnover talk**
-*BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)*  
-- Angle: Home health care services employment reached 1,896.40 thousands of jobs in August 2026, up 5.0% year over year, a number that matters to families waiting for aide hours and to agencies planning capacity.
-- Hook: Nursing care facilities grew 2.1% over the same year, so the labor is moving toward the home at more than twice the rate.
-- For readers: If an agency told you last year that no aides were available, ask again, and ask specifically how many hours it can staff in your county rather than whether it is hiring.
-- For the trade: Agencies growing headcount at 5.0% while wages rise 2.0% face a margin question their referral partners will start asking about.
-- Also: A confirmed gap against monitored publishers and a clean two-line chart against the nursing facility series.
-- Pitch to: Next Avenue, Caring.com
-
-**Nursing homes are hiring, just slowly**
-*BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)*  
-- Angle: Nursing care facilities employment stood at 1,590.20 thousands of jobs in August 2026, up 2.1% year over year, the number behind every staffing conversation families are having at the front desk.
-- Hook: The growth rate sits well under home health's 5.0% and just above assisted living's 1.4%, which says where workers are choosing to go.
-- For readers: Ask the home how many direct care staff it has added in the past year and compare that with what its reported staffing measure shows in the CMS Provider Information file.
-- For the trade: Operators competing with home health agencies for the same labor pool need this differential in front of their boards before the next budget cycle.
-- Also: A confirmed gap and a national series, but it localizes when paired with facility-level staffing data in the CMS files.
-- Pitch to: Provider Magazine, McKnight's Home Care
-
-**Nearly 11.8 million Americans over 65 are still working**
-*BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)*  
-- Angle: The BLS employment level for people 65 and over reached 11,753 thousands in August 2026, up 2.1% year over year, a figure that reframes both retirement planning coverage and senior living demand forecasting.
-- Hook: Employment among older adults grew at the same 2.1% rate as nursing home payrolls, which puts older workers on both sides of the care economy.
-- For readers: If you are working past 65, check how earned income interacts with the benefits and premiums you are already paying before you take on more hours.
-- For the trade: Senior living operators recruiting from an older labor pool and marketing to residents who have not stopped working are looking at the same 11,753 thousand people.
-- Also: A confirmed gap; national only, but it anchors state stories built on the ACS 65-plus counts.
-- Pitch to: McKnight's Senior Living, GOBankingRates
-
-**Assisted living pay rose faster than home care pay and the jobs still went elsewhere**
-*BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)*  
-- Angle: Average hourly earnings in assisted living and continuing care retirement communities hit $25.65 in July 2026, up 3.2% year over year, against $28.04 and 2.0% growth in home health care services.
-- Hook: The faster-rising wage is the lower wage, and the sector raising pay fastest added jobs at just 1.4%.
-- For readers: When a community tells you it has raised wages, ask what its current starting hourly rate is and how many open direct care positions it is carrying today.
-- For the trade: Communities paying $2.39 an hour less than home health agencies are losing a recruiting argument that a 3.2% raise has not closed.
-- Also: A confirmed gap and a straightforward two-series wage chart; both figures are national.
-- Pitch to: McKnight's Senior Living, SeniorLiving.org
-
-**The rent ceiling for older voucher holders is being reset before October**
-*Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027*  
-- Angle: HUD's FY 2027 Fair Market Rents notice, published 09/01/26, sets the rent standards voucher holders live under and lays out how public housing agencies request reevaluations, which matters to every older renter using a voucher.
-- Hook: HUD must publish FMRs at least annually and they are adjusted to be effective October 1, so the window between publication and effect is short.
-- For readers: If you rent with a voucher, find your area's FY 2027 figure and ask your public housing agency whether it intends to request a reevaluation.
-- For the trade: Affordable senior housing owners and developers underwrite against these numbers, and the HOTMA reevaluation procedure is the lever for markets where the published figure misses.
-- Also: A confirmed gap on a monitored beat, with metro-level detail that supports a local affordability story anywhere.
-- Pitch to: Senior Housing News, Retirement Living
-
-**Where the 65-plus population actually lives, state by state**
-*American Community Survey 2023 state aging and housing profile (52 states)*  
-- Angle: The 2023 ACS five-year estimates give 65-plus, 65 to 74, 75 to 84 and 85-plus counts with median household income and housing tenure for every state, the base layer for any story about where aging demand is going.
-- Hook: California counts 5,994,486 residents aged 65 and over and Florida 4,630,733, and the tenure and income columns explain why those two markets behave nothing alike.
-- For readers: If you are weighing a move, compare your target state's 75-plus and 85-plus counts and median household income against where you live now, since those cohorts drive what care is available locally.
-- For the trade: Developers and capital markets teams can rank states by 85-plus population against owner and renter tenure to find where demand is not matched by inventory.
-- Also: A confirmed gap; 52 state records make it the most chartable item in the run and support a full ranking.
-- Pitch to: Senior Housing News, Kiplinger
-
-**The company that moved the money for tech support scams will pay $4.85 million**
-*Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud*  
-- Angle: The FTC settlement, announced 09/04/26, targets the payment processor rather than the scammers, alleging it opened and maintained accounts for merchants it knew or should have known were deceiving consumers, including tech support scams.
-- Hook: Enforcement is moving up the chain to the firms that process the payments, which is where the money actually stops.
-- For readers: If you paid a tech support company after a pop-up warning, contact your card issuer or bank about the charge, and treat any unsolicited call claiming your computer is infected as a scam.
-- For the trade: Senior living and home care operators running resident fraud education programs now have a concrete case showing that payment processors, not just callers, are being held responsible.
-- Also: No monitored publisher covers this beat, so we have no read on who else has it; the FTC figure of $4.85 million anchors a consumer alert.
-- Pitch to: Next Avenue, GOBankingRates
-
-**An estimated $60 billion in Medicaid hospital payments runs into a new federal limit**
-*Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits*  
-- Angle: The KFF analysis finds an estimated $60 billion in federal Medicaid spending across 37 states, including the District of Columbia, would likely exceed new limits on state directed payments for hospital services once fully implemented.
-- Hook: California, Illinois, Kentucky, Texas, North Carolina and Louisiana are named among the states facing the biggest potential reductions.
-- For readers: If you depend on a hospital in one of the named states, ask your state Medicaid agency and your local hospital what services are at risk as these limits phase in.
-- For the trade: Hospital and post-acute finance teams in the 37 states need to model the payment reduction now, because discharge partners and skilled nursing referral patterns move with hospital margins.
-- Also: A confirmed gap on a beat monitored publishers do cover, and the state list makes it localizable across a third of the country.
-- Pitch to: Modern Healthcare, Fierce Healthcare
+**The fines your nursing home paid are public. Most families never look.**
+*CMS refreshed dataset: Penalties*  
+- Angle: Match three years of nursing home fines and payment denials to the same facilities' health citations and ownership records, for anyone comparing homes for a parent.
+- Hook: The Penalties, Health Deficiencies, Ownership and Survey Summary files were all refreshed 08/01/26, so a single facility's fines, citations and owner can now be read together in one sitting.
+- For readers: Look up any home you are considering in the penalties file, then read its health citations for scope, severity and whether the correction date has passed, and bring the specific tag numbers to your tour.
+- For the trade: Ownership data joined to penalties makes chain-level enforcement patterns visible, which is the frame acquirers and lenders should expect in diligence and in local reporting.
+- Also: Refreshed public files rather than a news event; the long-term care cluster coheres this run, drawing on CMS provider data, BLS employment series and policy research.
+- Pitch to: Skilled Nursing News, Family Caregiver Alliance
 
 ## Research trends and continuity
 
-Volume held essentially flat, 169 evidence candidates against 170 on 09/03/26, with nothing surfacing for the first time in this run. Housing, financial security and fraud and scams each gained an item, while long-term care and Medicare and Medicaid each shed one. The heaviest beats were Medicare and Medicaid at 29, long-term care at 18, housing at 14, workforce at 12, financial security at 11 and palliative and hospice care at 9. Medicare and Medicaid was the busiest beat by a wide margin, 26 items drawn from seven sources, but its cohesion score of 0.054 says plainly that those items share a tag and nothing else: a CMS supplier file, an APM billing advisory, a KFF data note on women's coverage and template comments on immigrant eligibility are four leads, not one story. The two clusters that do hang together are smaller and better: long-term care at 0.256 cohesion across BLS, CMS provider data, Center for Retirement Research and Justice in Aging, and palliative and hospice care at 0.457 across CMS provider data and RAND. Coverage posture is 49 confirmed gaps against 108 monitored publishers, plus 77 items on beats where we watch no publisher at all, which is a blind spot in our monitoring rather than an open field. The run's shape argues for working the coherent clusters and treating the Medicare and Medicaid pile as a queue of separate assignments.
+The run holds at 169 evidence candidates against 170 on 09/03/26, with nothing first surfacing today, so this is a week for working the existing pile rather than chasing new arrivals. Housing, financial security and fraud and scams each gained an item; long-term care and Medicare and Medicaid each lost one. By volume the order is Medicare and Medicaid at 29, long-term care at 18, housing at 14, workforce at 12, financial security at 11 and palliative and hospice care at 9. The shape matters more than the ranking. Medicare and Medicaid is the busiest beat, 26 items from 7 sources, but cohesion sits at 0.05 and the items share a tag rather than a subject, so a CMS supplier file, a KFF women's coverage data note, an APM billing advisory and a comment template on Medicare eligibility for immigrants are four separate leads and not one story. Housing behaves the same way at 0.03. The two clusters that genuinely hold together are smaller: palliative and hospice care at 0.46, built on CMS provider data and RAND research, and long-term care at 0.26, built on BLS employment series, CMS provider data and policy research, with its newest item one day old. Coverage posture shows 49 confirmed gaps, meaning monitored publishers work those beats and none matched the item, plus 77 items on beats where we watch no publisher at all, which tells us where our monitoring is thin rather than where the field is empty. The nursing home file set refreshed 08/01/26 remains the deepest reference material in the run, and the BLS series, including employment among people 65 and over at 11,753 thousand in August 2026, up 2.1% year over year, is the most chartable.
 
 ## Evidence inventory
 
@@ -184,7 +184,7 @@ Top 25 of 169 candidates. Full detail for every item is in `outputs/latest-inven
 ## Pipeline health
 
 Evidence sources: **17 ok**, **0 empty**, **1 error**  
-Publisher feeds: **108 working** of **132 in the registry** (9 error, 15 no feed found)
+Publisher feeds: **109 working** of **132 in the registry** (8 error, 15 no feed found)
 
 ### Evidence-source errors
 
