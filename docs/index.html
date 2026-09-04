@@ -595,15 +595,16 @@ async function renderMain() {
     `<div style="margin-top:8px; color: var(--muted); font-size: 0.82rem;">
       Publisher feeds: ${media.ok || 0} working, ${media.error || 0} error, ${media.no_feed || 0} with no feed found.</div>`,
     `<div style="margin-top:6px; color: var(--muted); font-size: 0.82rem;">
+      Editorial sections: ${esc(run.synthesis_mode === "llm"
+        ? "written by " + (run.synthesis_model || "a model")
+        : "derived from the run data, no model")}${run.synthesis_note
+        ? " — " + esc(run.synthesis_note) : ""}</div>`,
+    `<div style="margin-top:6px; color: var(--muted); font-size: 0.82rem;">
       SerpAPI: ${run.serpapi_calls || 0} calls · demand ${esc(run.demand_source || "—")}
       (${Object.keys(run.demand_topics || {}).length} topics) · web coverage checked
       ${(run.web_coverage_status || {}).checked || 0}${(run.web_coverage_status || {}).skipped_reason
         ? " · skipped: " + esc(run.web_coverage_status.skipped_reason) : ""}</div>`,
   ].join("");
-
-  const modeNote = run.synthesis_mode === "llm"
-    ? `<div class="mode-note">Editorial sections written by ${esc(run.synthesis_model || "an LLM")} from the run's facts.</div>`
-    : `<div class="mode-note">Editorial sections derived from the run data (no model).${run.synthesis_note ? " " + esc(run.synthesis_note) : ""}</div>`;
 
   const items = itemsFor(run);
 
@@ -628,7 +629,7 @@ async function renderMain() {
     </div>
 
     ${sectionBlock("feature-pitch", "Bigger Picture — Feature Pitch",
-      run.feature_pitch_raw ? renderBlock(run.feature_pitch_raw) + modeNote : "",
+      run.feature_pitch_raw ? renderBlock(run.feature_pitch_raw) : "",
       { extraClass: "feature" })}
 
     ${sectionBlock("story-ideas", "Story Ideas",

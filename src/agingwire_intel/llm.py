@@ -56,11 +56,13 @@ makes an editor want it this month. Pipeline metrics are not a reason to pitch.
 
 **Angle:** One named story with a working title and who it is for.
 
-**Potential headlines:** Three. Plain language, no colons-and-subtitles.
+**Potential headlines:** Three, each on its own "- " bullet line. Plain
+language, no colons-and-subtitles.
 
 **Potential outlets:** Pick from the candidate list in the facts, which comes
-from the outlets this project actually monitors. Say in one clause why each fits.
-Never suggest an outlet already listed as having reported the item.
+from the outlets this project actually monitors. One "- " bullet each, with a
+clause on why it fits. Never suggest an outlet already listed as having
+reported the item.
 
 Story ideas carry two audience angles, always in this order:
 - **For readers** first: what an older adult or their family does with this. Use
@@ -73,7 +75,10 @@ Story ideas carry two audience angles, always in this order:
 The consumer angle leads because most of this evidence reaches an older adult
 before it reaches an operator.
 
-Write in markdown using **bold labels** and "- " bullets only. No headings."""
+Formatting: each section is a **bold label** followed by prose on the same line,
+as a paragraph — not a bullet. Only the headline and outlet lists use "- "
+bullets, one item per line. No headings. Putting a whole section on one bullet
+makes the pitch unreadable."""
 
 SCHEMA = {
     "type": "object",
