@@ -183,3 +183,42 @@ class SuccessTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RecordMatchingTests(unittest.TestCase):
+    """The model echoes a title back with additions, so exact lookup misses.
+
+    A live run returned "CMS refreshed dataset: Health Deficiencies (08/01/26)"
+    for an item titled "CMS refreshed dataset: Health Deficiencies", and every
+    idea lost its url, score and coverage state.
+    """
+
+    FALLBACK = [{
+        "title": "CMS refreshed dataset: Health Deficiencies",
+        "url": "https://data.cms.gov/x", "score": 80, "coverage_state": "gap",
+    }]
+
+    def _merge(self, model_title):
+        return llm._as_records(
+            [{"title": model_title, "hook": "h", "consumer": "c", "b2b": "b", "note": "n"}],
+            self.FALLBACK,
+        )[0]
+
+    def test_exact_title_matches(self):
+        self.assertEqual(self._merge("CMS refreshed dataset: Health Deficiencies")["url"],
+                         "https://data.cms.gov/x")
+
+    def test_an_appended_date_still_matches(self):
+        merged = self._merge("CMS refreshed dataset: Health Deficiencies (08/01/26)")
+        self.assertEqual(merged["url"], "https://data.cms.gov/x")
+        self.assertEqual(merged["score"], 80)
+        self.assertEqual(merged["coverage_state"], "gap")
+
+    def test_a_reworded_title_matches_on_similarity(self):
+        self.assertEqual(self._merge("Health Deficiencies dataset refreshed by CMS")["url"],
+                         "https://data.cms.gov/x")
+
+    def test_an_unrelated_title_keeps_the_model_content_without_inventing_facts(self):
+        merged = self._merge("Something else entirely about hospice surveys")
+        self.assertEqual(merged["consumer"], "c")
+        self.assertIsNone(merged.get("url"))

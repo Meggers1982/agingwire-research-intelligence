@@ -3,8 +3,9 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 
-from agingwire_intel.matching import us_date
+from agingwire_intel.matching import title_similar, us_date
 from agingwire_intel.synthesis import build_clusters
 
 log = logging.getLogger(__name__)
@@ -204,17 +205,40 @@ def _facts(payload: dict, previous: dict | None) -> str:
     return json.dumps(facts, ensure_ascii=False, indent=2)
 
 
+def _normalize_title(title: str) -> str:
+    """Strip what the model tends to add when echoing a title back."""
+    text = re.sub(r"\([^)]*\)", " ", str(title or ""))
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+
+
+def _match_record(title: str, fallback: list[dict], by_norm: dict) -> dict:
+    """Find the pipeline record this idea is about.
+
+    An exact lookup is not enough: the model returns "CMS refreshed dataset:
+    Health Deficiencies (08/01/26)" for an item titled "CMS refreshed dataset:
+    Health Deficiencies", so every record missed and the cards lost their links
+    and scores.
+    """
+    norm = _normalize_title(title)
+    if norm in by_norm:
+        return by_norm[norm]
+    for candidate in fallback:
+        if title_similar(title, str(candidate.get("title", ""))):
+            return candidate
+    return {}
+
+
 def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
     """Carry the model's angles onto the deterministic records.
 
     Keeps url, source, date, score and coverage state — facts the model has no
     business restating — while replacing the written angles.
     """
-    by_title = {str(f.get("title", "")).strip().lower(): f for f in fallback}
+    by_norm = {_normalize_title(f.get("title", "")): f for f in fallback}
     out = []
     for idea in ideas:
         title = str(idea.get("title", "")).strip()
-        base = dict(by_title.get(title.lower(), {}))
+        base = dict(_match_record(title, fallback, by_norm))
         base.update({
             "title": title or base.get("title"),
             "hook": idea.get("hook") or base.get("hook"),
