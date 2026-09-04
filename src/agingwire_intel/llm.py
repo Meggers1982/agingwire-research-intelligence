@@ -38,6 +38,17 @@ Hard rules:
 - A coverage_state of "gap" means monitored publishers do cover that beat and none \
   matched the item. That is a real opportunity and can be described as one.
 
+Story ideas carry two audience angles, always in this order:
+- **For readers** first: what an older adult or their family does with this. Use
+  "you" language. Concrete — what to check, ask for, compare, or claim.
+- **For the trade** second: the operator, provider, workforce or senior-housing
+  question. This must be a genuinely different framing, not the reader angle
+  addressed to executives. If the item supports no real trade angle, leave it
+  out rather than padding.
+
+The consumer angle leads because most of this evidence reaches an older adult
+before it reaches an operator.
+
 Write in markdown using **bold labels** and "- " bullets only. No headings."""
 
 SCHEMA = {

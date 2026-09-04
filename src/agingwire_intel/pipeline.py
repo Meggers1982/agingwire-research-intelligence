@@ -21,6 +21,7 @@ from agingwire_intel.matching import title_similar
 from agingwire_intel.media import collect_registry, monitored_topics, topic_coverage_counts
 from agingwire_intel.scoring import is_localizable, score_evidence
 from agingwire_intel.state import SeenLedger
+from agingwire_intel.synthesis import audience_angles
 
 
 def _same_story(evidence, coverage_item) -> bool:
@@ -60,20 +61,23 @@ def _coverage_counts(item, coverage) -> tuple[int, int]:
 
 
 def _angles(item, coverage_state: str, is_new: bool) -> list[str]:
+    """Angles in the order an editor works them.
+
+    The reader angle comes first and the trade angle second, matching
+    senior-research-digest's "To"/"About" split: what an older adult or family
+    does with this, then the separately framed operator question. Craft and
+    competitive notes follow, because they inform how to write it rather than
+    whether it is a story.
+    """
     angles: list[str] = []
     topics = set(item.topics or [])
+    consumer, b2b = audience_angles(sorted(topics))
+    if consumer:
+        angles.append(f"For readers: {consumer}")
+    if b2b:
+        angles.append(f"For the trade: {b2b}")
     if is_localizable(item):
         angles.append("Localize the finding by state, metro or county and identify geographic outliers.")
-    if topics & {
-        "caregiving", "housing", "aging_in_place", "financial_security", "fraud_scams",
-        "loneliness_social_connection", "medicare_medicaid", "transportation", "food_security",
-    }:
-        angles.append("Consumer angle: explain what the evidence changes for older adults and families.")
-    if topics & {
-        "assisted_living", "long_term_care", "workforce", "age_tech", "housing", "caregiving",
-        "senior_living_quality", "medicare_medicaid",
-    }:
-        angles.append("B2B angle: quantify implications for operators, providers, workforce or senior-housing strategy.")
     if item.source_type in {"government_api", "regulatory_filing"}:
         angles.append("Build an original ranking, map or trend analysis from the underlying public data.")
     if is_new:

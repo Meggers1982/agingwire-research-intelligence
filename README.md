@@ -151,7 +151,21 @@ python -m http.server 8000 -d docs
 `docs/index.html` is a browsable archive rather than a single snapshot. The sidebar lists every run ever generated, searchable and filterable by topic; selecting one loads its record from `docs/data/runs/<date>.json`. Each run page carries:
 
 - **Feature pitch** — the strongest cross-source convergence in that run, with the specific evidence named.
-- **Story ideas** — per-item hooks, localization and chart angles, and the competitive situation, rendered as cards. Sources are rotated so adjacent ideas never come from the same feed.
+- **Story ideas** — per-item cards carrying a hook, then two audience angles, then the craft and competitive notes. Sources are rotated so adjacent ideas never come from the same feed.
+
+### Consumer first, then trade
+
+Story ideas follow `senior-research-digest`'s "To"/"About" split. **For readers**
+comes first — what an older adult or their family does with this, in "you"
+language: what to check, ask for, compare or claim. **For the trade** comes
+second and has to be a *different framing*, not the reader angle addressed to
+executives; where a topic supports no real operator question, the line is
+omitted rather than padded. The consumer angle leads because most of this
+evidence reaches an older adult before it reaches an operator.
+
+Both the deterministic path (a per-topic mapping in `synthesis.py`) and the LLM
+prompt follow that order, and `pipeline._angles` orders the item-level angles
+the same way.
 - **Trends** — what changed against the previous run: rising and quieter topics, sources that went silent or resumed.
 - **Topic clusters** — the ranked convergences behind the pitch.
 - **Story opportunities** — the scored items, filterable by new / confirmed gap / localizable / topic.

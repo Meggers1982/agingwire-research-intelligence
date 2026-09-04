@@ -195,8 +195,11 @@
   .idea-lines { margin: 0 0 0 2.2rem; display: grid; grid-template-columns: max-content 1fr; gap: 5px 12px; font-size: 0.87rem; }
   .idea-lines dt {
     font-size: 0.66rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
-    color: var(--accent); padding-top: 2px; white-space: nowrap;
+    color: var(--muted); padding-top: 2px; white-space: nowrap;
   }
+  /* The two audience angles are the point of the entry; the rest is craft. */
+  .idea-lines dt.aud-consumer, .idea-lines dt.aud-b2b { color: var(--accent); }
+  .idea-lines dt.aud-consumer + dd, .idea-lines dt.aud-b2b + dd { color: var(--strong); }
   .idea-lines dd { margin: 0; }
   @media (max-width: 620px) {
     .idea-lines { grid-template-columns: 1fr; gap: 2px; }
@@ -319,11 +322,16 @@ function inline(text) {
 }
 
 function renderIdea(idea, rank) {
+  /* Reader angle first, trade angle second — the same order the digest works
+     in. The craft and competitive notes come after because they inform how to
+     write it, not whether it is a story. */
   const lines = [
-    ["Hook", idea.hook],
-    ["Localize", idea.localize],
-    ["Chart", idea.chart],
-    ["Competitive", idea.competitive],
+    ["Hook", idea.hook, ""],
+    ["For readers", idea.consumer, "aud-consumer"],
+    ["For the trade", idea.b2b, "aud-b2b"],
+    ["Localize", idea.localize, ""],
+    ["Chart", idea.chart, ""],
+    ["Competitive", idea.competitive, ""],
   ].filter(([, v]) => v);
   return `
     <div class="idea">
@@ -340,7 +348,7 @@ function renderIdea(idea, rank) {
         ${webCoverageBadge(idea)}
       </div>
       <dl class="idea-lines">
-        ${lines.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}
+        ${lines.map(([k, v, cls]) => `<dt class="${cls}">${k}</dt><dd>${esc(v)}</dd>`).join("")}
       </dl>
     </div>`;
 }

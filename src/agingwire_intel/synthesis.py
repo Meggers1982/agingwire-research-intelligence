@@ -186,6 +186,56 @@ def render_feature_pitch(clusters: list[dict], now: datetime | None = None) -> s
     return "\n".join(lines).strip()
 
 
+# Mirrors senior-research-digest's "To"/"About" split: the reader angle comes
+# first and speaks to them directly; the trade angle must be a different
+# framing, not the same sentence addressed to operators.
+CONSUMER_ANGLE = {
+    "caregiving": "What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
+    "medicare_medicaid": "What a beneficiary should check about their own coverage, and by when.",
+    "housing": "What it means for an older renter or owner weighing whether to stay put or move.",
+    "aging_in_place": "Whether staying in your own home stays realistic, and what would have to change.",
+    "assisted_living": "What a family touring communities should ask about, and what the numbers say.",
+    "long_term_care": "How to plan for, pay for, or challenge a long-term care decision.",
+    "financial_security": "What it means for your retirement income and what to do before it bites.",
+    "fraud_scams": "How the scam works and what protects you or a parent from it.",
+    "senior_living_quality": "How to read the quality data on a community you are considering.",
+    "workforce": "Whether you will be able to find and afford help at home.",
+    "loneliness_social_connection": "What actually helps, and what to try when a parent is isolated.",
+    "transportation": "How to keep getting to appointments and errands without driving.",
+    "food_security": "What help exists with groceries and meals, and how to claim it.",
+    "elder_abuse": "The warning signs and who to call.",
+    "age_tech": "Whether the device or service is worth it, and what it does not do.",
+    "rural_aging": "What is actually available where you live, and what is not.",
+    "medicare_advantage": "What to compare before you enroll or switch.",
+}
+B2B_ANGLE = {
+    "caregiving": "Referral volume, family expectations and where unpaid care shifts demand onto providers.",
+    "medicare_medicaid": "Payment, eligibility and compliance exposure for providers.",
+    "housing": "Occupancy, development pipeline and pricing pressure for operators.",
+    "aging_in_place": "How home-based demand reshapes the case for congregate settings.",
+    "assisted_living": "Operating margin, census and what the disclosure means competitively.",
+    "long_term_care": "Reimbursement, census mix and regulatory exposure.",
+    "financial_security": "Resident affordability and what it does to rate increases and length of stay.",
+    "fraud_scams": "Liability, resident protection duties and reputational exposure.",
+    "senior_living_quality": "Where the operator sits against the benchmark, and who will notice.",
+    "workforce": "Wage pressure, turnover cost and staffing-ratio compliance.",
+    "loneliness_social_connection": "Programming and outcomes operators can point to.",
+    "transportation": "Service obligations and the cost of providing them.",
+    "food_security": "Dining program cost and partnership opportunities.",
+    "elder_abuse": "Reporting duties, screening practice and survey risk.",
+    "age_tech": "Procurement case, integration cost and what to demand from vendors.",
+    "rural_aging": "Thin markets, access gaps and where expansion actually pencils.",
+    "medicare_advantage": "Contracting and network implications.",
+}
+
+
+def audience_angles(topics: list[str]) -> tuple[str | None, str | None]:
+    """Reader angle first, trade angle second — and only where the topic has one."""
+    consumer = next((CONSUMER_ANGLE[t] for t in topics if t in CONSUMER_ANGLE), None)
+    b2b = next((B2B_ANGLE[t] for t in topics if t in B2B_ANGLE), None)
+    return consumer, b2b
+
+
 COMPETITIVE = {
     "gap": "Monitored trades cover this beat and have not written it.",
     "unmonitored": "Unknown — no monitored publisher covers this beat.",
@@ -220,6 +270,7 @@ def build_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 3
         elif _NUMBER.search(item.get("title") or "") and not local:
             chart = "The figures in the finding are the spine of a simple graphic."
 
+        consumer, b2b = audience_angles(item.get("topics") or [])
         ideas.append({
             "title": item.get("title"),
             "url": item.get("url"),
@@ -230,6 +281,8 @@ def build_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 3
             "coverage_state": _coverage_state(item),
             "is_new": bool((item.get("raw_metadata") or {}).get("is_new")),
             "hook": hook or None,
+            "consumer": consumer,
+            "b2b": b2b,
             "localize": localize,
             "chart": chart,
             "competitive": COMPETITIVE.get(_coverage_state(item)),
@@ -245,7 +298,8 @@ def render_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 
     lines = []
     for idea in ideas:
         lines.append(f"**{idea['title']}**")
-        for prefix, key in (("Hook", "hook"), ("Localize", "localize"),
+        for prefix, key in (("Hook", "hook"), ("For readers", "consumer"),
+                            ("For the trade", "b2b"), ("Localize", "localize"),
                             ("Chart", "chart"), ("Competitive", "competitive")):
             if idea.get(key):
                 lines.append(f"- {prefix}: {idea[key]}")
@@ -330,6 +384,7 @@ def recent_window(payload: dict, days: int = 30) -> list[dict]:
 
 
 __all__ = [
+    "audience_angles",
     "build_clusters",
     "build_story_ideas",
     "recent_window",

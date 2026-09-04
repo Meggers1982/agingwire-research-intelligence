@@ -40,6 +40,8 @@ STORY_IDEA = {
     "title": "Alpha", "url": "https://example.org/a", "source_id": "s",
     "published_at": "2026-09-01T00:00:00+00:00", "score": 90, "topics": ["workforce"],
     "coverage_state": "gap", "is_new": True, "hook": "A hook.",
+    "consumer": "What it changes for a family managing care at home.",
+    "b2b": "Referral volume and staffing exposure for providers.",
     "localize": "Breaks down to US states.", "chart": None,
     "competitive": "Monitored trades cover this beat and have not written it.",
 }

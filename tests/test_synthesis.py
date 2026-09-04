@@ -2,7 +2,9 @@ import unittest
 from datetime import UTC, datetime, timedelta
 
 from agingwire_intel.synthesis import (
+    audience_angles,
     build_clusters,
+    build_story_ideas,
     render_feature_pitch,
     render_story_ideas,
     render_trends,
@@ -131,3 +133,41 @@ class SynthesizeTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AudienceAngleTests(unittest.TestCase):
+    """Mirrors senior-research-digest's To/About split: reader angle first,
+    trade angle second and genuinely different."""
+
+    def test_reader_angle_comes_first_in_the_markdown(self):
+        ideas = render_story_ideas([item("X", "s1", ["caregiving"])])
+        self.assertLess(ideas.index("For readers"), ideas.index("For the trade"))
+
+    def test_reader_and_trade_angles_differ(self):
+        consumer, b2b = audience_angles(["caregiving"])
+        self.assertTrue(consumer and b2b)
+        self.assertNotEqual(consumer, b2b)
+
+    def test_reader_angle_addresses_the_reader(self):
+        consumer, _ = audience_angles(["fraud_scams"])
+        self.assertTrue(any(w in consumer.lower() for w in ("you", "your")), consumer)
+
+    def test_topic_without_a_trade_angle_omits_it(self):
+        """Padding a trade angle where none exists is worse than leaving it out."""
+        consumer, b2b = audience_angles(["oral_health"])
+        self.assertIsNone(consumer)
+        self.assertIsNone(b2b)
+
+    def test_structured_ideas_carry_both_fields(self):
+        idea = build_story_ideas([item("X", "s1", ["housing"])])[0]
+        self.assertIn("consumer", idea)
+        self.assertIn("b2b", idea)
+
+    def test_pipeline_angles_lead_with_the_reader(self):
+        from agingwire_intel.models import EvidenceItem
+        from agingwire_intel.pipeline import _angles
+        ev = EvidenceItem(source_id="s", title="T", url="u", source_type="rss",
+                          topics=["caregiving"])
+        angles = _angles(ev, "gap", False)
+        self.assertTrue(angles[0].startswith("For readers:"), angles)
+        self.assertTrue(any(a.startswith("For the trade:") for a in angles))
