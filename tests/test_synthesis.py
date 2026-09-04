@@ -302,3 +302,26 @@ class RenderingDetailTests(unittest.TestCase):
         })
         self.assertIn("…", line)
         self.assertLess(len(line), MAX_TITLE_CHARS + 60)
+
+
+class HookHonestyTests(unittest.TestCase):
+    """A hook is written. Retyping the source's abstract and labelling it Hook
+    claims a sentence nobody wrote, which is the same failure as a card front
+    showing "A list of Suppliers that indicates the supplies carried"."""
+
+    def test_no_key_finding_means_no_hook(self):
+        ideas = build_story_ideas([item("Alpha", "s1", ["workforce"],
+                                        summary="An agency catalog abstract.")])
+        self.assertIsNone(ideas[0]["hook"])
+        self.assertEqual(ideas[0]["summary"], "An agency catalog abstract.")
+
+    def test_a_key_finding_becomes_the_hook(self):
+        ideas = build_story_ideas([item("Alpha", "s1", ["workforce"],
+                                        key_findings=["August 2026: 1,896.40 thousand jobs"])])
+        self.assertEqual(ideas[0]["hook"], "August 2026: 1,896.40 thousand jobs")
+
+    def test_deterministic_ideas_still_name_outlets(self):
+        """Outlets come from the registry, so they are data, not writing."""
+        ideas = build_story_ideas([item("Alpha", "s1", ["long_term_care"])])
+        self.assertTrue(ideas[0]["outlets"])
+        self.assertIsNone(ideas[0]["headline"])

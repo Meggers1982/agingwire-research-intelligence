@@ -39,7 +39,10 @@ PAYLOAD = {
 STORY_IDEA = {
     "title": "Alpha", "url": "https://example.org/a", "source_id": "s",
     "published_at": "2026-09-01T00:00:00+00:00", "score": 90, "topics": ["workforce"],
-    "coverage_state": "gap", "is_new": True, "hook": "A hook.",
+    "coverage_state": "gap", "is_new": True, "hook": "A hook.", "summary": "What it is.",
+    "headline": "Home care is hiring twice as fast as nursing homes",
+    "angle": "A chart piece setting the three BLS senior-care series against each other.",
+    "outlets": ["Provider Magazine"],
     "consumer": "What it changes for a family managing care at home.",
     "b2b": "Referral volume and staffing exposure for providers.",
     "localize": "Breaks down to US states.", "chart": None, "note": None,
@@ -52,6 +55,7 @@ SYNTHESIS = {
     "trends_raw": "**Volume:** 2 items.",
     "feature_pitch_raw": "**The convergence:** workforce.",
     "pitch_ideas_raw": "**Alpha**",
+    "pitch_draft_raw": "I'd like to write about the home-care hiring gap.",
     "synthesis_mode": "deterministic",
 }
 

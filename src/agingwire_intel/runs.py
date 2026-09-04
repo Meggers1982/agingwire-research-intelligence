@@ -5,6 +5,9 @@ from collections import Counter
 from datetime import UTC, datetime
 from pathlib import Path
 
+from agingwire_intel import outlets as outlet_mod
+from agingwire_intel.scoring import score_band
+
 # A light index the dashboard loads once, plus a file per run fetched on demand.
 # The index must stay small — it is downloaded on every page load.
 INDEX_NAME = "index.json"
@@ -25,12 +28,57 @@ def _search_blob(payload: dict, limit: int = 40) -> str:
     return " ".join(parts).lower()[:4000]
 
 
+# The card front wants one written sentence, not the agency's catalog abstract.
+# "A list of Suppliers that indicates the supplies carried at that location" is
+# metadata about a file; the hook says why it is a story.
+def _hooks_by_url(synthesis: dict) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for idea in synthesis.get("story_ideas") or []:
+        url, hook = idea.get("url"), (idea.get("hook") or "").strip()
+        if url and hook:
+            out[url] = hook
+    return out
+
+
+def _written_hook(item: dict, hooks: dict[str, str]) -> str | None:
+    """A hook only counts when someone wrote it.
+
+    The deterministic path falls back to the item's own summary when it has no
+    key finding, so its "hook" is the agency's abstract retyped -- labelling
+    that as a hook on the card front would be a lie about where the sentence
+    came from. No hook is better than a borrowed one; the card falls back to the
+    summary and says so.
+    """
+    hook = (hooks.get(item.get("url")) or "").strip()
+    if not hook:
+        return None
+    summary = (item.get("summary") or "").strip()
+    if summary and (summary.startswith(hook.rstrip("… ")) or hook.startswith(summary[:120])):
+        return None
+    return hook
+
+
+def _outlets_for(item: dict) -> list[dict]:
+    """The card's outlet chips, from the same matcher the model is given."""
+    return [
+        {
+            "publisher": row["publisher"],
+            "audience": row["audience"],
+            "tier": row["tier"],
+            "beat": row["coverage"] or row["category"],
+            "rationale": row["rationale"],
+        }
+        for row in outlet_mod.for_item(item)
+    ]
+
+
 def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_ITEMS) -> dict:
     """One run's full record, as the dashboard consumes it."""
     evidence = payload.get("evidence", [])
     topics = Counter(t for i in evidence for t in i.get("topics") or [])
     sources = Counter(i.get("source_id") for i in evidence if i.get("source_id"))
     rid = run_id(payload.get("generated_at", ""))
+    hooks = _hooks_by_url(synthesis)
 
     def slim(item: dict) -> dict:
         meta = item.get("raw_metadata") or {}
@@ -44,7 +92,10 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
             "geographies": item.get("geographies") or [],
             "localizable": bool(item.get("localizable")),
             "score": item.get("score"),
+            "score_band": score_band(item.get("score")),
             "score_components": item.get("score_components") or {},
+            "hook": _written_hook(item, hooks),
+            "outlets": _outlets_for(item),
             "summary": (item.get("summary") or "")[:900] or None,
             "key_findings": [str(f)[:400] for f in (item.get("key_findings") or [])[:3]],
             "story_angles": item.get("story_angles") or [],
@@ -55,6 +106,8 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
             "runs_seen": meta.get("runs_seen"),
             "web_coverage": meta.get("web_coverage"),
         }
+
+    slim_items = [slim(i) for i in evidence[:items]]
 
     return {
         "id": rid,
@@ -70,7 +123,8 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
         "top_topics": [t for t, _ in topics.most_common(8)],
         "topic_counts": dict(topics.most_common(40)),
         "source_counts": dict(sources.most_common(40)),
-        "items": [slim(i) for i in evidence[:items]],
+        "items": slim_items,
+        "outlet_index": _outlet_index(slim_items),
         "source_status": payload.get("source_status", []),
         "media_status_summary": _media_summary(payload.get("media_status", [])),
         "demand_source": payload.get("demand_source"),
@@ -81,11 +135,41 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
         "story_ideas": synthesis.get("story_ideas", []),
         "trends_raw": synthesis.get("trends_raw", ""),
         "feature_pitch_raw": synthesis.get("feature_pitch_raw", ""),
+        "pitch_draft_raw": synthesis.get("pitch_draft_raw", ""),
         "pitch_ideas_raw": synthesis.get("pitch_ideas_raw", ""),
         "synthesis_mode": synthesis.get("synthesis_mode", "deterministic"),
         "synthesis_model": synthesis.get("synthesis_model"),
         "synthesis_note": synthesis.get("synthesis_note"),
     }
+
+
+def _outlet_index(items: list[dict]) -> list[dict]:
+    """Every matched publication, with the candidates that fit it.
+
+    This is the view that answers "what do I send McKnight's this month?",
+    which the per-item list cannot: it is the same data read the other way up.
+    """
+    by_publisher: dict[str, dict] = {}
+    for item in items:
+        for outlet in item.get("outlets") or []:
+            entry = by_publisher.setdefault(outlet["publisher"], {
+                "publisher": outlet["publisher"],
+                "audience": outlet["audience"],
+                "tier": outlet["tier"],
+                "beat": outlet["beat"],
+                "rationale": outlet["rationale"],
+                "items": [],
+            })
+            entry["items"].append({
+                "title": item.get("title"),
+                "url": item.get("url"),
+                "score": item.get("score"),
+            })
+    ranked = sorted(
+        by_publisher.values(),
+        key=lambda e: (-len(e["items"]), e["tier"] or "zz", e["publisher"]),
+    )
+    return ranked[:40]
 
 
 def _media_summary(media_status: list[dict]) -> dict:

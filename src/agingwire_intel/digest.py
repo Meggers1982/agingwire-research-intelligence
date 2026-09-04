@@ -4,6 +4,7 @@ from pathlib import Path
 
 from agingwire_intel.grouping import batch_label, group_evidence, title_stem
 from agingwire_intel.matching import us_date
+from agingwire_intel.scoring import score_band
 
 
 def _health_section(payload: dict) -> list[str]:
@@ -69,6 +70,7 @@ def _synthesis_sections(synthesis: dict | None) -> list[str]:
     lines: list[str] = []
     for heading, key in (
         ("Bigger picture: feature pitch", "feature_pitch_raw"),
+        ("The pitch", "pitch_draft_raw"),
         ("Story ideas", "pitch_ideas_raw"),
         ("Research trends and continuity", "trends_raw"),
     ):
@@ -91,7 +93,10 @@ def _inventory_line(rank: int, group: dict) -> str:
     url = lead.get("url")
     linked = f"[{title}]({url})" if url else title
     coverage = COVERAGE_SHORT.get(meta.get("coverage_state", ""), "—")
-    return f"| {rank} | {lead.get('score', 0)} | {linked} | {published} | {coverage} |"
+    # The band is what a weighted sum of ten 0-5 components can support; the
+    # integer is kept beside it because it is what the order was made from.
+    band = score_band(lead.get("score"))
+    return f"| {rank} | {band} ({lead.get('score', 0)}) | {linked} | {published} | {coverage} |"
 
 
 def _inventory_section(payload: dict, limit: int) -> list[str]:
@@ -117,7 +122,7 @@ def _inventory_section(payload: dict, limit: int) -> list[str]:
         "<summary>Show the ranked list</summary>",
         "",
         "| # | Score | Item | Published | Coverage |",
-        "| --: | --: | --- | --- | --- |",
+        "| --: | --- | --- | --- | --- |",
     ]
     lines += [_inventory_line(i, g) for i, g in enumerate(groups, 1)]
     lines += ["", "</details>", ""]
@@ -180,7 +185,7 @@ def _render_group(index: int, group: dict) -> list[str]:
     lines = [
         f"### {index}. {batch_label(group)}",
         "",
-        f"**Top score:** {lead.get('score', 0)}/100  ",
+        f"**Top score:** {score_band(lead.get('score'))} — {lead.get('score', 0)}/100  ",
         f"**Source:** {lead.get('source_id')} ({lead.get('source_type')})  ",
         f"**Topics:** {_topics(lead)}",
         "",
@@ -225,7 +230,7 @@ def _render_item(index: int, item: dict) -> list[str]:
     lines = [
         f"### {index}. {item.get('title', 'Untitled')}",
         "",
-        f"**Score:** {item.get('score', 0)}/100  ",
+        f"**Score:** {score_band(item.get('score'))} — {item.get('score', 0)}/100  ",
         f"**Source:** {item.get('source_id')} ({item.get('source_type')})  ",
         f"**Published:** {published}  ",
         f"**Topics:** {_topics(item)}  ",

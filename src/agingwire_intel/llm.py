@@ -49,41 +49,64 @@ Hard rules:
 
 THE FEATURE PITCH must follow this shape, which is what makes a pitch usable:
 
-**The pattern:** Name the specific items and state what substantively connects
-them — the actual editorial insight, not a count. "Three federal releases in one
-month all point at the same eligibility bottleneck" is a pattern. "Four sources
-converged" is a statistic and is not usable. If the items do not share a real
-thread, say so plainly and treat them as separate leads.
+**The pattern:** State what the evidence MEANS, in a sentence that could open the
+story. Name the two or three items that carry it. A list of record names is not a
+pattern: "CMS reissued Provider Information, Health Deficiencies, Penalties,
+Ownership and Survey Summary" is an inventory, and no editor can do anything with
+it. Say what those records, together, now make visible or possible that was not
+before. If the items share no real thread, say so plainly and treat them as
+separate leads rather than forcing one.
 
-**Why pitch this now:** External context — what is happening in the world that
-makes an editor want it this month. Pipeline metrics are not a reason to pitch.
+**Why pitch this now:** External timing — a deadline, an effective date, a rule
+taking force, a season, a number that just moved. What makes an editor want it
+this month rather than next. Pipeline metrics are never a reason to pitch.
 
-**Angle:** One named story with a working title and who it is for.
+**Angle:** The question or argument the piece makes, then a working title in
+quotation marks, then who it is for. "Whether the public record families rely on
+to judge a nursing home can survive its own ownership data" is an angle. "The
+August File Drop" is a label for an event and is not one. The reader must be able
+to tell what the finished story would assert.
 
-**Potential headlines:** Three, each on its own "- " bullet line. Plain
-language, no colons-and-subtitles.
+**Potential headlines:** Exactly three, each on its own "- " bullet line. Write
+them as they would run: plain language, no colon-and-subtitle construction, no
+label like "Feature:". Each must be a different way in, not three rewordings.
 
-**Potential outlets:** Pick from the candidate list in the facts, which comes
-from the outlets this project actually monitors. One "- " bullet each, with a
-clause on why it fits. Never suggest an outlet already listed as having
-reported the item.
+**Potential outlets:** Three or four, from the candidate list in the facts, one
+"- " bullet each. Bold the publication name, then a clause on why THIS story fits
+THAT outlet's readership or beat — not a general description of the outlet.
+Never suggest an outlet already listed as having reported the item.
 
-Return 8 to 12 story ideas, one per item, each with two audience angles in this
-order:
-- **For readers** first: what an older adult or their family does with this. Use
-  "you" language. Concrete — what to check, ask for, compare, or claim.
-- **For the trade** second: the operator, provider, workforce or senior-housing
-  question. This must be a genuinely different framing, not the reader angle
-  addressed to executives. If the item supports no real trade angle, leave it
-  out rather than padding.
+THE PITCH is the email you would actually send the first outlet you named. 120 to
+170 words, no salutation and no sign-off, no subject line. Open on the story, not
+on yourself and not on the pipeline. Say what the piece would find, what evidence
+it rests on, roughly what shape and length it takes, and why that outlet. Write it
+in first person as the freelancer proposing it. Never claim reporting you have not
+done, never promise an interview or a source you were not given, and never invent
+a number.
+
+STORY IDEAS: return 8 to 12, one per item. Each is a pitch in miniature, not a
+summary of the record:
+
+- **headline**: how this single item would run as a story. A publishable headline,
+  not the record's name. "CMS refreshed dataset: Penalties" is a filename; "The
+  fines your nursing home paid are public again" is a headline.
+- **angle**: one sentence naming the specific piece and who reads it. Lead with the
+  concrete move — what gets counted, compared, looked up or asked.
+- **outlets**: one or two publication names, taken from the candidate outlets given
+  for that item. Names only, no rationale.
+- **For readers**: what an older adult or their family does with this. Use "you"
+  language. Concrete — what to check, ask for, compare, or claim.
+- **For the trade**: the operator, provider, workforce or senior-housing question.
+  A genuinely different framing, not the reader angle addressed to executives. If
+  the item supports no real trade angle, leave it out rather than padding.
 
 The consumer angle leads because most of this evidence reaches an older adult
 before it reaches an operator.
 
-Formatting: each section is a **bold label** followed by prose on the same line,
-as a paragraph — not a bullet. Only the headline and outlet lists use "- "
-bullets, one item per line. No headings. Putting a whole section on one bullet
-makes the pitch unreadable."""
+Formatting: each feature-pitch section is a **bold label** followed by prose on
+the same line, as a paragraph — not a bullet. Only the headline and outlet lists
+use "- " bullets, one item per line. No headings. Putting a whole section on one
+bullet makes the pitch unreadable."""
 
 SCHEMA = {
     "type": "object",
@@ -91,6 +114,13 @@ SCHEMA = {
         "feature_pitch": {
             "type": "string",
             "description": "The strongest cross-source story this run supports, with the specific evidence named.",
+        },
+        # The pitch letter is its own field rather than a sixth labelled block:
+        # it is the only part written in first person, and separating it keeps
+        # the model from bleeding pitch voice into the analytical sections.
+        "pitch_draft": {
+            "type": "string",
+            "description": "120-170 words, first person, addressed to the first outlet named in the feature pitch.",
         },
         # Structured rather than prose so the dashboard renders LLM and
         # deterministic runs with the same card anatomy. Returning markdown here
@@ -103,13 +133,20 @@ SCHEMA = {
             "items": {
                 "type": "object",
                 "properties": {
-                    "title": {"type": "string", "description": "The item this idea is about."},
+                    "title": {"type": "string", "description": "The item this idea is about, as given in the facts."},
+                    "headline": {"type": "string", "description": "How this item would run as a story. Not the record's name."},
+                    "angle": {"type": "string", "description": "One sentence: the specific piece and who reads it."},
+                    "outlets": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "One or two publication names from this item's candidate outlets.",
+                    },
                     "hook": {"type": "string", "description": "One sentence: what makes it a story."},
                     "consumer": {"type": "string", "description": "For readers, in 'you' language."},
                     "b2b": {"type": "string", "description": "For the trade — a different framing, not a rewording."},
                     "note": {"type": "string", "description": "Localization, chart potential or competitive situation."},
                 },
-                "required": ["title", "hook", "consumer", "b2b", "note"],
+                "required": ["title", "headline", "angle", "outlets", "hook", "consumer", "b2b", "note"],
                 "additionalProperties": False,
             },
         },
@@ -118,7 +155,7 @@ SCHEMA = {
             "description": "What changed versus the previous run and what the run's shape says about the beat.",
         },
     },
-    "required": ["feature_pitch", "story_ideas", "trends"],
+    "required": ["feature_pitch", "pitch_draft", "story_ideas", "trends"],
     "additionalProperties": False,
 }
 
@@ -158,6 +195,8 @@ def _facts(payload: dict, previous: dict | None) -> str:
         }
         for c in clusters[:8]
     ]
+    from agingwire_intel import outlets as outlet_mod
+
     evidence = [
         {
             "title": i.get("title"),
@@ -174,10 +213,12 @@ def _facts(payload: dict, previous: dict | None) -> str:
             "key_findings": (i.get("key_findings") or [])[:2],
             "summary": (i.get("summary") or "")[:400] or None,
             "url": i.get("url"),
+            # Named per item, not just per run: a story idea has to carry its
+            # own outlets, and the model must not invent publication names.
+            "candidate_outlets": outlet_mod.names(outlet_mod.for_item(i)),
         }
         for i in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]
     ]
-    from agingwire_intel import outlets as outlet_mod
     top_topics = [c["topic"] for c in clusters[:3]]
     covered: set[str] = set()
     for i in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]:
@@ -312,7 +353,11 @@ def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
             by_norm.pop(_normalize_title(claimed_title), None)
         base.update({
             "title": title or base.get("title"),
+            "headline": idea.get("headline") or base.get("headline"),
+            "angle": idea.get("angle") or base.get("angle"),
+            "outlets": idea.get("outlets") or base.get("outlets") or [],
             "hook": idea.get("hook") or base.get("hook"),
+            "summary": base.get("summary"),
             "consumer": idea.get("consumer") or base.get("consumer"),
             "b2b": idea.get("b2b") or base.get("b2b"),
             "note": idea.get("note"),
@@ -325,11 +370,19 @@ def _as_markdown(ideas: list[dict]) -> str:
     """The digest and .docx still consume markdown."""
     lines = []
     for idea in ideas:
-        lines.append(f"**{idea.get('title', '')}**")
+        # The headline is what the story would be called; the record's own name
+        # goes underneath it, because that is the citation, not the pitch.
+        lines.append(f"**{idea.get('headline') or idea.get('title', '')}**")
+        if idea.get("headline") and idea.get("title"):
+            lines.append(f"*{idea['title']}*  ")
+        if idea.get("angle"):
+            lines.append(f"- Angle: {idea['angle']}")
         for label, key in (("Hook", "hook"), ("For readers", "consumer"),
                            ("For the trade", "b2b"), ("Also", "note")):
             if idea.get(key):
                 lines.append(f"- {label}: {idea[key]}")
+        if idea.get("outlets"):
+            lines.append(f"- Pitch to: {', '.join(idea['outlets'])}")
         lines.append("")
     return "\n".join(lines).strip()
 
@@ -382,6 +435,7 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
         return {
             **deterministic,
             "feature_pitch_raw": parsed["feature_pitch"],
+            "pitch_draft_raw": parsed.get("pitch_draft", ""),
             "story_ideas": _as_records(
                 ideas,
                 _record_pool(payload, deterministic.get("story_ideas") or []),

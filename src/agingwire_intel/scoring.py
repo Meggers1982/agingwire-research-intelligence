@@ -37,6 +37,25 @@ WEIGHTS = {
 }
 MAX_RAW = sum(WEIGHTS.values()) * 5
 
+# A weighted sum of ten 0-5 components does not carry two significant figures.
+# In one run, ranks 2 through 6 scored 73, 73, 72, 72, 72 -- noise presented as
+# a ranking. The band is what the number can actually support; the integer stays
+# for sort order.
+SCORE_BANDS = (
+    (70, "Lead"),
+    (55, "Strong"),
+    (40, "Worth a look"),
+    (0, "Background"),
+)
+
+
+def score_band(score) -> str:
+    value = score or 0
+    for floor, name in SCORE_BANDS:
+        if value >= floor:
+            return name
+    return "Background"
+
 _NUMERIC = re.compile(r"\d[\d,.]*\s*(%|percent|million|billion|thousand|per cent)|\$\s?\d")
 
 

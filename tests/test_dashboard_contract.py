@@ -55,8 +55,8 @@ class ContractTests(unittest.TestCase):
         self.assertIn("data/runs/", self.js)
 
     def test_export_and_jump_targets_are_wired(self):
-        for anchor in ("feature-pitch", "story-ideas", "trends", "clusters",
-                       "opportunities", "health"):
+        for anchor in ("feature-pitch", "pitch-draft", "story-ideas", "trends",
+                       "clusters", "opportunities", "outlets", "health"):
             self.assertIn(f'sectionBlock("{anchor}"', self.js, anchor)
             self.assertIn(f'href="#{anchor}"', self.js, anchor)
         self.assertIn("export-docx-btn", self.js)
@@ -80,6 +80,23 @@ class ContractTests(unittest.TestCase):
         self.assertIn('type="button" class="section-toggle"', self.js)
         self.assertIn('aria-expanded=', self.js)
         self.assertIn('aria-controls=', self.js)
+
+    def test_the_pitch_ships_with_the_analysis(self):
+        """"Give me a good pitch idea, headlines, and the actual pitch" — the
+        first two were there, the third had no field to arrive in."""
+        self.assertIn("pitch_draft_raw", self.doc)
+        self.assertIn("run.pitch_draft_raw", self.js)
+
+    def test_ideas_can_lead_with_a_headline(self):
+        idea = self.doc["story_ideas"][0]
+        for field in ("headline", "angle", "outlets"):
+            self.assertIn(field, idea)
+        self.assertIn("idea.headline || idea.title", self.js)
+
+    def test_items_carry_matched_outlets(self):
+        """outlets.py has always had the prospecting data; the card never used it."""
+        self.assertIn("outlets", self.doc["items"][0])
+        self.assertIn("outlet_index", self.doc)
 
     def test_docx_library_is_lazy_loaded_from_vendor(self):
         self.assertIn('el.src = "vendor/docx-8.5.0.umd.js"', self.js)

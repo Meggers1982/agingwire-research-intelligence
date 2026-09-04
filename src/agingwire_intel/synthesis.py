@@ -388,7 +388,12 @@ def build_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 3
     ideas = []
     for item in _diverse_sample(scored, limit, per_source=per_source):
         findings = [f for f in (item.get("key_findings") or []) if f]
-        hook = str(findings[0])[:220] if findings else str(item.get("summary") or "")[:220]
+        # Falling back to the summary made the hook a truncated copy of the
+        # source's own abstract -- "A list of Suppliers that indicates the
+        # supplies carried at that location" is metadata about a file, and
+        # labelling it Hook claims a sentence nobody wrote. The card shows the
+        # summary under its own heading instead.
+        hook = str(findings[0])[:220] if findings else None
         local = sub_national(item.get("geographies"))
 
         localize = None
@@ -406,6 +411,13 @@ def build_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 3
         consumer, b2b = audience_angles(item.get("topics") or [])
         ideas.append({
             "title": item.get("title"),
+            # No headline and no angle without a model. Both are written, not
+            # derived, and a template that fakes one produces "CMS refreshed
+            # dataset: Penalties" dressed up as a story. The outlets are the
+            # exception: they come from the registry, so they are data.
+            "headline": None,
+            "angle": None,
+            "outlets": outlets.names(outlets.for_item(item)),
             "url": item.get("url"),
             "source_id": item.get("source_id"),
             "published_at": item.get("published_at"),
@@ -414,6 +426,9 @@ def build_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 3
             "coverage_state": _coverage_state(item),
             "is_new": bool((item.get("raw_metadata") or {}).get("is_new")),
             "hook": hook or None,
+            # Shown under its own heading when no hook was written, so the card
+            # still says what the item is without claiming an authored line.
+            "summary": (item.get("summary") or "")[:400] or None,
             "consumer": consumer,
             "b2b": b2b,
             "localize": localize,
@@ -430,12 +445,18 @@ def render_story_ideas(evidence: list[dict], limit: int = 12, per_source: int = 
         return ""
     lines = []
     for idea in ideas:
-        lines.append(f"**{idea['title']}**")
+        lines.append(f"**{idea.get('headline') or idea['title']}**")
+        if idea.get("headline"):
+            lines.append(f"*{idea['title']}*  ")
+        if idea.get("angle"):
+            lines.append(f"- Angle: {idea['angle']}")
         for prefix, key in (("Hook", "hook"), ("For readers", "consumer"),
                             ("For the trade", "b2b"), ("Localize", "localize"),
                             ("Chart", "chart"), ("Competitive", "competitive")):
             if idea.get(key):
                 lines.append(f"- {prefix}: {idea[key]}")
+        if idea.get("outlets"):
+            lines.append(f"- Pitch to: {', '.join(idea['outlets'])}")
         lines.append(f"- Source: {idea['url']}")
         lines.append("")
     return "\n".join(lines).strip()

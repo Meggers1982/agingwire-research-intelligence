@@ -94,6 +94,32 @@ def suggest(topics, audience: str, limit: int = 3, exclude: set[str] | None = No
     return [r for _, r in pool[:limit]]
 
 
+OUTLETS_PER_ITEM = 2
+
+
+def for_item(item: dict, limit: int = OUTLETS_PER_ITEM) -> list[dict]:
+    """Publications whose stated coverage fits one item's topics.
+
+    The feature pitch has always named outlets; individual story ideas did not,
+    which is what made them advice rather than pitches. "Senior living
+    communities can add a $20 dynamometer to wellness visits (McKnight's, Senior
+    Housing News)" is a pitch; the same sentence without the outlets is a
+    thought. Both audiences are returned because AgingWire sells to both.
+    """
+    topics = item.get("topics") or []
+    if not topics:
+        return []
+    covered = covered_by(item)
+    picks: list[dict] = []
+    for audience in ("b2b", "b2c"):
+        picks.extend(suggest(topics, audience, limit=limit, exclude=covered))
+    return picks
+
+
+def names(rows: list[dict]) -> list[str]:
+    return [r["publisher"] for r in rows]
+
+
 def describe(row: dict, with_reason: bool = True) -> str:
     tier = f", {row['tier']}" if row["tier"] else ""
     beat = row["coverage"] or row["category"] or ("consumer" if row["audience"] == "b2c" else "trade")

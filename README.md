@@ -50,6 +50,41 @@ user agent, which is enough for hosts that filter on the string alone.
 
 `www.bls.gov` and `www.ssa.gov` return 403 to automated requests regardless of user agent, and `www.cms.gov/newsroom` is JavaScript-rendered with no feed. Those signals come through `api.bls.gov`, the Federal Register API and the CMS provider-data metastore instead. Sources with no machine-readable route at all are listed under `unresolved` in `config/monitors.yml` rather than left as permanently empty monitors.
 
+## The dashboard is a workspace, not a readout
+
+Benchmarked against `Meggers1982/freelance-opps-app`, whose thesis is that the thing
+a spreadsheet could never do is track what you did about each row. This dashboard
+had no equivalent: `state/seen.json` remembered what the pipeline surfaced and
+nothing remembered your response, so every run re-presented 169 candidates as though
+untouched.
+
+- **Editorial status** on every item — to review, shortlisted, drafting, pitched,
+  published, passed, killed — held in `localStorage` and carried into the .csv
+  export. `passed` and `killed` are both negative and the difference is deliberate:
+  `killed` is an editor saying no, `passed` is you saying no, and only the second is
+  a signal about the scoring rubric rather than about the market.
+- **Multi-select chip facets** replace the single `<select>`, which could not
+  express "new AND localizable". Status, score band, coverage, topic and flags
+  compound across groups and offer alternatives within one, each chip carrying its
+  own count, with a live "N of M candidates" and a Clear control.
+- **Score bands** — Lead, Strong, Worth a look, Background — because a weighted sum
+  of ten 0-5 components does not carry two significant figures. One run put ranks 2
+  through 6 at 73, 73, 72, 72, 72. The band is what the number supports; the integer
+  stays beside it for sorting, and the band also colors the card's left edge.
+- **Outlets on every card**, plus an **Outlets — What To Send Where** section that
+  reads the same matches the other way up and answers "what do I send McKnight's
+  this month?", which the per-item list cannot.
+- **What This Run Does Not Tell You** states the limits in words: 58 of 132
+  publishers have no working feed, so "no coverage found" mostly means "not
+  watched"; a `reference` item's coverage state says nothing either way; demand is a
+  cached weekly snapshot; errored sources underrepresent their beats.
+- **Sort** by score, date or title, rather than always score-descending.
+
+`renderItem()` had also been emitting `.item-meta`, `.score-chip`, `.field-label`,
+`.field-body`, `.story-angle` and `.tags` since it was written, and the stylesheet
+defined none of them — every opportunity card rendered as unstyled default HTML.
+Those styles now exist.
+
 ## The digest leads with the writing, not the ranking
 
 The digest used to open with twenty-five fully rendered candidates and reach the
@@ -107,6 +142,42 @@ monitored outlets to aim at. Naming the angle is left to the editor. With
 `ANTHROPIC_API_KEY` set, `llm.py` writes the real thing in the same shape as the
 research digest — pattern, why now, angle, three headlines, outlets — and is
 told explicitly that a source count is a statistic, not a pattern.
+
+### A pitch names a headline, an outlet and the thing you send
+
+The pitch was analysis about a story rather than a pitch for one. `senior-research-digest`
+gets this right and was the model: its pattern states a claim, its angle is a question
+the piece answers, and every one of its story ideas carries a publishable headline and
+one or two named outlets. This repo's version recited record names as a pattern
+("CMS reissued Provider Information, Health Deficiencies, Penalties, Ownership…"),
+gave an angle that labelled an event rather than arguing anything, and titled each
+story idea with the filename it came from.
+
+The prompt now bans the inventory sentence outright, requires the angle to be a
+question or argument with a working title, and asks each story idea for a
+`headline`, a one-line `angle` and the outlets to send it to. Outlets are named per
+item, not just once for the feature pitch, and the candidates are passed into the
+prompt so the model picks from publications the registry actually holds rather than
+from memory.
+
+`pitch_draft` is new and has no counterpart in the research digest: 120 to 170 words
+in first person, addressed to the first outlet named, saying what the piece would
+find and roughly what shape it takes. It renders as **The Pitch**, its own section
+in the digest, the dashboard and the .docx export.
+
+None of this has a deterministic fallback. A headline, an angle and a pitch letter
+are written, not derived, so without `ANTHROPIC_API_KEY` those fields stay empty and
+the sections do not render. The outlets still appear, because they come from the
+registry and are data.
+
+### A hook is written or it is absent
+
+`build_story_ideas` used to fall back to the item's own summary when it had no key
+finding, so the "Hook" on a CMS card was the agency's catalog abstract retyped — "A
+list of Suppliers that indicates the supplies carried at that location". Labelling
+that a hook claims a sentence nobody wrote. Items with no written hook now show the
+summary under **What it is (source's own description)** instead, which is the same
+rule `freelance-opps-app` applies to a listing too thin to summarize honestly.
 
 ### Outlets come from the registry
 

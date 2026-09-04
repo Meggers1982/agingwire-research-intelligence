@@ -97,8 +97,12 @@ class SuccessTests(unittest.TestCase):
         self.client = mock.Mock()
         self.client.messages.create.return_value = fake_response(json.dumps({
             "feature_pitch": "**Pitch:** prose.",
+            "pitch_draft": "I'd like to write about the fines nursing homes paid.",
             "story_ideas": [{
                 "title": "Alpha", "hook": "A hook.",
+                "headline": "The fines your nursing home paid are public again",
+                "angle": "A lookup guide for families comparing three homes.",
+                "outlets": ["McKnight's Long-Term Care News"],
                 "consumer": "What you should check.",
                 "b2b": "What operators face.",
                 "note": "Breaks down by state.",
@@ -160,11 +164,35 @@ class SuccessTests(unittest.TestCase):
         self._run()
         fmt = self.client.messages.create.call_args.kwargs["output_config"]["format"]
         self.assertEqual(fmt["type"], "json_schema")
-        self.assertEqual(set(fmt["schema"]["required"]), {"feature_pitch", "story_ideas", "trends"})
+        self.assertEqual(set(fmt["schema"]["required"]),
+                         {"feature_pitch", "pitch_draft", "story_ideas", "trends"})
         ideas = fmt["schema"]["properties"]["story_ideas"]
         self.assertEqual(ideas["type"], "array")
         self.assertEqual(set(ideas["items"]["required"]),
-                         {"title", "hook", "consumer", "b2b", "note"})
+                         {"title", "headline", "angle", "outlets", "hook",
+                          "consumer", "b2b", "note"})
+
+    def test_a_pitch_draft_comes_back(self):
+        """The thing you actually send an editor, not just analysis of it."""
+        out = self._run()
+        self.assertEqual(out["pitch_draft_raw"],
+                         "I'd like to write about the fines nursing homes paid.")
+
+    def test_ideas_lead_with_a_headline_not_the_record_name(self):
+        """"CMS refreshed dataset: Penalties" is a filename, not a story."""
+        out = self._run()
+        idea = out["story_ideas"][0]
+        self.assertEqual(idea["headline"], "The fines your nursing home paid are public again")
+        self.assertEqual(idea["outlets"], ["McKnight's Long-Term Care News"])
+        self.assertIn("The fines your nursing home paid are public again",
+                      out["pitch_ideas_raw"])
+        self.assertIn("Pitch to: McKnight's Long-Term Care News", out["pitch_ideas_raw"])
+
+    def test_the_prompt_bans_reciting_record_names_as_a_pattern(self):
+        self._run()
+        system = self.client.messages.create.call_args.kwargs["system"]
+        self.assertIn("is an inventory", system)
+        self.assertIn("publishable headline", system)
 
     def test_array_schema_avoids_the_unsupported_minitems(self):
         """A live run returned 400: minItems other than 0 or 1 is rejected."""
@@ -200,7 +228,8 @@ class RecordMatchingTests(unittest.TestCase):
 
     def _merge(self, model_title):
         return llm._as_records(
-            [{"title": model_title, "hook": "h", "consumer": "c", "b2b": "b", "note": "n"}],
+            [{"title": model_title, "hook": "h", "consumer": "c", "b2b": "b",
+              "note": "n", "headline": "H", "angle": "A", "outlets": ["O"]}],
             self.FALLBACK,
         )[0]
 
