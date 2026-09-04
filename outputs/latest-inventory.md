@@ -1,6 +1,6 @@
 # AgingWire evidence inventory
 
-Generated: 2026-09-04T23:04:38.500664+00:00
+Generated: 2026-09-04T23:21:12.741077+00:00
 
 All **169** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 
@@ -98,18 +98,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/LNU02000097
 
-### 8. Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud
-
-**Score:** Strong — 62/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 09/04/26  
-**Topics:** fraud_scams  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle
-
-Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumer
-
-### 9. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
+### 8. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
 
 **Score:** Strong — 62/100  
 **Source:** bls-api (government_api)  
@@ -118,7 +107,7 @@ Global payment processor Nuvei will pay $4.85 million to settle the Federal Trad
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CUUR0000SAM
 
-### 10. BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)
+### 9. BLS: Continuing care retirement communities and assisted living employment, August 2026 — 1,026.90 thousands of jobs (+1.4% year over year)
 
 **Score:** Strong — 61/100  
 **Source:** bls-api (government_api)  
@@ -127,7 +116,7 @@ Global payment processor Nuvei will pay $4.85 million to settle the Federal Trad
 **Coverage:** lightly covered — B2B 1, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562330001
 
-### 11. Housing Trust Fund: Fiscal Year 2026 Allocation Notice
+### 10. Housing Trust Fund: Fiscal Year 2026 Allocation Notice
 
 **Score:** Strong — 60/100  
 **Source:** federal-register (regulatory_filing)  
@@ -138,7 +127,7 @@ Global payment processor Nuvei will pay $4.85 million to settle the Federal Trad
 
 The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.
 
-### 12. BLS: Home health care services average hourly earnings, July 2026 — 28.04 dollars per hour (+2.0% year over year)
+### 11. BLS: Home health care services average hourly earnings, July 2026 — 28.04 dollars per hour (+2.0% year over year)
 
 **Score:** Strong — 60/100  
 **Source:** bls-api (government_api)  
@@ -147,7 +136,7 @@ The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Tru
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562160003
 
-### 13. BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)
+### 12. BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)
 
 **Score:** Strong — 60/100  
 **Source:** bls-api (government_api)  
@@ -156,7 +145,7 @@ The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Tru
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562330003
 
-### 14. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants
+### 13. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants
 
 **Score:** Strong — 59/100  
 **Source:** federal-register (regulatory_filing)  
@@ -167,7 +156,7 @@ The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Tru
 
 This advisory is to alert certain clinicians who are Qualifying Alternative Payment Model (APM) participants (QPs) and eligible to receive an APM Incentive Payment that the Centers for Medicare & Medicaid Services (CMS) does not have the current billing information needed to disburse the payment. This advisory provides information to these clinicians on how to update their billing information to receive this payment for the 2026 payment year.
 
-### 15. Medicare Program; Regulatory Alignment for Predictable and Immediate Device (RAPID) Coverage Pathway
+### 14. Medicare Program; Regulatory Alignment for Predictable and Immediate Device (RAPID) Coverage Pathway
 
 **Score:** Strong — 59/100  
 **Source:** federal-register (regulatory_filing)  
@@ -178,7 +167,7 @@ This advisory is to alert certain clinicians who are Qualifying Alternative Paym
 
 This notice with comment period provides information to the public on the process CMS will use to provide accelerated Medicare coverage through the Regulatory Alignment for Predictable and Immediate Device (RAPID) coverage pathway for new innovative technologies. The RAPID coverage pathway leverages existing processes to provide expedited national Medicare coverage for eligible technologies. This notice with comment period solicits public comment on the proposed RAPID coverage pathway.
 
-### 16. HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations
+### 15. HUD's Implementation of the Fair Housing Act's Disparate Impact Standard; Amendments to HUD's Title VI Regulations
 
 **Score:** Strong — 59/100  
 **Source:** federal-register (regulatory_filing)  
@@ -189,7 +178,7 @@ This notice with comment period provides information to the public on the proces
 
 HUD published a notice of proposed rulemaking in January of 2026 that proposed to remove HUD's disparate-impact regulations and leave interpretation of disparate-impact liability under the Fair Housing Act to the courts. This supplemental notice of proposed rulemaking continues HUD's efforts to remove or revise regulations that prohibit conduct having a disparate impact without evidence of discriminatory intent. Through this rule, HUD is proposing to remove provisions in HUD's Title VI implementing regulations that impose disparate-impact liability on recipients of HUD Federal financial assist
 
-### 17. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
+### 16. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
 
 **Score:** Strong — 57/100  
 **Source:** federal-register (regulatory_filing)  
@@ -200,7 +189,7 @@ HUD published a notice of proposed rulemaking in January of 2026 that proposed t
 
 We are providing notice of SSR 26-2p. This SSR explains our policies and consolidates information from our regulations on documenting and evaluating disability in young adults. This ruling rescinds and replaces SSR 11-2p.
 
-### 18. Medicaid Coverage for Women
+### 17. Medicaid Coverage for Women
 
 **Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
@@ -211,7 +200,7 @@ We are providing notice of SSR 26-2p. This SSR explains our policies and consoli
 
 This data note presents key data points describing the current state of the Medicaid program as it affects women.
 
-### 19. Medicaid/CHIP Monthly Enrollment Tracker
+### 18. Medicaid/CHIP Monthly Enrollment Tracker
 
 **Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
@@ -222,7 +211,7 @@ This data note presents key data points describing the current state of the Medi
 
 This tracker presents the most recent Medicaid monthly enrollment data.
 
-### 20. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
+### 19. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
 
 **Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
@@ -233,7 +222,7 @@ This tracker presents the most recent Medicaid monthly enrollment data.
 
 Considering the existing challenges to hospital-based maternity care in rural areas and the potential for it to worsen, this data note analyzes the availability of hospitals providing inpatient maternity care in rural areas for Medicaid enrollees and illustrates how access to these services could be affected if additional rural hospitals were to close or eliminate those services.
 
-### 21. Status of State Medicaid Expansion Decisions
+### 20. Status of State Medicaid Expansion Decisions
 
 **Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
@@ -244,7 +233,7 @@ Considering the existing challenges to hospital-based maternity care in rural ar
 
 This page displays an interactive map of the current status of state decisions on the Affordable Care Act's Medicaid expansion. Additional Medicaid expansion resources are listed (with links) below the map.
 
-### 22. Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits
+### 21. Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits
 
 **Score:** Strong — 57/100  
 **Source:** kff-feed (institutional_rss)  
@@ -254,6 +243,17 @@ This page displays an interactive map of the current status of state decisions o
 **Source URL:** https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/
 
 An estimated $60 billion in federal Medicaid spending in 37 states (including the District of Columbia) would likely exceed new federal limits on state directed payments for hospital services once fully implemented, a new KFF analysis finds. States with the biggest potential reductions in Medicaid payments to hospitals include California, Illinois, Kentucky, Texas, North Carolina, Louisiana, Arizona and Michigan.
+
+### 22. Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud
+
+**Score:** Strong — 56/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 09/04/26  
+**Topics:** fraud_scams  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle
+
+Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumer
 
 ### 23. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
 

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T23:04:38.500664+00:00",
+  "generated_at": "2026-09-04T23:21:12.741077+00:00",
   "evidence_count": 169,
   "new_evidence_count": 0,
-  "coverage_count": 2326,
-  "monitored_publisher_count": 109,
+  "coverage_count": 2401,
+  "monitored_publisher_count": 111,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -165,14 +165,18 @@
     }
   },
   "web_coverage_status": {
-    "checked": 8,
+    "checked": 9,
     "top_n": 15
   },
   "serpapi_calls": 15,
   "serpapi_failures": [
     {
       "reason": "google_news timeout",
-      "count": 13
+      "count": 9
+    },
+    {
+      "reason": "google_news: Google News hasn't returned any results for this query.",
+      "count": 1
     }
   ],
   "topic_coverage_counts": {
@@ -186,24 +190,24 @@
     "cognitive_decline": 14,
     "dementia": 61,
     "depression_mental_health": 11,
-    "falls": 25,
+    "falls": 27,
     "financial_security": 18,
     "food_security": 1,
     "fraud_scams": 2,
     "hearing_loss": 5,
     "housing": 80,
-    "incontinence": 1,
+    "incontinence": 2,
     "loneliness_social_connection": 2,
     "long_term_care": 53,
-    "medicare_medicaid": 53,
+    "medicare_medicaid": 54,
     "nutrition": 9,
     "oral_health": 1,
     "osteoporosis_bone_health": 5,
-    "palliative_hospice": 12,
+    "palliative_hospice": 15,
     "relationships_sexuality": 1,
     "sarcopenia_frailty": 1,
     "senior_living_quality": 6,
-    "sleep": 11,
+    "sleep": 12,
     "transportation": 5,
     "workforce": 22
   },
@@ -420,10 +424,12 @@
     {
       "publisher": "HomeCare Magazine",
       "audience": "b2b",
-      "status": "error",
-      "feed": "http://homecaremag.com/combo/feed",
-      "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.homecaremag.com/combo/feed"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Ahomecaremag.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": false,
+      "items": 25,
+      "recovered_from": "http://homecaremag.com/combo/feed"
     },
     {
       "publisher": "Next Avenue",
@@ -435,9 +441,9 @@
       "publisher": "Multi-Housing News - Senior Housing",
       "audience": "b2b",
       "status": "error",
-      "feed": "https://www.multihousingnews.com/senior-housing/feed/",
-      "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.multihousingnews.com/senior-housing/feed/"
+      "feed": "https://news.google.com/rss/search?q=site%3Amultihousingnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.multihousingnews.com/senior-housing/feed/); gnews also failed (serpapi returned nothing)"
     },
     {
       "publisher": "InsuranceNewsNet",
@@ -677,9 +683,9 @@
       "publisher": "Commercial Property Executive",
       "audience": "b2b",
       "status": "error",
-      "feed": "https://www.commercialsearch.com/news/feed/",
-      "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.commercialsearch.com/news/feed/"
+      "feed": "https://news.google.com/rss/search?q=site%3Acommercialsearch.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.commercialsearch.com/news/feed/); gnews also failed (serpapi returned nothing)"
     },
     {
       "publisher": "Connect CRE",
@@ -816,9 +822,9 @@
       "publisher": "GlobeSt",
       "audience": "b2b",
       "status": "error",
-      "feed": "https://www.globest.com/rss/",
-      "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.globest.com/rss/"
+      "feed": "https://news.google.com/rss/search?q=site%3Aglobest.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.globest.com/rss/); gnews also failed (serpapi returned nothing)"
     },
     {
       "publisher": "Senior Housing Investor",
@@ -863,9 +869,9 @@
       "publisher": "Healthcare IT News",
       "audience": "b2b",
       "status": "error",
-      "feed": "https://www.healthcareitnews.com/rss.xml",
-      "kind": "rss",
-      "error": "403 Client Error: Forbidden for url: https://www.healthcareitnews.com/rss.xml"
+      "feed": "https://news.google.com/rss/search?q=site%3Ahealthcareitnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.healthcareitnews.com/rss.xml); gnews also failed (serpapi returned nothing)"
     },
     {
       "publisher": "MobiHealthNews",
@@ -909,10 +915,12 @@
     {
       "publisher": "Financial Advisor Magazine",
       "audience": "b2b",
-      "status": "error",
+      "status": "ok",
       "feed": "https://news.google.com/rss/search?q=site%3Afa-mag.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
-      "error": "configured feed failed (403 Client Error: Forbidden for url: https://www.fa-mag.com/rss.php); gnews also failed (serpapi returned nothing)"
+      "discovered": false,
+      "items": 50,
+      "recovered_from": "https://www.fa-mag.com/rss.php"
     },
     {
       "publisher": "Longevity.Technology",
@@ -1510,7 +1518,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false,
         "web_coverage": {
           "query": "Medical Equipment Suppliers",
@@ -1586,8 +1594,25 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
-        "is_new": false
+        "runs_seen": 37,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Medicare Claims Quality Measures",
+          "returned": 14,
+          "outlet_count": 1,
+          "outlets": [
+            "EIN News"
+          ],
+          "articles": [
+            {
+              "title": "Medicare Quality Measures Spotlight Medication Safety—IntractMD™ Identifies Hidden Supplement Risks",
+              "outlet": "EIN News",
+              "link": "https://www.einnews.com/pr_news/933364849/medicare-quality-measures-spotlight-medication-safety-intractmd-identifies-hidden-supplement-risks",
+              "date": "08/11/2026, 02:09 PM, +0000 UTC"
+            }
+          ],
+          "state": "lightly_reported"
+        }
       }
     },
     {
@@ -1645,7 +1670,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false,
         "web_coverage": {
           "query": "Skilled Nursing Facility Quality Reporting Provider Data",
@@ -1730,7 +1755,7 @@
         "data_file": "outputs/data/acs-2023-state-profile.json",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:01:01.274675+00:00",
-        "runs_seen": 26,
+        "runs_seen": 27,
         "is_new": false
       }
     },
@@ -1789,7 +1814,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false,
         "web_coverage": {
           "query": "Hospice care National CAHPS Hospice Survey Data",
@@ -1856,7 +1881,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false,
         "web_coverage": {
           "query": "Hospice care State CAHPS Hospice Survey Data",
@@ -1922,7 +1947,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false,
         "web_coverage": {
           "query": "National Downloadable File",
@@ -1989,7 +2014,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -2040,7 +2065,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -2091,7 +2116,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -2149,7 +2174,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false,
         "web_coverage": {
           "query": "Utilization Data",
@@ -2224,7 +2249,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false,
         "web_coverage": {
           "query": "Patient Reported Outcomes Hospital",
@@ -2390,7 +2415,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -2525,7 +2550,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false,
         "web_coverage": {
           "query": "Nursing care facilities employment August 2026 590 thousands jobs",
@@ -2667,7 +2692,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -2725,7 +2750,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -2783,7 +2808,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -2841,7 +2866,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -2899,7 +2924,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -2957,7 +2982,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3015,7 +3040,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3073,7 +3098,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3131,7 +3156,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3189,7 +3214,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3247,51 +3272,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-04T12:00:00+00:00",
-      "topics": [
-        "fraud_scams"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumers. Specifically, Nuvei processed more than $30 million in consumer payments for Reimage, an offshore tech support scam, from 2017 to 2023, according to the FTC’s complaint. “Today’s action underscores the Commission’s commitment to ensuring that our payments system operates free of fraud,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Our enforcement work reinforces the transparency and trust in the payments system that consumers and businesses depend on. Consumers deserve a payment system that is competitive, transparent and fortified against fraud—and we will take action anytime those standards are threatened.” The complaint also alleges that, through its merchant acquiring bank registered in Cyprus, Nuvei furnished Reimage and other overseas deceptive tech support schemes with payment processing accounts that enabled the schemes to take credit card ",
-      "key_findings": [],
-      "localizable": false,
-      "score": 62,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How the scam works and what protects you or a parent from it.",
-        "For the trade: Liability, resident protection duties and reputational exposure.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-04T21:14:29.171473+00:00",
-        "runs_seen": 3,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3425,7 +3406,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3559,7 +3540,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -3610,7 +3591,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -3744,7 +3725,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -3878,7 +3859,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T12:54:49.594163+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -3930,7 +3911,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -3982,7 +3963,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4033,7 +4014,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4083,7 +4064,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4127,7 +4108,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4171,7 +4152,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4215,7 +4196,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4259,7 +4240,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4303,7 +4284,51 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "ftc-consumer-protection",
+      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-04T12:00:00+00:00",
+      "topics": [
+        "fraud_scams"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumers. Specifically, Nuvei processed more than $30 million in consumer payments for Reimage, an offshore tech support scam, from 2017 to 2023, according to the FTC’s complaint. “Today’s action underscores the Commission’s commitment to ensuring that our payments system operates free of fraud,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Our enforcement work reinforces the transparency and trust in the payments system that consumers and businesses depend on. Consumers deserve a payment system that is competitive, transparent and fortified against fraud—and we will take action anytime those standards are threatened.” The complaint also alleges that, through its merchant acquiring bank registered in Cyprus, Nuvei furnished Reimage and other overseas deceptive tech support schemes with payment processing accounts that enabled the schemes to take credit card ",
+      "key_findings": [],
+      "localizable": false,
+      "score": 56,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How the scam works and what protects you or a parent from it.",
+        "For the trade: Liability, resident protection duties and reputational exposure.",
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-04T21:14:29.171473+00:00",
+        "runs_seen": 4,
         "is_new": false
       }
     },
@@ -4349,7 +4374,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -4393,7 +4418,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -4437,7 +4462,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4481,7 +4506,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4525,7 +4550,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4570,7 +4595,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4613,7 +4638,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -4657,7 +4682,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4701,7 +4726,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4745,7 +4770,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -4788,7 +4813,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4838,7 +4863,7 @@
         ],
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4894,7 +4919,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -4950,7 +4975,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5006,7 +5031,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5062,7 +5087,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5118,7 +5143,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5174,7 +5199,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5219,7 +5244,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5263,7 +5288,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5307,7 +5332,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5352,7 +5377,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5396,7 +5421,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5439,7 +5464,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5483,7 +5508,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5527,7 +5552,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5571,7 +5596,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5615,7 +5640,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5659,7 +5684,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5703,7 +5728,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5747,7 +5772,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5791,7 +5816,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5835,7 +5860,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5879,7 +5904,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5923,7 +5948,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -5967,7 +5992,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6011,7 +6036,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6054,7 +6079,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6098,7 +6123,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6142,7 +6167,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6187,7 +6212,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6230,7 +6255,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6273,7 +6298,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6316,7 +6341,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6358,7 +6383,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6400,7 +6425,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -6444,7 +6469,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6487,7 +6512,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6527,7 +6552,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "light",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -6574,7 +6599,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6617,7 +6642,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6659,7 +6684,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6701,7 +6726,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6741,7 +6766,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6781,7 +6806,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -6821,7 +6846,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6861,7 +6886,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6901,7 +6926,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6948,7 +6973,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -6992,7 +7017,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7036,7 +7061,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7076,7 +7101,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7116,7 +7141,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -7156,7 +7181,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7196,7 +7221,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7236,7 +7261,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7276,7 +7301,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7316,7 +7341,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7356,7 +7381,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7396,7 +7421,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7436,7 +7461,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7476,7 +7501,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -7516,7 +7541,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7556,7 +7581,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -7596,7 +7621,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7636,7 +7661,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -7676,7 +7701,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7716,7 +7741,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7756,7 +7781,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7796,7 +7821,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7836,7 +7861,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7876,7 +7901,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7916,7 +7941,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7956,7 +7981,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -7998,7 +8023,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8038,7 +8063,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -8078,7 +8103,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8118,7 +8143,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8158,7 +8183,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 27,
+        "runs_seen": 28,
         "is_new": false
       }
     },
@@ -8198,7 +8223,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8238,7 +8263,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -8278,7 +8303,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8318,7 +8343,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -8358,7 +8383,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8398,7 +8423,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -8438,7 +8463,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8478,7 +8503,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8518,7 +8543,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8558,7 +8583,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8598,7 +8623,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8638,7 +8663,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8678,7 +8703,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8718,7 +8743,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8758,7 +8783,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "light",
         "first_seen": "2026-09-03T18:49:08.151942+00:00",
-        "runs_seen": 30,
+        "runs_seen": 31,
         "is_new": false
       }
     },
@@ -8798,7 +8823,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -8838,7 +8863,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8878,7 +8903,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8918,7 +8943,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8958,7 +8983,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -8998,7 +9023,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -9038,7 +9063,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -9078,7 +9103,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T19:14:17.204298+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -9118,7 +9143,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9158,7 +9183,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9198,7 +9223,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9238,7 +9263,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9278,7 +9303,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9318,7 +9343,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9358,7 +9383,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9398,7 +9423,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9438,7 +9463,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9478,7 +9503,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9518,7 +9543,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9558,7 +9583,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9598,7 +9623,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9638,7 +9663,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9678,7 +9703,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9718,7 +9743,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     },
@@ -9758,7 +9783,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T16:42:45.271073+00:00",
-        "runs_seen": 36,
+        "runs_seen": 37,
         "is_new": false
       }
     }
