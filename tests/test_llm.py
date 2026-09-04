@@ -97,7 +97,12 @@ class SuccessTests(unittest.TestCase):
         self.client = mock.Mock()
         self.client.messages.create.return_value = fake_response(json.dumps({
             "feature_pitch": "**Pitch:** prose.",
-            "story_ideas": "**Ideas:** prose.",
+            "story_ideas": [{
+                "title": "Alpha", "hook": "A hook.",
+                "consumer": "What you should check.",
+                "b2b": "What operators face.",
+                "note": "Breaks down by state.",
+            }],
             "trends": "**Trends:** prose.",
         }))
 
@@ -109,8 +114,30 @@ class SuccessTests(unittest.TestCase):
     def test_replaces_the_three_sections(self):
         out = self._run()
         self.assertEqual(out["feature_pitch_raw"], "**Pitch:** prose.")
-        self.assertEqual(out["pitch_ideas_raw"], "**Ideas:** prose.")
         self.assertEqual(out["trends_raw"], "**Trends:** prose.")
+        self.assertIn("For readers: What you should check.", out["pitch_ideas_raw"])
+
+    def test_story_ideas_come_back_structured(self):
+        """Prose here produced a wall of text; the dashboard needs records."""
+        idea = self._run()["story_ideas"][0]
+        self.assertEqual(idea["title"], "Alpha")
+        self.assertEqual(idea["consumer"], "What you should check.")
+        self.assertEqual(idea["b2b"], "What operators face.")
+
+    def test_structured_ideas_keep_the_pipeline_facts(self):
+        """The model rewrites angles, not urls, scores or coverage state."""
+        deterministic = {
+            **DETERMINISTIC,
+            "story_ideas": [{"title": "Alpha", "url": "https://example.org/a",
+                             "score": 90, "coverage_state": "gap"}],
+        }
+        with mock.patch.object(llm, "unavailable_reason", return_value=None), \
+             mock.patch.dict("sys.modules", {"anthropic": mock.Mock(Anthropic=lambda: self.client)}):
+            out = llm.upgrade_synthesis(PAYLOAD, deterministic)
+        idea = out["story_ideas"][0]
+        self.assertEqual(idea["url"], "https://example.org/a")
+        self.assertEqual(idea["score"], 90)
+        self.assertEqual(idea["consumer"], "What you should check.")
 
     def test_records_mode_and_model(self):
         out = self._run()
@@ -134,6 +161,10 @@ class SuccessTests(unittest.TestCase):
         fmt = self.client.messages.create.call_args.kwargs["output_config"]["format"]
         self.assertEqual(fmt["type"], "json_schema")
         self.assertEqual(set(fmt["schema"]["required"]), {"feature_pitch", "story_ideas", "trends"})
+        ideas = fmt["schema"]["properties"]["story_ideas"]
+        self.assertEqual(ideas["type"], "array")
+        self.assertEqual(set(ideas["items"]["required"]),
+                         {"title", "hook", "consumer", "b2b", "note"})
 
     def test_system_prompt_forbids_invention_and_gap_confusion(self):
         self._run()

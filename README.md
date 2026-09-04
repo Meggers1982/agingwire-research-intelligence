@@ -208,10 +208,17 @@ python -m http.server 8000 -d docs
 
 ## The dashboard
 
+Entries follow `senior-research-digest`'s anatomy: a numbered heading, one quiet
+metadata line, then labelled prose blocks — *What it is*, *Key finding*, *Story
+angles* — with the two audience angles set off by a left rule the way its
+To/About angles are. The earlier version packed a score column, badges, tags and
+two bullet lists into one dense card, which read as a table row rather than
+something to be read.
+
 `docs/index.html` is a browsable archive rather than a single snapshot. The sidebar lists every run ever generated, searchable and filterable by topic; selecting one loads its record from `docs/data/runs/<date>.json`. Each run page carries:
 
 - **Feature pitch** — the strongest cluster in that run, with the specific evidence named. A cluster is only called a *convergence* when its items actually cohere; when several sources merely touch the same topic it is labelled the **busiest beat** and says plainly that it is not one story. See below.
-- **Story ideas** — per-item cards carrying a hook, then two audience angles, then the craft and competitive notes. Sources are rotated so adjacent ideas never come from the same feed.
+- **Story ideas** — per-item cards carrying a hook, then two audience angles, then the craft and competitive notes. Sources are rotated so adjacent ideas never come from the same feed. The model returns these as records, not prose, so an LLM run and a deterministic one render with the same anatomy.
 
 ### Consumer first, then trade
 

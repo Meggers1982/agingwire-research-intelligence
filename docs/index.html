@@ -183,47 +183,18 @@
   .section-block.feature > p:first-of-type { font-size: 1.06rem; line-height: 1.5; }
 
   .idea {
-    border: 1px solid var(--border); border-radius: 11px; padding: 14px 16px; margin-bottom: 10px;
-    background: var(--bg);
+    border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px;
+    margin-bottom: 12px; background: var(--bg);
   }
-  .idea-head { display: flex; gap: 10px; align-items: baseline; margin-bottom: 4px; }
-  .idea-rank { font-size: 0.75rem; font-weight: 700; color: var(--muted); min-width: 1.4rem; }
-  .idea h4 { margin: 0; font-size: 0.97rem; line-height: 1.35; }
+  .idea h4 { margin: 0; font-size: 0.98rem; line-height: 1.4; font-weight: 700; }
   .idea h4 a { color: inherit; text-decoration: none; }
   .idea h4 a:hover { color: var(--accent); text-decoration: underline; }
-  .idea-meta { font-size: 0.76rem; color: var(--muted); margin: 0 0 9px 2.2rem; display: flex; gap: 9px; flex-wrap: wrap; }
-  .idea-lines { margin: 0 0 0 2.2rem; display: grid; grid-template-columns: max-content 1fr; gap: 5px 12px; font-size: 0.87rem; }
-  .idea-lines dt {
-    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
-    color: var(--muted); padding-top: 2px; white-space: nowrap;
+  .idea-head { display: flex; gap: 10px; align-items: baseline; margin-bottom: 8px; }
+  .idea-rank { font-size: 0.85rem; font-weight: 700; color: var(--muted); min-width: 1.4rem; }
+  .idea-meta {
+    font-size: 0.78rem; color: var(--muted); margin-bottom: 4px;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
   }
-  /* The two audience angles are the point of the entry; the rest is craft. */
-  .idea-lines dt.aud-consumer, .idea-lines dt.aud-b2b { color: var(--accent); }
-  .idea-lines dt.aud-consumer + dd, .idea-lines dt.aud-b2b + dd { color: var(--strong); }
-  .idea-lines dd { margin: 0; }
-  @media (max-width: 620px) {
-    .idea-lines { grid-template-columns: 1fr; gap: 2px; }
-    .idea-lines dd { margin-bottom: 7px; }
-    .idea-meta, .idea-lines { margin-left: 0; }
-  }
-  .item {
-    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
-    padding: 14px 16px; margin-bottom: 10px;
-  }
-  .item-top { display: flex; gap: 12px; align-items: baseline; }
-  .item .score {
-    font-size: 0.95rem; font-weight: 800; color: var(--accent); background: var(--accent-soft);
-    border-radius: 8px; padding: 4px 9px; min-width: 2.6rem; text-align: center;
-  }
-  .item h4 { margin: 0 0 4px; font-size: 0.98rem; line-height: 1.35; }
-  .item h4 a { color: inherit; text-decoration: none; }
-  .item h4 a:hover { text-decoration: underline; color: var(--accent); }
-  .item-meta { font-size: 0.78rem; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
-  .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 6px; }
-  .tag { background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 2px 8px; font-size: 0.72rem; }
-  .item .summary { font-size: 0.88rem; color: var(--text); margin: 6px 0; }
-  .item .angles { margin-top: 8px; font-size: 0.85rem; }
-  .item .angles ul { margin: 4px 0 0; padding-left: 18px; }
   .empty-state { color: var(--muted); padding: 40px 0; text-align: center; }
   .health-error { color: var(--bad); font-size: 0.85rem; margin-bottom: 4px; }
   .health-empty { color: var(--warn); font-size: 0.85rem; margin-bottom: 4px; }
@@ -325,14 +296,9 @@ function renderIdea(idea, rank) {
   /* Reader angle first, trade angle second — the same order the digest works
      in. The craft and competitive notes come after because they inform how to
      write it, not whether it is a story. */
-  const lines = [
-    ["Hook", idea.hook, ""],
-    ["For readers", idea.consumer, "aud-consumer"],
-    ["For the trade", idea.b2b, "aud-b2b"],
-    ["Localize", idea.localize, ""],
-    ["Chart", idea.chart, ""],
-    ["Competitive", idea.competitive, ""],
-  ].filter(([, v]) => v);
+  const craft = [["Localize", idea.localize], ["Chart", idea.chart],
+                 ["Competitive", idea.competitive], ["Also", idea.note]]
+                 .filter(([, v]) => v);
   return `
     <div class="idea">
       <div class="idea-head">
@@ -347,18 +313,19 @@ function renderIdea(idea, rank) {
         ${coverageBadge(idea)}
         ${webCoverageBadge(idea)}
       </div>
-      <dl class="idea-lines">
-        ${lines.map(([k, v, cls]) => `<dt class="${cls}">${k}</dt><dd>${esc(v)}</dd>`).join("")}
-      </dl>
+      ${idea.hook ? `<div class="field-label">Hook</div><div class="field-body">${esc(idea.hook)}</div>` : ""}
+      ${(idea.consumer || idea.b2b) ? `<div class="field-label">Story angles</div>
+        ${idea.consumer ? `<div class="story-angle"><b>For readers:</b> ${esc(idea.consumer)}</div>` : ""}
+        ${idea.b2b ? `<div class="story-angle"><b>For the trade:</b> ${esc(idea.b2b)}</div>` : ""}` : ""}
+      ${craft.length ? `<div class="field-label">Also worth noting</div>
+        <div class="field-body">${craft.map(([k, v]) => `${k}: ${esc(v)}`).join(" ")}</div>` : ""}
     </div>`;
 }
 
 function storyIdeasHtml(run) {
-  // In LLM mode pitch_ideas_raw is prose and the structured list is the
-  // deterministic one, so the prose wins to avoid showing two versions.
-  if (run.synthesis_mode === "llm" || !(run.story_ideas || []).length) {
-    return renderBlock(run.pitch_ideas_raw);
-  }
+  // Both modes now supply structured records, so ideas render with the same
+  // anatomy whether a model wrote the angles or the template did.
+  if (!(run.story_ideas || []).length) return renderBlock(run.pitch_ideas_raw);
   return run.story_ideas.map((idea, i) => renderIdea(idea, i + 1)).join("");
 }
 
@@ -517,30 +484,37 @@ function expandSection(block) {
   refreshToggleAll(document.getElementById("main") || document);
 }
 
-function renderItem(item) {
+function renderItem(item, index) {
   const findings = (item.key_findings || []).filter(Boolean);
+  const angles = item.story_angles || [];
+  // _angles() puts the reader angle first and the trade angle second; both are
+  // prefixed, so they can be lifted out and given the emphasis they deserve.
+  const audience = angles.filter(a => /^For (readers|the trade):/.test(a));
+  const craft = angles.filter(a => !/^For (readers|the trade):/.test(a));
   return `
     <article class="item">
-      <div class="item-top">
-        <div class="score">${item.score ?? 0}</div>
-        <div style="flex:1; min-width:0;">
-          <h4><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h4>
-          <div class="item-meta">
-            <span>${esc(item.source_id)}</span>
-            <span>${esc(fmtDate(item.published_at) || "undated")}</span>
-            <span>B2B ${item.b2b_coverage_count || 0} · B2C ${item.b2c_coverage_count || 0}</span>
-          </div>
-          <div class="tags">
-            ${item.is_new ? '<span class="badge new">New</span>' : ""}
-            ${coverageBadge(item)}
-            ${webCoverageBadge(item)}
-            ${(item.topics || []).map(t => `<span class="tag">${esc(label(t))}</span>`).join("")}
-          </div>
-          ${item.summary ? `<div class="summary">${esc(item.summary.slice(0, 320))}${item.summary.length > 320 ? "…" : ""}</div>` : ""}
-          ${findings.length ? `<div class="angles"><strong>Key finding</strong><ul>${findings.map(f => `<li>${esc(f)}</li>`).join("")}</ul></div>` : ""}
-          ${(item.story_angles || []).length ? `<div class="angles"><strong>Angles</strong><ul>${item.story_angles.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>` : ""}
-        </div>
+      <h4>${index != null ? `<span class="item-num">${index}.</span> ` : ""}<a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h4>
+      <div class="item-meta">
+        <span class="score-chip">${item.score ?? 0}</span>
+        <span>${esc(item.source_id)}</span>
+        <span>${esc(fmtDate(item.published_at) || "undated")}</span>
+        <span>B2B ${item.b2b_coverage_count || 0} · B2C ${item.b2c_coverage_count || 0}</span>
+        ${item.is_new ? '<span class="badge new">New</span>' : ""}
+        ${coverageBadge(item)}
+        ${webCoverageBadge(item)}
       </div>
+      ${item.summary ? `<div class="field-label">What it is</div>
+        <div class="field-body">${esc(item.summary.slice(0, 460))}${item.summary.length > 460 ? "…" : ""}</div>` : ""}
+      ${findings.length ? `<div class="field-label">Key finding</div>
+        <div class="field-body">${esc(findings[0])}</div>` : ""}
+      ${audience.length ? `<div class="field-label">Story angles</div>` +
+        audience.map(a => {
+          const [label, ...rest] = a.split(":");
+          return `<div class="story-angle"><b>${esc(label)}:</b> ${esc(rest.join(":").trim())}</div>`;
+        }).join("") : ""}
+      ${craft.length ? `<div class="field-label">Also worth noting</div>
+        <div class="field-body">${craft.map(esc).join(" ")}</div>` : ""}
+      ${(item.topics || []).length ? `<div class="tags">${item.topics.map(t => `<span class="tag">${esc(label(t))}</span>`).join("")}</div>` : ""}
     </article>`;
 }
 
@@ -657,7 +631,7 @@ async function renderMain() {
         </select>
         <span style="color: var(--muted); font-size: 0.8rem;">${items.length} shown</span>
       </div>
-      ${items.map(renderItem).join("") || '<div class="empty-state">No items match this filter.</div>'}
+      ${items.map((it, n) => renderItem(it, n + 1)).join("") || '<div class="empty-state">No items match this filter.</div>'}
     `, { count: items.length })}
 
     ${sectionBlock("health", "Pipeline Health", healthHtml)}

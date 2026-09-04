@@ -42,7 +42,7 @@ STORY_IDEA = {
     "coverage_state": "gap", "is_new": True, "hook": "A hook.",
     "consumer": "What it changes for a family managing care at home.",
     "b2b": "Referral volume and staffing exposure for providers.",
-    "localize": "Breaks down to US states.", "chart": None,
+    "localize": "Breaks down to US states.", "chart": None, "note": None,
     "competitive": "Monitored trades cover this beat and have not written it.",
 }
 SYNTHESIS = {

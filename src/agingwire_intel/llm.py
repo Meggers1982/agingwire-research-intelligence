@@ -87,9 +87,25 @@ SCHEMA = {
             "type": "string",
             "description": "The strongest cross-source story this run supports, with the specific evidence named.",
         },
+        # Structured rather than prose so the dashboard renders LLM and
+        # deterministic runs with the same card anatomy. Returning markdown here
+        # produced one wall of text per idea.
         "story_ideas": {
-            "type": "string",
-            "description": "Per-item story ideas for the highest-value items, each with a hook, an angle and the competitive situation.",
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 12,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {"type": "string", "description": "The item this idea is about."},
+                    "hook": {"type": "string", "description": "One sentence: what makes it a story."},
+                    "consumer": {"type": "string", "description": "For readers, in 'you' language."},
+                    "b2b": {"type": "string", "description": "For the trade — a different framing, not a rewording."},
+                    "note": {"type": "string", "description": "Localization, chart potential or competitive situation."},
+                },
+                "required": ["title", "hook", "consumer", "b2b", "note"],
+                "additionalProperties": False,
+            },
         },
         "trends": {
             "type": "string",
@@ -186,6 +202,41 @@ def _facts(payload: dict, previous: dict | None) -> str:
     return json.dumps(facts, ensure_ascii=False, indent=2)
 
 
+def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
+    """Carry the model's angles onto the deterministic records.
+
+    Keeps url, source, date, score and coverage state — facts the model has no
+    business restating — while replacing the written angles.
+    """
+    by_title = {str(f.get("title", "")).strip().lower(): f for f in fallback}
+    out = []
+    for idea in ideas:
+        title = str(idea.get("title", "")).strip()
+        base = dict(by_title.get(title.lower(), {}))
+        base.update({
+            "title": title or base.get("title"),
+            "hook": idea.get("hook") or base.get("hook"),
+            "consumer": idea.get("consumer") or base.get("consumer"),
+            "b2b": idea.get("b2b") or base.get("b2b"),
+            "note": idea.get("note"),
+        })
+        out.append(base)
+    return out
+
+
+def _as_markdown(ideas: list[dict]) -> str:
+    """The digest and .docx still consume markdown."""
+    lines = []
+    for idea in ideas:
+        lines.append(f"**{idea.get('title', '')}**")
+        for label, key in (("Hook", "hook"), ("For readers", "consumer"),
+                           ("For the trade", "b2b"), ("Also", "note")):
+            if idea.get(key):
+                lines.append(f"- {label}: {idea[key]}")
+        lines.append("")
+    return "\n".join(lines).strip()
+
+
 def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None = None) -> dict:
     """Rewrite the deterministic synthesis as prose, falling back on any failure.
 
@@ -230,10 +281,12 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
 
         text = next((b.text for b in response.content if getattr(b, "type", None) == "text"), "")
         parsed = json.loads(text)
+        ideas = parsed["story_ideas"]
         return {
             **deterministic,
             "feature_pitch_raw": parsed["feature_pitch"],
-            "pitch_ideas_raw": parsed["story_ideas"],
+            "story_ideas": _as_records(ideas, deterministic.get("story_ideas") or []),
+            "pitch_ideas_raw": _as_markdown(ideas),
             "trends_raw": parsed["trends"],
             "synthesis_mode": "llm",
             "synthesis_model": MODEL,
