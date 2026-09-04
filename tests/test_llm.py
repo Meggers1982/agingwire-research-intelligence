@@ -265,3 +265,54 @@ class SiblingTitleTests(unittest.TestCase):
     def test_shared_boilerplate_needs_several_titles(self):
         boiler = llm._shared_boilerplate(["One title", "Another title"])
         self.assertEqual(boiler, set())
+
+
+class RecordPoolTests(unittest.TestCase):
+    """The model writes about the evidence it was shown, not the sample.
+
+    Matching only against the twelve deterministic ideas left real items like
+    "Ownership" unmatched, and the fuzzy fallback then assigned them a sibling's
+    record — so a run came back with 4 of 12 links, several of them wrong.
+    """
+
+    PAYLOAD = {"evidence": [
+        {"title": f"CMS refreshed dataset: {n}", "url": f"https://x/{k}", "score": 70,
+         "source_id": "cms", "topics": ["long_term_care"],
+         "raw_metadata": {"coverage_state": "gap", "is_new": True}}
+        for n, k in [("Medical Equipment Suppliers", "a"), ("Penalties", "b"),
+                     ("Ownership", "c"), ("Provider Information", "d")]
+    ]}
+    DETERMINISTIC = [{"title": "CMS refreshed dataset: Medical Equipment Suppliers",
+                      "url": "https://x/a", "score": 74}]
+
+    def _merge(self, names):
+        pool = llm._record_pool(self.PAYLOAD, self.DETERMINISTIC)
+        ideas = [{"title": f"CMS refreshed dataset: {n} (08/01/26)", "hook": "h",
+                  "consumer": "c", "b2b": "b", "note": "n"} for n in names]
+        return llm._as_records(ideas, pool)
+
+    def test_pool_includes_evidence_beyond_the_sample(self):
+        titles = {r["title"] for r in llm._record_pool(self.PAYLOAD, self.DETERMINISTIC)}
+        self.assertIn("CMS refreshed dataset: Ownership", titles)
+        self.assertIn("CMS refreshed dataset: Penalties", titles)
+
+    def test_pool_does_not_duplicate_the_deterministic_entry(self):
+        pool = llm._record_pool(self.PAYLOAD, self.DETERMINISTIC)
+        titles = [r["title"] for r in pool]
+        self.assertEqual(len(titles), len(set(titles)))
+        self.assertEqual(pool[0]["score"], 74, "deterministic record should win")
+
+    def test_every_idea_resolves_to_its_own_item(self):
+        merged = self._merge(["Ownership", "Penalties", "Provider Information",
+                              "Medical Equipment Suppliers"])
+        self.assertEqual([m["url"] for m in merged],
+                         ["https://x/c", "https://x/b", "https://x/d", "https://x/a"])
+
+    def test_an_early_fuzzy_match_does_not_consume_a_later_exact_one(self):
+        """Ownership previously claimed the Medical Equipment record first."""
+        merged = self._merge(["Ownership", "Medical Equipment Suppliers"])
+        self.assertEqual(merged[1]["url"], "https://x/a")
+
+    def test_coverage_state_comes_from_the_pipeline(self):
+        merged = self._merge(["Penalties"])
+        self.assertEqual(merged[0]["coverage_state"], "gap")

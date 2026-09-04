@@ -260,6 +260,34 @@ def _match_record(title: str, candidates: list[dict], by_norm: dict,
     return best if best_overlap >= 0.34 else {}
 
 
+def _record_pool(payload: dict, deterministic_ideas: list[dict]) -> list[dict]:
+    """Every item the model could have written about, deterministic ideas first.
+
+    The model sees the top evidence items, not the twelve the template sampled,
+    so matching only against those left real items like "Ownership" unmatched —
+    and then fuzzy-matched onto a sibling, taking its link.
+    """
+    pool = list(deterministic_ideas)
+    seen = {str(i.get("title", "")).strip().lower() for i in pool}
+    for item in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]:
+        title = str(item.get("title", "")).strip()
+        if not title or title.lower() in seen:
+            continue
+        seen.add(title.lower())
+        meta = item.get("raw_metadata") or {}
+        pool.append({
+            "title": title,
+            "url": item.get("url"),
+            "source_id": item.get("source_id"),
+            "published_at": item.get("published_at"),
+            "score": item.get("score"),
+            "topics": item.get("topics") or [],
+            "coverage_state": meta.get("coverage_state"),
+            "is_new": bool(meta.get("is_new")),
+        })
+    return pool
+
+
 def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
     """Carry the model's angles onto the deterministic records.
 
@@ -276,9 +304,10 @@ def _as_records(ideas: list[dict], fallback: list[dict]) -> list[dict]:
         title = str(idea.get("title", "")).strip()
         base = dict(_match_record(title, remaining, by_norm, boilerplate))
         if base:
-            remaining = [r for r in remaining if r is not base
-                         and r.get("url") != base.get("url")]
-            by_norm.pop(_normalize_title(base.get("title", "")), None)
+            claimed_title = str(base.get("title", ""))
+            remaining = [r for r in remaining
+                         if str(r.get("title", "")) != claimed_title]
+            by_norm.pop(_normalize_title(claimed_title), None)
         base.update({
             "title": title or base.get("title"),
             "hook": idea.get("hook") or base.get("hook"),
@@ -351,7 +380,10 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
         return {
             **deterministic,
             "feature_pitch_raw": parsed["feature_pitch"],
-            "story_ideas": _as_records(ideas, deterministic.get("story_ideas") or []),
+            "story_ideas": _as_records(
+                ideas,
+                _record_pool(payload, deterministic.get("story_ideas") or []),
+            ),
             "pitch_ideas_raw": _as_markdown(ideas),
             "trends_raw": parsed["trends"],
             "synthesis_mode": "llm",
