@@ -36,21 +36,40 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt -e ".[dev,llm]"
-      - name: Replay ${{ inputs.date }}
-        run: python -m agingwire_intel --replay "${{ inputs.date }}"
-      - name: Commit the rewritten report
+      - name: Replay ${{ inputs.date }} and commit it
         run: |
           set -euo pipefail
           date="${{ inputs.date }}"
           git config user.name "agingwire-intelligence-bot"
           git config user.email "actions@users.noreply.github.com"
-          # Only the replayed day's files. A replay must never touch latest.*
-          # or another day's run, and staging just these makes that a fact
-          # rather than a promise about what the code did.
-          git add "outputs/${date}.md" "docs/data/runs/${date}.json" docs/data/index.json
-          if git diff --cached --quiet; then
-            echo "Replay produced no change for ${date}"
-          else
+
+          # The concurrency group keeps a replay from running beside a
+          # collection, but the daily job can still land its commit between
+          # this checkout and this push, and it did. Rebuild on top of whatever
+          # is actually on main and try again, rather than pushing a commit
+          # built on a main that has moved. Re-running the replay rather than
+          # replanting the files is deliberate: index.json is derived from the
+          # index already there, so it has to be rebuilt against the new one or
+          # it would drop the run that just landed.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            python -m agingwire_intel --replay "$date"
+
+            git add "outputs/${date}.md" "docs/data/runs/${date}.json" docs/data/index.json
+            if git diff --cached --quiet; then
+              echo "Replay produced no change for ${date}"
+              exit 0
+            fi
             git commit -m "Replay the ${date} report"
-            git push origin main
-          fi
+
+            if git push origin main; then
+              echo "Replayed ${date} on attempt ${attempt}"
+              exit 0
+            fi
+            echo "Push rejected; main moved. Replaying on top of it."
+          done
+
+          echo "Could not land the ${date} replay after 3 attempts" >&2
+          exit 1
