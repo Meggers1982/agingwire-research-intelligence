@@ -27,7 +27,7 @@ Monitor available B2B/B2C RSS feeds, cluster coverage, identify saturation and u
 Implemented in `synthesis.py`: clusters evidence by topic, ranks by independent-source count and coverage gap, and writes a feature pitch, per-item story ideas and a trends section. `llm.py` optionally rewrites them as prose. Still open: preserving methods/caveats per claim and recommending specific visual forms.
 
 ## Phase 7 — dashboard
-Implemented: full run history in a sidebar, per-run feature pitch, story ideas, trends, topic clusters, filterable opportunities (new / gap / localizable / topic), pipeline health, jump links, light-dark theme, and `.docx` / `.csv` export. Still open: a coverage map and a persistent story backlog that survives across runs.
+Implemented: full run history in a sidebar, per-run feature pitch, story ideas, trends, topic clusters, filterable opportunities (new / gap / localizable / topic), pipeline health, jump links, a light-default theme with an opt-in dark toggle, and `.docx` / `.csv` export. Styling is ported from `freelance-opps-app` (2026-09-05). Still open: a coverage map and a persistent story backlog that survives across runs.
 
 ## Guardrails
 Claim-level provenance; primary evidence preference; correlation/causation discipline; preprint/sample/conflict flags; no invalid national-to-local inference; respect API limits, robots and source terms.

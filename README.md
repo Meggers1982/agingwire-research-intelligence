@@ -56,7 +56,8 @@ Benchmarked against `Meggers1982/freelance-opps-app`, whose thesis is that the t
 a spreadsheet could never do is track what you did about each row. This dashboard
 had no equivalent: `state/seen.json` remembered what the pipeline surfaced and
 nothing remembered your response, so every run re-presented 169 candidates as though
-untouched.
+untouched. The list below is that app's *interaction* model; its *visual* system was
+ported separately — see [Design system](#design-system).
 
 - **Editorial status** on every item — to review, shortlisted, drafting, pitched,
   published, passed, killed — held in `localStorage` and carried into the .csv
@@ -83,7 +84,7 @@ untouched.
 `renderItem()` had also been emitting `.item-meta`, `.score-chip`, `.field-label`,
 `.field-body`, `.story-angle` and `.tags` since it was written, and the stylesheet
 defined none of them — every opportunity card rendered as unstyled default HTML.
-Those styles now exist.
+Those styles exist now, and were rebuilt again on the ported design system.
 
 ## The digest leads with the writing, not the ranking
 
@@ -338,6 +339,25 @@ Then serve the dashboard locally:
 python -m http.server 8000 -d docs
 ```
 
+Python 3.11 or newer is required (`pyproject.toml` pins `>=3.11`; the daily workflow
+runs 3.12). On 3.10 the import of `datetime.UTC` in `runs.py` fails at collection.
+
+### Editing the dashboard
+
+`src/agingwire_intel/templates/dashboard.html` is the only source. `docs/index.html`
+is a **verbatim copy** written by `build_dashboard()`, so edit the template and
+regenerate rather than editing the published file:
+
+```bash
+python -c "from agingwire_intel.dashboard import build_dashboard; build_dashboard('docs/index.html')"
+```
+
+Commit both. Two test modules cover it and both must pass:
+`tests/test_dashboard_contract.py` pins the JS-to-JSON field contract by reading the
+inline script as text, and `tests/test_dashboard_render.py` actually executes that
+script over a fixture run in Node — it exists because a `ReferenceError` once shipped
+under a green pipeline.
+
 ## Configuration
 
 - `config/monitors.yml` controls evidence monitors and media registries. Supported methods: `rss`, `web`, `census_acs`, `senior_digest`, `bls_api`, `federal_register`, `cms_datasets`.
@@ -385,7 +405,9 @@ the same way.
 - **Story opportunities** — the scored items, filterable by new / confirmed gap / localizable / topic.
 - **Pipeline health** — errors, empty sources and feed coverage.
 
-Every section collapses from its heading, and the collapsed set is remembered in `localStorage` — a jump link to a collapsed section opens it rather than scrolling to a closed header. Jump links, a light/dark toggle, `.docx` export and `.csv` export are on every run.
+Every section collapses from its heading, and the collapsed set is remembered in `localStorage` — a jump link to a collapsed section opens it rather than scrolling to a closed header. Jump links, a theme toggle, `.docx` export and `.csv` export are on every run.
+The page **defaults to light and no longer follows the OS theme**; dark is opt-in
+through the toggle and remembered in `localStorage` under `aw-theme`.
 A **Collapse all** control sits with the jump links, and each heading carries an
 accent caret and a HIDE/SHOW pill — the first version shipped with only a small
 muted caret and read as decoration, so nobody found it.
@@ -393,7 +415,38 @@ muted caret and read as decoration, so nobody found it.
 Dates read as `mm/dd/yy` everywhere a person sees them: the dashboard, the
 digest, the weekly rollup, the `.docx` and the `.csv`. ISO stays internal — run
 ids, filenames, the seen ledger and every sort key depend on it ordering
-lexicographically. `matching.us_date` is the single formatter. The palette matches `senior-research-digest` so the two dashboards read as one family.
+lexicographically. `matching.us_date` is the single formatter.
+
+### Design system
+
+The visual layer is ported from `freelance-opps-app` so the two dashboards read as
+one product rather than two tools that happen to share an owner. The earlier pass
+took only that app's interaction model and kept the old styling, which left them
+looking unrelated.
+
+| | Value | Note |
+| --- | --- | --- |
+| Background / surface / border | `#f7f6f3` / `#ffffff` / `#e3e0d9` | the app's exact tokens |
+| Text / muted / faint | `#1c1b18` / `#6b675e` / `#918c81` | `--faint` is the third tier this stylesheet used to fake with `--muted` |
+| Accent / accent-soft | `#1f5f4f` / `#e6efeb` | deep teal, replacing the old brown |
+| Type | Source Sans 3 | 1.0625rem/600 card titles, 0.95rem/1.625 body, 0.75rem uppercase field labels |
+| Measure | 56rem | `main` is capped and centred; the pitch prose used to run the full window width |
+| Radii / elevation | `0.5rem` / `0 1px 2px rgba(0,0,0,.03)` | hairline border over a hairline shadow |
+
+Two conventions worth keeping when editing:
+
+- **Chips are clickable, tags are not.** Facet chips are pills (`border-radius:
+  999px`); tags and outlet chips are square-cornered. The shape is the affordance.
+- **The caret and the HIDE/SHOW pill keep their size and resting opacity.** Both
+  were raised deliberately after the collapse control shipped invisible; a restyle
+  that quiets them down re-breaks a fixed bug.
+
+Editorial status is colour-coded by tone the way the app's `StatusPicker` is —
+shortlisted and drafting sky, pitched amber, published emerald, killed rose, passed
+muted — so a card's state is legible without reading the select.
+
+The dark palette is retuned to the same teal and is a courtesy, not a target: the
+app it is modelled on is light-only, so light is what the two products share.
 
 ### Editorial layer: how it is written
 
