@@ -172,6 +172,11 @@
     padding: 0.625rem 0.75rem; box-shadow: var(--shadow);
   }
   .stat .n { font-size: 1.5rem; font-weight: 600; line-height: 1.15; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: -0.025em; }
+  .faint { color: var(--faint); font-weight: 400; }
+  /* Browser default yellow belongs to neither theme and is unreadable on dark. */
+  mark { background: var(--tone-warn-bg); color: var(--tone-warn-ink);
+         border-radius: 0.1875rem; padding: 0 0.125rem; }
+  :root[data-theme="dark"] mark { background: #4a3a12; color: #fde68a; }
   .stat .l { font-size: 0.75rem; color: var(--faint); }
   .stat.is-zero .n { color: var(--faint); }
 
@@ -430,6 +435,24 @@
     * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
   }
 </style>
+<script>
+/* Resolved here, in the head, so it is settled before the first paint. It was
+   set at the bottom of the body script, which gave anyone who had chosen dark a
+   white flash on every load. The stored value is the choice -- system, light or
+   dark -- and this resolves it to a concrete attribute, so the stylesheet needs
+   no media query and cannot disagree with the toggle. Defaulting to system
+   restores OS respect: the original bug was that nothing ever set data-theme,
+   and the fix for it dropped the media query rather than adding this. */
+(function () {
+  var choice = "system";
+  try { choice = localStorage.getItem("aw-theme") || "system"; } catch (e) {}
+  if (choice !== "light" && choice !== "dark") choice = "system";
+  var dark = choice === "dark" || (choice === "system" &&
+    window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themeChoice = choice;
+})();
+</script>
 </head>
 <body>
 <header>
@@ -453,7 +476,7 @@
   <main id="main"><div class="empty-state">Loading run history…</div></main>
 </div>
 <button id="scroll-top-btn" title="Back to top" aria-label="Back to top">&#8593;</button>
-<script>
+<script id="app">
 const state = {
   index: null, filtered: [], activeId: null, runs: new Map(), loadSeq: 0,
   /* Multi-select facets. The single <select> could not express "new AND
@@ -677,7 +700,7 @@ function renderSidebar() {
 }
 
 function applyFilters() {
-  const q = document.getElementById("search").value.trim().toLowerCase();
+  const q = currentQuery();
   const topic = document.getElementById("topic-filter").value;
   state.filtered = state.index.runs.filter(r => {
     if (topic && !(r.top_topics || []).includes(topic)) return false;
@@ -796,7 +819,7 @@ function renderItem(item, index) {
   const outlets = item.outlets || [];
   return `
     <article class="item ${cls}" data-url="${esc(item.url)}">
-      <h4>${index != null ? `<span class="item-num">${index}.</span> ` : ""}<a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h4>
+      <h4>${index != null ? `<span class="item-num">${index}.</span> ` : ""}<a href="${esc(item.url)}" target="_blank" rel="noopener">${mark(item.title, currentQuery())}</a></h4>
       <div class="item-meta">
         <span class="band-chip ${cls}">${esc(bandOf(item))}</span>
         <span class="score-raw">${item.score ?? 0}</span>
@@ -863,8 +886,34 @@ function clearFacets() {
   Object.values(state.facets).forEach(set => set.clear());
 }
 
+/* The sidebar box filtered the run list and stopped there, so there was no way
+   to find an item inside a run at all -- only chips and a sort. */
+function itemBlob(item) {
+  return [item.title, item.source_id, item.summary, item.hook, item.url,
+          (item.topics || []).join(" "), (item.story_angles || []).join(" ")]
+    .filter(Boolean).join(" ").toLowerCase();
+}
+
+function currentQuery() {
+  const box = document.getElementById("search");
+  return box ? box.value.trim().toLowerCase() : "";
+}
+
+function matchesQuery(item, query) {
+  return !query || itemBlob(item).includes(query);
+}
+
+/* Escapes first, then marks, so a query can never inject markup. */
+function mark(text, query) {
+  const safe = esc(text || "");
+  if (!query) return safe;
+  const needle = esc(query).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return safe.replace(new RegExp(needle, "gi"), m => `<mark>${m}</mark>`);
+}
+
 function itemsFor(run) {
-  const rows = (run.items || []).filter(matchesFacets);
+  const query = currentQuery();
+  const rows = (run.items || []).filter(i => matchesQuery(i, query)).filter(matchesFacets);
   if (state.sort === "date") {
     rows.sort((a, b) => (b.published_at || "").localeCompare(a.published_at || ""));
   } else if (state.sort === "title") {
@@ -1019,10 +1068,14 @@ async function renderMain() {
         <div class="btn-row">
           <button id="export-docx-btn" class="export-btn">Export .docx</button>
           <button id="export-csv-btn" class="export-btn">Export .csv</button>
+          <button id="import-status-btn" class="export-btn" title="Restore editorial statuses from a previously exported .csv">Import statuses</button>
+          <input type="file" id="import-status-file" accept=".csv,text/csv" hidden>
         </div>
       </div>
       <div class="stat-row">
-        <div class="stat"><div class="n">${run.evidence_count}</div><div class="l">evidence candidates</div></div>
+        <div class="stat"><div class="n">${run.evidence_count}</div><div class="l">evidence candidates${
+          (run.items || []).length < run.evidence_count
+            ? ` <span class="faint">— top ${(run.items || []).length} shown</span>` : ""}</div></div>
         <div class="stat${run.new_evidence_count ? "" : " is-zero"}"><div class="n">${run.new_evidence_count}</div><div class="l">new since last run</div></div>
         <div class="stat${run.gap_count ? "" : " is-zero"}"><div class="n">${run.gap_count}</div><div class="l">confirmed coverage gaps</div></div>
         <div class="stat"><div class="n">${run.monitored_publisher_count}<span class="l"> / ${run.registry_publisher_count}</span></div><div class="l">publisher feeds working</div></div>
@@ -1080,6 +1133,23 @@ async function renderMain() {
 
   document.getElementById("export-docx-btn").addEventListener("click", () => exportRunToDocx(run));
   document.getElementById("export-csv-btn").addEventListener("click", () => exportRunToCsv(run));
+  const importBtn = document.getElementById("import-status-btn");
+  const importFile = document.getElementById("import-status-file");
+  if (importBtn && importFile) {
+    importBtn.addEventListener("click", () => importFile.click());
+    importFile.addEventListener("change", async () => {
+      const file = importFile.files && importFile.files[0];
+      importFile.value = "";
+      if (!file) return;
+      try {
+        const n = importStatusCsv(await file.text());
+        importBtn.textContent = n ? `Imported ${n}` : "Nothing to import";
+      } catch (e) {
+        importBtn.textContent = "Import failed";
+      }
+      setTimeout(() => { importBtn.textContent = "Import statuses"; renderMain(); }, 1600);
+    });
+  }
   main.querySelectorAll("[data-facet]").forEach(btn => btn.addEventListener("click", () => {
     const set = state.facets[btn.dataset.facet];
     const value = btn.dataset.value;
@@ -1114,13 +1184,61 @@ function csvCell(v) {
   return /[",\n]/.test(s) ? `"${s}"` : s;
 }
 
+/* Status lives in localStorage and nowhere else, so a cleared cache or a second
+   machine silently resets every item to "To review" with nothing to say it
+   happened. The .csv already carries the column out; this is the way back in.
+   Keyed on url, which is what the store is keyed on -- senior-research keys on
+   PMID, which survives a publisher moving a page, and this repo has no
+   equivalent stable id on the item yet. */
+const STATUS_BY_LABEL = Object.fromEntries(
+  Object.entries(STATUSES).map(([key, s]) => [s.label.toLowerCase(), key]));
+
+function parseCsvRows(text) {
+  const rows = [];
+  let row = [], field = "", quoted = false;
+  const src = text.replace(/^\ufeff/, "");
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (quoted) {
+      if (c === '"' && src[i + 1] === '"') { field += '"'; i++; }
+      else if (c === '"') quoted = false;
+      else field += c;
+    } else if (c === '"') quoted = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows.filter(cells => cells.some(v => v !== ""));
+}
+
+function importStatusCsv(text) {
+  const rows = parseCsvRows(text);
+  if (!rows.length) return 0;
+  const header = rows[0].map(h => h.trim().toLowerCase());
+  const urlAt = header.indexOf("url");
+  const statusAt = header.indexOf("status");
+  if (urlAt < 0 || statusAt < 0) throw new Error("needs url and status columns");
+  let applied = 0;
+  for (const row of rows.slice(1)) {
+    const url = (row[urlAt] || "").trim();
+    const label = (row[statusAt] || "").trim().toLowerCase();
+    if (!url || !(label in STATUS_BY_LABEL)) continue;
+    setStatus(url, STATUS_BY_LABEL[label]);
+    applied++;
+  }
+  return applied;
+}
+
 function exportRunToCsv(run) {
   const headers = ["score", "score_band", "status", "title", "source_id", "source_type",
                    "published_at", "topics", "coverage_state", "is_new",
                    "b2b_coverage_count", "b2c_coverage_count", "localizable",
                    "outlets", "hook", "url", "story_angles"];
   const rows = [headers.join(",")];
-  for (const i of run.items || []) {
+  // .csv read run.items while .docx read itemsFor(run), so the same
+  // screen produced two different sets depending on the button.
+  for (const i of itemsFor(run)) {
     rows.push([
       i.score, bandOf(i), STATUSES[statusOf(i)] ? STATUSES[statusOf(i)].label : "",
       i.title, i.source_id, i.source_type, fmtDate(i.published_at),
@@ -1189,7 +1307,10 @@ function docxItem(item) {
       children: [new docx.TextRun({
         text: [item.source_id, fmtDate(item.published_at) || "undated",
                (item.topics || []).map(t => t.replace(/_/g, " ")).join(", "),
-               item.coverage_state].filter(Boolean).join("   ·   "),
+               item.coverage_state,
+               // Editorial status rode out in the .csv and not the .docx, so
+               // the document you send someone lost what you decided about it.
+               (STATUSES[statusOf(item)] || {}).label].filter(Boolean).join("   ·   "),
         color: "666666", size: 18,
       })], spacing: { after: 80 },
     }),
@@ -1264,17 +1385,42 @@ async function exportRunToDocx(run) {
 }
 
 /* ---------- theme, header measurement, boot ---------- */
+const THEME_CHOICES = ["system", "light", "dark"];
+const THEME_LABEL = { system: "Theme: Auto", light: "Theme: Light", dark: "Theme: Dark" };
+
+function themeChoice() {
+  const stored = document.documentElement.dataset.themeChoice;
+  return THEME_CHOICES.includes(stored) ? stored : "system";
+}
+
+function applyTheme(choice) {
+  const dark = choice === "dark" || (choice === "system" && window.matchMedia
+    && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.dataset.themeChoice = choice;
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    btn.textContent = THEME_LABEL[choice];
+    btn.setAttribute("aria-label",
+      `Theme: ${choice}. Activate to switch to ${THEME_CHOICES[(THEME_CHOICES.indexOf(choice) + 1) % 3]}.`);
+  }
+}
+
+/* Three states, not two. A binary toggle cannot express "follow the OS", which
+   is where most people already are, and forcing light for everyone was an
+   overcorrection for data-theme never having been set at all. */
 function initTheme() {
-  let stored = null;
-  try { stored = localStorage.getItem("aw-theme"); } catch (e) { /* private mode */ }
-  if (stored === "dark" || stored === "light") document.documentElement.dataset.theme = stored;
-  else document.documentElement.dataset.theme = "light";
+  applyTheme(themeChoice());
   document.getElementById("theme-toggle").addEventListener("click", () => {
-    const current = document.documentElement.dataset.theme || "light";
-    const next = current === "dark" ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
+    const next = THEME_CHOICES[(THEME_CHOICES.indexOf(themeChoice()) + 1) % THEME_CHOICES.length];
+    applyTheme(next);
     try { localStorage.setItem("aw-theme", next); } catch (e) { /* private mode */ }
   });
+  if (window.matchMedia) {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const onChange = () => { if (themeChoice() === "system") applyTheme("system"); };
+    mq.addEventListener ? mq.addEventListener("change", onChange) : mq.addListener(onChange);
+  }
 }
 
 function measureHeader() {

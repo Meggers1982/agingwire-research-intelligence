@@ -2,7 +2,7 @@ import json
 import shutil
 import tempfile
 import unittest
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from unittest.mock import patch
 
@@ -348,3 +348,43 @@ class RetryUsesTheCacheTests(unittest.TestCase):
             _, status = media._collect_one(self.row, "b2b", True, self.cache)
         discover.assert_not_called()
         self.assertEqual(status["status"], "error")
+
+
+class ConfiguredFeedRecoveryTests(unittest.TestCase):
+    """A configured feed that 403s walks the fallback ladder as a retry.
+
+    The ladder is expensive -- a page fetch, six feed probes, two WordPress
+    probes, robots.txt, seven sitemap probes and a SerpAPI call. Its result was
+    only ever written to the cache when the retry *succeeded*, so exactly the
+    publishers this recovery was built for -- a permanently broken feed with no
+    working alternative -- paid for the whole walk every single morning.
+    """
+
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.dir, ignore_errors=True)
+        self.cache = media.DiscoveryCache(self.dir / "feed_discovery.json")
+
+    def test_a_clean_miss_is_remembered(self):
+        self.cache.put("https://example.com", None)
+        hit, source = self.cache.get("https://example.com")
+        self.assertTrue(hit, "a miss that was probed for should be a cache hit")
+        self.assertIsNone(source)
+
+    def test_a_remembered_miss_stops_the_ladder_being_rewalked(self):
+        self.cache.put("https://example.com", None)
+        with patch.object(media, "discover_source") as probe:
+            hit, _ = self.cache.get("https://example.com")
+            self.assertTrue(hit)
+            probe.assert_not_called()
+
+    def test_a_miss_expires_but_a_hit_does_not(self):
+        """A publisher that fixes its feed has to be found again, so misses age
+        out at CACHE_TTL_DAYS. A working feed is the best route there is."""
+        self.cache.put("https://miss.example", None)
+        self.cache.put("https://hit.example", media.Source(media.KIND_RSS, "https://hit.example/feed"))
+        stale = (datetime.now(UTC) - timedelta(days=media.CACHE_TTL_DAYS + 1)).isoformat()
+        for site in ("https://miss.example", "https://hit.example"):
+            self.cache.entries[site]["checked_at"] = stale
+        self.assertFalse(self.cache.get("https://miss.example")[0])
+        self.assertTrue(self.cache.get("https://hit.example")[0])

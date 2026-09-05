@@ -190,3 +190,37 @@ class SerpApiDiagnosticTests(unittest.TestCase):
         # The dashboard reads .length on it; absent would throw.
         doc = build_run_document(PAYLOAD, SYNTHESIS)
         self.assertEqual(doc["serpapi_failures"], [])
+
+
+class HiddenRunTests(unittest.TestCase):
+    """A run that collected badly had no way to be hidden short of deleting it."""
+
+    def test_a_listed_id_is_kept_out_of_the_index(self):
+        import json as _json
+
+        from agingwire_intel.runs import hidden_ids
+        with tempfile.TemporaryDirectory() as raw:
+            data = Path(raw)
+            (data / "hidden.json").write_text(_json.dumps({"ids": ["2026-09-03"]}))
+            self.assertEqual(hidden_ids(data), {"2026-09-03"})
+
+    def test_a_bare_list_works_too(self):
+        import json as _json
+
+        from agingwire_intel.runs import hidden_ids
+        with tempfile.TemporaryDirectory() as raw:
+            data = Path(raw)
+            (data / "hidden.json").write_text(_json.dumps(["x"]))
+            self.assertEqual(hidden_ids(data), {"x"})
+
+    def test_an_unreadable_file_hides_nothing(self):
+        from agingwire_intel.runs import hidden_ids
+        with tempfile.TemporaryDirectory() as raw:
+            data = Path(raw)
+            (data / "hidden.json").write_text("{not json")
+            self.assertEqual(hidden_ids(data), set())
+
+    def test_no_file_hides_nothing(self):
+        from agingwire_intel.runs import hidden_ids
+        with tempfile.TemporaryDirectory() as raw:
+            self.assertEqual(hidden_ids(Path(raw)), set())

@@ -263,10 +263,23 @@ def _collect_one(
             if cached:
                 retry = cached_source
             else:
+                probe_completed = True
                 try:
                     retry = discover_source(website, allow_fallbacks=fallbacks)
                 except gnews.ProbeFailed:
-                    retry = None
+                    # The probe itself failed, which says nothing about the
+                    # publisher. Not cached, so it is retried rather than
+                    # remembered as an absence.
+                    retry, probe_completed = None, False
+                # A clean miss is a result and worth keeping. The unconfigured
+                # path above already caches one; this path did not, so exactly
+                # the publishers the recovery work was for -- a configured feed
+                # that permanently 403s with no working fallback -- re-walked
+                # the whole ladder every morning forever. Misses expire at
+                # CACHE_TTL_DAYS while hits do not, so a publisher that fixes
+                # its feed is still found again.
+                if cache is not None and retry is None and probe_completed:
+                    cache.put(website, None)
         if retry is None or retry == source:
             return [], {
                 "publisher": publisher, "audience": audience_type, "status": "error",

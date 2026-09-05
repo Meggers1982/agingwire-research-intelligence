@@ -526,9 +526,14 @@ def synthesize(payload: dict, previous: dict | None = None, now: datetime | None
     }
 
 
-def recent_window(payload: dict, days: int = 30) -> list[dict]:
-    """Evidence published inside the window, for LLM prompts that need a subset."""
-    now = datetime.now(UTC)
+def recent_window(payload: dict, days: int = 30, now: datetime | None = None) -> list[dict]:
+    """Evidence published inside the window, for LLM prompts that need a subset.
+
+    Takes a clock for the same reason build_clusters does: on a replay the wall
+    clock is the wrong day. Currently unused, and wired now so it cannot be
+    plugged into the LLM path later carrying the bug back with it.
+    """
+    now = now or datetime.now(UTC)
     out = []
     for item in payload.get("evidence", []):
         age = _age_days(item.get("published_at"), now)

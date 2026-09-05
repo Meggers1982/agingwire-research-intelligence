@@ -78,7 +78,7 @@ def main() -> int:
     now = _generated_at(payload) if replay else None
     synthesis = synthesize(payload, previous, now=now)
     if not args.no_llm:
-        synthesis = llm.upgrade_synthesis(payload, synthesis, previous)
+        synthesis = llm.upgrade_synthesis(payload, synthesis, previous, now=now)
 
     run_path = runs.write_run(payload, synthesis, docs_dir=args.docs_dir)
     digest = write_digest(payload, args.output_dir, synthesis, latest=not replay)

@@ -197,6 +197,15 @@ def _media_summary(media_status: list[dict]) -> dict:
             for m in media_status
             if m.get("status") == "error"
         ][:25],
+        # Which publisher was rescued by which fallback route. media.py has
+        # written this since the recovery work landed and it was dropped here,
+        # so the panel could say how many feeds worked but never whether the
+        # recovery that produced them was working.
+        "recovered": [
+            {"publisher": m.get("publisher"), "via": m.get("recovered_from")}
+            for m in media_status
+            if m.get("recovered_from")
+        ][:25],
     }
 
 
@@ -213,6 +222,29 @@ def index_entry(run: dict, payload: dict) -> dict:
         "synthesis_mode": run["synthesis_mode"],
         "search_blob": _search_blob(payload),
     }
+
+
+HIDDEN_NAME = "hidden.json"
+
+
+def hidden_ids(data_dir: Path) -> set[str]:
+    """Run ids to keep out of the index, from a committed docs/data/hidden.json.
+
+    There is no way to hide a run that parsed wrong short of deleting its file,
+    which loses the evidence with it. A list beside the data is enough: nothing
+    is destroyed, the suppression is in git history like everything else, and
+    removing an id brings the run straight back. Accepts a bare list or
+    {"ids": [...]} so the file can carry a note saying why.
+    """
+    path = data_dir / HIDDEN_NAME
+    if not path.exists():
+        return set()
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return set()
+    ids = raw.get("ids", []) if isinstance(raw, dict) else raw
+    return {str(i) for i in ids}
 
 
 def write_run(payload: dict, synthesis: dict, docs_dir: str | Path = "docs") -> Path:
@@ -242,6 +274,10 @@ def write_run(payload: dict, synthesis: dict, docs_dir: str | Path = "docs") -> 
 
     runs.append(index_entry(run, payload))
     runs.sort(key=lambda r: r.get("run_date") or "", reverse=True)
+
+    hidden = hidden_ids(data_dir)
+    if hidden:
+        runs = [r for r in runs if r.get("id") not in hidden]
 
     all_topics = sorted({t for r in runs for t in r.get("top_topics") or []})
     index_path.write_text(

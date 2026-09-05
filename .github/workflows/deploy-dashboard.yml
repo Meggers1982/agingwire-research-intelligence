@@ -1,0 +1,57 @@
+# Publish a dashboard change without collecting anything.
+#
+# The daily workflow used to run on push, so a template edit reached the site
+# by spending a full paid collection -- and mutating state/seen.json with it.
+# That trigger is gone. This is the replacement: it rebuilds docs/index.html
+# from the template and commits it, touching no API and no ledger.
+#
+# Run it from Actions -> "Deploy dashboard" -> Run workflow.
+name: Deploy dashboard
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agingwire-deploy-dashboard
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt -e ".[dev]"
+
+      # The suite pins the JS-to-JSON contract and executes the dashboard in
+      # Node, which is exactly what a template edit can break.
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Rebuild the published page from the template
+        run: |
+          python - <<'PY'
+          from agingwire_intel.dashboard import build_dashboard
+          print("wrote", build_dashboard("docs/index.html"))
+          PY
+
+      - name: Commit the rebuilt page
+        run: |
+          set -euo pipefail
+          git config user.name  "agingwire-intelligence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/index.html
+          if git diff --cached --quiet; then
+            echo "docs/index.html already matches the template"
+          else
+            git commit -m "Publish the dashboard template"
+            git push origin main
+          fi

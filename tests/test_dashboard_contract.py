@@ -15,7 +15,7 @@ from tests.test_runs import PAYLOAD, SYNTHESIS
 
 
 def dashboard_js() -> str:
-    match = re.search(r"<script>(.*?)</script>", TEMPLATE.read_text(encoding="utf-8"), re.S)
+    match = re.search(r'<script id="app">(.*?)</script>', TEMPLATE.read_text(encoding="utf-8"), re.S)
     assert match, "dashboard template has no inline script"
     return match.group(1)
 
@@ -100,6 +100,24 @@ class ContractTests(unittest.TestCase):
 
     def test_docx_library_is_lazy_loaded_from_vendor(self):
         self.assertIn('el.src = "vendor/docx-8.5.0.umd.js"', self.js)
+
+
+class PublishedCopyTests(unittest.TestCase):
+    """docs/index.html is a copy of the template that only a pipeline run makes.
+
+    cd15a27 fixed a TDZ bug in the template alone and the published page stayed
+    broken until b45a46a copied it across by hand. Nothing compared the two, so
+    CI was green throughout. This is that comparison.
+    """
+
+    def test_the_published_page_matches_the_template(self):
+        published = Path(__file__).resolve().parent.parent / "docs" / "index.html"
+        self.assertTrue(published.exists(), "docs/index.html is missing")
+        self.assertEqual(
+            published.read_text(encoding="utf-8"),
+            TEMPLATE.read_text(encoding="utf-8"),
+            "docs/index.html has drifted from the template; run build_dashboard() "
+            "and commit the result (the deploy workflow does this)")
 
 
 class BuildDashboardTests(unittest.TestCase):

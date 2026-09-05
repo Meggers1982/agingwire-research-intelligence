@@ -19,6 +19,7 @@ Two honest limits:
 from __future__ import annotations
 
 import re
+import threading
 import time
 from datetime import UTC, datetime
 from urllib.parse import quote_plus, urlparse
@@ -56,6 +57,11 @@ SERPAPI_SECONDS_LIMIT = 360
 
 _budget = serpapi.Budget(SERPAPI_BUDGET_LIMIT)
 _seconds_left = float(SERPAPI_SECONDS_LIMIT)
+# Probes run on a 16-worker pool, so the seconds counter is read and written
+# from several threads at once. Without this an in-flight call's cost can be
+# lost between the read and the write, and the accounting the cap is built on
+# quietly under-reports.
+_seconds_lock = threading.Lock()
 
 
 def reset_budget(limit: int = SERPAPI_BUDGET_LIMIT,
@@ -63,7 +69,8 @@ def reset_budget(limit: int = SERPAPI_BUDGET_LIMIT,
     """Start a fresh per-run allowance of calls and of time."""
     global _budget, _seconds_left
     _budget = serpapi.Budget(limit)
-    _seconds_left = float(seconds)
+    with _seconds_lock:
+        _seconds_left = float(seconds)
 
 
 def _serpapi_date(value: str) -> str | None:
@@ -110,7 +117,9 @@ def _serpapi_entries(website: str, window: str) -> list[dict]:
     if window:
         query += f" when:{window}"
     global _seconds_left
-    if _seconds_left <= 0:
+    with _seconds_lock:
+        spent_out = _seconds_left <= 0
+    if spent_out:
         # Out of time rather than out of answers. Raising keeps the domain out
         # of the discovery cache as a miss, so tomorrow's run asks again
         # instead of writing the publisher off for the full miss TTL.
@@ -122,7 +131,8 @@ def _serpapi_entries(website: str, window: str) -> list[dict]:
             {"engine": "google_news", "q": query, "gl": "us", "hl": "en"}, budget=_budget
         )
     finally:
-        _seconds_left -= time.monotonic() - started
+        with _seconds_lock:
+            _seconds_left -= time.monotonic() - started
 
     if data is serpapi.NO_RESULTS:
         # Google answered: it indexes nothing here. An answer, so let it cache

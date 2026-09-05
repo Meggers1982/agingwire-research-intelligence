@@ -22,7 +22,7 @@ NODE = shutil.which("node")
 
 def render(template_text: str) -> str:
     """Run the template's inline script over a fixture run; return the page HTML."""
-    script = re.search(r"<script>(.*?)</script>", template_text, re.S)
+    script = re.search(r'<script id="app">(.*?)</script>', template_text, re.S)
     assert script, "dashboard template has no inline script"
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)

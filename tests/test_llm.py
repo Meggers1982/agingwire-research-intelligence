@@ -1,5 +1,6 @@
 import json
 import unittest
+from datetime import UTC, datetime
 from unittest import mock
 
 from agingwire_intel import llm
@@ -384,3 +385,37 @@ class StakeTests(unittest.TestCase):
         md = llm._as_markdown([{"headline": "H", "title": "Alpha",
                                 "why": "What a family loses."}])
         self.assertIn("- Why it matters: What a family loses.", md)
+
+
+class ReplayClockTests(unittest.TestCase):
+    """--replay rewrites a stored day's editorial layer without re-collecting.
+
+    __main__ threads that day's clock into synthesize(), then hands the same
+    payload to upgrade_synthesis, which rebuilt its clusters against
+    datetime.now() one line later. Every age the model was given -- the
+    newest_age_days figures, the CLUSTER_WINDOW_DAYS cutoff -- came from today
+    rather than the day being replayed, which is the difference the feature
+    exists to avoid.
+    """
+
+    # Several independent sources on one topic inside a short window: what
+    # build_clusters is looking for, and the only shape whose ages can move.
+    PAYLOAD = {
+        "evidence": [
+            {"source_id": src, "title": f"A {src} record on staffing", "url": f"https://x/{n}",
+             "topics": ["long_term_care"], "published_at": "2026-06-01T00:00:00+00:00",
+             "score": 60, "summary": "s"}
+            for n, src in enumerate(("cms", "bls", "census", "federal_register"))
+        ],
+    }
+
+    def test_the_facts_block_follows_the_clock_it_is_given(self):
+        early = llm._facts(self.PAYLOAD, None, now=datetime(2026, 6, 2, tzinfo=UTC))
+        late = llm._facts(self.PAYLOAD, None, now=datetime(2026, 12, 2, tzinfo=UTC))
+        self.assertNotEqual(early, late,
+                            "ages in the facts block ignore the replay clock")
+
+    def test_the_same_clock_gives_the_same_block(self):
+        when = datetime(2026, 6, 2, tzinfo=UTC)
+        self.assertEqual(llm._facts(self.PAYLOAD, None, now=when),
+                         llm._facts(self.PAYLOAD, None, now=when))

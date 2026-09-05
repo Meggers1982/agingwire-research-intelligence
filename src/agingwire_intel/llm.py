@@ -5,6 +5,7 @@ import logging
 import os
 import re
 from collections import Counter
+from datetime import datetime
 
 from agingwire_intel.matching import tokens, us_date
 from agingwire_intel.synthesis import build_clusters
@@ -198,8 +199,14 @@ def available() -> bool:
     return unavailable_reason() is None
 
 
-def _facts(payload: dict, previous: dict | None) -> str:
-    clusters = build_clusters(payload.get("evidence", []))
+def _facts(payload: dict, previous: dict | None, now: datetime | None = None) -> str:
+    # --replay exists because collectors cannot be asked for a past date, and
+    # ageing that day's evidence against today's clock would produce a different
+    # report rather than the same one rewritten. __main__ threads a replay clock
+    # into synthesize(); this rebuilt its clusters against datetime.now() one
+    # line later, so every age the model was handed -- newest_age_days, the
+    # CLUSTER_WINDOW_DAYS cutoff -- came from the wrong day.
+    clusters = build_clusters(payload.get("evidence", []), now)
     slim_clusters = [
         {
             "topic": c["label"],
@@ -407,7 +414,8 @@ def _as_markdown(ideas: list[dict]) -> str:
     return "\n".join(lines).strip()
 
 
-def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None = None) -> dict:
+def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None = None,
+                      now: datetime | None = None) -> dict:
     """Rewrite the deterministic synthesis as prose, falling back on any failure.
 
     The deterministic version is always computed first and returned unchanged if
@@ -440,7 +448,7 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
                     "</deterministic_feature_pitch>\n\n"
                     f"<deterministic_trends>\n{deterministic.get('trends_raw', '')}\n"
                     "</deterministic_trends>\n\n"
-                    f"<facts>\n{_facts(payload, previous)}\n</facts>"
+                    f"<facts>\n{_facts(payload, previous, now)}\n</facts>"
                 ),
             }],
         )
