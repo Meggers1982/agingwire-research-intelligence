@@ -6,6 +6,10 @@ on:
     branches: [main]
     paths:
       - 'src/**'
+      # Config used to be covered on push by the daily collection workflow.
+      # That trigger is gone (it cost a paid run per push), so the config
+      # validation step below has to be reachable from here instead.
+      - 'config/**'
       - 'tests/**'
       - 'requirements.txt'
       - 'pyproject.toml'

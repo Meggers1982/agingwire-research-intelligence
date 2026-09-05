@@ -1,18 +1,18 @@
 name: Daily AgingWire intelligence
 
+# Collection runs on a schedule, or by hand. It deliberately does NOT run on
+# push: this job is a full collection that spends Anthropic and SerpAPI money
+# and mutates state/seen.json, and it used to fire on every push touching
+# src/, config/ or tests/. Roughly forty unrecorded runs happened in three
+# days that way, and each one consumed the is_new flag before the scheduled
+# run that actually gets published could see it -- new_evidence_count was 0 on
+# every published run as a result, and is_new feeds both score_evidence() and
+# _angles(). ci.yml covers pushes with lint and tests; use the deploy workflow
+# to publish a dashboard change without collecting.
 on:
   schedule:
     - cron: '15 12 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'src/**'
-      - 'config/**'
-      - 'tests/**'
-      - 'requirements.txt'
-      - 'pyproject.toml'
-      - '.github/workflows/daily-intelligence.yml'
 
 permissions:
   contents: write
