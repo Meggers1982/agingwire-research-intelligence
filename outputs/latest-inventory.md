@@ -1,12 +1,12 @@
 # AgingWire evidence inventory
 
-Generated: 2026-09-05T14:45:41.382392+00:00
+Generated: 2026-09-05T15:12:41.142853+00:00
 
 All **170** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 
 ### 1. Medicare Program; Town Hall Meeting on the Fiscal Year 2028 Applications for New Technology Add-On Payments
 
-**Score:** Lead — 78/100  
+**Score:** Lead — 72/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 09/08/26  
 **Topics:** financial_security, medicare_medicaid  
@@ -233,18 +233,7 @@ Considering the existing challenges to hospital-based maternity care in rural ar
 
 An estimated $60 billion in federal Medicaid spending in 37 states (including the District of Columbia) would likely exceed new federal limits on state directed payments for hospital services once fully implemented, a new KFF analysis finds. States with the biggest potential reductions in Medicaid payments to hospitals include California, Illinois, Kentucky, Texas, North Carolina, Louisiana, Arizona and Michigan.
 
-### 21. Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud
-
-**Score:** Strong — 56/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 09/04/26  
-**Topics:** fraud_scams  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle
-
-Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumer
-
-### 22. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
+### 21. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
 
 **Score:** Strong — 56/100  
 **Source:** rand-research (institutional_rss)  
@@ -255,7 +244,7 @@ Global payment processor Nuvei will pay $4.85 million to settle the Federal Trad
 
 This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.
 
-### 23. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
+### 22. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
 
 **Score:** Strong — 55/100  
 **Source:** federal-register (regulatory_filing)  
@@ -266,7 +255,7 @@ This paper qualitatively explores patient and family caregiver experiences with 
 
 We are providing notice of SSR 26-2p. This SSR explains our policies and consolidates information from our regulations on documenting and evaluating disability in young adults. This ruling rescinds and replaces SSR 11-2p.
 
-### 24. Breaking Glass, Missing Hands
+### 23. Breaking Glass, Missing Hands
 
 **Score:** Strong — 55/100  
 **Source:** rand-research (institutional_rss)  
@@ -277,7 +266,7 @@ We are providing notice of SSR 26-2p. This SSR explains our policies and consoli
 
 U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.
 
-### 25. Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk
+### 24. Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk
 
 **Score:** Strong — 55/100  
 **Source:** center-retirement-research (web_release)  
@@ -286,7 +275,7 @@ U.S. space defense industrial base workforce shortfalls threaten the ability to 
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/
 
-### 26. Status of State Medicaid Expansion Decisions
+### 25. Status of State Medicaid Expansion Decisions
 
 **Score:** Strong — 55/100  
 **Source:** kff-feed (institutional_rss)  
@@ -297,7 +286,7 @@ U.S. space defense industrial base workforce shortfalls threaten the ability to 
 
 This page displays an interactive map of the current status of state decisions on the Affordable Care Act's Medicaid expansion. Additional Medicaid expansion resources are listed (with links) below the map.
 
-### 27. 5 Questions and Answers About Medicaid and Provider Taxes
+### 26. 5 Questions and Answers About Medicaid and Provider Taxes
 
 **Score:** Strong — 55/100  
 **Source:** kff-feed (institutional_rss)  
@@ -308,7 +297,7 @@ This page displays an interactive map of the current status of state decisions o
 
 This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors and from a proposed rule on provider taxes to describe states’ current provider taxes, explore how rules governing provider taxes are changing because of the 2025 reconciliation law and the regulations implementing that law, and summarizes which changes may affect each state.
 
-### 28. RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act
+### 27. RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act
 
 **Score:** Strong — 55/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -319,7 +308,7 @@ This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors a
 
 RentGrow, a provider of consumer reports for tenant screening, will be required to pay $2.25 million to settle Federal Trade Commission allegations that the company violated the Fair Credit Reporting Act (FCRA), including by failing to use reasonable procedures to ensure the accuracy of its reports, and the FTC Act. The FCRA requires consumer reporting agencies (CRAs) to maintain reasonable procedures to assure the maximum possible accuracy of the information they include in background screening reports, disclose the sources of information used to compile a background screening report when a c
 
-### 29. NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options
+### 28. NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options
 
 **Score:** Worth a look — 54/100  
 **Source:** nic (web_release)  
@@ -329,6 +318,17 @@ RentGrow, a provider of consumer reports for tenant screening, will be required 
 **Source URL:** https://www.nic.org/news-press/nic-and-mit-agelab-launch-landmark-study-to-reimagine-senior-living-options/
 
 The National Investment Center for Seniors Housing & Care (NIC) establishes a multi-year collaboration with the MIT AgeLab to rethink what adults want in housing and care as they age ANNAPOLIS, Md. (August 5, 2026) —The senior living industry is changing, and NIC is leading the research effort to meet that moment. As older adults bring fundamentally new expectations for health,…
+
+### 29. Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud
+
+**Score:** Worth a look — 53/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 09/04/26  
+**Topics:** fraud_scams  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle
+
+Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumer
 
 ### 30. Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule
 
@@ -628,7 +628,25 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://www.caregiving.org/statement-of-the-national-alliance-for-caregiving-on-the-department-of-justice-office-of-legal-counsel-opinion-on-the-ada-integration-mandate/
 
-### 58. Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness
+### 58. Workforce Data Center
+
+**Score:** Worth a look — 44/100  
+**Source:** phi-workforce (web_release)  
+**Published:** undated  
+**Topics:** workforce  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.phinational.org/policy-research/workforce-data-center/
+
+### 59. Workforce Research and Strategy Services
+
+**Score:** Worth a look — 44/100  
+**Source:** phi-workforce (web_release)  
+**Published:** undated  
+**Topics:** workforce  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.phinational.org/service/workforce-research-strategy/
+
+### 60. Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness
 
 **Score:** Worth a look — 41/100  
 **Source:** acl-news (web_release)  
@@ -637,34 +655,27 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://acl.gov/news-and-events/announcements/commit-connect-webinar-transportation-strategies-strengthen-social
 
-### 59. Workforce Data Center
-
-**Score:** Worth a look — 40/100  
-**Source:** phi-workforce (web_release)  
-**Published:** undated  
-**Topics:** workforce  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.phinational.org/policy-research/workforce-data-center/
-
-### 60. Workforce Research and Strategy Services
-
-**Score:** Worth a look — 40/100  
-**Source:** phi-workforce (web_release)  
-**Published:** undated  
-**Topics:** workforce  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.phinational.org/service/workforce-research-strategy/
-
 ### 61. Workforce Interventions
 
 **Score:** Worth a look — 40/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** workforce  
-**Coverage:** lightly covered — B2B 1, B2C 1  
+**Coverage:** lightly covered — B2B 1, B2C 0  
 **Source URL:** https://www.phinational.org/issue/workforce-interventions/
 
-### 62. Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor
+### 62. Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations
+
+**Score:** Background — 39/100  
+**Source:** rand-research (institutional_rss)  
+**Published:** 08/31/26  
+**Topics:** depression_mental_health  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.rand.org/pubs/external_publications/EP71368.html
+
+We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.
+
+### 63. Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor
 
 **Score:** Background — 39/100  
 **Source:** kff-feed (institutional_rss)  
@@ -675,7 +686,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
 States are taking different regulatory approaches to AI mental health tools in response to concerns about chatbots providing inaccurate or potentially dangerous advice. Laws and pending legislation in some states restrict AI from providing or advertising itself as therapy, while others focus on data protections, disclosures, and patient consent requirements.
 
-### 63. Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms
+### 64. Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms
 
 **Score:** Background — 37/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -686,18 +697,18 @@ States are taking different regulatory approaches to AI mental health tools in r
 
 The post Facing Alzheimer’s Together: Support for Caregivers Navigating Behavioral Symptoms appeared first on Alliance for Aging Research .
 
-### 64. THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER
+### 65. THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER
 
 **Score:** Background — 37/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** caregiving, workforce  
-**Coverage:** well covered — B2B 2, B2C 1  
+**Coverage:** well covered — B2B 3, B2C 1  
 **Source URL:** https://www.phinational.org/national-resource-center
 
 Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St
 
-### 65. The Social Security Claiming Guide
+### 66. The Social Security Claiming Guide
 
 **Score:** Background — 36/100  
 **Source:** center-retirement-research (web_release)  
@@ -708,18 +719,18 @@ Home Workforce Innovations About Our Services Advanced Roles Curriculum Design O
 
 Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016
 
-### 66. Prevalence of Mental Health Discussions in Publicly Available Generative AI Conversations
+### 67. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
 
 **Score:** Background — 35/100  
 **Source:** rand-research (institutional_rss)  
 **Published:** 08/31/26  
 **Topics:** depression_mental_health  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71368.html
+**Coverage:** lightly covered — B2B 2, B2C 0  
+**Source URL:** https://www.rand.org/pubs/external_publications/EP71382.html
 
-We aimed to quantify how prevalence varies under conservative vs expansive definitions of mental health by using a large public dataset of chatbot transcripts.
+The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.
 
-### 67. Telemarketing Sales Rule Fees
+### 68. Telemarketing Sales Rule Fees
 
 **Score:** Background — 35/100  
 **Source:** federal-register (regulatory_filing)  
@@ -730,7 +741,7 @@ We aimed to quantify how prevalence varies under conservative vs expansive defin
 
 The Federal Trade Commission ("Commission") is amending its Telemarketing Sales Rule ("TSR") by updating the fees charged to entities accessing the National Do Not Call Registry ("Registry") as required by the Do-Not-Call Registry Fee Extension Act of 2007.
 
-### 68. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
+### 69. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
 
 **Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -741,7 +752,7 @@ The Federal Trade Commission ("Commission") is amending its Telemarketing Sales 
 
 The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex tr
 
-### 69. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
+### 70. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
 
 **Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -752,7 +763,7 @@ The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today
 
 At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and
 
-### 70. FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims
+### 71. FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims
 
 **Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -763,7 +774,7 @@ At the Federal Trade Commission’s request, a federal court has temporarily hal
 
 The Federal Trade Commission has asked a federal court to hold in contempt dietary supplement provider Amare Global Holdings, its former Chief Science Officer Shawn Talbott and two others over allegations they violated an FTC order that banned Talbott and those who work with him from making false, deceptive or unsubstantiated health claims. Earlier this month, the FTC sued multilevel marketer Amare Global , Talbott, the company’s founding brand partner Patrick Hintze and current CEO and majority shareholder David Chung for misrepresenting to parents and other consumers that dietary supplements
 
-### 71. FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing
+### 72. FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing
 
 **Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -774,7 +785,7 @@ The Federal Trade Commission has asked a federal court to hold in contempt dieta
 
 The Federal Trade Commission extended by seven days the public comment period on the proposed enforcement policy statement regarding personalized pricing . The new deadline to submit comments is Sept. 25, 2026. On Aug. 19, 2026, the Commission invited the public to submit comments electronically until Sept. 18, 2026 on the proposed policy statement related to personalized pricing. Personalized pricing refers to the use of personal data to set prices according to the amount that a company believes an individual consumer is willing to spend.
 
-### 72. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
+### 73. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
 
 **Score:** Background — 33/100  
 **Source:** justice-in-aging (institutional_rss)  
@@ -785,7 +796,7 @@ The Federal Trade Commission extended by seven days the public comment period on
 
 On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department of Health and Human Services (HHS), along with Texas, Florida and Alaska filed a proposed resolution of Texas v. Kennedy. These states challenged the HHS 2024 regulations implementing Section 504 of the Rehabilitation Act, which prohibits discrimination on the basis of [&#8230;] The post Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy appeared first on Justice in Aging .
 
-### 73. FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service
+### 74. FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service
 
 **Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -796,7 +807,7 @@ On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department
 
 The Federal Trade Commission finalized orders requiring Cox Media Group (CMG) and two other firms to pay a total of $930,000 to settle allegations they deceived customers by falsely claiming to offer an AI-powered service that could target localized ads based on conversations captured from consumers’ smart devices and that consumers had opted into such targeting. In three separate complaints first announced in May , the FTC alleged that Georgia-based media and marketing company CMG Media Corporation, which does business as Cox Media Group , and two marketing firms it worked with, New Hampshire
 
-### 74. FTC Announces 2027 Telemarketer Fees to Access the National Do Not Call Registry
+### 75. FTC Announces 2027 Telemarketer Fees to Access the National Do Not Call Registry
 
 **Score:** Background — 33/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -807,7 +818,7 @@ The Federal Trade Commission finalized orders requiring Cox Media Group (CMG) an
 
 The Federal Trade Commission today announced new fees for telemarketers to access phone numbers on the National Do Not Call (DNC) Registry for Fiscal Year 2027 which begins on October 1, 2026. All telemarketers calling consumers in the United States are required to download the numbers on the National DNC Registry to ensure they do not call consumers who have registered their phone numbers. The first five area codes are free to download, and organizations that are exempt, such as some charities and political callers, may obtain the entire list for free. Telemarketers must subscribe each year f
 
-### 75. Revising HUD's Noise Abatement and Control Regulations; Correcting Amendment
+### 76. Revising HUD's Noise Abatement and Control Regulations; Correcting Amendment
 
 **Score:** Background — 33/100  
 **Source:** federal-register (regulatory_filing)  
@@ -818,7 +829,7 @@ The Federal Trade Commission today announced new fees for telemarketers to acces
 
 On June 12, 2026, HUD published a final rule revising its noise abatement and control regulations. Due to an amendatory instruction drafting error, codified text of was not revised as HUD intended and continues to reference the Assistant Secretary for Community Planning and Development. This document corrects that text to conform to HUD's intent as described in the preamble to the final rule.
 
-### 76. Events and Observances
+### 77. Events and Observances
 
 **Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
@@ -829,7 +840,7 @@ On June 12, 2026, HUD published a final rule revising its noise abatement and co
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 77. Available for download
+### 78. Available for download
 
 **Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
@@ -840,7 +851,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 78. FTC, States Sue Amazon Over Secret Ad Surcharge Scheme
+### 79. FTC, States Sue Amazon Over Secret Ad Surcharge Scheme
 
 **Score:** Background — 31/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -850,17 +861,6 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 **Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-states-sue-amazon-over-secret-ad-surcharge-scheme
 
 Today, 22 states joined the Federal Trade Commission in filing suit against Amazon, alleging that the company engaged in deceptive and unfair practices that secretly inflated prices in its online search advertising auctions. The complaint alleges that, for over seven years, Amazon has covertly and substantially increased the prices that more than one million brands and sellers were required to pay to advertise on its platform. As a result, the complaint alleges that Amazon’s scheme has likely extracted tens of billions of dollars from its unwitting advertising customers. “When one of the world
-
-### 79. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
-
-**Score:** Background — 31/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 08/31/26  
-**Topics:** depression_mental_health  
-**Coverage:** well covered — B2B 2, B2C 1  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71382.html
-
-The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.
 
 ### 80. KFF Survey Methodology & Data Collection Standards
 
@@ -1254,18 +1254,7 @@ The Federal Trade Commission finalized an order with Vanilla Chip LLC—which do
 
 Image The Federal Trade Commission is sending checks totaling more than $2.7 million to eligible consumers harmed by gig economy company Handy Technologies’ deceptive claims about how much workers on its platform could earn. In January 2025, the FTC and the New York Attorney General took action against Handy—which currently does business as Angi Services—for allegedly using advertisements with earnings claims that didn’t reflect the reality for the overwhelming majority of workers on the platform. Handy also failed to clearly disclose fees and fines that led to millions of dollars being withhe
 
-### 116. Travel App Hopper to Pay $35 Million to Settle FTC Allegations It Charged Fees Without Consent and Deceived Users About Fees and Benefits of Some Products
-
-**Score:** Background — 28/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 07/02/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/07/travel-app-hopper-pay-35-million-settle-ftc-allegations-it-charged-fees-without-consent-deceived
-
-The companies that operate the Hopper travel apps have agreed to pay $35 million and will be prohibited from deceiving consumers about fees to settle the Federal Trade Commission’s allegations that they unfairly charged consumers hidden fees and misrepresented the total prices consumers would pay and the benefits of the companies’ VIP Support and Price Freeze services. The FTC’s complaint alleges that despite its “no hidden fees” promises, Canadian company Hopper Inc. and its Massachusetts-based subsidiary Hopper (USA) Inc ., unfairly charged users without their consent for “Tip” and VIP Suppo
-
-### 117. FTC Approves Final Order Against Publishing.com, Settling Allegations It Misled Consumers
+### 116. FTC Approves Final Order Against Publishing.com, Settling Allegations It Misled Consumers
 
 **Score:** Background — 28/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -1275,6 +1264,17 @@ The companies that operate the Hopper travel apps have agreed to pay $35 million
 **Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-approves-final-order-against-publishingcom-settling-allegations-it-misled-consumers
 
 The Federal Trade Commission finalized an order with Publishing.com LLC and its two principals, settling allegations that they misled consumers about how much money consumers were likely to earn using their self-publishing products. Under the order finalized by the Commission, Publishing.com and its principals, CEO Christian Mikkelsen and Chief Product Officer Rasmus Mikkelsen, will pay $1.5 million and be required to substantiate earnings claims in the future. In a complaint first announced in April 2026, the FTC alleged that Publishing.com claimed its programs and services would help consume
+
+### 117. Travel App Hopper to Pay $35 Million to Settle FTC Allegations It Charged Fees Without Consent and Deceived Users About Fees and Benefits of Some Products
+
+**Score:** Background — 28/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 07/02/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/07/travel-app-hopper-pay-35-million-settle-ftc-allegations-it-charged-fees-without-consent-deceived
+
+The companies that operate the Hopper travel apps have agreed to pay $35 million and will be prohibited from deceiving consumers about fees to settle the Federal Trade Commission’s allegations that they unfairly charged consumers hidden fees and misrepresented the total prices consumers would pay and the benefits of the companies’ VIP Support and Price Freeze services. The FTC’s complaint alleges that despite its “no hidden fees” promises, Canadian company Hopper Inc. and its Massachusetts-based subsidiary Hopper (USA) Inc ., unfairly charged users without their consent for “Tip” and VIP Suppo
 
 ### 118. FTC Requires Amazon to Pay $2.25 Million to Resolve Charges It Knowingly Violated the Fair Credit Reporting Act
 

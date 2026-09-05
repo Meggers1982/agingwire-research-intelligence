@@ -1,175 +1,164 @@
 # AgingWire research intelligence digest
 
-Generated: 2026-09-05T14:45:41.382392+00:00
+Generated: 2026-09-05T15:12:41.142853+00:00
 
-Evidence candidates: **170** (1 new since the last run)  
-Media coverage items: **2441** from **112** working publisher feeds
+Evidence candidates: **170** (0 new since the last run)  
+Media coverage items: **2432** from **114** working publisher feeds
 
 ## Bigger picture: feature pitch
 
-**The pattern:** The long-term care evidence holds together this run across four sources, and what it shows is a nursing home being judged on staffing in a labor market that is pulling workers toward the front door. The CMS provider files refreshed 08/01/26 include Provider Information, which carries the certified bed counts, staffing and quality scores used in the Five-Star Rating System, alongside Health Deficiencies, Penalties, Ownership and Survey Summary, each covering the last three years of citations, fines and inspections. Set against those facility-level records, BLS puts nursing care facilities employment at 1,590.20 thousands of jobs in August 2026, up 2.1% year over year, while home health care services employment reached 1,896.40 thousands of jobs, up 5.0%, at average hourly earnings of $28.04 versus $25.65 in assisted living and continuing care retirement communities. The staffing line on a public nursing home profile is being set in a market where the competing setting hires faster and pays more per hour.
+**The pattern:** The entire public record on nursing homes refreshed within two days of the labor figures for the people who staff them, and the two point in opposite directions. CMS reposted Provider Information on 08/01/26, the file that carries certified beds, quality measure scores and the staffing inputs behind the Five-Star Rating System, together with Health Deficiencies, Penalties, Ownership and Survey Summary, each covering the last three years. BLS put nursing care facilities employment at 1,590.20 thousand jobs in August 2026, up 2.1% year over year, while home health care services employment reached 1,896.40 thousand, up 5.0%. The long-term care cluster is one of only two this run that actually holds together (cohesion 0.256), and BLS and CMS provider data reached it independently. The record a family uses to judge a building is complete and current; the workforce that record scores is growing at less than half the rate of the home-based alternative.
 
-**Why it matters:** A family can now open one facility's record and see its fines, its citations by scope and severity, who owns it and what its staffing measures look like, and then see that the sector hiring for those shifts grew 2.1% over the year while home health grew 5.0%. That is the difference between a rating that looks like a fixed judgment and one that reflects a hiring race the facility may be losing. Nursing care facilities employ 1,590.20 thousands of workers; every quality measure in the refreshed files depends on that number holding. For operators, the wage gap of $2.39 an hour between home health and assisted living work is the recruiting problem stated in a single figure.
+**Why it matters:** A family can now pull three years of citations, fines, inspection dates and ownership for any active nursing home, and can read a staffing star that was built on a labor pool of 1,590.20 thousand jobs growing 2.1% a year while 1,896.40 thousand jobs in home health grow at 5.0% and pay $28.04 an hour against $25.65 in assisted living and continuing care. Assisted living and CCRC employment, at 1,026.90 thousand jobs, is growing slowest of the three at 1.4%. The consequence is that the staffing figure families weigh most heavily describes a shrinking share of the direct care workforce, and nothing in the CMS files tells them so.
 
-**Why pitch this now:** The August 2026 employment figures are out, dated 08/01/26, and the CMS nursing home files were refreshed on 08/01/26, so the facility record and the labor market snapshot describe the same month for the first time this quarter. The July 2026 wage series, at $28.04 in home health and $25.65 in assisted living and CCRCs, is current alongside it.
+**Why pitch this now:** The August 2026 BLS employment figures are out for all three settings, the CMS nursing home files carry 08/01/26 and 07/31/26 refresh dates, and the July 2026 earnings figures for home health and assisted living landed alongside them. Every input for a national staffing comparison is current in the same four-week window, and it will be stale once September figures replace it.
 
-**Angle:** Whether the staffing figure on a nursing home's public profile can mean anything when the workforce that fills it is growing faster in every other setting. Working title: "Where the Shifts Are Going." For skilled nursing operators and staffing directors, and for families weighing a facility against home care.
+**Angle:** Whether the staffing measure that anchors a nursing home's Five-Star rating still describes where direct care workers actually go to work. Working title: "Where the Caregivers Went." For operators and administrators who defend a star rating, and for the families who read one.
 
 **Potential headlines:**
-- Home health is hiring twice as fast as nursing homes and paying more per hour
-- What a nursing home's citations look like next to its staffing numbers
-- The staffing measure behind the Five-Star rating is set in a market nursing homes are losing
+- Nursing home staffing grew 2.1 percent last year. Home health grew 5 percent.
+- The star rating on your nursing home rests on a shrinking slice of the workforce
+- Three years of fines, citations and owners are posted for every nursing home in the country
 
 **Potential outlets:**
-- **McKnight's Long-Term Care News** — its skilled nursing readership works from the same CMS provider files daily and will use the staffing and citation comparison operationally.
-- **Skilled Nursing News** — the wage gap between home health and assisted living is a direct labor-cost story for owners weighing agency spend and census.
-- **Provider Magazine** — strong on staffing and quality data broken out by state, which is exactly what the refreshed files support.
-- **Kiplinger** — its retirement readers are choosing between a facility and care at home, and the two employment lines explain why the choice is getting harder.
+- **McKnight's Long-Term Care News** — staffing, reimbursement and survey data are its core beat, and this puts the Five-Star staffing input next to the BLS series its readers hire from.
+- **Skilled Nursing News** — an operations and workforce story with a direct business implication for buildings competing with home health for the same hires.
+- **Provider Magazine** — strong on staffing and state-by-state comparison, and the CMS files break to state and county for a facility-level version.
+- **Family Caregiver Alliance** — the consumer half of this, showing caregivers exactly which CMS files to open before touring a building.
 
 ## The pitch
 
-Nursing homes are being rated on staffing in a labor market pulling workers the other way. CMS refreshed the nursing home provider files on 08/01/26, including Provider Information, which carries the certified bed counts, staffing and quality scores used in the Five-Star Rating System, alongside Health Deficiencies, Penalties, Ownership and Survey Summary. Against those records, BLS has nursing care facilities employment at 1,590.20 thousands of jobs in August 2026, up 2.1% year over year, while home health care services reached 1,896.40 thousands of jobs, up 5.0%, with average hourly earnings of $28.04 in home health against $25.65 in assisted living and CCRCs. I would write about 1,200 words matching that national hiring trend to what the refreshed files show facility by facility, with a state breakout readers can find their own market in. Your readers run the buildings that have to fill those shifts, and the August nursing facility figure has not been picked up on this beat.
+I want to write about the gap between a nursing home's staffing star and the labor market it hires from. CMS reposted Provider Information, Health Deficiencies, Penalties, Ownership and Survey Summary on 08/01/26, so the staffing inputs to the Five-Star Rating System and three years of citations are current. BLS has nursing care facilities employment at 1,590.20 thousand jobs in August 2026, up 2.1% year over year, against 1,896.40 thousand in home health care services, up 5.0%, with assisted living and CCRCs slowest at 1,026.90 thousand and 1.4%. July 2026 earnings run $28.04 an hour in home health and $25.65 in assisted living and CCRCs. The piece would set the Five-Star staffing measure against those three series and ask what the rating still describes. Roughly 1,200 words, with a chart of the three employment lines. Your readers are the ones defending those star ratings to families and to surveyors.
 
 ## Story ideas
 
-**Nursing homes added workers this year, just not many**
+**Nursing homes added staff last year, just not as fast as anyone else in care**
 *BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)*  
-- Angle: The August 2026 nursing care facilities employment level of 1,590.20 thousands of jobs, up 2.1%, read by families judging whether a facility can staff its shifts.
-- Hook: Monitored publishers cover this beat and none has matched the August figure, making it a live opportunity.
-- For readers: When you tour a facility, ask how many open positions it is carrying on each shift and how often it uses agency staff, then compare that answer to the staffing measures on its CMS profile.
-- For the trade: A 2.1% annual gain sets the ceiling on census growth and on any staffing ratio an operator promises a referral source.
-- Why it matters: If the building you are considering cannot fill shifts, the quality measures you are reading were produced under conditions that may not last.
-- Also: National figure with facility-level CMS staffing data available for state and county comparison.
+- Angle: The August 2026 BLS nursing care facilities series, read next to home health and assisted living, for families touring buildings and for the administrators staffing them.
+- Hook: Nursing facility employment grew 2.1% year over year to 1,590.20 thousand jobs while home health grew 5.0%.
+- For readers: When you tour a building, ask how many direct care hours per resident it currently staffs and how that compares to a year ago, because the sector-wide growth behind its rating is 2.1%.
+- For the trade: Operators competing for the same hires as home health agencies need a wage and scheduling answer, not a recruiting one.
+- Why it matters: A staffing star reflects a national labor trend as much as a single building's choices, and you lose the ability to press on the difference if you do not know it.
+- Also: Confirmed gap: monitored publishers cover this beat and none matched the item. Charts cleanly as a three-line series against home health and assisted living.
 - Pitch to: Provider Magazine, Family Caregiver Alliance
 
-**There are now more home health workers than nursing home workers, and the gap is widening**
+**Home care is now the biggest employer in long-term care**
 *BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)*  
-- Angle: Home health employment at 1,896.40 thousands of jobs, up 5.0% year over year, for older adults deciding whether care at home is realistically staffable where they live.
-- Hook: Home health grew at more than twice the rate of nursing care facilities over the same year.
-- For readers: If you are planning to stay in your home, this is the year to ask agencies about their current caseload and wait times rather than assuming availability later.
-- For the trade: Home health is absorbing the same labor pool facilities are recruiting from, which reprices agency contracts and turnover assumptions.
-- Why it matters: Knowing which setting is actually hiring tells you which care plan can be delivered, not just which one you prefer.
-- Also: National series; pairs directly with the nursing facility line for a two-line chart.
+- Angle: The August 2026 home health employment figure of 1,896.40 thousand jobs, for older adults weighing home care against a facility and for agencies planning capacity.
+- Hook: Home health care services employment rose 5.0% year over year, outpacing every other care setting in the BLS series.
+- For readers: If you are trying to stay home, ask agencies in your area whether they are actually taking new clients, because national headcount growth does not guarantee local availability.
+- For the trade: Agencies expanding headcount at 5.0% a year should be modeling where those workers came from and whether the pipeline holds.
+- Why it matters: Availability of home aides decides whether staying home is a plan or a hope.
+- Also: Confirmed gap. Localizable to state level and pairs directly with the July 2026 earnings figure of $28.04 an hour.
 - Pitch to: Next Avenue, Caring.com
-
-**The fines your nursing home paid are public again**
-*CMS refreshed dataset: Penalties*  
-- Angle: The refreshed list of fines and payment denials received by nursing homes over the last three years, for families narrowing a shortlist of facilities.
-- Hook: A refreshed public file that lets anyone put a dollar figure on three years of enforcement at a specific address.
-- For readers: Look up every facility on your list and note whether it has payment denials as well as fines, then ask the administrator what changed afterward.
-- For the trade: Enforcement history follows a building through referrals and admissions, and operators should know what a family sees before the tour.
-- Why it matters: A fine record you never checked is the one piece of a facility's history nobody will volunteer.
-- Also: Refreshed reference file, not an event; state and county breakouts supported.
-- Pitch to: Family Caregiver Alliance, McKnight's Long-Term Care News
-
-**Three years of nursing home citations, one row at a time**
-*CMS refreshed dataset: Health Deficiencies*  
-- Angle: The health citation file with citation tag, scope and severity, current status and correction date, for anyone trying to tell a paperwork violation from a care failure.
-- Hook: Scope and severity, not citation counts, is what separates a clerical finding from harm, and both are in the file.
-- For readers: Ask for the scope and severity letter on any recent citation, and whether the correction date has passed.
-- For the trade: Citation patterns by tag are the clearest signal of where survey readiness is failing across a portfolio.
-- Why it matters: Two facilities with the same number of citations can be very different places, and only the severity column tells you which is which.
-- Also: Refreshed reference file; a Citation Code Look-up table translates tag codes into plain descriptions.
-- Pitch to: Family Caregiver Alliance, Skilled Nursing News
-
-**Who actually owns the nursing home you are touring**
-*CMS refreshed dataset: Ownership*  
-- Angle: The current ownership file for active nursing homes, for families and reporters tracing a facility back to the entity that controls it.
-- Hook: Ownership can be matched against the same facilities' citations and penalties in the refreshed files.
-- For readers: Check whether the home you are considering shares an owner with others, then look up those other facilities' inspection records too.
-- For the trade: Chain-level enforcement patterns are visible to anyone willing to join two public files, including referral partners and lenders.
-- Why it matters: An operator's record elsewhere is often the best available forecast of the care in front of you.
-- Also: Refreshed reference file; joins cleanly to Penalties and Health Deficiencies by provider.
-- Pitch to: Skilled Nursing News, McKnight's Long-Term Care News
-
-**Assisted living pay rose 3.2% and still trails home health**
-*BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)*  
-- Angle: July 2026 average hourly earnings of $25.65 in assisted living and continuing care retirement communities against $28.04 in home health, for residents wondering why staff keep turning over.
-- Hook: The faster-rising wage is still the lower one, a $2.39 hourly gap against home health.
-- For readers: Ask a community what its caregiver turnover was last year and what it pays starting aides, then weigh that against your monthly fee.
-- For the trade: Wage growth of 3.2% without closing the gap to home health means recruiting costs keep climbing without the staffing win.
-- Why it matters: Turnover is the thing residents feel every day, and pay is the clearest advance indicator of it.
-- Also: National monthly series, chartable against the home health earnings line.
-- Pitch to: McKnight's Senior Living, SeniorLiving.org
 
 **Nearly 11.8 million Americans over 65 are still working**
 *BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)*  
-- Angle: The August 2026 count of 11,753 thousands of employed people aged 65 and over, up 2.1%, for readers weighing when to leave the workforce.
-- Hook: The over-65 workforce grew at the same 2.1% rate as nursing facility employment did.
-- For readers: If you are working past 65, check how continued earnings interact with your Medicare enrollment timing and your Social Security claiming plan.
-- For the trade: Senior living and home care employers are recruiting inside a growing older labor pool, not only a shrinking younger one.
-- Why it matters: Whether you are the exception or part of a group of nearly 11.8 million changes how you think about your own timeline.
-- Also: National series with a clear year-over-year trend line.
-- Pitch to: GOBankingRates, Bankrate Retirement
+- Angle: The August 2026 BLS employment level for people 65 and over, for readers deciding when to claim benefits and for employers building age-inclusive roles.
+- Hook: Employment among people 65 and over reached 11,753 thousand in August 2026, up 2.1% year over year.
+- For readers: If you are working past 65, check how continued earnings interact with your benefit timing before you assume the extra income is all upside.
+- For the trade: Senior living and care employers can read this as a recruiting pool, not only a resident profile.
+- Why it matters: Working longer changes when and how much you claim, and the arithmetic is yours to run before you commit.
+- Also: Confirmed gap. National figure; a state breakdown would be original work.
+- Pitch to: McKnight's Senior Living, Bankrate Retirement
 
-**How families in your state rate hospice care**
+**The fines your nursing home paid are posted again**
+*CMS refreshed dataset: Penalties*  
+- Angle: The CMS penalties file listing fines and payment denials over the last three years, for anyone shortlisting a facility.
+- Hook: Three years of nursing home fines and payment denials sit in one downloadable file, refreshed 08/01/26.
+- For readers: Before you sign anything, look up the building by name and check whether it has taken fines or payment denials in the last three years, then ask the administrator what changed after each one.
+- For the trade: Operators should assume families and referral partners are reading the same three-year window they are.
+- Why it matters: A fine you never saw is a question you never asked on the tour.
+- Also: Refreshed public data file rather than a news event; breaks to state and county, which makes state-level fine totals a straightforward chart.
+- Pitch to: Family Caregiver Alliance, Skilled Nursing News
+
+**Who actually owns the nursing home you are considering**
+*CMS refreshed dataset: Ownership*  
+- Angle: The CMS ownership file for currently active nursing homes, for families who want to know whether a building is one of many under the same owner.
+- Hook: Ownership information for every currently active nursing home is public and was refreshed 08/01/26.
+- For readers: Look up the owner's name, then search whether the same owner runs other buildings near you and how those buildings scored.
+- For the trade: Chain-level patterns in citations and penalties are visible to anyone willing to join the ownership file to the deficiency files.
+- Why it matters: The care standard you are shopping for may be set several buildings away from the one you toured.
+- Also: Refreshed public data file, not an event. Joins to Health Deficiencies, Penalties and Provider Information for chain-level analysis.
+- Pitch to: McKnight's Long-Term Care News, Family Caregiver Alliance
+
+**How families in your state rated hospice care**
 *CMS refreshed dataset: Hospice care - State CAHPS Hospice Survey Data*  
 - Angle: State average scores from the CAHPS Hospice Survey of Medicare-certified providers, for families choosing hospice under time pressure.
-- Hook: State averages give a benchmark for judging any single hospice's numbers, refreshed 08/07/26.
-- For readers: Ask a hospice for its CAHPS survey results and compare them to your state's average before you sign.
-- For the trade: State benchmarks set the bar a hospice's marketing claims will be measured against by discharge planners.
-- Why it matters: Hospice decisions are made in days, and a state average is the fastest yardstick available.
-- Also: Refreshed reference file; the national file was refreshed the same day for direct comparison.
+- Hook: State-level mean scores for Medicare-certified hospice providers are public and were refreshed 08/07/26.
+- For readers: Compare your state's average against the national one, then ask any hospice you are considering how its own survey scores compare to both.
+- For the trade: Hospice providers in low-scoring states carry a referral problem their marketing cannot answer.
+- Why it matters: Hospice is usually chosen in days, and the only comparison you can make quickly is the one already published.
+- Also: Refreshed public data file. State-by-state ranking is immediate and pairs with the national CAHPS file refreshed the same day.
 - Pitch to: SeniorLiving.org, LeadingAge
 
-**When palliative care happens over video, what gets lost**
-*Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care*  
-- Angle: A qualitative study of patient and family caregiver experiences of telehealth versus in-person outpatient palliative care visits, for caregivers offered a video appointment.
-- Hook: The research asks directly whether communication quality differs by mode of care after the pandemic.
-- For readers: If a palliative visit is offered by video, ask which conversations the team prefers to hold in person and request those in the room.
-- For the trade: Programs building telehealth palliative capacity need to know which visit types patients accept and which they resist.
-- Why it matters: The conversations that happen in palliative care are the ones families remember, and the format shapes them.
-- Also: Monitored publishers cover this beat and none matched the item.
-- Pitch to: Caregiving.com, Next Avenue
-
-**An estimated $60 billion in Medicaid hospital payments sits above the new federal limits**
+**An estimated $60 billion in Medicaid hospital payments runs into new federal limits**
 *Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits*  
-- Angle: The KFF analysis finding an estimated $60 billion in federal Medicaid spending across 37 states including the District of Columbia would likely exceed new state directed payment limits, for readers in the states named.
-- Hook: California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona are among the states with the biggest potential reductions.
-- For readers: If you live in one of the named states, watch for changes in which hospitals accept your coverage and how far you would travel for inpatient care.
-- For the trade: Hospital finance departments in 37 states need a plan for payment levels that were built into current budgets.
-- Why it matters: Hospital payment cuts show up as service lines closing, and the states most exposed are already named.
-- Also: State-by-state figures with a clear map; monitored publishers cover this beat and none matched it.
+- Angle: The KFF analysis naming 37 states, including the District of Columbia, whose directed payments to hospitals would likely exceed the 2025 reconciliation law limits, for older adults in those states and for the systems that serve them.
+- Hook: KFF estimates $60 billion in federal Medicaid spending across 37 states would likely exceed the new limits once fully implemented, with California, Illinois, Kentucky, Texas, North Carolina, Louisiana and Arizona among the biggest potential reductions.
+- For readers: If you live in one of the named states and rely on a hospital that serves many Medicaid patients, ask your local system what services it is protecting.
+- For the trade: Post-acute and skilled nursing operators downstream of those hospitals should be modeling referral volume, not only their own rates.
+- Why it matters: Hospital finances in your state determine which services stay open near you.
+- Also: Confirmed gap. Named states make this immediately localizable and the $60 billion figure anchors a map.
 - Pitch to: Modern Healthcare, Fierce Healthcare
 
 **New voucher rent ceilings take effect October 1**
 *Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027*  
-- Angle: The FY 2027 Fair Market Rents notice, published 09/01/26, and the reevaluation procedure public housing agencies can use, for older renters holding a Housing Choice Voucher.
-- Hook: HUD must publish FMRs at least annually adjusted to take effect on October 1, so the numbers bind within weeks.
-- For readers: Check the FY 2027 figure for your metro area before you renew a lease, and ask your housing agency whether it plans to request a reevaluation.
-- For the trade: Affordable senior housing operators underwrite against these ceilings, and reevaluation requests are a live lever this fall.
-- Why it matters: A voucher ceiling that lags your local rent is the difference between staying put and moving.
-- Also: Localizable to every metro area; effective date gives a firm news peg.
+- Angle: HUD's FY 2027 Fair Market Rents notice and the reevaluation procedure for public housing agencies, for older renters using vouchers and for the agencies administering them.
+- Hook: HUD must publish FMRs at least annually adjusted to be effective October 1, and the FY 2027 notice published 09/01/26 sets out how they were calculated and how agencies can request reevaluation.
+- For readers: If you rent with a voucher, check your area's FY 2027 figure now and ask your housing agency whether it is seeking a reevaluation.
+- For the trade: Affordable senior housing operators can read the reevaluation procedure as a lever in markets where the published FMR undershoots.
+- Why it matters: The FMR sets what your voucher will cover starting October 1, and the window to challenge it is short.
+- Also: Confirmed gap. Effective date of October 1 gives this a hard clock; every metro area has its own number.
 - Pitch to: Next Avenue, Senior Housing News
 
-**Medicare opens the floor on which new technologies hospitals get paid extra to use**
+**What families say gets lost on a palliative care video call**
+*Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care*  
+- Angle: The RAND paper on patient and family caregiver experiences of telehealth versus in-person outpatient palliative care visits, for caregivers scheduling those appointments.
+- Hook: The paper qualitatively explores preferences by mode of care and perceived differences in communication quality in a post-pandemic context.
+- For readers: When you book a palliative care visit, decide deliberately which conversations you want in the room rather than on a screen.
+- For the trade: Palliative programs building telehealth capacity need a rule for which visits stay in person.
+- Why it matters: The mode of the visit shapes what gets said, and you choose the mode.
+- Also: Confirmed gap, published 08/31/26. Qualitative, so it reads as a caregiver-voice piece rather than a data story.
+- Pitch to: Caregiving.com, Next Avenue
+
+**Medical costs rose 1.7 percent last year. Your premium probably did not.**
+*BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)*  
+- Angle: The July 2026 medical care CPI, for retirees budgeting health spending against a fixed income.
+- Hook: The medical care index stood at 593.78 in July 2026, up 1.7% year over year.
+- For readers: Compare that 1.7% against what your own plan, drugs and dental actually cost you this year, and take the difference to your plan review.
+- For the trade: Insurers and advisors selling on medical inflation should be ready for a slower headline number than the one clients experience.
+- Why it matters: A national average that is lower than your own bill is a reason to check the plan, not to relax.
+- Also: Confirmed gap. Monthly series, so it supports a recurring chart against overall CPI.
+- Pitch to: Bankrate Retirement, Forbes Retirement
+
+**California has nearly 6 million residents over 65. Here is where everyone else stands.**
+*American Community Survey 2023 state aging and housing profile (52 states)*  
+- Angle: State-level counts for the 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, for readers weighing a move and for anyone siting services.
+- Hook: The 2023 ACS five-year estimates put California at 5,994,486 residents aged 65 and over and Florida at 4,630,733, across 52 state and equivalent geographies.
+- For readers: If you are thinking about relocating, compare your target state's 85+ count and median household income against the one you would leave.
+- For the trade: Housing and services developers get age-band counts and tenure in one table, which is the first cut of a market screen.
+- Why it matters: Where you move determines the density of people your age and the services built for them.
+- Also: Lightly covered. Fifty-two geographies with four age bands make this the run's most chartable file.
+- Pitch to: Kiplinger, Senior Housing News
+
+**Medicare is about to argue over which new technologies hospitals get paid extra to use**
 *Medicare Program; Town Hall Meeting on the Fiscal Year 2028 Applications for New Technology Add-On Payments*  
-- Angle: The virtual town hall on FY 2028 new technology add-on payment applications under the hospital inpatient prospective payment system, held under section 1886(d)(5)(K)(viii)(III) of the Social Security Act, for anyone tracking what Medicare will cover next.
-- Hook: Interested parties are invited to present comments and recommendations, making this an open door rather than a closed rulemaking.
-- For readers: If a new device or treatment matters to you, this is where the case for Medicare paying extra for it gets argued in public.
-- For the trade: Device and hospital strategy teams get an early read on FY 2028 payment prospects and a chance to be heard on the record.
-- Why it matters: Payment decisions made here determine which new treatments hospitals can afford to offer you.
-- Also: Dated 09/08/26, the newest item in the run; monitored publishers cover this beat and none matched it.
+- Angle: The FY 2028 new technology add-on payment town hall under the hospital inpatient prospective payment system, for patients facing an inpatient stay and for the hospitals and manufacturers presenting.
+- Hook: CMS announced a virtual town hall, held under section 1886(d)(5)(K)(viii)(III) of the Social Security Act, where interested parties present comments and recommendations on FY 2028 applications.
+- For readers: If a newer device or procedure has been raised with you, this is where you can see whether Medicare is being asked to pay a premium for it.
+- For the trade: Post-acute providers taking IPPS discharges should track which technologies clear this pathway, because the referrals follow.
+- Why it matters: What a hospital can afford to offer you is decided in proceedings like this one, months before you are admitted.
+- Also: Confirmed gap, dated 09/08/26. National in scope, with an open comment process that gives the story a participation angle.
 - Pitch to: Fierce Healthcare, Forbes Retirement
 
 ## Research trends and continuity
 
-Volume barely moved, from 169 candidates on 09/04/26 to 170 today, with a single item first surfacing in this run: the Federal Register notice of the FY 2028 new technology add-on payment town hall, dated 09/08/26. Medicare and Medicaid was the busiest beat at 30 items from seven sources, but the cluster does not hold together as one story. A town hall on inpatient device payments, a refreshed supplier file, a KFF data note on Medicaid coverage for women and a template comment set on Medicare eligibility for immigrants share a tag and nothing else. Work them as separate leads. The coherent beats are smaller and better: palliative and hospice care, with two sources and nine items, is the tightest thing in the run, and long-term care pulls four sources across 18 items. Financial security and Medicare and Medicaid each gained one item against yesterday. Housing carried 14 items and workforce 12. Coverage posture stands at 49 confirmed gaps, with a further 77 items on beats where we watch no publisher at all, which is a statement about our monitoring list rather than about who has written what.
-
-## New since the last run
-
-### 1. Medicare Program; Town Hall Meeting on the Fiscal Year 2028 Applications for New Technology Add-On Payments
-
-**Score:** Lead — 78/100  
-**Source:** federal-register (regulatory_filing)  
-**Published:** 09/08/26  
-**Topics:** financial_security, medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.federalregister.gov/documents/2026/09/08/2026-18226/medicare-program-town-hall-meeting-on-the-fiscal-year-2028-applications-for-new-technology-add-on
-
-This notice announces a town hall meeting in accordance with section 1886(d)(5)(K)(viii)(III) of the Social Security Act (the Act) to discuss fiscal year (FY) 2028 applications for add-on payments for new medical services and technologies under the hospital inpatient prospective payment system (IPPS). Interested parties are invited to this virtual meeting to present their comments, recommendations, and data regarding whether the FY 2028 applications for new technology add- on payments meet the substantial clinical improvement criterion.
+Volume held essentially flat: 170 evidence candidates against 169 on 09/04/26, with none first surfacing in this run. The topic list is identical to the previous run's 23 topics, so the beat did not open anything new, it redistributed. Financial security and Medicare and Medicaid each gained one item. Medicare and Medicaid was again the busiest beat, 27 items from seven sources including federal-register, cms-provider-data, kff-feed and justice-in-aging, but its cohesion is 0.052 and those items share a tag rather than a subject; they should be worked as separate leads, not a single story. Only long-term care (0.256, four sources, 18 items) and palliative and hospice care (0.457, two sources, nine items) actually hold together, and palliative and hospice is the tightest cluster of the run despite being one of the smallest. Housing, at 13 items from five sources, scores 0.031 and is likewise a tag, not a thread. Coverage posture: 52 confirmed gaps where monitored publishers cover the beat and none matched the item, and 77 items on beats where we watch no publisher at all, which says nothing about whether anyone covered them. We monitor 114 of the 132 publishers in the registry. The shape of the run is a quiet week carried by refreshed government files, which favors analysis that joins two sources over anything that depends on a new release.
 
 ## Evidence inventory
+
+Nothing new since the last run — this ranking is unchanged.
 
 Top 25 of 170 candidates. Full detail for every item is in `outputs/latest-inventory.md`.
 
@@ -178,7 +167,7 @@ Top 25 of 170 candidates. Full detail for every item is in `outputs/latest-inven
 
 | # | Score | Item | Published | Coverage |
 | --: | --- | --- | --- | --- |
-| 1 | Lead (78) | [Medicare Program; Town Hall Meeting on the Fiscal Year 2028 Applications for New Technology Add-On Payments](https://www.federalregister.gov/documents/2026/09/08/2026-18226/medicare-program-town-hall-meeting-on-the-fiscal-year-2028-applications-for-new-technology-add-on) | 09/08/26 | Gap |
+| 1 | Lead (72) | [Medicare Program; Town Hall Meeting on the Fiscal Year 2028 Applications for New Technology Add-On Payments](https://www.federalregister.gov/documents/2026/09/08/2026-18226/medicare-program-town-hall-meeting-on-the-fiscal-year-2028-applications-for-new-technology-add-on) | 09/08/26 | Gap |
 | 2 | Strong (67) | [CMS refreshed dataset: 25 files refreshed, 07/31/26–08/30/26](https://data.cms.gov/provider-data/dataset/ct36-nrcq) | 08/30/26 | Reference |
 | 3 | Strong (63) | [BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)](https://data.bls.gov/timeseries/CES6562160001) | 08/01/26 | Gap |
 | 4 | Strong (63) | [BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)](https://data.bls.gov/timeseries/CES6562310001) | 08/01/26 | Gap |
@@ -198,18 +187,18 @@ Top 25 of 170 candidates. Full detail for every item is in `outputs/latest-inven
 | 18 | Strong (57) | [Medicaid/CHIP Monthly Enrollment Tracker](https://www.kff.org/medicaid/medicaid-enrollment-tracker/) | 08/26/26 | Gap |
 | 19 | Strong (57) | [Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid](https://www.kff.org/medicaid/availability-of-rural-hospitals-providing-inpatient-maternity-care-in-medicaid/) | 08/26/26 | Gap |
 | 20 | Strong (57) | [Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits](https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/) | 08/14/26 | Gap |
-| 21 | Strong (56) | [Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud](https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle) | 09/04/26 | Unknown |
-| 22 | Strong (56) | [Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care](https://www.rand.org/pubs/external_publications/EP71470.html) | 08/31/26 | Gap |
-| 23 | Strong (55) | [Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults](https://www.federalregister.gov/documents/2026/09/01/2026-17814/social-security-ruling-ssr-26-2p-titles-ii-and-xvi-documenting-and-evaluating-disability-in-young) | 09/01/26 | Light |
-| 24 | Strong (55) | [Breaking Glass, Missing Hands](https://www.rand.org/pubs/research_reports/RRA3665-2.html) | 08/31/26 | Gap |
-| 25 | Strong (55) | [Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk](https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/) | 08/26/26 | Gap |
+| 21 | Strong (56) | [Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care](https://www.rand.org/pubs/external_publications/EP71470.html) | 08/31/26 | Gap |
+| 22 | Strong (55) | [Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults](https://www.federalregister.gov/documents/2026/09/01/2026-17814/social-security-ruling-ssr-26-2p-titles-ii-and-xvi-documenting-and-evaluating-disability-in-young) | 09/01/26 | Light |
+| 23 | Strong (55) | [Breaking Glass, Missing Hands](https://www.rand.org/pubs/research_reports/RRA3665-2.html) | 08/31/26 | Gap |
+| 24 | Strong (55) | [Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk](https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/) | 08/26/26 | Gap |
+| 25 | Strong (55) | [Status of State Medicaid Expansion Decisions](https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/) | 08/21/26 | Gap |
 
 </details>
 
 ## Pipeline health
 
 Evidence sources: **17 ok**, **0 empty**, **1 error**  
-Publisher feeds: **112 working** of **132 in the registry** (5 error, 15 no feed found)
+Publisher feeds: **114 working** of **132 in the registry** (3 error, 15 no feed found)
 
 ### Evidence-source errors
 
