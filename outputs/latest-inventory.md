@@ -1,6 +1,6 @@
 # AgingWire evidence inventory
 
-Generated: 2026-09-04T23:46:00.966882+00:00
+Generated: 2026-09-04T23:58:32.793543+00:00
 
 All **169** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 
@@ -719,18 +719,7 @@ We aimed to quantify how prevalence varies under conservative vs expansive defin
 
 The Federal Trade Commission ("Commission") is amending its Telemarketing Sales Rule ("TSR") by updating the fees charged to entities accessing the National Do Not Call Registry ("Registry") as required by the Do-Not-Call Registry Fee Extension Act of 2007.
 
-### 67. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
-
-**Score:** Background — 35/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 06/17/26  
-**Topics:** nutrition  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes
-
-At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and
-
-### 68. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
+### 67. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
 
 **Score:** Background — 35/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -740,6 +729,17 @@ At the Federal Trade Commission’s request, a federal court has temporarily hal
 **Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children
 
 The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex tr
+
+### 68. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
+
+**Score:** Background — 35/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 06/17/26  
+**Topics:** nutrition  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes
+
+At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and
 
 ### 69. FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims
 
