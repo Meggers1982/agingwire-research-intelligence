@@ -144,6 +144,49 @@ monitored outlets to aim at. Naming the angle is left to the editor. With
 research digest — pattern, why now, angle, three headlines, outlets — and is
 told explicitly that a source count is a statistic, not a pattern.
 
+### A daily pitch has to know what it already pitched
+
+The evidence behind this pipeline moves on a monthly calendar. CMS reposts its
+provider files once a month, BLS prints one employment figure a month, the
+Federal Register lookback is 30 days and the CMS dataset lookback is 45. A daily
+run therefore re-collects almost exactly yesterday's corpus: the 60 items
+published on 2026-09-05 and on 2026-09-06 were the same 60 items, and the seen
+ledger recorded 8 genuinely new items on 09-04, 1 on 09-05 and 0 on 09-06.
+
+Nothing downstream knew that. The model was handed the top 40 items by score and
+asked for "the strongest cross-source story this run supports", with a
+`previous_run` block that carried a date, an item count and a topic list — none
+of which name a story. Against a static input that question has one answer, so
+09-04, 09-05 and 09-06 all pitched the CMS provider-file refresh against the
+August BLS payrolls, with the same five figures in each. The wording changed
+every day; the story did not.
+
+Two things changed:
+
+**The pitch is told what it already pitched.** `history.py` reads the last five
+published runs back out of `docs/data/runs/` and reduces each to the pattern it
+claimed, its angle, its three headlines and the items it wrote about. That goes
+into the facts as `recent_pitches`, and the system prompt forbids re-pitching a
+pattern that appears there. Where today's strongest story has already run, the
+pitch names the date it ran in a clause and spends itself on the strongest
+unwritten thread instead. A day carrying nothing new says so — that is a fact
+about the beat an editor can use, where a fourth rewrite of one pitch is not.
+The lookback is read by run id rather than by excluding one filename, so a
+`--replay` of an older day is written against the history it had on the day.
+
+**The prompt slots rotate.** A straight top-40 by score froze: 130 of 170 items
+were never shown to the model at all, so they could not be pitched. The first 24
+slots still go to the ranking — a story does not stop being the strongest
+because it ran yesterday, and the run has to be able to say so honestly — and
+the remaining 16 are filled from the best-scoring items the recent pitches did
+*not* use. Nothing is excluded; when there is not enough unused evidence the
+slots fall back to the ranking. On the real 09-06 corpus this moved 13 of the 40
+slots and put six items in front of the model that it had never been shown.
+
+The deterministic worksheet is still passed in, but no longer as the brief. It
+is the top cluster's worksheet, and on a monthly corpus that is the same cluster
+most days, so it is now labelled prose to beat rather than the story to write.
+
 ### A pitch names the stake, not just the timing
 
 The pitch had a **Why pitch this now** section from the start, and it was doing a
@@ -305,6 +348,7 @@ src/agingwire_intel/
   matching.py                shared title-similarity test and US date formatting
   scoring.py                 the weighted 0-100 model
   synthesis.py               clustering, pitch worksheet, story ideas, trends
+  history.py                 what the last runs already pitched, so a day does not repeat one
   llm.py                     optional Claude rewrite of the editorial sections
   serpapi.py                 SerpAPI client with a per-run call budget
   demand.py                  Google Trends search interest, cached weekly
@@ -452,7 +496,7 @@ app it is modelled on is light-only, so light is what the two products share.
 
 The pitch, story ideas and trends are **derived from the run's own data** by `synthesis.py` — clustering, coverage state, dates and real figures. No model is required and nothing is invented.
 
-When `ANTHROPIC_API_KEY` is present **and the `llm` extra is installed** (`pip install -e ".[llm]"`), `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version and the run's facts as its only input. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch — including *why* it stayed deterministic, so a key set without the SDK installed does not look identical to no key at all. Pass `--no-llm` to force the deterministic path.
+When `ANTHROPIC_API_KEY` is present **and the `llm` extra is installed** (`pip install -e ".[llm]"`), `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version, the run's facts and the last five published pitches as its only input — see *A daily pitch has to know what it already pitched* above for why the history is there. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch — including *why* it stayed deterministic, so a key set without the SDK installed does not look identical to no key at all. Pass `--no-llm` to force the deterministic path.
 
 ## Search demand and open-web coverage (SerpAPI)
 

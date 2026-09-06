@@ -1,6 +1,8 @@
 import json
 import unittest
 from datetime import UTC, datetime
+from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest import mock
 
 from agingwire_intel import llm
@@ -316,18 +318,18 @@ class RecordPoolTests(unittest.TestCase):
                       "url": "https://x/a", "score": 74}]
 
     def _merge(self, names):
-        pool = llm._record_pool(self.PAYLOAD, self.DETERMINISTIC)
+        pool = llm._record_pool(self.PAYLOAD["evidence"], self.DETERMINISTIC)
         ideas = [{"title": f"CMS refreshed dataset: {n} (08/01/26)", "hook": "h",
                   "consumer": "c", "b2b": "b", "note": "n"} for n in names]
         return llm._as_records(ideas, pool)
 
     def test_pool_includes_evidence_beyond_the_sample(self):
-        titles = {r["title"] for r in llm._record_pool(self.PAYLOAD, self.DETERMINISTIC)}
+        titles = {r["title"] for r in llm._record_pool(self.PAYLOAD["evidence"], self.DETERMINISTIC)}
         self.assertIn("CMS refreshed dataset: Ownership", titles)
         self.assertIn("CMS refreshed dataset: Penalties", titles)
 
     def test_pool_does_not_duplicate_the_deterministic_entry(self):
-        pool = llm._record_pool(self.PAYLOAD, self.DETERMINISTIC)
+        pool = llm._record_pool(self.PAYLOAD["evidence"], self.DETERMINISTIC)
         titles = [r["title"] for r in pool]
         self.assertEqual(len(titles), len(set(titles)))
         self.assertEqual(pool[0]["score"], 74, "deterministic record should win")
@@ -346,6 +348,131 @@ class RecordPoolTests(unittest.TestCase):
     def test_coverage_state_comes_from_the_pipeline(self):
         merged = self._merge(["Penalties"])
         self.assertEqual(merged[0]["coverage_state"], "gap")
+
+
+class SelectEvidenceTests(unittest.TestCase):
+    """The model could only ever pitch the top 40 of a corpus that never moved.
+
+    Collectors read 30-to-45-day lookbacks over sources that publish monthly, so
+    the ranking is near-frozen between runs — the 60 items published on
+    2026-09-05 and 2026-09-06 were the same 60 — and 130 of 170 items were never
+    on the table. Three consecutive runs pitched the same story as a result.
+    """
+
+    EVIDENCE = [{"title": f"Item {i:02d}", "url": f"https://x/{i}", "score": 100 - i}
+                for i in range(60)]
+
+    def test_the_strongest_evidence_is_never_dropped(self):
+        picked = llm.select_evidence(self.EVIDENCE, {"item 00", "item 01", "item 02"})
+        self.assertEqual([p["title"] for p in picked[:3]],
+                         ["Item 00", "Item 01", "Item 02"])
+
+    def test_unpitched_items_fill_the_rotating_slots(self):
+        pitched = {f"item {i:02d}" for i in range(40)}
+        titles = [p["title"] for p in llm.select_evidence(self.EVIDENCE, pitched)]
+        rotated = titles[llm.PROMPT_TOP_SLOTS:]
+        self.assertTrue(rotated)
+        self.assertTrue(all(t.lower() not in pitched for t in rotated),
+                        "rotating slots should hold evidence the recent pitches did not use")
+
+    def test_a_pitched_item_below_the_top_slots_loses_its_place(self):
+        """This is what moves the selection between two runs over one corpus.
+
+        On the real 2026-09-06 corpus the previous three pitches had used items
+        at ranks 27, 28, 29, 31, 38 and 39, so 13 of the 40 slots changed and
+        six items that had never been shown to the model rotated in.
+        """
+        first = llm.select_evidence(self.EVIDENCE, set())
+        pitched = {i["title"].lower() for i in first[llm.PROMPT_TOP_SLOTS:]}
+        second = llm.select_evidence(self.EVIDENCE, pitched)
+        self.assertNotEqual([i["title"] for i in first], [i["title"] for i in second])
+        self.assertEqual([i["title"] for i in first[:llm.PROMPT_TOP_SLOTS]],
+                         [i["title"] for i in second[:llm.PROMPT_TOP_SLOTS]])
+
+    def test_it_falls_back_to_the_ranking_when_everything_was_pitched(self):
+        """Suppressing evidence is not the job — a true story stays true."""
+        pitched = {i["title"].lower() for i in self.EVIDENCE}
+        picked = llm.select_evidence(self.EVIDENCE, pitched)
+        self.assertEqual(len(picked), llm.MAX_EVIDENCE_IN_PROMPT)
+        self.assertEqual(picked[0]["title"], "Item 00")
+
+    def test_a_short_run_is_returned_whole(self):
+        picked = llm.select_evidence(self.EVIDENCE[:5], set())
+        self.assertEqual(len(picked), 5)
+
+    def test_the_selection_stays_in_score_order(self):
+        picked = llm.select_evidence(self.EVIDENCE, {"item 30"})
+        scores = [p["score"] for p in picked]
+        self.assertEqual(scores, sorted(scores, reverse=True))
+
+    def test_no_item_appears_twice(self):
+        picked = llm.select_evidence(self.EVIDENCE, {"item 50"})
+        urls = [p["url"] for p in picked]
+        self.assertEqual(len(urls), len(set(urls)))
+
+
+class NoRepitchTests(unittest.TestCase):
+    """MEA-115: 09/04, 09/05 and 09/06 pitched the same CMS-against-BLS story.
+
+    The wording differed every day; the story did not. Nothing downstream knew
+    what had already been pitched — previous_run carried a date, an item count
+    and a topic list, none of which name a story.
+    """
+
+    def test_the_prompt_carries_what_was_already_pitched(self):
+        facts = json.loads(llm._facts(PAYLOAD, None, pitches=[{
+            "run_date": "09/05/26", "pattern": "Nursing home payrolls against home health.",
+            "angle": None, "headlines": [], "evidence_used": ["Alpha"],
+        }]))
+        self.assertEqual(facts["recent_pitches"][0]["run_date"], "09/05/26")
+        self.assertIn("payrolls", facts["recent_pitches"][0]["pattern"])
+
+    def test_no_history_means_no_empty_block_in_the_prompt(self):
+        self.assertNotIn("recent_pitches", json.loads(llm._facts(PAYLOAD, None)))
+
+    def test_the_system_prompt_forbids_repitching(self):
+        self.assertIn("recent_pitches", llm.SYSTEM)
+        self.assertIn("DO NOT REPITCH", llm.SYSTEM)
+
+    def test_the_system_prompt_says_what_to_do_on_a_day_with_nothing_new(self):
+        """Silence about a static corpus is what produced four rewrites of one pitch."""
+        self.assertIn("name the date the story ran", llm.SYSTEM)
+
+    def test_the_deterministic_worksheet_is_not_presented_as_the_brief(self):
+        """It is the top cluster's worksheet, and that is the same cluster most days."""
+        sent = self._sent_message()
+        self.assertIn("prose to beat, not as the brief", sent)
+
+    def test_history_is_read_from_the_docs_tree_and_reaches_the_prompt(self):
+        with TemporaryDirectory() as tmp:
+            runs_dir = Path(tmp) / "data" / "runs"
+            runs_dir.mkdir(parents=True)
+            (runs_dir / "2026-09-02.json").write_text(json.dumps({
+                "run_date": "2026-09-02",
+                "feature_pitch_raw": "**The pattern:** A story already told.",
+                "story_ideas": [{"title": "Alpha"}],
+            }), encoding="utf-8")
+            sent = self._sent_message(docs_dir=tmp)
+        self.assertIn("A story already told.", sent)
+
+    def test_an_unreadable_history_does_not_cost_the_run_its_pitch(self):
+        result = self._upgrade(docs_dir="/nonexistent/docs")
+        self.assertEqual(result["synthesis_mode"], "llm")
+
+    def _upgrade(self, docs_dir="docs"):
+        parsed = json.dumps({"feature_pitch": "p", "pitch_draft": "d",
+                             "story_ideas": [], "trends": "t"})
+        self.client = mock.Mock()
+        self.client.messages.create.return_value = fake_response(parsed)
+        module = mock.Mock()
+        module.Anthropic.return_value = self.client
+        with mock.patch.dict("os.environ", {"ANTHROPIC_API_KEY": "sk-test"}, clear=False), \
+             mock.patch.dict("sys.modules", {"anthropic": module}):
+            return llm.upgrade_synthesis(PAYLOAD, DETERMINISTIC, docs_dir=docs_dir)
+
+    def _sent_message(self, docs_dir="docs"):
+        self._upgrade(docs_dir)
+        return self.client.messages.create.call_args.kwargs["messages"][0]["content"]
 
 
 class StakeTests(unittest.TestCase):

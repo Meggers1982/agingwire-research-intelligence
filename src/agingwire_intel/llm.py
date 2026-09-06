@@ -3,10 +3,10 @@ from __future__ import annotations
 import json
 import logging
 import os
-import re
 from collections import Counter
 from datetime import datetime
 
+from agingwire_intel import history
 from agingwire_intel.matching import tokens, us_date
 from agingwire_intel.synthesis import build_clusters
 
@@ -15,6 +15,10 @@ log = logging.getLogger(__name__)
 MODEL = "claude-opus-5"
 MAX_TOKENS = 16000
 MAX_EVIDENCE_IN_PROMPT = 40
+# Of those slots, how many go to the ranking regardless of what has already been
+# pitched. The rest are held for evidence the recent pitches did not use --
+# see select_evidence().
+PROMPT_TOP_SLOTS = 24
 
 # House style, carried over from the briefs: no announcement openers, no
 # rhetorical-question topic sentences, no named commentators, American English.
@@ -47,6 +51,37 @@ Hard rules:
   reached it independently.
 - A coverage_state of "gap" means monitored publishers do cover that beat and none \
   matched the item. That is a real opportunity and can be described as one.
+
+DO NOT REPITCH. The facts carry "recent_pitches": the feature pitches this \
+pipeline published on the days before this one, each with the pattern it \
+claimed, its angle and the evidence it used. The corpus behind these runs moves \
+on a monthly calendar -- agency files refresh once a month, employment series \
+print once a month -- so most of today's evidence will be the same evidence as \
+yesterday's, and most days the highest-scoring items are the ones already \
+pitched. Writing "the strongest story this run supports" against that input a \
+second time produces yesterday's pitch in new sentences, which is the one \
+failure mode that makes a daily brief worthless.
+
+So:
+- Before choosing the pattern, read recent_pitches. If the story you were going \
+  to write is one of them -- the same records read the same way, or the same \
+  two series set against each other -- you may not write it again.
+- Pitch instead the strongest story in today's facts that recent_pitches does \
+  NOT contain, preferring items absent from their "evidence_used" lists. A \
+  second-best angle that is new is worth more to an editor than the best angle \
+  for the fourth day running.
+- Genuinely new evidence outranks everything: an item with is_new true, or a \
+  figure that just moved, is the pitch even if it is smaller than the standing \
+  story.
+- When today's evidence really does carry nothing the earlier pitches missed, \
+  say that in one clause of "The pattern", name the date the story ran, and \
+  spend the pitch on the strongest unwritten thread anyway. Never restate a \
+  previous pattern as though it were new, and never manufacture significance \
+  from a file that only got republished.
+- A follow-up is allowed where the earlier pitch is genuinely advanced by \
+  something in today's facts. Say what is new about it in the first sentence \
+  and name the date the original ran. "The August figures are still the August \
+  figures" is not an advance.
 
 THE FEATURE PITCH must follow this shape, which is what makes a pitch usable:
 
@@ -121,6 +156,12 @@ summary of the record:
 The consumer angle leads because most of this evidence reaches an older adult
 before it reaches an operator.
 
+Story ideas carry the no-repitch rule too. Do not re-file an idea whose headline
+already ran in recent_pitches, and do not reword one. Where the same record has
+to appear again because it is still the strongest thing on that beat, give it a
+different way in -- a different reader question, a different comparison, a
+different cut of the same file -- or drop it for something unused.
+
 Formatting: each feature-pitch section is a **bold label** followed by prose on
 the same line, as a paragraph — not a bullet. Only the headline and outlet lists
 use "- " bullets, one item per line. No headings. Putting a whole section on one
@@ -171,7 +212,11 @@ SCHEMA = {
         },
         "trends": {
             "type": "string",
-            "description": "What changed versus the previous run and what the run's shape says about the beat.",
+            "description": (
+                "What changed versus the previous run and what the run's shape says about the "
+                "beat. Say plainly when nothing changed, and say what has now gone unpitched "
+                "for several runs."
+            ),
         },
     },
     "required": ["feature_pitch", "pitch_draft", "story_ideas", "trends"],
@@ -199,7 +244,50 @@ def available() -> bool:
     return unavailable_reason() is None
 
 
-def _facts(payload: dict, previous: dict | None, now: datetime | None = None) -> str:
+def _item_key(item: dict) -> tuple[str, str]:
+    return (str(item.get("url") or ""), _normalize_title(item.get("title")))
+
+
+def select_evidence(evidence: list[dict], pitched: set[str],
+                    limit: int = MAX_EVIDENCE_IN_PROMPT,
+                    top_slots: int = PROMPT_TOP_SLOTS) -> list[dict]:
+    """The items the model is allowed to write about, in score order.
+
+    A straight top-N by score froze. The corpus is collected on 30-to-45-day
+    lookbacks over sources that publish monthly, so the ranking barely moves
+    between runs -- the 60 items published on 2026-09-05 and 2026-09-06 were the
+    same 60 -- and the model only ever saw the top 40 of 170. The other 130
+    items could not be pitched because they were never on the table.
+
+    The top slots still go to the ranking: a story does not stop being the
+    strongest because it ran yesterday, and the run has to be able to say so
+    honestly. The remaining slots are filled from the best-scoring items the
+    recent pitches did not use, so there is always unwritten material in front
+    of the model. Nothing is excluded -- when there is not enough unused
+    evidence the slots fall back to the ranking.
+    """
+    order = {_item_key(item): index for index, item in enumerate(evidence)}
+    picked = list(evidence[:top_slots])
+    taken = {_item_key(item) for item in picked}
+
+    def add(candidates):
+        for item in candidates:
+            if len(picked) >= limit:
+                return
+            key = _item_key(item)
+            if key in taken:
+                continue
+            taken.add(key)
+            picked.append(item)
+
+    rest = evidence[top_slots:]
+    add(i for i in rest if _normalize_title(i.get("title")) not in pitched)
+    add(rest)
+    return sorted(picked, key=lambda i: order.get(_item_key(i), len(order)))[:limit]
+
+
+def _facts(payload: dict, previous: dict | None, now: datetime | None = None,
+           pitches: list[dict] | None = None) -> str:
     # --replay exists because collectors cannot be asked for a past date, and
     # ageing that day's evidence against today's clock would produce a different
     # report rather than the same one rewritten. __main__ threads a replay clock
@@ -222,6 +310,8 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None) ->
     ]
     from agingwire_intel import outlets as outlet_mod
 
+    pitches = pitches or []
+    selected = select_evidence(payload.get("evidence", []), history.pitched_titles(pitches))
     evidence = [
         {
             "title": i.get("title"),
@@ -242,11 +332,11 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None) ->
             # own outlets, and the model must not invent publication names.
             "candidate_outlets": outlet_mod.names(outlet_mod.for_item(i)),
         }
-        for i in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]
+        for i in selected
     ]
     top_topics = [c["topic"] for c in clusters[:3]]
     covered: set[str] = set()
-    for i in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]:
+    for i in selected:
         covered |= outlet_mod.covered_by(i)
 
     facts = {
@@ -265,6 +355,10 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None) ->
         "clusters": slim_clusters,
         "top_evidence": evidence,
     }
+    # Named before previous_run because it is the block that decides what the
+    # pitch may be about, where previous_run only sizes the last collection.
+    if pitches:
+        facts["recent_pitches"] = pitches
     if previous:
         facts["previous_run"] = {
             "run_date": us_date(previous.get("generated_at")),
@@ -276,8 +370,7 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None) ->
 
 def _normalize_title(title: str) -> str:
     """Strip what the model tends to add when echoing a title back."""
-    text = re.sub(r"\([^)]*\)", " ", str(title or ""))
-    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+    return history.normalize_title(title)
 
 
 def _distinctive(title: str, boilerplate: set[str]) -> set[str]:
@@ -328,16 +421,19 @@ def _match_record(title: str, candidates: list[dict], by_norm: dict,
     return best if best_overlap >= 0.34 else {}
 
 
-def _record_pool(payload: dict, deterministic_ideas: list[dict]) -> list[dict]:
+def _record_pool(selected: list[dict], deterministic_ideas: list[dict]) -> list[dict]:
     """Every item the model could have written about, deterministic ideas first.
 
-    The model sees the top evidence items, not the twelve the template sampled,
-    so matching only against those left real items like "Ownership" unmatched —
-    and then fuzzy-matched onto a sibling, taking its link.
+    The model sees the selected evidence items, not the twelve the template
+    sampled, so matching only against those left real items like "Ownership"
+    unmatched — and then fuzzy-matched onto a sibling, taking its link. It has to
+    be the same list select_evidence() built: rotating the prompt slots without
+    rotating this pool would send an idea about a rotated-in item looking for a
+    record that is not here.
     """
     pool = list(deterministic_ideas)
     seen = {str(i.get("title", "")).strip().lower() for i in pool}
-    for item in payload.get("evidence", [])[:MAX_EVIDENCE_IN_PROMPT]:
+    for item in selected:
         title = str(item.get("title", "")).strip()
         if not title or title.lower() in seen:
             continue
@@ -415,12 +511,15 @@ def _as_markdown(ideas: list[dict]) -> str:
 
 
 def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None = None,
-                      now: datetime | None = None) -> dict:
+                      now: datetime | None = None, docs_dir: str = "docs") -> dict:
     """Rewrite the deterministic synthesis as prose, falling back on any failure.
 
     The deterministic version is always computed first and returned unchanged if
     the API key is missing, the SDK is absent, the call fails, or the model
     declines — so a run never depends on this succeeding.
+
+    `docs_dir` is read, not written: the published runs under it are where the
+    pipeline remembers what it has already pitched.
     """
     reason = unavailable_reason()
     if reason:
@@ -428,6 +527,20 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
 
     try:
         import anthropic
+
+        from agingwire_intel import runs as runs_mod
+
+        # Reading the history must never be what costs a run its editorial
+        # layer, so a broken or absent docs/ tree degrades to the old behaviour
+        # rather than raising into the fallback path below.
+        try:
+            pitches = history.recent_pitches(
+                docs_dir, runs_mod.run_id(payload.get("generated_at", "")))
+        except OSError as exc:
+            log.warning("could not read recent pitches (%s); pitching without history", exc)
+            pitches = []
+        selected = select_evidence(
+            payload.get("evidence", []), history.pitched_titles(pitches))
 
         client = anthropic.Anthropic()
         response = client.messages.create(
@@ -441,14 +554,18 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
                 "content": (
                     "Here is today's pipeline output as JSON facts. Write the feature pitch, "
                     "story ideas and trends sections.\n\n"
-                    "For reference, here is the deterministic version the pipeline generated "
-                    "without a model. Improve on its prose, but do not add any fact it does "
-                    "not contain.\n\n"
+                    "For reference, here is the deterministic version the pipeline "
+                    "generated without a model. It is one reading of the run — the "
+                    "worksheet for whichever cluster ranked first — and on a corpus that "
+                    "refreshes monthly that is the same cluster most days. Treat it as "
+                    "prose to beat, not as the brief: the facts below are the source of "
+                    "truth for what today supports, and recent_pitches decides what you "
+                    "may not write again. Add no fact that is not in one of them.\n\n"
                     f"<deterministic_feature_pitch>\n{deterministic.get('feature_pitch_raw', '')}\n"
                     "</deterministic_feature_pitch>\n\n"
                     f"<deterministic_trends>\n{deterministic.get('trends_raw', '')}\n"
                     "</deterministic_trends>\n\n"
-                    f"<facts>\n{_facts(payload, previous, now)}\n</facts>"
+                    f"<facts>\n{_facts(payload, previous, now, pitches)}\n</facts>"
                 ),
             }],
         )
@@ -466,7 +583,7 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
             "pitch_draft_raw": parsed.get("pitch_draft", ""),
             "story_ideas": _as_records(
                 ideas,
-                _record_pool(payload, deterministic.get("story_ideas") or []),
+                _record_pool(selected, deterministic.get("story_ideas") or []),
             ),
             "pitch_ideas_raw": _as_markdown(ideas),
             "trends_raw": parsed["trends"],
