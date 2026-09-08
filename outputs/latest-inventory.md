@@ -1,8 +1,8 @@
 # AgingWire evidence inventory
 
-Generated: 2026-09-07T17:45:25.755458+00:00
+Generated: 2026-09-08T16:37:17.161508+00:00
 
-All **170** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
+All **169** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 
 ### 1. CMS refreshed dataset: 25 files refreshed, 07/31/26–09/06/26
 
@@ -38,9 +38,20 @@ Released together, so this is one event rather than 25 separate leads:
 - [Hospice - State Data](https://data.cms.gov/provider-data/dataset/eda0-92f0) — 53/100, 08/07/26
 - [Hospice - National Data](https://data.cms.gov/provider-data/dataset/3xeb-u9wp) — 53/100, 08/07/26
 
-### 2. Medicare Program; Town Hall Meeting on the Fiscal Year 2028 Applications for New Technology Add-On Payments
+### 2. American Community Survey 2023 state aging and housing profile (52 states)
 
-**Score:** Lead — 72/100  
+**Score:** Strong — 69/100  
+**Source:** american-community-survey (government_api)  
+**Published:** undated  
+**Topics:** housing, financial_security, migration_retirement, rural_aging  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://data.census.gov/table?q=DP05&y=2023
+
+State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
+
+### 3. Medicare Program; Town Hall Meeting on the Fiscal Year 2028 Applications for New Technology Add-On Payments
+
+**Score:** Strong — 67/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 09/08/26  
 **Topics:** financial_security, medicare_medicaid  
@@ -49,7 +60,7 @@ Released together, so this is one event rather than 25 separate leads:
 
 This notice announces a town hall meeting in accordance with section 1886(d)(5)(K)(viii)(III) of the Social Security Act (the Act) to discuss fiscal year (FY) 2028 applications for add-on payments for new medical services and technologies under the hospital inpatient prospective payment system (IPPS). Interested parties are invited to this virtual meeting to present their comments, recommendations, and data regarding whether the FY 2028 applications for new technology add- on payments meet the substantial clinical improvement criterion.
 
-### 3. BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)
+### 4. BLS: Home health care services employment, August 2026 — 1,896.40 thousands of jobs (+5.0% year over year)
 
 **Score:** Strong — 66/100  
 **Source:** bls-api (government_api)  
@@ -58,7 +69,7 @@ This notice announces a town hall meeting in accordance with section 1886(d)(5)(
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562160001
 
-### 4. BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)
+### 5. BLS: Nursing care facilities employment, August 2026 — 1,590.20 thousands of jobs (+2.1% year over year)
 
 **Score:** Strong — 66/100  
 **Source:** bls-api (government_api)  
@@ -67,7 +78,7 @@ This notice announces a town hall meeting in accordance with section 1886(d)(5)(
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562310001
 
-### 5. BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)
+### 6. BLS: Employment level, 65 years and over, August 2026 — 11,753 thousands of people (+2.1% year over year)
 
 **Score:** Strong — 66/100  
 **Source:** bls-api (government_api)  
@@ -76,7 +87,7 @@ This notice announces a town hall meeting in accordance with section 1886(d)(5)(
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/LNU02000097
 
-### 6. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
+### 7. BLS: Consumer Price Index, medical care, July 2026 — 593.78 index 1982-84=100 (+1.7% year over year)
 
 **Score:** Strong — 65/100  
 **Source:** bls-api (government_api)  
@@ -84,17 +95,6 @@ This notice announces a town hall meeting in accordance with section 1886(d)(5)(
 **Topics:** financial_security, medicare_medicaid  
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CUUR0000SAM
-
-### 7. American Community Survey 2023 state aging and housing profile (52 states)
-
-**Score:** Strong — 65/100  
-**Source:** american-community-survey (government_api)  
-**Published:** undated  
-**Topics:** housing, financial_security, migration_retirement, rural_aging  
-**Coverage:** lightly covered — B2B 1, B2C 0  
-**Source URL:** https://data.census.gov/table?q=DP05&y=2023
-
-State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
 
 ### 8. Fair Market Rents for the Housing Choice Voucher Program, Moderate Rehabilitation Single Room Occupancy Program, and Other Programs, Fiscal Year 2027
 
@@ -127,18 +127,7 @@ This notice announces changes in the interest rates to be paid on debentures iss
 **Coverage:** lightly covered — B2B 1, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562330001
 
-### 11. Housing Trust Fund: Fiscal Year 2026 Allocation Notice
-
-**Score:** Strong — 63/100  
-**Source:** federal-register (regulatory_filing)  
-**Published:** 09/04/26  
-**Topics:** financial_security, housing  
-**Coverage:** lightly covered — B2B 1, B2C 0  
-**Source URL:** https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice
-
-The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.
-
-### 12. BLS: Home health care services average hourly earnings, July 2026 — 28.04 dollars per hour (+2.0% year over year)
+### 11. BLS: Home health care services average hourly earnings, July 2026 — 28.04 dollars per hour (+2.0% year over year)
 
 **Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
@@ -147,7 +136,7 @@ The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Tru
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562160003
 
-### 13. BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)
+### 12. BLS: Assisted living and CCRC average hourly earnings, July 2026 — 25.65 dollars per hour (+3.2% year over year)
 
 **Score:** Strong — 63/100  
 **Source:** bls-api (government_api)  
@@ -155,6 +144,17 @@ The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Tru
 **Topics:** workforce, assisted_living  
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562330003
+
+### 13. Medicaid/CHIP Monthly Enrollment Tracker
+
+**Score:** Strong — 62/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 09/08/26  
+**Topics:** medicare_medicaid  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/medicaid/medicaid-enrollment-tracker/
+
+This tracker presents the most recent Medicaid monthly enrollment data.
 
 ### 14. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants
 
@@ -189,29 +189,18 @@ This notice with comment period provides information to the public on the proces
 
 HUD published a notice of proposed rulemaking in January of 2026 that proposed to remove HUD's disparate-impact regulations and leave interpretation of disparate-impact liability under the Fair Housing Act to the courts. This supplemental notice of proposed rulemaking continues HUD's efforts to remove or revise regulations that prohibit conduct having a disparate impact without evidence of discriminatory intent. Through this rule, HUD is proposing to remove provisions in HUD's Title VI implementing regulations that impose disparate-impact liability on recipients of HUD Federal financial assist
 
-### 17. Medicaid Coverage for Women
+### 17. Housing Trust Fund: Fiscal Year 2026 Allocation Notice
 
-**Score:** Strong — 60/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 08/26/26  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/
+**Score:** Strong — 61/100  
+**Source:** federal-register (regulatory_filing)  
+**Published:** 09/04/26  
+**Topics:** financial_security, housing  
+**Coverage:** lightly covered — B2B 1, B2C 0  
+**Source URL:** https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice
 
-This data note presents key data points describing the current state of the Medicaid program as it affects women.
+The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.
 
-### 18. Medicaid/CHIP Monthly Enrollment Tracker
-
-**Score:** Strong — 60/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 08/26/26  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/medicaid-enrollment-tracker/
-
-This tracker presents the most recent Medicaid monthly enrollment data.
-
-### 19. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
+### 18. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
 
 **Score:** Strong — 60/100  
 **Source:** kff-feed (institutional_rss)  
@@ -222,18 +211,7 @@ This tracker presents the most recent Medicaid monthly enrollment data.
 
 Considering the existing challenges to hospital-based maternity care in rural areas and the potential for it to worsen, this data note analyzes the availability of hospitals providing inpatient maternity care in rural areas for Medicaid enrollees and illustrates how access to these services could be affected if additional rural hospitals were to close or eliminate those services.
 
-### 20. Analysis: At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits
-
-**Score:** Strong — 60/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 08/14/26  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/analysis-at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/
-
-An estimated $60 billion in federal Medicaid spending in 37 states (including the District of Columbia) would likely exceed new federal limits on state directed payments for hospital services once fully implemented, a new KFF analysis finds. States with the biggest potential reductions in Medicaid payments to hospitals include California, Illinois, Kentucky, Texas, North Carolina, Louisiana, Arizona and Michigan.
-
-### 21. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
+### 19. Patient and Caregiver Perspectives on Communication Quality in Tele-Palliative Care
 
 **Score:** Strong — 59/100  
 **Source:** rand-research (institutional_rss)  
@@ -244,7 +222,7 @@ An estimated $60 billion in federal Medicaid spending in 37 states (including th
 
 This paper qualitatively explores patient and family caregiver experiences with telehealth and in-person visits for outpatient palliative care, including preferences related to mode of care and any perceived differences in communication quality by mode in a post-pandemic context.
 
-### 22. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
+### 20. Social Security Ruling, SSR 26-2p; Titles II and XVI: Documenting and Evaluating Disability in Young Adults
 
 **Score:** Strong — 58/100  
 **Source:** federal-register (regulatory_filing)  
@@ -255,18 +233,7 @@ This paper qualitatively explores patient and family caregiver experiences with 
 
 We are providing notice of SSR 26-2p. This SSR explains our policies and consolidates information from our regulations on documenting and evaluating disability in young adults. This ruling rescinds and replaces SSR 11-2p.
 
-### 23. Breaking Glass, Missing Hands
-
-**Score:** Strong — 58/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 08/31/26  
-**Topics:** workforce  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/research_reports/RRA3665-2.html
-
-U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities after a conflict. The U.S. Space Force must invest now in STEM pipelines, technician training, and automation to build surge capacity.
-
-### 24. Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk
+### 21. Trump Suggested States Should Fund Medicare – Which Would Weaken the Program and Put Americans at Risk
 
 **Score:** Strong — 58/100  
 **Source:** center-retirement-research (web_release)  
@@ -275,7 +242,7 @@ U.S. space defense industrial base workforce shortfalls threaten the ability to 
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://crr.bc.edu/trump-suggested-states-should-fund-medicare-which-would-weaken-the-program-and-put-americans-at-risk/
 
-### 25. Status of State Medicaid Expansion Decisions
+### 22. Status of State Medicaid Expansion Decisions
 
 **Score:** Strong — 58/100  
 **Source:** kff-feed (institutional_rss)  
@@ -286,7 +253,7 @@ U.S. space defense industrial base workforce shortfalls threaten the ability to 
 
 This page displays an interactive map of the current status of state decisions on the Affordable Care Act's Medicaid expansion. Additional Medicaid expansion resources are listed (with links) below the map.
 
-### 26. 5 Questions and Answers About Medicaid and Provider Taxes
+### 23. 5 Questions and Answers About Medicaid and Provider Taxes
 
 **Score:** Strong — 58/100  
 **Source:** kff-feed (institutional_rss)  
@@ -297,7 +264,7 @@ This page displays an interactive map of the current status of state decisions o
 
 This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors and from a proposed rule on provider taxes to describe states’ current provider taxes, explore how rules governing provider taxes are changing because of the 2025 reconciliation law and the regulations implementing that law, and summarizes which changes may affect each state.
 
-### 27. RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act
+### 24. RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act
 
 **Score:** Strong — 58/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -308,7 +275,7 @@ This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors a
 
 RentGrow, a provider of consumer reports for tenant screening, will be required to pay $2.25 million to settle Federal Trade Commission allegations that the company violated the Fair Credit Reporting Act (FCRA), including by failing to use reasonable procedures to ensure the accuracy of its reports, and the FTC Act. The FCRA requires consumer reporting agencies (CRAs) to maintain reasonable procedures to assure the maximum possible accuracy of the information they include in background screening reports, disclose the sources of information used to compile a background screening report when a c
 
-### 28. NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options
+### 25. NIC and MIT AgeLab Launch Landmark Study to Reimagine Senior Living Options
 
 **Score:** Strong — 57/100  
 **Source:** nic (web_release)  
@@ -319,18 +286,7 @@ RentGrow, a provider of consumer reports for tenant screening, will be required 
 
 The National Investment Center for Seniors Housing & Care (NIC) establishes a multi-year collaboration with the MIT AgeLab to rethink what adults want in housing and care as they age ANNAPOLIS, Md. (August 5, 2026) —The senior living industry is changing, and NIC is leading the research effort to meet that moment. As older adults bring fundamentally new expectations for health,…
 
-### 29. Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud
-
-**Score:** Strong — 56/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 09/04/26  
-**Topics:** fraud_scams  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle
-
-Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumer
-
-### 30. Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule
+### 26. Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule
 
 **Score:** Strong — 56/100  
 **Source:** justice-in-aging (institutional_rss)  
@@ -341,7 +297,18 @@ Global payment processor Nuvei will pay $4.85 million to settle the Federal Trad
 
 Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .
 
-### 31. FTC and States Act Against Hims & Hers for Deceptive and Unlawful Privacy Practices
+### 27. Medicaid Coverage for Women
+
+**Score:** Strong — 56/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 08/26/26  
+**Topics:** medicare_medicaid  
+**Coverage:** lightly covered — B2B 1, B2C 0  
+**Source URL:** https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/
+
+This data note presents key data points describing the current state of the Medicaid program as it affects women.
+
+### 28. FTC and States Act Against Hims & Hers for Deceptive and Unlawful Privacy Practices
 
 **Score:** Strong — 56/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -352,18 +319,7 @@ Justice in Aging’s template comments address Medicare eligibility for immigran
 
 The Federal Trade Commission, joined by Utah and California, by and through Los Angeles County Counsel, today sued Hims & Hers alleging that the telehealth provider shared consumers’ sensitive health information about medical conditions with third-party advertising platforms despite claiming its services maintain consumers’ privacy and deceives users about its billing and cancellation practices. In a complaint filed in federal court, the FTC and its state and local partners allege that Hims & Hers (Hims) fails to clearly disclose that it charges consumers for prescriptions almost immediately a
 
-### 32. New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement
-
-**Score:** Strong — 56/100  
-**Source:** ebri (web_release)  
-**Published:** 03/11/26  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.ebri.org/media/press-releases/content/new-ebri-report-finds-some-medicare-households-may-need-nearly--500-000-for-health-care-in-retirement
-
-EBRI Press Release March 11, 2026 2 pages Summary Full Content
-
-### 33. Medicaid Home and Community-Based Services for Older Adults: A Primer
+### 29. Medicaid Home and Community-Based Services for Older Adults: A Primer
 
 **Score:** Strong — 55/100  
 **Source:** justice-in-aging (institutional_rss)  
@@ -374,7 +330,18 @@ EBRI Press Release March 11, 2026 2 pages Summary Full Content
 
 Explore how Medicaid HCBS help older adults with disabilities live independently in their communities and the policy gaps that limit access to these critical services. The post Medicaid Home and Community-Based Services for Older Adults: A Primer appeared first on Justice in Aging .
 
-### 34. Rescission of Social Security Acquiescence Ruling 90-2(2)
+### 30. Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud
+
+**Score:** Worth a look — 54/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 09/04/26  
+**Topics:** fraud_scams  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle
+
+Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumer
+
+### 31. Rescission of Social Security Acquiescence Ruling 90-2(2)
 
 **Score:** Worth a look — 54/100  
 **Source:** federal-register (regulatory_filing)  
@@ -385,7 +352,18 @@ Explore how Medicaid HCBS help older adults with disabilities live independently
 
 The Commissioner of Social Security gives notice of the rescission of AR 90-2(2): Ruppert v. Bowen, 871 F.2d 1172 (2d Cir. 1989)--Evaluation of a Rental Subsidy as In-Kind Income for Supplemental Security Income (SSI) Benefit Calculation Purposes--Title XVI of the Social Security Act (Act).
 
-### 35. New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security
+### 32. New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement
+
+**Score:** Worth a look — 54/100  
+**Source:** ebri (web_release)  
+**Published:** 03/11/26  
+**Topics:** medicare_medicaid  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.ebri.org/media/press-releases/content/new-ebri-report-finds-some-medicare-households-may-need-nearly--500-000-for-health-care-in-retirement
+
+EBRI Press Release March 11, 2026 2 pages Summary Full Content
+
+### 33. New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security
 
 **Score:** Worth a look — 53/100  
 **Source:** ebri (web_release)  
@@ -396,16 +374,7 @@ The Commissioner of Social Security gives notice of the rescission of AR 90-2(2)
 
 EBRI Press Release June 2, 2026 2 pages Summary Full Content
 
-### 36. Here’s How Much Americans Rely on Social Security – at All Income Levels
-
-**Score:** Worth a look — 52/100  
-**Source:** center-retirement-research (web_release)  
-**Published:** 09/02/26  
-**Topics:** financial_security  
-**Coverage:** lightly covered — B2B 1, B2C 1  
-**Source URL:** https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/
-
-### 37. Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026
+### 34. Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026
 
 **Score:** Worth a look — 52/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -416,7 +385,7 @@ EBRI Press Release June 2, 2026 2 pages Summary Full Content
 
 Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on the Medicare Advantage quality bonus program in 2026, as 68% of Medicare Advantage enrollees are in a plan that qualifies for higher payments under the program.
 
-### 38. Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance
+### 35. Another Strong Quarter for Senior Housing: Seven Straight Quarters of Outperformance
 
 **Score:** Worth a look — 52/100  
 **Source:** nic (web_release)  
@@ -427,7 +396,18 @@ Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on
 
 22 Senior Housing Properties Added to the NCREIF Property Index in 2Q Senior housing investment performance in the second quarter of 2026 maintained the prior quarter’s momentum, posting a total return of 3.9% and bringing year-to-date returns to 8.0%. Overall, senior housing during the quarter outperformed the broader…
 
-### 39. FTC Data Show People Reported Losing $3.5 Billion to Imposter Scams in 2025
+### 36. FTC Takes Action Against Payment Processor Humboldt Merchant Services for Knowingly Facilitating Payment Processing for Sham Merchants
+
+**Score:** Worth a look — 51/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 09/08/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-takes-action-against-payment-processor-humboldt-merchant-services-knowingly-facilitating-payment
+
+Payment processing company Humboldt Merchant Services will pay $12 million and be permanently banned from processing payments for merchants with a heightened risk of potential fraud to settle allegations that Humboldt processed payments for merchants that defrauded consumers. According to the FTC’s complaint , Humboldt processed payments for more than 1,000 merchants that were shell entities that served as fronts or pass-throughs for fraudulent companies engaged in unauthorized billing scams, including Legion Media , which the FTC shut down in 2024. “Humboldt was processing payments for compan
+
+### 37. FTC Data Show People Reported Losing $3.5 Billion to Imposter Scams in 2025
 
 **Score:** Worth a look — 51/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -438,7 +418,7 @@ Aug 12, 2026 Issue Brief The Medicare program will spend at least $13 billion on
 
 New data from the Federal Trade Commission reveal that people reported losing a staggering $3.5 billion to imposter scams in 2025, with reported losses increasing nearly three times since 2020. FTC data also show that people reported imposter scams more than any other fraud category in 2025—nearly one in three fraud reports were about imposter scams. These scams lured consumers through text, phone, email, social media, search engine results and other means. Some of the costliest impersonation scams start with a fake security alert, often from a bank. People are convinced to move money to “prot
 
-### 40. 2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs
+### 38. 2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs
 
 **Score:** Worth a look — 51/100  
 **Source:** ebri (web_release)  
@@ -449,7 +429,7 @@ New data from the Federal Trade Commission reveal that people reported losing a 
 
 EBRI Press Release April 21, 2026 2 pages Summary Full Content
 
-### 41. June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.
+### 39. June 1-5 is Medicare Fraud Prevention Week. Here’s How Americans Can Help Protect Themselves and Medicare.
 
 **Score:** Worth a look — 49/100  
 **Source:** acl-news (web_release)  
@@ -458,18 +438,7 @@ EBRI Press Release April 21, 2026 2 pages Summary Full Content
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://acl.gov/news-and-events/acl-blog/june-1-5-medicare-fraud-prevention-week-heres-how-americans-can-help
 
-### 42. Medicaid Coverage for Women
-
-**Score:** Worth a look — 49/100  
-**Source:** kff-issue-briefs (web_release)  
-**Published:** undated  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/
-
-Aug 26, 2026 Issue Brief This data note presents key data points describing the current state of the Medicaid program as it affects women.
-
-### 43. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
+### 40. Availability of Rural Hospitals Providing Inpatient Maternity Care in Medicaid
 
 **Score:** Worth a look — 49/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -480,7 +449,7 @@ Aug 26, 2026 Issue Brief This data note presents key data points describing the 
 
 Aug 26, 2026 Issue Brief Considering the existing challenges to hospital-based maternity care in rural areas and the potential for it to worsen, this data note analyzes the availability of hospitals providing inpatient maternity care in rural areas for Medicaid enrollees and illustrates how access to these services could be affected if additional rural hospitals were to close or eliminate those se
 
-### 44. 5 Questions and Answers About Medicaid and Provider Taxes
+### 41. 5 Questions and Answers About Medicaid and Provider Taxes
 
 **Score:** Worth a look — 49/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -491,18 +460,7 @@ Aug 26, 2026 Issue Brief Considering the existing challenges to hospital-based m
 
 Aug 20, 2026 Issue Brief This issue brief uses data from KFF’s 2025-2026 survey of Medicaid directors and from a proposed rule on provider taxes to describe states’ current provider taxes, explore how rules governing provider taxes are changing because of the 2025 reconciliation law and the regulations implementing that law, and summarizes which changes may affect each state.
 
-### 45. At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits
-
-**Score:** Worth a look — 49/100  
-**Source:** kff-issue-briefs (web_release)  
-**Published:** undated  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/
-
-Aug 14, 2026 Issue Brief This analysis estimates the number of states impacted by and the amount of current federal spending on Medicaid state directed payments for hospital services that exceeds the new limits established by the 2025 reconciliation law when fully implemented.
-
-### 46. Optional Medicaid and CHIP Coverage for Lawfully Present Immigrant Children Could Mitigate Coverage Losses Due to 2025 Reconciliation Law
+### 42. Optional Medicaid and CHIP Coverage for Lawfully Present Immigrant Children Could Mitigate Coverage Losses Due to 2025 Reconciliation Law
 
 **Score:** Worth a look — 49/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -513,7 +471,7 @@ Aug 14, 2026 Issue Brief This analysis estimates the number of states impacted b
 
 Aug 14, 2026 Issue Brief This brief provides an overview of health coverage of noncitizen children to provide greater insight into the potential role of Immigrant Children’s Health Improvement Act (ICHIA) coverage in limiting the 2025 reconciliation law's impact on coverage for lawfully present immigrant children.
 
-### 47. Prior Authorization Metrics Provide New Insights into Insurer Practices, but Gaps Remain
+### 43. Prior Authorization Metrics Provide New Insights into Insurer Practices, but Gaps Remain
 
 **Score:** Worth a look — 49/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -524,7 +482,7 @@ Aug 14, 2026 Issue Brief This brief provides an overview of health coverage of n
 
 Aug 13, 2026 Issue Brief This analysis of available 2025 prior authorization data finds insurers denied at least 1 in 8 standard requests for prior authorization across three insurance markets: Medicare Advantage, Medicaid managed care, and the federally facilitated ACA Marketplaces. Denial rates varied wide segments by insurer. The analysis highlights limitations of the data and challenges for co
 
-### 48. Variability in Reimbursement Rates for State-funded Abortion Services for Medicaid Enrollees: A 2026 Update
+### 44. Variability in Reimbursement Rates for State-funded Abortion Services for Medicaid Enrollees: A 2026 Update
 
 **Score:** Worth a look — 49/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -535,7 +493,7 @@ Aug 13, 2026 Issue Brief This analysis of available 2025 prior authorization dat
 
 Aug 7, 2026 Issue Brief This KFF analysis examines physician fee schedules for medication abortion and abortion procedures to see what states that use their own state funds to pay for abortion services are reimbursing for providing abortion services to Medicaid enrollees.
 
-### 49. New Research Report Examining Where Households Spend Defined Contribution Plan Loans Finds a Likelihood to Spend Loan Money on Health Care and Housing Rather Than on Travel or Entertainment
+### 45. New Research Report Examining Where Households Spend Defined Contribution Plan Loans Finds a Likelihood to Spend Loan Money on Health Care and Housing Rather Than on Travel or Entertainment
 
 **Score:** Worth a look — 49/100  
 **Source:** ebri (web_release)  
@@ -546,7 +504,7 @@ Aug 7, 2026 Issue Brief This KFF analysis examines physician fee schedules for m
 
 EBRI Press Release Oct 16, 2025 3 pages Summary Full Content
 
-### 50. Subscribe to the NIC Insider ▶
+### 46. Subscribe to the NIC Insider ▶
 
 **Score:** Worth a look — 49/100  
 **Source:** nic (web_release)  
@@ -557,7 +515,7 @@ EBRI Press Release Oct 16, 2025 3 pages Summary Full Content
 
 NIC Insider: The most trusted and objective insights, exclusive data, and key senior housing industry access—delivered straight to your inbox monthly. In this edition: Strong 2Q Returns, Memory Care Demand, a New Occupancy Era, and more. Subscribe to the NIC Insider ▶
 
-### 51. CCRC Performance 2Q 2026: Continued Demand for Memory Care
+### 47. CCRC Performance 2Q 2026: Continued Demand for Memory Care
 
 **Score:** Worth a look — 49/100  
 **Source:** nic (web_release)  
@@ -568,7 +526,7 @@ NIC Insider: The most trusted and objective insights, exclusive data, and key se
 
 The following analysis examines broader occupancy trends, year-over-year changes in inventory, and same-store asking rent growth – by care segment – within 1,036 Continuing Care Retirement Communities (CCRCs) and 13,701 non-CCRCs in the 99 NIC MAP Primary and Secondary Markets. 2Q 2026 Market Fundamentals by Care Segment –…
 
-### 52. Senior Care Chapter 11 Bankruptcy Filings: Trends and Profile (2Q2019-2Q2026)
+### 48. Senior Care Chapter 11 Bankruptcy Filings: Trends and Profile (2Q2019-2Q2026)
 
 **Score:** Worth a look — 49/100  
 **Source:** nic (web_release)  
@@ -579,7 +537,7 @@ The following analysis examines broader occupancy trends, year-over-year changes
 
 In collaboration with the National Investment Center for Seniors Housing & Care (“NIC”), Gibbins Advisors prepared this Senior Care subsector report as a deeper dive within its broader healthcare Chapter 11 bankruptcy research. This analysis reviews Senior Care sector Chapter 11 bankruptcy filings from 2Q2019 through 2Q2026 for…
 
-### 53. The Great Tightening: How Senior Housing Is Entering a New Occupancy Era
+### 49. The Great Tightening: How Senior Housing Is Entering a New Occupancy Era
 
 **Score:** Worth a look — 49/100  
 **Source:** nic (web_release)  
@@ -590,7 +548,18 @@ In collaboration with the National Investment Center for Seniors Housing & Care 
 
 For much of the past five years, the senior housing story has been one of recovery. Quarter after quarter, occupancy climbed steadily from the unprecedented lows of the pandemic. Each NIC MAP data release marked another step toward normalcy, and each increase was viewed as evidence that the industry…
 
-### 54. Long-Term Care in Israel and the U.S.: Different Systems, Shared Challenges
+### 50. AI’s Role in Health Care: What Keeps You Up at Night?
+
+**Score:** Worth a look — 48/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 09/08/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/other-health/ais-role-in-health-care-what-keeps-you-up-at-night/
+
+At the close of every episode, Chip asks his guests the same question: ‘What keeps you up at night?’ In this highlights episode, we share intriguing responses on AI’s role in health care. From deepfakes and misinformation to bias and the risk of losing the human connection at the heart of care, these highlights capture some of the top issues today.
+
+### 51. Long-Term Care in Israel and the U.S.: Different Systems, Shared Challenges
 
 **Score:** Worth a look — 47/100  
 **Source:** center-retirement-research (web_release)  
@@ -599,7 +568,16 @@ For much of the past five years, the senior housing story has been one of recove
 **Coverage:** well covered — B2B 3, B2C 4  
 **Source URL:** https://crr.bc.edu/long-term-care-in-israel-and-the-u-s-different-systems-shared-challenges/
 
-### 55. Can Equity Investments Help Social Security’s Long-Run Financing?
+### 52. Here’s How Much Americans Rely on Social Security – at All Income Levels
+
+**Score:** Worth a look — 47/100  
+**Source:** center-retirement-research (web_release)  
+**Published:** 09/02/26  
+**Topics:** financial_security  
+**Coverage:** well covered — B2B 2, B2C 1  
+**Source URL:** https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/
+
+### 53. Can Equity Investments Help Social Security’s Long-Run Financing?
 
 **Score:** Worth a look — 47/100  
 **Source:** center-retirement-research (web_release)  
@@ -610,7 +588,7 @@ For much of the past five years, the senior housing story has been one of recove
 
 Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
-### 56. The Story Comes First. The Word “Caregiver” Often Comes Later.
+### 54. The Story Comes First. The Word “Caregiver” Often Comes Later.
 
 **Score:** Worth a look — 47/100  
 **Source:** national-alliance-caregiving (web_release)  
@@ -619,7 +597,7 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://www.caregiving.org/every-caregiver-has-a-story-not-every-caregiver-knows-theyre-one/
 
-### 57. Statement of the National Alliance for Caregiving on the Department of Justice Office of Legal Counsel Opinion on the ADA Integration Mandate
+### 55. Statement of the National Alliance for Caregiving on the Department of Justice Office of Legal Counsel Opinion on the ADA Integration Mandate
 
 **Score:** Worth a look — 47/100  
 **Source:** national-alliance-caregiving (web_release)  
@@ -628,25 +606,29 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://www.caregiving.org/statement-of-the-national-alliance-for-caregiving-on-the-department-of-justice-office-of-legal-counsel-opinion-on-the-ada-integration-mandate/
 
-### 58. Workforce Data Center
+### 56. Medicaid Coverage for Women
 
-**Score:** Worth a look — 47/100  
-**Source:** phi-workforce (web_release)  
+**Score:** Worth a look — 45/100  
+**Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
-**Topics:** workforce  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.phinational.org/policy-research/workforce-data-center/
+**Topics:** medicare_medicaid  
+**Coverage:** lightly covered — B2B 1, B2C 0  
+**Source URL:** https://www.kff.org/womens-health-policy/medicaid-coverage-for-women/
 
-### 59. Workforce Research and Strategy Services
+Aug 26, 2026 Issue Brief This data note presents key data points describing the current state of the Medicaid program as it affects women.
 
-**Score:** Worth a look — 47/100  
-**Source:** phi-workforce (web_release)  
+### 57. At Least 37 States Have Medicaid State Directed Payments for Hospital Services That Could Be Reduced by the 2025 Reconciliation Law Limits
+
+**Score:** Worth a look — 45/100  
+**Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
-**Topics:** workforce  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.phinational.org/service/workforce-research-strategy/
+**Topics:** medicare_medicaid  
+**Coverage:** lightly covered — B2B 1, B2C 0  
+**Source URL:** https://www.kff.org/medicaid/at-least-37-states-have-medicaid-state-directed-payments-for-hospital-services-that-could-be-reduced-by-the-2025-reconciliation-law-limits/
 
-### 60. Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness
+Aug 14, 2026 Issue Brief This analysis estimates the number of states impacted by and the amount of current federal spending on Medicaid state directed payments for hospital services that exceeds the new limits established by the 2025 reconciliation law when fully implemented.
+
+### 58. Commit to Connect Webinar on Transportation Strategies to Strengthen Social Connectedness
 
 **Score:** Worth a look — 44/100  
 **Source:** acl-news (web_release)  
@@ -655,13 +637,31 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://acl.gov/news-and-events/announcements/commit-connect-webinar-transportation-strategies-strengthen-social
 
+### 59. Workforce Data Center
+
+**Score:** Worth a look — 43/100  
+**Source:** phi-workforce (web_release)  
+**Published:** undated  
+**Topics:** workforce  
+**Coverage:** lightly covered — B2B 0, B2C 1  
+**Source URL:** https://www.phinational.org/policy-research/workforce-data-center/
+
+### 60. Workforce Research and Strategy Services
+
+**Score:** Worth a look — 43/100  
+**Source:** phi-workforce (web_release)  
+**Published:** undated  
+**Topics:** workforce  
+**Coverage:** lightly covered — B2B 0, B2C 1  
+**Source URL:** https://www.phinational.org/service/workforce-research-strategy/
+
 ### 61. Workforce Interventions
 
 **Score:** Worth a look — 43/100  
 **Source:** phi-workforce (web_release)  
 **Published:** undated  
 **Topics:** workforce  
-**Coverage:** lightly covered — B2B 1, B2C 0  
+**Coverage:** lightly covered — B2B 1, B2C 1  
 **Source URL:** https://www.phinational.org/issue/workforce-interventions/
 
 ### 62. Different State Regulatory Approaches Reflect Open Questions About AI Mental Health Tools — The Monitor
@@ -730,18 +730,7 @@ We aimed to quantify how prevalence varies under conservative vs expansive defin
 
 The Federal Trade Commission ("Commission") is amending its Telemarketing Sales Rule ("TSR") by updating the fees charged to entities accessing the National Do Not Call Registry ("Registry") as required by the Do-Not-Call Registry Fee Extension Act of 2007.
 
-### 68. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
-
-**Score:** Background — 38/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 06/17/26  
-**Topics:** nutrition  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes
-
-At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and
-
-### 69. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
+### 68. FTC, States Sue World Professional Association for Transgender Health Over Deceptive Claims Regarding the Treatment of Children
 
 **Score:** Background — 38/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -751,6 +740,17 @@ At the Federal Trade Commission’s request, a federal court has temporarily hal
 **Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-states-sue-world-professional-association-transgender-health-over-deceptive-claims-regarding-treatment-children
 
 The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today filed a lawsuit against the World Professional Association for Transgender Health (WPATH), alleging the organization has provided the means for medical providers to make false and unsubstantiated claims to parents in order to sell pediatric medical transition services. WPATH, an association of clinicians who profit from pediatric medical transition services, recommended medical interventions, including drugs and surgery, for children and adolescents who expressed dissatisfaction with or distress about their sex tr
+
+### 69. FTC Sues to Stop Sprawling Enterprise Operating Unlawful Subscription Schemes
+
+**Score:** Background — 38/100  
+**Source:** ftc-consumer-protection (institutional_rss)  
+**Published:** 06/17/26  
+**Topics:** nutrition  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-sprawling-enterprise-operating-unlawful-subscription-schemes
+
+At the Federal Trade Commission’s request, a federal court has temporarily halted a sprawling enterprise of deceptive subscription schemes—comprised of 15 corporations and eight individuals—from continuing to deceive consumers with hidden costs and recurring charges, while failing to provide simple mechanisms to cancel subscriptions. The Genesis Tech enterprise, along with its founder-CEOs Vladimir Mnogoletny and Vasily Ulianov, have built and operated a broad portfolio of misleading internet-based subscription schemes. These schemes range from an online program that claims it can diagnose and
 
 ### 70. FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims
 
@@ -763,7 +763,18 @@ The Federal Trade Commission, along with Alaska, Iowa, Nebraska and Texas, today
 
 The Federal Trade Commission has asked a federal court to hold in contempt dietary supplement provider Amare Global Holdings, its former Chief Science Officer Shawn Talbott and two others over allegations they violated an FTC order that banned Talbott and those who work with him from making false, deceptive or unsubstantiated health claims. Earlier this month, the FTC sued multilevel marketer Amare Global , Talbott, the company’s founding brand partner Patrick Hintze and current CEO and majority shareholder David Chung for misrepresenting to parents and other consumers that dietary supplements
 
-### 71. FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service
+### 71. Global COVID-19 Tracker
+
+**Score:** Background — 36/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 09/08/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/covid-19/global-covid-19-tracker/
+
+This tracker provides data on global COVID-19 cases and deaths by country, region, and income-level. Additionally, the tracker reports current closure, economic, and health system policy responses to the COVID-19 pandemic globally. This tracker will be updated as new data are available.
+
+### 72. FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service
 
 **Score:** Background — 36/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -774,7 +785,7 @@ The Federal Trade Commission has asked a federal court to hold in contempt dieta
 
 The Federal Trade Commission finalized orders requiring Cox Media Group (CMG) and two other firms to pay a total of $930,000 to settle allegations they deceived customers by falsely claiming to offer an AI-powered service that could target localized ads based on conversations captured from consumers’ smart devices and that consumers had opted into such targeting. In three separate complaints first announced in May , the FTC alleged that Georgia-based media and marketing company CMG Media Corporation, which does business as Cox Media Group , and two marketing firms it worked with, New Hampshire
 
-### 72. FTC Announces 2027 Telemarketer Fees to Access the National Do Not Call Registry
+### 73. FTC Announces 2027 Telemarketer Fees to Access the National Do Not Call Registry
 
 **Score:** Background — 36/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -785,7 +796,7 @@ The Federal Trade Commission finalized orders requiring Cox Media Group (CMG) an
 
 The Federal Trade Commission today announced new fees for telemarketers to access phone numbers on the National Do Not Call (DNC) Registry for Fiscal Year 2027 which begins on October 1, 2026. All telemarketers calling consumers in the United States are required to download the numbers on the National DNC Registry to ensure they do not call consumers who have registered their phone numbers. The first five area codes are free to download, and organizations that are exempt, such as some charities and political callers, may obtain the entire list for free. Telemarketers must subscribe each year f
 
-### 73. Revising HUD's Noise Abatement and Control Regulations; Correcting Amendment
+### 74. Revising HUD's Noise Abatement and Control Regulations; Correcting Amendment
 
 **Score:** Background — 36/100  
 **Source:** federal-register (regulatory_filing)  
@@ -796,7 +807,7 @@ The Federal Trade Commission today announced new fees for telemarketers to acces
 
 On June 12, 2026, HUD published a final rule revising its noise abatement and control regulations. Due to an amendatory instruction drafting error, codified text of was not revised as HUD intended and continues to reference the Assistant Secretary for Community Planning and Development. This document corrects that text to conform to HUD's intent as described in the preamble to the final rule.
 
-### 74. Events and Observances
+### 75. Events and Observances
 
 **Score:** Background — 35/100  
 **Source:** acl-news (web_release)  
@@ -807,7 +818,7 @@ On June 12, 2026, HUD published a final rule revising its noise abatement and co
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 75. Available for download
+### 76. Available for download
 
 **Score:** Background — 35/100  
 **Source:** acl-news (web_release)  
@@ -818,7 +829,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 76. FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing
+### 77. FTC Extends Public Comment on Proposed Policy Statement Regarding Personalized Pricing
 
 **Score:** Background — 34/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -829,7 +840,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 The Federal Trade Commission extended by seven days the public comment period on the proposed enforcement policy statement regarding personalized pricing . The new deadline to submit comments is Sept. 25, 2026. On Aug. 19, 2026, the Commission invited the public to submit comments electronically until Sept. 18, 2026 on the proposed policy statement related to personalized pricing. Personalized pricing refers to the use of personal data to set prices according to the amount that a company believes an individual consumer is willing to spend.
 
-### 77. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
+### 78. Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy
 
 **Score:** Background — 34/100  
 **Source:** justice-in-aging (institutional_rss)  
@@ -840,7 +851,7 @@ The Federal Trade Commission extended by seven days the public comment period on
 
 On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department of Health and Human Services (HHS), along with Texas, Florida and Alaska filed a proposed resolution of Texas v. Kennedy. These states challenged the HHS 2024 regulations implementing Section 504 of the Rehabilitation Act, which prohibits discrimination on the basis of [&#8230;] The post Statement on Department of Justice’s Proposed Resolution of Texas v. Kennedy appeared first on Justice in Aging .
 
-### 78. FTC, States Sue Amazon Over Secret Ad Surcharge Scheme
+### 79. FTC, States Sue Amazon Over Secret Ad Surcharge Scheme
 
 **Score:** Background — 34/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -851,7 +862,7 @@ On August 31, 2026, the Department of Justice (DOJ), on behalf of the Department
 
 Today, 22 states joined the Federal Trade Commission in filing suit against Amazon, alleging that the company engaged in deceptive and unfair practices that secretly inflated prices in its online search advertising auctions. The complaint alleges that, for over seven years, Amazon has covertly and substantially increased the prices that more than one million brands and sellers were required to pay to advertise on its platform. As a result, the complaint alleges that Amazon’s scheme has likely extracted tens of billions of dollars from its unwitting advertising customers. “When one of the world
 
-### 79. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
+### 80. Mental Health Care Use and Barriers Among Veterans and Nonveterans With Suicidal Ideation
 
 **Score:** Background — 34/100  
 **Source:** rand-research (institutional_rss)  
@@ -862,7 +873,7 @@ Today, 22 states joined the Federal Trade Commission in filing suit against Amaz
 
 The authors estimated the prevalence rates of mental health service use in a national sample of veterans with recent suicidal ideation, compared rates with those of nonveterans, and identified barriers to care.
 
-### 80. KFF Survey Methodology & Data Collection Standards
+### 81. KFF Survey Methodology & Data Collection Standards
 
 **Score:** Background — 34/100  
 **Source:** kff-feed (institutional_rss)  
@@ -873,7 +884,7 @@ The authors estimated the prevalence rates of mental health service use in a nat
 
 This publication describes KFF's survey methodology and data collection standards, including how the polling team reaches survey respondents, works to be representative, and partners with other news organizations on its polling projects.
 
-### 81. Protected: Who Do We Trust to Decide What Health Care Gets Covered, and at What Price?
+### 82. Protected: Who Do We Trust to Decide What Health Care Gets Covered, and at What Price?
 
 **Score:** Background — 34/100  
 **Source:** kff-feed (institutional_rss)  
@@ -884,7 +895,7 @@ This publication describes KFF's survey methodology and data collection standard
 
 There is no excerpt because this is a protected post.
 
-### 82. Protected: What Do We Get for the Cut Health Insurers Take?
+### 83. Protected: What Do We Get for the Cut Health Insurers Take?
 
 **Score:** Background — 34/100  
 **Source:** kff-feed (institutional_rss)  
@@ -895,7 +906,7 @@ There is no excerpt because this is a protected post.
 
 There is no excerpt because this is a protected post.
 
-### 83. Protected: What’s Driving Rising Health Premiums?
+### 84. Protected: What’s Driving Rising Health Premiums?
 
 **Score:** Background — 34/100  
 **Source:** kff-feed (institutional_rss)  
@@ -906,7 +917,7 @@ There is no excerpt because this is a protected post.
 
 There is no excerpt because this is a protected post.
 
-### 84. Protected: Are Health Insurers to Blame for Our Health System Problems?
+### 85. Protected: Are Health Insurers to Blame for Our Health System Problems?
 
 **Score:** Background — 34/100  
 **Source:** kff-feed (institutional_rss)  
@@ -916,17 +927,6 @@ There is no excerpt because this is a protected post.
 **Source URL:** https://www.kff.org/health-costs/are-health-insurers-to-blame-for-our-health-system-problems/
 
 There is no excerpt because this is a protected post.
-
-### 85. Global COVID-19 Tracker
-
-**Score:** Background — 34/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 08/27/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/covid-19/global-covid-19-tracker/
-
-This tracker provides data on global COVID-19 cases and deaths by country, region, and income-level. Additionally, the tracker reports current closure, economic, and health system policy responses to the COVID-19 pandemic globally. This tracker will be updated as new data are available.
 
 ### 86. Examining LGBTQ+ Adults’ Experiences with Health Care Costs and Access
 
@@ -1287,18 +1287,7 @@ Amazon will pay $2.25 million in civil penalties to settle Federal Trade Commiss
 
 The Federal Trade Commission is returning nearly $3 million to consumers deceived by the Golden Home Services, also known as Home Matters USA, mortgage relief scheme, which falsely promised to reduce homeowners’ mortgage payments and prevent foreclosures. In response to a lawsuit from the FTC and the California Department of Financial Protection and Innovation, a federal court found that the scheme—which did business under names including Golden Home Services, Home Matters USA, Academy Home Services, Amstar Service Group, Atlantic Pacific Service Group, Home Relief Service of America and Westw
 
-### 119. FTC Gives Final Approval to Order Against Illuminate Settling Allegations It Failed to Secure Students’ Personal Data
-
-**Score:** Background — 32/100  
-**Source:** ftc-consumer-protection (institutional_rss)  
-**Published:** 06/05/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-gives-final-approval-order-against-illuminate-settling-allegations-it-failed-secure-students
-
-Following a public comment period, the Federal Trade Commission finalized a modified order requiring Illuminate Education Inc. to implement a data security program, limit collection and retention of consumer data, and delete unnecessary data to settle charges that the company’s data security failures led to a major data breach involving the personal data of millions of students. In its complaint , the FTC alleged that Wisconsin-based Illuminate claimed to protect the privacy and security of the student data it maintained but failed to deploy reasonable security measures to protect the informat
-
-### 120. Falls Prevention Awareness Month Is Here
+### 119. Falls Prevention Awareness Month Is Here
 
 **Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
@@ -1307,7 +1296,7 @@ Following a public comment period, the Federal Trade Commission finalized a modi
 **Coverage:** lightly covered — B2B 1, B2C 1  
 **Source URL:** https://acl.gov/news-and-events/announcements/falls-prevention-awareness-month-here
 
-### 121. Balancing Boredom on World Brain Day
+### 120. Balancing Boredom on World Brain Day
 
 **Score:** Background — 29/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1318,7 +1307,7 @@ Following a public comment period, the Federal Trade Commission finalized a modi
 
 The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .
 
-### 122. Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
+### 121. Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
 
 **Score:** Background — 29/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1329,7 +1318,7 @@ The post Balancing Boredom on World Brain Day appeared first on Alliance for Agi
 
 The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat appeared first on Alliance for Aging Research .
 
-### 123. FTC Warns Companies Making Questionable ‘Made in the USA’ Claims
+### 122. FTC Warns Companies Making Questionable ‘Made in the USA’ Claims
 
 **Score:** Background — 29/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -1340,7 +1329,7 @@ The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
 
 The Federal Trade Commission today issued warning letters to seven companies that appear to have misrepresented certain products as “Made in the USA,” and one company that appears to have misrepresented certain products as “Made in Texas,” despite indications that such products were imported, in whole or in significant part. “When Americans spend their hard-earned dollars on goods marketed as ‘Made in the USA,’ they deserve to have confidence that these products were all or virtually all made in this country,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “We
 
-### 124. FTC Seeks Public Comment on Policy Statement Addressing AI Accuracy
+### 123. FTC Seeks Public Comment on Policy Statement Addressing AI Accuracy
 
 **Score:** Background — 29/100  
 **Source:** ftc-consumer-protection (institutional_rss)  
@@ -1351,7 +1340,7 @@ The Federal Trade Commission today issued warning letters to seven companies tha
 
 The Federal Trade Commission is seeking public comment on a proposed policy statement addressing concerns that AI companies may be manipulating the behavior of their AI systems contrary to reasonable consumer expectations for objectivity and accuracy. As the proposed policy statement explains, the FTC Act prohibits businesses from engaging in “unfair or deceptive” conduct. The proposed statement goes on to describe how AI companies that distort their systems’ outputs to achieve undisclosed ideological objectives could be deceiving consumers in violation Section 5 of the FTC Act. Such conduct, 
 
-### 125. CFPB Announces Joint Final Rule on Adopting Uniform Standards for Reporting Financial Data
+### 124. CFPB Announces Joint Final Rule on Adopting Uniform Standards for Reporting Financial Data
 
 **Score:** Background — 29/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1360,7 +1349,7 @@ The Federal Trade Commission is seeking public comment on a proposed policy stat
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
 **Source URL:** https://www.consumerfinance.gov/about-us/newsroom/cfpb-announces-joint-final-rule-on-adopting-uniform-standards-for-reporting-financial-data/
 
-### 126. The CFPB is Correcting Flaws to Restore Integrity and Utility to the Consumer Complaint System
+### 125. The CFPB is Correcting Flaws to Restore Integrity and Utility to the Consumer Complaint System
 
 **Score:** Background — 29/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1371,7 +1360,7 @@ The Federal Trade Commission is seeking public comment on a proposed policy stat
 
 The consumer complaint portal has long been plagued by issues that severely limit its effectiveness in addressing consumers’ complaints and practical utility of its information.
 
-### 127. ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’
+### 126. ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’
 
 **Score:** Background — 29/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1382,7 +1371,7 @@ The consumer complaint portal has long been plagued by issues that severely limi
 
 The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longest Day’ appeared first on Alliance for Aging Research .
 
-### 128. Why Preventative Care is a ‘Manly’ Long-Term Health Investment
+### 127. Why Preventative Care is a ‘Manly’ Long-Term Health Investment
 
 **Score:** Background — 29/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1393,7 +1382,7 @@ The post ‘Do What You Love to End ALZ’ Offers Yearlong Spin on ‘The Longes
 
 The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appeared first on Alliance for Aging Research .
 
-### 129. 2025 Impact Report Highlights its Mission and Vision in Action
+### 128. 2025 Impact Report Highlights its Mission and Vision in Action
 
 **Score:** Background — 29/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1404,7 +1393,7 @@ The post Why Preventative Care is a ‘Manly’ Long-Term Health Investment appe
 
 The post 2025 Impact Report Highlights its Mission and Vision in Action appeared first on Alliance for Aging Research .
 
-### 130. The CFPB Works To Ensure Bilt Consumers Are Made Whole
+### 129. The CFPB Works To Ensure Bilt Consumers Are Made Whole
 
 **Score:** Background — 29/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1415,7 +1404,7 @@ The post 2025 Impact Report Highlights its Mission and Vision in Action appeared
 
 The CFPB has been working to ensure consumers affected by Bilt’s transition to a new bank partner are appropriately remedied. CFPB officials met with Bilt to understand the issues caused by the transition and what steps Bilt has taken to ensure customers affected by challenges with the transition were made whole.
 
-### 131. 2025 HMDA Data on Mortgage Lending Now Available
+### 130. 2025 HMDA Data on Mortgage Lending Now Available
 
 **Score:** Background — 29/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1426,7 +1415,7 @@ The CFPB has been working to ensure consumers affected by Bilt’s transition to
 
 The 2025 HMDA Loan Application Register data can be found on the FFIEC's HMDA Platform.
 
-### 132. Agencies Announce Dollar Thresholds for Smaller Loan Exemption from Appraisal Requirements for Higher-priced Mortgage Loans
+### 131. Agencies Announce Dollar Thresholds for Smaller Loan Exemption from Appraisal Requirements for Higher-priced Mortgage Loans
 
 **Score:** Background — 29/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1437,7 +1426,7 @@ The 2025 HMDA Loan Application Register data can be found on the FFIEC's HMDA Pl
 
 The CFPB, FRB, and OCC are announcing that the 2026 threshold for higher-priced mortgage loans that are subject to special appraisal requirements will increase from $33,500 to $34,200.
 
-### 133. Estimating the Cost of the Consumer Financial Protection Bureau to Consumers
+### 132. Estimating the Cost of the Consumer Financial Protection Bureau to Consumers
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1446,7 +1435,7 @@ The CFPB, FRB, and OCC are announcing that the 2026 threshold for higher-priced 
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
 **Source URL:** https://www.consumerfinance.gov/about-us/newsroom/estimating-the-cost-of-the-consumer-financial-protection-bureau-to-consumers/
 
-### 134. Consumer Financial Protection Bureau and the Department of Justice Withdraw Joint Statement on Fair Lending and Credit Opportunities for Noncitizen Borrowers
+### 133. Consumer Financial Protection Bureau and the Department of Justice Withdraw Joint Statement on Fair Lending and Credit Opportunities for Noncitizen Borrowers
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1457,7 +1446,7 @@ The CFPB, FRB, and OCC are announcing that the 2026 threshold for higher-priced 
 
 CFPB and Justice have withdrawn a joint statement linked to a creditor’s consideration of an individual’s immigration status under the Equal Credit Opportunity Act.
 
-### 135. Agencies Announce Dollar Thresholds for Applicability of Truth in Lending and Consumer Leasing Rules for Consumer Credit and Lease Transactions
+### 134. Agencies Announce Dollar Thresholds for Applicability of Truth in Lending and Consumer Leasing Rules for Consumer Credit and Lease Transactions
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1468,7 +1457,7 @@ CFPB and Justice have withdrawn a joint statement linked to a creditor’s consi
 
 The CFPB and the FRB are announcing the dollar thresholds used to determine whether certain consumer credit and lease transactions in 2026 are subject to certain protections under Regulation Z (Truth in Lending) and Regulation M (Consumer Leasing).
 
-### 136. CFPB’s Supervision Division Releases New 'Humility Pledge'
+### 135. CFPB’s Supervision Division Releases New 'Humility Pledge'
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1479,7 +1468,7 @@ The CFPB and the FRB are announcing the dollar thresholds used to determine whet
 
 Washington, D.C.—Today, the CFPB made changes to how the Supervision Division conducts exams. Previously, under the leadership of Director Chopra and Biden’s Director of Supervision Lorelei Salas, a former Soros activist who was put on leave in February 2025, this division was the weaponized arm of the CFPB.
 
-### 137. CFPB Notifies Court it Cannot Lawfully Draw Funds from the Federal Reserve
+### 136. CFPB Notifies Court it Cannot Lawfully Draw Funds from the Federal Reserve
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1490,7 +1479,7 @@ Washington, D.C.—Today, the CFPB made changes to how the Supervision Division 
 
 Washington, D.C.—Today, the Consumer Financial Protection Bureau (CFPB) filed a notice informing the court in NTEU v. Vought that the Department of Justice’s Office of Legal Counsel (OLC) has determined that the Bureau may not legally request funds at this time from the Federal Reserve under Dodd-Frank.
 
-### 138. CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations
+### 137. CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1501,7 +1490,7 @@ Washington, D.C.—Today, the Consumer Financial Protection Bureau (CFPB) filed 
 
 Today, in the Consumer Financial Protection Bureau’s (CFPB) November 12, 2021 lawsuit against FirstCash, Inc., and nineteen subsidiaries alleging violations of the Military Lending Act (MLA), the parties reached a settlement and jointly filed a stipulated final judgment and proposed order, which if entered by the court, would resolve the lawsuit.
 
-### 139. CFPB Amends Wise Order for Remittance Practices
+### 138. CFPB Amends Wise Order for Remittance Practices
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1512,7 +1501,7 @@ Today, in the Consumer Financial Protection Bureau’s (CFPB) November 12, 2021 
 
 The CFPB amended its January 30, 2025 consent order with the international remittance company Wise resolving claims including advertising inaccurate fees and failing to properly disclose exchange rates and other costs.
 
-### 140. CFPB Announcement Regarding Enforcement Actions Related to Buy Now, Pay Later Loans
+### 139. CFPB Announcement Regarding Enforcement Actions Related to Buy Now, Pay Later Loans
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1523,7 +1512,7 @@ The CFPB amended its January 30, 2025 consent order with the international remit
 
 The CFPB is announcing that it will not prioritize enforcement actions taken on the basis of the Truth in Lending (Regulation Z); Use of Digital User Accounts to Access Buy Now, Pay Later Loans, 89 Fed. Reg. 47,068 (May 31, 2024) (“Buy Now, Pay Later”).
 
-### 141. CFPB Keeps Its Enforcement and Supervision Resources Focused on Pressing Threats to Consumers
+### 140. CFPB Keeps Its Enforcement and Supervision Resources Focused on Pressing Threats to Consumers
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1534,7 +1523,7 @@ The CFPB is announcing that it will not prioritize enforcement actions taken on 
 
 The CFPB is announcing that it will not prioritize enforcement or supervision actions with regard to entities that are currently outside the stay imposed under Texas Bankers Association v. CFPB, No. 24-40705 (CA5).
 
-### 142. CFPB Offers Regulatory Relief From Registration Requirements for Small Loan Providers
+### 141. CFPB Offers Regulatory Relief From Registration Requirements for Small Loan Providers
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1545,7 +1534,7 @@ The CFPB is announcing that it will not prioritize enforcement or supervision ac
 
 The Consumer Financial Protection Bureau will not prioritize enforcement or supervision actions for entities that do not satisfy future deadlines to submit registration information under the regulation titled "Registry of Nonbank Covered Persons Subject to Certain Agency and Court Orders".
 
-### 143. 2024 HMDA Data on Mortgage Lending Now Available
+### 142. 2024 HMDA Data on Mortgage Lending Now Available
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1556,7 +1545,7 @@ The Consumer Financial Protection Bureau will not prioritize enforcement or supe
 
 The published data contain loan-level information filed by financial institutions and modified to protect consumer privacy.
 
-### 144. CFPB Offers Regulatory Relief for Small Loan Providers
+### 143. CFPB Offers Regulatory Relief for Small Loan Providers
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1567,7 +1556,7 @@ The published data contain loan-level information filed by financial institution
 
 The Bureau will keep its enforcement and supervision resources focused on pressing threats to consumers, particularly servicemen and veterans.
 
-### 145. CFPB Seeks to Vacate Abusive, Unjust Case Against Townstone
+### 144. CFPB Seeks to Vacate Abusive, Unjust Case Against Townstone
 
 **Score:** Background — 27/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1576,7 +1565,7 @@ The Bureau will keep its enforcement and supervision resources focused on pressi
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
 **Source URL:** https://www.consumerfinance.gov/about-us/newsroom/cfpb-seeks-to-vacate-abusive-unjust-case-against-townstone/
 
-### 146. Statement on Designation of Treasury Secretary Scott Bessent as Acting Director of the Consumer Financial Protection Bureau
+### 145. Statement on Designation of Treasury Secretary Scott Bessent as Acting Director of the Consumer Financial Protection Bureau
 
 **Score:** Background — 25/100  
 **Source:** cfpb-newsroom (institutional_rss)  
