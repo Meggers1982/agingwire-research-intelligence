@@ -5,6 +5,7 @@ ReferenceError shipped to production under a green pipeline: nothing here had
 ever run the code. This module renders a real run document through the real
 script in Node and fails if anything throws or the page comes out empty.
 """
+import json
 import re
 import shutil
 import subprocess
@@ -20,8 +21,12 @@ HARNESS = Path(__file__).with_name("dashboard_harness.mjs")
 NODE = shutil.which("node")
 
 
-def render(template_text: str) -> str:
-    """Run the template's inline script over a fixture run; return the page HTML."""
+def render(template_text: str, storage: dict | None = None) -> str:
+    """Run the template's inline script over a fixture run; return the page HTML.
+
+    ``storage`` seeds localStorage first; the harness appends the final store
+    as a trailing ``<!--storage {...}-->`` comment.
+    """
     script = re.search(r'<script id="app">(.*?)</script>', template_text, re.S)
     assert script, "dashboard template has no inline script"
     with tempfile.TemporaryDirectory() as tmp:
@@ -31,10 +36,14 @@ def render(template_text: str) -> str:
         # The real writer, so the fixture cannot drift from what the pipeline
         # actually publishes -- that drift is the failure this test exists for.
         write_run(PAYLOAD, SYNTHESIS, docs_dir=root)
+        args = [NODE, str(HARNESS), str(root / "script.js"), str(root / "template.html"), str(root)]
+        if storage is not None:
+            (root / "storage.json").write_text(json.dumps(storage), encoding="utf-8")
+            args.append(str(root / "storage.json"))
         result = subprocess.run(
             # The script fetches "data/index.json", so the harness resolves
             # relative URLs against the root, not the data directory.
-            [NODE, str(HARNESS), str(root / "script.js"), str(root / "template.html"), str(root)],
+            args,
             capture_output=True, text=True, timeout=60,
         )
     if result.returncode != 0:
@@ -68,6 +77,54 @@ class RenderTests(unittest.TestCase):
     def test_the_run_headline_numbers_render(self):
         self.assertIn("evidence candidates", self.html)
         self.assertIn("confirmed coverage gaps", self.html)
+
+
+def picked_status(html: str, url: str) -> str:
+    """The option selected in one item's status picker."""
+    start = html.index(f'data-status-for="{url}"')
+    picker = html[start:html.index("</select>", start)]
+    found = re.search(r'<option value="(\w*)" selected>', picker)
+    return found.group(1) if found else ""
+
+
+def final_storage(html: str) -> dict:
+    return json.loads(re.search(r"<!--storage (.*)-->\s*$", html, re.S).group(1))
+
+
+@unittest.skipIf(NODE is None, "node is not installed")
+class StatusKeyTests(unittest.TestCase):
+    """Editorial status is the one thing on this page a reader wrote. The v1 to
+    v2 move must not orphan any of it, and must not destroy the original."""
+
+    V1 = "agingwire:status:v1"
+    V2 = "agingwire:status:v2"
+
+    def render(self, storage):
+        return render(TEMPLATE.read_text(encoding="utf-8"), storage)
+
+    def test_a_v1_status_follows_its_item_through_url_drift(self):
+        drifted = "http://www.example.org/a/?utm_source=newsletter&utm_medium=email#top"
+        html = self.render({self.V1: json.dumps({drifted: "drafting"})})
+        self.assertEqual(picked_status(html, "https://example.org/a"), "drafting")
+
+    def test_migration_writes_v2_and_leaves_v1_untouched(self):
+        v1 = json.dumps({"https://example.org/a": "pitched", "https://gone.example/x": "killed"})
+        store = final_storage(self.render({self.V1: v1}))
+        self.assertEqual(store[self.V1], v1, "v1 is the undo path and must survive")
+        # An item no loaded run carries still migrates: nothing is dropped.
+        self.assertEqual(json.loads(store[self.V2]),
+                         {"example.org/a": "pitched", "gone.example/x": "killed"})
+
+    def test_an_existing_v2_store_is_not_overwritten_by_v1(self):
+        html = self.render({
+            self.V1: json.dumps({"https://example.org/a": "drafting"}),
+            self.V2: json.dumps({"example.org/a": "published"}),
+        })
+        self.assertEqual(picked_status(html, "https://example.org/a"), "published")
+
+    def test_a_meaningful_query_parameter_still_separates_items(self):
+        html = self.render({self.V1: json.dumps({"https://example.org/b?page=2": "killed"})})
+        self.assertEqual(picked_status(html, "https://example.org/b"), "")
 
 
 @unittest.skipIf(NODE is None, "node is not installed")

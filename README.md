@@ -64,6 +64,14 @@ ported separately — see [Design system](#design-system).
   export. `passed` and `killed` are both negative and the difference is deliberate:
   `killed` is an editor saying no, `passed` is you saying no, and only the second is
   a signal about the scoring rubric rather than about the market.
+  The store (`agingwire:status:v2`) is keyed on the item's url with the noise
+  stripped: tracking parameters, scheme, `www`, trailing slash and fragment. A
+  hash of source, title and url was the obvious alternative and the wrong one.
+  Across every dated archive a url never moved for the same item, while titles
+  changed nine times at a fixed url (each monthly BLS release, and KFF retitles).
+  The first load migrates the old raw-url `v1` store key by key and leaves `v1`
+  in place, so deleting `v2` undoes it. **Import statuses** reads the .csv back in
+  after a cleared cache or on a second machine.
 - **Multi-select chip facets** replace the single `<select>`, which could not
   express "new AND localizable". Status, score band, coverage, topic and flags
   compound across groups and offer alternatives within one, each chip carrying its

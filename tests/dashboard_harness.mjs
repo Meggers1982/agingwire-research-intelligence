@@ -2,14 +2,16 @@
    ReferenceError, a typo or a renamed field fails in CI rather than showing the
    reader a blank page under a green pipeline.
 
-   Usage: node dashboard_harness.mjs <script.js> <template.html> <data-dir>
-   Prints the rendered main innerHTML on success; exits non-zero on any error. */
+   Usage: node dashboard_harness.mjs <script.js> <template.html> <data-dir> [storage.json]
+   The optional storage file seeds localStorage before the script runs.
+   Prints the rendered main innerHTML on success, then the final localStorage
+   as a trailing <!--storage {...}--> comment; exits non-zero on any error. */
 
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import vm from "node:vm";
 
-const [scriptPath, templatePath, dataDir] = process.argv.slice(2);
+const [scriptPath, templatePath, dataDir, storagePath] = process.argv.slice(2);
 const source = readFileSync(scriptPath, "utf8");
 const template = readFileSync(templatePath, "utf8");
 
@@ -71,7 +73,8 @@ const documentStub = {
   addEventListener() {}, removeEventListener() {},
 };
 
-const store = new Map();
+const store = new Map(
+  storagePath ? Object.entries(JSON.parse(readFileSync(storagePath, "utf8"))) : []);
 const localStorageStub = {
   getItem: k => (store.has(k) ? store.get(k) : null),
   setItem: (k, v) => store.set(k, String(v)),
@@ -104,7 +107,10 @@ const sandbox = {
   console,
   setTimeout, clearTimeout, setInterval, clearInterval,
   Blob: class { constructor() {} },
-  URL: { createObjectURL: () => "blob:stub", revokeObjectURL() {} },
+  // The real class, so url parsing behaves as in a browser; only the blob
+  // statics are stubbed.
+  URL: Object.assign(class extends URL {}, { createObjectURL: () => "blob:stub", revokeObjectURL() {} }),
+  URLSearchParams,
   navigator: { userAgent: "node", clipboard: { writeText: async () => {} } },
   alert() {}, requestAnimationFrame: cb => cb(),
 };
@@ -137,3 +143,4 @@ if (!main || !main.innerHTML.trim()) {
   process.exit(1);
 }
 process.stdout.write(main.innerHTML);
+process.stdout.write(`\n<!--storage ${JSON.stringify(Object.fromEntries(store))}-->`);

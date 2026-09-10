@@ -503,23 +503,63 @@ const STATUSES = {
   passed: { label: "Passed", tone: "muted" },
   killed: { label: "Killed", tone: "bad" },
 };
-const STATUS_KEY = "agingwire:status:v1";
+/* Status is keyed on the item's url with the noise taken out, not on a hash of
+   source + title + url. Across every dated archive a url never moved for the
+   same item, while titles changed nine times at a fixed url -- each monthly BLS
+   release, and KFF retitling pages -- so any key carrying the title would reset
+   statuses the url keeps. What normalization removes is the drift a url can
+   pick up without the page changing: tracking parameters, http vs https, www,
+   a trailing slash, a fragment. */
+const STATUS_KEY = "agingwire:status:v2";
+const LEGACY_STATUS_KEY = "agingwire:status:v1";
+const TRACKING_PARAM = /^(utm_.*|fbclid|gclid|dclid|msclkid|mc_cid|mc_eid|_hsenc|_hsmi|mkt_tok)$/i;
+
+function statusKey(url) {
+  const raw = (url || "").trim();
+  let u;
+  try { u = new URL(raw); } catch (e) { return raw; }
+  if (!/^https?:$/.test(u.protocol)) return raw;
+  const params = [...u.searchParams]
+    .filter(([k]) => !TRACKING_PARAM.test(k))
+    .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0));
+  const query = params.length ? "?" + new URLSearchParams(params).toString() : "";
+  const host = u.host.toLowerCase().replace(/^www\./, "");
+  return host + u.pathname.replace(/\/+$/, "") + query;
+}
+
+/* v1 was keyed on the raw url. Normalizing a key needs nothing but the key, so
+   the move is total -- every v1 status lands somewhere, none has to be matched
+   against a loaded run first. Two v1 urls that normalize to the same key are
+   the drift this exists for; the one written later wins. v1 is left in place,
+   untouched, so a bad migration can be undone by deleting v2. */
+function migrateStatuses(legacy) {
+  const out = {};
+  for (const [url, value] of Object.entries(legacy || {})) {
+    if (value in STATUSES && value) out[statusKey(url)] = value;
+  }
+  return out;
+}
 
 function statusMap() {
   try {
-    return JSON.parse(localStorage.getItem(STATUS_KEY) || "{}");
+    const stored = localStorage.getItem(STATUS_KEY);
+    if (stored !== null) return JSON.parse(stored);
+    const migrated = migrateStatuses(JSON.parse(localStorage.getItem(LEGACY_STATUS_KEY) || "{}"));
+    localStorage.setItem(STATUS_KEY, JSON.stringify(migrated));
+    return migrated;
   } catch (e) {
     return {};
   }
 }
 
 function statusOf(item) {
-  return statusMap()[item.url] || "";
+  return statusMap()[statusKey(item.url)] || "";
 }
 
 function setStatus(url, value) {
   const map = statusMap();
-  value ? (map[url] = value) : delete map[url];
+  const key = statusKey(url);
+  value ? (map[key] = value) : delete map[key];
   try {
     localStorage.setItem(STATUS_KEY, JSON.stringify(map));
   } catch (e) {
@@ -1197,9 +1237,8 @@ function csvCell(v) {
 /* Status lives in localStorage and nowhere else, so a cleared cache or a second
    machine silently resets every item to "To review" with nothing to say it
    happened. The .csv already carries the column out; this is the way back in.
-   Keyed on url, which is what the store is keyed on -- senior-research keys on
-   PMID, which survives a publisher moving a page, and this repo has no
-   equivalent stable id on the item yet. */
+   It carries the raw url, and setStatus normalizes it, so an export taken
+   before the v2 store imports cleanly into it. */
 const STATUS_BY_LABEL = Object.fromEntries(
   Object.entries(STATUSES).map(([key, s]) => [s.label.toLowerCase(), key]));
 
