@@ -807,6 +807,18 @@ function kindSummary(media) {
     .join(", ");
 }
 
+/* The run file keeps the top N by score plus every new item below that cut,
+   so "top N shown" alone would miscount it. Runs written before top_shown
+   existed are a plain top-N, which is what the fallback assumes. */
+function shownNote(run) {
+  const shown = (run.items || []).length;
+  if (shown >= run.evidence_count) return "";
+  const top = run.top_shown || shown;
+  const extra = shown - top;
+  return ` <span class="faint">— top ${top} shown${
+    extra ? ` + ${extra} new below the cut` : ""}</span>`;
+}
+
 function renderItem(item, index) {
   const findings = (item.key_findings || []).filter(Boolean);
   const angles = item.story_angles || [];
@@ -1073,9 +1085,7 @@ async function renderMain() {
         </div>
       </div>
       <div class="stat-row">
-        <div class="stat"><div class="n">${run.evidence_count}</div><div class="l">evidence candidates${
-          (run.items || []).length < run.evidence_count
-            ? ` <span class="faint">— top ${(run.items || []).length} shown</span>` : ""}</div></div>
+        <div class="stat"><div class="n">${run.evidence_count}</div><div class="l">evidence candidates${shownNote(run)}</div></div>
         <div class="stat${run.new_evidence_count ? "" : " is-zero"}"><div class="n">${run.new_evidence_count}</div><div class="l">new since last run</div></div>
         <div class="stat${run.gap_count ? "" : " is-zero"}"><div class="n">${run.gap_count}</div><div class="l">confirmed coverage gaps</div></div>
         <div class="stat"><div class="n">${run.monitored_publisher_count}<span class="l"> / ${run.registry_publisher_count}</span></div><div class="l">publisher feeds working</div></div>

@@ -107,7 +107,14 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
             "web_coverage": meta.get("web_coverage"),
         }
 
-    slim_items = [slim(i) for i in evidence[:items]]
+    # New evidence rides past the cut. An unmonitored new item can score 48
+    # while the 60th sits at 51-52, so a plain top-N left the stat tile saying
+    # "5 new" over a list holding 3 (09-09), and the headline number could not
+    # be checked against the items it counts.
+    kept = evidence[:items] + [
+        i for i in evidence[items:] if (i.get("raw_metadata") or {}).get("is_new")
+    ]
+    slim_items = [slim(i) for i in kept]
 
     return {
         "id": rid,
@@ -124,6 +131,7 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
         "topic_counts": dict(topics.most_common(40)),
         "source_counts": dict(sources.most_common(40)),
         "items": slim_items,
+        "top_shown": min(items, len(evidence)),
         "outlet_index": _outlet_index(slim_items),
         "source_status": payload.get("source_status", []),
         "media_status_summary": _media_summary(payload.get("media_status", [])),

@@ -10,7 +10,7 @@ This repository is **independent of** [`Meggers1982/senior-research-digest`](htt
 
 ## What is automated now
 
-The daily GitHub Actions workflow runs at 12:15 UTC and whenever relevant code/config changes land on `main`. It:
+The daily GitHub Actions workflow runs at 12:15 UTC, or by hand. It does not run on push: a push-triggered collection spent a paid run each time and consumed the `is_new` flag before the published run could see it. It:
 
 1. Collects evidence from the Federal Register, BLS and CMS APIs, the Census ACS, institutional RSS feeds and first-party listing pages.
 2. Applies synonym-aware topic tagging across clinical and nonclinical aging topics.
@@ -152,6 +152,16 @@ Federal Register lookback is 30 days and the CMS dataset lookback is 45. A daily
 run therefore re-collects almost exactly yesterday's corpus: the 60 items
 published on 2026-09-05 and on 2026-09-06 were the same 60 items, and the seen
 ledger recorded 8 genuinely new items on 09-04, 1 on 09-05 and 0 on 09-06.
+
+The clean scheduled runs after that read 0, 0, 2 and 5 (09-06 to 09-09; 09-06
+was a Sunday and 09-07 Labor Day). That is the corpus, not the ledger
+misfiring. Every item that entered the run between consecutive days carried
+`is_new`, every one was published that day or the day before, and across all
+dated archives no source-and-title pair appeared at two URLs. The ledger keys on
+`stable_item_id(source_id, title, url)`, so it can only err toward calling an
+item new: a retitle at the same URL (three KFF pages, and every monthly BLS
+release) re-flags it, and nothing makes two different items read as one. A
+beat that adds a few items a weekday is what these sources produce.
 
 Nothing downstream knew that. The model was handed the top 40 items by score and
 asked for "the strongest cross-source story this run supports", with a
@@ -426,7 +436,7 @@ To/About angles are. The earlier version packed a score column, badges, tags and
 two bullet lists into one dense card, which read as a table row rather than
 something to be read.
 
-`docs/index.html` is a browsable archive rather than a single snapshot. The sidebar lists every run ever generated, searchable and filterable by topic; selecting one loads its record from `docs/data/runs/<date>.json`. Each run page carries:
+`docs/index.html` is a browsable archive rather than a single snapshot. The sidebar lists every run ever generated, searchable and filterable by topic; selecting one loads its record from `docs/data/runs/<date>.json`. A run record holds the top 60 items by score plus every new item below that cut. New evidence often scores low (an unmonitored item can land at 48 when the 60th sits at 52), and a plain top 60 left 09-09's tile saying "5 new" over a list holding 3. Each run page carries:
 
 - **Feature pitch** — the strongest cluster in that run, with the specific evidence named. A cluster is only called a *convergence* when its items actually cohere; when several sources merely touch the same topic it is labelled the **busiest beat** and says plainly that it is not one story. See below.
 - **Story ideas** — per-item cards carrying a hook, then two audience angles, then the craft and competitive notes. Sources are rotated so adjacent ideas never come from the same feed. The model returns these as records, not prose, so an LLM run and a deterministic one render with the same anatomy.

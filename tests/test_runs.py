@@ -94,6 +94,23 @@ class RunDocumentTests(unittest.TestCase):
     def test_carries_the_structured_story_ideas(self):
         self.assertEqual(self.run["story_ideas"], SYNTHESIS["story_ideas"])
 
+    def test_new_items_below_the_cut_are_kept(self):
+        """The "N new" tile must be checkable against the list under it."""
+        alpha, beta = PAYLOAD["evidence"]
+        flipped = {**PAYLOAD, "evidence": [
+            {**alpha, "raw_metadata": {**alpha["raw_metadata"], "is_new": False}},
+            {**beta, "raw_metadata": {**beta["raw_metadata"], "is_new": True}},
+        ]}
+        run = build_run_document(flipped, SYNTHESIS, items=1)
+        self.assertEqual([i["title"] for i in run["items"]], ["Alpha", "Beta"])
+        self.assertEqual(run["top_shown"], 1)
+        self.assertEqual(sum(i["is_new"] for i in run["items"]), 1)
+
+    def test_old_items_below_the_cut_are_still_dropped(self):
+        run = build_run_document(PAYLOAD, SYNTHESIS, items=1)
+        self.assertEqual([i["title"] for i in run["items"]], ["Alpha"])
+        self.assertEqual(run["top_shown"], 1)
+
 
 class WriteRunTests(unittest.TestCase):
     def setUp(self):
