@@ -9,10 +9,22 @@ name: Daily AgingWire intelligence
 # every published run as a result, and is_new feeds both score_evidence() and
 # _angles(). ci.yml covers pushes with lint and tests; use the deploy workflow
 # to publish a dashboard change without collecting.
+#
+# Collection is daily; the feature pitch is three days a week. The evidence adds
+# a few items a weekday (0, 0, 2, 5 across 09-06..09-09), so a daily pitch was
+# either retelling the last one or straining a thin day into a story. The second
+# cron collects without pitching, which also skips the Anthropic call. The days
+# are named in synthesis.PITCH_NOTE and the README -- change all three together.
 on:
   schedule:
-    - cron: '15 12 * * *'
+    - cron: '15 12 * * 1,3,5'    # collect and pitch
+    - cron: '15 12 * * 0,2,4,6'  # collect only
   workflow_dispatch:
+    inputs:
+      pitch:
+        description: Write the feature pitch on this run
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -50,7 +62,14 @@ jobs:
       - name: Run tests
         run: python -m pytest -q
       - name: Run intelligence pipeline
-        run: python -m agingwire_intel
+        env:
+          COLLECT_ONLY: ${{ github.event.schedule == '15 12 * * 0,2,4,6' || (github.event_name == 'workflow_dispatch' && !inputs.pitch) }}
+        run: |
+          if [ "$COLLECT_ONLY" = "true" ]; then
+            python -m agingwire_intel --no-pitch
+          else
+            python -m agingwire_intel
+          fi
       - name: Commit generated intelligence
         run: |
           set -euo pipefail

@@ -5,10 +5,12 @@ from pathlib import Path
 
 from agingwire_intel.runs import (
     build_run_document,
+    index_entry,
     load_previous_payload,
     run_id,
     write_run,
 )
+from agingwire_intel.synthesis import PITCH_NOTE, without_pitch
 
 PAYLOAD = {
     "generated_at": "2026-09-03T15:00:00+00:00",
@@ -105,6 +107,19 @@ class RunDocumentTests(unittest.TestCase):
         self.assertEqual([i["title"] for i in run["items"]], ["Alpha", "Beta"])
         self.assertEqual(run["top_shown"], 1)
         self.assertEqual(sum(i["is_new"] for i in run["items"]), 1)
+
+    def test_a_collect_only_run_is_marked_unpitched(self):
+        run = build_run_document(PAYLOAD, without_pitch(SYNTHESIS))
+        self.assertFalse(run["pitched"])
+        self.assertEqual(run["feature_pitch_raw"], "")
+        self.assertEqual(run["pitch_note"], PITCH_NOTE)
+        self.assertFalse(index_entry(run, PAYLOAD)["pitched"])
+        # The rest of the editorial layer survives a collect-only day.
+        self.assertEqual(run["story_ideas"], SYNTHESIS["story_ideas"])
+
+    def test_a_pitched_run_says_so(self):
+        self.assertTrue(self.run["pitched"])
+        self.assertTrue(index_entry(self.run, PAYLOAD)["pitched"])
 
     def test_old_items_below_the_cut_are_still_dropped(self):
         run = build_run_document(PAYLOAD, SYNTHESIS, items=1)

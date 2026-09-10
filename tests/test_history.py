@@ -40,6 +40,7 @@ def write_run(root: Path, run_date: str, pitch: str, idea_titles: list[str]) -> 
     (directory / f"{run_date}.json").write_text(json.dumps({
         "id": run_date,
         "run_date": run_date,
+        "generated_at": f"{run_date}T16:30:00+00:00",
         "feature_pitch_raw": pitch,
         "story_ideas": [{"title": t} for t in idea_titles],
     }), encoding="utf-8")
@@ -104,6 +105,36 @@ class LoadTests(unittest.TestCase):
     def test_pitched_titles_are_normalized_for_matching(self):
         titles = history.pitched_titles(history.recent_pitches(self.docs, "2026-09-06"))
         self.assertIn("item 04", titles)
+
+
+class CollectOnlyTests(unittest.TestCase):
+    """Collection is daily; the pitch is three days a week (MEA-232)."""
+
+    def setUp(self):
+        self._tmp = TemporaryDirectory()
+        self.docs = Path(self._tmp.name)
+        write_run(self.docs, "2026-09-07", LLM_PITCH, ["Monday item"])
+        write_run(self.docs, "2026-09-08", "", ["Tuesday item"])
+        self.addCleanup(self._tmp.cleanup)
+
+    def test_a_run_without_a_pitch_is_not_pitch_history(self):
+        dates = [p["run_date"] for p in history.recent_pitches(self.docs, "2026-09-09")]
+        self.assertEqual(dates, ["09/07/26"])
+
+    def test_the_lookback_counts_pitches_not_runs(self):
+        for day in ("01", "02", "03", "04"):
+            write_run(self.docs, f"2026-09-{day}", LLM_PITCH, [f"Item {day}"])
+        for day in ("05", "06"):
+            write_run(self.docs, f"2026-09-{day}", "", [f"Item {day}"])
+        dates = [p["run_date"] for p in history.recent_pitches(self.docs, "2026-09-09")]
+        self.assertEqual(dates, ["09/07/26", "09/04/26", "09/03/26"])
+
+    def test_last_pitch_at_skips_the_collect_only_day(self):
+        self.assertEqual(history.last_pitch_at(self.docs, "2026-09-09"),
+                         "2026-09-07T16:30:00+00:00")
+
+    def test_last_pitch_at_is_none_without_history(self):
+        self.assertIsNone(history.last_pitch_at(self.docs, "2026-09-07"))
 
 
 class ClipTests(unittest.TestCase):

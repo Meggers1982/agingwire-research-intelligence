@@ -15,13 +15,15 @@ from pathlib import Path
 
 from agingwire_intel.dashboard import TEMPLATE
 from agingwire_intel.runs import write_run
+from agingwire_intel.synthesis import PITCH_NOTE, without_pitch
 from tests.test_runs import PAYLOAD, SYNTHESIS
 
 HARNESS = Path(__file__).with_name("dashboard_harness.mjs")
 NODE = shutil.which("node")
 
 
-def render(template_text: str, storage: dict | None = None) -> str:
+def render(template_text: str, storage: dict | None = None,
+           runs: list[tuple[dict, dict]] | None = None) -> str:
     """Run the template's inline script over a fixture run; return the page HTML.
 
     ``storage`` seeds localStorage first; the harness appends the final store
@@ -35,7 +37,8 @@ def render(template_text: str, storage: dict | None = None) -> str:
         (root / "template.html").write_text(template_text, encoding="utf-8")
         # The real writer, so the fixture cannot drift from what the pipeline
         # actually publishes -- that drift is the failure this test exists for.
-        write_run(PAYLOAD, SYNTHESIS, docs_dir=root)
+        for payload, synthesis in runs or [(PAYLOAD, SYNTHESIS)]:
+            write_run(payload, synthesis, docs_dir=root)
         args = [NODE, str(HARNESS), str(root / "script.js"), str(root / "template.html"), str(root)]
         if storage is not None:
             (root / "storage.json").write_text(json.dumps(storage), encoding="utf-8")
@@ -125,6 +128,30 @@ class StatusKeyTests(unittest.TestCase):
     def test_a_meaningful_query_parameter_still_separates_items(self):
         html = self.render({self.V1: json.dumps({"https://example.org/b?page=2": "killed"})})
         self.assertEqual(picked_status(html, "https://example.org/b"), "")
+
+
+@unittest.skipIf(NODE is None, "node is not installed")
+class CollectOnlyRenderTests(unittest.TestCase):
+    """The newest run is a collect-only day; the one before it pitched."""
+
+    @classmethod
+    def setUpClass(cls):
+        quiet = {**PAYLOAD, "generated_at": "2026-09-04T15:00:00+00:00", "new_evidence_count": 0}
+        cls.html = render(TEMPLATE.read_text(encoding="utf-8"),
+                          runs=[(PAYLOAD, SYNTHESIS), (quiet, without_pitch(SYNTHESIS))])
+
+    def test_the_pitch_section_says_why_it_is_empty(self):
+        self.assertIn(PITCH_NOTE, self.html)
+        self.assertNotIn("The convergence", self.html)
+
+    def test_it_points_at_the_last_run_that_pitched(self):
+        self.assertIn('data-goto-run="2026-09-03"', self.html)
+
+    def test_a_day_with_nothing_new_says_so(self):
+        self.assertIn("Nothing new on this run.", self.html)
+
+    def test_a_day_with_new_evidence_does_not(self):
+        self.assertNotIn("Nothing new on this run.", render(TEMPLATE.read_text(encoding="utf-8")))
 
 
 @unittest.skipIf(NODE is None, "node is not installed")

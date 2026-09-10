@@ -148,6 +148,10 @@ def build_run_document(payload: dict, synthesis: dict, items: int = DASHBOARD_IT
         "trends_raw": synthesis.get("trends_raw", ""),
         "feature_pitch_raw": synthesis.get("feature_pitch_raw", ""),
         "pitch_draft_raw": synthesis.get("pitch_draft_raw", ""),
+        # False on a collect-only day. history.load_recent_runs skips those, and
+        # the dashboard points from them to the latest run that did pitch.
+        "pitched": bool((synthesis.get("feature_pitch_raw") or "").strip()),
+        "pitch_note": synthesis.get("pitch_note"),
         "pitch_ideas_raw": synthesis.get("pitch_ideas_raw", ""),
         "synthesis_mode": synthesis.get("synthesis_mode", "deterministic"),
         "synthesis_model": synthesis.get("synthesis_model"),
@@ -228,6 +232,7 @@ def index_entry(run: dict, payload: dict) -> dict:
         "monitored_publisher_count": run["monitored_publisher_count"],
         "top_topics": run["top_topics"],
         "synthesis_mode": run["synthesis_mode"],
+        "pitched": run["pitched"],
         "search_blob": _search_blob(payload),
     }
 

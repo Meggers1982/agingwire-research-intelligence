@@ -10,7 +10,7 @@ This repository is **independent of** [`Meggers1982/senior-research-digest`](htt
 
 ## What is automated now
 
-The daily GitHub Actions workflow runs at 12:15 UTC, or by hand. It does not run on push: a push-triggered collection spent a paid run each time and consumed the `is_new` flag before the published run could see it. It:
+The daily GitHub Actions workflow runs at 12:15 UTC, or by hand. It does not run on push: a push-triggered collection spent a paid run each time and consumed the `is_new` flag before the published run could see it. Collection is daily; the feature pitch is written Monday, Wednesday and Friday only (see [The pitch runs three days a week](#the-pitch-runs-three-days-a-week)). It:
 
 1. Collects evidence from the Federal Register, BLS and CMS APIs, the Census ACS, institutional RSS feeds and first-party listing pages.
 2. Applies synonym-aware topic tagging across clinical and nonclinical aging topics.
@@ -181,8 +181,8 @@ every day; the story did not.
 
 Two things changed:
 
-**The pitch is told what it already pitched.** `history.py` reads the last five
-published runs back out of `docs/data/runs/` and reduces each to the pattern it
+**The pitch is told what it already pitched.** `history.py` reads the last three
+pitches back out of `docs/data/runs/` and reduces each to the pattern it
 claimed, its angle, its three headlines and the items it wrote about. That goes
 into the facts as `recent_pitches`, and the system prompt forbids re-pitching a
 pattern that appears there. Where today's strongest story has already run, the
@@ -204,6 +204,34 @@ slots and put six items in front of the model that it had never been shown.
 The deterministic worksheet is still passed in, but no longer as the brief. It
 is the top cluster's worksheet, and on a monthly corpus that is the same cluster
 most days, so it is now labelled prose to beat rather than the story to write.
+
+### The pitch runs three days a week
+
+Against a beat that adds a few items a weekday, a daily pitch either retells the
+last one or strains a thin day into a story. Collection stays daily, because the
+seen ledger and the dashboard's history both need every day. The pitch is
+written Monday, Wednesday and Friday. `daily-intelligence.yml` carries two
+crons, and the collect-only one passes `--no-pitch`, which also skips the
+Anthropic call. A manual dispatch has a `pitch` checkbox.
+
+A collect-only run keeps its story ideas and trends, which describe the run. It
+drops the pitch rather than falling back to the deterministic worksheet, because
+that worksheet names the same top cluster day after day. The run record carries
+`pitched: false`, and the dashboard's pitch section says why it is empty and
+links to the last run that pitched. The digest says the same. The no-repitch
+history counts pitches, not runs, and skips collect-only days: three pitches
+is a week.
+
+On a pitch day, "new" means new since the last pitch. An item first collected
+on a collect-only Tuesday reads `is_new: false` in the ledger by Wednesday, yet
+no pitch has seen it. So `llm.fresh_keys()` compares each item's `first_seen`
+against the last pitch's `generated_at`, and that decides both the `is_new` the
+model sees and `new_evidence_count` in its facts. Those items also get the
+rotating prompt slots before the unpitched fill. New evidence tends to score low
+(an unmonitored new item lands near 48), so the by-score fill never reached it,
+and the rule that new evidence outranks everything had nothing to act on.
+
+A run that added nothing says so under its stat tiles.
 
 ### A pitch names the stake, not just the timing
 
@@ -514,7 +542,7 @@ app it is modelled on is light-only, so light is what the two products share.
 
 The pitch, story ideas and trends are **derived from the run's own data** by `synthesis.py` — clustering, coverage state, dates and real figures. No model is required and nothing is invented.
 
-When `ANTHROPIC_API_KEY` is present **and the `llm` extra is installed** (`pip install -e ".[llm]"`), `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version, the run's facts and the last five published pitches as its only input — see *A daily pitch has to know what it already pitched* above for why the history is there. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch — including *why* it stayed deterministic, so a key set without the SDK installed does not look identical to no key at all. Pass `--no-llm` to force the deterministic path.
+When `ANTHROPIC_API_KEY` is present **and the `llm` extra is installed** (`pip install -e ".[llm]"`), `llm.py` rewrites those three sections as prose with `claude-opus-5`, using the deterministic version, the run's facts and the last three published pitches as its only input — see *A daily pitch has to know what it already pitched* above for why the history is there. Any failure — missing key, missing SDK, API error, or a refusal — keeps the deterministic text, so a run never depends on the model. Each run records which mode produced it, and the dashboard says so under the pitch — including *why* it stayed deterministic, so a key set without the SDK installed does not look identical to no key at all. Pass `--no-llm` to force the deterministic path, or `--no-pitch` for a collect-only run with no pitch at all.
 
 ## Search demand and open-web coverage (SerpAPI)
 

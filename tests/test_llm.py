@@ -410,6 +410,47 @@ class SelectEvidenceTests(unittest.TestCase):
         urls = [p["url"] for p in picked]
         self.assertEqual(len(urls), len(set(urls)))
 
+    def test_new_evidence_below_the_fill_still_reaches_the_model(self):
+        """New items score low, so the by-score unpitched fill never reached them."""
+        fresh = {llm._item_key(self.EVIDENCE[58]), llm._item_key(self.EVIDENCE[59])}
+        titles = [p["title"] for p in llm.select_evidence(self.EVIDENCE, set(), fresh=fresh)]
+        self.assertIn("Item 58", titles)
+        self.assertIn("Item 59", titles)
+        self.assertEqual(len(titles), llm.MAX_EVIDENCE_IN_PROMPT)
+
+
+class FreshSinceLastPitchTests(unittest.TestCase):
+    """On a pitch day after a collect-only day, "new" means new since the pitch."""
+
+    def item(self, title, first_seen, is_new):
+        return {"title": title, "url": f"https://x/{title}", "score": 50,
+                "raw_metadata": {"first_seen": first_seen, "is_new": is_new}}
+
+    def setUp(self):
+        self.evidence = [
+            self.item("Monday", "2026-09-07T16:30:00+00:00", False),   # in Monday's pitch
+            self.item("Tuesday", "2026-09-08T16:30:00+00:00", False),  # collect-only day
+            self.item("Wednesday", "2026-09-09T16:30:00+00:00", True),
+        ]
+
+    def titles(self, keys):
+        return sorted(title for _url, title in keys)
+
+    def test_items_first_seen_after_the_last_pitch_are_fresh(self):
+        keys = llm.fresh_keys(self.evidence, "2026-09-07T16:30:00+00:00")
+        self.assertEqual(self.titles(keys), ["tuesday", "wednesday"])
+
+    def test_without_pitch_history_it_falls_back_to_the_ledger(self):
+        self.assertEqual(self.titles(llm.fresh_keys(self.evidence, None)), ["wednesday"])
+
+    def test_the_facts_carry_the_pitch_relative_flag_and_count(self):
+        payload = {**PAYLOAD, "evidence": self.evidence, "new_evidence_count": 1}
+        facts = json.loads(llm._facts(payload, None, since="2026-09-07T16:30:00+00:00"))
+        flags = {i["title"]: i["is_new"] for i in facts["top_evidence"]}
+        self.assertEqual(flags, {"Monday": False, "Tuesday": True, "Wednesday": True})
+        self.assertEqual(facts["new_evidence_count"], 2)
+        self.assertEqual(facts["last_pitch_date"], "09/07/26")
+
 
 class NoRepitchTests(unittest.TestCase):
     """MEA-115: 09/04, 09/05 and 09/06 pitched the same CMS-against-BLS story.

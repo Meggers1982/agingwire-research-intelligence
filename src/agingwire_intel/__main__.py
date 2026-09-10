@@ -11,7 +11,7 @@ from agingwire_intel import llm, runs
 from agingwire_intel.dashboard import build_dashboard
 from agingwire_intel.digest import write_digest
 from agingwire_intel.pipeline import run
-from agingwire_intel.synthesis import synthesize
+from agingwire_intel.synthesis import synthesize, without_pitch
 
 
 def _generated_at(payload: dict) -> datetime | None:
@@ -33,6 +33,13 @@ def main() -> int:
         "--no-llm",
         action="store_true",
         help="Skip the optional LLM synthesis even when ANTHROPIC_API_KEY is set.",
+    )
+    parser.add_argument(
+        "--no-pitch",
+        action="store_true",
+        help="Collect and publish the run without a feature pitch. The evidence "
+             "adds a few items a weekday, so the scheduled workflow writes the "
+             "pitch three days a week and passes this on the others.",
     )
     parser.add_argument(
         "--no-enrich",
@@ -77,7 +84,9 @@ def main() -> int:
     # different report.
     now = _generated_at(payload) if replay else None
     synthesis = synthesize(payload, previous, now=now)
-    if not args.no_llm:
+    if args.no_pitch:
+        synthesis = without_pitch(synthesis)
+    elif not args.no_llm:
         synthesis = llm.upgrade_synthesis(payload, synthesis, previous, now=now,
                                           docs_dir=args.docs_dir)
 

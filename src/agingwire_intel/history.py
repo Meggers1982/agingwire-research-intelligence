@@ -6,9 +6,12 @@ from pathlib import Path
 
 from agingwire_intel.matching import us_date
 
-# Enough to cover the stretch a monthly data release stays the freshest thing in
-# the corpus, and short enough that a story is allowed back after a week.
-DEFAULT_LOOKBACK = 5
+# Counted in pitches, not runs: collection is daily but the pitch is written
+# three times a week, and a collect-only run pitched nothing there is to avoid
+# repeating. Three pitches is a week at that cadence -- long enough to cover the
+# stretch a monthly release stays the freshest thing in the corpus, short
+# enough that a story is allowed back after it.
+DEFAULT_LOOKBACK = 3
 MAX_PATTERN_CHARS = 700
 MAX_ANGLE_CHARS = 300
 
@@ -85,7 +88,7 @@ def pitch_record(run: dict) -> dict:
 
 def load_recent_runs(docs_dir: str | Path, before_id: str,
                      limit: int = DEFAULT_LOOKBACK) -> list[dict]:
-    """Published runs older than `before_id`, newest first.
+    """Published runs older than `before_id` that carry a pitch, newest first.
 
     Compares on the run id rather than excluding one filename, so a --replay of
     2026-09-04 is written against the runs that preceded it and reproduces the
@@ -99,12 +102,26 @@ def load_recent_runs(docs_dir: str | Path, before_id: str,
         if before_id and path.stem >= before_id:
             continue
         try:
-            out.append(json.loads(path.read_text(encoding="utf-8")))
+            run = json.loads(path.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             continue
+        if not (run.get("feature_pitch_raw") or "").strip():
+            continue
+        out.append(run)
         if len(out) >= limit:
             break
     return out
+
+
+def last_pitch_at(docs_dir: str | Path, before_id: str) -> str | None:
+    """When the most recent pitch before `before_id` was collected.
+
+    On a pitch day, "new" has to mean new since that pitch rather than since
+    yesterday's run: an item first collected on a collect-only Tuesday is
+    is_new=False by Wednesday, yet no pitch has seen it.
+    """
+    runs = load_recent_runs(docs_dir, before_id, limit=1)
+    return runs[0].get("generated_at") if runs else None
 
 
 def recent_pitches(docs_dir: str | Path, before_id: str,

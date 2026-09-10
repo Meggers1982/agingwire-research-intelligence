@@ -179,6 +179,7 @@
   :root[data-theme="dark"] mark { background: #4a3a12; color: #fde68a; }
   .stat .l { font-size: 0.75rem; color: var(--faint); }
   .stat.is-zero .n { color: var(--faint); }
+  .run-note { color: var(--muted); font-size: 0.875rem; margin: 0.25rem 0 0.75rem; }
 
   /* ---------- badges + pills ---------- */
   .badge {
@@ -859,6 +860,17 @@ function shownNote(run) {
     extra ? ` + ${extra} new below the cut` : ""}</span>`;
 }
 
+/* A collect-only run carries no pitch, and an empty section would simply
+   vanish -- which reads as a bug. Say why, and point at the last pitch. Runs
+   written before the flag existed all pitched, so only an explicit false counts. */
+function noPitchHtml(run) {
+  if (run.pitched !== false) return "";
+  const last = (state.index.runs || []).find(r => r.pitched !== false && r.run_date < run.run_date);
+  return `<p>${esc(run.pitch_note || "No pitch on this run.")}</p>${last
+    ? `<p><button type="button" class="link-btn" data-goto-run="${esc(last.id)}">Read the
+        ${esc(fmtDate(last.run_date))} pitch</button></p>` : ""}`;
+}
+
 function renderItem(item, index) {
   const findings = (item.key_findings || []).filter(Boolean);
   const angles = item.story_angles || [];
@@ -1098,8 +1110,11 @@ async function renderMain() {
       ? `<b>The pitch, story ideas and trends were written by ${esc(run.synthesis_model || "a model")}</b>
          from the facts on this page. The evidence, scores and coverage states are the pipeline's;
          the prose is not.`
-      : `<b>No model wrote this run's editorial sections.</b> The pitch is a worksheet — it lays out
-         what can be assembled deterministically. Naming the angle is left to you.`,
+      : run.pitched === false
+        ? `<b>No pitch on this run, and no model wrote its story ideas or trends.</b> Both are
+           derived from the run data. The pitch is written three days a week.`
+        : `<b>No model wrote this run's editorial sections.</b> The pitch is a worksheet — it lays out
+           what can be assembled deterministically. Naming the angle is left to you.`,
     `<b>Search demand comes from a cached weekly snapshot</b>, not from this run
      (${esc(run.demand_source || "unknown source")}, ${Object.keys(run.demand_topics || {}).length} topics).`,
     (run.source_status || []).some(x => x.status === "error")
@@ -1130,13 +1145,16 @@ async function renderMain() {
         <div class="stat${run.gap_count ? "" : " is-zero"}"><div class="n">${run.gap_count}</div><div class="l">confirmed coverage gaps</div></div>
         <div class="stat"><div class="n">${run.monitored_publisher_count}<span class="l"> / ${run.registry_publisher_count}</span></div><div class="l">publisher feeds working</div></div>
       </div>
+      ${run.new_evidence_count === 0 ? `<p class="run-note"><b>Nothing new on this run.</b>
+        Every candidate below was already collected by an earlier run; the ranking
+        can shift, the evidence has not.</p>` : ""}
       <div class="jump-links">${jump}
         <button type="button" id="toggle-all-btn" class="toggle-all">Collapse all</button>
       </div>
     </div>
 
     ${sectionBlock("feature-pitch", "Bigger Picture — Feature Pitch",
-      run.feature_pitch_raw ? renderBlock(run.feature_pitch_raw) : "",
+      run.feature_pitch_raw ? renderBlock(run.feature_pitch_raw) : noPitchHtml(run),
       { extraClass: "feature" })}
 
     ${sectionBlock("pitch-draft", "The Pitch",
@@ -1205,6 +1223,12 @@ async function renderMain() {
     const value = btn.dataset.value;
     set.has(value) ? set.delete(value) : set.add(value);
     renderMain();
+  }));
+  main.querySelectorAll("[data-goto-run]").forEach(btn => btn.addEventListener("click", () => {
+    state.activeId = btn.dataset.gotoRun;
+    renderSidebar();
+    renderMain();
+    window.scrollTo({ top: 0 });
   }));
   const clearBtn = document.getElementById("clear-facets");
   if (clearBtn) clearBtn.addEventListener("click", () => { clearFacets(); renderMain(); });

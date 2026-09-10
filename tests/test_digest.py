@@ -3,6 +3,7 @@ import unittest
 from pathlib import Path
 
 from agingwire_intel.digest import render_digest, render_inventory, write_digest
+from agingwire_intel.synthesis import PITCH_NOTE, without_pitch
 
 PAYLOAD = {
     "generated_at": "2026-09-03T12:00:00+00:00",
@@ -98,6 +99,16 @@ class DigestTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CollectOnlyDigestTests(unittest.TestCase):
+    def test_a_collect_only_day_says_why_there_is_no_pitch(self):
+        synthesis = without_pitch({"feature_pitch_raw": "**The pattern:** x.",
+                                   "trends_raw": "**Volume:** 2 items."})
+        text = render_digest(PAYLOAD, synthesis=synthesis)
+        self.assertIn(PITCH_NOTE, text)
+        self.assertNotIn("The pattern", text)
+        self.assertIn("**Volume:**", text)
 
 
 class DateFormatTests(unittest.TestCase):

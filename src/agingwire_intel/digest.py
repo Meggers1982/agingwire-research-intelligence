@@ -75,6 +75,10 @@ def _synthesis_sections(synthesis: dict | None) -> list[str]:
         ("Research trends and continuity", "trends_raw"),
     ):
         body = (synthesis.get(key) or "").strip()
+        if not body and key == "feature_pitch_raw":
+            # A collect-only day says so, rather than the digest silently
+            # opening on story ideas as though the pitch had been forgotten.
+            body = (synthesis.get("pitch_note") or "").strip()
         if body:
             lines += [f"## {heading}", "", body, ""]
     return lines

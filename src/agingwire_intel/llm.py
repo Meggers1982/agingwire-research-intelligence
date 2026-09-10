@@ -4,7 +4,7 @@ import json
 import logging
 import os
 from collections import Counter
-from datetime import datetime
+from datetime import UTC, datetime
 
 from agingwire_intel import history
 from agingwire_intel.matching import tokens, us_date
@@ -70,9 +70,9 @@ So:
   NOT contain, preferring items absent from their "evidence_used" lists. A \
   second-best angle that is new is worth more to an editor than the best angle \
   for the fourth day running.
-- Genuinely new evidence outranks everything: an item with is_new true, or a \
-  figure that just moved, is the pitch even if it is smaller than the standing \
-  story.
+- Genuinely new evidence outranks everything: an item with is_new true -- \
+  first collected since the last pitch ran (last_pitch_date) -- or a figure \
+  that just moved, is the pitch even if it is smaller than the standing story.
 - When today's evidence really does carry nothing the earlier pitches missed, \
   say that in one clause of "The pattern", name the date the story ran, and \
   spend the pitch on the strongest unwritten thread anyway. Never restate a \
@@ -250,7 +250,8 @@ def _item_key(item: dict) -> tuple[str, str]:
 
 def select_evidence(evidence: list[dict], pitched: set[str],
                     limit: int = MAX_EVIDENCE_IN_PROMPT,
-                    top_slots: int = PROMPT_TOP_SLOTS) -> list[dict]:
+                    top_slots: int = PROMPT_TOP_SLOTS,
+                    fresh: set[tuple[str, str]] | None = None) -> list[dict]:
     """The items the model is allowed to write about, in score order.
 
     A straight top-N by score froze. The corpus is collected on 30-to-45-day
@@ -265,6 +266,12 @@ def select_evidence(evidence: list[dict], pitched: set[str],
     recent pitches did not use, so there is always unwritten material in front
     of the model. Nothing is excluded -- when there is not enough unused
     evidence the slots fall back to the ranking.
+
+    Items new since the last pitch (`fresh`, keyed by _item_key) take those
+    remaining slots first. New evidence tends to score low -- an unmonitored
+    item lands near 48 -- so the unpitched fill, which is also by score, never
+    reached it, and the rule that new evidence outranks everything had nothing
+    to act on.
     """
     order = {_item_key(item): index for index, item in enumerate(evidence)}
     picked = list(evidence[:top_slots])
@@ -281,13 +288,40 @@ def select_evidence(evidence: list[dict], pitched: set[str],
             picked.append(item)
 
     rest = evidence[top_slots:]
+    if fresh:
+        add(i for i in rest if _item_key(i) in fresh)
     add(i for i in rest if _normalize_title(i.get("title")) not in pitched)
     add(rest)
     return sorted(picked, key=lambda i: order.get(_item_key(i), len(order)))[:limit]
 
 
+def _parse_when(value) -> datetime | None:
+    try:
+        when = datetime.fromisoformat(str(value))
+    except (TypeError, ValueError):
+        return None
+    return when if when.tzinfo else when.replace(tzinfo=UTC)
+
+
+def fresh_keys(evidence: list[dict], since: str | None) -> set[tuple[str, str]]:
+    """Items first collected after the last pitch, or after the last run when
+    nothing has been pitched yet (the ledger's own is_new)."""
+    cutoff = _parse_when(since) if since else None
+    out: set[tuple[str, str]] = set()
+    for item in evidence:
+        meta = item.get("raw_metadata") or {}
+        if cutoff is None:
+            is_fresh = bool(meta.get("is_new"))
+        else:
+            seen = _parse_when(meta.get("first_seen"))
+            is_fresh = seen is not None and seen > cutoff
+        if is_fresh:
+            out.add(_item_key(item))
+    return out
+
+
 def _facts(payload: dict, previous: dict | None, now: datetime | None = None,
-           pitches: list[dict] | None = None) -> str:
+           pitches: list[dict] | None = None, since: str | None = None) -> str:
     # --replay exists because collectors cannot be asked for a past date, and
     # ageing that day's evidence against today's clock would produce a different
     # report rather than the same one rewritten. __main__ threads a replay clock
@@ -311,7 +345,9 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None,
     from agingwire_intel import outlets as outlet_mod
 
     pitches = pitches or []
-    selected = select_evidence(payload.get("evidence", []), history.pitched_titles(pitches))
+    fresh = fresh_keys(payload.get("evidence", []), since)
+    selected = select_evidence(payload.get("evidence", []), history.pitched_titles(pitches),
+                               fresh=fresh)
     evidence = [
         {
             "title": i.get("title"),
@@ -322,7 +358,7 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None,
             "topics": i.get("topics"),
             "score": i.get("score"),
             "coverage_state": (i.get("raw_metadata") or {}).get("coverage_state"),
-            "is_new": (i.get("raw_metadata") or {}).get("is_new"),
+            "is_new": _item_key(i) in fresh,
             "localizable": bool(i.get("localizable") or i.get("geographies")),
             "geographies": i.get("geographies"),
             "key_findings": (i.get("key_findings") or [])[:2],
@@ -349,7 +385,9 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None,
         },
         "already_reported_by": sorted(covered)[:20],
         "evidence_count": payload.get("evidence_count"),
-        "new_evidence_count": payload.get("new_evidence_count"),
+        # New since the last pitch, which on a pitch day after a collect-only
+        # run is more than the ledger's new-since-yesterday count.
+        "new_evidence_count": len(fresh),
         "monitored_publishers": payload.get("monitored_publisher_count"),
         "registry_publishers": payload.get("registry_publisher_count"),
         "clusters": slim_clusters,
@@ -359,6 +397,8 @@ def _facts(payload: dict, previous: dict | None, now: datetime | None = None,
     # pitch may be about, where previous_run only sizes the last collection.
     if pitches:
         facts["recent_pitches"] = pitches
+    if since:
+        facts["last_pitch_date"] = us_date(since)
     if previous:
         facts["previous_run"] = {
             "run_date": us_date(previous.get("generated_at")),
@@ -533,14 +573,16 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
         # Reading the history must never be what costs a run its editorial
         # layer, so a broken or absent docs/ tree degrades to the old behaviour
         # rather than raising into the fallback path below.
+        current_id = runs_mod.run_id(payload.get("generated_at", ""))
         try:
-            pitches = history.recent_pitches(
-                docs_dir, runs_mod.run_id(payload.get("generated_at", "")))
+            pitches = history.recent_pitches(docs_dir, current_id)
+            since = history.last_pitch_at(docs_dir, current_id)
         except OSError as exc:
             log.warning("could not read recent pitches (%s); pitching without history", exc)
-            pitches = []
+            pitches, since = [], None
         selected = select_evidence(
-            payload.get("evidence", []), history.pitched_titles(pitches))
+            payload.get("evidence", []), history.pitched_titles(pitches),
+            fresh=fresh_keys(payload.get("evidence", []), since))
 
         client = anthropic.Anthropic()
         response = client.messages.create(
@@ -565,7 +607,7 @@ def upgrade_synthesis(payload: dict, deterministic: dict, previous: dict | None 
                     "</deterministic_feature_pitch>\n\n"
                     f"<deterministic_trends>\n{deterministic.get('trends_raw', '')}\n"
                     "</deterministic_trends>\n\n"
-                    f"<facts>\n{_facts(payload, previous, now, pitches)}\n</facts>"
+                    f"<facts>\n{_facts(payload, previous, now, pitches, since)}\n</facts>"
                 ),
             }],
         )

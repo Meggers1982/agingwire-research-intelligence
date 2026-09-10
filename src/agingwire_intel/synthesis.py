@@ -526,6 +526,27 @@ def synthesize(payload: dict, previous: dict | None = None, now: datetime | None
     }
 
 
+PITCH_NOTE = ("No pitch on this run. Evidence is collected every day; the feature "
+              "pitch is written Monday, Wednesday and Friday.")
+
+
+def without_pitch(synthesis: dict) -> dict:
+    """The editorial layer for a collect-only day.
+
+    Not the deterministic worksheet in the pitch's place: on a corpus that adds a
+    few items a weekday it names the same top cluster day after day, which is
+    the repetition a thrice-weekly pitch exists to stop. The story ideas and
+    trends stay -- they describe the run rather than arguing a story.
+    """
+    return {
+        **synthesis,
+        "feature_pitch_raw": "",
+        "pitch_draft_raw": "",
+        "pitch_note": PITCH_NOTE,
+        "synthesis_note": "collect-only day, no pitch written",
+    }
+
+
 def recent_window(payload: dict, days: int = 30, now: datetime | None = None) -> list[dict]:
     """Evidence published inside the window, for LLM prompts that need a subset.
 
