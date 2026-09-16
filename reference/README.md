@@ -34,3 +34,7 @@ already applying. Those sub-score splits are inferred and marked
 When the workbooks change, re-export and keep the `RSS Feed URL / Hub` values —
 several were recovered by probing and are not in the workbooks. Reverify
 ownership, endpoints and editorial policies periodically.
+
+A dated backup of the B2B workbook,
+`AgingWire_B2B_Publisher_Prospecting_Database.backup-20260904-0823.xlsx`, is
+kept here as a snapshot from 2026-09-04.
