@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-18T16:24:55.126000+00:00",
+  "generated_at": "2026-09-19T15:55:29.049699+00:00",
   "evidence_count": 161,
-  "new_evidence_count": 9,
-  "coverage_count": 2662,
-  "monitored_publisher_count": 112,
+  "new_evidence_count": 1,
+  "coverage_count": 2920,
+  "monitored_publisher_count": 124,
   "registry_publisher_count": 132,
   "monitored_topics": [
     "age_tech",
@@ -22,144 +22,145 @@
     "medicare_medicaid",
     "nutrition",
     "palliative_hospice",
+    "sarcopenia_frailty",
     "senior_living_quality",
     "sleep",
     "transportation",
     "workforce"
   ],
-  "demand_source": "cache",
+  "demand_source": "fetched",
   "demand_topics": {
     "assisted_living": {
-      "change_pct": 0.8,
+      "recent_mean": 92.9,
+      "prior_mean": 92.6,
+      "change_pct": 0.3,
       "peak": 100.0,
-      "prior_mean": 90.0,
-      "recent_mean": 90.8,
       "term": "assisted living"
     },
     "cardiovascular_disease": {
-      "change_pct": -39.6,
+      "recent_mean": 10.9,
+      "prior_mean": 21.0,
+      "change_pct": -48.2,
       "peak": 27.0,
-      "prior_mean": 19.9,
-      "recent_mean": 12.0,
       "term": "cardiovascular disease"
     },
     "caregiving": {
-      "change_pct": -21.1,
+      "recent_mean": 5.4,
+      "prior_mean": 7.0,
+      "change_pct": -23.2,
       "peak": 8.0,
-      "prior_mean": 7.1,
-      "recent_mean": 5.6,
       "term": "caregiving"
     },
     "chronic_pain": {
-      "change_pct": -33.0,
+      "recent_mean": 15.1,
+      "prior_mean": 24.1,
+      "change_pct": -37.3,
       "peak": 30.0,
-      "prior_mean": 24.2,
-      "recent_mean": 16.2,
       "term": "chronic pain"
     },
     "cognitive_decline": {
-      "change_pct": 5.6,
-      "peak": 13.0,
-      "prior_mean": 4.5,
-      "recent_mean": 4.8,
+      "recent_mean": 4.2,
+      "prior_mean": 4.6,
+      "change_pct": -8.1,
+      "peak": 12.0,
       "term": "cognitive decline"
     },
     "dementia": {
-      "change_pct": -11.3,
+      "recent_mean": 80.9,
+      "prior_mean": 91.9,
+      "change_pct": -12.0,
       "peak": 100.0,
-      "prior_mean": 93.6,
-      "recent_mean": 83.0,
       "term": "dementia"
     },
     "depression_mental_health": {
-      "change_pct": -25.1,
+      "recent_mean": 18.5,
+      "prior_mean": 25.1,
+      "change_pct": -26.4,
       "peak": 34.0,
-      "prior_mean": 25.9,
-      "recent_mean": 19.4,
       "term": "depression"
     },
     "falls": {
-      "change_pct": -2.2,
-      "peak": 100.0,
+      "recent_mean": 89.5,
       "prior_mean": 92.4,
-      "recent_mean": 90.4,
+      "change_pct": -3.1,
+      "peak": 100.0,
       "term": "falls"
     },
     "hearing_loss": {
-      "change_pct": -34.5,
+      "recent_mean": 53.8,
+      "prior_mean": 87.9,
+      "change_pct": -38.8,
       "peak": 100.0,
-      "prior_mean": 83.2,
-      "recent_mean": 54.5,
       "term": "hearing loss"
     },
     "housing": {
-      "change_pct": -3.7,
-      "peak": 42.0,
-      "prior_mean": 37.0,
-      "recent_mean": 35.6,
+      "recent_mean": 36.4,
+      "prior_mean": 39.4,
+      "change_pct": -7.6,
+      "peak": 44.0,
       "term": "senior housing"
     },
     "incontinence": {
-      "change_pct": -31.6,
-      "peak": 26.0,
-      "prior_mean": 22.1,
-      "recent_mean": 15.1,
+      "recent_mean": 14.4,
+      "prior_mean": 23.5,
+      "change_pct": -38.8,
+      "peak": 27.0,
       "term": "urinary incontinence"
     },
     "loneliness_social_connection": {
-      "change_pct": -51.1,
-      "peak": 72.0,
-      "prior_mean": 56.5,
-      "recent_mean": 27.6,
+      "recent_mean": 26.5,
+      "prior_mean": 56.4,
+      "change_pct": -53.0,
+      "peak": 78.0,
       "term": "loneliness"
     },
     "medicare_medicaid": {
-      "change_pct": 3.1,
-      "peak": 68.0,
-      "prior_mean": 44.0,
-      "recent_mean": 45.4,
+      "recent_mean": 45.6,
+      "prior_mean": 45.2,
+      "change_pct": 0.8,
+      "peak": 67.0,
       "term": "Medicare"
     },
     "nutrition": {
-      "change_pct": -39.7,
-      "peak": 100.0,
+      "recent_mean": 50.9,
       "prior_mean": 85.9,
-      "recent_mean": 51.8,
+      "change_pct": -40.8,
+      "peak": 100.0,
       "term": "nutrition"
     },
     "oral_health": {
-      "change_pct": -57.0,
-      "peak": 64.0,
-      "prior_mean": 48.0,
-      "recent_mean": 20.6,
+      "recent_mean": 16.9,
+      "prior_mean": 46.4,
+      "change_pct": -63.6,
+      "peak": 57.0,
       "term": "oral health"
     },
     "osteoporosis_bone_health": {
-      "change_pct": -20.2,
+      "recent_mean": 56.4,
+      "prior_mean": 73.8,
+      "change_pct": -23.6,
       "peak": 100.0,
-      "prior_mean": 74.1,
-      "recent_mean": 59.1,
       "term": "osteoporosis"
     },
     "palliative_hospice": {
-      "change_pct": -14.9,
-      "peak": 46.0,
-      "prior_mean": 41.1,
-      "recent_mean": 35.0,
+      "recent_mean": 33.8,
+      "prior_mean": 41.6,
+      "change_pct": -18.9,
+      "peak": 49.0,
       "term": "palliative care"
     },
     "sleep": {
-      "change_pct": -19.5,
+      "recent_mean": 71.8,
+      "prior_mean": 90.4,
+      "change_pct": -20.6,
       "peak": 100.0,
-      "prior_mean": 89.0,
-      "recent_mean": 71.6,
       "term": "sleep"
     },
     "vision_loss": {
-      "change_pct": -55.1,
+      "recent_mean": 31.8,
+      "prior_mean": 79.0,
+      "change_pct": -59.8,
       "peak": 100.0,
-      "prior_mean": 80.4,
-      "recent_mean": 36.1,
       "term": "vision loss"
     }
   },
@@ -167,37 +168,37 @@
     "checked": 15,
     "top_n": 15
   },
-  "serpapi_calls": 15,
+  "serpapi_calls": 23,
   "serpapi_failures": [],
   "topic_coverage_counts": {
-    "age_tech": 10,
-    "aging_in_place": 16,
-    "assisted_living": 103,
-    "cardiovascular_disease": 6,
+    "age_tech": 13,
+    "aging_in_place": 20,
+    "assisted_living": 113,
+    "cardiovascular_disease": 11,
     "caregiving": 26,
-    "chronic_pain": 2,
-    "cognitive_decline": 7,
-    "dementia": 42,
-    "depression_mental_health": 14,
-    "falls": 21,
-    "financial_security": 20,
+    "chronic_pain": 1,
+    "cognitive_decline": 8,
+    "dementia": 43,
+    "depression_mental_health": 13,
+    "falls": 17,
+    "financial_security": 19,
     "food_security": 1,
     "fraud_scams": 1,
     "hearing_loss": 6,
-    "housing": 93,
+    "housing": 100,
     "incontinence": 1,
     "loneliness_social_connection": 2,
-    "long_term_care": 45,
-    "medicare_medicaid": 57,
-    "nutrition": 17,
+    "long_term_care": 48,
+    "medicare_medicaid": 58,
+    "nutrition": 19,
     "osteoporosis_bone_health": 1,
-    "palliative_hospice": 17,
-    "sarcopenia_frailty": 1,
+    "palliative_hospice": 16,
+    "sarcopenia_frailty": 3,
     "senior_living_quality": 3,
-    "sleep": 15,
+    "sleep": 13,
     "transportation": 5,
-    "vision_loss": 1,
-    "workforce": 24
+    "vision_loss": 2,
+    "workforce": 23
   },
   "source_status": [
     {
@@ -413,7 +414,7 @@
       "feed": "https://news.google.com/rss/search?q=site%3Ahomecaremag.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
       "discovered": false,
-      "items": 32,
+      "items": 30,
       "recovered_from": "http://homecaremag.com/combo/feed"
     },
     {
@@ -429,7 +430,7 @@
       "feed": "https://news.google.com/rss/search?q=site%3Amultihousingnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
       "discovered": false,
-      "items": 49,
+      "items": 48,
       "recovered_from": "https://www.multihousingnews.com/senior-housing/feed/"
     },
     {
@@ -476,7 +477,7 @@
       "feed": "https://www.providermagazine.com:443/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 18
+      "items": 19
     },
     {
       "publisher": "Generations Journal",
@@ -693,7 +694,7 @@
       "feed": "https://www.bisnow.com/feed/",
       "kind": "rss",
       "discovered": false,
-      "items": 9
+      "items": 10
     },
     {
       "publisher": "Building Design+Construction",
@@ -774,7 +775,7 @@
       "feed": "https://www.route-fifty.com/sitemap-news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 5
+      "items": 3
     },
     {
       "publisher": "Governing",
@@ -806,8 +807,11 @@
     {
       "publisher": "Journal of Aging Life Care",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.aginglifecare.org/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Aaginglifecare.org+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 4
     },
     {
       "publisher": "GlobeSt",
@@ -831,8 +835,11 @@
     {
       "publisher": "Healthcare Design",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://healthcaredesignmagazine.com/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Ahealthcaredesignmagazine.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 26
     },
     {
       "publisher": "Facility Executive",
@@ -850,13 +857,16 @@
       "feed": "https://www.modernhealthcare.com/sitemap-news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 50
+      "items": 8
     },
     {
       "publisher": "HealthLeaders",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.healthleadersmedia.com/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Ahealthleadersmedia.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 39
     },
     {
       "publisher": "Healthcare IT News",
@@ -865,20 +875,26 @@
       "feed": "https://news.google.com/rss/search?q=site%3Ahealthcareitnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
       "kind": "gnews",
       "discovered": false,
-      "items": 33,
+      "items": 32,
       "recovered_from": "https://www.healthcareitnews.com/rss.xml"
     },
     {
       "publisher": "MobiHealthNews",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.mobihealthnews.com/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Amobihealthnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 30
     },
     {
       "publisher": "BenefitsPRO",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.benefitspro.com/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Abenefitspro.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "PLANADVISER",
@@ -946,8 +962,11 @@
     {
       "publisher": "Food Management",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.food-management.com/"
+      "status": "empty",
+      "feed": "https://news.google.com/rss/search?q=site%3Afood-management.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "The NonProfit Times",
@@ -961,8 +980,11 @@
     {
       "publisher": "Inside ALCA",
       "audience": "b2b",
-      "status": "no_feed",
-      "website": "https://www.aginglifecare.org/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Aaginglifecare.org+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 4
     },
     {
       "publisher": "Senior Helpers News/Resources",
@@ -1067,7 +1089,7 @@
       "feed": "https://www.gobankingrates.com/sitemap-news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 3
+      "items": 4
     },
     {
       "publisher": "Retirement Living",
@@ -1076,7 +1098,7 @@
       "feed": "https://www.retirementliving.com/sitemap_index.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 42
+      "items": 44
     },
     {
       "publisher": "Seniors Guide",
@@ -1117,8 +1139,11 @@
     {
       "publisher": "Apartment Therapy",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.apartmenttherapy.com/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Aapartmenttherapy.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Caring.com",
@@ -1136,7 +1161,7 @@
       "feed": "https://www.caregiver.org/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 25
+      "items": 24
     },
     {
       "publisher": "National Council on Aging",
@@ -1318,8 +1343,11 @@
     {
       "publisher": "First for Women",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.firstforwomen.com/"
+      "status": "empty",
+      "feed": "https://firstforwomen.com/sitemap.xml",
+      "kind": "sitemap",
+      "discovered": true,
+      "items": 0
     },
     {
       "publisher": "MarketWatch Retirement",
@@ -1346,7 +1374,7 @@
       "feed": "https://www.prevention.com/sitemap_google_news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 19
+      "items": 15
     },
     {
       "publisher": "Senior Planet",
@@ -1355,13 +1383,16 @@
       "feed": "https://seniorplanet.org/sitemap_index.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 20
+      "items": 22
     },
     {
       "publisher": "U.S. News Retirement",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://money.usnews.com/money/retirement"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Amoney.usnews.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 50
     },
     {
       "publisher": "Woman's World",
@@ -1370,7 +1401,7 @@
       "feed": "https://www.womansworld.com/feed/",
       "kind": "rss",
       "discovered": false,
-      "items": 8
+      "items": 9
     },
     {
       "publisher": "Sisters From AARP",
@@ -1429,8 +1460,11 @@
     {
       "publisher": "WebMD Healthy Aging",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.webmd.com/healthy-aging/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Awebmd.com+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 49
     },
     {
       "publisher": "Acts Retirement-Life Communities",
@@ -1444,8 +1478,11 @@
     {
       "publisher": "National Institute on Aging",
       "audience": "b2c",
-      "status": "no_feed",
-      "website": "https://www.nia.nih.gov/"
+      "status": "ok",
+      "feed": "https://news.google.com/rss/search?q=site%3Ania.nih.gov+when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "kind": "gnews",
+      "discovered": true,
+      "items": 1
     },
     {
       "publisher": "SilverSneakers",
@@ -1459,11 +1496,11 @@
   ],
   "evidence": [
     {
-      "source_id": "kff-feed",
-      "title": "State Fiscal Conditions: Context on Medicaid Budgets for FY 2027",
-      "url": "https://www.kff.org/medicaid/state-fiscal-conditions-context-on-medicaid-budgets-for-fy-2027/",
+      "source_id": "justice-in-aging",
+      "title": "From DC: Medicaid Work Requirements, New HUD Guidance, Public Charge Lawsuits, and More",
+      "url": "https://justiceinaging.org/from-dc-09182026/",
       "source_type": "institutional_rss",
-      "published_at": "2026-09-18T13:00:00+00:00",
+      "published_at": "2026-09-18T20:00:00+00:00",
       "topics": [
         "medicare_medicaid"
       ],
@@ -1471,7 +1508,7 @@
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "This brief describes current fiscal conditions using the latest state revenue and spending data from the National Association of State Budget Officers (NASBO) and analyzes how these conditions may impact states’ Medicaid budget decisions going forward.",
+      "summary": "In this week's edition: Medicaid Work Requirements, New HUD Guidance, Public Charge Lawsuits, and More The post From DC: Medicaid Work Requirements, New HUD Guidance, Public Charge Lawsuits, and More appeared first on Justice in Aging .",
       "key_findings": [],
       "localizable": false,
       "score": 75,
@@ -1496,223 +1533,18 @@
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true,
-        "web_coverage": {
-          "query": "State Fiscal Conditions Context Medicaid Budgets 2027",
-          "returned": 2,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "justice-in-aging",
-      "title": "Census Reports 10 Million Older Adults in Poverty. Congress Must Act to Strengthen Social Security.",
-      "url": "https://justiceinaging.org/census-reports-10-million-older-adults-in-poverty-congress-must-act-to-strengthen-social-security/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-17T20:01:25+00:00",
-      "topics": [
-        "financial_security"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The Census just released its annual report on poverty in the United States. The 2025 data shows the Supplemental Poverty Measure (SPM) poverty rate at 15.4% among older adults. This rate isn’t a statistically significant change from last year, but the number of older adults in poverty is now over 10 million people, up from [&#8230;] The post Census Reports 10 Million Older Adults in Poverty. Congress Must Act to Strengthen Social Security. appeared first on Justice in Aging .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 75,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "first_seen": "2026-09-19T15:55:29.049699+00:00",
         "runs_seen": 1,
         "is_new": true,
         "web_coverage": {
-          "query": "Census Reports Million Older Adults Poverty Congress Must Act Strengthen",
+          "query": "Medicaid Work Requirements HUD Guidance Public Charge Lawsuits More",
           "returned": 1,
           "outlet_count": 0,
           "outlets": [],
           "articles": [],
           "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Medicare Program; Medicare Appeals; Adjustment to the Amount in Controversy Threshold Amounts for Calendar Year 2027",
-      "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19016/medicare-program-medicare-appeals-adjustment-to-the-amount-in-controversy-threshold-amounts-for",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-09-16T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Notice from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This notice announces the annual adjustment in the amount in controversy (AIC) threshold amounts for Administrative Law Judge (ALJ) hearings and judicial review under the Medicare appeals process. The adjustment to the AIC threshold amounts will be effective for requests for ALJ hearings and judicial review filed on or after January 1, 2027. The calendar year 2027 AIC threshold amounts are $200 for ALJ hearings and $2,000 for judicial review.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 75,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-19016",
-        "document_type": "Notice",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Medicare Medicare Appeals Adjustment Amount Controversy Threshold Amounts Calendar Year",
-          "returned": 1,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "A Closer Look at the $50 Billion Rural Health Transformation Program",
-      "url": "https://www.kff.org/medicaid/a-closer-look-at-the-50-billion-rural-health-transformation-program/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-18T14:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The 2025 budget reconciliation created the Rural Health Transformation Program, which will award $50 billion in state grants over a five-year period. This brief provides an overview of the program, describing its structure, how funds can be used, how funding compares to Medicaid spending reductions in the reconciliation law, and how the funds are being distributed across and within states.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 73,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "First appearance in this pipeline — no prior run surfaced it."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "light",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true,
-        "web_coverage": {
-          "query": "Closer Look Billion Rural Health Transformation",
-          "returned": 20,
-          "outlet_count": 8,
-          "outlets": [
-            "KFF Health News",
-            "Alaska Beacon",
-            "North Carolina Health News",
-            "Fierce Healthcare",
-            "STAT",
-            "Business Wire",
-            "starcitytv.com",
-            "WAPT"
-          ],
-          "articles": [
-            {
-              "title": "$50B Rural Health Transformation Program Needs More Transparency, Groups Say",
-              "outlet": "KFF Health News",
-              "link": "https://kffhealthnews.org/rural-health/rural-health-transformation-program-transparency-50-billion-dollars-state-tracking/",
-              "date": "08/27/2026, 07:00 AM, +0000 UTC"
-            },
-            {
-              "title": "Alaska continues rollout of Rural Health Transformation Program awards",
-              "outlet": "Alaska Beacon",
-              "link": "https://alaskabeacon.com/2026/09/09/alaska-continues-rollout-of-rural-health-transformation-program-awards/",
-              "date": "09/09/2026, 07:00 AM, +0000 UTC"
-            },
-            {
-              "title": "$50B Rural Health Transformation Program needs more transparency, groups say",
-              "outlet": "North Carolina Health News",
-              "link": "https://www.northcarolinahealthnews.org/2026/09/02/rural-health-transformation-program-transparency-groups-say/",
-              "date": "09/02/2026, 08:17 AM, +0000 UTC"
-            },
-            {
-              "title": "Rural Health Transformation Program funding tracker: CMS awards New York $76M; Indiana receives $120M",
-              "outlet": "Fierce Healthcare",
-              "link": "https://www.fiercehealthcare.com/regulatory/rural-health-transformation-program-funding-tracker-cms-awards-virginia-122m-georgia",
-              "date": "09/10/2026, 07:00 AM, +0000 UTC"
-            },
-            {
-              "title": "The GOP’s $50 billion rural health fund is coming up short, hospital leaders say",
-              "outlet": "STAT",
-              "link": "https://www.statnews.com/2026/09/14/rural-health-transformation-fund-skepticism-shortcomings-part-5-unraveled-series/",
-              "date": "09/14/2026, 08:33 AM, +0000 UTC"
-            }
-          ],
-          "state": "widely_reported"
         }
       }
     },
@@ -1764,7 +1596,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-17T16:56:33.333862+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false,
         "web_coverage": {
           "query": "Medicare Medicaid Programs Application DNV Healthcare USA Inc Continued Approval",
@@ -1777,9 +1609,113 @@
       }
     },
     {
+      "source_id": "kff-feed",
+      "title": "State Fiscal Conditions: Context on Medicaid Budgets for FY 2027",
+      "url": "https://www.kff.org/medicaid/state-fiscal-conditions-context-on-medicaid-budgets-for-fy-2027/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-18T13:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This brief describes current fiscal conditions using the latest state revenue and spending data from the National Association of State Budget Officers (NASBO) and analyzes how these conditions may impact states’ Medicaid budget decisions going forward.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 68,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
+        "is_new": false,
+        "web_coverage": {
+          "query": "State Fiscal Conditions Context Medicaid Budgets 2027",
+          "returned": 1,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "Census Reports 10 Million Older Adults in Poverty. Congress Must Act to Strengthen Social Security.",
+      "url": "https://justiceinaging.org/census-reports-10-million-older-adults-in-poverty-congress-must-act-to-strengthen-social-security/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-17T20:01:25+00:00",
+      "topics": [
+        "financial_security"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The Census just released its annual report on poverty in the United States. The 2025 data shows the Supplemental Poverty Measure (SPM) poverty rate at 15.4% among older adults. This rate isn’t a statistically significant change from last year, but the number of older adults in poverty is now over 10 million people, up from [&#8230;] The post Census Reports 10 Million Older Adults in Poverty. Congress Must Act to Strengthen Social Security. appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 68,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Census Reports Million Older Adults Poverty Congress Must Act Strengthen",
+          "returned": 1,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
+      }
+    },
+    {
       "source_id": "federal-register",
-      "title": "Medicare Program; Public Meeting for New Revisions to the Healthcare Common Procedure Coding System (HCPCS) Level II Coding",
-      "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19015/medicare-program-public-meeting-for-new-revisions-to-the-healthcare-common-procedure-coding-system",
+      "title": "Medicare Program; Medicare Appeals; Adjustment to the Amount in Controversy Threshold Amounts for Calendar Year 2027",
+      "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19016/medicare-program-medicare-appeals-adjustment-to-the-amount-in-controversy-threshold-amounts-for",
       "source_type": "regulatory_filing",
       "published_at": "2026-09-16T00:00:00+00:00",
       "topics": [
@@ -1791,13 +1727,13 @@
       "population": null,
       "methodology": "Federal Register API; Notice from Health and Human Services Department, Centers for Medicare & Medicaid Services",
       "evidence_grade": "A",
-      "summary": "This notice announces the second biannual Healthcare Common Procedure Coding System (HCPCS) Level II public meeting of 2026 to discuss the CMS preliminary coding, Medicare benefit category, and Medicare payment determinations, if applicable, for new revisions to the HCPCS Level II code set for non-drug and non-biological items and services, as well as how to register for the meeting.",
+      "summary": "This notice announces the annual adjustment in the amount in controversy (AIC) threshold amounts for Administrative Law Judge (ALJ) hearings and judicial review under the Medicare appeals process. The adjustment to the AIC threshold amounts will be effective for requests for ALJ hearings and judicial review filed on or after January 1, 2027. The calendar year 2027 AIC threshold amounts are $200 for ALJ hearings and $2,000 for judicial review.",
       "key_findings": [],
       "localizable": false,
-      "score": 73,
+      "score": 68,
       "score_components": {
         "priority": 5,
-        "novelty": 3,
+        "novelty": 1,
         "timeliness": 5,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1805,7 +1741,7 @@
         "demand": 3,
         "consumer_utility": 3,
         "b2b_relevance": 3,
-        "visualization": 1
+        "visualization": 3
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
@@ -1816,7 +1752,7 @@
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "document_number": "2026-19015",
+        "document_number": "2026-19016",
         "document_type": "Notice",
         "agencies": [
           "Health and Human Services Department",
@@ -1824,125 +1760,11 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
+        "runs_seen": 4,
         "is_new": false,
         "web_coverage": {
-          "query": "Medicare Public Meeting Revisions Healthcare Common Procedure Coding System Level",
-          "returned": 0,
-          "outlet_count": 0,
-          "outlets": [],
-          "articles": [],
-          "state": "unreported"
-        }
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC Announces Additional Payments to Consumers Stemming from FTC’s Amazon Prime Settlement",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-17T12:00:00+00:00",
-      "topics": [
-        "fraud_scams"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Image The Federal Trade Commission announced today that Amazon will accelerate and expand payments to eligible consumers under last year’s $2.5 billion settlement, which resolved FTC allegations that the online retailer enrolled millions of consumers in Prime subscriptions without their consent and knowingly made it difficult for consumers to cancel. Under the historic September 2025 settlement of the FTC’s allegations, Amazon was required to pay up to $1.5 billion in redress to consumers harmed by the company’s deceptive Prime enrollment practices in addition to a $1 billion civil penalty. As of September 2026, Amazon has issued more than $845 million in redress payments to consumers. This week, a federal court approved a joint motion filed by the FTC and Amazon, approving measures to accelerate and expand future redress payments to consumers. Under the revised order , more consumers will now qualify for refunds from Amazon, the maximum payment cap has been raised from $51 to $200 total, and all future payments will be distributed automatically, eliminating the need for consumers to submit claims or additional paperwork to Amazon. “The revised order will ensure more consumers who were harmed by Amazon’s deceptive enrollment and cancellation practices benefit from the FTC’s historic settlement,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This action underscores the FTC’s commitment to ensuring companies return money to consumers harmed b",
-      "key_findings": [],
-      "localizable": false,
-      "score": 68,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How the scam works and what protects you or a parent from it.",
-        "For the trade: Liability, resident protection duties and reputational exposure.",
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true,
-        "web_coverage": {
-          "query": "FTC Announces Additional Payments Consumers Stemming FTC Amazon Prime Settlement",
-          "returned": 5,
-          "outlet_count": 1,
-          "outlets": [
-            "TradingView"
-          ],
-          "articles": [
-            {
-              "title": "FTC Announces Additional Payments To Consumers Stemming From FTC’S Amazon Prime Settlement",
-              "outlet": "TradingView",
-              "link": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4590DG:0-ftc-announces-additional-payments-to-consumers-stemming-from-ftc-s-amazon-prime-settlement/",
-              "date": "09/17/2026, 06:14 PM, +0000 UTC"
-            }
-          ],
-          "state": "lightly_reported"
-        }
-      }
-    },
-    {
-      "source_id": "justice-in-aging",
-      "title": "Letter From 111 Organizations on Proposed Rules Implementing HR 1 Medicare Immigrant Eligibility Changes",
-      "url": "https://justiceinaging.org/letter-from-111-organizations-on-proposed-hr-1-medicare-immigrant-eligibility-changes/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-15T13:54:30+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Letter From 111 Organizations on Proposed Rules Implementing HR 1 Medicare Immigrant Eligibility Changes appeared first on Justice in Aging .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 68,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
-        "is_new": false,
-        "web_coverage": {
-          "query": "Letter 111 Organizations Rules Implementing Medicare Immigrant Eligibility Changes",
-          "returned": 0,
+          "query": "Medicare Medicare Appeals Adjustment Amount Controversy Threshold Amounts Calendar Year",
+          "returned": 1,
           "outlet_count": 0,
           "outlets": [],
           "articles": [],
@@ -2004,7 +1826,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false,
         "web_coverage": {
           "query": "Medical Equipment Suppliers",
@@ -2012,9 +1834,9 @@
           "outlet_count": 4,
           "outlets": [
             "Healthcare Dive",
-            "aha.org",
+            "American Hospital Association",
             "Healthcare Finance News",
-            "Medical Daily"
+            "The HIPAA Journal"
           ],
           "articles": [
             {
@@ -2025,7 +1847,7 @@
             },
             {
               "title": "CMS moratorium on durable medical equipment supplier enrollment expires",
-              "outlet": "aha.org",
+              "outlet": "American Hospital Association",
               "link": "https://www.aha.org/news/headline/2026-08-28-cms-moratorium-durable-medical-equipment-supplier-enrollment-expires",
               "date": "08/28/2026, 07:00 AM, +0000 UTC"
             },
@@ -2033,16 +1855,167 @@
               "title": "CMS blocks 11 suppliers over $3.4B in suspected fraud",
               "outlet": "Healthcare Finance News",
               "link": "https://www.healthcarefinancenews.com/news/cms-blocks-11-suppliers-over-34b-suspected-fraud",
-              "date": "09/09/2026, 02:36 PM, +0000 UTC"
+              "date": "09/09/2026, 07:00 AM, +0000 UTC"
             },
             {
-              "title": "Federal Regulators Bar Eleven Medical Equipment Suppliers That Billed Medicare for Beneficiaries Who Had Already Died",
-              "outlet": "Medical Daily",
-              "link": "https://www.medicaldaily.com/cms-bars-eleven-equipment-suppliers-deceased-medicare-billing-478469",
-              "date": "09/10/2026, 10:16 AM, +0000 UTC"
+              "title": "HHS-OIG Urges CMS & MA Organziations Increase Efforts to Prevent Durable Medical Equipment Fraud",
+              "outlet": "The HIPAA Journal",
+              "link": "https://www.hipaajournal.com/hhs-oig-cms-mao-durable-medical-equipment-fraud/",
+              "date": "09/18/2026, 04:49 PM, +0000 UTC"
             }
           ],
           "state": "widely_reported"
+        }
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "A Closer Look at the $50 Billion Rural Health Transformation Program",
+      "url": "https://www.kff.org/medicaid/a-closer-look-at-the-50-billion-rural-health-transformation-program/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-18T14:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The 2025 budget reconciliation created the Rural Health Transformation Program, which will award $50 billion in state grants over a five-year period. This brief provides an overview of the program, describing its structure, how funds can be used, how funding compares to Medicaid spending reductions in the reconciliation law, and how the funds are being distributed across and within states.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 66,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "light",
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Closer Look Billion Rural Health Transformation",
+          "returned": 20,
+          "outlet_count": 8,
+          "outlets": [
+            "KFF Health News",
+            "North Carolina Health News",
+            "Fierce Healthcare",
+            "Managed Healthcare Executive",
+            "STAT",
+            "Business Wire",
+            "WAPT",
+            "Magnolia Tribune"
+          ],
+          "articles": [
+            {
+              "title": "$50B Rural Health Transformation Program Needs More Transparency, Groups Say",
+              "outlet": "KFF Health News",
+              "link": "https://kffhealthnews.org/rural-health/rural-health-transformation-program-transparency-50-billion-dollars-state-tracking/",
+              "date": "08/27/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "$50B Rural Health Transformation Program needs more transparency, groups say",
+              "outlet": "North Carolina Health News",
+              "link": "https://www.northcarolinahealthnews.org/2026/09/02/rural-health-transformation-program-transparency-groups-say/",
+              "date": "09/02/2026, 08:17 AM, +0000 UTC"
+            },
+            {
+              "title": "Rural Health Transformation Program funding tracker: CMS awards New York $76M; Indiana receives $120M",
+              "outlet": "Fierce Healthcare",
+              "link": "https://www.fiercehealthcare.com/regulatory/rural-health-transformation-program-funding-tracker-cms-awards-virginia-122m-georgia",
+              "date": "09/10/2026, 07:00 AM, +0000 UTC"
+            },
+            {
+              "title": "Rural health is ailing. Is $50 billion enough to heal it?",
+              "outlet": "Managed Healthcare Executive",
+              "link": "https://www.managedhealthcareexecutive.com/view/rural-health-is-ailing-is-50-billion-enough-to-heal-it-",
+              "date": "09/04/2026, 06:09 PM, +0000 UTC"
+            },
+            {
+              "title": "The GOP’s $50 billion rural health fund is coming up short, hospital leaders say",
+              "outlet": "STAT",
+              "link": "https://www.statnews.com/2026/09/14/rural-health-transformation-fund-skepticism-shortcomings-part-5-unraveled-series/",
+              "date": "09/14/2026, 08:33 AM, +0000 UTC"
+            }
+          ],
+          "state": "widely_reported"
+        }
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Medicare Program; Public Meeting for New Revisions to the Healthcare Common Procedure Coding System (HCPCS) Level II Coding",
+      "url": "https://www.federalregister.gov/documents/2026/09/16/2026-19015/medicare-program-public-meeting-for-new-revisions-to-the-healthcare-common-procedure-coding-system",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-09-16T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "This notice announces the second biannual Healthcare Common Procedure Coding System (HCPCS) Level II public meeting of 2026 to discuss the CMS preliminary coding, Medicare benefit category, and Medicare payment determinations, if applicable, for new revisions to the HCPCS Level II code set for non-drug and non-biological items and services, as well as how to register for the meeting.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 66,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-19015",
+        "document_type": "Notice",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 4,
+        "is_new": false,
+        "web_coverage": {
+          "query": "Medicare Public Meeting Revisions Healthcare Common Procedure Coding System Level",
+          "returned": 0,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
         }
       }
     },
@@ -2110,11 +2083,11 @@
         "data_file": "outputs/data/acs-2023-state-profile.json",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false,
         "web_coverage": {
           "query": "American Community Survey 2023 state aging housing profile",
-          "returned": 0,
+          "returned": 1,
           "outlet_count": 0,
           "outlets": [],
           "articles": [],
@@ -2176,11 +2149,11 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false,
         "web_coverage": {
           "query": "National Downloadable File",
-          "returned": 9,
+          "returned": 6,
           "outlet_count": 0,
           "outlets": [],
           "articles": [],
@@ -2241,11 +2214,11 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false,
         "web_coverage": {
           "query": "Facility Affiliation Data",
-          "returned": 1,
+          "returned": 3,
           "outlet_count": 0,
           "outlets": [],
           "articles": [],
@@ -2308,7 +2281,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false,
         "web_coverage": {
           "query": "Hospice care National CAHPS Hospice Survey Data",
@@ -2375,7 +2348,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false,
         "web_coverage": {
           "query": "Hospice care State CAHPS Hospice Survey Data",
@@ -2435,7 +2408,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false,
         "web_coverage": {
           "query": "Announcing Intent Award Single Source Supplement Senior Medicare Patrol Resource",
@@ -2501,8 +2474,16 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
-        "is_new": false
+        "runs_seen": 9,
+        "is_new": false,
+        "web_coverage": {
+          "query": "2024 Group Public Reporting Patient Experience",
+          "returned": 7,
+          "outlet_count": 0,
+          "outlets": [],
+          "articles": [],
+          "state": "unreported"
+        }
       }
     },
     {
@@ -2559,7 +2540,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -2617,95 +2598,51 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
     {
-      "source_id": "justice-in-aging",
-      "title": "Justice in Aging Comments on the CY 2027 Medicare Physician Fee Schedule Proposed Rule",
-      "url": "https://justiceinaging.org/justice-in-aging-comments-on-the-cy-2027-medicare-physician-fee-schedule-proposed-rule/",
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC Announces Additional Payments to Consumers Stemming from FTC’s Amazon Prime Settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement",
       "source_type": "institutional_rss",
-      "published_at": "2026-09-15T13:53:34+00:00",
+      "published_at": "2026-09-17T12:00:00+00:00",
       "topics": [
-        "medicare_medicaid"
+        "fraud_scams"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "The post Justice in Aging Comments on the CY 2027 Medicare Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
+      "summary": "Image The Federal Trade Commission announced today that Amazon will accelerate and expand payments to eligible consumers under last year’s $2.5 billion settlement, which resolved FTC allegations that the online retailer enrolled millions of consumers in Prime subscriptions without their consent and knowingly made it difficult for consumers to cancel. Under the historic September 2025 settlement of the FTC’s allegations, Amazon was required to pay up to $1.5 billion in redress to consumers harmed by the company’s deceptive Prime enrollment practices in addition to a $1 billion civil penalty. As of September 2026, Amazon has issued more than $845 million in redress payments to consumers. This week, a federal court approved a joint motion filed by the FTC and Amazon, approving measures to accelerate and expand future redress payments to consumers. Under the revised order , more consumers will now qualify for refunds from Amazon, the maximum payment cap has been raised from $51 to $200 total, and all future payments will be distributed automatically, eliminating the need for consumers to submit claims or additional paperwork to Amazon. “The revised order will ensure more consumers who were harmed by Amazon’s deceptive enrollment and cancellation practices benefit from the FTC’s historic settlement,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “This action underscores the FTC’s commitment to ensuring companies return money to consumers harmed b",
       "key_findings": [],
       "localizable": false,
       "score": 62,
       "score_components": {
         "priority": 5,
-        "novelty": 1,
+        "novelty": 3,
         "timeliness": 5,
         "source_quality": 3,
-        "coverage_gap": 5,
+        "coverage_gap": 2,
         "localization": 1,
         "demand": 3,
         "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
+        "b2b_relevance": 1,
+        "visualization": 3
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "For readers: How the scam works and what protects you or a parent from it.",
+        "For the trade: Liability, resident protection duties and reputational exposure.",
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
       ],
       "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "FDA Regulation and the Dynamic Nature of AI",
-      "url": "https://www.kff.org/other-health/fda-regulation-and-the-dynamic-nature-of-ai/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-15T09:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Dr. Brian Miller has seen medical technology regulation from every side — as a hospitalist, a former FDA official, and now an associate professor at Johns Hopkins University, where he leads a research group on market-driven approaches to FDA regulation and Medicare payment policy. In this episode, Chip talks with Miller about what happens when the FDA applies its 1976 medical device framework to AI — a technology that learns and changes.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 62,
-      "score_components": {
-        "priority": 5,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -2758,7 +2695,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-05T15:12:41.142853+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -2892,53 +2829,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-issue-briefs",
-      "title": "State Fiscal Conditions: Context on Medicaid Budgets for FY 2027",
-      "url": "https://www.kff.org/medicaid/state-fiscal-conditions-context-on-medicaid-budgets-for-fy-2027/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Sep 18, 2026 Issue Brief This brief describes current fiscal conditions using the latest state revenue and spending data from the National Association of State Budget Officers (NASBO) and analyzes how these conditions may impact states’ Medicaid budget decisions going forward.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 62,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.kff.org/content-type/issue-brief/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true
       }
     },
     {
@@ -2988,7 +2880,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -3123,7 +3015,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3258,7 +3150,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3392,51 +3284,139 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
     {
-      "source_id": "rand-research",
-      "title": "Examining the Evolution of Veteran Labor Market Outcomes",
-      "url": "https://www.rand.org/pubs/research_reports/RRA4405-2.html",
+      "source_id": "justice-in-aging",
+      "title": "Letter From 111 Organizations on Proposed Rules Implementing HR 1 Medicare Immigrant Eligibility Changes",
+      "url": "https://justiceinaging.org/letter-from-111-organizations-on-proposed-hr-1-medicare-immigrant-eligibility-changes/",
       "source_type": "institutional_rss",
-      "published_at": "2026-09-15T08:00:00+00:00",
+      "published_at": "2026-09-15T13:54:30+00:00",
       "topics": [
-        "workforce"
+        "medicare_medicaid"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "In this report, the authors examine how military service connects to earnings in the civilian labor market by tracking veterans’ and non-veterans’ labor market outcomes eight years after entering the civilian workforce.",
+      "summary": "The post Letter From 111 Organizations on Proposed Rules Implementing HR 1 Medicare Immigrant Eligibility Changes appeared first on Justice in Aging .",
       "key_findings": [],
       "localizable": false,
       "score": 60,
       "score_components": {
         "priority": 5,
         "novelty": 1,
-        "timeliness": 5,
+        "timeliness": 4,
         "source_quality": 3,
         "coverage_gap": 5,
         "localization": 1,
         "demand": 3,
-        "consumer_utility": 1,
+        "consumer_utility": 3,
         "b2b_relevance": 3,
         "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: Whether you will be able to find and afford help at home.",
-        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance.",
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "Justice in Aging Comments on the CY 2027 Medicare Physician Fee Schedule Proposed Rule",
+      "url": "https://justiceinaging.org/justice-in-aging-comments-on-the-cy-2027-medicare-physician-fee-schedule-proposed-rule/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-15T13:53:34+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Justice in Aging Comments on the CY 2027 Medicare Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 60,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "runs_seen": 5,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "FDA Regulation and the Dynamic Nature of AI",
+      "url": "https://www.kff.org/other-health/fda-regulation-and-the-dynamic-nature-of-ai/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-15T09:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Dr. Brian Miller has seen medical technology regulation from every side — as a hospitalist, a former FDA official, and now an associate professor at Johns Hopkins University, where he leads a research group on market-driven approaches to FDA regulation and Medicare payment policy. In this episode, Chip talks with Miller about what happens when the FDA applies its 1976 medical device framework to AI — a technology that learns and changes.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 60,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-15T16:54:50.631249+00:00",
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -3570,52 +3550,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-issue-briefs",
-      "title": "A Closer Look at the $50 Billion Rural Health Transformation Program",
-      "url": "https://www.kff.org/medicaid/a-closer-look-at-the-50-billion-rural-health-transformation-program/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Sep 18, 2026 Issue Brief The 2025 budget reconciliation created the Rural Health Transformation Program, which will award $50 billion in state grants over a five-year period. This brief provides an overview of the program, describing its structure, how funds can be used, how funding compares to Medicaid spending reductions in the reconciliation law, and how the funds are being distributed across a",
-      "key_findings": [],
-      "localizable": false,
-      "score": 60,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "First appearance in this pipeline — no prior run surfaced it."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.kff.org/content-type/issue-brief/",
-        "coverage_state": "light",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true
       }
     },
     {
@@ -3665,7 +3601,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -3799,26 +3735,24 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
     {
-      "source_id": "federal-register",
-      "title": "Solicitation for Nominations To Serve on the Family Caregiving Advisory Council",
-      "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18727/solicitation-for-nominations-to-serve-on-the-family-caregiving-advisory-council",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-09-14T00:00:00+00:00",
+      "source_id": "rand-research",
+      "title": "Examining the Evolution of Veteran Labor Market Outcomes",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4405-2.html",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-15T08:00:00+00:00",
       "topics": [
-        "caregiving"
+        "workforce"
       ],
-      "geographies": [
-        "United States"
-      ],
+      "geographies": [],
       "population": null,
-      "methodology": "Federal Register API; Notice from Health and Human Services Department, Community Living Administration",
-      "evidence_grade": "A",
-      "summary": "The Administration for Community Living (ACL) seeks nominations for individuals to serve on the Family Caregiving Advisory Council.",
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "In this report, the authors examine how military service connects to earnings in the civilian labor market by tracking veterans’ and non-veterans’ labor market outcomes eight years after entering the civilian workforce.",
       "key_findings": [],
       "localizable": false,
       "score": 58,
@@ -3826,171 +3760,27 @@
         "priority": 5,
         "novelty": 1,
         "timeliness": 4,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 2,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
-      "story_angles": [
-        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
-        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-18727",
-        "document_type": "Notice",
-        "agencies": [
-          "Health and Human Services Department",
-          "Community Living Administration"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-09-12T15:29:37.109616+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
-      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-09-04T00:00:00+00:00",
-      "topics": [
-        "financial_security",
-        "housing"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
-      "evidence_grade": "A",
-      "summary": "The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 58,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-18163",
-        "document_type": "Notice",
-        "agencies": [
-          "Housing and Urban Development Department"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "national-alliance-caregiving",
-      "title": "NAC and the Caregiver Nation Coalition Respond to the CY 2027 Medicare Physician Fee Schedule Proposed Rule",
-      "url": "https://www.caregiving.org/nac-and-the-caregiver-nation-coalition-respond-to-the-cy-2027-medicare-physician-fee-schedule-proposed-rule/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "caregiving",
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 58,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 4,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
-        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.caregiving.org/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "rand-research",
-      "title": "A Design Lab Pilot to Inform Strategies for Expanding Access to Medications for Opioid Use Disorder in Community Mental Health Centers",
-      "url": "https://www.rand.org/pubs/research_reports/RRA5198-1.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-18T08:30:00+00:00",
-      "topics": [
-        "depression_mental_health"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "A pilot Design Lab identified barriers and strategies to improving access to medications for opioid use disorder in community mental health settings. Expanding insurer reimbursement via a learning exchange was seen as most impactful and feasible.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 57,
-      "score_components": {
-        "priority": 2,
-        "novelty": 5,
-        "timeliness": 5,
         "source_quality": 3,
         "coverage_gap": 5,
         "localization": 1,
-        "demand": 1,
+        "demand": 3,
         "consumer_utility": 1,
-        "b2b_relevance": 1,
+        "b2b_relevance": 3,
         "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "First appearance in this pipeline — no prior run surfaced it.",
+        "For readers: Whether you will be able to find and afford help at home.",
+        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "first_seen": "2026-09-15T16:54:50.631249+00:00",
+        "runs_seen": 5,
+        "is_new": false
       }
     },
     {
@@ -4033,7 +3823,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -4077,7 +3867,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-09T16:38:13.943757+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
         "is_new": false
       }
     },
@@ -4121,7 +3911,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -4172,6 +3962,57 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 16,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Housing Trust Fund: Fiscal Year 2026 Allocation Notice",
+      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18163/housing-trust-fund-fiscal-year-2026-allocation-notice",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-09-04T00:00:00+00:00",
+      "topics": [
+        "financial_security",
+        "housing"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
+      "evidence_grade": "A",
+      "summary": "The Housing and Economic Recovery Act of 2008 (HERA) established the Housing Trust Fund (HTF) to be administered by HUD. Pursuant to the Federal Housing Enterprises Financial Security and Soundness Act of 1992 (the Act), as amended by HERA, eligible HTF grantees are the 50 states, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, Guam, the Commonwealth of Northern Mariana Islands, and the United States Virgin Islands. This notice announces the formula allocation amount for each eligible HTF grantee.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 56,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 4,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-18163",
+        "document_type": "Notice",
+        "agencies": [
+          "Housing and Urban Development Department"
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-09-04T23:58:32.793543+00:00",
         "runs_seen": 15,
         "is_new": false
       }
@@ -4305,7 +4146,102 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-issue-briefs",
+      "title": "State Fiscal Conditions: Context on Medicaid Budgets for FY 2027",
+      "url": "https://www.kff.org/medicaid/state-fiscal-conditions-context-on-medicaid-budgets-for-fy-2027/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Sep 18, 2026 Issue Brief This brief describes current fiscal conditions using the latest state revenue and spending data from the National Association of State Budget Officers (NASBO) and analyzes how these conditions may impact states’ Medicaid budget decisions going forward.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 56,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.kff.org/content-type/issue-brief/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Solicitation for Nominations To Serve on the Family Caregiving Advisory Council",
+      "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18727/solicitation-for-nominations-to-serve-on-the-family-caregiving-advisory-council",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-09-14T00:00:00+00:00",
+      "topics": [
+        "caregiving"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Health and Human Services Department, Community Living Administration",
+      "evidence_grade": "A",
+      "summary": "The Administration for Community Living (ACL) seeks nominations for individuals to serve on the Family Caregiving Advisory Council.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 55,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 1,
+      "story_angles": [
+        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
+        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-18727",
+        "document_type": "Notice",
+        "agencies": [
+          "Health and Human Services Department",
+          "Community Living Administration"
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-09-12T15:29:37.109616+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -4349,51 +4285,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "justice-in-aging",
-      "title": "Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule",
-      "url": "https://justiceinaging.org/template-comments-medicare-eligibility-immigrants-physician-fee-schedule/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-08-31T18:16:11+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Justice in Aging’s template comments address Medicare eligibility for immigrants and proposed Physician Fee Schedule changes affecting access to health care. The post Template Comments & Instructions: Changes to Medicare Eligibility for Immigrants in the Physician Fee Schedule Proposed Rule appeared first on Justice in Aging .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 55,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -4437,57 +4329,50 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
     {
-      "source_id": "federal-register",
-      "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
-      "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17746/rescission-of-social-security-acquiescence-ruling-90-22",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-08-31T00:00:00+00:00",
+      "source_id": "kff-issue-briefs",
+      "title": "A Closer Look at the $50 Billion Rural Health Transformation Program",
+      "url": "https://www.kff.org/medicaid/a-closer-look-at-the-50-billion-rural-health-transformation-program/",
+      "source_type": "web_release",
+      "published_at": null,
       "topics": [
-        "financial_security"
+        "medicare_medicaid"
       ],
-      "geographies": [
-        "United States"
-      ],
+      "geographies": [],
       "population": null,
-      "methodology": "Federal Register API; Notice from Social Security Administration",
-      "evidence_grade": "A",
-      "summary": "The Commissioner of Social Security gives notice of the rescission of AR 90-2(2): Ruppert v. Bowen, 871 F.2d 1172 (2d Cir. 1989)--Evaluation of a Rental Subsidy as In-Kind Income for Supplemental Security Income (SSI) Benefit Calculation Purposes--Title XVI of the Social Security Act (Act).",
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Sep 18, 2026 Issue Brief The 2025 budget reconciliation created the Rural Health Transformation Program, which will award $50 billion in state grants over a five-year period. This brief provides an overview of the program, describing its structure, how funds can be used, how funding compares to Medicaid spending reductions in the reconciliation law, and how the funds are being distributed across a",
       "key_findings": [],
       "localizable": false,
-      "score": 53,
+      "score": 54,
       "score_components": {
         "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 5,
+        "novelty": 3,
+        "timeliness": 0,
+        "source_quality": 2,
         "coverage_gap": 3,
         "localization": 1,
         "demand": 3,
         "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 1
+        "b2b_relevance": 3,
+        "visualization": 3
       },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 2,
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers."
       ],
       "raw_metadata": {
-        "document_number": "2026-17746",
-        "document_type": "Notice",
-        "agencies": [
-          "Social Security Administration"
-        ],
+        "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "light",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -4531,135 +4416,95 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
     {
-      "source_id": "ebri",
-      "title": "2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs",
-      "url": "https://www.ebri.org/media/press-releases/content/2026-retirement-confidence-survey-finds-americans-less-confident-about-retirement-as-worries-grow-over-social-security--medicare-and-rising-costs",
+      "source_id": "national-alliance-caregiving",
+      "title": "NAC and the Caregiver Nation Coalition Respond to the CY 2027 Medicare Physician Fee Schedule Proposed Rule",
+      "url": "https://www.caregiving.org/nac-and-the-caregiver-nation-coalition-respond-to-the-cy-2027-medicare-physician-fee-schedule-proposed-rule/",
       "source_type": "web_release",
-      "published_at": "2026-04-21T00:00:00+00:00",
+      "published_at": null,
       "topics": [
-        "financial_security",
+        "caregiving",
         "medicare_medicaid"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "EBRI Press Release April 21, 2026 2 pages Summary Full Content",
+      "summary": null,
       "key_findings": [],
       "localizable": false,
       "score": 52,
       "score_components": {
         "priority": 5,
-        "novelty": 0,
-        "timeliness": 2,
+        "novelty": 1,
+        "timeliness": 0,
         "source_quality": 2,
         "coverage_gap": 5,
         "localization": 1,
         "demand": 3,
         "consumer_utility": 4,
-        "b2b_relevance": 3,
+        "b2b_relevance": 4,
         "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: What it means for your retirement income and what to do before it bites.",
-        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
+        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
+        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "listing_page": "https://www.ebri.org/media",
+        "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 4,
         "is_new": false
       }
     },
     {
-      "source_id": "ftc-consumer-protection",
-      "title": "FleetCor Agrees to Pay $100 Million to Resolve Administrative Action After Federal Court Finds that It Violated the FTC Act by Charging Unauthorized Fees",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/fleetcor-agrees-pay-100-million-resolve-administrative-action-after-federal-court-finds-it-violated",
+      "source_id": "rand-research",
+      "title": "A Design Lab Pilot to Inform Strategies for Expanding Access to Medications for Opioid Use Disorder in Community Mental Health Centers",
+      "url": "https://www.rand.org/pubs/research_reports/RRA5198-1.html",
       "source_type": "institutional_rss",
-      "published_at": "2026-09-17T12:00:00+00:00",
-      "topics": [],
+      "published_at": "2026-09-18T08:30:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "FleetCor and its CEO will pay $100 million to settle a Federal Trade Commission administrative action alleging that the company charged its customers, who overwhelmingly are small businesses, undisclosed fees in connection with their use of fuel cards that FleetCor falsely promised businesses would save them money. In a complaint first filed in federal court in 2019 , the FTC alleged that FleetCor Technologies Inc., now known as Corpay Inc., and its CEO Ronald Clarke imposed a broad array of unauthorized fees that its customers never knew about and did not agree to pay, totaling hundreds of millions of dollars and harming tens of thousands of customers. In addition, FleetCor charged late fees to customers who had either paid on time or were prevented by FleetCor from paying on time. FleetCor also misrepresented the gas savings, fraud-control features, and fees associated with its fuel cards. “FleetCor deceived its small business customers by promising fuel savings that never materialized, while unfairly charging them hidden and unauthorized fees,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “In addition to the relief the FTC has obtained in federal court, this order will help return money to the customers the company took advantage of.” According to the complaint, FleetCor often waited to begin charging many fees until several billing cycles passed, making the fees less noticeable to consumers. The complaint also alleged that FleetCor’s in",
+      "summary": "A pilot Design Lab identified barriers and strategies to improving access to medications for opioid use disorder in community mental health settings. Expanding insurer reimbursement via a learning exchange was seen as most impactful and feasible.",
       "key_findings": [],
       "localizable": false,
       "score": 51,
       "score_components": {
-        "priority": 0,
-        "novelty": 5,
+        "priority": 2,
+        "novelty": 3,
         "timeliness": 5,
         "source_quality": 3,
-        "coverage_gap": 2,
+        "coverage_gap": 5,
         "localization": 1,
-        "demand": 3,
+        "demand": 1,
         "consumer_utility": 1,
         "b2b_relevance": 1,
-        "visualization": 3
+        "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
+        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "coverage_state": "gap",
         "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC Takes Historic Action Against Multilevel Marketing Operator Amway  for Unfair and Deceptive Business Practices",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-takes-historic-action-against-multilevel-marketing-operator-amway-unfair-deceptive-business",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-17T12:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Amway Corp., one of the largest multilevel marketing companies in the U.S., and two of its affiliates—World Wide Group, L.L.C. (WWG) and Leadership Team Development Inc. (LTD)—will pay $225 million to resolve allegations from the Federal Trade Commission and the state of Washington that the companies use unfair and deceptive tactics to recruit members to its direct selling and multilevel marketing opportunity. The monetary relief to be paid by Amway and its affiliates under the proposed order marks the largest monetary recovery obtained in an FTC action against a multilevel marketing company, nearly all of which will be used as redress to consumers harmed by Amway and its affiliates’ allegedly deceptive tactics. Amway offers a moneymaking opportunity that it claims gives individuals, referred to as Independent Business Owners (IBOs), the chance to own and operate their own business selling a variety of consumer products, ranging from nutritional supplements to energy drinks to health and beauty products. In their complaint , the FTC and Washington allege that Amway and two of its affiliates, WWG and LTD, use a variety of deceptive and unfair tactics, including misrepresentations about likely earnings, to incentivize and pressure IBOs to buy Amway products they don’t want and that end up being difficult to sell. The complaint also alleges that Amway and its affiliates deceptively instruct IBOs to falsely report selling products that they, in fact, did not sell, to create the a",
-      "key_findings": [],
-      "localizable": false,
-      "score": 51,
-      "score_components": {
-        "priority": 0,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-18T16:24:55.126000+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
       }
     },
     {
@@ -4700,7 +4545,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-17T16:56:33.333862+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4742,7 +4587,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-17T16:56:33.333862+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4785,51 +4630,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-09T16:38:13.943757+00:00",
-        "runs_seen": 9,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-04T12:00:00+00:00",
-      "topics": [
-        "fraud_scams"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumers. Specifically, Nuvei processed more than $30 million in consumer payments for Reimage, an offshore tech support scam, from 2017 to 2023, according to the FTC’s complaint. “Today’s action underscores the Commission’s commitment to ensuring that our payments system operates free of fraud,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Our enforcement work reinforces the transparency and trust in the payments system that consumers and businesses depend on. Consumers deserve a payment system that is competitive, transparent and fortified against fraud—and we will take action anytime those standards are threatened.” The complaint also alleges that, through its merchant acquiring bank registered in Cyprus, Nuvei furnished Reimage and other overseas deceptive tech support schemes with payment processing accounts that enabled the schemes to take credit card ",
-      "key_findings": [],
-      "localizable": false,
-      "score": 51,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 1,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: How the scam works and what protects you or a parent from it.",
-        "For the trade: Liability, resident protection duties and reputational exposure.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-04T23:58:32.793543+00:00",
-        "runs_seen": 14,
+        "runs_seen": 10,
         "is_new": false
       }
     },
@@ -4873,7 +4674,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -4917,7 +4718,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -4961,7 +4762,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5017,7 +4818,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5073,7 +4874,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5129,7 +4930,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5185,7 +4986,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5241,7 +5042,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5297,7 +5098,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5342,7 +5143,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5386,7 +5187,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -5430,7 +5231,101 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "runs_seen": 5,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "ftc-consumer-protection",
+      "title": "Payment Processor Nuvei Must Implement Robust Merchant Screening Practices and Pay $4.85 Million to Settle FTC Charges that the Firm Facilitated Merchant Fraud",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/payment-processor-nuvei-must-implement-robust-merchant-screening-practices-pay-485-million-settle",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-04T12:00:00+00:00",
+      "topics": [
+        "fraud_scams"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Global payment processor Nuvei will pay $4.85 million to settle the Federal Trade Commission’s charges that the firm opened and maintained payment processing accounts for merchants that it knew or should have known were engaged in deception, including tech support scams that took millions of dollars from consumers. In its complaint, the FTC alleges that Canada-based Nuvei Corporation and its subsidiaries, Nuvei International Group Limited, Nuvei Limited, SafeCharge Digital Limited and Nuvei Technologies Inc., processed payments for scammers, including tech support scams targeting U.S. consumers. Specifically, Nuvei processed more than $30 million in consumer payments for Reimage, an offshore tech support scam, from 2017 to 2023, according to the FTC’s complaint. “Today’s action underscores the Commission’s commitment to ensuring that our payments system operates free of fraud,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Our enforcement work reinforces the transparency and trust in the payments system that consumers and businesses depend on. Consumers deserve a payment system that is competitive, transparent and fortified against fraud—and we will take action anytime those standards are threatened.” The complaint also alleges that, through its merchant acquiring bank registered in Cyprus, Nuvei furnished Reimage and other overseas deceptive tech support schemes with payment processing accounts that enabled the schemes to take credit card ",
+      "key_findings": [],
+      "localizable": false,
+      "score": 48,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: How the scam works and what protects you or a parent from it.",
+        "For the trade: Liability, resident protection duties and reputational exposure.",
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-04T23:58:32.793543+00:00",
+        "runs_seen": 15,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Rescission of Social Security Acquiescence Ruling 90-2(2)",
+      "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17746/rescission-of-social-security-acquiescence-ruling-90-22",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-08-31T00:00:00+00:00",
+      "topics": [
+        "financial_security"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Social Security Administration",
+      "evidence_grade": "A",
+      "summary": "The Commissioner of Social Security gives notice of the rescission of AR 90-2(2): Ruppert v. Bowen, 871 F.2d 1172 (2d Cir. 1989)--Evaluation of a Rental Subsidy as In-Kind Income for Supplemental Security Income (SSI) Benefit Calculation Purposes--Title XVI of the Social Security Act (Act).",
+      "key_findings": [],
+      "localizable": false,
+      "score": 48,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 3,
+        "source_quality": 5,
+        "coverage_gap": 1,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 3,
+      "story_angles": [
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-17746",
+        "document_type": "Notice",
+        "agencies": [
+          "Social Security Administration"
+        ],
+        "coverage_state": "saturated",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5474,54 +5369,51 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
     {
-      "source_id": "federal-register",
-      "title": "Revised Medical Criteria for Evaluating Cardiovascular Disorders",
-      "url": "https://www.federalregister.gov/documents/2026/09/16/C1-2026-13420/revised-medical-criteria-for-evaluating-cardiovascular-disorders",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-09-16T00:00:00+00:00",
-      "topics": [],
-      "geographies": [
-        "United States"
+      "source_id": "ebri",
+      "title": "2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs",
+      "url": "https://www.ebri.org/media/press-releases/content/2026-retirement-confidence-survey-finds-americans-less-confident-about-retirement-as-worries-grow-over-social-security--medicare-and-rising-costs",
+      "source_type": "web_release",
+      "published_at": "2026-04-21T00:00:00+00:00",
+      "topics": [
+        "financial_security",
+        "medicare_medicaid"
       ],
+      "geographies": [],
       "population": null,
-      "methodology": "Federal Register API; Rule from Social Security Administration",
-      "evidence_grade": "A",
-      "summary": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "EBRI Press Release April 21, 2026 2 pages Summary Full Content",
       "key_findings": [],
       "localizable": false,
-      "score": 46,
+      "score": 47,
       "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 2,
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 2,
+        "source_quality": 2,
+        "coverage_gap": 3,
         "localization": 1,
         "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
+        "consumer_utility": 4,
+        "b2b_relevance": 3,
         "visualization": 1
       },
       "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
+      "b2c_coverage_count": 1,
       "story_angles": [
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+        "For readers: What it means for your retirement income and what to do before it bites.",
+        "For the trade: Resident affordability and what it does to rate increases and length of stay."
       ],
       "raw_metadata": {
-        "document_number": "C1-2026-13420",
-        "document_type": "Rule",
-        "agencies": [
-          "Social Security Administration"
-        ],
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
+        "listing_page": "https://www.ebri.org/media",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5565,7 +5457,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5609,7 +5501,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5653,7 +5545,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5697,7 +5589,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5741,7 +5633,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5785,7 +5677,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5829,7 +5721,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -5873,50 +5765,87 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
     {
-      "source_id": "kff-feed",
-      "title": "Health Care Access and Affordability for Adults with Multiple or Complex Health Conditions: A Snapshot of Patient Experiences",
-      "url": "https://www.kff.org/public-opinion/health-care-access-and-affordability-for-adults-with-multiple-or-complex-health-conditions-a-snapshot-of-patient-experiences/",
+      "source_id": "ftc-consumer-protection",
+      "title": "FleetCor Agrees to Pay $100 Million to Resolve Administrative Action After Federal Court Finds that It Violated the FTC Act by Charging Unauthorized Fees",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/fleetcor-agrees-pay-100-million-resolve-administrative-action-after-federal-court-finds-it-violated",
       "source_type": "institutional_rss",
-      "published_at": "2026-09-15T12:30:00+00:00",
-      "topics": [
-        "cardiovascular_disease",
-        "depression_mental_health"
-      ],
+      "published_at": "2026-09-17T12:00:00+00:00",
+      "topics": [],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "Significant shares of adults with multiple or complex health conditions, including cancer, lung disease, diabetes, cardiovascular disease, and mental health conditions say they struggle to pay their medical bills and access needed care and medication. These challenges fall hardest on uninsured adults who face greater costs and access challenges.",
+      "summary": "FleetCor and its CEO will pay $100 million to settle a Federal Trade Commission administrative action alleging that the company charged its customers, who overwhelmingly are small businesses, undisclosed fees in connection with their use of fuel cards that FleetCor falsely promised businesses would save them money. In a complaint first filed in federal court in 2019 , the FTC alleged that FleetCor Technologies Inc., now known as Corpay Inc., and its CEO Ronald Clarke imposed a broad array of unauthorized fees that its customers never knew about and did not agree to pay, totaling hundreds of millions of dollars and harming tens of thousands of customers. In addition, FleetCor charged late fees to customers who had either paid on time or were prevented by FleetCor from paying on time. FleetCor also misrepresented the gas savings, fraud-control features, and fees associated with its fuel cards. “FleetCor deceived its small business customers by promising fuel savings that never materialized, while unfairly charging them hidden and unauthorized fees,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “In addition to the relief the FTC has obtained in federal court, this order will help return money to the customers the company took advantage of.” According to the complaint, FleetCor often waited to begin charging many fees until several billing cycles passed, making the fees less noticeable to consumers. The complaint also alleged that FleetCor’s in",
       "key_findings": [],
       "localizable": false,
       "score": 44,
       "score_components": {
-        "priority": 2,
-        "novelty": 1,
+        "priority": 0,
+        "novelty": 3,
         "timeliness": 5,
         "source_quality": 3,
-        "coverage_gap": 5,
+        "coverage_gap": 2,
         "localization": 1,
-        "demand": 1,
+        "demand": 3,
         "consumer_utility": 1,
         "b2b_relevance": 1,
-        "visualization": 1
+        "visualization": 3
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC Takes Historic Action Against Multilevel Marketing Operator Amway  for Unfair and Deceptive Business Practices",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-takes-historic-action-against-multilevel-marketing-operator-amway-unfair-deceptive-business",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-17T12:00:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Amway Corp., one of the largest multilevel marketing companies in the U.S., and two of its affiliates—World Wide Group, L.L.C. (WWG) and Leadership Team Development Inc. (LTD)—will pay $225 million to resolve allegations from the Federal Trade Commission and the state of Washington that the companies use unfair and deceptive tactics to recruit members to its direct selling and multilevel marketing opportunity. The monetary relief to be paid by Amway and its affiliates under the proposed order marks the largest monetary recovery obtained in an FTC action against a multilevel marketing company, nearly all of which will be used as redress to consumers harmed by Amway and its affiliates’ allegedly deceptive tactics. Amway offers a moneymaking opportunity that it claims gives individuals, referred to as Independent Business Owners (IBOs), the chance to own and operate their own business selling a variety of consumer products, ranging from nutritional supplements to energy drinks to health and beauty products. In their complaint , the FTC and Washington allege that Amway and two of its affiliates, WWG and LTD, use a variety of deceptive and unfair tactics, including misrepresentations about likely earnings, to incentivize and pressure IBOs to buy Amway products they don’t want and that end up being difficult to sell. The complaint also alleges that Amway and its affiliates deceptively instruct IBOs to falsely report selling products that they, in fact, did not sell, to create the a",
+      "key_findings": [],
+      "localizable": false,
+      "score": 44,
+      "score_components": {
+        "priority": 0,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-18T16:24:55.126000+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -5960,7 +5889,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6002,153 +5931,36 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Sepsis Awareness Month: Staying Informed, Staying Safe",
-      "url": "https://www.agingresearch.org/blog/sepsis-awareness-month-staying-informed-staying-safe/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-16T16:38:55+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Sepsis Awareness Month: Staying Informed, Staying Safe appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
+        "runs_seen": 9,
         "is_new": false
       }
     },
     {
       "source_id": "kff-feed",
-      "title": "Women’s Experiences Accessing Health Information Online: Trusted Sources and Contraceptive Information",
-      "url": "https://www.kff.org/womens-health-policy/womens-experiences-accessing-health-information-online-trusted-sources-and-contraceptive-information/",
+      "title": "Health Care Access and Affordability for Adults with Multiple or Complex Health Conditions: A Snapshot of Patient Experiences",
+      "url": "https://www.kff.org/public-opinion/health-care-access-and-affordability-for-adults-with-multiple-or-complex-health-conditions-a-snapshot-of-patient-experiences/",
       "source_type": "institutional_rss",
-      "published_at": "2026-09-16T12:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "This brief presents findings from KFF's 2026 Women's Health Survey and offers an early look at how the information that women encounter online through social media translates into real-world decision about their contraceptive care. It also looks at exposure to false or misleading claims women encounter about contraception.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "rand-research",
-      "title": "Legal and Clinical Liability of Comanaging Pediatric Mental Health With Unregulated AI Chatbots",
-      "url": "https://www.rand.org/pubs/external_publications/EP71412.html",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-16T09:15:00+00:00",
+      "published_at": "2026-09-15T12:30:00+00:00",
       "topics": [
+        "cardiovascular_disease",
         "depression_mental_health"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "We conclude that parents and clinicians should proactively discuss chatbot use to promote safety, appropriate expectations, and linkages to evidence-based care.",
+      "summary": "Significant shares of adults with multiple or complex health conditions, including cancer, lung disease, diabetes, cardiovascular disease, and mental health conditions say they struggle to pay their medical bills and access needed care and medication. These challenges fall hardest on uninsured adults who face greater costs and access challenges.",
       "key_findings": [],
       "localizable": false,
       "score": 42,
       "score_components": {
         "priority": 2,
-        "novelty": 3,
-        "timeliness": 5,
+        "novelty": 1,
+        "timeliness": 4,
         "source_quality": 3,
-        "coverage_gap": 1,
+        "coverage_gap": 5,
         "localization": 1,
         "demand": 1,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 2,
-      "story_angles": [],
-      "raw_metadata": {
-        "feed_url": "https://www.rand.org/pubs/new.xml",
-        "coverage_state": "saturated",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "ftc-consumer-protection",
-      "title": "FTC Publishes Price Transparency FAQs for Auto Dealers",
-      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-publishes-price-transparency-faqs-auto-dealers",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-15T12:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Staff of the Federal Trade Commission today published frequently asked questions on price transparency to help the automobile industry comply with the FTC Act. The guidance reiterates that the advertised price of a vehicle must be the actual price that any consumer can walk in and pay to purchase the vehicle, excluding only charges that the government requires the consumer to pay. “The FTC Act requires truthful and accurate pricing, which brings significant benefits for consumers and competition,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Price transparency is a priority for the Trump-Vance FTC, and today’s guidance is intended to help dealers and others in the auto industry better understand how the law applies to their advertising.” The FAQs provide guidance on such topics as: Why price transparency is an enforcement priority for the FTC What an advertised price should include How to handle document fees, rebates and discounts How to account for price negotiations and optional items How to communicate price transparently across different media How to advertise accurately when vehicles are in transit How to assist the FTC’s enforcement efforts Earlier this year, the Commission sent letters to 97 auto groups nationwide encouraging dealers to review their advertising practices and warning them that the prices they advertise must be the actual price—including all mandatory fees—that consumers will be required to pay. In addition, the FTC ",
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
         "consumer_utility": 1,
         "b2b_relevance": 1,
         "visualization": 1
@@ -6156,13 +5968,13 @@
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 3,
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-15T16:54:50.631249+00:00",
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -6205,7 +6017,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6249,7 +6061,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6293,24 +6105,24 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "runs_seen": 5,
         "is_new": false
       }
     },
     {
       "source_id": "federal-register",
-      "title": "Petition for Rulemaking of Robert Michael Vanleeuwen",
-      "url": "https://www.federalregister.gov/documents/2026/09/15/2026-18854/petition-for-rulemaking-of-robert-michael-vanleeuwen",
+      "title": "Revised Medical Criteria for Evaluating Cardiovascular Disorders",
+      "url": "https://www.federalregister.gov/documents/2026/09/16/C1-2026-13420/revised-medical-criteria-for-evaluating-cardiovascular-disorders",
       "source_type": "regulatory_filing",
-      "published_at": "2026-09-15T00:00:00+00:00",
+      "published_at": "2026-09-16T00:00:00+00:00",
       "topics": [],
       "geographies": [
         "United States"
       ],
       "population": null,
-      "methodology": "Federal Register API; Proposed Rule from Federal Trade Commission",
+      "methodology": "Federal Register API; Rule from Social Security Administration",
       "evidence_grade": "A",
-      "summary": "Please take notice that the Federal Trade Commission (\"Commission\") received a petition for rulemaking from Robert Michael Vanleeuwen and has published that petition online at https:// www.regulations.gov. The Commission invites written comments concerning the petition. Publication of this petition is pursuant to the Commission's Rules of Practice and Procedure and does not affect the legal status of the petition or its final disposition.",
+      "summary": null,
       "key_findings": [],
       "localizable": false,
       "score": 40,
@@ -6333,13 +6145,13 @@
         "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
       ],
       "raw_metadata": {
-        "document_number": "2026-18854",
-        "document_type": "Proposed Rule",
+        "document_number": "C1-2026-13420",
+        "document_type": "Rule",
         "agencies": [
-          "Federal Trade Commission"
+          "Social Security Administration"
         ],
         "coverage_state": "unmonitored",
-        "first_seen": "2026-09-15T16:54:50.631249+00:00",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
         "runs_seen": 4,
         "is_new": false
       }
@@ -6383,7 +6195,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6426,7 +6238,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6469,47 +6281,54 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
     {
-      "source_id": "kff-feed",
-      "title": "Survey: Adults With Multiple or Complex Health Conditions Face Significant Challenges with Health Costs and Commonly Struggle to Access Care",
-      "url": "https://www.kff.org/public-opinion/survey-adults-with-multiple-or-complex-health-conditions-face-significant-challenges-with-health-costs-and-commonly-struggle-to-access-care/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-09-15T12:30:00+00:00",
+      "source_id": "federal-register",
+      "title": "Petition for Rulemaking of Robert Michael Vanleeuwen",
+      "url": "https://www.federalregister.gov/documents/2026/09/15/2026-18854/petition-for-rulemaking-of-robert-michael-vanleeuwen",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-09-15T00:00:00+00:00",
       "topics": [],
-      "geographies": [],
+      "geographies": [
+        "United States"
+      ],
       "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Adults with multiple or complex health conditions, who already face unique physical and mental challenges, commonly struggle to pay their medical bills and access needed care and medication—challenges that fall hardest on uninsured adults, according to a KFF survey of more than 25 thousand adults. “If the first obligation of a health care system is to take care of the sick, we are failing that test. Cost and access problems are hitting the chronically ill hard, and the chronically ill and uninsured especially hard,” said Dr. Drew Altman about the survey’s findings.",
+      "methodology": "Federal Register API; Proposed Rule from Federal Trade Commission",
+      "evidence_grade": "A",
+      "summary": "Please take notice that the Federal Trade Commission (\"Commission\") received a petition for rulemaking from Robert Michael Vanleeuwen and has published that petition online at https:// www.regulations.gov. The Commission invites written comments concerning the petition. Publication of this petition is pursuant to the Commission's Rules of Practice and Procedure and does not affect the legal status of the petition or its final disposition.",
       "key_findings": [],
       "localizable": false,
       "score": 38,
       "score_components": {
         "priority": 0,
         "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
+        "timeliness": 4,
+        "source_quality": 5,
         "coverage_gap": 2,
         "localization": 1,
         "demand": 3,
         "consumer_utility": 1,
         "b2b_relevance": 1,
-        "visualization": 3
+        "visualization": 1
       },
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
+        "Build an original ranking, map or trend analysis from the underlying public data.",
         "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
+        "document_number": "2026-18854",
+        "document_type": "Proposed Rule",
+        "agencies": [
+          "Federal Trade Commission"
+        ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -6551,7 +6370,167 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "Sepsis Awareness Month: Staying Informed, Staying Safe",
+      "url": "https://www.agingresearch.org/blog/sepsis-awareness-month-staying-informed-staying-safe/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-16T16:38:55+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post Sepsis Awareness Month: Staying Informed, Staying Safe appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 36,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "Women’s Experiences Accessing Health Information Online: Trusted Sources and Contraceptive Information",
+      "url": "https://www.kff.org/womens-health-policy/womens-experiences-accessing-health-information-online-trusted-sources-and-contraceptive-information/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-16T12:00:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This brief presents findings from KFF's 2026 Women's Health Survey and offers an early look at how the information that women encounter online through social media translates into real-world decision about their contraceptive care. It also looks at exposure to false or misleading claims women encounter about contraception.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 36,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "rand-research",
+      "title": "Legal and Clinical Liability of Comanaging Pediatric Mental Health With Unregulated AI Chatbots",
+      "url": "https://www.rand.org/pubs/external_publications/EP71412.html",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-16T09:15:00+00:00",
+      "topics": [
+        "depression_mental_health"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "We conclude that parents and clinicians should proactively discuss chatbot use to promote safety, appropriate expectations, and linkages to evidence-based care.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 36,
+      "score_components": {
+        "priority": 2,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 1,
+        "localization": 1,
+        "demand": 1,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 2,
+      "story_angles": [],
+      "raw_metadata": {
+        "feed_url": "https://www.rand.org/pubs/new.xml",
+        "coverage_state": "saturated",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "Survey: Adults With Multiple or Complex Health Conditions Face Significant Challenges with Health Costs and Commonly Struggle to Access Care",
+      "url": "https://www.kff.org/public-opinion/survey-adults-with-multiple-or-complex-health-conditions-face-significant-challenges-with-health-costs-and-commonly-struggle-to-access-care/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-15T12:30:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Adults with multiple or complex health conditions, who already face unique physical and mental challenges, commonly struggle to pay their medical bills and access needed care and medication—challenges that fall hardest on uninsured adults, according to a KFF survey of more than 25 thousand adults. “If the first obligation of a health care system is to take care of the sick, we are failing that test. Cost and access problems are hitting the chronically ill hard, and the chronically ill and uninsured especially hard,” said Dr. Drew Altman about the survey’s findings.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 36,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-15T16:54:50.631249+00:00",
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -6585,7 +6564,7 @@
         "visualization": 1
       },
       "b2b_coverage_count": 0,
-      "b2c_coverage_count": 5,
+      "b2c_coverage_count": 6,
       "story_angles": [
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay."
@@ -6594,7 +6573,47 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "ftc-consumer-protection",
+      "title": "FTC Publishes Price Transparency FAQs for Auto Dealers",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-publishes-price-transparency-faqs-auto-dealers",
+      "source_type": "institutional_rss",
+      "published_at": "2026-09-15T12:00:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Staff of the Federal Trade Commission today published frequently asked questions on price transparency to help the automobile industry comply with the FTC Act. The guidance reiterates that the advertised price of a vehicle must be the actual price that any consumer can walk in and pay to purchase the vehicle, excluding only charges that the government requires the consumer to pay. “The FTC Act requires truthful and accurate pricing, which brings significant benefits for consumers and competition,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection. “Price transparency is a priority for the Trump-Vance FTC, and today’s guidance is intended to help dealers and others in the auto industry better understand how the law applies to their advertising.” The FAQs provide guidance on such topics as: Why price transparency is an enforcement priority for the FTC What an advertised price should include How to handle document fees, rebates and discounts How to account for price negotiations and optional items How to communicate price transparently across different media How to advertise accurately when vehicles are in transit How to assist the FTC’s enforcement efforts Earlier this year, the Commission sent letters to 97 auto groups nationwide encouraging dealers to review their advertising practices and warning them that the prices they advertise must be the actual price—including all mandatory fees—that consumers will be required to pay. In addition, the FTC ",
+      "key_findings": [],
+      "localizable": false,
+      "score": 34,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 4,
         "is_new": false
       }
     },
@@ -6634,7 +6653,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-14T18:06:02.390634+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -6674,7 +6693,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6714,7 +6733,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6754,7 +6773,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -6794,7 +6813,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-08T16:37:17.161508+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -6841,7 +6860,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6888,7 +6907,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6932,7 +6951,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -6976,7 +6995,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7016,7 +7035,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-09T16:38:13.943757+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
         "is_new": false
       }
     },
@@ -7056,7 +7075,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7096,7 +7115,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -7136,7 +7155,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -7176,7 +7195,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-09T16:38:13.943757+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
         "is_new": false
       }
     },
@@ -7216,7 +7235,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-08T16:37:17.161508+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -7256,7 +7275,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7296,7 +7315,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7336,7 +7355,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7376,7 +7395,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7416,7 +7435,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7456,7 +7475,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7498,7 +7517,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7538,7 +7557,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7578,7 +7597,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7618,7 +7637,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7658,7 +7677,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7698,7 +7717,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7738,7 +7757,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7778,7 +7797,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7818,7 +7837,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7858,7 +7877,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7898,7 +7917,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7938,7 +7957,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -7978,7 +7997,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8018,7 +8037,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8058,7 +8077,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8098,7 +8117,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8138,7 +8157,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8178,7 +8197,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8218,7 +8237,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8260,7 +8279,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-15T16:54:50.631249+00:00",
-        "runs_seen": 4,
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -8300,7 +8319,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "light",
         "first_seen": "2026-09-14T18:06:02.390634+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -8340,7 +8359,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8380,7 +8399,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8420,7 +8439,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8460,7 +8479,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8500,7 +8519,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8540,7 +8559,7 @@
         "feed_url": "https://www.ftc.gov/feeds/press-release-consumer-protection.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8580,7 +8599,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8620,7 +8639,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8660,7 +8679,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8700,7 +8719,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8740,7 +8759,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8780,7 +8799,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8820,7 +8839,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8860,7 +8879,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8900,7 +8919,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8940,7 +8959,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -8980,7 +8999,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9020,7 +9039,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9060,7 +9079,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9100,7 +9119,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9140,7 +9159,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9180,7 +9199,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9220,7 +9239,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9260,7 +9279,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9300,7 +9319,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9340,7 +9359,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -9380,7 +9399,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 15,
+        "runs_seen": 16,
         "is_new": false
       }
     }
