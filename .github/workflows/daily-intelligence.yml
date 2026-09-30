@@ -17,8 +17,8 @@ name: Daily AgingWire intelligence
 # are named in synthesis.PITCH_NOTE and the README -- change all three together.
 on:
   schedule:
-    - cron: '15 12 * * 1,3,5'    # collect and pitch
-    - cron: '15 12 * * 0,2,4,6'  # collect only
+    - cron: '15 10 * * 1,3,5'    # collect and pitch
+    - cron: '15 10 * * 0,2,4,6'  # collect only
   workflow_dispatch:
     inputs:
       pitch:
@@ -63,7 +63,7 @@ jobs:
         run: python -m pytest -q
       - name: Run intelligence pipeline
         env:
-          COLLECT_ONLY: ${{ github.event.schedule == '15 12 * * 0,2,4,6' || (github.event_name == 'workflow_dispatch' && !inputs.pitch) }}
+          COLLECT_ONLY: ${{ github.event.schedule == '15 10 * * 0,2,4,6' || (github.event_name == 'workflow_dispatch' && !inputs.pitch) }}
         run: |
           if [ "$COLLECT_ONLY" = "true" ]; then
             python -m agingwire_intel --no-pitch

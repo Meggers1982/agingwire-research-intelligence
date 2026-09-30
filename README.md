@@ -10,7 +10,7 @@ This repository is **independent of** [`Meggers1982/senior-research-digest`](htt
 
 ## What is automated now
 
-The daily GitHub Actions workflow runs at 12:15 UTC, or by hand. It does not run on push: a push-triggered collection spent a paid run each time and consumed the `is_new` flag before the published run could see it. Collection is daily; the feature pitch is written Monday, Wednesday and Friday only (see [The pitch runs three days a week](#the-pitch-runs-three-days-a-week)). It:
+The daily GitHub Actions workflow runs at 10:15 UTC, or by hand. It does not run on push: a push-triggered collection spent a paid run each time and consumed the `is_new` flag before the published run could see it. Collection is daily; the feature pitch is written Monday, Wednesday and Friday only (see [The pitch runs three days a week](#the-pitch-runs-three-days-a-week)). It:
 
 1. Collects evidence from the Federal Register, BLS and CMS APIs, the Census ACS, institutional RSS feeds and first-party listing pages.
 2. Applies synonym-aware topic tagging across clinical and nonclinical aging topics.
