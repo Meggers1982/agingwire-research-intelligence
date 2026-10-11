@@ -1,180 +1,15 @@
 # AgingWire weekly research intelligence
 
-Week ending: 10/04/26
+Week ending: 10/11/26
 
-Daily runs in window: **8**  
-Distinct evidence candidates: **200**  
-First surfaced this week: **45**  
-Confirmed coverage gaps: **75**
+Daily runs in window: **9**  
+Distinct evidence candidates: **214**  
+First surfaced this week: **48**  
+Confirmed coverage gaps: **78**
 
 ## Top opportunities
 
-### 1. BLS: Home health care services employment, September 2026 — 1,894.20 thousands of jobs (+4.4% year over year)
-
-**Score:** 83/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, caregiving, aging_in_place  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562160001
-
-- For readers: Whether staying in your own home stays realistic, and what would have to change.
-- For the trade: How home-based demand reshapes the case for congregate settings.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 2. BLS: Continuing care retirement communities and assisted living employment, September 2026 — 1,022.10 thousands of jobs (+0.8% year over year)
-
-**Score:** 81/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, assisted_living, housing  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562330001
-
-- For readers: What a family touring communities should ask about, and what the numbers say.
-- For the trade: Operating margin, census and what the disclosure means competitively.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 3. BLS: Home health care services average hourly earnings, August 2026 — 28.14 dollars per hour (+2.4% year over year)
-
-**Score:** 80/100  
-**Source:** bls-api  
-**Published:** 08/01/26  
-**Topics:** workforce, caregiving  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562160003
-
-- For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.
-- For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 4. Section 184 Indian Housing Loan Guarantee Program Increase in the Loan Guarantee Fee
-
-**Score:** 79/100  
-**Source:** federal-register  
-**Published:** 09/28/26  
-**Topics:** housing  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/28/2026-19782/section-184-indian-housing-loan-guarantee-program-increase-in-the-loan-guarantee-fee
-
-- For readers: What it means for an older renter or owner weighing whether to stay put or move.
-- For the trade: Occupancy, development pipeline and pricing pressure for operators.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 5. Section 108 Loan Guarantee Program: Announcement of Fee To Cover Credit Subsidy Costs for FY 2027
-
-**Score:** 79/100  
-**Source:** federal-register  
-**Published:** 09/28/26  
-**Topics:** housing  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/28/2026-19743/section-108-loan-guarantee-program-announcement-of-fee-to-cover-credit-subsidy-costs-for-fy-2027
-
-- For readers: What it means for an older renter or owner weighing whether to stay put or move.
-- For the trade: Occupancy, development pipeline and pricing pressure for operators.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 6. BLS: Nursing care facilities employment, September 2026 — 1,587.40 thousands of jobs (+1.9% year over year)
-
-**Score:** 79/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, long_term_care, senior_living_quality  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562310001
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 7. BLS: Employment level, 65 years and over, September 2026 — 11,654 thousands of people (-0.7% year over year)
-
-**Score:** 79/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, financial_security  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/LNU02000097
-
-- For readers: What it means for your retirement income and what to do before it bites.
-- For the trade: Resident affordability and what it does to rate increases and length of stay.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 8. Veterans Support to Self-Reliance Pilot Program
-
-**Score:** 79/100  
-**Source:** rand-research  
-**Published:** 09/30/26  
-**Topics:** housing  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.rand.org/pubs/research_reports/RRA4660-1.html
-
-- For readers: What it means for an older renter or owner weighing whether to stay put or move.
-- For the trade: Occupancy, development pipeline and pricing pressure for operators.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 9. Medicare Program; FY 2027 Hospice Wage Index and Payment Rate Update and Hospice Quality Reporting Program Requirements; Correction
-
-**Score:** 79/100  
-**Source:** federal-register  
-**Published:** 09/30/26  
-**Topics:** medicare_medicaid, palliative_hospice  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/30/2026-20067/medicare-program-fy-2027-hospice-wage-index-and-payment-rate-update-and-hospice-quality-reporting
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 10. CMS refreshed dataset: Complications and Deaths - Hospital
-
-**Score:** 79/100  
-**Source:** cms-provider-data  
-**Published:** 09/10/26  
-**Topics:** long_term_care  
-**Coverage:** reference — B2B 0 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/ynj2-r877
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Localize the finding by state, metro or county and identify geographic outliers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
-
-### 11. CMS refreshed dataset: Unplanned Hospital Visits - Hospital
-
-**Score:** 79/100  
-**Source:** cms-provider-data  
-**Published:** 09/10/26  
-**Topics:** long_term_care  
-**Coverage:** reference — B2B 0 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/632h-zaca
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Localize the finding by state, metro or county and identify geographic outliers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
-
-### 12. From DC: Medicaid Eligibility Changes, Public Charge Lawsuit, and New Caregiving Report
+### 1. From DC: Medicaid Eligibility Changes, Public Charge Lawsuit, and New Caregiving Report
 
 **Score:** 79/100  
 **Source:** justice-in-aging  
@@ -188,66 +23,94 @@ Confirmed coverage gaps: **75**
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 13. Medicare Program; Prospective Payment System and Consolidated Billing for Skilled Nursing Facilities; Updates to the Quality Reporting Program for Federal Fiscal Year 2027; Correction
+### 2. BLS: Home health care services employment, September 2026 — 1,894.20 thousands of jobs (+4.4% year over year)
 
-**Score:** 78/100  
-**Source:** federal-register  
-**Published:** 09/30/26  
-**Topics:** long_term_care, medicare_medicaid  
+**Score:** 77/100  
+**Source:** bls-api  
+**Published:** 09/01/26  
+**Topics:** workforce, caregiving, aging_in_place  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/30/2026-19959/medicare-program-prospective-payment-system-and-consolidated-billing-for-skilled-nursing-facilities
+**URL:** https://data.bls.gov/timeseries/CES6562160001
 
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
+- For readers: Whether staying in your own home stays realistic, and what would have to change.
+- For the trade: How home-based demand reshapes the case for congregate settings.
 - Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 14. Notice of HUD-Held Healthcare Loan Sale (HLS 2027-1)
+### 3. Statutorily Mandated Designation of Difficult Development Areas and Qualified Census Tracts for 2027
 
 **Score:** 77/100  
 **Source:** federal-register  
-**Published:** 09/25/26  
+**Published:** 10/06/26  
 **Topics:** housing  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/25/2026-19683/notice-of-hud-held-healthcare-loan-sale-hls-2027-1
+**URL:** https://www.federalregister.gov/documents/2026/10/06/2026-20390/statutorily-mandated-designation-of-difficult-development-areas-and-qualified-census-tracts-for-2027
 
 - For readers: What it means for an older renter or owner weighing whether to stay put or move.
 - For the trade: Occupancy, development pipeline and pricing pressure for operators.
 - Build an original ranking, map or trend analysis from the underlying public data.
+- First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 15. Medicare Program; FY 2027 Inpatient Psychiatric Facilities Prospective Payment System-Rate Update; Correction
+### 4. Congressional District Interactive Map: Medicaid Enrollment by Eligibility Group
 
 **Score:** 77/100  
-**Source:** federal-register  
-**Published:** 10/01/26  
+**Source:** kff-feed  
+**Published:** 10/08/26  
 **Topics:** medicare_medicaid  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/10/01/2026-20134/medicare-program-fy-2027-inpatient-psychiatric-facilities-prospective-payment-system-rate-update
+**URL:** https://www.kff.org/medicaid/congressional-district-interactive-map-medicaid-enrollment-by-eligibility-group/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 5. Clinical Laboratory Improvement Amendments of 1988 (CLIA); Virtual Access, Gynecologic Cytology Proficiency Testing (PT), Personnel Qualifications, and Other Changes
+
+**Score:** 77/100  
+**Source:** federal-register  
+**Published:** 10/08/26  
+**Topics:** workforce  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.federalregister.gov/documents/2026/10/08/2026-20613/clinical-laboratory-improvement-amendments-of-1988-clia-virtual-access-gynecologic-cytology
+
+- For readers: Whether you will be able to find and afford help at home.
+- For the trade: Wage pressure, turnover cost and staffing-ratio compliance.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 16. Medicare Program; Inpatient Rehabilitation Facility Prospective Payment System for Federal Fiscal Year 2027 and Updates to the IRF Quality Reporting Program; Correction
+### 6. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
 **Score:** 77/100  
 **Source:** federal-register  
-**Published:** 10/01/26  
-**Topics:** medicare_medicaid  
+**Published:** 10/13/26  
+**Topics:** housing  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/10/01/2026-20131/medicare-program-inpatient-rehabilitation-facility-prospective-payment-system-for-federal-fiscal
+**URL:** https://www.federalregister.gov/documents/2026/10/13/2026-20822/mortgage-and-loan-insurance-programs-under-the-national-housing-act-debenture-interest-rates
 
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
+- For readers: What it means for an older renter or owner weighing whether to stay put or move.
+- For the trade: Occupancy, development pipeline and pricing pressure for operators.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 17. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants; Correction
+### 7. FTC Secures Settlement with Auto Dealership Group in Price Transparency Win for Consumers
+
+**Score:** 76/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/08/26  
+**Topics:** fraud_scams, housing  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-auto-dealership-group-price-transparency-win-consumers
+
+- For readers: How the scam works and what protects you or a parent from it.
+- For the trade: Liability, resident protection duties and reputational exposure.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 8. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants; Correction
 
 **Score:** 75/100  
 **Source:** federal-register  
@@ -262,161 +125,329 @@ Confirmed coverage gaps: **75**
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 18. Request for Information; Medicare Part D Reasonable and Relevant Pharmacy Contracting Standards
+### 9. BLS: Continuing care retirement communities and assisted living employment, September 2026 — 1,022.10 thousands of jobs (+0.8% year over year)
+
+**Score:** 75/100  
+**Source:** bls-api  
+**Published:** 09/01/26  
+**Topics:** workforce, assisted_living, housing  
+**Coverage:** light — B2B 1 · B2C 0  
+**URL:** https://data.bls.gov/timeseries/CES6562330001
+
+- For readers: What a family touring communities should ask about, and what the numbers say.
+- For the trade: Operating margin, census and what the disclosure means competitively.
+- Build an original ranking, map or trend analysis from the underlying public data.
+
+### 10. States’ Use of Program Integrity Tools in Medicaid Home Care
+
+**Score:** 75/100  
+**Source:** kff-feed  
+**Published:** 10/05/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/medicaid/states-use-of-program-integrity-tools-in-medicaid-home-care/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 11. A Look at Waiting Lists for Medicaid Home- and Community-Based Services from 2016 to 2026
+
+**Score:** 75/100  
+**Source:** kff-feed  
+**Published:** 10/05/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/medicaid/a-look-at-waiting-lists-for-medicaid-home-and-community-based-services-from-2016-to-2026/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 12. FTC Issues Letters Warning Hospitals Against Deceptive Pricing Practices
+
+**Score:** 75/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/05/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-letters-warning-hospitals-against-deceptive-pricing-practices
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 13. Primary Care Physician Organization Affiliations With Health Systems Between 2014 and 2019 Were Associated With Modest Improvements in Quality of Care
+
+**Score:** 75/100  
+**Source:** rand-research  
+**Published:** 10/05/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.rand.org/pubs/external_publications/EP71425.html
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 14. Inpatient Hospital Upcoding in California Among Fully Insured Commercial and Medicare Advantage Stays Between 2018 and 2023
+
+**Score:** 75/100  
+**Source:** rand-research  
+**Published:** 10/05/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.rand.org/pubs/research_reports/RRA5012-1.html
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 15. KFF Health Tracking Poll: Health Care Issues in the Lead-Up to the 2026 Midterm Election
+
+**Score:** 75/100  
+**Source:** kff-feed  
+**Published:** 10/06/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/public-opinion/kff-health-tracking-poll-health-care-issues-in-the-lead-up-to-the-2026-midterm-election/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 16. Current and Historical Public Opinion on Medicare-for-All and Other National Health Plan Proposals
+
+**Score:** 75/100  
+**Source:** kff-feed  
+**Published:** 10/06/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/public-opinion/current-and-historical-public-opinion-on-medicare-for-all-and-other-national-health-plan-proposals/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 17. Which States Will Be Affected by Key Medicaid Provisions in the 2025 Reconciliation Law?
+
+**Score:** 75/100  
+**Source:** kff-feed  
+**Published:** 10/07/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/medicaid/which-states-will-be-affected-by-key-medicaid-provisions-in-the-2025-reconciliation-law/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 18. BLS: Home health care services average hourly earnings, August 2026 — 28.14 dollars per hour (+2.4% year over year)
 
 **Score:** 74/100  
-**Source:** federal-register  
-**Published:** 09/24/26  
-**Topics:** financial_security, medicare_medicaid  
+**Source:** bls-api  
+**Published:** 08/01/26  
+**Topics:** workforce, caregiving  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/24/2026-19535/request-for-information-medicare-part-d-reasonable-and-relevant-pharmacy-contracting-standards
+**URL:** https://data.bls.gov/timeseries/CES6562160003
+
+- For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.
+- For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 19. Veterans Support to Self-Reliance Pilot Program
+
+**Score:** 73/100  
+**Source:** rand-research  
+**Published:** 09/30/26  
+**Topics:** housing  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.rand.org/pubs/research_reports/RRA4660-1.html
+
+- For readers: What it means for an older renter or owner weighing whether to stay put or move.
+- For the trade: Occupancy, development pipeline and pricing pressure for operators.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 20. Medicare Program; FY 2027 Hospice Wage Index and Payment Rate Update and Hospice Quality Reporting Program Requirements; Correction
+
+**Score:** 73/100  
+**Source:** federal-register  
+**Published:** 09/30/26  
+**Topics:** medicare_medicaid, palliative_hospice  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.federalregister.gov/documents/2026/09/30/2026-20067/medicare-program-fy-2027-hospice-wage-index-and-payment-rate-update-and-hospice-quality-reporting
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 21. CMS refreshed dataset: Complications and Deaths - Hospital
+
+**Score:** 73/100  
+**Source:** cms-provider-data  
+**Published:** 09/10/26  
+**Topics:** long_term_care  
+**Coverage:** reference — B2B 0 · B2C 0  
+**URL:** https://data.cms.gov/provider-data/dataset/ynj2-r877
+
+- For readers: How to plan for, pay for, or challenge a long-term care decision.
+- For the trade: Reimbursement, census mix and regulatory exposure.
+- Localize the finding by state, metro or county and identify geographic outliers.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
+
+### 22. CMS refreshed dataset: Unplanned Hospital Visits - Hospital
+
+**Score:** 73/100  
+**Source:** cms-provider-data  
+**Published:** 09/10/26  
+**Topics:** long_term_care  
+**Coverage:** reference — B2B 0 · B2C 0  
+**URL:** https://data.cms.gov/provider-data/dataset/632h-zaca
+
+- For readers: How to plan for, pay for, or challenge a long-term care decision.
+- For the trade: Reimbursement, census mix and regulatory exposure.
+- Localize the finding by state, metro or county and identify geographic outliers.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
+
+### 23. BLS: Nursing care facilities employment, September 2026 — 1,587.40 thousands of jobs (+1.9% year over year)
+
+**Score:** 73/100  
+**Source:** bls-api  
+**Published:** 09/01/26  
+**Topics:** workforce, long_term_care, senior_living_quality  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://data.bls.gov/timeseries/CES6562310001
+
+- For readers: How to plan for, pay for, or challenge a long-term care decision.
+- For the trade: Reimbursement, census mix and regulatory exposure.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 24. BLS: Employment level, 65 years and over, September 2026 — 11,654 thousands of people (-0.7% year over year)
+
+**Score:** 73/100  
+**Source:** bls-api  
+**Published:** 09/01/26  
+**Topics:** workforce, financial_security  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://data.bls.gov/timeseries/LNU02000097
 
 - For readers: What it means for your retirement income and what to do before it bites.
 - For the trade: Resident affordability and what it does to rate increases and length of stay.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 19. BLS: Assisted living and CCRC average hourly earnings, August 2026 — 25.89 dollars per hour (+4.8% year over year)
+### 25. Housing Restrictions for People with Criminal Records
 
-**Score:** 74/100  
-**Source:** bls-api  
-**Published:** 08/01/26  
-**Topics:** workforce, assisted_living  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562330003
+**Score:** 73/100  
+**Source:** rand-research  
+**Published:** 10/08/26  
+**Topics:** housing  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.rand.org/pubs/external_publications/EP71525.html
 
-- For readers: What a family touring communities should ask about, and what the numbers say.
-- For the trade: Operating margin, census and what the disclosure means competitively.
-- Build an original ranking, map or trend analysis from the underlying public data.
+- For readers: What it means for an older renter or owner weighing whether to stay put or move.
+- For the trade: Occupancy, development pipeline and pricing pressure for operators.
 - First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 20. Global Benchmark for Efficient Drug Pricing (GLOBE) Model
+### 26. Advocating for Consumer Access to HCBS in California
 
-**Score:** 74/100  
+**Score:** 73/100  
+**Source:** justice-in-aging  
+**Published:** 10/06/26  
+**Topics:** long_term_care  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://justiceinaging.org/advocating-for-consumer-access-to-hcbs-in-california/
+
+- For readers: How to plan for, pay for, or challenge a long-term care decision.
+- For the trade: Reimbursement, census mix and regulatory exposure.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 27. Global Benchmark for Efficient Drug Pricing (GLOBE) Model
+
+**Score:** 72/100  
 **Source:** federal-register  
 **Published:** 10/02/26  
 **Topics:** financial_security, medicare_medicaid  
-**Coverage:** light — B2B 1 · B2C 0  
+**Coverage:** gap — B2B 0 · B2C 0  
 **URL:** https://www.federalregister.gov/documents/2026/10/02/2026-20281/global-benchmark-for-efficient-drug-pricing-globe-model
 
 - For readers: What it means for your retirement income and what to do before it bites.
 - For the trade: Resident affordability and what it does to rate increases and length of stay.
 - Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 21. HUD Evaluation Policy
+### 28. Medicare Program; FY 2027 Inpatient Psychiatric Facilities Prospective Payment System-Rate Update; Correction
 
-**Score:** 73/100  
+**Score:** 71/100  
 **Source:** federal-register  
-**Published:** 09/24/26  
+**Published:** 10/01/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.federalregister.gov/documents/2026/10/01/2026-20134/medicare-program-fy-2027-inpatient-psychiatric-facilities-prospective-payment-system-rate-update
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 29. Medicare Program; Inpatient Rehabilitation Facility Prospective Payment System for Federal Fiscal Year 2027 and Updates to the IRF Quality Reporting Program; Correction
+
+**Score:** 71/100  
+**Source:** federal-register  
+**Published:** 10/01/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.federalregister.gov/documents/2026/10/01/2026-20131/medicare-program-inpatient-rehabilitation-facility-prospective-payment-system-for-federal-fiscal
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 30. Section 184 Indian Housing Loan Guarantee Program Increase in the Loan Guarantee Fee
+
+**Score:** 71/100  
+**Source:** federal-register  
+**Published:** 09/28/26  
 **Topics:** housing  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/24/2026-19528/hud-evaluation-policy
+**URL:** https://www.federalregister.gov/documents/2026/09/28/2026-19782/section-184-indian-housing-loan-guarantee-program-increase-in-the-loan-guarantee-fee
 
 - For readers: What it means for an older renter or owner weighing whether to stay put or move.
 - For the trade: Occupancy, development pipeline and pricing pressure for operators.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 22. Understanding the Role of Medicaid Fraud Control Units (MFCUs)
-
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/28/26  
-**Topics:** medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/understanding-the-role-of-medicaid-fraud-control-units-mfcus/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 23. Tracking Implementation of the 2025 Reconciliation Law: Medicaid Work Requirements
-
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
-**Topics:** medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 24. Tracking Implementation of the 2025 Reconciliation Law Medicaid Work Requirements: Related Resources
-
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
-**Topics:** medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-resources/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 25. Tracking Implementation of the 2025 Reconciliation Law Medicaid Work Requirements: 1115-waivers
-
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
-**Topics:** medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-1115-waivers/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 26. Tracking Implementation of the 2025 Reconciliation Law: Medicaid Work Requirements Implementation Questions
-
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
-**Topics:** medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-implementation-questions/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 27. Early Medicaid Work Requirement Insights From Nebraska
-
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
-**Topics:** medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/early-medicaid-work-requirement-insights-from-nebraska/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 28. CMS refreshed dataset: Inpatient Rehabilitation Facility - Conditions
+### 31. Section 108 Loan Guarantee Program: Announcement of Fee To Cover Credit Subsidy Costs for FY 2027
 
 **Score:** 71/100  
-**Source:** cms-provider-data  
-**Published:** 08/12/26  
-**Topics:** medicare_medicaid  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/ka5z-ibe3
+**Source:** federal-register  
+**Published:** 09/28/26  
+**Topics:** housing  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.federalregister.gov/documents/2026/09/28/2026-19743/section-108-loan-guarantee-program-announcement-of-fee-to-cover-credit-subsidy-costs-for-fy-2027
 
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- Localize the finding by state, metro or county and identify geographic outliers.
+- For readers: What it means for an older renter or owner weighing whether to stay put or move.
+- For the trade: Occupancy, development pipeline and pricing pressure for operators.
 - Build an original ranking, map or trend analysis from the underlying public data.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 29. American Community Survey 2023 state aging and housing profile (52 states)
+### 32. American Community Survey 2023 state aging and housing profile (52 states)
 
 **Score:** 71/100  
 **Source:** american-community-survey  
@@ -431,92 +462,25 @@ Confirmed coverage gaps: **75**
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 30. Medicare 101
+### 33. CMS refreshed dataset: Medicare Claims Quality Measures
 
 **Score:** 71/100  
-**Source:** kff-feed  
-**Published:** 10/01/26  
-**Topics:** medicare_medicaid  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://www.kff.org/medicare/health-policy-101-medicare/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 31. Medicare Program; Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals (IPPS) and the Long-Term Care Hospital Prospective Payment System and Policy Changes and Fiscal Year (FY) 2027 Rates; Requirements for Quality Programs; Other Policy Changes; and Adoption of Updated Versions of Certain Health Information Technology Standards; Correction
-
-**Score:** 69/100  
-**Source:** federal-register  
-**Published:** 09/29/26  
-**Topics:** long_term_care, medicare_medicaid  
-**Coverage:** saturated — B2B 4 · B2C 3  
-**URL:** https://www.federalregister.gov/documents/2026/09/29/2026-19946/medicare-program-hospital-inpatient-prospective-payment-systems-for-acute-care-hospitals-ipps-and
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 32. Make the Spousal Impoverishment Protection for HCBS Permanent
-
-**Score:** 69/100  
-**Source:** justice-in-aging  
-**Published:** 09/10/26  
-**Topics:** long_term_care, medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://justiceinaging.org/fact-sheet-make-the-expanded-spousal-impoverishment-protection-permanent/
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 33. Medicaid Waiver Tracker: Approved and Pending Section 1115 Waivers by State
-
-**Score:** 68/100  
-**Source:** kff-feed  
-**Published:** 09/24/26  
-**Topics:** medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-waiver-tracker-approved-and-pending-section-1115-waivers-by-state/
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 34. FTC Seeks Public Comment on Whether to Update Rule on Impersonation of Government and Businesses to Address Platforms’ Role in Promoting Impersonation Scams
-
-**Score:** 68/100  
-**Source:** ftc-consumer-protection  
-**Published:** 09/24/26  
-**Topics:** fraud_scams  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-seeks-public-comment-whether-update-rule-impersonation-government-businesses-address-platforms
-
-- For readers: How the scam works and what protects you or a parent from it.
-- For the trade: Liability, resident protection duties and reputational exposure.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 35. Credit Watch Termination Initiative; Terminations of Direct Endorsement (DE) Approval
-
-**Score:** 68/100  
-**Source:** federal-register  
-**Published:** 09/23/26  
-**Topics:** housing  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/23/2026-19455/credit-watch-termination-initiative-terminations-of-direct-endorsement-de-approval
-
-- For readers: What it means for an older renter or owner weighing whether to stay put or move.
-- For the trade: Occupancy, development pipeline and pricing pressure for operators.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 36. CMS refreshed dataset: Medical Equipment Suppliers
-
-**Score:** 67/100  
 **Source:** cms-provider-data  
-**Published:** 09/20/26  
+**Published:** 09/30/26  
+**Topics:** long_term_care, medicare_medicaid  
+**Coverage:** light — B2B 1 · B2C 0  
+**URL:** https://data.cms.gov/provider-data/dataset/ijh5-nb2v
+
+- For readers: How to plan for, pay for, or challenge a long-term care decision.
+- For the trade: Reimbursement, census mix and regulatory exposure.
+- Localize the finding by state, metro or county and identify geographic outliers.
+- Build an original ranking, map or trend analysis from the underlying public data.
+
+### 34. CMS refreshed dataset: Medical Equipment Suppliers
+
+**Score:** 69/100  
+**Source:** cms-provider-data  
+**Published:** 10/04/26  
 **Topics:** medicare_medicaid  
 **Coverage:** reference — B2B 0 · B2C 0  
 **URL:** https://data.cms.gov/provider-data/dataset/ct36-nrcq
@@ -527,14 +491,14 @@ Confirmed coverage gaps: **75**
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
 
-### 37. CMS refreshed dataset: Inpatient Rehabilitation Facility - Provider Data
+### 35. CMS refreshed dataset: Skilled Nursing Facility Quality Reporting Program - Provider Data
 
-**Score:** 66/100  
+**Score:** 68/100  
 **Source:** cms-provider-data  
-**Published:** 09/11/26  
-**Topics:** long_term_care  
+**Published:** 09/30/26  
+**Topics:** long_term_care, medicare_medicaid  
 **Coverage:** reference — B2B 0 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/v9e4-nwhh
+**URL:** https://data.cms.gov/provider-data/dataset/fykj-qjee
 
 - For readers: How to plan for, pay for, or challenge a long-term care decision.
 - For the trade: Reimbursement, census mix and regulatory exposure.
@@ -542,44 +506,66 @@ Confirmed coverage gaps: **75**
 - Build an original ranking, map or trend analysis from the underlying public data.
 - Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
 
-### 38. CMS refreshed dataset: Inpatient Rehabilitation Facility - General Information
+### 36. Medicare Program; Prospective Payment System and Consolidated Billing for Skilled Nursing Facilities; Updates to the Quality Reporting Program for Federal Fiscal Year 2027; Correction
 
-**Score:** 66/100  
-**Source:** cms-provider-data  
-**Published:** 08/12/26  
-**Topics:** long_term_care  
-**Coverage:** reference — B2B 0 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/7t8x-u3ir
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Localize the finding by state, metro or county and identify geographic outliers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
-
-### 39. CMS refreshed dataset: Inpatient Rehabilitation Facility - National Data
-
-**Score:** 66/100  
-**Source:** cms-provider-data  
-**Published:** 08/12/26  
-**Topics:** long_term_care  
-**Coverage:** reference — B2B 0 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/nasn-k89k
+**Score:** 67/100  
+**Source:** federal-register  
+**Published:** 09/30/26  
+**Topics:** long_term_care, medicare_medicaid  
+**Coverage:** light — B2B 1 · B2C 0  
+**URL:** https://www.federalregister.gov/documents/2026/09/30/2026-19959/medicare-program-prospective-payment-system-and-consolidated-billing-for-skilled-nursing-facilities
 
 - For readers: How to plan for, pay for, or challenge a long-term care decision.
 - For the trade: Reimbursement, census mix and regulatory exposure.
-- Localize the finding by state, metro or county and identify geographic outliers.
 - Build an original ranking, map or trend analysis from the underlying public data.
-- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
 
-### 40. Many Medicare Part D Stand-Alone Drug Plan Enrollees Will See Modest Premium Increases for 2027, But Others Could Pay Much More If They Don’t Switch Plans
+### 37. BLS: Assisted living and CCRC average hourly earnings, August 2026 — 25.89 dollars per hour (+4.8% year over year)
+
+**Score:** 67/100  
+**Source:** bls-api  
+**Published:** 08/01/26  
+**Topics:** workforce, assisted_living  
+**Coverage:** light — B2B 1 · B2C 0  
+**URL:** https://data.bls.gov/timeseries/CES6562330003
+
+- For readers: What a family touring communities should ask about, and what the numbers say.
+- For the trade: Operating margin, census and what the disclosure means competitively.
+- Build an original ranking, map or trend analysis from the underlying public data.
+
+### 38. Early Medicaid Work Requirement Insights From Nebraska
 
 **Score:** 66/100  
 **Source:** kff-feed  
-**Published:** 10/02/26  
+**Published:** 09/29/26  
 **Topics:** medicare_medicaid  
-**Coverage:** saturated — B2B 2 · B2C 3  
-**URL:** https://www.kff.org/medicare/many-medicare-part-d-stand-alone-drug-plan-enrollees-will-see-modest-premium-increases-for-2027-but-others-could-pay-much-more-if-they-dont-switch-plans/
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/medicaid/early-medicaid-work-requirement-insights-from-nebraska/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 39. Open Enrollment for 2027 Coverage through Medicare & Covered California — Basics for Advocates
+
+**Score:** 66/100  
+**Source:** justice-in-aging  
+**Published:** 10/08/26  
+**Topics:** medicare_medicaid  
+**Coverage:** saturated — B2B 1 · B2C 2  
+**URL:** https://justiceinaging.org/open-enrollment-california/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+
+### 40. Open Enrollment for 2027 Coverage through Medicare & the Marketplace — Basics for Advocates
+
+**Score:** 66/100  
+**Source:** justice-in-aging  
+**Published:** 10/08/26  
+**Topics:** medicare_medicaid  
+**Coverage:** saturated — B2B 2 · B2C 2  
+**URL:** https://justiceinaging.org/open-enrollment-guide/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
@@ -587,172 +573,7 @@ Confirmed coverage gaps: **75**
 
 ## First surfaced this week
 
-### 1. BLS: Home health care services employment, September 2026 — 1,894.20 thousands of jobs (+4.4% year over year)
-
-**Score:** 83/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, caregiving, aging_in_place  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562160001
-
-- For readers: Whether staying in your own home stays realistic, and what would have to change.
-- For the trade: How home-based demand reshapes the case for congregate settings.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 2. BLS: Continuing care retirement communities and assisted living employment, September 2026 — 1,022.10 thousands of jobs (+0.8% year over year)
-
-**Score:** 81/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, assisted_living, housing  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562330001
-
-- For readers: What a family touring communities should ask about, and what the numbers say.
-- For the trade: Operating margin, census and what the disclosure means competitively.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 3. BLS: Home health care services average hourly earnings, August 2026 — 28.14 dollars per hour (+2.4% year over year)
-
-**Score:** 80/100  
-**Source:** bls-api  
-**Published:** 08/01/26  
-**Topics:** workforce, caregiving  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562160003
-
-- For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.
-- For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 4. Section 184 Indian Housing Loan Guarantee Program Increase in the Loan Guarantee Fee
-
-**Score:** 79/100  
-**Source:** federal-register  
-**Published:** 09/28/26  
-**Topics:** housing  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/28/2026-19782/section-184-indian-housing-loan-guarantee-program-increase-in-the-loan-guarantee-fee
-
-- For readers: What it means for an older renter or owner weighing whether to stay put or move.
-- For the trade: Occupancy, development pipeline and pricing pressure for operators.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 5. Section 108 Loan Guarantee Program: Announcement of Fee To Cover Credit Subsidy Costs for FY 2027
-
-**Score:** 79/100  
-**Source:** federal-register  
-**Published:** 09/28/26  
-**Topics:** housing  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/28/2026-19743/section-108-loan-guarantee-program-announcement-of-fee-to-cover-credit-subsidy-costs-for-fy-2027
-
-- For readers: What it means for an older renter or owner weighing whether to stay put or move.
-- For the trade: Occupancy, development pipeline and pricing pressure for operators.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 6. BLS: Nursing care facilities employment, September 2026 — 1,587.40 thousands of jobs (+1.9% year over year)
-
-**Score:** 79/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, long_term_care, senior_living_quality  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562310001
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 7. BLS: Employment level, 65 years and over, September 2026 — 11,654 thousands of people (-0.7% year over year)
-
-**Score:** 79/100  
-**Source:** bls-api  
-**Published:** 09/01/26  
-**Topics:** workforce, financial_security  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/LNU02000097
-
-- For readers: What it means for your retirement income and what to do before it bites.
-- For the trade: Resident affordability and what it does to rate increases and length of stay.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 8. Veterans Support to Self-Reliance Pilot Program
-
-**Score:** 79/100  
-**Source:** rand-research  
-**Published:** 09/30/26  
-**Topics:** housing  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.rand.org/pubs/research_reports/RRA4660-1.html
-
-- For readers: What it means for an older renter or owner weighing whether to stay put or move.
-- For the trade: Occupancy, development pipeline and pricing pressure for operators.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 9. Medicare Program; FY 2027 Hospice Wage Index and Payment Rate Update and Hospice Quality Reporting Program Requirements; Correction
-
-**Score:** 79/100  
-**Source:** federal-register  
-**Published:** 09/30/26  
-**Topics:** medicare_medicaid, palliative_hospice  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/30/2026-20067/medicare-program-fy-2027-hospice-wage-index-and-payment-rate-update-and-hospice-quality-reporting
-
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 10. CMS refreshed dataset: Complications and Deaths - Hospital
-
-**Score:** 79/100  
-**Source:** cms-provider-data  
-**Published:** 09/10/26  
-**Topics:** long_term_care  
-**Coverage:** reference — B2B 0 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/ynj2-r877
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Localize the finding by state, metro or county and identify geographic outliers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
-
-### 11. CMS refreshed dataset: Unplanned Hospital Visits - Hospital
-
-**Score:** 79/100  
-**Source:** cms-provider-data  
-**Published:** 09/10/26  
-**Topics:** long_term_care  
-**Coverage:** reference — B2B 0 · B2C 0  
-**URL:** https://data.cms.gov/provider-data/dataset/632h-zaca
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Localize the finding by state, metro or county and identify geographic outliers.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply.
-
-### 12. From DC: Medicaid Eligibility Changes, Public Charge Lawsuit, and New Caregiving Report
+### 1. From DC: Medicaid Eligibility Changes, Public Charge Lawsuit, and New Caregiving Report
 
 **Score:** 79/100  
 **Source:** justice-in-aging  
@@ -766,52 +587,80 @@ Confirmed coverage gaps: **75**
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 13. Medicare Program; Prospective Payment System and Consolidated Billing for Skilled Nursing Facilities; Updates to the Quality Reporting Program for Federal Fiscal Year 2027; Correction
-
-**Score:** 78/100  
-**Source:** federal-register  
-**Published:** 09/30/26  
-**Topics:** long_term_care, medicare_medicaid  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/30/2026-19959/medicare-program-prospective-payment-system-and-consolidated-billing-for-skilled-nursing-facilities
-
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
-
-### 14. Medicare Program; FY 2027 Inpatient Psychiatric Facilities Prospective Payment System-Rate Update; Correction
+### 2. Statutorily Mandated Designation of Difficult Development Areas and Qualified Census Tracts for 2027
 
 **Score:** 77/100  
 **Source:** federal-register  
-**Published:** 10/01/26  
-**Topics:** medicare_medicaid  
+**Published:** 10/06/26  
+**Topics:** housing  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/10/01/2026-20134/medicare-program-fy-2027-inpatient-psychiatric-facilities-prospective-payment-system-rate-update
+**URL:** https://www.federalregister.gov/documents/2026/10/06/2026-20390/statutorily-mandated-designation-of-difficult-development-areas-and-qualified-census-tracts-for-2027
 
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
+- For readers: What it means for an older renter or owner weighing whether to stay put or move.
+- For the trade: Occupancy, development pipeline and pricing pressure for operators.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 15. Medicare Program; Inpatient Rehabilitation Facility Prospective Payment System for Federal Fiscal Year 2027 and Updates to the IRF Quality Reporting Program; Correction
+### 3. Congressional District Interactive Map: Medicaid Enrollment by Eligibility Group
+
+**Score:** 77/100  
+**Source:** kff-feed  
+**Published:** 10/08/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/medicaid/congressional-district-interactive-map-medicaid-enrollment-by-eligibility-group/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 4. Clinical Laboratory Improvement Amendments of 1988 (CLIA); Virtual Access, Gynecologic Cytology Proficiency Testing (PT), Personnel Qualifications, and Other Changes
 
 **Score:** 77/100  
 **Source:** federal-register  
-**Published:** 10/01/26  
-**Topics:** medicare_medicaid  
+**Published:** 10/08/26  
+**Topics:** workforce  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/10/01/2026-20131/medicare-program-inpatient-rehabilitation-facility-prospective-payment-system-for-federal-fiscal
+**URL:** https://www.federalregister.gov/documents/2026/10/08/2026-20613/clinical-laboratory-improvement-amendments-of-1988-clia-virtual-access-gynecologic-cytology
 
-- For readers: What a beneficiary should check about their own coverage, and by when.
-- For the trade: Payment, eligibility and compliance exposure for providers.
+- For readers: Whether you will be able to find and afford help at home.
+- For the trade: Wage pressure, turnover cost and staffing-ratio compliance.
 - Build an original ranking, map or trend analysis from the underlying public data.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 16. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants; Correction
+### 5. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
+
+**Score:** 77/100  
+**Source:** federal-register  
+**Published:** 10/13/26  
+**Topics:** housing  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.federalregister.gov/documents/2026/10/13/2026-20822/mortgage-and-loan-insurance-programs-under-the-national-housing-act-debenture-interest-rates
+
+- For readers: What it means for an older renter or owner weighing whether to stay put or move.
+- For the trade: Occupancy, development pipeline and pricing pressure for operators.
+- Build an original ranking, map or trend analysis from the underlying public data.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 6. FTC Secures Settlement with Auto Dealership Group in Price Transparency Win for Consumers
+
+**Score:** 76/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/08/26  
+**Topics:** fraud_scams, housing  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-auto-dealership-group-price-transparency-win-consumers
+
+- For readers: How the scam works and what protects you or a parent from it.
+- For the trade: Liability, resident protection duties and reputational exposure.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 7. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants; Correction
 
 **Score:** 75/100  
 **Source:** federal-register  
@@ -826,261 +675,263 @@ Confirmed coverage gaps: **75**
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 17. BLS: Assisted living and CCRC average hourly earnings, August 2026 — 25.89 dollars per hour (+4.8% year over year)
+### 8. States’ Use of Program Integrity Tools in Medicaid Home Care
 
-**Score:** 74/100  
-**Source:** bls-api  
-**Published:** 08/01/26  
-**Topics:** workforce, assisted_living  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://data.bls.gov/timeseries/CES6562330003
-
-- For readers: What a family touring communities should ask about, and what the numbers say.
-- For the trade: Operating margin, census and what the disclosure means competitively.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 18. Global Benchmark for Efficient Drug Pricing (GLOBE) Model
-
-**Score:** 74/100  
-**Source:** federal-register  
-**Published:** 10/02/26  
-**Topics:** financial_security, medicare_medicaid  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/10/02/2026-20281/global-benchmark-for-efficient-drug-pricing-globe-model
-
-- For readers: What it means for your retirement income and what to do before it bites.
-- For the trade: Resident affordability and what it does to rate increases and length of stay.
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 19. Understanding the Role of Medicaid Fraud Control Units (MFCUs)
-
-**Score:** 73/100  
+**Score:** 75/100  
 **Source:** kff-feed  
-**Published:** 09/28/26  
+**Published:** 10/05/26  
 **Topics:** medicare_medicaid  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/understanding-the-role-of-medicaid-fraud-control-units-mfcus/
+**URL:** https://www.kff.org/medicaid/states-use-of-program-integrity-tools-in-medicaid-home-care/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 20. Tracking Implementation of the 2025 Reconciliation Law: Medicaid Work Requirements
+### 9. A Look at Waiting Lists for Medicaid Home- and Community-Based Services from 2016 to 2026
 
-**Score:** 73/100  
+**Score:** 75/100  
 **Source:** kff-feed  
-**Published:** 09/29/26  
+**Published:** 10/05/26  
 **Topics:** medicare_medicaid  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/
+**URL:** https://www.kff.org/medicaid/a-look-at-waiting-lists-for-medicaid-home-and-community-based-services-from-2016-to-2026/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 21. Tracking Implementation of the 2025 Reconciliation Law Medicaid Work Requirements: Related Resources
+### 10. FTC Issues Letters Warning Hospitals Against Deceptive Pricing Practices
 
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
+**Score:** 75/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/05/26  
 **Topics:** medicare_medicaid  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-resources/
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-letters-warning-hospitals-against-deceptive-pricing-practices
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 22. Tracking Implementation of the 2025 Reconciliation Law Medicaid Work Requirements: 1115-waivers
+### 11. Primary Care Physician Organization Affiliations With Health Systems Between 2014 and 2019 Were Associated With Modest Improvements in Quality of Care
 
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
+**Score:** 75/100  
+**Source:** rand-research  
+**Published:** 10/05/26  
 **Topics:** medicare_medicaid  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-1115-waivers/
+**URL:** https://www.rand.org/pubs/external_publications/EP71425.html
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 23. Tracking Implementation of the 2025 Reconciliation Law: Medicaid Work Requirements Implementation Questions
+### 12. Inpatient Hospital Upcoding in California Among Fully Insured Commercial and Medicare Advantage Stays Between 2018 and 2023
 
-**Score:** 73/100  
-**Source:** kff-feed  
-**Published:** 09/29/26  
+**Score:** 75/100  
+**Source:** rand-research  
+**Published:** 10/05/26  
 **Topics:** medicare_medicaid  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/medicaid-work-requirements-tracker-implementation-questions/
+**URL:** https://www.rand.org/pubs/research_reports/RRA5012-1.html
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 24. Early Medicaid Work Requirement Insights From Nebraska
+### 13. KFF Health Tracking Poll: Health Care Issues in the Lead-Up to the 2026 Midterm Election
 
-**Score:** 73/100  
+**Score:** 75/100  
 **Source:** kff-feed  
-**Published:** 09/29/26  
+**Published:** 10/06/26  
 **Topics:** medicare_medicaid  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/medicaid/early-medicaid-work-requirement-insights-from-nebraska/
+**URL:** https://www.kff.org/public-opinion/kff-health-tracking-poll-health-care-issues-in-the-lead-up-to-the-2026-midterm-election/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 25. Medicare 101
+### 14. Current and Historical Public Opinion on Medicare-for-All and Other National Health Plan Proposals
 
-**Score:** 71/100  
+**Score:** 75/100  
 **Source:** kff-feed  
-**Published:** 10/01/26  
+**Published:** 10/06/26  
 **Topics:** medicare_medicaid  
-**Coverage:** light — B2B 1 · B2C 0  
-**URL:** https://www.kff.org/medicare/health-policy-101-medicare/
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/public-opinion/current-and-historical-public-opinion-on-medicare-for-all-and-other-national-health-plan-proposals/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 26. Medicare Program; Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals (IPPS) and the Long-Term Care Hospital Prospective Payment System and Policy Changes and Fiscal Year (FY) 2027 Rates; Requirements for Quality Programs; Other Policy Changes; and Adoption of Updated Versions of Certain Health Information Technology Standards; Correction
+### 15. Which States Will Be Affected by Key Medicaid Provisions in the 2025 Reconciliation Law?
 
-**Score:** 69/100  
-**Source:** federal-register  
-**Published:** 09/29/26  
-**Topics:** long_term_care, medicare_medicaid  
-**Coverage:** saturated — B2B 4 · B2C 3  
-**URL:** https://www.federalregister.gov/documents/2026/09/29/2026-19946/medicare-program-hospital-inpatient-prospective-payment-systems-for-acute-care-hospitals-ipps-and
+**Score:** 75/100  
+**Source:** kff-feed  
+**Published:** 10/07/26  
+**Topics:** medicare_medicaid  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/medicaid/which-states-will-be-affected-by-key-medicaid-provisions-in-the-2025-reconciliation-law/
 
-- For readers: How to plan for, pay for, or challenge a long-term care decision.
-- For the trade: Reimbursement, census mix and regulatory exposure.
-- Build an original ranking, map or trend analysis from the underlying public data.
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 27. Make the Spousal Impoverishment Protection for HCBS Permanent
+### 16. Housing Restrictions for People with Criminal Records
 
-**Score:** 69/100  
+**Score:** 73/100  
+**Source:** rand-research  
+**Published:** 10/08/26  
+**Topics:** housing  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.rand.org/pubs/external_publications/EP71525.html
+
+- For readers: What it means for an older renter or owner weighing whether to stay put or move.
+- For the trade: Occupancy, development pipeline and pricing pressure for operators.
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 17. Advocating for Consumer Access to HCBS in California
+
+**Score:** 73/100  
 **Source:** justice-in-aging  
-**Published:** 09/10/26  
-**Topics:** long_term_care, medicare_medicaid  
+**Published:** 10/06/26  
+**Topics:** long_term_care  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://justiceinaging.org/fact-sheet-make-the-expanded-spousal-impoverishment-protection-permanent/
+**URL:** https://justiceinaging.org/advocating-for-consumer-access-to-hcbs-in-california/
 
 - For readers: How to plan for, pay for, or challenge a long-term care decision.
 - For the trade: Reimbursement, census mix and regulatory exposure.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 28. Many Medicare Part D Stand-Alone Drug Plan Enrollees Will See Modest Premium Increases for 2027, But Others Could Pay Much More If They Don’t Switch Plans
+### 18. Open Enrollment for 2027 Coverage through Medicare & Covered California — Basics for Advocates
+
+**Score:** 66/100  
+**Source:** justice-in-aging  
+**Published:** 10/08/26  
+**Topics:** medicare_medicaid  
+**Coverage:** saturated — B2B 1 · B2C 2  
+**URL:** https://justiceinaging.org/open-enrollment-california/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+
+### 19. Open Enrollment for 2027 Coverage through Medicare & the Marketplace — Basics for Advocates
+
+**Score:** 66/100  
+**Source:** justice-in-aging  
+**Published:** 10/08/26  
+**Topics:** medicare_medicaid  
+**Coverage:** saturated — B2B 2 · B2C 2  
+**URL:** https://justiceinaging.org/open-enrollment-guide/
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+
+### 20. Charting A Path Forward For Medicare Advantage
+
+**Score:** 66/100  
+**Source:** rand-research  
+**Published:** 10/08/26  
+**Topics:** medicare_medicaid  
+**Coverage:** saturated — B2B 6 · B2C 3  
+**URL:** https://www.rand.org/pubs/external_publications/EP71465.html
+
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
+- First appearance in this pipeline — no prior run surfaced it.
+
+### 21. Medicare Open Enrollment and Coverage Options: Key Questions and Answers
 
 **Score:** 66/100  
 **Source:** kff-feed  
-**Published:** 10/02/26  
+**Published:** 10/09/26  
 **Topics:** medicare_medicaid  
-**Coverage:** saturated — B2B 2 · B2C 3  
-**URL:** https://www.kff.org/medicare/many-medicare-part-d-stand-alone-drug-plan-enrollees-will-see-modest-premium-increases-for-2027-but-others-could-pay-much-more-if-they-dont-switch-plans/
+**Coverage:** saturated — B2B 2 · B2C 2  
+**URL:** https://www.kff.org/medicare/medicare-open-enrollment-and-coverage-options-key-questions-and-answers/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 
-### 29. The Average Medicare Beneficiary has 28 Medicare Advantage Prescription Drug Plan Options for 2027
+### 22. Medicare Advantage Plan Availability Varies Widely by County for 2027
 
-**Score:** 64/100  
+**Score:** 66/100  
 **Source:** kff-feed  
-**Published:** 10/01/26  
+**Published:** 10/09/26  
 **Topics:** medicare_medicaid  
-**Coverage:** saturated — B2B 2 · B2C 1  
-**URL:** https://www.kff.org/medicare/the-average-medicare-beneficiary-has-28-medicare-advantage-prescription-drug-plan-options-for-2027/
+**Coverage:** saturated — B2B 5 · B2C 5  
+**URL:** https://www.kff.org/medicare/medicare-advantage-plan-availability-varies-widely-by-county-for-2027/
 
 - For readers: What a beneficiary should check about their own coverage, and by when.
 - For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
 
-### 30. Webinar Dives Into Symptoms of Alzheimer’s Beyond Memory Loss
+### 23. How Much Do People with Medicare Pay for Coverage?
 
-**Score:** 61/100  
-**Source:** alliance-aging-research  
-**Published:** 09/28/26  
-**Topics:** dementia  
-**Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://www.agingresearch.org/blog/webinar-dives-into-symptoms-of-alzheimers-beyond-memory-loss/
+**Score:** 66/100  
+**Source:** kff-feed  
+**Published:** 10/09/26  
+**Topics:** medicare_medicaid  
+**Coverage:** saturated — B2B 2 · B2C 2  
+**URL:** https://www.kff.org/medicare/how-much-do-people-with-medicare-pay-for-coverage/
 
+- For readers: What a beneficiary should check about their own coverage, and by when.
+- For the trade: Payment, eligibility and compliance exposure for providers.
 - First appearance in this pipeline — no prior run surfaced it.
-- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 31. The New Home Modification Information Network
+### 24. National Alliance for Caregiving Selected As Workplace Innovation Now Challenge Awardee
 
 **Score:** 60/100  
-**Source:** acl-news  
+**Source:** national-alliance-caregiving  
 **Published:** undated  
-**Topics:** aging_in_place  
+**Topics:** caregiving  
 **Coverage:** gap — B2B 0 · B2C 0  
-**URL:** https://acl.gov/news-and-events/announcements/new-home-modification-information-network
+**URL:** https://www.caregiving.org/national-alliance-for-caregiving-selected-as-workplace-innovation-now-challenge-awardee/
 
-- For readers: Whether staying in your own home stays realistic, and what would have to change.
-- For the trade: How home-based demand reshapes the case for congregate settings.
+- For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.
+- For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
 
-### 32. Generative Artificial Intelligence Use and Adolescent Mental Health
+### 25. As HHS Restores the LGBTQ 988 Suicide and Crisis Line Under Pressure From Congress, Questions Remain
 
-**Score:** 53/100  
-**Source:** rand-research  
-**Published:** 09/28/26  
-**Topics:** depression_mental_health  
-**Coverage:** saturated — B2B 1 · B2C 2  
-**URL:** https://www.rand.org/pubs/external_publications/EP71482.html
-
-- First appearance in this pipeline — no prior run surfaced it.
-
-### 33. Rule on Impersonation of Government and Businesses
-
-**Score:** 53/100  
-**Source:** federal-register  
-**Published:** 10/01/26  
-**Topics:** unclassified  
-**Coverage:** unmonitored — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/10/01/2026-20143/rule-on-impersonation-of-government-and-businesses
-
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 34. Petition for Rulemaking of Malik Tony Singleton
-
-**Score:** 53/100  
-**Source:** federal-register  
-**Published:** 09/30/26  
-**Topics:** unclassified  
-**Coverage:** unmonitored — B2B 0 · B2C 0  
-**URL:** https://www.federalregister.gov/documents/2026/09/30/2026-20078/petition-for-rulemaking-of-malik-tony-singleton
-
-- Build an original ranking, map or trend analysis from the underlying public data.
-- First appearance in this pipeline — no prior run surfaced it.
-- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
-
-### 35. What Are the Recent Trends in Health Sector Employment
-
-**Score:** 51/100  
+**Score:** 59/100  
 **Source:** kff-feed  
-**Published:** 09/30/26  
-**Topics:** unclassified  
+**Published:** 10/05/26  
+**Topics:** depression_mental_health  
+**Coverage:** gap — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/lgbtq/as-hhs-restores-the-lgbtq-988-suicide-and-crisis-line-under-pressure-from-congress-questions-remain/
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared.
+
+### 26. How Much Do Older Workers Value Retiree Health Insurance?
+
+**Score:** 56/100  
+**Source:** center-retirement-research  
+**Published:** 10/06/26  
+**Topics:** ageism_work  
 **Coverage:** unmonitored — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/health-costs/what-impact-has-the-coronavirus-pandemic-had-on-health-care-employment/
+**URL:** https://crr.bc.edu/how-much-do-older-workers-value-retiree-health-insurance/
 
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
 
-### 36. Section 3 Benchmarks for Creating Economic Opportunities for Low- and Very Low-Income Persons and Eligible Businesses
+### 27. Section 3 Benchmarks for Creating Economic Opportunities for Low- and Very Low-Income Persons and Eligible Businesses
 
 **Score:** 51/100  
 **Source:** federal-register  
@@ -1093,50 +944,158 @@ Confirmed coverage gaps: **75**
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
 
-### 37. From DC: Section 504 Integration Mandate Vacated, HUD Funding Updates, and New Census Data, and more
+### 28. Community Health Center Patients, Financing, and Services
 
-**Score:** 48/100  
-**Source:** justice-in-aging  
-**Published:** 09/25/26  
+**Score:** 51/100  
+**Source:** kff-feed  
+**Published:** 10/05/26  
 **Topics:** unclassified  
 **Coverage:** unmonitored — B2B 0 · B2C 0  
-**URL:** https://justiceinaging.org/from-dc-09252026/
+**URL:** https://www.kff.org/medicaid/community-health-center-patients-financing-and-services/
 
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
 
-### 38. Meet Our 2026 Heroes in Health
+### 29. Premier Martial Arts Franchisor and its Former Franchise Sales Organization Settle FTC Charges that the Companies Made Deceptive Claims and Violated the Franchise Rule
 
-**Score:** 48/100  
-**Source:** alliance-aging-research  
-**Published:** 09/25/26  
+**Score:** 51/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/05/26  
 **Topics:** unclassified  
 **Coverage:** unmonitored — B2B 0 · B2C 0  
-**URL:** https://www.agingresearch.org/blog/meet-our-2026-heroes-in-health/
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies
 
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
 
-### 39. What Should Health Care Do About AI’s Lack of Guardrails?
+### 30. FTC Issues Redress Payments to Consumers Impacted by GOAT’s Deceptive Shipping, Refund Policies
+
+**Score:** 51/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/06/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-redress-payments-consumers-impacted-goats-deceptive-shipping-refund-policies
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 31. How Does ACA Marketplace Enrollment in 2026 Vary Across Congressional Districts?
+
+**Score:** 51/100  
+**Source:** kff-feed  
+**Published:** 10/08/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/affordable-care-act/how-does-aca-marketplace-enrollment-in-2026-vary-across-congressional-districts/
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 32. FTC Returns More than $15.8 Million to Consumers Misled by  Cash Advance App Company Cleo AI
+
+**Score:** 51/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/08/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-returns-more-158-million-consumers-misled-cash-advance-app-company-cleo-ai
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 33. FTC, States Sue Lens.com for Misrepresenting the Price of Contact Lenses in Search Ads and on Its Website
+
+**Score:** 48/100  
+**Source:** ftc-consumer-protection  
+**Published:** 10/02/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-sue-lenscom-misrepresenting-price-contact-lenses-search-ads-its-website
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 34. Rural and Urban Health Center Patients and Financing
 
 **Score:** 48/100  
 **Source:** kff-feed  
-**Published:** 09/29/26  
+**Published:** 10/05/26  
 **Topics:** unclassified  
 **Coverage:** unmonitored — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/other-health/what-should-health-care-do-about-ais-lack-of-guardrails/
+**URL:** https://www.kff.org/medicaid/rural-and-urban-health-center-patients-and-financing/
 
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
 
-### 40. How Is The Federal Government Counting Measles Deaths?
+### 35. Midterm Election Update: Vaccines
 
 **Score:** 48/100  
 **Source:** kff-feed  
-**Published:** 10/01/26  
+**Published:** 10/06/26  
 **Topics:** unclassified  
 **Coverage:** unmonitored — B2B 0 · B2C 0  
-**URL:** https://www.kff.org/other-health/how-is-the-federal-government-counting-measles-deaths/
+**URL:** https://www.kff.org/elections/midterm-election-update-vaccines/
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 36. Midterm Election Update: The Affordable Care Act Marketplaces
+
+**Score:** 48/100  
+**Source:** kff-feed  
+**Published:** 10/06/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/elections/midterm-election-update-the-affordable-care-act-marketplaces/
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 37. AI: Does Europe Have the Answer?
+
+**Score:** 48/100  
+**Source:** kff-feed  
+**Published:** 10/06/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/other-health/ai-does-europe-have-the-answer/
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 38. Poll: Cost of Health Care and Gas Top Voters’ Midterm Concerns; Democrats Hold Significant Advantage on Health Care Costs and Cost of Living
+
+**Score:** 48/100  
+**Source:** kff-feed  
+**Published:** 10/06/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/public-opinion/poll-cost-of-health-care-and-gas-top-voters-midterm-concerns-democrats-hold-significant-advantage-on-health-care-costs-and-cost-of-living/
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 39. Is This A Healthcare Economy?
+
+**Score:** 48/100  
+**Source:** kff-feed  
+**Published:** 10/05/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/health-costs/what-impact-has-the-coronavirus-pandemic-had-on-health-care-employment-2/
+
+- First appearance in this pipeline — no prior run surfaced it.
+- Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
+
+### 40. AI in Health Care Moves Toward More Autonomous Roles — The Monitor
+
+**Score:** 48/100  
+**Source:** kff-feed  
+**Published:** 10/08/26  
+**Topics:** unclassified  
+**Coverage:** unmonitored — B2B 0 · B2C 0  
+**URL:** https://www.kff.org/health-information-trust/ai-in-health-care-moves-toward-more-autonomous-roles/
 
 - First appearance in this pipeline — no prior run surfaced it.
 - Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made.
