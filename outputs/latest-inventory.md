@@ -1,26 +1,26 @@
 # AgingWire evidence inventory
 
-Generated: 2026-10-26T01:38:56.952479+00:00
+Generated: 2026-10-26T16:50:12.673842+00:00
 
-All **149** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
+All **145** scored candidates from this run, ranked. The readable digest is in `outputs/latest.md`.
 
 ### 1. CMS refreshed dataset: 25 files refreshed, 09/16/26–10/25/26
 
-**Top score:** Lead — 85/100  
+**Top score:** Lead — 79/100  
 **Source:** cms-provider-data (government_api)  
 **Topics:** medicare_medicaid
 
 Released together, so this is one event rather than 25 separate leads:
 
-- [Home Health Care Agencies](https://data.cms.gov/provider-data/dataset/6jpm-sxkc) — 85/100, 09/21/26
-- [Home Health Care - Zip Codes](https://data.cms.gov/provider-data/dataset/m5eg-upu5) — 79/100, 09/21/26
-- [Home Health Care - National Data](https://data.cms.gov/provider-data/dataset/97z8-de96) — 79/100, 09/21/26
-- [Home Health Care - State by State Data](https://data.cms.gov/provider-data/dataset/tee5-ixt5) — 79/100, 09/21/26
-- [Home Health Care - Measure Date Range](https://data.cms.gov/provider-data/dataset/c886-nwpj) — 79/100, 09/21/26
-- [Home Health Care - Patient Survey (HHCAHPS) 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/ccn4-8vby) — 79/100, 09/16/26
-- [Home Health Care - Patient Survey (HHCAHPS) National Data 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/vxub-6swi) — 79/100, 09/16/26
-- [Home Health Care - Patient Survey (HHCAHPS) State Data 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/m5jg-jg7i) — 79/100, 09/16/26
-- [Home Health Care - Patient Survey (HHCAHPS) Measure Dates 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/fa88-6ff2) — 79/100, 09/16/26
+- [Home Health Care Agencies](https://data.cms.gov/provider-data/dataset/6jpm-sxkc) — 79/100, 09/21/26
+- [Home Health Care - Zip Codes](https://data.cms.gov/provider-data/dataset/m5eg-upu5) — 73/100, 09/21/26
+- [Home Health Care - National Data](https://data.cms.gov/provider-data/dataset/97z8-de96) — 73/100, 09/21/26
+- [Home Health Care - State by State Data](https://data.cms.gov/provider-data/dataset/tee5-ixt5) — 73/100, 09/21/26
+- [Home Health Care - Measure Date Range](https://data.cms.gov/provider-data/dataset/c886-nwpj) — 73/100, 09/21/26
+- [Home Health Care - Patient Survey (HHCAHPS) 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/ccn4-8vby) — 73/100, 09/16/26
+- [Home Health Care - Patient Survey (HHCAHPS) National Data 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/vxub-6swi) — 73/100, 09/16/26
+- [Home Health Care - Patient Survey (HHCAHPS) State Data 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/m5jg-jg7i) — 73/100, 09/16/26
+- [Home Health Care - Patient Survey (HHCAHPS) Measure Dates 2025Q2 to 2026Q1](https://data.cms.gov/provider-data/dataset/fa88-6ff2) — 73/100, 09/16/26
 - [Medical Equipment Suppliers](https://data.cms.gov/provider-data/dataset/ct36-nrcq) — 72/100, 10/25/26
 - [Medicare Claims Quality Measures](https://data.cms.gov/provider-data/dataset/ijh5-nb2v) — 68/100, 09/30/26
 - [Skilled Nursing Facility Quality Reporting Program - Provider Data](https://data.cms.gov/provider-data/dataset/fykj-qjee) — 68/100, 09/30/26
@@ -40,7 +40,7 @@ Released together, so this is one event rather than 25 separate leads:
 
 ### 2. Cost-of-Living Increase and Other Determinations for 2027
 
-**Score:** Lead — 79/100  
+**Score:** Lead — 73/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 10/26/26  
 **Topics:** financial_security  
@@ -51,7 +51,7 @@ Under title II of the Social Security Act (Act), there will be a 3.6 percent cos
 
 ### 3. Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026
 
-**Score:** Lead — 79/100  
+**Score:** Lead — 73/100  
 **Source:** federal-register (regulatory_filing)  
 **Published:** 10/20/26  
 **Topics:** medicare_medicaid  
@@ -62,7 +62,7 @@ This proposed rule would implement section 6219 (Adjustments to Medicare Part D 
 
 ### 4. From DC: Homelessness Funding Efforts, Medicaid Implementation Updates, and CMS Funding Cuts
 
-**Score:** Lead — 77/100  
+**Score:** Lead — 71/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 10/23/26  
 **Topics:** medicare_medicaid  
@@ -73,7 +73,7 @@ In this week's edition: Homelessness Funding Efforts, Medicaid Implementation Up
 
 ### 5. Assessing Ability to Work: How Historical SNAP Processes May Vary from Medicaid
 
-**Score:** Lead — 77/100  
+**Score:** Strong — 68/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 10/22/26  
 **Topics:** medicare_medicaid, nutrition, sarcopenia_frailty  
@@ -84,7 +84,7 @@ In light of the uncertainty surrounding how states will verify the Medicaid medi
 
 ### 6. Reporting and Transparency Requirements for State Medicaid Agency Contracts (SMACs)
 
-**Score:** Lead — 75/100  
+**Score:** Strong — 68/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 10/21/26  
 **Topics:** medicare_medicaid  
@@ -95,7 +95,7 @@ Learn about reporting and transparency requirements for Medicaid State Medicaid 
 
 ### 7. Medicaid Estate Recovery: State Strategies to Mitigate Harm
 
-**Score:** Lead — 75/100  
+**Score:** Strong — 68/100  
 **Source:** justice-in-aging (institutional_rss)  
 **Published:** 10/20/26  
 **Topics:** medicare_medicaid  
@@ -106,7 +106,7 @@ Explore how states can reduce the harms of Medicaid estate recovery and protect 
 
 ### 8. Medicaid State Fact Sheets
 
-**Score:** Lead — 75/100  
+**Score:** Strong — 68/100  
 **Source:** kff-feed (institutional_rss)  
 **Published:** 10/19/26  
 **Topics:** medicare_medicaid  
@@ -117,7 +117,7 @@ What percentage of people are covered by Medicaid in your state? Our State Medic
 
 ### 9. How Do Medicaid Policies for Home- and Community-Based Services Impact the Jobs and Wages of the Formal Care Workforce?
 
-**Score:** Lead — 74/100  
+**Score:** Strong — 67/100  
 **Source:** center-retirement-research (web_release)  
 **Published:** 10/20/26  
 **Topics:** medicare_medicaid, workforce  
@@ -126,51 +126,7 @@ What percentage of people are covered by Medicaid in your state? Our State Medic
 
 Gal Wettstein , and Nilufer Gok October 20, 2026
 
-### 10. How Do Medicaid LTC Policies Impact Jobs and Wages of Nurses and Aides?
-
-**Score:** Lead — 73/100  
-**Source:** center-retirement-research (web_release)  
-**Published:** 10/20/26  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://crr.bc.edu/how-do-medicaid-ltc-policies-impact-jobs-and-wages-of-nurses-and-aides/
-
-Gal Wettstein , and Nilufer Gok October 20, 2026
-
-### 11. Midterm Election Update: Medicaid Changes
-
-**Score:** Lead — 71/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/21/26  
-**Topics:** medicare_medicaid  
-**Coverage:** lightly covered — B2B 2, B2C 0  
-**Source URL:** https://www.kff.org/elections/midterm-election-update-medicaid-changes/
-
-Major federal changes to Medicaid eligibility and financing from the 2025 reconciliation law are coming, including new work requirements that will affect millions of Medicaid enrollees. KFF’s fact sheet provides an overview of what has changed, what is still ahead, and what the public thinks about Medicaid heading into the midterms.
-
-### 12. A Closer Look at State Directed Payments for Nursing Home Services
-
-**Score:** Lead — 71/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/21/26  
-**Topics:** long_term_care  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/a-closer-look-at-state-directed-payments-for-nursing-home-services/
-
-Building on previous analysis of state directed payments (SDPs), this issue brief takes a closer look at SDPs for nursing home services.
-
-### 13. From DC: Eviction Crisis Act, 2027 Social Security COLA, HCBS Updates, and More
-
-**Score:** Strong — 68/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 10/16/26  
-**Topics:** financial_security, long_term_care  
-**Coverage:** lightly covered — B2B 0, B2C 2  
-**Source URL:** https://justiceinaging.org/from-dc-10162026/
-
-In this week's edition: Eviction Crisis Act, 2027 Social Security COLA, HCBS Updates, and More. The post From DC: Eviction Crisis Act, 2027 Social Security COLA, HCBS Updates, and More appeared first on Justice in Aging .
-
-### 14. BLS: Consumer Price Index, medical care, September 2026 — 593.65 index 1982-84=100 (+1.5% year over year)
+### 10. BLS: Consumer Price Index, medical care, September 2026 — 593.65 index 1982-84=100 (+1.5% year over year)
 
 **Score:** Strong — 67/100  
 **Source:** bls-api (government_api)  
@@ -179,40 +135,51 @@ In this week's edition: Eviction Crisis Act, 2027 Social Security COLA, HCBS Upd
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CUUR0000SAM
 
-### 15. Medicaid Community Engagement Requirements and Older Adults: Frequently Asked Questions
+### 11. How Do Medicaid LTC Policies Impact Jobs and Wages of Nurses and Aides?
 
-**Score:** Strong — 64/100  
-**Source:** justice-in-aging (institutional_rss)  
-**Published:** 10/15/26  
+**Score:** Strong — 66/100  
+**Source:** center-retirement-research (web_release)  
+**Published:** 10/20/26  
 **Topics:** medicare_medicaid  
-**Coverage:** lightly covered — B2B 1, B2C 0  
-**Source URL:** https://justiceinaging.org/medicaid-community-engagement-requirements/
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://crr.bc.edu/how-do-medicaid-ltc-policies-impact-jobs-and-wages-of-nurses-and-aides/
 
-Learn how Medicaid community engagement requirements could affect coverage for older adults and people with disabilities, including exemptions and state implementation. The post Medicaid Community Engagement Requirements and Older Adults: Frequently Asked Questions appeared first on Justice in Aging .
+Gal Wettstein , and Nilufer Gok October 20, 2026
 
-### 16. Assessing Ability to Work: How Historical SNAP Processes May Vary from Medicaid
+### 12. Midterm Election Update: Medicaid Changes
 
 **Score:** Strong — 64/100  
-**Source:** kff-issue-briefs (web_release)  
-**Published:** undated  
-**Topics:** medicare_medicaid, nutrition, sarcopenia_frailty  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/21/26  
+**Topics:** medicare_medicaid  
+**Coverage:** lightly covered — B2B 2, B2C 0  
+**Source URL:** https://www.kff.org/elections/midterm-election-update-medicaid-changes/
+
+Major federal changes to Medicaid eligibility and financing from the 2025 reconciliation law are coming, including new work requirements that will affect millions of Medicaid enrollees. KFF’s fact sheet provides an overview of what has changed, what is still ahead, and what the public thinks about Medicaid heading into the midterms.
+
+### 13. A Closer Look at State Directed Payments for Nursing Home Services
+
+**Score:** Strong — 64/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/21/26  
+**Topics:** long_term_care  
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/assessing-ability-to-work-how-historical-snap-processes-may-vary-from-medicaid/
+**Source URL:** https://www.kff.org/medicaid/a-closer-look-at-state-directed-payments-for-nursing-home-services/
 
-Oct 22, 2026 Issue Brief In light of the uncertainty surrounding how states will verify the Medicaid medical frailty exclusion, this issue brief describes how the Supplemental Nutrition Assistance Program (SNAP) has handled similar administrative challenges.
+Building on previous analysis of state directed payments (SDPs), this issue brief takes a closer look at SDPs for nursing home services.
 
-### 17. Justice in Aging's Comments on HUD's Notice of Research Justifying Incentives to Reduce Homelessness
+### 14. From DC: Eviction Crisis Act, 2027 Social Security COLA, HCBS Updates, and More
 
 **Score:** Strong — 62/100  
 **Source:** justice-in-aging (institutional_rss)  
-**Published:** 10/14/26  
-**Topics:** housing  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://justiceinaging.org/justice-in-agings-comments-on-huds-notice-of-research-justifying-incentives-to-reduce-homelessness/
+**Published:** 10/16/26  
+**Topics:** financial_security, long_term_care  
+**Coverage:** lightly covered — B2B 0, B2C 2  
+**Source URL:** https://justiceinaging.org/from-dc-10162026/
 
-Justice in Aging comments on HUD’s proposed research on incentives to reduce homelessness, highlighting the importance of housing stability for older adults. The post Justice in Aging&#039;s Comments on HUD&#039;s Notice of Research Justifying Incentives to Reduce Homelessness appeared first on Justice in Aging .
+In this week's edition: Eviction Crisis Act, 2027 Social Security COLA, HCBS Updates, and More. The post From DC: Eviction Crisis Act, 2027 Social Security COLA, HCBS Updates, and More appeared first on Justice in Aging .
 
-### 18. Global Benchmark for Efficient Drug Pricing (GLOBE) Model
+### 15. Global Benchmark for Efficient Drug Pricing (GLOBE) Model
 
 **Score:** Strong — 62/100  
 **Source:** federal-register (regulatory_filing)  
@@ -223,7 +190,7 @@ Justice in Aging comments on HUD’s proposed research on incentives to reduce h
 
 This final rule implements the Global Benchmark for Efficient Drug Pricing Model (GLOBE Model), a new mandatory Medicare payment model under section 1115A of the Social Security Act. The GLOBE Model will test whether a payment model that uses an alternative method for calculating Medicare Part B drug inflation rebate amounts for certain separately payable Medicare Part B drugs and biological products reduces costs for Original Medicare (OM) beneficiaries and the Medicare program while preserving quality of care. The term OM has the same meaning as Medicare fee-for-service and the traditional M
 
-### 19. Medicare Program; Prospective Payment System and Consolidated Billing for Skilled Nursing Facilities; Updates to the Quality Reporting Program for Federal Fiscal Year 2027; Correction
+### 16. Medicare Program; Prospective Payment System and Consolidated Billing for Skilled Nursing Facilities; Updates to the Quality Reporting Program for Federal Fiscal Year 2027; Correction
 
 **Score:** Strong — 62/100  
 **Source:** federal-register (regulatory_filing)  
@@ -234,7 +201,7 @@ This final rule implements the Global Benchmark for Efficient Drug Pricing Model
 
 This document corrects technical errors in the final rule that appeared in the July 31, 2026 Federal Register titled "Medicare Program; Prospective Payment System and Consolidated Billing for Skilled Nursing Facilities; Updates to the Quality Reporting Program for Federal Fiscal Year 2027."
 
-### 20. American Community Survey 2023 state aging and housing profile (52 states)
+### 17. American Community Survey 2023 state aging and housing profile (52 states)
 
 **Score:** Strong — 62/100  
 **Source:** american-community-survey (government_api)  
@@ -245,7 +212,18 @@ This document corrects technical errors in the final rule that appeared in the J
 
 State-level counts for 65+, 65-74, 75-84 and 85+ populations with median household income and housing tenure, 2023 ACS 5-year estimates.
 
-### 21. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants; Correction
+### 18. Tracking Key Mental Health and Substance Use Policy Actions Under the Trump Administration
+
+**Score:** Strong — 61/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/26/26  
+**Topics:** depression_mental_health  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/mental-health/tracking-key-mental-health-and-substance-use-policy-actions-under-the-trump-administration/
+
+A new KFF tracker highlights key federal policy actions during President Trump’s second term that concern issues related to mental health and substance use. The second Trump administration has emphasized law-and-order strategies and scaled back several mental health and substance use-related services, while also continuing some treatment-focused initiatives. The tracker can be viewed in multiple ways, including chronological order of policy actions and by category (Mental Health; Opioids/Substance Use Disorder; Federal Infrastructure/ Data/Guidance; and Gun Violence).
+
+### 19. Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians-Request for Current Billing Information for Qualifying APM Participants; Correction
 
 **Score:** Strong — 61/100  
 **Source:** federal-register (regulatory_filing)  
@@ -256,7 +234,7 @@ State-level counts for 65+, 65-74, 75-84 and 85+ populations with median househo
 
 This document corrects a technical error in the payment advisory that appeared in the August 13, 2026, Federal Register titled "Medicare Program; Alternative Payment Model (APM) Incentive Payment Advisory for Clinicians--Request for Current Billing Information for Qualifying APM Participants".
 
-### 22. Medicare Program; FY 2027 Inpatient Psychiatric Facilities Prospective Payment System-Rate Update; Correction
+### 20. Medicare Program; FY 2027 Inpatient Psychiatric Facilities Prospective Payment System-Rate Update; Correction
 
 **Score:** Strong — 61/100  
 **Source:** federal-register (regulatory_filing)  
@@ -267,7 +245,7 @@ This document corrects a technical error in the payment advisory that appeared i
 
 This document corrects technical errors in the final action that appeared in the July 31, 2026 Federal Register titled "Medicare Program; FY 2027 Inpatient Psychiatric Facilities Prospective Payment System--Rate Update".
 
-### 23. Medicare Program; Inpatient Rehabilitation Facility Prospective Payment System for Federal Fiscal Year 2027 and Updates to the IRF Quality Reporting Program; Correction
+### 21. Medicare Program; Inpatient Rehabilitation Facility Prospective Payment System for Federal Fiscal Year 2027 and Updates to the IRF Quality Reporting Program; Correction
 
 **Score:** Strong — 61/100  
 **Source:** federal-register (regulatory_filing)  
@@ -278,7 +256,7 @@ This document corrects technical errors in the final action that appeared in the
 
 This document corrects technical errors in the final rule that appeared in the August 3, 2026 Federal Register titled "Medicare Program; Inpatient Rehabilitation Facility Prospective Payment System for Federal Fiscal Year 2027 and Updates to the IRF Quality Reporting Program".
 
-### 24. Medicare Program; FY 2027 Hospice Wage Index and Payment Rate Update and Hospice Quality Reporting Program Requirements; Correction
+### 22. Medicare Program; FY 2027 Hospice Wage Index and Payment Rate Update and Hospice Quality Reporting Program Requirements; Correction
 
 **Score:** Strong — 61/100  
 **Source:** federal-register (regulatory_filing)  
@@ -289,7 +267,7 @@ This document corrects technical errors in the final rule that appeared in the A
 
 This document corrects technical errors in the final rule that appeared in the August 3, 2026 Federal Register titled "Medicare Program; FY 2027 Hospice Wage Index and Payment Rate Update and Hospice Quality Reporting Program Requirements".
 
-### 25. BLS: Home health care services employment, September 2026 — 1,894.20 thousands of jobs (+4.4% year over year)
+### 23. BLS: Home health care services employment, September 2026 — 1,894.20 thousands of jobs (+4.4% year over year)
 
 **Score:** Strong — 61/100  
 **Source:** bls-api (government_api)  
@@ -298,7 +276,7 @@ This document corrects technical errors in the final rule that appeared in the A
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562160001
 
-### 26. BLS: Nursing care facilities employment, September 2026 — 1,587.40 thousands of jobs (+1.9% year over year)
+### 24. BLS: Nursing care facilities employment, September 2026 — 1,587.40 thousands of jobs (+1.9% year over year)
 
 **Score:** Strong — 61/100  
 **Source:** bls-api (government_api)  
@@ -307,7 +285,7 @@ This document corrects technical errors in the final rule that appeared in the A
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562310001
 
-### 27. BLS: Employment level, 65 years and over, September 2026 — 11,654 thousands of people (-0.7% year over year)
+### 25. BLS: Employment level, 65 years and over, September 2026 — 11,654 thousands of people (-0.7% year over year)
 
 **Score:** Strong — 61/100  
 **Source:** bls-api (government_api)  
@@ -316,16 +294,7 @@ This document corrects technical errors in the final rule that appeared in the A
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/LNU02000097
 
-### 28. Planning for Social Security Uncertainty
-
-**Score:** Strong — 60/100  
-**Source:** center-retirement-research (web_release)  
-**Published:** 10/22/26  
-**Topics:** financial_security  
-**Coverage:** well covered — B2B 0, B2C 3  
-**Source URL:** https://crr.bc.edu/planning-for-social-security-uncertainty/
-
-### 29. Alliance Resources and Live Event Help Beneficiaries Navigate Medicare Open Enrollment Season
+### 26. Alliance Resources and Live Event Help Beneficiaries Navigate Medicare Open Enrollment Season
 
 **Score:** Strong — 60/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -336,7 +305,7 @@ This document corrects technical errors in the final rule that appeared in the A
 
 The post Alliance Resources and Live Event Help Beneficiaries Navigate Medicare Open Enrollment Season appeared first on Alliance for Aging Research .
 
-### 30. Notice of Federal Advisory Committee Meeting; Manufactured Housing Consensus Committee (MHCC)
+### 27. Notice of Federal Advisory Committee Meeting; Manufactured Housing Consensus Committee (MHCC)
 
 **Score:** Strong — 60/100  
 **Source:** federal-register (regulatory_filing)  
@@ -347,7 +316,7 @@ The post Alliance Resources and Live Event Help Beneficiaries Navigate Medicare 
 
 This notice sets forth the schedule and proposed agenda for a virtual meeting of the Manufactured Housing Consensus Committee (MHCC) to be held on October 27, 2026, and October 28, 2026, from 11:00 a.m. to 5:00 p.m., Eastern Daylight Time (EDT). The meeting is open to the public. The agenda provides an opportunity for interested parties to comment on the business before the MHCC.
 
-### 31. BLS: Home health care services average hourly earnings, August 2026 — 28.14 dollars per hour (+2.4% year over year)
+### 28. BLS: Home health care services average hourly earnings, August 2026 — 28.14 dollars per hour (+2.4% year over year)
 
 **Score:** Strong — 60/100  
 **Source:** bls-api (government_api)  
@@ -356,29 +325,7 @@ This notice sets forth the schedule and proposed agenda for a virtual meeting of
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562160003
 
-### 32. A Closer Look at State Directed Payments for Nursing Home Services
-
-**Score:** Strong — 60/100  
-**Source:** kff-issue-briefs (web_release)  
-**Published:** undated  
-**Topics:** long_term_care  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/a-closer-look-at-state-directed-payments-for-nursing-home-services/
-
-Oct 21, 2026 Issue Brief Building on previous analysis of state directed payments (SDPs), this issue brief takes a closer look at SDPs for nursing home services.
-
-### 33. Making Medical AI Benchmarks Clinically Interpretable
-
-**Score:** Strong — 59/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 10/21/26  
-**Topics:** depression_mental_health  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71489.html
-
-This perspective examines how aggregate scores on medical AI benchmarks like HealthBench can mask variation across clinical domains. It argues for domain-specific reporting, using mental health as a test case.
-
-### 34. Status of State Medicaid Expansion Decisions
+### 29. Status of State Medicaid Expansion Decisions
 
 **Score:** Strong — 59/100  
 **Source:** kff-feed (institutional_rss)  
@@ -389,18 +336,7 @@ This perspective examines how aggregate scores on medical AI benchmarks like Hea
 
 This page displays an interactive map of the current status of state decisions on the Affordable Care Act's Medicaid expansion. Additional Medicaid expansion resources are listed (with links) below the map.
 
-### 35. Medicaid Waiver Tracker: Approved and Pending Section 1115 Waivers by State
-
-**Score:** Strong — 59/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/15/26  
-**Topics:** medicare_medicaid  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/medicaid-waiver-tracker-approved-and-pending-section-1115-waivers-by-state/
-
-Section 1115 Medicaid waivers can allow states to test new approaches in Medicaid that differ from what is required by federal law. This page tracks approved and pending waiver provisions (including expansions and restrictions) related to eligibility, benefits, and social determinants of health and other delivery system reforms.
-
-### 36. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
+### 30. Mortgage and Loan Insurance Programs Under the National Housing Act-Debenture Interest Rates
 
 **Score:** Strong — 59/100  
 **Source:** federal-register (regulatory_filing)  
@@ -411,18 +347,29 @@ Section 1115 Medicaid waivers can allow states to test new approaches in Medicai
 
 This Notice announces changes in the interest rates to be paid on debentures issued with respect to a loan or mortgage insured by the Federal Housing Administration under the provisions of the National Housing Act (the Act). The interest rate for debentures issued under Section 221(g)(4) of the Act during the 6-month period beginning July 1, 2026, is 4\1/2\ percent. The interest rate for debentures issued under any other provision of the Act is the rate in effect on the date that the commitment to insure the loan or mortgage was issued, or the date that the loan or mortgage was endorsed (or in
 
-### 37. Preventing health-related job loss
+### 31. Medicaid Community Engagement Requirements and Older Adults: Frequently Asked Questions
 
 **Score:** Strong — 58/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 10/14/26  
-**Topics:** workforce  
+**Source:** justice-in-aging (institutional_rss)  
+**Published:** 10/15/26  
+**Topics:** medicare_medicaid  
+**Coverage:** lightly covered — B2B 1, B2C 0  
+**Source URL:** https://justiceinaging.org/medicaid-community-engagement-requirements/
+
+Learn how Medicaid community engagement requirements could affect coverage for older adults and people with disabilities, including exemptions and state implementation. The post Medicaid Community Engagement Requirements and Older Adults: Frequently Asked Questions appeared first on Justice in Aging .
+
+### 32. Assessing Ability to Work: How Historical SNAP Processes May Vary from Medicaid
+
+**Score:** Strong — 58/100  
+**Source:** kff-issue-briefs (web_release)  
+**Published:** undated  
+**Topics:** medicare_medicaid, nutrition, sarcopenia_frailty  
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/research_reports/RRA4728-1.html
+**Source URL:** https://www.kff.org/medicaid/assessing-ability-to-work-how-historical-snap-processes-may-vary-from-medicaid/
 
-We examine what is needed to deliver effective, scalable and sustainable early-intervention caseworker-led support in the UK. It reviews evidence on effectiveness, workforce requirements and delivery models to help prevent health-related job loss.
+Oct 22, 2026 Issue Brief In light of the uncertainty surrounding how states will verify the Medicaid medical frailty exclusion, this issue brief describes how the Supplemental Nutrition Assistance Program (SNAP) has handled similar administrative challenges.
 
-### 38. Clinical Laboratory Improvement Amendments of 1988 (CLIA); Virtual Access, Gynecologic Cytology Proficiency Testing (PT), Personnel Qualifications, and Other Changes
+### 33. Clinical Laboratory Improvement Amendments of 1988 (CLIA); Virtual Access, Gynecologic Cytology Proficiency Testing (PT), Personnel Qualifications, and Other Changes
 
 **Score:** Strong — 57/100  
 **Source:** federal-register (regulatory_filing)  
@@ -433,7 +380,7 @@ We examine what is needed to deliver effective, scalable and sustainable early-i
 
 This proposed rule would amend the Clinical Laboratory Improvement Amendments of 1988 (CLIA) regulations to allow for virtual access under the CLIA certificate of the primary testing laboratory that generated the data, with the exception of the subspecialty of cytology, and the use of digital images for gynecologic cytology proficiency testing. This proposed rule also includes proposed changes to personnel qualification requirements and other proposed changes pertaining to SARS-CoV-2 reporting requirements, certificate requirements, test reporting requirements, enforcement requirements, public
 
-### 39. Section 184 Indian Housing Loan Guarantee Program Increase in the Loan Guarantee Fee
+### 34. Section 184 Indian Housing Loan Guarantee Program Increase in the Loan Guarantee Fee
 
 **Score:** Strong — 57/100  
 **Source:** federal-register (regulatory_filing)  
@@ -444,7 +391,7 @@ This proposed rule would amend the Clinical Laboratory Improvement Amendments of
 
 The Section 184 Indian Housing Loan Guarantee Program ("Section 184 Program") operates using a combination of funds annually appropriated by Congress and fees. Consistent with other HUD loan guarantee programs, to ensure that the program is self-sustaining, HUD is increasing fees charged under the program. HUD is increasing the upfront loan guarantee fee for all new Section 184 Firm Commitments, including refinances, from 1.00 to 1.50 percent, effective October 1, 2026. HUD is increasing the upfront loan guarantee fee for all new Section 184 Skilled Workers Demonstration Program Firm Commitmen
 
-### 40. Section 108 Loan Guarantee Program: Announcement of Fee To Cover Credit Subsidy Costs for FY 2027
+### 35. Section 108 Loan Guarantee Program: Announcement of Fee To Cover Credit Subsidy Costs for FY 2027
 
 **Score:** Strong — 57/100  
 **Source:** federal-register (regulatory_filing)  
@@ -455,7 +402,7 @@ The Section 184 Indian Housing Loan Guarantee Program ("Section 184 Program") op
 
 This document announces the fee that HUD will collect from borrowers of loans guaranteed under HUD's Section 108 Loan Guarantee Program (Section 108 Program) to offset the credit subsidy costs of the guaranteed loans pursuant to commitments awarded in Fiscal Year 2027 in the event HUD is required or authorized by statute to do so, notwithstanding subsection (m) of section 108 of the Housing and Community Development Act of 1974. The fee to offset credit subsidy costs is changing from 0.58 percent in Fiscal Year 2026 to 1.05 percent in Fiscal Year 2027.
 
-### 41. BLS: Continuing care retirement communities and assisted living employment, September 2026 — 1,022.10 thousands of jobs (+0.8% year over year)
+### 36. BLS: Continuing care retirement communities and assisted living employment, September 2026 — 1,022.10 thousands of jobs (+0.8% year over year)
 
 **Score:** Strong — 57/100  
 **Source:** bls-api (government_api)  
@@ -464,18 +411,18 @@ This document announces the fee that HUD will collect from borrowers of loans gu
 **Coverage:** lightly covered — B2B 2, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562330001
 
-### 42. Difficulty Supporting Student Mental Health Strains Teacher Well-Being
+### 37. Justice in Aging's Comments on HUD's Notice of Research Justifying Incentives to Reduce Homelessness
 
-**Score:** Strong — 55/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 10/21/26  
-**Topics:** depression_mental_health  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.rand.org/pubs/research_reports/RRA4404-6.html
+**Score:** Strong — 56/100  
+**Source:** justice-in-aging (institutional_rss)  
+**Published:** 10/14/26  
+**Topics:** housing  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://justiceinaging.org/justice-in-agings-comments-on-huds-notice-of-research-justifying-incentives-to-reduce-homelessness/
 
-Young people face significant mental health challenges, and teachers are increasingly on the front lines. This report describes how teachers support student mental health and the consequences for teachers’ work environment and well-being.
+Justice in Aging comments on HUD’s proposed research on incentives to reduce homelessness, highlighting the importance of housing stability for older adults. The post Justice in Aging&#039;s Comments on HUD&#039;s Notice of Research Justifying Incentives to Reduce Homelessness appeared first on Justice in Aging .
 
-### 43. Statutorily Mandated Designation of Difficult Development Areas and Qualified Census Tracts for 2027
+### 38. Statutorily Mandated Designation of Difficult Development Areas and Qualified Census Tracts for 2027
 
 **Score:** Strong — 55/100  
 **Source:** federal-register (regulatory_filing)  
@@ -486,7 +433,16 @@ Young people face significant mental health challenges, and teachers are increas
 
 This document designates "Difficult Development Areas" (DDAs) and "Qualified Census Tracts" (QCTs) for purposes of the Low- Income Housing Tax Credit (LIHTC). The United States Department of Housing and Urban Development (HUD) makes new DDA and QCT designations annually.
 
-### 44. Medicare Program; Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals (IPPS) and the Long-Term Care Hospital Prospective Payment System and Policy Changes and Fiscal Year (FY) 2027 Rates; Requirements for Quality Programs; Other Policy Changes; and Adoption of Updated Versions of Certain Health Information Technology Standards; Correction
+### 39. Planning for Social Security Uncertainty
+
+**Score:** Worth a look — 54/100  
+**Source:** center-retirement-research (web_release)  
+**Published:** 10/22/26  
+**Topics:** financial_security  
+**Coverage:** well covered — B2B 0, B2C 3  
+**Source URL:** https://crr.bc.edu/planning-for-social-security-uncertainty/
+
+### 40. Medicare Program; Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals (IPPS) and the Long-Term Care Hospital Prospective Payment System and Policy Changes and Fiscal Year (FY) 2027 Rates; Requirements for Quality Programs; Other Policy Changes; and Adoption of Updated Versions of Certain Health Information Technology Standards; Correction
 
 **Score:** Worth a look — 54/100  
 **Source:** federal-register (regulatory_filing)  
@@ -497,7 +453,7 @@ This document designates "Difficult Development Areas" (DDAs) and "Qualified Cen
 
 This document corrects technical and typographical errors in the final rule that appeared in the Federal Register on August 4, 2026 titled "Medicare Program; Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals (IPPS) and the Long-Term Care Hospital Prospective Payment System and Policy Changes and Fiscal Year (FY) 2027 Rates; Requirements for Quality Programs; Other Policy Changes; and Adoption of Updated Versions of Certain Health Information Technology Standards."
 
-### 45. BLS: Assisted living and CCRC average hourly earnings, August 2026 — 25.89 dollars per hour (+4.8% year over year)
+### 41. BLS: Assisted living and CCRC average hourly earnings, August 2026 — 25.89 dollars per hour (+4.8% year over year)
 
 **Score:** Worth a look — 54/100  
 **Source:** bls-api (government_api)  
@@ -506,29 +462,29 @@ This document corrects technical and typographical errors in the final rule that
 **Coverage:** lightly covered — B2B 1, B2C 0  
 **Source URL:** https://data.bls.gov/timeseries/CES6562330003
 
-### 46. What Could Medicaid Work Requirements Mean for SSI Applicants?
+### 42. A Closer Look at State Directed Payments for Nursing Home Services
 
 **Score:** Worth a look — 54/100  
 **Source:** kff-issue-briefs (web_release)  
 **Published:** undated  
-**Topics:** medicare_medicaid, sarcopenia_frailty  
-**Coverage:** lightly covered — B2B 1, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/what-could-medicaid-work-requirements-mean-for-ssi-applicants/
+**Topics:** long_term_care  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/medicaid/a-closer-look-at-state-directed-payments-for-nursing-home-services/
 
-Oct 14, 2026 Issue Brief Medicaid work requirements may make it more difficult for some SSI applicants to maintain coverage due to the added complexity of navigating the verification process for the medical frailty exclusion. KFF's policy analysis explains why SSI applicants are particularly at risk of going uninsured under the new Medicaid rules.
+Oct 21, 2026 Issue Brief Building on previous analysis of state directed payments (SDPs), this issue brief takes a closer look at SDPs for nursing home services.
 
-### 47. What Could Medicaid Work Requirements Mean for People with Disabilities Waiting for Medicare Coverage?
+### 43. Making Medical AI Benchmarks Clinically Interpretable
 
-**Score:** Worth a look — 54/100  
-**Source:** kff-issue-briefs (web_release)  
-**Published:** undated  
-**Topics:** medicare_medicaid  
-**Coverage:** lightly covered — B2B 1, B2C 0  
-**Source URL:** https://www.kff.org/medicaid/what-could-medicaid-work-requirements-mean-for-people-with-disabilities-waiting-for-medicare-coverage/
+**Score:** Worth a look — 53/100  
+**Source:** rand-research (institutional_rss)  
+**Published:** 10/21/26  
+**Topics:** depression_mental_health  
+**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
+**Source URL:** https://www.rand.org/pubs/external_publications/EP71489.html
 
-What Could Medicaid Work Requirements Mean for People with Disabilities Waiting for Medicare Coverage? Oct 14, 2026 Issue Brief This analysis finds that Medicaid through the expansion pathway covered over 1 in 4 SSDI applicants and beneficiaries waiting to become eligible for Medicare (120,300 people out of a total 415,300 in 2023). In future years, people applying for and new to SSDI may experien
+This perspective examines how aggregate scores on medical AI benchmarks like HealthBench can mask variation across clinical domains. It argues for domain-specific reporting, using mental health as a test case.
 
-### 48. 2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs
+### 44. 2026 Retirement Confidence Survey Finds Americans Less Confident About Retirement as Worries Grow Over Social Security, Medicare and Rising Costs
 
 **Score:** Worth a look — 52/100  
 **Source:** ebri (web_release)  
@@ -539,7 +495,7 @@ What Could Medicaid Work Requirements Mean for People with Disabilities Waiting 
 
 EBRI Press Release April 21, 2026 2 pages Summary Full Content
 
-### 49. Medigap Guaranteed Issue Requirements: An Overview of Federal and State Rules
+### 45. Medigap Guaranteed Issue Requirements: An Overview of Federal and State Rules
 
 **Score:** Worth a look — 52/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -550,40 +506,7 @@ EBRI Press Release April 21, 2026 2 pages Summary Full Content
 
 Oct 13, 2026 Issue Brief This issue brief analyzes federal and state rules related to guaranteed issue requirements for Medigap policies and how they impact beneficiaries’ access to Medigap, including the implications for Medicare beneficiaries with pre-existing medical conditions and those under age 65 with long-term disabilities.
 
-### 50. What We Know about Trump’s $500 ACA Checks and the User Fees Funding Them
-
-**Score:** Worth a look — 51/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/23/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/affordable-care-act/what-we-know-about-trumps-500-aca-checks-and-the-user-fees-funding-them/
-
-This analysis examines the $500 checks that the Trump administration is sending to some Affordable Care Act Marketplace enrollees and the user fees that are paying for them. The checks are going to about 1 million enrollees in the 30 states that rely on the federal HealthCare.gov Marketplace who are not receiving any tax credits this year – a small share of the 19.2 million people who were enrolled nationally as of February.
-
-### 51. Workers Now Pay $7,471 on Average Annually for Family Health Coverage, Up 9% or $621 from 2025, Benchmark Employer Health Benefits Survey Finds
-
-**Score:** Worth a look — 51/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/22/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/
-
-Workers are paying on average $7,471 annually toward the premiums for employer-sponsored family health benefits this year, which is up 9%, or $621, from 2025, per KFF’s annual benchmark health benefits survey of large and small employers. The burden of family premiums hits particularly hard for workers at small firms with less than 200 workers.
-
-### 52. Petition for Rulemaking of Jason Plotzker
-
-**Score:** Worth a look — 51/100  
-**Source:** federal-register (regulatory_filing)  
-**Published:** 10/21/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.federalregister.gov/documents/2026/10/21/2026-21510/petition-for-rulemaking-of-jason-plotzker
-
-Please take notice that the Federal Trade Commission ("Commission") received a petition for rulemaking from Jason Plotzker and has published that petition online at https://www.regulations.gov. The Commission invites written comments concerning the petition. Publication of this petition is pursuant to the Commission's Rules of Practice and Procedure and does not affect the legal status of the petition or its final disposition.
-
-### 53. NAC and the Caregiver Nation Coalition Respond to the CY 2027 Medicare Physician Fee Schedule Proposed Rule
+### 46. NAC and the Caregiver Nation Coalition Respond to the CY 2027 Medicare Physician Fee Schedule Proposed Rule
 
 **Score:** Worth a look — 51/100  
 **Source:** national-alliance-caregiving (web_release)  
@@ -592,7 +515,7 @@ Please take notice that the Federal Trade Commission ("Commission") received a p
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://www.caregiving.org/nac-and-the-caregiver-nation-coalition-respond-to-the-cy-2027-medicare-physician-fee-schedule-proposed-rule/
 
-### 54. New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security
+### 47. New National Initiative Examines How Caregiving Is Reshaping the Workplace, Employee Benefits and Long-Term Financial Security
 
 **Score:** Worth a look — 49/100  
 **Source:** ebri (web_release)  
@@ -603,7 +526,7 @@ Please take notice that the Federal Trade Commission ("Commission") received a p
 
 EBRI Press Release June 2, 2026 2 pages Summary Full Content
 
-### 55. Nearly Three-Quarters of Medicare Advantage Enrollees Could be Denied a Medigap Policy Due to a Pre-Existing Condition
+### 48. Nearly Three-Quarters of Medicare Advantage Enrollees Could be Denied a Medigap Policy Due to a Pre-Existing Condition
 
 **Score:** Worth a look — 49/100  
 **Source:** kff-issue-briefs (web_release)  
@@ -614,51 +537,29 @@ EBRI Press Release June 2, 2026 2 pages Summary Full Content
 
 Oct 13, 2026 Issue Brief This analysis examines the share of Medicare Advantage enrollees who have a pre-existing condition that could result in a Medigap denial if they seek to switch to traditional Medicare outside their one-time 12-month trial period, including national estimates and estimates by age and by state. KFF finds that nearly three-quarters of Medicare Advantage enrollees (74%) or 20.
 
-### 56. How Much is Health Spending Expected to Grow?
+### 49. How Does the Quality of the U.S. Health System Compare to Other Countries?
 
 **Score:** Worth a look — 48/100  
 **Source:** kff-feed (institutional_rss)  
-**Published:** 10/22/26  
+**Published:** 10/23/26  
 **Topics:** unclassified  
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/health-costs/how-much-is-health-spending-expected-to-grow/
+**Source URL:** https://www.kff.org/other-health/how-does-the-quality-of-the-u-s-healthcare-system-compare-to-other-countries/
 
-This chart collection explores how much health spending is expected to grow in the coming years, with a look at growth in prescription drug spending, out-of-pocket spending, and related trends.
+This chart collection compares the United States and other similarly large and wealthy nations across various measures of care quality to show how the U.S. stacks up against its peers and how that has changed over time.
 
-### 57. Recently Released KFF Poll Shows Uncertainty Over Established Safety of COVID-19 Vaccines During Pregnancy – The Monitor
+### 50. Difficulty Supporting Student Mental Health Strains Teacher Well-Being
 
 **Score:** Worth a look — 48/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/22/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/health-information-trust/recently-released-kff-poll-shows-uncertainty-over-established-safety-of-covid-19-vaccines-during-pregnancy/
+**Source:** rand-research (institutional_rss)  
+**Published:** 10/21/26  
+**Topics:** depression_mental_health  
+**Coverage:** lightly covered — B2B 0, B2C 1  
+**Source URL:** https://www.rand.org/pubs/research_reports/RRA4404-6.html
 
-KFF’s recently released Tracking Poll finds that public confidence in the safety of COVID-19 vaccines for use during pregnancy has fallen, and many are uncertain about a false claim linking the vaccines with higher risk of miscarriage. Separately, conversations about childhood vaccines frame vaccination as an individual parental decision.
+Young people face significant mental health challenges, and teachers are increasingly on the front lines. This report describes how teachers support student mental health and the consequences for teachers’ work environment and well-being.
 
-### 58. 2026 Employer Health Benefits Survey
-
-**Score:** Worth a look — 48/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/22/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/health-costs/2026-employer-health-benefits-survey/
-
-This is the 28th Employer Health Benefits Survey (EHBS) and reflects employer-sponsored health benefits in 2026. As in years past, the survey examines trends in employer coverage, including premiums, employee contributions, deductibles, offer rates, and employer practices. This year, we asked employers detailed questions about satisfaction with their health plans; coverage of GLP-1 agonists and IVF; actions taken in response to projected cost increases; and firms’ ability to obtain information about health care costs and utilization.
-
-### 59. Premiums and Worker Contributions Among Workers Covered by Employer-Sponsored Coverage, 1999-2026
-
-**Score:** Worth a look — 48/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/22/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/health-costs/premiums-worker-contributions-among-workers-covered-by-employer-sponsored-coverage/
-
-Since 1999, the Employer Health Benefits Survey has documented trends in employer-sponsored health insurance. Every year, private and non-federal public employers with 10 or more employees complete the survey.
-
-### 60. New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement
+### 51. New EBRI Report Finds Some Medicare Households May Need Nearly $500,000 for Health Care in Retirement
 
 **Score:** Worth a look — 48/100  
 **Source:** ebri (web_release)  
@@ -669,7 +570,7 @@ Since 1999, the Employer Health Benefits Survey has documented trends in employe
 
 EBRI Press Release March 11, 2026 2 pages Summary Full Content
 
-### 61. From Consumer Insight to Capital Alignment: Leadership Lessons from Four Decades in Senior Housing
+### 52. From Consumer Insight to Capital Alignment: Leadership Lessons from Four Decades in Senior Housing
 
 **Score:** Worth a look — 48/100  
 **Source:** nic (web_release)  
@@ -680,7 +581,29 @@ EBRI Press Release March 11, 2026 2 pages Summary Full Content
 
 Benchmark Senior Living CEO, founder, and chairman Tom Grape joins host Lisa McCracken to reflect on nearly four decades in senior housing and what the sector needs to get right next. Grape discusses how the sector has matured, from the growth of assisted living and memory care to…
 
-### 62. Senior Housing Occupancy Nears Record High as Primary Markets Surpass 90%
+### 53. What Could Medicaid Work Requirements Mean for SSI Applicants?
+
+**Score:** Worth a look — 47/100  
+**Source:** kff-issue-briefs (web_release)  
+**Published:** undated  
+**Topics:** medicare_medicaid, sarcopenia_frailty  
+**Coverage:** lightly covered — B2B 2, B2C 0  
+**Source URL:** https://www.kff.org/medicaid/what-could-medicaid-work-requirements-mean-for-ssi-applicants/
+
+Oct 14, 2026 Issue Brief Medicaid work requirements may make it more difficult for some SSI applicants to maintain coverage due to the added complexity of navigating the verification process for the medical frailty exclusion. KFF's policy analysis explains why SSI applicants are particularly at risk of going uninsured under the new Medicaid rules.
+
+### 54. What Could Medicaid Work Requirements Mean for People with Disabilities Waiting for Medicare Coverage?
+
+**Score:** Worth a look — 47/100  
+**Source:** kff-issue-briefs (web_release)  
+**Published:** undated  
+**Topics:** medicare_medicaid  
+**Coverage:** lightly covered — B2B 2, B2C 0  
+**Source URL:** https://www.kff.org/medicaid/what-could-medicaid-work-requirements-mean-for-people-with-disabilities-waiting-for-medicare-coverage/
+
+What Could Medicaid Work Requirements Mean for People with Disabilities Waiting for Medicare Coverage? Oct 14, 2026 Issue Brief This analysis finds that Medicaid through the expansion pathway covered over 1 in 4 SSDI applicants and beneficiaries waiting to become eligible for Medicare (120,300 people out of a total 415,300 in 2023). In future years, people applying for and new to SSDI may experien
+
+### 55. Senior Housing Occupancy Nears Record High as Primary Markets Surpass 90%
 
 **Score:** Worth a look — 47/100  
 **Source:** nic (web_release)  
@@ -691,84 +614,7 @@ Benchmark Senior Living CEO, founder, and chairman Tom Grape joins host Lisa McC
 
 Senior housing occupancy surpassed 90% in the third quarter, the first time that primary market occupancy rates have been above 90% since 2014. Occupancy rates reached record highs in four primary markets – San Francisco, Chicago, Kansas City, and Dallas. At the same time, inventory growth remained near record…
 
-### 63. The Future of CDC HIV Prevention Funding for Community Organizations
-
-**Score:** Worth a look — 46/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/21/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/other-health/the-future-of-cdc-hiv-prevention-funding-for-community-organizations/
-
-Following reports that CDC is ending Community Based Organization (CBO) funding for HIV prevention, this analysis provides a snapshot of where, to whom, and at what level these community grants were distributed in the past grant cycle. We find community organizations stand to lose significant amounts of funding, especially those located in the south.
-
-### 64. KFF Polling on Health Information and Trust
-
-**Score:** Worth a look — 46/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/20/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/public-opinion/kff-polling-on-health-information-and-trust/
-
-Drawing on KFF's poll findings, this interactive dashboard tracks the public’s trusted sources for health information, attitudes toward vaccines, and use of news, social media, and AI for health-related information. It provides visual representations of the key trends in the public’s trust in health information and tracks exposure to and belief in false and unproven health claims.
-
-### 65. KFF Tracking Poll on Health Information and Trust: Fall 2026 Update on Vaccine Views
-
-**Score:** Worth a look — 46/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/20/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/public-opinion/kff-tracking-poll-on-health-information-and-trust-fall-2026-update-on-vaccine-views/
-
-The latest KFF Tracking Poll on Health Information and Trust finds about half of parents mistakenly believe spacing out vaccines is healthier for children, while confidence in many long-standing childhood vaccines is high across partisans. These findings take on new relevance following President Trump's recent executive order calling for changes in U.S. childhood vaccine recommendations, including splitting the measles, mumps, and rubella (MMR) vaccine—currently given as a single combined shot—into three separate vaccines across multiple visits.
-
-### 66. Building the AI Hospital
-
-**Score:** Worth a look — 46/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/20/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/other-health/building-the-ai-hospital/
-
-Walk into the emergency room at Israel’s largest hospital and the first clinician to take your history may be an AI avatar — with a physician signing off on every recommendation. Israel’s Sheba Medical Center is building what could become the first fully AI-based hospital by 2030. Dr. Eyal Zimlichman, Sheba's Chief Transformation Officer, Chief Innovation Officer and Chief AI officer, talks with Chip about what that means for patients. During their conversation, Dr. Zimlichman argues that in the future, doctors will "be much more humane than the doctors of the present...because if we're not ab
-
-### 67. Policy Tracker: Exceptions to State Abortion Bans and Early Gestational Limits
-
-**Score:** Worth a look — 46/100  
-**Source:** kff-feed (institutional_rss)  
-**Published:** 10/16/26  
-**Topics:** unclassified  
-**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/womens-health-policy/exceptions-in-state-abortion-bans-and-early-gestational-limits/
-
-This policy tracker documents exceptions in each state’s most restrictive gestational limit or total ban.
-
-### 68. Suicide-Related Responses From AI Chatbots Through Application Programming Interfaces and Consumer-Facing Apps
-
-**Score:** Worth a look — 46/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 10/14/26  
-**Topics:** depression_mental_health  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71440.html
-
-This study examines how frequently AI chatbots provide direct responses to suicide-related prompts across access modes and whether response patterns differ between consumer-facing UI and API access across models and prompt risk levels.
-
-### 69. Alcohol Use Trajectories Across Disasters
-
-**Score:** Worth a look — 46/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 10/14/26  
-**Topics:** depression_mental_health  
-**Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71444.html
-
-This study examined long-term patterns of alcohol use among disaster-exposed adults and their associations with depression and illness anxiety (a preoccupation with having or acquiring a serious illness).
-
-### 70. Senior Housing Faces an Estimated Trillion-Dollar Supply Gap as Demographic Wave Arrives
+### 56. Senior Housing Faces an Estimated Trillion-Dollar Supply Gap as Demographic Wave Arrives
 
 **Score:** Worth a look — 45/100  
 **Source:** nic (web_release)  
@@ -779,7 +625,7 @@ This study examined long-term patterns of alcohol use among disaster-exposed adu
 
 The U.S. senior housing sector is entering what NIC MAP’s latest Market Outlook Report calls the steepest stretch of 80+ population growth in the nation’s history — and the industry’s current pace of construction isn’t close to keeping up. A Demographic Wave with Certainty The first Baby…
 
-### 71. The Conference That Changed My Career: Reflections on the NIC Scholar Program
+### 57. The Conference That Changed My Career: Reflections on the NIC Scholar Program
 
 **Score:** Worth a look — 45/100  
 **Source:** nic (web_release)  
@@ -790,7 +636,29 @@ The U.S. senior housing sector is entering what NIC MAP’s latest Market Outloo
 
 AdvoKate Longevity: Intergenerational Community Architecture The NIC Conference Scholar Program, sponsored by Welltower, gives students in senior housing academic programs full access to NIC’s Fall and Spring Conferences. Faculty at colleges and universities nominate students for the program. Selected Scholars take part in conference…
 
-### 72. Here’s How Much Americans Rely on Social Security – at All Income Levels
+### 58. What We Know about Trump’s $500 ACA Checks and the User Fees Funding Them
+
+**Score:** Worth a look — 44/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/23/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/affordable-care-act/what-we-know-about-trumps-500-aca-checks-and-the-user-fees-funding-them/
+
+This analysis examines the $500 checks that the Trump administration is sending to some Affordable Care Act Marketplace enrollees and the user fees that are paying for them. The checks are going to about 1 million enrollees in the 30 states that rely on the federal HealthCare.gov Marketplace who are not receiving any tax credits this year – a small share of the 19.2 million people who were enrolled nationally as of February.
+
+### 59. Petition for Rulemaking of Jason Plotzker
+
+**Score:** Worth a look — 44/100  
+**Source:** federal-register (regulatory_filing)  
+**Published:** 10/21/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.federalregister.gov/documents/2026/10/21/2026-21510/petition-for-rulemaking-of-jason-plotzker
+
+Please take notice that the Federal Trade Commission ("Commission") received a petition for rulemaking from Jason Plotzker and has published that petition online at https://www.regulations.gov. The Commission invites written comments concerning the petition. Publication of this petition is pursuant to the Commission's Rules of Practice and Procedure and does not affect the legal status of the petition or its final disposition.
+
+### 60. Here’s How Much Americans Rely on Social Security – at All Income Levels
 
 **Score:** Worth a look — 44/100  
 **Source:** center-retirement-research (web_release)  
@@ -799,7 +667,7 @@ AdvoKate Longevity: Intergenerational Community Architecture The NIC Conference 
 **Coverage:** lightly covered — B2B 0, B2C 1  
 **Source URL:** https://crr.bc.edu/heres-how-much-americans-rely-on-social-security-at-all-income-levels/
 
-### 73. Can Equity Investments Help Social Security’s Long-Run Financing?
+### 61. Can Equity Investments Help Social Security’s Long-Run Financing?
 
 **Score:** Worth a look — 44/100  
 **Source:** center-retirement-research (web_release)  
@@ -810,7 +678,7 @@ AdvoKate Longevity: Intergenerational Community Architecture The NIC Conference 
 
 Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 
-### 74. National Alliance for Caregiving Selected As Workplace Innovation Now Challenge Awardee
+### 62. National Alliance for Caregiving Selected As Workplace Innovation Now Challenge Awardee
 
 **Score:** Worth a look — 44/100  
 **Source:** national-alliance-caregiving (web_release)  
@@ -819,18 +687,18 @@ Alicia H. Munnell , and Jean-Pierre Aubry May 19, 2026
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://www.caregiving.org/national-alliance-for-caregiving-selected-as-workplace-innovation-now-challenge-awardee/
 
-### 75. Regulating Artificial Intelligence Design to Prevent Youth Mental Health Harms
+### 63. Workers Now Pay $7,471 on Average Annually for Family Health Coverage, Up 9% or $621 from 2025, Benchmark Employer Health Benefits Survey Finds
 
 **Score:** Worth a look — 42/100  
-**Source:** rand-research (institutional_rss)  
-**Published:** 10/14/26  
-**Topics:** depression_mental_health  
-**Coverage:** lightly covered — B2B 0, B2C 1  
-**Source URL:** https://www.rand.org/pubs/external_publications/EP71389.html
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/22/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/
 
-This viewpoint examines the mental health risks AI chatbots pose to young people and outlines four regulatory priorities, including safety standards, independent testing, protective defaults, and harm monitoring.
+Workers are paying on average $7,471 annually toward the premiums for employer-sponsored family health benefits this year, which is up 9%, or $621, from 2025, per KFF’s annual benchmark health benefits survey of large and small employers. The burden of family premiums hits particularly hard for workers at small firms with less than 200 workers.
 
-### 76. How Much Do Older Workers Value Retiree Health Insurance?
+### 64. How Much Do Older Workers Value Retiree Health Insurance?
 
 **Score:** Worth a look — 42/100  
 **Source:** center-retirement-research (web_release)  
@@ -841,7 +709,7 @@ This viewpoint examines the mental health risks AI chatbots pose to young people
 
 Gal Wettstein October 6, 2026
 
-### 77. Subscribe to the NIC Insider ▶
+### 65. Subscribe to the NIC Insider ▶
 
 **Score:** Worth a look — 42/100  
 **Source:** nic (web_release)  
@@ -852,7 +720,7 @@ Gal Wettstein October 6, 2026
 
 NIC Insider: The most trusted and objective insights, exclusive data, and key senior housing industry access—delivered straight to your inbox monthly. In this edition: Occupancy Near Record High for Senior Housing; Active Adult Occupancy Up; New Middle Market Case Study; Updated Active Adult White Paper; Perspective from an Industry Veteran; and More Subscribe to the NIC Insider ▶
 
-### 78. THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER
+### 66. THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER
 
 **Score:** Worth a look — 41/100  
 **Source:** phi-workforce (web_release)  
@@ -863,7 +731,7 @@ NIC Insider: The most trusted and objective insights, exclusive data, and key se
 
 Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St
 
-### 79. Mainstay’s Middle-Market Senior Housing Model
+### 67. Mainstay’s Middle-Market Senior Housing Model
 
 **Score:** Worth a look — 41/100  
 **Source:** nic (web_release)  
@@ -874,18 +742,106 @@ Home Workforce Innovations About Our Services Advanced Roles Curriculum Design O
 
 See how Mainstay engineers affordability across real estate, operations, and capital to support the middle market.
 
-### 80. Green Card Processing Backlogs for Refugees and Asylees Could Have Implications for Health Coverage and Care
+### 68. How Much is Health Spending Expected to Grow?
 
 **Score:** Worth a look — 40/100  
 **Source:** kff-feed (institutional_rss)  
-**Published:** 10/15/26  
+**Published:** 10/22/26  
 **Topics:** unclassified  
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
-**Source URL:** https://www.kff.org/immigrant-health/green-card-processing-backlogs-for-refugees-and-asylees-could-have-implications-for-health-coverage-and-care/
+**Source URL:** https://www.kff.org/health-costs/how-much-is-health-spending-expected-to-grow/
 
-This data note highlights changes in green card (I-485) application processing for refugees and asylees between fiscal year (FY) 2021 and FY2025, as well as across the first three quarters of FY2025 to FY2026 (since FY2026 data are only available through the third quarter). It discusses the implications of these trends for access to federally funded health coverage following eligibility changes under the 2025 reconciliation law.
+This chart collection explores how much health spending is expected to grow in the coming years, with a look at growth in prescription drug spending, out-of-pocket spending, and related trends.
 
-### 81. Workforce Data Center
+### 69. Recently Released KFF Poll Shows Uncertainty Over Established Safety of COVID-19 Vaccines During Pregnancy – The Monitor
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/22/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/health-information-trust/recently-released-kff-poll-shows-uncertainty-over-established-safety-of-covid-19-vaccines-during-pregnancy/
+
+KFF’s recently released Tracking Poll finds that public confidence in the safety of COVID-19 vaccines for use during pregnancy has fallen, and many are uncertain about a false claim linking the vaccines with higher risk of miscarriage. Separately, conversations about childhood vaccines frame vaccination as an individual parental decision.
+
+### 70. 2026 Employer Health Benefits Survey
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/22/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/health-costs/2026-employer-health-benefits-survey/
+
+This is the 28th Employer Health Benefits Survey (EHBS) and reflects employer-sponsored health benefits in 2026. As in years past, the survey examines trends in employer coverage, including premiums, employee contributions, deductibles, offer rates, and employer practices. This year, we asked employers detailed questions about satisfaction with their health plans; coverage of GLP-1 agonists and IVF; actions taken in response to projected cost increases; and firms’ ability to obtain information about health care costs and utilization.
+
+### 71. Premiums and Worker Contributions Among Workers Covered by Employer-Sponsored Coverage, 1999-2026
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/22/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/health-costs/premiums-worker-contributions-among-workers-covered-by-employer-sponsored-coverage/
+
+Since 1999, the Employer Health Benefits Survey has documented trends in employer-sponsored health insurance. Every year, private and non-federal public employers with 10 or more employees complete the survey.
+
+### 72. The Future of CDC HIV Prevention Funding for Community Organizations
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/21/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/other-health/the-future-of-cdc-hiv-prevention-funding-for-community-organizations/
+
+Following reports that CDC is ending Community Based Organization (CBO) funding for HIV prevention, this analysis provides a snapshot of where, to whom, and at what level these community grants were distributed in the past grant cycle. We find community organizations stand to lose significant amounts of funding, especially those located in the south.
+
+### 73. KFF Polling on Health Information and Trust
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/20/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/public-opinion/kff-polling-on-health-information-and-trust/
+
+Drawing on KFF's poll findings, this interactive dashboard tracks the public’s trusted sources for health information, attitudes toward vaccines, and use of news, social media, and AI for health-related information. It provides visual representations of the key trends in the public’s trust in health information and tracks exposure to and belief in false and unproven health claims.
+
+### 74. KFF Tracking Poll on Health Information and Trust: Fall 2026 Update on Vaccine Views
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/20/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/public-opinion/kff-tracking-poll-on-health-information-and-trust-fall-2026-update-on-vaccine-views/
+
+The latest KFF Tracking Poll on Health Information and Trust finds about half of parents mistakenly believe spacing out vaccines is healthier for children, while confidence in many long-standing childhood vaccines is high across partisans. These findings take on new relevance following President Trump's recent executive order calling for changes in U.S. childhood vaccine recommendations, including splitting the measles, mumps, and rubella (MMR) vaccine—currently given as a single combined shot—into three separate vaccines across multiple visits.
+
+### 75. Building the AI Hospital
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/20/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/other-health/building-the-ai-hospital/
+
+Walk into the emergency room at Israel’s largest hospital and the first clinician to take your history may be an AI avatar — with a physician signing off on every recommendation. Israel’s Sheba Medical Center is building what could become the first fully AI-based hospital by 2030. Dr. Eyal Zimlichman, Sheba's Chief Transformation Officer, Chief Innovation Officer and Chief AI officer, talks with Chip about what that means for patients. During their conversation, Dr. Zimlichman argues that in the future, doctors will "be much more humane than the doctors of the present...because if we're not ab
+
+### 76. Policy Tracker: Exceptions to State Abortion Bans and Early Gestational Limits
+
+**Score:** Worth a look — 40/100  
+**Source:** kff-feed (institutional_rss)  
+**Published:** 10/16/26  
+**Topics:** unclassified  
+**Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
+**Source URL:** https://www.kff.org/womens-health-policy/exceptions-in-state-abortion-bans-and-early-gestational-limits/
+
+This policy tracker documents exceptions in each state’s most restrictive gestational limit or total ban.
+
+### 77. Workforce Data Center
 
 **Score:** Worth a look — 40/100  
 **Source:** phi-workforce (web_release)  
@@ -894,7 +850,7 @@ This data note highlights changes in green card (I-485) application processing f
 **Coverage:** lightly covered — B2B 1, B2C 1  
 **Source URL:** https://www.phinational.org/policy-research/workforce-data-center/
 
-### 82. Webinar Dives Into Symptoms of Alzheimer’s Beyond Memory Loss
+### 78. Webinar Dives Into Symptoms of Alzheimer’s Beyond Memory Loss
 
 **Score:** Background — 39/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -905,7 +861,7 @@ This data note highlights changes in green card (I-485) application processing f
 
 The post Webinar Dives Into Symptoms of Alzheimer&#8217;s Beyond Memory Loss appeared first on Alliance for Aging Research .
 
-### 83. Americans’ Challenges with Health Care Costs
+### 79. Americans’ Challenges with Health Care Costs
 
 **Score:** Background — 36/100  
 **Source:** kff-feed (institutional_rss)  
@@ -916,7 +872,7 @@ The post Webinar Dives Into Symptoms of Alzheimer&#8217;s Beyond Memory Loss app
 
 This data note summarizes recent KFF polling on Americans’ experiences with health care costs, which factor into decisions about insurance coverage and care seeking and consistently ranks as a top financial worry for adults and their families.
 
-### 84. Employers and Older Workers: 2006 and 2019 Surveys
+### 80. Employers and Older Workers: 2006 and 2019 Surveys
 
 **Score:** Background — 36/100  
 **Source:** center-retirement-research (web_release)  
@@ -925,7 +881,7 @@ This data note summarizes recent KFF polling on Americans’ experiences with he
 **Coverage:** confirmed gap (beat is monitored, no match found) — B2B 0, B2C 0  
 **Source URL:** https://crr.bc.edu/employers-and-older-workers-crr-survey-data/
 
-### 85. The Social Security Claiming Guide
+### 81. The Social Security Claiming Guide
 
 **Score:** Background — 36/100  
 **Source:** center-retirement-research (web_release)  
@@ -936,7 +892,7 @@ This data note summarizes recent KFF polling on Americans’ experiences with he
 
 Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016
 
-### 86. Workforce Research and Strategy Services
+### 82. Workforce Research and Strategy Services
 
 **Score:** Background — 36/100  
 **Source:** phi-workforce (web_release)  
@@ -945,7 +901,7 @@ Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016
 **Coverage:** well covered — B2B 2, B2C 1  
 **Source URL:** https://www.phinational.org/service/workforce-research-strategy/
 
-### 87. Workforce Interventions
+### 83. Workforce Interventions
 
 **Score:** Background — 36/100  
 **Source:** phi-workforce (web_release)  
@@ -954,7 +910,7 @@ Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016
 **Coverage:** well covered — B2B 2, B2C 1  
 **Source URL:** https://www.phinational.org/issue/workforce-interventions/
 
-### 88. CFPB Announces New Initiative to Address OCC-Uncovered Debanking by Large Banks
+### 84. CFPB Announces New Initiative to Address OCC-Uncovered Debanking by Large Banks
 
 **Score:** Background — 34/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -965,7 +921,7 @@ Alicia H. Munnell , and Andrew D. Eschtruth August 2, 2016
 
 Today, the Consumer Financial Protection Bureau (CFPB) announced the next step in its work to advance President Trump’s fight against the debanking of businesses and individuals on the basis of their constitutionally protected rights
 
-### 89. Section 3 Benchmarks for Creating Economic Opportunities for Low- and Very Low-Income Persons and Eligible Businesses
+### 85. Section 3 Benchmarks for Creating Economic Opportunities for Low- and Very Low-Income Persons and Eligible Businesses
 
 **Score:** Background — 33/100  
 **Source:** federal-register (regulatory_filing)  
@@ -976,7 +932,7 @@ Today, the Consumer Financial Protection Bureau (CFPB) announced the next step i
 
 HUD's regulations require that HUD set Section 3 benchmarks by publishing a notification, subject to public comment, in the Federal Register and update the benchmarks no less frequently than once every three years by the same method of notification. This document serves as an update of the 2023 benchmark Notice and requests public comment about the Section 3 benchmark goals.
 
-### 90. Rule on Impersonation of Government and Businesses
+### 86. Rule on Impersonation of Government and Businesses
 
 **Score:** Background — 33/100  
 **Source:** federal-register (regulatory_filing)  
@@ -987,7 +943,7 @@ HUD's regulations require that HUD set Section 3 benchmarks by publishing a noti
 
 The Federal Trade Commission ("FTC" or "Commission") proposes to commence a rulemaking proceeding to prevent certain unfair or deceptive acts or practices by search engine, social media, and other digital marketplace platforms that further government and business impersonation scams to defraud consumers. The Commission is soliciting written comment, data, and arguments concerning the need for such rulemaking.
 
-### 91. Petition for Rulemaking of Malik Tony Singleton
+### 87. Petition for Rulemaking of Malik Tony Singleton
 
 **Score:** Background — 33/100  
 **Source:** federal-register (regulatory_filing)  
@@ -998,7 +954,7 @@ The Federal Trade Commission ("FTC" or "Commission") proposes to commence a rule
 
 Please take notice that the Federal Trade Commission ("Commission") received a petition for rulemaking from Malik Tony Singleton, and has published that petition online at https:// www.regulations.gov. The Commission invites written comments concerning the petition. Publication of this petition is pursuant to the Commission's Rules of Practice and Procedure and does not affect the legal status of the petition or its final disposition.
 
-### 92. Events and Observances
+### 88. Events and Observances
 
 **Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
@@ -1009,7 +965,7 @@ Please take notice that the Federal Trade Commission ("Commission") received a p
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 93. Available for download
+### 89. Available for download
 
 **Score:** Background — 32/100  
 **Source:** acl-news (web_release)  
@@ -1020,7 +976,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 Additional Resources Events and Observances May is Older Americans Month and June 15 is World Elder Abuse Awareness Day. Learn more about these and other events and observances. Available for download ACL logos, fact sheets, ready-to-publish articles, infographics, and more.
 
-### 94. Litigation Involving Reproductive Health and Rights in the Federal Courts
+### 90. Litigation Involving Reproductive Health and Rights in the Federal Courts
 
 **Score:** Background — 31/100  
 **Source:** kff-feed (institutional_rss)  
@@ -1031,7 +987,7 @@ Additional Resources Events and Observances May is Older Americans Month and Jun
 
 This State and Federal Reproductive Rights Litigation tracker aggregates information about ongoing litigation regarding abortion bans and restrictions, FDA approval of Mifepristone (an abortion pill) and other federal regulations.
 
-### 95. CFPB Proud to Support the National Strategy for Financial Literacy
+### 91. CFPB Proud to Support the National Strategy for Financial Literacy
 
 **Score:** Background — 28/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1042,7 +998,7 @@ This State and Federal Reproductive Rights Litigation tracker aggregates informa
 
 The CFPB is proud to support the new National Strategy for Financial Literacy to guide nationwide actions on building youth financial competency, developing good saving and investing habits, improving Americans’ knowledge of digital financial literacy, and learning how to avoid fraud and scams.
 
-### 96. Meet Our 2026 Heroes in Health
+### 92. Meet Our 2026 Heroes in Health
 
 **Score:** Background — 28/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1053,7 +1009,7 @@ The CFPB is proud to support the new National Strategy for Financial Literacy to
 
 The post Meet Our 2026 Heroes in Health appeared first on Alliance for Aging Research .
 
-### 97. Meet Scott Frey, Senior Vice President of Public Policy & Government Relations for the Alliance
+### 93. Meet Scott Frey, Senior Vice President of Public Policy & Government Relations for the Alliance
 
 **Score:** Background — 28/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1064,7 +1020,7 @@ The post Meet Our 2026 Heroes in Health appeared first on Alliance for Aging Res
 
 The post Meet Scott Frey, Senior Vice President of Public Policy & Government Relations for the Alliance appeared first on Alliance for Aging Research .
 
-### 98. Sepsis Awareness Month: Staying Informed, Staying Safe
+### 94. Sepsis Awareness Month: Staying Informed, Staying Safe
 
 **Score:** Background — 28/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1075,7 +1031,7 @@ The post Meet Scott Frey, Senior Vice President of Public Policy & Government Re
 
 The post Sepsis Awareness Month: Staying Informed, Staying Safe appeared first on Alliance for Aging Research .
 
-### 99. Celebrating World Senior Citizens Day – Today and Every Day
+### 95. Celebrating World Senior Citizens Day – Today and Every Day
 
 **Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1086,7 +1042,7 @@ The post Sepsis Awareness Month: Staying Informed, Staying Safe appeared first o
 
 The post Celebrating World Senior Citizens Day – Today and Every Day appeared first on Alliance for Aging Research .
 
-### 100. The CFPB to Cease Discretionary Publication of Complaint Narratives and Visualizations
+### 96. The CFPB to Cease Discretionary Publication of Complaint Narratives and Visualizations
 
 **Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1095,7 +1051,7 @@ The post Celebrating World Senior Citizens Day – Today and Every Day appeared 
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
 **Source URL:** https://www.consumerfinance.gov/about-us/newsroom/the-cfpb-to-cease-discretionary-publication-of-complaint-narratives-and-visualizations/
 
-### 101. Meet Lauren Belsky, Development Coordinator for the Alliance
+### 97. Meet Lauren Belsky, Development Coordinator for the Alliance
 
 **Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1106,7 +1062,7 @@ The post Celebrating World Senior Citizens Day – Today and Every Day appeared 
 
 The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared first on Alliance for Aging Research .
 
-### 102. Navigating Air Travel — Tips for Older Adventurers
+### 98. Navigating Air Travel — Tips for Older Adventurers
 
 **Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1117,7 +1073,7 @@ The post Meet Lauren Belsky, Development Coordinator for the Alliance appeared f
 
 The post Navigating Air Travel — Tips for Older Adventurers appeared first on Alliance for Aging Research .
 
-### 103. Deputy Director Mark Paoletta’s Remarks to the Financial Literacy and Education Commission
+### 99. Deputy Director Mark Paoletta’s Remarks to the Financial Literacy and Education Commission
 
 **Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1128,7 +1084,7 @@ The post Navigating Air Travel — Tips for Older Adventurers appeared first on 
 
 Deputy Director Mark Paoletta provided remarks to the Financial Literacy and Education Commission.
 
-### 104. Balancing Boredom on World Brain Day
+### 100. Balancing Boredom on World Brain Day
 
 **Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1139,7 +1095,7 @@ Deputy Director Mark Paoletta provided remarks to the Financial Literacy and Edu
 
 The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .
 
-### 105. Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
+### 101. Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
 
 **Score:** Background — 26/100  
 **Source:** alliance-aging-research (institutional_rss)  
@@ -1150,7 +1106,7 @@ The post Balancing Boredom on World Brain Day appeared first on Alliance for Agi
 
 The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat appeared first on Alliance for Aging Research .
 
-### 106. CFPB Announces Joint Final Rule on Adopting Uniform Standards for Reporting Financial Data
+### 102. CFPB Announces Joint Final Rule on Adopting Uniform Standards for Reporting Financial Data
 
 **Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1159,7 +1115,7 @@ The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
 **Source URL:** https://www.consumerfinance.gov/about-us/newsroom/cfpb-announces-joint-final-rule-on-adopting-uniform-standards-for-reporting-financial-data/
 
-### 107. The CFPB is Correcting Flaws to Restore Integrity and Utility to the Consumer Complaint System
+### 103. The CFPB is Correcting Flaws to Restore Integrity and Utility to the Consumer Complaint System
 
 **Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1170,7 +1126,7 @@ The post Don’t Sweat It: A Cool Guide for Older Adults to Beat the Summer Heat
 
 The consumer complaint portal has long been plagued by issues that severely limit its effectiveness in addressing consumers’ complaints and practical utility of its information.
 
-### 108. The CFPB Works To Ensure Bilt Consumers Are Made Whole
+### 104. The CFPB Works To Ensure Bilt Consumers Are Made Whole
 
 **Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1181,7 +1137,7 @@ The consumer complaint portal has long been plagued by issues that severely limi
 
 The CFPB has been working to ensure consumers affected by Bilt’s transition to a new bank partner are appropriately remedied. CFPB officials met with Bilt to understand the issues caused by the transition and what steps Bilt has taken to ensure customers affected by challenges with the transition were made whole.
 
-### 109. Agencies Announce Dollar Thresholds for Smaller Loan Exemption from Appraisal Requirements for Higher-priced Mortgage Loans
+### 105. Agencies Announce Dollar Thresholds for Smaller Loan Exemption from Appraisal Requirements for Higher-priced Mortgage Loans
 
 **Score:** Background — 26/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1192,7 +1148,7 @@ The CFPB has been working to ensure consumers affected by Bilt’s transition to
 
 The CFPB, FRB, and OCC are announcing that the 2026 threshold for higher-priced mortgage loans that are subject to special appraisal requirements will increase from $33,500 to $34,200.
 
-### 110. 2025 HMDA Data on Mortgage Lending Now Available
+### 106. 2025 HMDA Data on Mortgage Lending Now Available
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1203,7 +1159,7 @@ The CFPB, FRB, and OCC are announcing that the 2026 threshold for higher-priced 
 
 The 2025 HMDA Loan Application Register data can be found on the FFIEC's HMDA Platform.
 
-### 111. Estimating the Cost of the Consumer Financial Protection Bureau to Consumers
+### 107. Estimating the Cost of the Consumer Financial Protection Bureau to Consumers
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1212,7 +1168,7 @@ The 2025 HMDA Loan Application Register data can be found on the FFIEC's HMDA Pl
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
 **Source URL:** https://www.consumerfinance.gov/about-us/newsroom/estimating-the-cost-of-the-consumer-financial-protection-bureau-to-consumers/
 
-### 112. Consumer Financial Protection Bureau and the Department of Justice Withdraw Joint Statement on Fair Lending and Credit Opportunities for Noncitizen Borrowers
+### 108. Consumer Financial Protection Bureau and the Department of Justice Withdraw Joint Statement on Fair Lending and Credit Opportunities for Noncitizen Borrowers
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1223,7 +1179,7 @@ The 2025 HMDA Loan Application Register data can be found on the FFIEC's HMDA Pl
 
 CFPB and Justice have withdrawn a joint statement linked to a creditor’s consideration of an individual’s immigration status under the Equal Credit Opportunity Act.
 
-### 113. Agencies Announce Dollar Thresholds for Applicability of Truth in Lending and Consumer Leasing Rules for Consumer Credit and Lease Transactions
+### 109. Agencies Announce Dollar Thresholds for Applicability of Truth in Lending and Consumer Leasing Rules for Consumer Credit and Lease Transactions
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1234,7 +1190,7 @@ CFPB and Justice have withdrawn a joint statement linked to a creditor’s consi
 
 The CFPB and the FRB are announcing the dollar thresholds used to determine whether certain consumer credit and lease transactions in 2026 are subject to certain protections under Regulation Z (Truth in Lending) and Regulation M (Consumer Leasing).
 
-### 114. CFPB’s Supervision Division Releases New 'Humility Pledge'
+### 110. CFPB’s Supervision Division Releases New 'Humility Pledge'
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1245,7 +1201,7 @@ The CFPB and the FRB are announcing the dollar thresholds used to determine whet
 
 Washington, D.C.—Today, the CFPB made changes to how the Supervision Division conducts exams. Previously, under the leadership of Director Chopra and Biden’s Director of Supervision Lorelei Salas, a former Soros activist who was put on leave in February 2025, this division was the weaponized arm of the CFPB.
 
-### 115. CFPB Notifies Court it Cannot Lawfully Draw Funds from the Federal Reserve
+### 111. CFPB Notifies Court it Cannot Lawfully Draw Funds from the Federal Reserve
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1256,7 +1212,7 @@ Washington, D.C.—Today, the CFPB made changes to how the Supervision Division 
 
 Washington, D.C.—Today, the Consumer Financial Protection Bureau (CFPB) filed a notice informing the court in NTEU v. Vought that the Department of Justice’s Office of Legal Counsel (OLC) has determined that the Bureau may not legally request funds at this time from the Federal Reserve under Dodd-Frank.
 
-### 116. CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations
+### 112. CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1267,7 +1223,7 @@ Washington, D.C.—Today, the Consumer Financial Protection Bureau (CFPB) filed 
 
 Today, in the Consumer Financial Protection Bureau’s (CFPB) November 12, 2021 lawsuit against FirstCash, Inc., and nineteen subsidiaries alleging violations of the Military Lending Act (MLA), the parties reached a settlement and jointly filed a stipulated final judgment and proposed order, which if entered by the court, would resolve the lawsuit.
 
-### 117. CFPB Amends Wise Order for Remittance Practices
+### 113. CFPB Amends Wise Order for Remittance Practices
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1278,7 +1234,7 @@ Today, in the Consumer Financial Protection Bureau’s (CFPB) November 12, 2021 
 
 The CFPB amended its January 30, 2025 consent order with the international remittance company Wise resolving claims including advertising inaccurate fees and failing to properly disclose exchange rates and other costs.
 
-### 118. CFPB Announcement Regarding Enforcement Actions Related to Buy Now, Pay Later Loans
+### 114. CFPB Announcement Regarding Enforcement Actions Related to Buy Now, Pay Later Loans
 
 **Score:** Background — 24/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1289,7 +1245,7 @@ The CFPB amended its January 30, 2025 consent order with the international remit
 
 The CFPB is announcing that it will not prioritize enforcement actions taken on the basis of the Truth in Lending (Regulation Z); Use of Digital User Accounts to Access Buy Now, Pay Later Loans, 89 Fed. Reg. 47,068 (May 31, 2024) (“Buy Now, Pay Later”).
 
-### 119. CFPB Keeps Its Enforcement and Supervision Resources Focused on Pressing Threats to Consumers
+### 115. CFPB Keeps Its Enforcement and Supervision Resources Focused on Pressing Threats to Consumers
 
 **Score:** Background — 22/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1300,7 +1256,7 @@ The CFPB is announcing that it will not prioritize enforcement actions taken on 
 
 The CFPB is announcing that it will not prioritize enforcement or supervision actions with regard to entities that are currently outside the stay imposed under Texas Bankers Association v. CFPB, No. 24-40705 (CA5).
 
-### 120. CFPB Offers Regulatory Relief From Registration Requirements for Small Loan Providers
+### 116. CFPB Offers Regulatory Relief From Registration Requirements for Small Loan Providers
 
 **Score:** Background — 22/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1311,7 +1267,7 @@ The CFPB is announcing that it will not prioritize enforcement or supervision ac
 
 The Consumer Financial Protection Bureau will not prioritize enforcement or supervision actions for entities that do not satisfy future deadlines to submit registration information under the regulation titled "Registry of Nonbank Covered Persons Subject to Certain Agency and Court Orders".
 
-### 121. 2024 HMDA Data on Mortgage Lending Now Available
+### 117. 2024 HMDA Data on Mortgage Lending Now Available
 
 **Score:** Background — 22/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1322,7 +1278,7 @@ The Consumer Financial Protection Bureau will not prioritize enforcement or supe
 
 The published data contain loan-level information filed by financial institutions and modified to protect consumer privacy.
 
-### 122. CFPB Offers Regulatory Relief for Small Loan Providers
+### 118. CFPB Offers Regulatory Relief for Small Loan Providers
 
 **Score:** Background — 22/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1333,7 +1289,7 @@ The published data contain loan-level information filed by financial institution
 
 The Bureau will keep its enforcement and supervision resources focused on pressing threats to consumers, particularly servicemen and veterans.
 
-### 123. CFPB Seeks to Vacate Abusive, Unjust Case Against Townstone
+### 119. CFPB Seeks to Vacate Abusive, Unjust Case Against Townstone
 
 **Score:** Background — 22/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1342,7 +1298,7 @@ The Bureau will keep its enforcement and supervision resources focused on pressi
 **Coverage:** unknown — no monitored publisher covers this beat — B2B 0, B2C 0  
 **Source URL:** https://www.consumerfinance.gov/about-us/newsroom/cfpb-seeks-to-vacate-abusive-unjust-case-against-townstone/
 
-### 124. Statement on Designation of Treasury Secretary Scott Bessent as Acting Director of the Consumer Financial Protection Bureau
+### 120. Statement on Designation of Treasury Secretary Scott Bessent as Acting Director of the Consumer Financial Protection Bureau
 
 **Score:** Background — 22/100  
 **Source:** cfpb-newsroom (institutional_rss)  
@@ -1353,7 +1309,7 @@ The Bureau will keep its enforcement and supervision resources focused on pressi
 
 On January 31, 2025, President Trump designated Secretary of the Treasury Scott Bessent as Acting Director of the Consumer Financial Protection Bureau (CFPB).
 
-### 125. Take Steps to Prevent Falls
+### 121. Take Steps to Prevent Falls
 
 **Score:** Background — 22/100  
 **Source:** acl-news (web_release)  
