@@ -124,13 +124,13 @@ class TrendTests(unittest.TestCase):
 
 class SynthesizeTests(unittest.TestCase):
     def test_marks_itself_deterministic(self):
-        out = synthesize({"evidence": [item("A", "s1", ["workforce"]), item("B", "s2", ["workforce"])]})
+        out = synthesize({"evidence": [item("A", "s1", ["workforce"]), item("B", "s2", ["workforce"])]}, now=NOW)
         self.assertEqual(out["synthesis_mode"], "deterministic")
         for key in ("trends_raw", "feature_pitch_raw", "pitch_ideas_raw", "clusters"):
             self.assertIn(key, out)
 
     def test_clusters_are_serializable_without_the_item_bodies(self):
-        out = synthesize({"evidence": [item("A", "s1", ["workforce"]), item("B", "s2", ["workforce"])]})
+        out = synthesize({"evidence": [item("A", "s1", ["workforce"]), item("B", "s2", ["workforce"])]}, now=NOW)
         self.assertNotIn("items", out["clusters"][0])
 
 
