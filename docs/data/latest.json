@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-06T17:29:18.070679+00:00",
+  "generated_at": "2026-11-07T16:26:00.926349+00:00",
   "evidence_count": 138,
-  "new_evidence_count": 10,
-  "coverage_count": 2354,
+  "new_evidence_count": 2,
+  "coverage_count": 2247,
   "monitored_publisher_count": 106,
   "registry_publisher_count": 132,
   "monitored_topics": [
@@ -17,6 +17,7 @@
     "depression_mental_health",
     "falls",
     "financial_security",
+    "food_security",
     "fraud_scams",
     "hearing_loss",
     "housing",
@@ -24,7 +25,6 @@
     "long_term_care",
     "medicare_medicaid",
     "nutrition",
-    "osteoporosis_bone_health",
     "palliative_hospice",
     "senior_living_quality",
     "sleep",
@@ -182,30 +182,29 @@
   "topic_coverage_counts": {
     "age_tech": 10,
     "ageism_work": 3,
-    "aging_in_place": 16,
-    "assisted_living": 118,
-    "cardiovascular_disease": 8,
-    "caregiving": 24,
-    "climate_resilience": 1,
-    "cognitive_decline": 10,
-    "dementia": 72,
+    "aging_in_place": 15,
+    "assisted_living": 117,
+    "cardiovascular_disease": 10,
+    "caregiving": 22,
+    "cognitive_decline": 9,
+    "dementia": 65,
     "depression_mental_health": 13,
     "elder_abuse": 1,
-    "falls": 35,
-    "financial_security": 20,
-    "food_security": 1,
+    "falls": 27,
+    "financial_security": 12,
+    "food_security": 3,
     "fraud_scams": 3,
     "hearing_loss": 5,
-    "housing": 81,
+    "housing": 80,
     "loneliness_social_connection": 7,
-    "long_term_care": 49,
-    "medicare_medicaid": 91,
-    "nutrition": 16,
-    "osteoporosis_bone_health": 3,
+    "long_term_care": 46,
+    "medicare_medicaid": 90,
+    "nutrition": 14,
+    "osteoporosis_bone_health": 2,
     "palliative_hospice": 16,
     "senior_living_quality": 3,
-    "sleep": 23,
-    "transportation": 7,
+    "sleep": 17,
+    "transportation": 6,
     "vision_loss": 3,
     "workforce": 20
   },
@@ -667,11 +666,11 @@
     {
       "publisher": "AARP Public Policy Institute",
       "audience": "b2b",
-      "status": "ok",
+      "status": "empty",
       "feed": "https://www.aarp.org/news-sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 50
+      "items": 0
     },
     {
       "publisher": "Commercial Property Executive",
@@ -697,7 +696,7 @@
       "feed": "https://www.bisnow.com/feed/",
       "kind": "rss",
       "discovered": false,
-      "items": 8
+      "items": 10
     },
     {
       "publisher": "Building Design+Construction",
@@ -778,7 +777,7 @@
       "feed": "https://www.route-fifty.com/sitemap-news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 4
+      "items": 3
     },
     {
       "publisher": "Governing",
@@ -787,7 +786,7 @@
       "feed": "https://www.governing.com/index.rss",
       "kind": "rss",
       "discovered": true,
-      "items": 9
+      "items": 10
     },
     {
       "publisher": "Nonprofit Quarterly",
@@ -856,7 +855,7 @@
       "feed": "https://www.modernhealthcare.com/sitemap-news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 21
+      "items": 14
     },
     {
       "publisher": "HealthLeaders",
@@ -1075,11 +1074,11 @@
     {
       "publisher": "GOBankingRates",
       "audience": "b2c",
-      "status": "empty",
+      "status": "ok",
       "feed": "https://www.gobankingrates.com/sitemap-news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 0
+      "items": 1
     },
     {
       "publisher": "Retirement Living",
@@ -1150,7 +1149,7 @@
       "feed": "https://www.caregiver.org/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 40
+      "items": 36
     },
     {
       "publisher": "National Council on Aging",
@@ -1233,11 +1232,11 @@
     {
       "publisher": "AARP",
       "audience": "b2c",
-      "status": "ok",
+      "status": "empty",
       "feed": "https://www.aarp.org/news-sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 50
+      "items": 0
     },
     {
       "publisher": "Boldin",
@@ -1362,7 +1361,7 @@
       "feed": "https://www.prevention.com/sitemap_google_news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 9
+      "items": 10
     },
     {
       "publisher": "Senior Planet",
@@ -1480,6 +1479,95 @@
   ],
   "evidence": [
     {
+      "source_id": "justice-in-aging",
+      "title": "From DC: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more!",
+      "url": "https://justiceinaging.org/from-dc-11062026/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T20:19:44+00:00",
+      "topics": [
+        "housing",
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "In this week's edition: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more. The post From DC: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more! appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 75,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 4,
+        "b2b_relevance": 4,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 1,
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "First appearance in this pipeline — no prior run surfaced it."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "light",
+        "first_seen": "2026-11-07T16:26:00.926349+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "Medicare Cuts to 340B Drug Payments Will Hit Safety-Net Hospitals While Benefiting For-Profit Hospitals",
+      "url": "https://www.kff.org/health-costs/medicares-proposed-cut-to-340b-drug-payments-would-hit-safety-net-hospitals-while-benefiting-for-profit-hospitals/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-07T00:08:43+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This analysis finds that CMS’s proposed cut to Medicare reimbursement for 340B drugs, and accompanying increase for other outpatient services, will reduce revenues among safety-net hospitals while increasing revenues among for-profit hospitals.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 73,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "First appearance in this pipeline — no prior run surfaced it."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "light",
+        "first_seen": "2026-11-07T16:26:00.926349+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
       "source_id": "bls-api",
       "title": "BLS: Home health care services employment, October 2026 — 1,903.60 thousands of jobs (+4.4% year over year)",
       "url": "https://data.bls.gov/timeseries/CES6562160001",
@@ -1502,10 +1590,10 @@
         "Year-over-year change: +4.4%"
       ],
       "localizable": false,
-      "score": 79,
+      "score": 73,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1521,7 +1609,6 @@
         "For readers: Whether staying in your own home stays realistic, and what would have to change.",
         "For the trade: How home-based demand reshapes the case for congregate settings.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1611,8 +1698,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
       }
     },
     {
@@ -1638,10 +1725,10 @@
         "Year-over-year change: +2.1%"
       ],
       "localizable": false,
-      "score": 79,
+      "score": 73,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1657,7 +1744,6 @@
         "For readers: How to plan for, pay for, or challenge a long-term care decision.",
         "For the trade: Reimbursement, census mix and regulatory exposure.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1747,8 +1833,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
       }
     },
     {
@@ -1772,10 +1858,10 @@
         "October 2026: 11,862.00 thousands of people"
       ],
       "localizable": false,
-      "score": 79,
+      "score": 73,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1791,7 +1877,6 @@
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1881,8 +1966,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
       }
     },
     {
@@ -1901,10 +1986,10 @@
       "summary": "This brief describes the transparency requirements that took effect in July 2026, uses T-MSIS data to assess the share of FFS spending and claims captured by certain reporting requirements, and discusses limitations of the new transparency requirements.",
       "key_findings": [],
       "localizable": false,
-      "score": 77,
+      "score": 71,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 5,
         "source_quality": 3,
         "coverage_gap": 5,
@@ -1919,15 +2004,160 @@
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
         "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "Health Care in the 2026 Midterm Election",
+      "url": "https://www.kff.org/public-opinion/health-care-in-the-2026-midterm-election/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T13:35:24+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This dashboard focuses on KFF’s analysis of the role health care costs and other health policy issues played in voters’ decisions in the 2026 midterm elections, including in key Senate races. It examines the role of rising health costs on voters’ decisions, views on the Trump administration’s health care policies, and opinions on the government’s role in health care amid discussions of Medicare for All.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 71,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-05T18:01:52.316935+00:00",
+        "runs_seen": 3,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "1115 Waiver Watch: A Look at Budget Neutrality Policy Changes",
+      "url": "https://www.kff.org/medicaid/1115-waiver-watch-a-look-at-budget-neutrality-policy-changes/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-05T15:22:12+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This brief discusses key Medicaid policy changes included in CMS budget neutrality guidance and identifies open questions about how the policy changes may be clarified and how they may affect states with existing 1115 waivers or states interested in applying for new ones.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 71,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-05T18:01:52.316935+00:00",
+        "runs_seen": 3,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "cms-provider-data",
+      "title": "CMS refreshed dataset: Medical Equipment Suppliers",
+      "url": "https://data.cms.gov/provider-data/dataset/ct36-nrcq",
+      "source_type": "government_api",
+      "published_at": "2026-11-01T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "US states",
+        "US counties"
+      ],
+      "population": "Medicare-certified providers",
+      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
+      "evidence_grade": "A",
+      "summary": "A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.",
+      "key_findings": [],
+      "localizable": true,
+      "score": 69,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 5,
+        "coverage_gap": 2,
+        "localization": 5,
+        "demand": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Localize the finding by state, metro or county and identify geographic outliers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
+      ],
+      "raw_metadata": {
+        "record_type": "dataset",
+        "dataset_id": "ct36-nrcq",
+        "modified": "2026-11-01",
+        "next_update": null,
+        "themes": [
+          {
+            "identifier": "e12cc197-5a3f-5a4a-a9f9-3b326f938bc4",
+            "data": "Supplier directory"
+          }
+        ],
+        "coverage_state": "reference",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 56,
+        "is_new": false
       }
     },
     {
@@ -1952,10 +2182,10 @@
         "Year-over-year change: +2.5%"
       ],
       "localizable": false,
-      "score": 76,
+      "score": 69,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 2,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1971,7 +2201,6 @@
         "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
         "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -2061,8 +2290,59 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Tribal Intergovernmental Advisory Committee Request for Member Nominations; Extension of Comment Period",
+      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22554/tribal-intergovernmental-advisory-committee-request-for-member-nominations-extension-of-comment",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "topics": [
+        "housing"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
+      "evidence_grade": "A",
+      "summary": "On September 1, 2026, the Department of Housing and Urban Development (HUD) published in the Federal Register a document titled \"Tribal Intergovernmental Advisory Committee Request for Member Nominations\". This request seeks to reopen the comment period by 30 days to allow for more nominations.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 68,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 1,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-22554",
+        "document_type": "Notice",
+        "agencies": [
+          "Housing and Urban Development Department"
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-11-05T18:01:52.316935+00:00",
+        "runs_seen": 3,
+        "is_new": false
       }
     },
     {
@@ -2088,10 +2368,10 @@
         "Year-over-year change: +0.5%"
       ],
       "localizable": false,
-      "score": 75,
+      "score": 68,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 3,
@@ -2106,8 +2386,7 @@
       "story_angles": [
         "For readers: What a family touring communities should ask about, and what the numbers say.",
         "For the trade: Operating margin, census and what the disclosure means competitively.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it."
+        "Build an original ranking, map or trend analysis from the underlying public data."
       ],
       "raw_metadata": {
         "series_id": "CES6562330001",
@@ -2196,146 +2475,6 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Cl",
-      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-06T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality Reporting Program. We finalized the expansion of the prior authorization requirement to include additional Botulinum Toxin Injection services. We also finalized implementation of certain provisions of the Consolidated Appropriations Act, 2026, for off-campus outpatient departments of a provider. In addition, this final rule with comment period announces notices of closure of teaching hospitals and opportunities to apply for available slots. Additionally, we finalized the policy that hospital accred",
-      "key_findings": [],
-      "localizable": false,
-      "score": 73,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 1,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 3,
-      "b2c_coverage_count": 1,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-22739",
-        "document_type": "Rule",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "saturated",
-        "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "Health Care in the 2026 Midterm Election",
-      "url": "https://www.kff.org/public-opinion/health-care-in-the-2026-midterm-election/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-06T13:35:24+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "This dashboard focuses on KFF’s analysis of the role health care costs and other health policy issues played in voters’ decisions in the 2026 midterm elections, including in key Senate races. It examines the role of rising health costs on voters’ decisions, views on the Trump administration’s health care policies, and opinions on the government’s role in health care amid discussions of Medicare for All.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 71,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "1115 Waiver Watch: A Look at Budget Neutrality Policy Changes",
-      "url": "https://www.kff.org/medicaid/1115-waiver-watch-a-look-at-budget-neutrality-policy-changes/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-05T15:22:12+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "This brief discusses key Medicaid policy changes included in CMS budget neutrality guidance and identifies open questions about how the policy changes may be clarified and how they may affect states with existing 1115 waivers or states interested in applying for new ones.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 71,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-11-05T18:01:52.316935+00:00",
         "runs_seen": 2,
         "is_new": false
       }
@@ -2360,26 +2499,27 @@
       "summary": "Quality measures that are based on Medicare claims data. Each row contains a specific quality measure for a specific nursing home and includes the risk-adjusted score.",
       "key_findings": [],
       "localizable": true,
-      "score": 71,
+      "score": 68,
       "score_components": {
         "priority": 5,
         "novelty": 0,
         "timeliness": 3,
         "source_quality": 5,
-        "coverage_gap": 3,
+        "coverage_gap": 2,
         "localization": 5,
         "demand": 4,
         "consumer_utility": 3,
         "b2b_relevance": 4,
         "visualization": 5
       },
-      "b2b_coverage_count": 1,
+      "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
         "For readers: How to plan for, pay for, or challenge a long-term care decision.",
         "For the trade: Reimbursement, census mix and regulatory exposure.",
         "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
       ],
       "raw_metadata": {
         "record_type": "dataset",
@@ -2392,252 +2532,9 @@
             "data": "Nursing homes including rehab services"
           }
         ],
-        "coverage_state": "light",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "cms-provider-data",
-      "title": "CMS refreshed dataset: Medical Equipment Suppliers",
-      "url": "https://data.cms.gov/provider-data/dataset/ct36-nrcq",
-      "source_type": "government_api",
-      "published_at": "2026-11-01T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "US states",
-        "US counties"
-      ],
-      "population": "Medicare-certified providers",
-      "methodology": "CMS Provider Data Catalog metastore; dataset refresh dates",
-      "evidence_grade": "A",
-      "summary": "A list of Suppliers that indicates the supplies carried at that location and the supplier's Medicare participation status.",
-      "key_findings": [],
-      "localizable": true,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 5,
-        "coverage_gap": 2,
-        "localization": 5,
-        "demand": 4,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Localize the finding by state, metro or county and identify geographic outliers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Reference data: a refreshed public file rather than an event, so the coverage-gap test does not apply."
-      ],
-      "raw_metadata": {
-        "record_type": "dataset",
-        "dataset_id": "ct36-nrcq",
-        "modified": "2026-11-01",
-        "next_update": null,
-        "themes": [
-          {
-            "identifier": "e12cc197-5a3f-5a4a-a9f9-3b326f938bc4",
-            "data": "Supplier directory"
-          }
-        ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "bls-api",
-      "title": "BLS: Assisted living and CCRC average hourly earnings, September 2026 — 25.99 dollars per hour (+5.4% year over year)",
-      "url": "https://data.bls.gov/timeseries/CES6562330003",
-      "source_type": "government_api",
-      "published_at": "2026-09-01T00:00:00+00:00",
-      "topics": [
-        "workforce",
-        "assisted_living"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "BLS Public Data API v2, series CES6562330003; latest observation and year-over-year change",
-      "evidence_grade": "A",
-      "summary": null,
-      "key_findings": [
-        "September 2026: 25.99 dollars per hour",
-        "Year-over-year change: +5.4%"
-      ],
-      "localizable": false,
-      "score": 69,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 2,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 4,
-        "visualization": 5
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a family touring communities should ask about, and what the numbers say.",
-        "For the trade: Operating margin, census and what the disclosure means competitively.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it."
-      ],
-      "raw_metadata": {
-        "series_id": "CES6562330003",
-        "units": "dollars per hour",
-        "latest_value": 25.99,
-        "yoy_change_pct": 5.4,
-        "observations": [
-          {
-            "year": "2026",
-            "period": "M09",
-            "periodName": "September",
-            "value": "25.99"
-          },
-          {
-            "year": "2026",
-            "period": "M08",
-            "periodName": "August",
-            "value": "25.88"
-          },
-          {
-            "year": "2026",
-            "period": "M07",
-            "periodName": "July",
-            "value": "25.71"
-          },
-          {
-            "year": "2026",
-            "period": "M06",
-            "periodName": "June",
-            "value": "25.49"
-          },
-          {
-            "year": "2026",
-            "period": "M05",
-            "periodName": "May",
-            "value": "25.34"
-          },
-          {
-            "year": "2026",
-            "period": "M04",
-            "periodName": "April",
-            "value": "25.25"
-          },
-          {
-            "year": "2026",
-            "period": "M03",
-            "periodName": "March",
-            "value": "25.41"
-          },
-          {
-            "year": "2026",
-            "period": "M02",
-            "periodName": "February",
-            "value": "25.04"
-          },
-          {
-            "year": "2026",
-            "period": "M01",
-            "periodName": "January",
-            "value": "25.01"
-          },
-          {
-            "year": "2025",
-            "period": "M12",
-            "periodName": "December",
-            "value": "24.89"
-          },
-          {
-            "year": "2025",
-            "period": "M11",
-            "periodName": "November",
-            "value": "24.85"
-          },
-          {
-            "year": "2025",
-            "period": "M10",
-            "periodName": "October",
-            "value": "24.78"
-          },
-          {
-            "year": "2025",
-            "period": "M09",
-            "periodName": "September",
-            "value": "24.66"
-          }
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Tribal Intergovernmental Advisory Committee Request for Member Nominations; Extension of Comment Period",
-      "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22554/tribal-intergovernmental-advisory-committee-request-for-member-nominations-extension-of-comment",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-05T00:00:00+00:00",
-      "topics": [
-        "housing"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
-      "evidence_grade": "A",
-      "summary": "On September 1, 2026, the Department of Housing and Urban Development (HUD) published in the Federal Register a document titled \"Tribal Intergovernmental Advisory Committee Request for Member Nominations\". This request seeks to reopen the comment period by 30 days to allow for more nominations.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 68,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 1,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-22554",
-        "document_type": "Notice",
-        "agencies": [
-          "Housing and Urban Development Department"
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -2696,7 +2593,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -2755,7 +2652,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -2814,7 +2711,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -2872,7 +2769,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -2930,16 +2827,16 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 43,
+        "runs_seen": 44,
         "is_new": false
       }
     },
     {
       "source_id": "federal-register",
-      "title": "Emergency Clearance: Public Information Collection Requirements Submitted to the Office of Management and Budget (OMB)",
-      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22297/emergency-clearance-public-information-collection-requirements-submitted-to-the-office-of-management",
+      "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Cl",
+      "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment",
       "source_type": "regulatory_filing",
-      "published_at": "2026-11-02T00:00:00+00:00",
+      "published_at": "2026-11-06T00:00:00+00:00",
       "topics": [
         "medicare_medicaid"
       ],
@@ -2947,42 +2844,41 @@
         "United States"
       ],
       "population": null,
-      "methodology": "Federal Register API; Notice from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
       "evidence_grade": "A",
-      "summary": "The Centers for Medicare & Medicaid Services (CMS) is requesting that an information collection request revision for the Review Choice Demonstration or Home Health Services (CMS-10599/0938- 1311) processed under the emergency clearance process associated with the implementing regulations of the Paperwork Reduction Act of 1995 (PRA). Public harm is reasonably likely to occur if normal, non- emergency clearance procedures are followed. The approval of this data collection process is essential to ensure that the Review Choice Demonstration (RCD) for Home Health (HH) Services is expanded to California within the specified timeframe. A delay in the expansion means an extended time the public will be harmed through the continuation of significant fraud found in the traditional Medicare home health benefit in California through the waste of taxpayer money, a loss of funds from the Medicare Trust Funds that could have been used for truly needed care, paying for care that is never delivered, and beneficiaries potentially receiving non-medically necessary care. Under the PRA, federal agencies are required to publish notice in the Federal Register concerning each proposed ICR. Interested pers",
+      "summary": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2027 based on our continuing experience with these systems. We also describe the changes to the amounts and factors used to determine the payment rates for Medicare services paid under the OPPS and those paid under the ASC payment systems. In addition, this final rule with comment period updates and refines the requirements for the Hospital Outpatient Quality Reporting Program and the Ambulatory Surgical Center Quality Reporting Program. There are no changes to the Rural Emergency Hospital Quality Reporting Program. We finalized the expansion of the prior authorization requirement to include additional Botulinum Toxin Injection services. We also finalized implementation of certain provisions of the Consolidated Appropriations Act, 2026, for off-campus outpatient departments of a provider. In addition, this final rule with comment period announces notices of closure of teaching hospitals and opportunities to apply for available slots. Additionally, we finalized the policy that hospital accred",
       "key_findings": [],
       "localizable": false,
       "score": 66,
       "score_components": {
         "priority": 5,
-        "novelty": 1,
-        "timeliness": 4,
+        "novelty": 3,
+        "timeliness": 5,
         "source_quality": 5,
-        "coverage_gap": 5,
+        "coverage_gap": 1,
         "localization": 1,
         "demand": 4,
         "consumer_utility": 3,
         "b2b_relevance": 3,
         "visualization": 1
       },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 1,
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
         "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "Build an original ranking, map or trend analysis from the underlying public data."
       ],
       "raw_metadata": {
-        "document_number": "2026-22297",
-        "document_type": "Notice",
+        "document_number": "2026-22739",
+        "document_type": "Rule",
         "agencies": [
           "Health and Human Services Department",
           "Centers for Medicare & Medicaid Services"
         ],
-        "coverage_state": "gap",
-        "first_seen": "2026-10-31T15:45:33.644897+00:00",
-        "runs_seen": 7,
+        "coverage_state": "saturated",
+        "first_seen": "2026-11-06T17:29:18.070679+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -3040,7 +2936,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3085,103 +2981,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "Medicaid’s Transportation Benefit and the People Who Use It",
-      "url": "https://www.kff.org/medicaid/medicaids-transportation-benefit-and-the-people-who-use-it/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-02T16:12:59+00:00",
-      "topics": [
-        "medicare_medicaid",
-        "transportation"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Medicaid's non-emergency medical transportation (NEMT) benefit helps low-income enrollees get to care and accounts for less than 1% of Medicaid spending. Amid the current administration's focus on Medicaid fraud, this brief examines how states administer NEMT, what Medicaid spends on the program, and who uses it.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 65,
-      "score_components": {
-        "priority": 5,
-        "novelty": 1,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 4,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-11-02T20:22:07.663964+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Medicare and Medicaid Programs; Organ Procurement Organizations Conditions for Coverage: Revisions to the Conditions for Coverage",
-      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22381/medicare-and-medicaid-programs-organ-procurement-organizations-conditions-for-coverage-revisions-to",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-03T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This final rule revises the Conditions for Coverage for Organ Procurement Organizations (OPOs) to clarify outstanding procedural questions and provide additional operational flexibility for OPOs to achieve high performance resulting in the successful procurement, distribution, and transplantation of more life-saving organs. This rule revises definitions, revises the designation requirements for OPOs, clarifies when an OPO's service area is open for competition, and updates the process for appeals. We are committed to holding all OPOs accountable for their performance and this final rule does not revise the focus on improving the volume of donors and transplants assessed in the outcome measures or the tier structure used for re-certification and de-certification of OPOs.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 64,
-      "score_components": {
-        "priority": 5,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-22381",
-        "document_type": "Rule",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-11-03T17:51:25.776010+00:00",
-        "runs_seen": 4,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -3315,32 +3115,34 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-14T15:08:04.493367+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
     {
-      "source_id": "kff-issue-briefs",
-      "title": "Medicaid Payment Transparency Rules: State Reporting Requirements and Limitations",
-      "url": "https://www.kff.org/medicaid/medicaid-payment-transparency-rules-state-reporting-requirements-and-limitations/",
-      "source_type": "web_release",
-      "published_at": null,
+      "source_id": "federal-register",
+      "title": "Emergency Clearance: Public Information Collection Requirements Submitted to the Office of Management and Budget (OMB)",
+      "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22297/emergency-clearance-public-information-collection-requirements-submitted-to-the-office-of-management",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-02T00:00:00+00:00",
       "topics": [
         "medicare_medicaid"
       ],
-      "geographies": [],
+      "geographies": [
+        "United States"
+      ],
       "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Nov 6, 2026 Issue Brief This brief describes the transparency requirements that took effect in July 2026, uses T-MSIS data to assess the share of FFS spending and claims captured by certain reporting requirements, and discusses limitations of the new transparency requirements.",
+      "methodology": "Federal Register API; Notice from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "The Centers for Medicare & Medicaid Services (CMS) is requesting that an information collection request revision for the Review Choice Demonstration or Home Health Services (CMS-10599/0938- 1311) processed under the emergency clearance process associated with the implementing regulations of the Paperwork Reduction Act of 1995 (PRA). Public harm is reasonably likely to occur if normal, non- emergency clearance procedures are followed. The approval of this data collection process is essential to ensure that the Review Choice Demonstration (RCD) for Home Health (HH) Services is expanded to California within the specified timeframe. A delay in the expansion means an extended time the public will be harmed through the continuation of significant fraud found in the traditional Medicare home health benefit in California through the waste of taxpayer money, a loss of funds from the Medicare Trust Funds that could have been used for truly needed care, paying for care that is never delivered, and beneficiaries potentially receiving non-medically necessary care. Under the PRA, federal agencies are required to publish notice in the Federal Register concerning each proposed ICR. Interested pers",
       "key_findings": [],
       "localizable": false,
-      "score": 64,
+      "score": 63,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
-        "timeliness": 0,
-        "source_quality": 2,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 5,
         "coverage_gap": 5,
         "localization": 1,
         "demand": 4,
@@ -3353,15 +3155,20 @@
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
         "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "First appearance in this pipeline — no prior run surfaced it.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "listing_page": "https://www.kff.org/content-type/issue-brief/",
+        "document_number": "2026-22297",
+        "document_type": "Notice",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
         "coverage_state": "gap",
-        "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "first_seen": "2026-10-31T15:45:33.644897+00:00",
+        "runs_seen": 8,
+        "is_new": false
       }
     },
     {
@@ -3412,7 +3219,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-30T16:42:34.211809+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -3470,7 +3277,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -3528,7 +3335,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -3586,7 +3393,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -3644,7 +3451,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -3702,7 +3509,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -3760,7 +3567,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 43,
+        "runs_seen": 44,
         "is_new": false
       }
     },
@@ -3818,7 +3625,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 43,
+        "runs_seen": 44,
         "is_new": false
       }
     },
@@ -3876,7 +3683,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3934,7 +3741,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -3992,7 +3799,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4050,7 +3857,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4108,7 +3915,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4166,7 +3973,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4224,7 +4031,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4282,7 +4089,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -4340,24 +4147,159 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 29,
+        "runs_seen": 30,
         "is_new": false
       }
     },
     {
-      "source_id": "justice-in-aging",
-      "title": "From DC: Court Ruling on Medicaid Work Requirements, Estate Recovery Advocacy, and Public Charge Updates",
-      "url": "https://justiceinaging.org/from-dc-10302026/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-10-30T19:51:31+00:00",
+      "source_id": "bls-api",
+      "title": "BLS: Assisted living and CCRC average hourly earnings, September 2026 — 25.99 dollars per hour (+5.4% year over year)",
+      "url": "https://data.bls.gov/timeseries/CES6562330003",
+      "source_type": "government_api",
+      "published_at": "2026-09-01T00:00:00+00:00",
+      "topics": [
+        "workforce",
+        "assisted_living"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "BLS Public Data API v2, series CES6562330003; latest observation and year-over-year change",
+      "evidence_grade": "A",
+      "summary": null,
+      "key_findings": [
+        "September 2026: 25.99 dollars per hour",
+        "Year-over-year change: +5.4%"
+      ],
+      "localizable": false,
+      "score": 63,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 2,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 4,
+        "visualization": 5
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a family touring communities should ask about, and what the numbers say.",
+        "For the trade: Operating margin, census and what the disclosure means competitively.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "series_id": "CES6562330003",
+        "units": "dollars per hour",
+        "latest_value": 25.99,
+        "yoy_change_pct": 5.4,
+        "observations": [
+          {
+            "year": "2026",
+            "period": "M09",
+            "periodName": "September",
+            "value": "25.99"
+          },
+          {
+            "year": "2026",
+            "period": "M08",
+            "periodName": "August",
+            "value": "25.88"
+          },
+          {
+            "year": "2026",
+            "period": "M07",
+            "periodName": "July",
+            "value": "25.71"
+          },
+          {
+            "year": "2026",
+            "period": "M06",
+            "periodName": "June",
+            "value": "25.49"
+          },
+          {
+            "year": "2026",
+            "period": "M05",
+            "periodName": "May",
+            "value": "25.34"
+          },
+          {
+            "year": "2026",
+            "period": "M04",
+            "periodName": "April",
+            "value": "25.25"
+          },
+          {
+            "year": "2026",
+            "period": "M03",
+            "periodName": "March",
+            "value": "25.41"
+          },
+          {
+            "year": "2026",
+            "period": "M02",
+            "periodName": "February",
+            "value": "25.04"
+          },
+          {
+            "year": "2026",
+            "period": "M01",
+            "periodName": "January",
+            "value": "25.01"
+          },
+          {
+            "year": "2025",
+            "period": "M12",
+            "periodName": "December",
+            "value": "24.89"
+          },
+          {
+            "year": "2025",
+            "period": "M11",
+            "periodName": "November",
+            "value": "24.85"
+          },
+          {
+            "year": "2025",
+            "period": "M10",
+            "periodName": "October",
+            "value": "24.78"
+          },
+          {
+            "year": "2025",
+            "period": "M09",
+            "periodName": "September",
+            "value": "24.66"
+          }
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-11-06T17:29:18.070679+00:00",
+        "runs_seen": 2,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Medicare and Medicaid Programs; Organ Procurement Organizations Conditions for Coverage: Revisions to the Conditions for Coverage",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22381/medicare-and-medicaid-programs-organ-procurement-organizations-conditions-for-coverage-revisions-to",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-03T00:00:00+00:00",
       "topics": [
         "medicare_medicaid"
       ],
-      "geographies": [],
+      "geographies": [
+        "United States"
+      ],
       "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "In this week's edition: Court Ruling on Medicaid Work Requirements, Estate Recovery Advocacy, and Public Charge Updates. The post From DC: Court Ruling on Medicaid Work Requirements, Estate Recovery Advocacy, and Public Charge Updates appeared first on Justice in Aging .",
+      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "This final rule revises the Conditions for Coverage for Organ Procurement Organizations (OPOs) to clarify outstanding procedural questions and provide additional operational flexibility for OPOs to achieve high performance resulting in the successful procurement, distribution, and transplantation of more life-saving organs. This rule revises definitions, revises the designation requirements for OPOs, clarifies when an OPO's service area is open for competition, and updates the process for appeals. We are committed to holding all OPOs accountable for their performance and this final rule does not revise the focus on improving the volume of donors and transplants assessed in the outcome measures or the tier structure used for re-certification and de-certification of OPOs.",
       "key_findings": [],
       "localizable": false,
       "score": 62,
@@ -4365,8 +4307,8 @@
         "priority": 5,
         "novelty": 1,
         "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 5,
+        "source_quality": 5,
+        "coverage_gap": 3,
         "localization": 1,
         "demand": 4,
         "consumer_utility": 3,
@@ -4374,17 +4316,22 @@
         "visualization": 1
       },
       "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
+      "b2c_coverage_count": 1,
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
         "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "Build an original ranking, map or trend analysis from the underlying public data."
       ],
       "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-10-31T15:45:33.644897+00:00",
-        "runs_seen": 7,
+        "document_number": "2026-22381",
+        "document_type": "Rule",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-11-03T17:51:25.776010+00:00",
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -4452,7 +4399,51 @@
         "data_file": "outputs/data/acs-2023-state-profile.json",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "Status of State Medicaid Expansion Decisions",
+      "url": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T20:19:06+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This page displays an interactive map of the current status of state decisions on the Affordable Care Act's Medicaid expansion. Additional Medicaid expansion resources are listed (with links) below the map.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 61,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -4496,7 +4487,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -4540,7 +4531,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -4584,7 +4575,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -4628,7 +4619,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -4672,51 +4663,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-09T16:38:13.943757+00:00",
-        "runs_seen": 22,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "Medicaid Waiver Tracker: Approved and Pending Section 1115 Waivers by State",
-      "url": "https://www.kff.org/medicaid/medicaid-waiver-tracker-approved-and-pending-section-1115-waivers-by-state/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-02T22:48:27+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Section 1115 Medicaid waivers can allow states to test new approaches in Medicaid that differ from what is required by federal law. This page tracks approved and pending waiver provisions (including expansions and restrictions) related to eligibility, benefits, and social determinants of health and other delivery system reforms.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 61,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-09-25T17:11:54.951410+00:00",
-        "runs_seen": 17,
+        "runs_seen": 23,
         "is_new": false
       }
     },
@@ -4767,7 +4714,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -4819,7 +4766,51 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "From DC: Court Ruling on Medicaid Work Requirements, Estate Recovery Advocacy, and Public Charge Updates",
+      "url": "https://justiceinaging.org/from-dc-10302026/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-10-30T19:51:31+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "In this week's edition: Court Ruling on Medicaid Work Requirements, Estate Recovery Advocacy, and Public Charge Updates. The post From DC: Court Ruling on Medicaid Work Requirements, Estate Recovery Advocacy, and Public Charge Updates appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 59,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-10-31T15:45:33.644897+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -4863,7 +4854,51 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-issue-briefs",
+      "title": "Medicaid Payment Transparency Rules: State Reporting Requirements and Limitations",
+      "url": "https://www.kff.org/medicaid/medicaid-payment-transparency-rules-state-reporting-requirements-and-limitations/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Nov 6, 2026 Issue Brief This brief describes the transparency requirements that took effect in July 2026, uses T-MSIS data to assess the share of FFS spending and claims captured by certain reporting requirements, and discusses limitations of the new transparency requirements.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 58,
+      "score_components": {
+        "priority": 5,
+        "novelty": 3,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.kff.org/content-type/issue-brief/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-06T17:29:18.070679+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -4907,7 +4942,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4958,51 +4993,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-27T15:53:40.162673+00:00",
-        "runs_seen": 11,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "justice-in-aging",
-      "title": "Reporting and Transparency Requirements for State Medicaid Agency Contracts (SMACs)",
-      "url": "https://justiceinaging.org/smac-reporting-and-transparency-requirements/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-10-21T16:00:06+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Learn about reporting and transparency requirements for Medicaid State Medicaid Agency Contracts (SMACs) and how stronger oversight can support accountability and protect beneficiaries. The post Reporting and Transparency Requirements for State Medicaid Agency Contracts (SMACs) appeared first on Justice in Aging .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 57,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 3,
-        "source_quality": 3,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "gap",
-        "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -5053,7 +5044,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-10T15:53:51.823922+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -5105,7 +5096,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-08T17:25:29.418360+00:00",
-        "runs_seen": 22,
+        "runs_seen": 23,
         "is_new": false
       }
     },
@@ -5150,7 +5141,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -5194,7 +5185,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -5245,7 +5236,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-14T15:08:04.493367+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -5290,51 +5281,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-11-02T20:22:07.663964+00:00",
-        "runs_seen": 5,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "acl-news",
-      "title": "Webinar on Supporting Older Adults with Assistive Technology: A Guide for the Aging Network",
-      "url": "https://acl.gov/news-and-events/announcements/webinar-supporting-older-adults-assistive-technology-guide-aging",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "age_tech"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 54,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: Whether the device or service is worth it, and what it does not do.",
-        "For the trade: Procurement case, integration cost and what to demand from vendors.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://acl.gov/news",
-        "coverage_state": "gap",
-        "first_seen": "2026-11-04T17:59:49.697278+00:00",
-        "runs_seen": 3,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -5367,7 +5314,7 @@
         "b2b_relevance": 3,
         "visualization": 1
       },
-      "b2b_coverage_count": 3,
+      "b2b_coverage_count": 2,
       "b2c_coverage_count": 2,
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
@@ -5377,7 +5324,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "saturated",
         "first_seen": "2026-10-09T17:00:51.907973+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
         "is_new": false
       }
     },
@@ -5420,7 +5367,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-10-16T14:51:25.999997+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -5464,7 +5411,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -5509,49 +5456,8 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "The Movement to Remove Race From Clinical Decision-Making Tools: Assessing Progress and Impacts",
-      "url": "https://www.kff.org/racial-equity-and-health-policy/the-movement-to-remove-race-from-clinical-decision-making-tools-assessing-progress-and-impacts/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-06T16:02:24+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "This brief provides an update on how the use of race in clinical decision-making tools has changed in recent years, as a growing number of medical specialties and institutions have moved away from race-based tools, and the implications of this change for racial health disparities.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 48,
-      "score_components": {
-        "priority": 0,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 1,
-        "is_new": true
       }
     },
     {
@@ -5594,7 +5500,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -5629,7 +5535,7 @@
         "visualization": 1
       },
       "b2b_coverage_count": 0,
-      "b2c_coverage_count": 2,
+      "b2c_coverage_count": 1,
       "story_angles": [
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay."
@@ -5638,7 +5544,51 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "acl-news",
+      "title": "Webinar on Supporting Older Adults with Assistive Technology: A Guide for the Aging Network",
+      "url": "https://acl.gov/news-and-events/announcements/webinar-supporting-older-adults-assistive-technology-guide-aging",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "age_tech"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 47,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: Whether the device or service is worth it, and what it does not do.",
+        "For the trade: Procurement case, integration cost and what to demand from vendors.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://acl.gov/news",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-04T17:59:49.697278+00:00",
+        "runs_seen": 4,
         "is_new": false
       }
     },
@@ -5680,7 +5630,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5727,7 +5677,51 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "national-alliance-caregiving",
+      "title": "NAC and the Caregiver Nation Coalition Respond to the CY 2027 Medicare Physician Fee Schedule Proposed Rule",
+      "url": "https://www.caregiving.org/nac-and-the-caregiver-nation-coalition-respond-to-the-cy-2027-medicare-physician-fee-schedule-proposed-rule/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "caregiving",
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 46,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 4,
+        "consumer_utility": 4,
+        "b2b_relevance": 4,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
+        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.caregiving.org/",
+        "coverage_state": "light",
+        "first_seen": "2026-09-16T16:56:14.102324+00:00",
+        "runs_seen": 44,
         "is_new": false
       }
     },
@@ -5772,7 +5766,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -5816,7 +5810,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-10-08T17:25:29.418360+00:00",
-        "runs_seen": 22,
+        "runs_seen": 23,
         "is_new": false
       }
     },
@@ -5860,7 +5854,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -5904,7 +5898,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -5948,7 +5942,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -5990,7 +5984,47 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-10-30T16:42:34.211809+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "The Movement to Remove Race From Clinical Decision-Making Tools: Assessing Progress and Impacts",
+      "url": "https://www.kff.org/racial-equity-and-health-policy/the-movement-to-remove-race-from-clinical-decision-making-tools-assessing-progress-and-impacts/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T16:02:24+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This brief provides an update on how the use of race in clinical decision-making tools has changed in recent years, as a growing number of medical specialties and institutions have moved away from race-based tools, and the implications of this change for racial health disparities.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 42,
+      "score_components": {
+        "priority": 0,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-11-06T17:29:18.070679+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -6030,7 +6064,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6070,86 +6104,6 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 2,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "We’re Hiring a Development Coordinator",
-      "url": "https://www.agingresearch.org/blog/were-hiring-a-development-coordinator-2/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-02T20:58:10+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post We&#8217;re Hiring a Development Coordinator appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-11-03T17:51:25.776010+00:00",
-        "runs_seen": 3,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "Explaining Health Savings Accounts in the Affordable Care Act Marketplaces",
-      "url": "https://www.kff.org/affordable-care-act/explaining-health-savings-accounts-in-the-affordable-care-act-marketplaces/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-02T18:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "This brief examines how the budget reconciliation law expanded access to HSA-eligible plans and accounts on the ACA Marketplaces and what these changes means for enrollees",
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 0,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-11-04T17:59:49.697278+00:00",
         "runs_seen": 3,
         "is_new": false
       }
@@ -6183,7 +6137,7 @@
         "b2b_relevance": 1,
         "visualization": 1
       },
-      "b2b_coverage_count": 2,
+      "b2b_coverage_count": 1,
       "b2c_coverage_count": 5,
       "story_angles": [
         "For readers: What it means for your retirement income and what to do before it bites.",
@@ -6193,7 +6147,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -6235,51 +6189,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-10-06T16:51:21.858324+00:00",
-        "runs_seen": 24,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "national-alliance-caregiving",
-      "title": "NAC and the Caregiver Nation Coalition Respond to the CY 2027 Medicare Physician Fee Schedule Proposed Rule",
-      "url": "https://www.caregiving.org/nac-and-the-caregiver-nation-coalition-respond-to-the-cy-2027-medicare-physician-fee-schedule-proposed-rule/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "caregiving",
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 42,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 1,
-        "localization": 1,
-        "demand": 4,
-        "consumer_utility": 4,
-        "b2b_relevance": 4,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 3,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
-        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.caregiving.org/",
-        "coverage_state": "saturated",
-        "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 43,
+        "runs_seen": 25,
         "is_new": false
       }
     },
@@ -6323,7 +6233,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -6367,7 +6277,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -6411,7 +6321,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -6455,91 +6365,51 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
     {
-      "source_id": "acl-news",
-      "title": "ACL Announces 2027 Senior Nutrition Program Theme",
-      "url": "https://acl.gov/news-and-events/announcements/acl-announces-2027-senior-nutrition-program-theme",
+      "source_id": "phi-workforce",
+      "title": "THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER",
+      "url": "https://www.phinational.org/national-resource-center",
       "source_type": "web_release",
       "published_at": null,
       "topics": [
-        "nutrition"
+        "caregiving",
+        "workforce"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": null,
+      "summary": "Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St",
       "key_findings": [],
       "localizable": false,
-      "score": 40,
+      "score": 41,
       "score_components": {
-        "priority": 2,
-        "novelty": 3,
+        "priority": 5,
+        "novelty": 0,
         "timeliness": 0,
         "source_quality": 2,
-        "coverage_gap": 5,
+        "coverage_gap": 3,
         "localization": 1,
         "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
         "visualization": 1
       },
-      "b2b_coverage_count": 0,
+      "b2b_coverage_count": 1,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
+        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers."
       ],
       "raw_metadata": {
-        "listing_page": "https://acl.gov/news",
-        "coverage_state": "gap",
-        "first_seen": "2026-11-04T17:59:49.697278+00:00",
-        "runs_seen": 3,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "acl-news",
-      "title": "Visit the celebration page",
-      "url": "https://acl.gov/snp/celebrate",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "nutrition"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "In March, ACL and its partners will celebrate 55 years of the Senior Nutrition Program supporting the health and well-being of…",
-      "key_findings": [],
-      "localizable": false,
-      "score": 40,
-      "score_components": {
-        "priority": 2,
-        "novelty": 3,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 2,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://acl.gov/news",
-        "coverage_state": "gap",
-        "first_seen": "2026-11-04T17:59:49.697278+00:00",
-        "runs_seen": 3,
+        "listing_page": "https://www.phinational.org/policy-research/",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -6572,7 +6442,7 @@
         "b2b_relevance": 3,
         "visualization": 1
       },
-      "b2b_coverage_count": 3,
+      "b2b_coverage_count": 2,
       "b2c_coverage_count": 2,
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
@@ -6582,7 +6452,50 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "saturated",
         "first_seen": "2026-10-09T17:00:51.907973+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "phi-workforce",
+      "title": "Workforce Data Center",
+      "url": "https://www.phinational.org/policy-research/workforce-data-center/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "workforce"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 40,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: Whether you will be able to find and afford help at home.",
+        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.phinational.org/policy-research/",
+        "coverage_state": "light",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -6624,171 +6537,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-28T19:41:34.214143+00:00",
-        "runs_seen": 30,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "phi-workforce",
-      "title": "THE NATIONAL DIRECT CARE WORKFORCE RESOURCE CENTER",
-      "url": "https://www.phinational.org/national-resource-center",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "caregiving",
-        "workforce"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Home Workforce Innovations About Our Services Advanced Roles Curriculum Design Organizational & Leadership Development PHI Coaching Approach® Recruitment & Retention Training Policy Research About Our Policy Research Caring for the Future Key Facts & FAQ Reports & Multimedia State Index Tool Workforce Data Center Workforce Research and Strategy Services Advocacy About Our Advocacy State Federal St",
-      "key_findings": [],
-      "localizable": false,
-      "score": 37,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 1,
-        "localization": 1,
-        "demand": 2,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 1,
-      "story_angles": [
-        "For readers: What it changes for a family managing care at home — what to ask for, what it costs, what you are entitled to.",
-        "For the trade: Referral volume, family expectations and where unpaid care shifts demand onto providers."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.phinational.org/policy-research/",
-        "coverage_state": "saturated",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "9 Things to Watch for the 2027 ACA Open Enrollment Period",
-      "url": "https://www.kff.org/affordable-care-act/9-things-to-watch-for-the-2027-aca-open-enrollment-period/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-06T16:39:41+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The ACA Marketplace Open Enrollment season began November 1, bringing higher premiums, fewer insurer options in some states as more insurers exit the market, less access to health insurance subsidies, and less help finding coverage following federal actions to address broker fraud—among other changes to watch.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 36,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-10-31T15:45:33.644897+00:00",
-        "runs_seen": 7,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "A Déjà Vu Moment for Women’s Health Research",
-      "url": "https://www.kff.org/womens-health-policy/a-deja-vu-moment-for-womens-health-research/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-03T14:47:28+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "In this column for Nature, Alina Salganicoff reviews efforts to improve women's health research during previous U.S. administrations that fell short of their promise and highlights the recommendations of a congressionally mandated committee aimed at improving women's health research at the National Institutes of Health.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 36,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-11-03T17:51:25.776010+00:00",
-        "runs_seen": 4,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "Building AI In-House at Europe’s Largest Hospital",
-      "url": "https://www.kff.org/other-health/building-ai-in-house-at-europes-largest-hospital/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-03T10:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Most hospitals buy their AI. Charité – Universitätsmedizin Berlin, Europe’s largest academic medical center and ranked eighth in the world by Newsweek, is developing its own. Charité has consolidated its scattered AI projects into a single Institute for Artificial Intelligence in Medicine and switched on Clé, an in-house platform that runs across research, teaching, patient care, and administration. Its success, says Chief Executive Officer Prof. Dr. Heyo Kroemer, will depend on whether it improves care, supports staff, and makes innovation usable in everyday work. In this episode, Chip and Kroemer talk about what Charité stands to gain or lose by taking this path, and what it means to own an AI platform rather than license one.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 36,
-      "score_components": {
-        "priority": 0,
-        "novelty": 1,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-11-03T17:51:25.776010+00:00",
-        "runs_seen": 4,
+        "runs_seen": 31,
         "is_new": false
       }
     },
@@ -6830,7 +6579,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -6863,7 +6612,7 @@
         "b2b_relevance": 1,
         "visualization": 1
       },
-      "b2b_coverage_count": 2,
+      "b2b_coverage_count": 1,
       "b2c_coverage_count": 5,
       "story_angles": [
         "For readers: What it means for your retirement income and what to do before it bites.",
@@ -6873,50 +6622,87 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
     {
-      "source_id": "phi-workforce",
-      "title": "Workforce Data Center",
-      "url": "https://www.phinational.org/policy-research/workforce-data-center/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "workforce"
-      ],
+      "source_id": "kff-feed",
+      "title": "A Déjà Vu Moment for Women’s Health Research",
+      "url": "https://www.kff.org/womens-health-policy/a-deja-vu-moment-for-womens-health-research/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-03T14:47:28+00:00",
+      "topics": [],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": null,
+      "summary": "In this column for Nature, Alina Salganicoff reviews efforts to improve women's health research during previous U.S. administrations that fell short of their promise and highlights the recommendations of a congressionally mandated committee aimed at improving women's health research at the National Institutes of Health.",
       "key_findings": [],
       "localizable": false,
-      "score": 36,
+      "score": 34,
       "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 1,
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
         "localization": 1,
         "demand": 3,
         "consumer_utility": 1,
-        "b2b_relevance": 3,
+        "b2b_relevance": 1,
         "visualization": 1
       },
-      "b2b_coverage_count": 2,
-      "b2c_coverage_count": 1,
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: Whether you will be able to find and afford help at home.",
-        "For the trade: Wage pressure, turnover cost and staffing-ratio compliance."
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
       ],
       "raw_metadata": {
-        "listing_page": "https://www.phinational.org/policy-research/",
-        "coverage_state": "saturated",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-11-03T17:51:25.776010+00:00",
+        "runs_seen": 5,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "We’re Hiring a Development Coordinator",
+      "url": "https://www.agingresearch.org/blog/were-hiring-a-development-coordinator-2/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-02T20:58:10+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post We&#8217;re Hiring a Development Coordinator appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 34,
+      "score_components": {
+        "priority": 0,
+        "novelty": 1,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-11-03T17:51:25.776010+00:00",
+        "runs_seen": 4,
         "is_new": false
       }
     },
@@ -6956,7 +6742,211 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-02T20:22:07.663964+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "acl-news",
+      "title": "ACL Announces 2027 Senior Nutrition Program Theme",
+      "url": "https://acl.gov/news-and-events/announcements/acl-announces-2027-senior-nutrition-program-theme",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "nutrition"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 34,
+      "score_components": {
+        "priority": 2,
+        "novelty": 1,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://acl.gov/news",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-04T17:59:49.697278+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "acl-news",
+      "title": "Visit the celebration page",
+      "url": "https://acl.gov/snp/celebrate",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "nutrition"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "In March, ACL and its partners will celebrate 55 years of the Senior Nutrition Program supporting the health and well-being of…",
+      "key_findings": [],
+      "localizable": false,
+      "score": 34,
+      "score_components": {
+        "priority": 2,
+        "novelty": 1,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 2,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://acl.gov/news",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-04T17:59:49.697278+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "KFF Tracker: America First MOU Bilateral Global Health Agreements",
+      "url": "https://www.kff.org/global-health-policy/kff-tracker-america-first-mou-bilateral-global-health-agreements/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T17:45:36+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This tracker provides up-to-date information on countries with signed bilateral MOU global health agreements with the U.S.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 33,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-11T16:29:45.021426+00:00",
+        "runs_seen": 22,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "9 Things to Watch for the 2027 ACA Open Enrollment Period",
+      "url": "https://www.kff.org/affordable-care-act/9-things-to-watch-for-the-2027-aca-open-enrollment-period/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T16:39:41+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The ACA Marketplace Open Enrollment season began November 1, bringing higher premiums, fewer insurer options in some states as more insurers exit the market, less access to health insurance subsidies, and less help finding coverage following federal actions to address broker fraud—among other changes to watch.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 33,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-10-31T15:45:33.644897+00:00",
+        "runs_seen": 8,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "Litigation Involving Reproductive Health and Rights in the Federal Courts",
+      "url": "https://www.kff.org/womens-health-policy/litigation-involving-reproductive-health-and-rights-in-the-federal-courts/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-04T20:16:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This State and Federal Reproductive Rights Litigation tracker aggregates information about ongoing litigation regarding abortion bans and restrictions, FDA approval of Mifepristone (an abortion pill) and other federal regulations.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 33,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 30,
         "is_new": false
       }
     },
@@ -6996,7 +6986,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-24T17:07:00.797108+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
         "is_new": false
       }
     },
@@ -7036,7 +7026,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -7083,7 +7073,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -7127,7 +7117,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7171,7 +7161,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7211,7 +7201,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-27T15:53:40.162673+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -7251,7 +7241,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-30T16:42:34.211809+00:00",
-        "runs_seen": 8,
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -7291,7 +7281,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-27T15:53:40.162673+00:00",
-        "runs_seen": 10,
+        "runs_seen": 11,
         "is_new": false
       }
     },
@@ -7331,7 +7321,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-14T15:08:04.493367+00:00",
-        "runs_seen": 16,
+        "runs_seen": 17,
         "is_new": false
       }
     },
@@ -7371,7 +7361,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-02T16:17:14.035998+00:00",
-        "runs_seen": 28,
+        "runs_seen": 29,
         "is_new": false
       }
     },
@@ -7411,7 +7401,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-28T19:41:34.214143+00:00",
-        "runs_seen": 30,
+        "runs_seen": 31,
         "is_new": false
       }
     },
@@ -7451,7 +7441,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-24T17:07:00.797108+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7491,7 +7481,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 41,
+        "runs_seen": 42,
         "is_new": false
       }
     },
@@ -7531,7 +7521,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 53,
+        "runs_seen": 54,
         "is_new": false
       }
     },
@@ -7571,7 +7561,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7611,7 +7601,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 53,
+        "runs_seen": 54,
         "is_new": false
       }
     },
@@ -7651,7 +7641,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7691,7 +7681,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7731,7 +7721,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7771,7 +7761,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7811,7 +7801,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7851,7 +7841,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7891,7 +7881,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7931,7 +7921,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -7971,7 +7961,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8011,7 +8001,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8051,7 +8041,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8091,7 +8081,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8109,11 +8099,11 @@
       "summary": "The CFPB amended its January 30, 2025 consent order with the international remittance company Wise resolving claims including advertising inaccurate fees and failing to properly disclose exchange rates and other costs.",
       "key_findings": [],
       "localizable": false,
-      "score": 24,
+      "score": 22,
       "score_components": {
         "priority": 0,
         "novelty": 0,
-        "timeliness": 1,
+        "timeliness": 0,
         "source_quality": 3,
         "coverage_gap": 2,
         "localization": 1,
@@ -8131,7 +8121,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8171,7 +8161,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8211,7 +8201,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8251,7 +8241,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8291,7 +8281,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8331,7 +8321,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8371,7 +8361,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8411,7 +8401,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 55,
+        "runs_seen": 56,
         "is_new": false
       }
     },
@@ -8451,7 +8441,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "saturated",
         "first_seen": "2026-10-01T17:02:24.226428+00:00",
-        "runs_seen": 29,
+        "runs_seen": 30,
         "is_new": false
       }
     }
