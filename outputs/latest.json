@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-10T17:51:20.405712+00:00",
-  "evidence_count": 142,
-  "new_evidence_count": 4,
-  "coverage_count": 2292,
+  "generated_at": "2026-11-11T17:54:13.043532+00:00",
+  "evidence_count": 145,
+  "new_evidence_count": 9,
+  "coverage_count": 2257,
   "monitored_publisher_count": 106,
   "registry_publisher_count": 132,
   "monitored_topics": [
@@ -50,42 +50,42 @@
     }
   ],
   "topic_coverage_counts": {
-    "age_tech": 8,
+    "age_tech": 13,
     "ageism_work": 4,
-    "aging_in_place": 17,
-    "assisted_living": 116,
-    "cardiovascular_disease": 9,
-    "caregiving": 25,
+    "aging_in_place": 14,
+    "assisted_living": 114,
+    "cardiovascular_disease": 8,
+    "caregiving": 26,
     "chronic_pain": 1,
-    "cognitive_decline": 7,
-    "dementia": 48,
-    "depression_mental_health": 15,
+    "cognitive_decline": 6,
+    "dementia": 44,
+    "depression_mental_health": 10,
     "elder_abuse": 1,
     "falls": 25,
-    "financial_security": 15,
+    "financial_security": 17,
     "food_security": 3,
     "fraud_scams": 3,
     "hearing_loss": 5,
     "housing": 86,
-    "loneliness_social_connection": 10,
-    "long_term_care": 45,
-    "medicare_medicaid": 88,
-    "nutrition": 15,
-    "osteoporosis_bone_health": 2,
-    "palliative_hospice": 18,
+    "loneliness_social_connection": 9,
+    "long_term_care": 43,
+    "medicare_medicaid": 71,
+    "nutrition": 10,
+    "osteoporosis_bone_health": 1,
+    "palliative_hospice": 19,
     "rural_aging": 2,
     "senior_living_quality": 3,
-    "sleep": 12,
-    "transportation": 5,
+    "sleep": 13,
+    "transportation": 4,
     "vision_loss": 4,
-    "workforce": 17
+    "workforce": 19
   },
   "source_status": [
     {
       "source": "federal-register",
       "method": "federal_register",
       "status": "ok",
-      "items": 17
+      "items": 18
     },
     {
       "source": "bls-api",
@@ -169,7 +169,7 @@
       "source": "nic",
       "method": "web",
       "status": "ok",
-      "items": 6
+      "items": 8
     },
     {
       "source": "rand-research",
@@ -354,7 +354,7 @@
       "feed": "https://www.providermagazine.com:443/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 3
+      "items": 4
     },
     {
       "publisher": "Generations Journal",
@@ -390,7 +390,7 @@
       "feed": "https://www.usaging.org/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 48
+      "items": 46
     },
     {
       "publisher": "REBusinessOnline",
@@ -568,7 +568,7 @@
       "feed": "https://www.bisnow.com/feed/",
       "kind": "rss",
       "discovered": false,
-      "items": 10
+      "items": 9
     },
     {
       "publisher": "Building Design+Construction",
@@ -727,7 +727,7 @@
       "feed": "https://www.modernhealthcare.com/sitemap-news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 50
+      "items": 24
     },
     {
       "publisher": "HealthLeaders",
@@ -1012,7 +1012,7 @@
       "feed": "https://www.caring.com/sitemap_index.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 13
+      "items": 6
     },
     {
       "publisher": "Family Caregiver Alliance",
@@ -1021,7 +1021,7 @@
       "feed": "https://www.caregiver.org/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 38
+      "items": 35
     },
     {
       "publisher": "National Council on Aging",
@@ -1057,7 +1057,7 @@
       "feed": "https://www.usaging.org/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 48
+      "items": 46
     },
     {
       "publisher": "Where You Live Matters",
@@ -1081,7 +1081,7 @@
       "feed": "https://www.bankrate.com/sitemap/sitemap-index.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 20
+      "items": 21
     },
     {
       "publisher": "Forbes Retirement",
@@ -1188,7 +1188,7 @@
       "feed": "https://www.ericksonseniorliving.com/sitemap.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 32
+      "items": 34
     },
     {
       "publisher": "Experience Life",
@@ -1233,7 +1233,7 @@
       "feed": "https://www.prevention.com/sitemap_google_news.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 8
+      "items": 12
     },
     {
       "publisher": "Senior Planet",
@@ -1242,7 +1242,7 @@
       "feed": "https://seniorplanet.org/sitemap_index.xml",
       "kind": "sitemap",
       "discovered": true,
-      "items": 20
+      "items": 18
     },
     {
       "publisher": "U.S. News Retirement",
@@ -1351,6 +1351,58 @@
   ],
   "evidence": [
     {
+      "source_id": "federal-register",
+      "title": "Housing and Community Development Act of 1980: Verification of Eligible Status",
+      "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "topics": [
+        "housing"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Rule from Housing and Urban Development Department",
+      "evidence_grade": "A",
+      "summary": "This final rule revises HUD's Section 214 regulations to require the verification of U.S. citizenship or the eligible immigration status of all applicants and recipients of assistance under a covered program regardless of age. The rule will also make prorated assistance a temporary condition pending verification of eligible status of all family members, where permitted by statute, as opposed to under HUD's current regulations where prorated assistance could continue indefinitely. These amendments bring HUD's regulations into greater alignment with the wording and purpose of Section 214 and align with the current Administration's priorities and regulatory reform efforts.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 77,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 4,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-23003",
+        "document_type": "Rule",
+        "agencies": [
+          "Housing and Urban Development Department"
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
       "source_id": "bls-api",
       "title": "BLS: Consumer Price Index, medical care, October 2026 — 595.47 index 1982-84=100",
       "url": "https://data.bls.gov/timeseries/CUUR0000SAM",
@@ -1371,10 +1423,10 @@
         "October 2026: 595.47 index 1982-84=100"
       ],
       "localizable": false,
-      "score": 80,
+      "score": 74,
       "score_components": {
         "priority": 5,
-        "novelty": 5,
+        "novelty": 3,
         "timeliness": 3,
         "source_quality": 5,
         "coverage_gap": 5,
@@ -1390,7 +1442,6 @@
         "For readers: What it means for your retirement income and what to do before it bites.",
         "For the trade: Resident affordability and what it does to rate increases and length of stay.",
         "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
@@ -1480,8 +1531,8 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-10T17:51:20.405712+00:00",
-        "runs_seen": 1,
-        "is_new": true
+        "runs_seen": 2,
+        "is_new": false
       }
     },
     {
@@ -1500,58 +1551,6 @@
       "methodology": "Federal Register API; Proposed Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
       "evidence_grade": "A",
       "summary": "This proposed rule would reform Medicare and Medicaid regulations deemed obsolete or excessively burdensome on healthcare providers and suppliers, with the objective of reducing costs, enhancing flexibility in delivering innovative care, and streamlining existing regulations. This reform seeks to enable healthcare professionals to devote more resources to improving patient care by eliminating or minimizing requirements that impede quality patient care or that divert resources away from furnishing high quality patient care.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 75,
-      "score_components": {
-        "priority": 5,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "First appearance in this pipeline — no prior run surfaced it."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-22812",
-        "document_type": "Proposed Rule",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-11-10T17:51:20.405712+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026; Correction",
-      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22807/medicare-program-implementation-of-sections-6219-6220-and-6224-of-the-consolidated-appropriations",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-09T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Proposed Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This document corrects a typographical error in the proposed rule that appeared in the October 20, 2026 Federal Register titled \"Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026\".",
       "key_findings": [],
       "localizable": false,
       "score": 73,
@@ -1576,15 +1575,15 @@
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "document_number": "2026-22807",
+        "document_number": "2026-22812",
         "document_type": "Proposed Rule",
         "agencies": [
           "Health and Human Services Department",
           "Centers for Medicare & Medicaid Services"
         ],
         "coverage_state": "gap",
-        "first_seen": "2026-11-08T16:40:36.146461+00:00",
-        "runs_seen": 3,
+        "first_seen": "2026-11-10T17:51:20.405712+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -1642,161 +1641,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Medicare Drug Price Negotiation Program and Medicare Prescription Drug Benefit Program",
-      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22792/medicare-drug-price-negotiation-program-and-medicare-prescription-drug-benefit-program",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-09T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This rule finalizes and codifies the Medicare Drug Price Negotiation Program (\"Negotiation Program\") and establishes certain new policies for the Negotiation Program and the Medicare Prescription Drug Benefit Program (\"Part D Program\") as required by the Inflation Reduction Act of 2022. This final rule also finalizes a proposed policy for specific fixed combination drugs that are new formulations.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 68,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-22792",
-        "document_type": "Rule",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-11-08T16:40:36.146461+00:00",
-        "runs_seen": 3,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Calendar Year 2027 Home Health Prospective Payment System (HH PPS) Rate Update; Requirements for the HH Quality Reporting Program and the Expanded HH Value-Based Purchasing Model; Medicare Provider Enrollment, Durable Medical Equipment (DME), and DME, Prosthetics, Orthotics, and Supplies (DMEPOS) Policies",
-      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22750/calendar-year-2027-home-health-prospective-payment-system-hh-pps-rate-update-requirements-for-the-hh",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-09T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid",
-        "palliative_hospice"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This final rule sets forth routine updates to the Medicare home health payment rates in accordance with existing statutory and regulatory requirements. In addition, this final rule discusses the behavior adjustments and finalizes a temporary behavior adjustment. It also finalizes the recalibrated case-mix weights and updated functional impairment levels; comorbidity subgroups; and low-utilization payment adjustment (LUPA) thresholds for CY 2027. Additionally, this final rule discusses and responds to comments on the provision of home health palliative care services and includes a summary of comments received on the request for information (RFI) on a home health specific wage index included in the proposed rule. This rule also finalizes changes to the Home Health Quality Reporting Program (HH QRP) and summarizes potential initiatives to improve alignment between the HH QRP and expanded Home Health Value- Based Purchasing (HHVBP) Model. Lastly, the rule clarifies the application of the DMEPOS face-to- face encounter requirements for the replacement of DMEPOS items; makes changes to the provider and supplier enrollment requirements; makes changes to implement a DME benefit expansion f",
-      "key_findings": [],
-      "localizable": false,
-      "score": 68,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-22750",
-        "document_type": "Rule",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-11-08T16:40:36.146461+00:00",
-        "runs_seen": 3,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Medicare and Medicaid Programs; CY 2027 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; Medicare Shared Savings Program Requirements; and Medicare Prescription Drug Inflation Rebate Program",
-      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22743/medicare-and-medicaid-programs-cy-2027-payment-policies-under-the-physician-fee-schedule-and-other",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-09T00:00:00+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This final rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; codification of establishment of new policies for: the Medicare Prescription Drug Inflation Rebate Program under the Inflation Reduction Act of 2022; limiting Medicare coverage of certain individuals; the Ambulatory Specialty Model; updates to drugs and biological products paid under Part B; Medicare Shared Savings Program requirements; updates to the Quality Payment Program; updates to policies for Rural Health Clinics and Federally Qualified Health Centers; update to the Ambulance Fee Schedule regulations; codification of the Inflation Reduction Act and Consolidated Appropriations Act, 2026 provisions; updates to Clinical Laboratory Fee Schedule regulations; updates to the Medicare Promoting Interoperability Program.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 68,
-      "score_components": {
-        "priority": 5,
-        "novelty": 3,
-        "timeliness": 5,
-        "source_quality": 5,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-22743",
-        "document_type": "Rule",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-11-08T16:40:36.146461+00:00",
-        "runs_seen": 3,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -1931,7 +1776,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -1975,7 +1820,111 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-11-09T20:43:17.846301+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026; Correction",
+      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22807/medicare-program-implementation-of-sections-6219-6220-and-6224-of-the-consolidated-appropriations",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Proposed Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "This document corrects a typographical error in the proposed rule that appeared in the October 20, 2026 Federal Register titled \"Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026\".",
+      "key_findings": [],
+      "localizable": false,
+      "score": 66,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-22807",
+        "document_type": "Proposed Rule",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-11-08T16:40:36.146461+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Medicare Drug Price Negotiation Program and Medicare Prescription Drug Benefit Program",
+      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22792/medicare-drug-price-negotiation-program-and-medicare-prescription-drug-benefit-program",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "This rule finalizes and codifies the Medicare Drug Price Negotiation Program (\"Negotiation Program\") and establishes certain new policies for the Negotiation Program and the Medicare Prescription Drug Benefit Program (\"Part D Program\") as required by the Inflation Reduction Act of 2022. This final rule also finalizes a proposed policy for specific fixed combination drugs that are new formulations.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 66,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-22792",
+        "document_type": "Rule",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-11-08T16:40:36.146461+00:00",
+        "runs_seen": 4,
         "is_new": false
       }
     },
@@ -2110,7 +2059,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -2243,7 +2192,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -2302,7 +2251,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -2361,7 +2310,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -2420,7 +2369,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2478,7 +2427,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -2537,7 +2486,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2605,8 +2554,55 @@
         "data_file": "outputs/data/acs-2023-state-profile.json",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
+      }
+    },
+    {
+      "source_id": "nic",
+      "title": "Senior Housing Strongly Outperformed Other Property Types in Third Quarter",
+      "url": "https://www.nic.org/blog/senior-housing-strongly-outperformed-other-property-types-in-third-quarter/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "aging_in_place",
+        "assisted_living",
+        "housing"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Assisted living near 20% total returns over one-year period, independent living more than 15%",
+      "key_findings": [],
+      "localizable": false,
+      "score": 66,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 4,
+        "b2b_relevance": 4,
+        "visualization": 3
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: Whether staying in your own home stays realistic, and what would have to change.",
+        "For the trade: How home-based demand reshapes the case for congregate settings.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.nic.org/insider/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
       }
     },
     {
@@ -2663,7 +2659,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -2721,7 +2717,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 47,
+        "runs_seen": 48,
         "is_new": false
       }
     },
@@ -2855,7 +2851,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -2906,7 +2902,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
@@ -2946,7 +2942,7 @@
         "b2b_relevance": 5,
         "visualization": 5
       },
-      "b2b_coverage_count": 1,
+      "b2b_coverage_count": 2,
       "b2c_coverage_count": 0,
       "story_angles": [
         "For readers: What a family touring communities should ask about, and what the numbers say.",
@@ -3040,7 +3036,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -3098,7 +3094,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3156,7 +3152,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3214,7 +3210,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3272,7 +3268,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3330,7 +3326,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-10-28T16:37:58.439523+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -3388,7 +3384,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 47,
+        "runs_seen": 48,
         "is_new": false
       }
     },
@@ -3446,7 +3442,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 47,
+        "runs_seen": 48,
         "is_new": false
       }
     },
@@ -3504,7 +3500,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3562,7 +3558,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3620,7 +3616,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3678,7 +3674,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3736,7 +3732,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3794,7 +3790,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3852,7 +3848,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3910,7 +3906,7 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 38,
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -3968,24 +3964,27 @@
         ],
         "coverage_state": "reference",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 33,
+        "runs_seen": 34,
         "is_new": false
       }
     },
     {
-      "source_id": "kff-feed",
-      "title": "Medicare Cuts to 340B Drug Payments Will Hit Safety-Net Hospitals While Benefiting For-Profit Hospitals",
-      "url": "https://www.kff.org/health-costs/medicares-proposed-cut-to-340b-drug-payments-would-hit-safety-net-hospitals-while-benefiting-for-profit-hospitals/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-07T00:08:43+00:00",
+      "source_id": "federal-register",
+      "title": "Calendar Year 2027 Home Health Prospective Payment System (HH PPS) Rate Update; Requirements for the HH Quality Reporting Program and the Expanded HH Value-Based Purchasing Model; Medicare Provider Enrollment, Durable Medical Equipment (DME), and DME, Prosthetics, Orthotics, and Supplies (DMEPOS) Policies",
+      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22750/calendar-year-2027-home-health-prospective-payment-system-hh-pps-rate-update-requirements-for-the-hh",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-09T00:00:00+00:00",
       "topics": [
-        "medicare_medicaid"
+        "medicare_medicaid",
+        "palliative_hospice"
       ],
-      "geographies": [],
+      "geographies": [
+        "United States"
+      ],
       "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "This analysis finds that CMS’s proposed cut to Medicare reimbursement for 340B drugs, and accompanying increase for other outpatient services, will reduce revenues among safety-net hospitals while increasing revenues among for-profit hospitals.",
+      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "This final rule sets forth routine updates to the Medicare home health payment rates in accordance with existing statutory and regulatory requirements. In addition, this final rule discusses the behavior adjustments and finalizes a temporary behavior adjustment. It also finalizes the recalibrated case-mix weights and updated functional impairment levels; comorbidity subgroups; and low-utilization payment adjustment (LUPA) thresholds for CY 2027. Additionally, this final rule discusses and responds to comments on the provision of home health palliative care services and includes a summary of comments received on the request for information (RFI) on a home health specific wage index included in the proposed rule. This rule also finalizes changes to the Home Health Quality Reporting Program (HH QRP) and summarizes potential initiatives to improve alignment between the HH QRP and expanded Home Health Value- Based Purchasing (HHVBP) Model. Lastly, the rule clarifies the application of the DMEPOS face-to- face encounter requirements for the replacement of DMEPOS items; makes changes to the provider and supplier enrollment requirements; makes changes to implement a DME benefit expansion f",
       "key_findings": [],
       "localizable": false,
       "score": 62,
@@ -3993,7 +3992,152 @@
         "priority": 5,
         "novelty": 1,
         "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-22750",
+        "document_type": "Rule",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-11-08T16:40:36.146461+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Medicare and Medicaid Programs; CY 2027 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; Medicare Shared Savings Program Requirements; and Medicare Prescription Drug Inflation Rebate Program",
+      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22743/medicare-and-medicaid-programs-cy-2027-payment-policies-under-the-physician-fee-schedule-and-other",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "This final rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; codification of establishment of new policies for: the Medicare Prescription Drug Inflation Rebate Program under the Inflation Reduction Act of 2022; limiting Medicare coverage of certain individuals; the Ambulatory Specialty Model; updates to drugs and biological products paid under Part B; Medicare Shared Savings Program requirements; updates to the Quality Payment Program; updates to policies for Rural Health Clinics and Federally Qualified Health Centers; update to the Ambulance Fee Schedule regulations; codification of the Inflation Reduction Act and Consolidated Appropriations Act, 2026 provisions; updates to Clinical Laboratory Fee Schedule regulations; updates to the Medicare Promoting Interoperability Program.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 5,
+        "source_quality": 5,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 1,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Build an original ranking, map or trend analysis from the underlying public data."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-22743",
+        "document_type": "Rule",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
+        "coverage_state": "light",
+        "first_seen": "2026-11-08T16:40:36.146461+00:00",
+        "runs_seen": 4,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "justice-in-aging",
+      "title": "From DC: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more!",
+      "url": "https://justiceinaging.org/from-dc-11062026/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T20:19:44+00:00",
+      "topics": [
+        "housing",
+        "medicare_medicaid"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "In this week's edition: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more. The post From DC: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more! appeared first on Justice in Aging .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 1,
+        "timeliness": 4,
         "source_quality": 3,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 4,
+        "b2b_relevance": 4,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://justiceinaging.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-07T16:26:00.926349+00:00",
+        "runs_seen": 5,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "nic",
+      "title": "Record High Industry Sentiment Reported Among 3,700 NIC Fall Conference Attendees",
+      "url": "https://www.nic.org/blog/record-high-industry-sentiment-reported-among-3700-nic-fall-conference-attendees/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "housing"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Since the NIC Spring Conference in 2024, attendees at each of NIC’s conferences have been asked to report their outlook for the year ahead upon check-in at the event. The question asks, “What is your outlook for the year ahead for senior housing and care?” Response options range from…",
+      "key_findings": [],
+      "localizable": false,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 0,
+        "source_quality": 2,
         "coverage_gap": 5,
         "localization": 1,
         "demand": 3,
@@ -4004,16 +4148,152 @@
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "First appearance in this pipeline — no prior run surfaced it.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
+        "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
-        "first_seen": "2026-11-07T16:26:00.926349+00:00",
-        "runs_seen": 4,
-        "is_new": false
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
+      "source_id": "nic",
+      "title": "Changing with the Customer: Takeaways from the Record-Setting 2026 NIC Fall Conference",
+      "url": "https://www.nic.org/blog/changing-with-the-customer-takeaways-from-the-record-setting-2026-nic-fall-conference/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "housing"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "A record crowd in Chicago spent three days on one question: how does senior housing and care keep pace with the older adult customer as that customer changes? On the first afternoon of the 2026 NIC Fall Conference, NIC Board Chair Ken Segarnick gave the room a question to…",
+      "key_findings": [],
+      "localizable": false,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.nic.org/insider/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
+      "source_id": "nic",
+      "title": "Looking Beyond Today’s Construction Pipeline",
+      "url": "https://www.nic.org/blog/looking-beyond-todays-construction-pipeline/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "housing"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "With senior housing construction remaining constrained and occupancy approaching historically high levels, attention is increasingly turning to what may come next. Units currently under construction provide visibility into near-term supply, but they do not capture the projects sitting further upstream in the development process. NIC’s new report, “…",
+      "key_findings": [],
+      "localizable": false,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.nic.org/insider/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
+      "source_id": "nic",
+      "title": "From System of Record to System of Action: PointClickCare on AI, Care Coordination and Senior Housing",
+      "url": "https://www.nic.org/podcast/nic-chats/from-system-of-record-to-system-of-action-pointclickcare-on-ai-care-coordination-and-senior-housing/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "housing"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "Recorded live at the 2026 NIC Fall Conference in Chicago, this episode features Kristy Yoskey, vice president of product development and growth at PointClickCare. Host Lisa McCracken talks with Yoskey about how senior housing providers are taking on more care coordination, and what that means for health technology.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 62,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.nic.org/insider/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
       }
     },
     {
@@ -4057,7 +4337,59 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Medicare and Medicaid Programs; Organ Procurement Organizations Conditions for Coverage: Revisions to the Conditions for Coverage",
+      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22381/medicare-and-medicaid-programs-organ-procurement-organizations-conditions-for-coverage-revisions-to",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "topics": [
+        "medicare_medicaid"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
+      "evidence_grade": "A",
+      "summary": "This final rule revises the Conditions for Coverage for Organ Procurement Organizations (OPOs) to clarify outstanding procedural questions and provide additional operational flexibility for OPOs to achieve high performance resulting in the successful procurement, distribution, and transplantation of more life-saving organs. This rule revises definitions, revises the designation requirements for OPOs, clarifies when an OPO's service area is open for competition, and updates the process for appeals. We are committed to holding all OPOs accountable for their performance and this final rule does not revise the focus on improving the volume of donors and transplants assessed in the outcome measures or the tier structure used for re-certification and de-certification of OPOs.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 61,
+      "score_components": {
+        "priority": 5,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 5,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "document_number": "2026-22381",
+        "document_type": "Rule",
+        "agencies": [
+          "Health and Human Services Department",
+          "Centers for Medicare & Medicaid Services"
+        ],
+        "coverage_state": "gap",
+        "first_seen": "2026-11-03T17:51:25.776010+00:00",
+        "runs_seen": 9,
         "is_new": false
       }
     },
@@ -4109,7 +4441,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-31T15:45:33.644897+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -4161,58 +4493,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-30T16:42:34.211809+00:00",
-        "runs_seen": 12,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "federal-register",
-      "title": "Notice of Regulatory Waiver Requests Granted for the First Quarter of Calendar Year 2026",
-      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21886/notice-of-regulatory-waiver-requests-granted-for-the-first-quarter-of-calendar-year-2026",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-10-27T00:00:00+00:00",
-      "topics": [
-        "housing"
-      ],
-      "geographies": [
-        "United States"
-      ],
-      "population": null,
-      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
-      "evidence_grade": "A",
-      "summary": "Section 106 of the Department of Housing and Urban Development Reform Act of 1989 (the HUD Reform Act) requires HUD to publish quarterly Federal Register notices of all regulatory waivers that HUD has approved. Each notice covers the quarterly period since the previous Federal Register notice. The purpose of this notice is to comply with the requirements of section 106 of the HUD Reform Act. This notice contains a list of regulatory waivers granted by HUD during the period beginning on January 1, 2026 and ending on March 31, 2026.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 61,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 5,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
-        "Build an original ranking, map or trend analysis from the underlying public data.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "document_number": "2026-21886",
-        "document_type": "Notice",
-        "agencies": [
-          "Housing and Urban Development Department"
-        ],
-        "coverage_state": "gap",
-        "first_seen": "2026-10-27T15:53:40.162673+00:00",
-        "runs_seen": 15,
+        "runs_seen": 13,
         "is_new": false
       }
     },
@@ -4263,51 +4544,51 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-10T15:53:51.823922+00:00",
-        "runs_seen": 24,
+        "runs_seen": 25,
         "is_new": false
       }
     },
     {
-      "source_id": "justice-in-aging",
-      "title": "From DC: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more!",
-      "url": "https://justiceinaging.org/from-dc-11062026/",
+      "source_id": "kff-feed",
+      "title": "Medicare Cuts to 340B Drug Payments Will Hit Safety-Net Hospitals While Benefiting For-Profit Hospitals",
+      "url": "https://www.kff.org/health-costs/medicares-proposed-cut-to-340b-drug-payments-would-hit-safety-net-hospitals-while-benefiting-for-profit-hospitals/",
       "source_type": "institutional_rss",
-      "published_at": "2026-11-06T20:19:44+00:00",
+      "published_at": "2026-11-07T00:08:43+00:00",
       "topics": [
-        "housing",
         "medicare_medicaid"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "In this week's edition: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more. The post From DC: Medicare Eligibility Changes, Reduced Dental Benefits, Fair Housing Trends, and more! appeared first on Justice in Aging .",
+      "summary": "This analysis finds that CMS’s proposed cut to Medicare reimbursement for 340B drugs, and accompanying increase for other outpatient services, will reduce revenues among safety-net hospitals while increasing revenues among for-profit hospitals.",
       "key_findings": [],
       "localizable": false,
       "score": 60,
       "score_components": {
         "priority": 5,
         "novelty": 1,
-        "timeliness": 5,
+        "timeliness": 4,
         "source_quality": 3,
-        "coverage_gap": 3,
+        "coverage_gap": 5,
         "localization": 1,
         "demand": 3,
-        "consumer_utility": 4,
-        "b2b_relevance": 4,
+        "consumer_utility": 3,
+        "b2b_relevance": 3,
         "visualization": 1
       },
       "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
+      "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators."
+        "For readers: What a beneficiary should check about their own coverage, and by when.",
+        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://justiceinaging.org/feed/",
-        "coverage_state": "light",
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
         "first_seen": "2026-11-07T16:26:00.926349+00:00",
-        "runs_seen": 4,
+        "runs_seen": 5,
         "is_new": false
       }
     },
@@ -4351,7 +4632,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -4395,7 +4676,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
@@ -4446,7 +4727,7 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -4490,32 +4771,79 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
     {
-      "source_id": "kff-feed",
-      "title": "Status of State Medicaid Expansion Decisions",
-      "url": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-06T20:19:06+00:00",
+      "source_id": "nic",
+      "title": "Beyond Occupancy: What Should Revenue Leaders Be Asking Now?",
+      "url": "https://www.nic.org/blog/beyond-occupancy-what-should-revenue-leaders-be-asking-now/",
+      "source_type": "web_release",
+      "published_at": null,
       "topics": [
-        "medicare_medicaid"
+        "assisted_living"
       ],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "This page displays an interactive map of the current status of state decisions on the Affordable Care Act's Medicaid expansion. Additional Medicaid expansion resources are listed (with links) below the map.",
+      "summary": "For much of senior living’s recovery, the objective was clear: rebuild occupancy. That focus was necessary and, in many cases, successful. Occupancy has steadily improved, and recent NIC research demonstrates a fundamentally different operating environment than just a few years ago. At the same time, strong occupancy gains…",
+      "key_findings": [],
+      "localizable": false,
+      "score": 60,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 5,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 3,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a family touring communities should ask about, and what the numbers say.",
+        "For the trade: Operating margin, census and what the disclosure means competitively.",
+        "First appearance in this pipeline — no prior run surfaced it.",
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.nic.org/insider/",
+        "coverage_state": "gap",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
+      "source_id": "federal-register",
+      "title": "Notice of Regulatory Waiver Requests Granted for the First Quarter of Calendar Year 2026",
+      "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21886/notice-of-regulatory-waiver-requests-granted-for-the-first-quarter-of-calendar-year-2026",
+      "source_type": "regulatory_filing",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "topics": [
+        "housing"
+      ],
+      "geographies": [
+        "United States"
+      ],
+      "population": null,
+      "methodology": "Federal Register API; Notice from Housing and Urban Development Department",
+      "evidence_grade": "A",
+      "summary": "Section 106 of the Department of Housing and Urban Development Reform Act of 1989 (the HUD Reform Act) requires HUD to publish quarterly Federal Register notices of all regulatory waivers that HUD has approved. Each notice covers the quarterly period since the previous Federal Register notice. The purpose of this notice is to comply with the requirements of section 106 of the HUD Reform Act. This notice contains a list of regulatory waivers granted by HUD during the period beginning on January 1, 2026 and ending on March 31, 2026.",
       "key_findings": [],
       "localizable": false,
       "score": 59,
       "score_components": {
         "priority": 5,
         "novelty": 0,
-        "timeliness": 5,
-        "source_quality": 3,
+        "timeliness": 3,
+        "source_quality": 5,
         "coverage_gap": 5,
         "localization": 1,
         "demand": 3,
@@ -4526,15 +4854,20 @@
       "b2b_coverage_count": 0,
       "b2c_coverage_count": 0,
       "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers.",
+        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
+        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
+        "Build an original ranking, map or trend analysis from the underlying public data.",
         "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
+        "document_number": "2026-21886",
+        "document_type": "Notice",
+        "agencies": [
+          "Housing and Urban Development Department"
+        ],
         "coverage_state": "gap",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 20,
+        "first_seen": "2026-10-27T15:53:40.162673+00:00",
+        "runs_seen": 16,
         "is_new": false
       }
     },
@@ -4585,7 +4918,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -4637,7 +4970,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -4688,7 +5021,7 @@
         ],
         "coverage_state": "gap",
         "first_seen": "2026-10-14T15:08:04.493367+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4727,7 +5060,7 @@
         "b2b_relevance": 4,
         "visualization": 5
       },
-      "b2b_coverage_count": 1,
+      "b2b_coverage_count": 2,
       "b2c_coverage_count": 0,
       "story_angles": [
         "For readers: What a family touring communities should ask about, and what the numbers say.",
@@ -4821,26 +5154,69 @@
         ],
         "coverage_state": "light",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
     {
-      "source_id": "federal-register",
-      "title": "Medicare and Medicaid Programs; Organ Procurement Organizations Conditions for Coverage: Revisions to the Conditions for Coverage",
-      "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22381/medicare-and-medicaid-programs-organ-procurement-organizations-conditions-for-coverage-revisions-to",
-      "source_type": "regulatory_filing",
-      "published_at": "2026-11-03T00:00:00+00:00",
+      "source_id": "nic",
+      "title": "Resetting the Senior Living Sales and Marketing Stage: The Impact of AI",
+      "url": "https://www.nic.org/blog/resetting-the-senior-living-sales-and-marketing-stage-the-impact-of-ai/",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "assisted_living",
+        "housing"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "How AI innovation is helping operators of every size adapt to prospect new behavior and make every touchpoint count Two decades ago, online search shifted how consumers researched their housing and care options, reshaping senior living sales, and now consumer behavior is shifting again. Instead of typing keywords and…",
+      "key_findings": [],
+      "localizable": false,
+      "score": 59,
+      "score_components": {
+        "priority": 5,
+        "novelty": 5,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 3,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 3,
+        "b2b_relevance": 4,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "For readers: What a family touring communities should ask about, and what the numbers say.",
+        "For the trade: Operating margin, census and what the disclosure means competitively.",
+        "First appearance in this pipeline — no prior run surfaced it."
+      ],
+      "raw_metadata": {
+        "listing_page": "https://www.nic.org/insider/",
+        "coverage_state": "light",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
+        "runs_seen": 1,
+        "is_new": true
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "Status of State Medicaid Expansion Decisions",
+      "url": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-06T20:19:06+00:00",
       "topics": [
         "medicare_medicaid"
       ],
-      "geographies": [
-        "United States"
-      ],
+      "geographies": [],
       "population": null,
-      "methodology": "Federal Register API; Rule from Health and Human Services Department, Centers for Medicare & Medicaid Services",
-      "evidence_grade": "A",
-      "summary": "This final rule revises the Conditions for Coverage for Organ Procurement Organizations (OPOs) to clarify outstanding procedural questions and provide additional operational flexibility for OPOs to achieve high performance resulting in the successful procurement, distribution, and transplantation of more life-saving organs. This rule revises definitions, revises the designation requirements for OPOs, clarifies when an OPO's service area is open for competition, and updates the process for appeals. We are committed to holding all OPOs accountable for their performance and this final rule does not revise the focus on improving the volume of donors and transplants assessed in the outcome measures or the tier structure used for re-certification and de-certification of OPOs.",
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This page displays an interactive map of the current status of state decisions on the Affordable Care Act's Medicaid expansion. Additional Medicaid expansion resources are listed (with links) below the map.",
       "key_findings": [],
       "localizable": false,
       "score": 57,
@@ -4848,8 +5224,8 @@
         "priority": 5,
         "novelty": 0,
         "timeliness": 4,
-        "source_quality": 5,
-        "coverage_gap": 3,
+        "source_quality": 3,
+        "coverage_gap": 5,
         "localization": 1,
         "demand": 3,
         "consumer_utility": 3,
@@ -4857,22 +5233,17 @@
         "visualization": 1
       },
       "b2b_coverage_count": 0,
-      "b2c_coverage_count": 1,
+      "b2c_coverage_count": 0,
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
         "For the trade: Payment, eligibility and compliance exposure for providers.",
-        "Build an original ranking, map or trend analysis from the underlying public data."
+        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
       ],
       "raw_metadata": {
-        "document_number": "2026-22381",
-        "document_type": "Rule",
-        "agencies": [
-          "Health and Human Services Department",
-          "Centers for Medicare & Medicaid Services"
-        ],
-        "coverage_state": "light",
-        "first_seen": "2026-11-03T17:51:25.776010+00:00",
-        "runs_seen": 8,
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "gap",
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -4916,7 +5287,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-11-09T20:43:17.846301+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -4958,7 +5329,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "gap",
         "first_seen": "2026-11-09T20:43:17.846301+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -5002,7 +5373,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -5047,7 +5418,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -5090,7 +5461,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5133,7 +5504,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5176,50 +5547,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 14,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "Tracking Implementation of the 2025 Reconciliation Law: Medicaid Work Requirements",
-      "url": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-03T17:31:31+00:00",
-      "topics": [
-        "medicare_medicaid"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "KFF's interactive tracks key data and policies that will affect how states implement Medicaid work requirements, which are required under the 2025 budget reconciliation law starting in January 2027. The tracker includes state-level data on Medicaid enrollment and renewal outcomes as well as current state enrollment and renewal policies.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 53,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 4,
-        "source_quality": 3,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a beneficiary should check about their own coverage, and by when.",
-        "For the trade: Payment, eligibility and compliance exposure for providers."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "light",
-        "first_seen": "2026-09-29T18:05:10.168906+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -5262,7 +5590,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-10-31T15:45:33.644897+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -5306,7 +5634,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -5351,7 +5679,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -5394,7 +5722,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "light",
         "first_seen": "2026-10-16T14:51:25.999997+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -5438,7 +5766,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -5482,7 +5810,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -5526,7 +5854,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
@@ -5571,22 +5899,22 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "gap",
         "first_seen": "2026-11-02T20:22:07.663964+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
         "is_new": false
       }
     },
     {
-      "source_id": "kff-feed",
-      "title": "What Does Democratic Control of Congress Mean for Global Health?",
-      "url": "https://www.kff.org/global-health-policy/what-does-democratic-control-of-congress-mean-for-global-health/",
+      "source_id": "alliance-aging-research",
+      "title": "Supporting Our Seniors in Service this Veterans Day",
+      "url": "https://www.agingresearch.org/blog/supporting-our-seniors-in-service-this-veterans-day/",
       "source_type": "institutional_rss",
-      "published_at": "2026-11-10T17:29:13+00:00",
+      "published_at": "2026-11-10T20:55:51+00:00",
       "topics": [],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "This policy watch examines what the 2026 Midterm Election results and Democratic control of Congress might mean for global health.",
+      "summary": "The post Supporting Our Seniors in Service this Veterans Day appeared first on Alliance for Aging Research .",
       "key_findings": [],
       "localizable": false,
       "score": 48,
@@ -5609,50 +5937,9 @@
         "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
+        "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
-        "first_seen": "2026-11-10T17:51:20.405712+00:00",
-        "runs_seen": 1,
-        "is_new": true
-      }
-    },
-    {
-      "source_id": "kff-feed",
-      "title": "The Drug Enterprise in the Age of AI",
-      "url": "https://www.kff.org/other-health/the-drug-enterprise-in-the-age-of-ai/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-11-10T07:00:00+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "AI is speeding up the search for new medicines. Can it make the discoveries themselves? Few people are better placed to answer than Dr. Elias Zerhouni. He ran the National Institutes of Health, then global R&#38;D at Sanofi. He co-founded ModeX Therapeutics, which uses machine learning to design antibodies that don’t exist in nature, and he is now vice chairman and president of its parent company, OPKO Health. His test for AI: give it every piece of data available in the early 1950s, and it would not have found the double helix. The spark, he argues, is still human. Chip and Dr. Zerhouni dig into what AI is actually doing in drug development, how the FDA stacks up against regulators abroad, and what a slowdown in AI — and the erosion of American research — could mean for the next generation of cures.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 48,
-      "score_components": {
-        "priority": 0,
-        "novelty": 5,
-        "timeliness": 5,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "First appearance in this pipeline — no prior run surfaced it.",
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.kff.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-11-10T17:51:20.405712+00:00",
+        "first_seen": "2026-11-11T17:54:13.043532+00:00",
         "runs_seen": 1,
         "is_new": true
       }
@@ -5687,7 +5974,7 @@
         "visualization": 1
       },
       "b2b_coverage_count": 2,
-      "b2c_coverage_count": 2,
+      "b2c_coverage_count": 1,
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
         "For the trade: Payment, eligibility and compliance exposure for providers."
@@ -5696,7 +5983,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "saturated",
         "first_seen": "2026-10-09T17:00:51.907973+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -5740,96 +6027,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nic",
-      "title": "Senior Housing Occupancy Nears Record High as Primary Markets Surpass 90%",
-      "url": "https://www.nic.org/blog/senior-housing-occupancy-nears-record-high-as-primary-markets-surpass-90/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "housing"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Senior housing occupancy surpassed 90% in the third quarter, the first time that primary market occupancy rates have been above 90% since 2014. Occupancy rates reached record highs in four primary markets – San Francisco, Chicago, Kansas City, and Dallas. At the same time, inventory growth remained near record…",
-      "key_findings": [],
-      "localizable": false,
-      "score": 48,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 3
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.nic.org/insider/",
-        "coverage_state": "gap",
-        "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 21,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nic",
-      "title": "From Consumer Insight to Capital Alignment: Leadership Lessons from Four Decades in Senior Housing",
-      "url": "https://www.nic.org/podcast/nic-chats/from-consumer-insight-to-capital-alignment-leadership-lessons-from-four-decades-in-senior-housing/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "assisted_living",
-        "housing"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "Benchmark Senior Living CEO, founder, and chairman Tom Grape joins host Lisa McCracken to reflect on nearly four decades in senior housing and what the sector needs to get right next. Grape discusses how the sector has matured, from the growth of assisted living and memory care to…",
-      "key_findings": [],
-      "localizable": false,
-      "score": 47,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 4,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What a family touring communities should ask about, and what the numbers say.",
-        "For the trade: Operating margin, census and what the disclosure means competitively.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.nic.org/insider/",
-        "coverage_state": "gap",
-        "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 21,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -5873,7 +6071,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "gap",
         "first_seen": "2026-10-08T17:25:29.418360+00:00",
-        "runs_seen": 26,
+        "runs_seen": 27,
         "is_new": false
       }
     },
@@ -5890,7 +6088,7 @@
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "NIC Insider: The most trusted and objective insights, exclusive data, and key senior housing industry access—delivered straight to your inbox monthly. In this edition: Occupancy Near Record High for Senior Housing; Active Adult Occupancy Up; New Middle Market Case Study; Updated Active Adult White Paper; Perspective from an Industry Veteran; and More Subscribe to the NIC Insider ▶",
+      "summary": "NIC Insider: The most trusted and objective insights, exclusive data, and key senior housing industry access—delivered straight to your inbox monthly. In this edition: Senior Housing 3Q Returns Triple the Next-Best Performing Sector, Development Pipeline Insights, 3 AI Sales & Marketing Use Cases, NIC Fall Conference Highlights, and More Subscribe to the NIC Insider ▶",
       "key_findings": [],
       "localizable": false,
       "score": 46,
@@ -5917,139 +6115,7 @@
         "listing_page": "https://www.nic.org/insider/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nic",
-      "title": "Mainstay’s Middle-Market Senior Housing Model",
-      "url": "https://www.nic.org/resources/mainstays-middle-market-senior-housing-model/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "housing"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "See how Mainstay engineers affordability across real estate, operations, and capital to support the middle market.",
-      "key_findings": [],
-      "localizable": false,
-      "score": 46,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.nic.org/insider/",
-        "coverage_state": "gap",
-        "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 21,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nic",
-      "title": "Senior Housing Faces an Estimated Trillion-Dollar Supply Gap as Demographic Wave Arrives",
-      "url": "https://www.nic.org/blog/senior-housing-faces-an-estimated-trillion-dollar-supply-gap-as-demographic-wave-arrives/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "housing"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The U.S. senior housing sector is entering what NIC MAP’s latest Market Outlook Report calls the steepest stretch of 80+ population growth in the nation’s history — and the industry’s current pace of construction isn’t close to keeping up. A Demographic Wave with Certainty The first Baby…",
-      "key_findings": [],
-      "localizable": false,
-      "score": 46,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.nic.org/insider/",
-        "coverage_state": "gap",
-        "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 21,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "nic",
-      "title": "The Conference That Changed My Career: Reflections on the NIC Scholar Program",
-      "url": "https://www.nic.org/blog/the-conference-that-changed-my-career-reflections-on-the-nic-scholar-program/",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "housing"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "AdvoKate Longevity: Intergenerational Community Architecture The NIC Conference Scholar Program, sponsored by Welltower, gives students in senior housing academic programs full access to NIC’s Fall and Spring Conferences. Faculty at colleges and universities nominate students for the program. Selected Scholars take part in conference…",
-      "key_findings": [],
-      "localizable": false,
-      "score": 46,
-      "score_components": {
-        "priority": 5,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 5,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 3,
-        "b2b_relevance": 3,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "For readers: What it means for an older renter or owner weighing whether to stay put or move.",
-        "For the trade: Occupancy, development pipeline and pricing pressure for operators.",
-        "Coverage gap: monitored B2B/B2C publishers cover this beat but no close title-level match appeared."
-      ],
-      "raw_metadata": {
-        "listing_page": "https://www.nic.org/insider/",
-        "coverage_state": "gap",
-        "first_seen": "2026-10-13T17:36:45.165676+00:00",
-        "runs_seen": 21,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6093,7 +6159,7 @@
         "listing_page": "https://www.ebri.org/media",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6137,7 +6203,7 @@
         "listing_page": "https://www.caregiving.org/",
         "coverage_state": "light",
         "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 47,
+        "runs_seen": 48,
         "is_new": false
       }
     },
@@ -6181,7 +6247,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6225,7 +6291,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6269,7 +6335,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-09T20:43:17.846301+00:00",
-        "runs_seen": 2,
+        "runs_seen": 3,
         "is_new": false
       }
     },
@@ -6313,7 +6379,87 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "What Does Democratic Control of Congress Mean for Global Health?",
+      "url": "https://www.kff.org/global-health-policy/what-does-democratic-control-of-congress-mean-for-global-health/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-10T17:29:13+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "This policy watch examines what the 2026 Midterm Election results and Democratic control of Congress might mean for global health.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 42,
+      "score_components": {
+        "priority": 0,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-11-10T17:51:20.405712+00:00",
+        "runs_seen": 2,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "kff-feed",
+      "title": "The Drug Enterprise in the Age of AI",
+      "url": "https://www.kff.org/other-health/the-drug-enterprise-in-the-age-of-ai/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-10T07:00:00+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "AI is speeding up the search for new medicines. Can it make the discoveries themselves? Few people are better placed to answer than Dr. Elias Zerhouni. He ran the National Institutes of Health, then global R&#38;D at Sanofi. He co-founded ModeX Therapeutics, which uses machine learning to design antibodies that don’t exist in nature, and he is now vice chairman and president of its parent company, OPKO Health. His test for AI: give it every piece of data available in the early 1950s, and it would not have found the double helix. The spark, he argues, is still human. Chip and Dr. Zerhouni dig into what AI is actually doing in drug development, how the FDA stacks up against regulators abroad, and what a slowdown in AI — and the erosion of American research — could mean for the next generation of cures.",
+      "key_findings": [],
+      "localizable": false,
+      "score": 42,
+      "score_components": {
+        "priority": 0,
+        "novelty": 3,
+        "timeliness": 5,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.kff.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-11-10T17:51:20.405712+00:00",
+        "runs_seen": 2,
         "is_new": false
       }
     },
@@ -6356,7 +6502,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -6398,7 +6544,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-10-06T16:51:21.858324+00:00",
-        "runs_seen": 28,
+        "runs_seen": 29,
         "is_new": false
       }
     },
@@ -6440,7 +6586,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "gap",
         "first_seen": "2026-09-28T19:41:34.214143+00:00",
-        "runs_seen": 34,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -6482,7 +6628,7 @@
         "feed_url": "https://www.rand.org/pubs/new.xml",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
@@ -6525,7 +6671,7 @@
         "listing_page": "https://www.phinational.org/policy-research/",
         "coverage_state": "light",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6572,7 +6718,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
@@ -6606,7 +6752,7 @@
         "visualization": 1
       },
       "b2b_coverage_count": 2,
-      "b2c_coverage_count": 2,
+      "b2c_coverage_count": 1,
       "story_angles": [
         "For readers: What a beneficiary should check about their own coverage, and by when.",
         "For the trade: Payment, eligibility and compliance exposure for providers."
@@ -6615,7 +6761,7 @@
         "listing_page": "https://www.kff.org/content-type/issue-brief/",
         "coverage_state": "saturated",
         "first_seen": "2026-10-09T17:00:51.907973+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -6657,7 +6803,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "gap",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6700,7 +6846,7 @@
         "listing_page": "https://crr.bc.edu/publications/",
         "coverage_state": "saturated",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6740,7 +6886,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-06T17:29:18.070679+00:00",
-        "runs_seen": 5,
+        "runs_seen": 6,
         "is_new": false
       }
     },
@@ -6780,7 +6926,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
@@ -6820,29 +6966,29 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-05T18:01:52.316935+00:00",
-        "runs_seen": 6,
+        "runs_seen": 7,
         "is_new": false
       }
     },
     {
-      "source_id": "alliance-aging-research",
-      "title": "We’re Hiring a Development Coordinator",
-      "url": "https://www.agingresearch.org/blog/were-hiring-a-development-coordinator-2/",
+      "source_id": "kff-feed",
+      "title": "Global COVID-19 Tracker",
+      "url": "https://www.kff.org/covid-19/global-covid-19-tracker/",
       "source_type": "institutional_rss",
-      "published_at": "2026-11-02T20:58:10+00:00",
+      "published_at": "2026-11-11T01:51:17+00:00",
       "topics": [],
       "geographies": [],
       "population": null,
       "methodology": null,
       "evidence_grade": null,
-      "summary": "The post We&#8217;re Hiring a Development Coordinator appeared first on Alliance for Aging Research .",
+      "summary": "This tracker provides data on global COVID-19 cases and deaths by country, region, and income-level. Additionally, the tracker reports current closure, economic, and health system policy responses to the COVID-19 pandemic globally. This tracker will be updated as new data are available.",
       "key_findings": [],
       "localizable": false,
-      "score": 34,
+      "score": 33,
       "score_components": {
         "priority": 0,
-        "novelty": 1,
-        "timeliness": 4,
+        "novelty": 0,
+        "timeliness": 5,
         "source_quality": 3,
         "coverage_gap": 2,
         "localization": 1,
@@ -6857,10 +7003,10 @@
         "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
       ],
       "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
+        "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
-        "first_seen": "2026-11-03T17:51:25.776010+00:00",
-        "runs_seen": 7,
+        "first_seen": "2026-09-03T20:29:38.474573+00:00",
+        "runs_seen": 39,
         "is_new": false
       }
     },
@@ -6907,7 +7053,7 @@
         ],
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-26T01:38:56.952479+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
         "is_new": false
       }
     },
@@ -6951,7 +7097,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -6995,7 +7141,7 @@
         "listing_page": "https://acl.gov/news",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7035,7 +7181,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-11T16:29:45.021426+00:00",
-        "runs_seen": 25,
+        "runs_seen": 26,
         "is_new": false
       }
     },
@@ -7075,7 +7221,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-31T15:45:33.644897+00:00",
-        "runs_seen": 11,
+        "runs_seen": 12,
         "is_new": false
       }
     },
@@ -7115,7 +7261,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 33,
+        "runs_seen": 34,
         "is_new": false
       }
     },
@@ -7155,7 +7301,7 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-24T17:07:00.797108+00:00",
-        "runs_seen": 13,
+        "runs_seen": 14,
         "is_new": false
       }
     },
@@ -7195,7 +7341,47 @@
         "feed_url": "https://www.kff.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 17,
+        "runs_seen": 18,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "alliance-aging-research",
+      "title": "We’re Hiring a Development Coordinator",
+      "url": "https://www.agingresearch.org/blog/were-hiring-a-development-coordinator-2/",
+      "source_type": "institutional_rss",
+      "published_at": "2026-11-02T20:58:10+00:00",
+      "topics": [],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": "The post We&#8217;re Hiring a Development Coordinator appeared first on Alliance for Aging Research .",
+      "key_findings": [],
+      "localizable": false,
+      "score": 31,
+      "score_components": {
+        "priority": 0,
+        "novelty": 0,
+        "timeliness": 4,
+        "source_quality": 3,
+        "coverage_gap": 2,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 0,
+      "b2c_coverage_count": 0,
+      "story_angles": [
+        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
+      ],
+      "raw_metadata": {
+        "feed_url": "https://www.agingresearch.org/feed/",
+        "coverage_state": "unmonitored",
+        "first_seen": "2026-11-03T17:51:25.776010+00:00",
+        "runs_seen": 8,
         "is_new": false
       }
     },
@@ -7235,7 +7421,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-11-02T20:22:07.663964+00:00",
-        "runs_seen": 9,
+        "runs_seen": 10,
         "is_new": false
       }
     },
@@ -7253,11 +7439,11 @@
       "summary": "The post Don’t Let Spooky Season Leave You Afraid of the Dark appeared first on Alliance for Aging Research .",
       "key_findings": [],
       "localizable": false,
-      "score": 31,
+      "score": 28,
       "score_components": {
         "priority": 0,
         "novelty": 0,
-        "timeliness": 4,
+        "timeliness": 3,
         "source_quality": 3,
         "coverage_gap": 2,
         "localization": 1,
@@ -7275,7 +7461,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-27T15:53:40.162673+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7315,7 +7501,7 @@
         "feed_url": "https://justiceinaging.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-30T16:42:34.211809+00:00",
-        "runs_seen": 12,
+        "runs_seen": 13,
         "is_new": false
       }
     },
@@ -7355,7 +7541,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-27T15:53:40.162673+00:00",
-        "runs_seen": 14,
+        "runs_seen": 15,
         "is_new": false
       }
     },
@@ -7395,7 +7581,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-14T15:08:04.493367+00:00",
-        "runs_seen": 20,
+        "runs_seen": 21,
         "is_new": false
       }
     },
@@ -7435,7 +7621,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-10-02T16:17:14.035998+00:00",
-        "runs_seen": 32,
+        "runs_seen": 33,
         "is_new": false
       }
     },
@@ -7453,11 +7639,11 @@
       "summary": "The post Meet Our 2026 Heroes in Health appeared first on Alliance for Aging Research .",
       "key_findings": [],
       "localizable": false,
-      "score": 28,
+      "score": 26,
       "score_components": {
         "priority": 0,
         "novelty": 0,
-        "timeliness": 3,
+        "timeliness": 2,
         "source_quality": 3,
         "coverage_gap": 2,
         "localization": 1,
@@ -7475,47 +7661,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-28T19:41:34.214143+00:00",
-        "runs_seen": 34,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "acl-news",
-      "title": "Take Steps to Prevent Falls",
-      "url": "https://acl.gov/news-and-events/acl-blog/take-steps-prevent-falls",
-      "source_type": "web_release",
-      "published_at": null,
-      "topics": [
-        "falls"
-      ],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": null,
-      "key_findings": [],
-      "localizable": false,
-      "score": 28,
-      "score_components": {
-        "priority": 2,
-        "novelty": 0,
-        "timeliness": 0,
-        "source_quality": 2,
-        "coverage_gap": 3,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 1,
-      "b2c_coverage_count": 1,
-      "story_angles": [],
-      "raw_metadata": {
-        "listing_page": "https://acl.gov/news",
-        "coverage_state": "light",
-        "first_seen": "2026-10-01T17:02:24.226428+00:00",
-        "runs_seen": 33,
+        "runs_seen": 35,
         "is_new": false
       }
     },
@@ -7555,7 +7701,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-16T16:56:14.102324+00:00",
-        "runs_seen": 45,
+        "runs_seen": 46,
         "is_new": false
       }
     },
@@ -7595,7 +7741,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 57,
+        "runs_seen": 58,
         "is_new": false
       }
     },
@@ -7635,7 +7781,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7675,7 +7821,7 @@
         "feed_url": "https://www.agingresearch.org/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 52,
+        "runs_seen": 53,
         "is_new": false
       }
     },
@@ -7715,47 +7861,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
-        "is_new": false
-      }
-    },
-    {
-      "source_id": "alliance-aging-research",
-      "title": "Balancing Boredom on World Brain Day",
-      "url": "https://www.agingresearch.org/blog/balancing-boredom-on-world-brain-day/",
-      "source_type": "institutional_rss",
-      "published_at": "2026-07-21T21:40:04+00:00",
-      "topics": [],
-      "geographies": [],
-      "population": null,
-      "methodology": null,
-      "evidence_grade": null,
-      "summary": "The post Balancing Boredom on World Brain Day appeared first on Alliance for Aging Research .",
-      "key_findings": [],
-      "localizable": false,
-      "score": 26,
-      "score_components": {
-        "priority": 0,
-        "novelty": 0,
-        "timeliness": 2,
-        "source_quality": 3,
-        "coverage_gap": 2,
-        "localization": 1,
-        "demand": 3,
-        "consumer_utility": 1,
-        "b2b_relevance": 1,
-        "visualization": 1
-      },
-      "b2b_coverage_count": 0,
-      "b2c_coverage_count": 0,
-      "story_angles": [
-        "Coverage unknown: no working publisher feed in the registry covers this topic, so no gap claim can be made."
-      ],
-      "raw_metadata": {
-        "feed_url": "https://www.agingresearch.org/feed/",
-        "coverage_state": "unmonitored",
-        "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 45,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7795,7 +7901,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7835,7 +7941,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7875,7 +7981,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7915,7 +8021,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7955,7 +8061,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -7995,7 +8101,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8035,7 +8141,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8075,7 +8181,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8115,7 +8221,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8155,7 +8261,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8195,7 +8301,47 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
+        "is_new": false
+      }
+    },
+    {
+      "source_id": "acl-news",
+      "title": "Take Steps to Prevent Falls",
+      "url": "https://acl.gov/news-and-events/acl-blog/take-steps-prevent-falls",
+      "source_type": "web_release",
+      "published_at": null,
+      "topics": [
+        "falls"
+      ],
+      "geographies": [],
+      "population": null,
+      "methodology": null,
+      "evidence_grade": null,
+      "summary": null,
+      "key_findings": [],
+      "localizable": false,
+      "score": 24,
+      "score_components": {
+        "priority": 2,
+        "novelty": 0,
+        "timeliness": 0,
+        "source_quality": 2,
+        "coverage_gap": 1,
+        "localization": 1,
+        "demand": 3,
+        "consumer_utility": 1,
+        "b2b_relevance": 1,
+        "visualization": 1
+      },
+      "b2b_coverage_count": 2,
+      "b2c_coverage_count": 1,
+      "story_angles": [],
+      "raw_metadata": {
+        "listing_page": "https://acl.gov/news",
+        "coverage_state": "saturated",
+        "first_seen": "2026-10-01T17:02:24.226428+00:00",
+        "runs_seen": 34,
         "is_new": false
       }
     },
@@ -8235,7 +8381,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8275,7 +8421,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8315,7 +8461,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8355,7 +8501,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8395,7 +8541,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8435,7 +8581,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8475,7 +8621,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     },
@@ -8515,7 +8661,7 @@
         "feed_url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
         "coverage_state": "unmonitored",
         "first_seen": "2026-09-03T20:29:38.474573+00:00",
-        "runs_seen": 59,
+        "runs_seen": 60,
         "is_new": false
       }
     }
